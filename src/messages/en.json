@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "title": "GTC FX - Trading & Finance",
+    "description": "Your trusted partner for forex trading and financial services. Trade with confidence.",
+    "aboutTitle": "About Us - GTC FX",
+    "aboutDescription": "Learn about our mission and commitment to transparent, professional trading."
+  },
+  "home": {
+    "title": "Welcome to GTC FX",
+    "subtitle": "Trade smarter with our platform",
+    "intro": "We provide a secure and user-friendly environment for forex trading. Get started today and take control of your financial future.",
+    "cta": "Get Started",
+    "features": {
+      "title": "Why Choose Us",
+      "secure": "Secure platform with industry-standard encryption",
+      "support": "24/7 customer support in your language",
+      "tools": "Advanced trading tools and analytics"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a leading financial services provider, committed to transparency and client success.",
+    "mission": "Our mission is to make professional trading accessible to everyone."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About"
+  }
+}
