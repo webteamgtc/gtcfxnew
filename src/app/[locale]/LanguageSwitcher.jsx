@@ -2,29 +2,48 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { locales, defaultLocale, localeNames } from '@/i18n/config';
 
 export function LanguageSwitcher({ locale }) {
-  const pathname = usePathname();
+  const pathname = usePathname() || '/';
 
-  if (!pathname) {
-    const target = locale === 'en' ? '/ar' : '/en';
-    return (
-      <Link href={target} className="text-gray-700 hover:text-gray-900 hover:underline">
-        {locale === 'en' ? 'العربية' : 'English'}
-      </Link>
-    );
-  }
+  const getLocalizedPath = (targetLocale) => {
+    const segments = pathname.split('/').filter(Boolean);
 
-  const segments = pathname.split('/');
-  const currentLocale = segments[1];
-  const nextLocale = currentLocale === 'ar' ? 'en' : 'ar';
-  segments[1] = nextLocale;
-  const targetPath = segments.join('/') || '/';
+    // Remove current locale from path if present
+    if (segments.length > 0 && locales.includes(segments[0])) {
+      segments.shift();
+    }
+
+    const cleanPath = segments.length ? `/${segments.join('/')}` : '/';
+
+    // Default locale should not have prefix
+    if (targetLocale === defaultLocale) {
+      return cleanPath;
+    }
+
+    return cleanPath === '/'
+      ? `/${targetLocale}`
+      : `/${targetLocale}${cleanPath}`;
+  };
 
   return (
-    <Link href={targetPath} className="text-gray-700 hover:text-gray-900 hover:underline">
-      {nextLocale === 'ar' ? 'العربية' : 'English'}
-    </Link>
+    <div className="flex items-center gap-3">
+      {locales.map((lang) => {
+        const isActive = lang === locale;
+
+        return (
+          <Link
+            key={lang}
+            href={getLocalizedPath(lang)}
+            className={`transition hover:underline ${
+              isActive ? 'font-semibold text-black' : 'text-gray-700'
+            }`}
+          >
+            {localeNames[lang]}
+          </Link>
+        );
+      })}
+    </div>
   );
 }
-

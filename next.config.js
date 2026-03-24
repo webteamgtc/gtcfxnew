@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // App router is default in Next.js 13+
+ images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'gtcfx-bucket.s3.ap-southeast-1.amazonaws.com',
+        pathname: '/**',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
