@@ -7,31 +7,31 @@ export default function PaymentMethodsSection() {
         <div className="rounded-[28px] bg-[#F1F2F4] border border-gray-300 px-6 py-10 md:px-10 md:py-12 shadow-2xl">
           
           <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8">
-            
-            {/* Left Content */}
-            <div className="max-w-md">
-              <h2 className="HeadingH3">
-                Method of Payment, Card Types Accepted & Currency
-              </h2>
 
-              <p className="mt-4 text-[14px] md:text-[15px] text-[#666] leading-6">
-                We accept payments online using Visa and MasterCard credit/debit
-                card in AED (and/or any other available currency listed in the
-                payments section).
-              </p>
-            </div>
+  {/* Image FIRST on mobile */}
+  <div className="order-1 lg:order-2 w-full relative h-[300px]">
+    <Image
+      src="/home/clientpayment.webp"
+      alt="Payment Methods"
+      fill
+      className="object-contain"
+    />
+  </div>
 
-            {/* Right Image */}
-            <div className="w-full relative h-[300px]">
-              <Image
-                src="/home/clientpayment.webp" // 👉 replace with your image path
-                alt="Payment Methods"
-                fill
-                className="object-contain"
-              />
-            </div>
+  {/* Text SECOND on mobile */}
+  <div className="order-2 lg:order-1 max-w-md flex flex-col gap-6">
+    <h2 className="HeadingH3">
+      Method of Payment, Card Types Accepted & Currency
+    </h2>
 
-          </div>
+    <p className="Text">
+      We accept payments online using Visa and MasterCard credit/debit
+      card in AED (and/or any other available currency listed in the
+      payments section).
+    </p>
+  </div>
+
+</div>
 
         </div>
       </div>

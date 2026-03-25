@@ -135,16 +135,16 @@ function PhoneTrade({ className }) {
 
 export default function AppPromoSection() {
   return (
-    <section className="bg-white py-14 md:py-20 lg:py-24">
-      <div className="container mx-auto">
-        <div className="grid items-center gap-12 lg:grid-cols-12 justify-center lg:gap-6 xl:gap-10">
+    <section className="bg-[#F1F2F4] py-10 lg:py-16">
+      <div className="max-w-6xl mx-auto px-4 md:px-0">
+        <div className="grid items-center gap-4 lg:grid-cols-12 justify-center md:gap-10">
           {/* Left — copy + social proof */}
-          <div className="order-2 text-center lg:order-1 lg:col-span-5 lg:text-left">
-            <h2 className="HeadingH2 text-[#1a1a1a]">
+          <div className="order-2 text-center lg:order-1 lg:col-span-5 lg:text-left flex flex-col gap-6 md:gap-8  items-center lg:items-start">
+            <h2 className="HeadingH2">
               Trade. Invest. Earn
               All in one app.
             </h2>
-            <p className="Text mx-auto mt-5 max-w-xl text-[#666] lg:mx-0">
+            <p className="Text">
               Trade the CFD market on the go with our mobile application and
               benefit from ultra-low latency trading infrastructure,
               award-winning order execution and deep fluidity.
@@ -184,7 +184,7 @@ export default function AppPromoSection() {
 
           {/* Center — phones */}
           <div className="order-1 flex justify-center lg:order-2 lg:col-span-4">
-            <div className="relative flex w-full max-w-[340px] items-end justify-center sm:max-w-[400px]">
+            <div className="relative flex w-full max-w-[200px] items-end justify-center sm:max-w-[400px]">
               <img src="/home/app-img.png" alt="App Promo" className="w-full h-full object-contain" />
             </div>
           </div>

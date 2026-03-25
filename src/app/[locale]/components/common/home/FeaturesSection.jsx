@@ -1,5 +1,6 @@
 "use client";
 import MobilePeekCarousel from "../MobilePeekCarousel";
+import PrimaryButton from "../PrimaryButton";
 
 function FeatureCard({ item, index, mobile = false }) {
   const surface = mobile
@@ -83,7 +84,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section className="py-20 bg-[#fff]">
+    <section className="py-10 md:py-14 bg-[#fff]">
       <div className="container">
         <div className="text-center flex flex-col items-center gap-8">
           <h2 className="HeadingH2">
@@ -112,6 +113,10 @@ export default function FeaturesSection() {
             )}
           />
         </div>
+<div className="flex justify-center"><PrimaryButton href="/register">
+  Open Live Account
+</PrimaryButton></div>
+        
       </div>
     </section>
   );

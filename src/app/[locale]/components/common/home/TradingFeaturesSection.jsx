@@ -42,23 +42,23 @@ export default function TradingFeaturesSection() {
           }`}
         >
           {item.imageCard ? (
-                <div className="rounded-t-[28px] bg-[#e9ecf2] border border-gray-300 px-6 pt-t md:px-8 md:pt-8">
+                <div className="rounded-t-[28px] bg-[#e9ecf2] border border-gray-300 px-6 pt-5 md:px-5 md:pt-5">
                   <Image
                     src={item.image}
                     alt={item.imageAlt}
                     width={320}
                     height={620}
-                    className="h-auto w-[2200px] md:w-[320px] object-contain"
+                    className="h-auto w-[220px] md:w-[356px] object-contain"
                   />
                 </div>
               ) : (
-                <div className="rounded-t-[28px] bg-[#e9ecf2] border border-gray-300 px-6 pt-t md:px-8 md:pt-8">
+                <div className="rounded-t-[28px] bg-[#e9ecf2] border border-gray-300 px-6 pt-5 md:px-5 md:pt-5">
                 <Image
                   src={item.image}
                   alt={item.imageAlt}
                   width={320}
                   height={620}
-                  className="h-auto w-[220px] md:w-[320px] object-contain"
+                  className="h-auto w-[220px] md:w-[356px] object-contain"
                 />
                 </div>
               )}

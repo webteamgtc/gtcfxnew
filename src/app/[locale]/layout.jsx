@@ -3,7 +3,7 @@ import { locales } from '@/i18n/config';
 import { notFound } from 'next/navigation';
 import { LocaleProvider } from './LocaleProvider';
 import MainHeader from './components/common/MainHeader';
-// import MainFooter from './components/common/MainFooter';
+import MainFooter from './components/common/MainFooter';
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -33,7 +33,7 @@ export default async function LocaleLayout({ children, params }) {
       <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen">
         <MainHeader locale={locale} />
         <main>{children}</main>
-        {/* <MainFooter locale={locale} /> */}
+      <MainFooter locale={locale} /> 
       </div>
     </LocaleProvider>
   );

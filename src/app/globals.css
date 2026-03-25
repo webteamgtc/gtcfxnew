@@ -81,7 +81,7 @@ a:hover {
   }
 
   .TextSmall {
-    @apply text-[12px] leading-[1.5] font-normal;
+    @apply text-[12px] md:text-sm leading-[1.5] font-normal;
   }
 
   /* =========================
@@ -106,4 +106,24 @@ a:hover {
   width: 100% !important;
   max-width: 100%;
   box-sizing: border-box;
+}
+
+@layer components {
+  .marquee-track {
+    width: max-content;
+    animation: awards-marquee 50s linear infinite;
+  }
+
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes awards-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

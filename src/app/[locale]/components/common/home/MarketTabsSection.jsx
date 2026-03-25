@@ -175,7 +175,20 @@ export default function MarketTabsSection() {
             onActiveIndexChange={handleCarouselIndex}
             trackClassName="-mx-4 px-4"
             renderItem={(tab) => (
-              <div className="rounded-[14px] border border-[#ececec] bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.08)]">
+              <div className="rounded-[14px] border border-[#ececec] bg-white p-6 text-center">
+                 <div className="mt-8 flex justify-center">
+                  <div className="relative w-full max-w-[260px]">
+                    <Image
+                      src={tab.image}
+                      alt={tab.contentTitle}
+                      width={250}
+                      height={250}
+                      className="h-auto w-full object-contain"
+                    />
+                  </div>
+                </div>
+
+
                 <h3 className="HeadingH3 text-[#2f2f2f]">{tab.contentTitle}</h3>
 
                 <p className="Text mt-4">{tab.contentDescription}</p>
@@ -187,17 +200,7 @@ export default function MarketTabsSection() {
                   {tab.buttonText}
                 </Link>
 
-                <div className="mt-8 flex justify-center">
-                  <div className="relative w-full max-w-[260px]">
-                    <Image
-                      src={tab.image}
-                      alt={tab.contentTitle}
-                      width={250}
-                      height={250}
-                      className="h-auto w-full object-contain"
-                    />
-                  </div>
-                </div>
+               
               </div>
             )}
           />

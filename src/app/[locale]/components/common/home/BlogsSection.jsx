@@ -26,34 +26,36 @@ function IconClock({ className }) {
 
 const posts = [
   {
-    category: "Integrity",
-    title: "Building trust through transparent execution and clear pricing",
+    category: "Awards",
+    title:
+      "GTCFX Golden Falcon Awards 2025: Global Trading Excellence Shines in Dubai",
     readTime: "5 min read",
     date: "Mar 20, 2026",
     dateIso: "2026-03-20",
     href: "/",
-    image: null,
-    imageAlt: "Blog featured image",
+    imageSrc: "/home/one.webp",
+    imageAlt: "Awards featured image",
   },
   {
-    category: "Integrity",
-    title: "Building trust through transparent execution and clear pricing",
+    category: "GTC GO App",
+    title: "GTC Launches the Next-Generation Trading App: GTC GO is Now Live!",
     readTime: "5 min read",
     date: "Mar 20, 2026",
     dateIso: "2026-03-20",
     href: "/",
-    image: null,
-    imageAlt: "Blog featured image",
+    imageSrc: "/home/two.webp",
+    imageAlt: "GTC GO App featured image",
   },
   {
-    category: "Integrity",
-    title: "Building trust through transparent execution and clear pricing",
+    category: "Trading",
+    title:
+      "Demo Trading Competition: Traders Turn $10,000 into Over $400,000 in Just One Week!",
     readTime: "5 min read",
     date: "Mar 20, 2026",
     dateIso: "2026-03-20",
     href: "/",
-    image: null,
-    imageAlt: "Blog featured image",
+    imageSrc: "/home/one.webp",
+    imageAlt: "Trading featured image",
   },
 ];
 
@@ -69,12 +71,8 @@ function BlogCard({
 }) {
   return (
     <article className="flex h-full flex-col gap-2.5 md:gap-3">
-      <span className="inline-flex w-fit items-center rounded-full bg-primary px-3 py-1 text-[11px] font-medium text-white md:px-3.5 md:py-1.5 md:text-xs">
-        {category}
-      </span>
-
       <div
-        className="relative w-full shrink-0 overflow-hidden rounded-[10px] bg-[#d1d1d1] md:rounded-xl [&_img]:h-full [&_img]:w-full"
+        className="relative w-full shrink-0 overflow-hidden rounded-[10px] bg-[#d1d1d1] md:rounded-xl"
         style={{ aspectRatio: "16 / 9" }}
       >
         {imageSrc ? (
@@ -86,10 +84,15 @@ function BlogCard({
             sizes="(max-width: 768px) 100vw, 33vw"
           />
         ) : null}
+
+        {/* Category on image top-left */}
+        <span className="absolute left-3 top-3 inline-flex w-fit items-center rounded-full bg-secondary px-3 py-1 text-[11px] font-medium text-white md:px-3.5 md:py-1.5 md:text-xs">
+          {category}
+        </span>
       </div>
 
       <div className="mt-0.5 flex flex-1 flex-col gap-2 md:gap-2.5">
-        <h3 className="HeadingH4 text-[#2f2f2f]">{title}</h3>
+        <h3 className="HeadingH4 ">{title}</h3>
 
         <div className="mt-auto border-t border-[#2f2f2f]/25 pt-3">
           <div className="flex items-center justify-between gap-3">
@@ -102,6 +105,7 @@ function BlogCard({
                 {readTime} · {date}
               </time>
             </div>
+
             <Link
               href={href}
               className="TextSmall shrink-0 font-normal text-[#2f2f2f] underline decoration-[#2f2f2f] underline-offset-[3px] transition hover:opacity-80"
@@ -117,16 +121,18 @@ function BlogCard({
 
 export default function BlogsSection() {
   return (
-    <section className="pb-14 md:pb-20">
+    <section className="py-14 md:py-16">
       <div className="container">
-        <div className="mb-8 text-center md:mb-12 md:text-left">
-          <h2 className="HeadingH2">Keep up with Exness</h2>
-          <p className="Text max-w-2xl">
-            Stay on top of our news, product and technology updates, events, partnerships, and more.
+        <div className="mx-auto mb-10 flex max-w-4xl flex-col items-center gap-6 text-center md:mb-14">
+          <h2 className="HeadingH2">Latest Insights & Company Updates</h2>
+          <p className="Text">
+            Stay informed with the latest market insights, trading updates, and
+            company news. Explore expert analysis, educational content, and
+            important announcements from GTCFX.
           </p>
         </div>
 
-        <div className="hidden items-stretch max-w-6xl mx-auto gap-6 md:grid md:grid-cols-3 md:gap-8">
+        <div className="hidden max-w-6xl mx-auto items-stretch gap-6 md:grid md:grid-cols-3 md:gap-8">
           {posts.map((post, index) => (
             <BlogCard
               key={index}
@@ -136,7 +142,7 @@ export default function BlogsSection() {
               date={post.date}
               dateIso={post.dateIso}
               href={post.href}
-              imageSrc={post.image}
+              imageSrc={post.imageSrc}
               imageAlt={post.imageAlt}
             />
           ))}
@@ -154,7 +160,7 @@ export default function BlogsSection() {
                 date={post.date}
                 dateIso={post.dateIso}
                 href={post.href}
-                imageSrc={post.image}
+                imageSrc={post.imageSrc}
                 imageAlt={post.imageAlt}
               />
             )}

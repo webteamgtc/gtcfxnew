@@ -8,6 +8,7 @@ import TradingFeaturesSection from './components/common/home/TradingFeaturesSect
 import AppPromoSection from './components/common/home/AppPromoSection';
 import BlogsSection from './components/common/home/BlogsSection';
 import SecurityBanner from './components/common/home/SecurityBanner';
+import AwardsMarquee from './components/common/home/AwardsMarquee';
 
 
 export default async function HomePage({ params }) {
@@ -18,14 +19,16 @@ export default async function HomePage({ params }) {
   return (
    <>
    <HeroSection />
+   <AwardsMarquee />
    <FeaturesSection />
    <Counter />
    <MarketTabsSection />
    <MarketTicker />
    <TradingFeaturesSection />
+     <SecurityBanner />
    <AppPromoSection />
    <BlogsSection />
-   <SecurityBanner />
+ 
 
    </>
   );

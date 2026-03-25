@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import HeroStats from "./HeroStats";
+import PrimaryButton from "../PrimaryButton";
 
 export default function HeroSection() {
   return (
@@ -22,7 +23,7 @@ export default function HeroSection() {
         <div className="absolute inset-x-0 bottom-0 h-[220px] bg-gradient-to-b from-transparent to-white" />
 
         <div className="container relative z-10">
-          <div className="grid min-h-[720px] items-center gap-4 pt-10 pb-20 lg:grid-cols-2">
+          <div className="grid min-h-[720px] items-center gap-4 pt-10 lg:grid-cols-2">
             {/* Left Content */}
             <div className="pt-20 lg:pt-28">
               {/* Badge */}
@@ -53,22 +54,25 @@ export default function HeroSection() {
               </h2>
 
               {/* Stats pill */}
-           <HeroStats
-  items={[
-    {
-      icon: "/home/instru.svg",
-      label: "27,000+ Instruments",
-    },
-    {
-      icon: "/home/globel.svg",
-      label: "Global Liquidity",
-    },
-    {
-      icon: "/home/support.svg",
-      label: "24/7 Support",
-    },
-  ]}
-/>
+              <HeroStats
+                items={[
+                  {
+                    icon: "/home/instru.svg",
+                    label: "27,000+ Instruments",
+                  },
+                  {
+                    icon: "/home/globel.svg",
+                    label: "Global Liquidity",
+                  },
+                  {
+                    icon: "/home/support.svg",
+                    label: "24/7 Support",
+                  },
+                ]}
+              />
+              <PrimaryButton href="/register">
+                Open Live Account
+              </PrimaryButton>
             </div>
 
             {/* Right Image */}
