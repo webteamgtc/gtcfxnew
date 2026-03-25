@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import MobilePeekCarousel from "../MobilePeekCarousel";
 import PaymentMethodsSection from "./PaymentMethodsSection";
 
 export default function MarketTabsSection() {
@@ -78,6 +79,18 @@ export default function MarketTabsSection() {
   ];
 
   const currentTab = tabs.find((tab) => tab.key === activeTab) || tabs[0];
+  const activeTabIndex = Math.max(
+    0,
+    tabs.findIndex((tab) => tab.key === activeTab)
+  );
+
+  const tabsRef = useRef(tabs);
+  tabsRef.current = tabs;
+
+  const handleCarouselIndex = useCallback((index) => {
+    const tab = tabsRef.current[index];
+    if (tab) setActiveTab(tab.key);
+  }, []);
 
   return (
     <section className="py-10 md:py-16">
@@ -91,8 +104,8 @@ export default function MarketTabsSection() {
           </p>
         </div>
 
-        {/* Tabs */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-3 md:gap-4">
+        {/* Tabs — desktop */}
+        <div className="mt-12 hidden md:flex flex-wrap items-center justify-center gap-3 md:gap-4">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.key;
 
@@ -120,8 +133,8 @@ export default function MarketTabsSection() {
           })}
         </div>
 
-        {/* Changing Content */}
-        <div className="max-w-[1060px] mx-auto py-10 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+        {/* Changing Content — desktop */}
+        <div className="max-w-[1060px] mx-auto py-10 hidden md:grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left */}
           <div className="max-w-[420px]">
             <h3 className="HeadingH3 text-[#2f2f2f]">
@@ -153,6 +166,43 @@ export default function MarketTabsSection() {
             </div>
           </div>
         </div>
+
+        {/* Mobile carousel */}
+        <div className="mt-10 pb-12 md:hidden">
+          <MobilePeekCarousel
+            items={tabs}
+            initialIndex={activeTabIndex}
+            onActiveIndexChange={handleCarouselIndex}
+            trackClassName="-mx-4 px-4"
+            renderItem={(tab) => (
+              <div className="rounded-[14px] border border-[#ececec] bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.08)]">
+                <h3 className="HeadingH3 text-[#2f2f2f]">{tab.contentTitle}</h3>
+
+                <p className="Text mt-4">{tab.contentDescription}</p>
+
+                <Link
+                  href={tab.buttonLink}
+                  className="TextButton mt-8 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-white transition hover:opacity-90"
+                >
+                  {tab.buttonText}
+                </Link>
+
+                <div className="mt-8 flex justify-center">
+                  <div className="relative w-full max-w-[260px]">
+                    <Image
+                      src={tab.image}
+                      alt={tab.contentTitle}
+                      width={250}
+                      height={250}
+                      className="h-auto w-full object-contain"
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+          />
+        </div>
+
         <PaymentMethodsSection />
       </div>
     </section>

@@ -94,3 +94,16 @@ a:hover {
   }
 
 }
+
+/* MobilePeekCarousel: force one full-width slide (Swiper defaults can leave a peek) */
+.mobile-peek-swiper.swiper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.mobile-peek-swiper .swiper-slide {
+  width: 100% !important;
+  max-width: 100%;
+  box-sizing: border-box;
+}

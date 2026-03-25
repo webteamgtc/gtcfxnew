@@ -5,6 +5,8 @@ import Counter from './components/common/home/Counter';
 import MarketTabsSection from './components/common/home/MarketTabsSection';
 import MarketTicker from './components/common/home/MarketTicker';
 import TradingFeaturesSection from './components/common/home/TradingFeaturesSection';
+import AppPromoSection from './components/common/home/AppPromoSection';
+import BlogsSection from './components/common/home/BlogsSection';
 import SecurityBanner from './components/common/home/SecurityBanner';
 
 
@@ -21,6 +23,8 @@ export default async function HomePage({ params }) {
    <MarketTabsSection />
    <MarketTicker />
    <TradingFeaturesSection />
+   <AppPromoSection />
+   <BlogsSection />
    <SecurityBanner />
 
    </>
