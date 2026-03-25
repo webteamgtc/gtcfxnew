@@ -8,7 +8,7 @@ export default function PrimaryButton({
   className = "",
 }) {
   const base =
-    "inline-flex items-center justify-center rounded-full transition text-center duration-300 font-medium mt-10 mx-aut";
+    "inline-flex items-center justify-center rounded-full transition text-center duration-300 font-medium  hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary whitespace-nowrap";
 
   const variants = {
     primary: "bg-gradient-to-r hover:from-[#B68756] hover:via-[#995F22] hover:to-[#995F22] from-[#263788] via-[#101638] to-[#263788] text-white hover:opacity-90",

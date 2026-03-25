@@ -70,9 +70,15 @@ export default function HeroSection() {
                   },
                 ]}
               />
-              <PrimaryButton href="/register">
+              <div className="flex gap-2 md:gap-4 flex-row md:justify-center mt-10">
+                 <PrimaryButton href="/register">
                 Open Live Account
               </PrimaryButton>
+                <PrimaryButton variant="dark">
+  Free Demo Account
+</PrimaryButton>
+              </div>
+             
             </div>
 
             {/* Right Image */}

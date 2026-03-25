@@ -1,4 +1,5 @@
 import Image from "next/image";
+import PrimaryButton from "../PrimaryButton";
 
 export default function PaymentMethodsSection() {
   return (
@@ -28,7 +29,15 @@ export default function PaymentMethodsSection() {
       We accept payments online using Visa and MasterCard credit/debit
       card in AED (and/or any other available currency listed in the
       payments section).
-    </p>
+    </p> 
+     <div className="inline-flex gap-2 flex-col md:gap-4 md:flex-row md:justify-start">
+                     <PrimaryButton href="/register">
+                    Open Live Account
+                  </PrimaryButton>
+                    <PrimaryButton variant="dark">
+      Free Demo Account
+    </PrimaryButton>
+                  </div>
   </div>
 
 </div>

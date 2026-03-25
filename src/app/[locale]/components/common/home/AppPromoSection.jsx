@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import PrimaryButton from "../PrimaryButton";
 
 function IconGooglePlay({ className }) {
   return (
@@ -150,7 +151,7 @@ export default function AppPromoSection() {
               award-winning order execution and deep fluidity.
             </p>
 
-            <div className="md:mt-8 mt-4 flex flex-wrap items-start justify-center gap-10 lg:justify-start">
+            <div className="md:mt-8 mt-4 flex flex-wrap items-start justify-center lg:justify-start">
               <div>
                 <div className="flex items-center gap-2">
                   <span className="text-[28px] font-bold leading-none text-[#1a1a1a] md:text-[32px]">
@@ -168,7 +169,7 @@ export default function AppPromoSection() {
                 </div>
 
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 mb-5">
                 <p className="text-[28px] font-bold leading-none text-[#1a1a1a] md:text-[32px]">
                   15M
                 </p>
@@ -179,6 +180,9 @@ export default function AppPromoSection() {
                   15+ million downloads
                 </p>
               </div>
+              <PrimaryButton href="/register">
+                Open Live Account
+              </PrimaryButton>
             </div>
           </div>
 
