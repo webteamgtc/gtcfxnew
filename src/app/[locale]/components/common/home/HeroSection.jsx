@@ -38,7 +38,7 @@ export default function HeroSection() {
 
               {/* Heading */}
               <h1 className="HeadingH1">
-                Trade Global Markets with Confidence
+                Trade Global Markets with <span className="text-secondary">Confidence</span>
               </h1>
 
               {/* Description */}

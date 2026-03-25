@@ -143,7 +143,7 @@ export default function AppPromoSection() {
           <div className="order-2 text-center lg:order-1 lg:col-span-5 lg:text-left flex flex-col gap-6 md:gap-8  items-center lg:items-start">
             <h2 className="HeadingH2">
               Trade. Invest. Earn
-              All in one app.
+             <span className="text-secondary"> All in one App.</span>
             </h2>
             <p className="Text">
               Trade the CFD market on the go with our mobile application and

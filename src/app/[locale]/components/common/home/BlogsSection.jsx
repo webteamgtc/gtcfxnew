@@ -124,7 +124,7 @@ export default function BlogsSection() {
     <section className="py-14 md:py-16">
       <div className="container">
         <div className="mx-auto mb-10 flex max-w-4xl flex-col items-center gap-6 text-center md:mb-14">
-          <h2 className="HeadingH2">Latest Insights & Company Updates</h2>
+          <h2 className="HeadingH2">Latest Insights <span className="text-secondary"> & </span> Company Updates</h2>
           <p className="Text">
             Stay informed with the latest market insights, trading updates, and
             company news. Explore expert analysis, educational content, and

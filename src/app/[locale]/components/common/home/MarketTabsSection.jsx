@@ -9,11 +9,7 @@ import PaymentMethodsSection from "./PaymentMethodsSection";
 export default function MarketTabsSection() {
   const [activeTab, setActiveTab] = useState("forex");
 
-  const sectionTitle = "Direct Access to Top Tier Liquidity Provider";
-  const sectionDescription =
-    "GTCFX is a trusted liquidity provider that gives you access to easy-to-use FX liquidity platforms. With our liquidity solutions, you can trade efficiently at low costs and with fast execution. You can count on our transparent and reliable service, ensuring your trades remain private. With our state-of-the-art technology and dedicated team, we support your business in liquidity trading.";
-
-  const tabs = [
+    const tabs = [
     {
       key: "forex",
       label: "Forex CFDs",
@@ -97,10 +93,10 @@ export default function MarketTabsSection() {
       <div className="container">
         {/* Fixed Heading */}
         <div className="mx-auto max-w-[1100px] text-center flex flex-col items-center gap-8">
-          <h2 className="HeadingH2 max-w-[600px] mx-auto">{sectionTitle}</h2>
+          <h2 className="HeadingH2 max-w-[600px] mx-auto">Direct Access to <span className="text-secondary">Top Tier Liquidity </span>Provider</h2>
 
           <p className="Text">
-            {sectionDescription}
+            GTCFX is a trusted liquidity provider that gives you access to easy-to-use FX liquidity platforms. With our liquidity solutions, you can trade efficiently at low costs and with fast execution. You can count on our transparent and reliable service, ensuring your trades remain private. With our state-of-the-art technology and dedicated team, we support your business in liquidity trading.
           </p>
         </div>
 

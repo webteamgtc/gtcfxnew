@@ -89,7 +89,7 @@ export default function FeaturesSection() {
         <div className="text-center flex flex-col items-center gap-8">
           <h2 className="HeadingH2">
             Invest with the World's <br className="hidden md:block" />
-            Premier Online Trading Platform
+            <span className="text-secondary">Premier Online Trading</span> Platform
           </h2>
 
           <p className="Text">
@@ -113,7 +113,7 @@ export default function FeaturesSection() {
             )}
           />
         </div>
-<div className="flex justify-center mt-5 md:mt-0"><PrimaryButton href="/register">
+<div className="flex justify-center mt-5 md:mt-8"><PrimaryButton href="/register">
   Open Live Account
 </PrimaryButton></div>
         
