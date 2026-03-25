@@ -113,7 +113,7 @@ export default function FeaturesSection() {
             )}
           />
         </div>
-<div className="flex justify-center"><PrimaryButton href="/register">
+<div className="flex justify-center mt-5 md:mt-0"><PrimaryButton href="/register">
   Open Live Account
 </PrimaryButton></div>
         

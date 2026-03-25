@@ -70,7 +70,7 @@ export default function HeroSection() {
                   },
                 ]}
               />
-              <div className="flex gap-2 md:gap-4 flex-row md:justify-center mt-10">
+              <div className="flex md:inline-flex gap-2 md:gap-4 flex-row md:justify-center mt-10">
                  <PrimaryButton href="/register">
                 Open Live Account
               </PrimaryButton>
