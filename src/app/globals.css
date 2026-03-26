@@ -127,3 +127,22 @@ a:hover {
     transform: translateX(-50%);
   }
 }
+
+@layer components {
+  .hero-swiper .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #101638; /* 🔵 your primary blue */
+    opacity: 0.9;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+  }
+
+  .hero-swiper .swiper-pagination-bullet-active {
+    width: 28px;
+    height: 8px;
+    background: #b68756; /* 🟡 secondary (gold) */
+    opacity: 1;
+    border-radius: 9999px;
+  }
+}

@@ -34,7 +34,7 @@ export default function MainHeader({ locale = 'en' }) {
             >
           {/* Top Nav Bar */}
          <div
-            className={`flex  min-h-[60px] md:min-h-[100px] items-center justify-between px-5 lg:px-6 ${
+            className={`flex  min-h-[60px] md:min-h-[85px] items-center justify-between px-5 lg:px-6 ${
                 activeMegaMenu
                 ? "rounded-t-[16px] rounded-b-none"
                 : "rounded-[16px]"

@@ -9,7 +9,8 @@ import BlogsSection from '../components/common/home/BlogsSection';
 import SecurityBanner from '../components/common/home/SecurityBanner';
 import AwardsMarquee from '../components/common/home/AwardsMarquee';
 import RevealOnScroll from '../components/RevealOnScroll';
-import HeroSection from '../components/common/home/HeroSection';
+import HeroSection from '../components/home2/HeroSection';
+import AwardsTropy from '../components/home2/AwardsTropy';
 
 
 export default async function HomePage({ params }) {
@@ -19,35 +20,37 @@ export default async function HomePage({ params }) {
 
   return (
    <>
-   <HeroSection/>
-   <RevealOnScroll>
-  <Counter />
+   <HeroSection />
+  <RevealOnScroll>
+  <MarketTicker />
 </RevealOnScroll>
-  
-
 <RevealOnScroll>
   <FeaturesSection />
 </RevealOnScroll>
 
-<RevealOnScroll>
-  <SecurityBanner />
+
+
+
+
+ 
+  <RevealOnScroll>
+  <AwardsTropy />
 </RevealOnScroll>
+
 
 <RevealOnScroll>
   <MarketTabsSection />
 </RevealOnScroll>
-
 <RevealOnScroll>
-  <MarketTicker />
+  <SecurityBanner />
 </RevealOnScroll>
+
 
 <RevealOnScroll>
   <TradingFeaturesSection />
 </RevealOnScroll>
 
-<RevealOnScroll>
-  <AwardsMarquee />
-</RevealOnScroll>
+
 
 <RevealOnScroll>
   <AppPromoSection />

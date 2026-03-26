@@ -136,7 +136,7 @@ function PhoneTrade({ className }) {
 
 export default function AppPromoSection() {
   return (
-    <section className="bg-[#F1F2F4] py-10 lg:py-16">
+    <section className="bg-[#F1F2F4] py-10 lg:py-16 border-t border-b border-gray-300">
       <div className="max-w-6xl mx-auto px-4 md:px-0">
         <div className="grid items-center gap-4 lg:grid-cols-12 justify-center md:gap-10">
           {/* Left — copy + social proof */}
