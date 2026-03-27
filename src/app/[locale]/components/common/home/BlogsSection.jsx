@@ -121,7 +121,7 @@ function BlogCard({
 
 export default function BlogsSection() {
   return (
-    <section className="py-14 md:py-16">
+    <section className="py-10 md:py-16">
       <div className="container">
         <div className="mx-auto mb-10 flex max-w-4xl flex-col items-center gap-6 text-center md:mb-14">
           <h2 className="HeadingH2">Latest Insights <span className="text-secondary"> & </span> Company Updates</h2>

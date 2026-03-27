@@ -202,7 +202,6 @@ export default function MarketTabsSection() {
           />
         </div>
 
-        <PaymentMethodsSection />
       </div>
     </section>
   );

@@ -1,16 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import MegaMenuPanel from "./MegaMenuPanel";
 import { megaMenuData } from "./megaMenuData";
 import LanguageSwitcher from "./LanguageSwitcher";
 import Image from "next/image";
+import DownloadQR from "./DownloadQR";
 
-export default function MainHeader({ locale = 'en' }) {
+export default function MainHeader({ locale = "en" }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeMegaMenu, setActiveMegaMenu] = useState(null);
   const [mobileExpanded, setMobileExpanded] = useState(null);
+  const [scrolled, setScrolled] = useState(false);
 
   const navItems = [
     { label: "About Us", key: "about" },
@@ -19,37 +21,52 @@ export default function MainHeader({ locale = 'en' }) {
     { label: "Prime & Tech", key: "prime" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 30);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const toggleMobileSection = (key) => {
     setMobileExpanded((prev) => (prev === key ? null : key));
   };
 
   return (
-    <header className="absolute z-50 w-full py-4">
+    <header
+      className={`fixed left-0 top-0 z-50 w-full py-3 transition-all duration-300 ${
+        scrolled ? "bg-white/10 backdrop-blur-md" : "bg-transparent"
+      }`}
+    >
       <div className="container">
         <div
-            className={`relative bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] ${
-                activeMegaMenu ? "rounded-t-[16px]" : "rounded-[16px]"
-            }`}
-            onMouseLeave={() => setActiveMegaMenu(null)}
-            >
-          {/* Top Nav Bar */}
-         <div
-            className={`flex  min-h-[60px] md:min-h-[85px] items-center justify-between px-5 lg:px-6 ${
-                activeMegaMenu
-                ? "rounded-t-[16px] rounded-b-none"
-                : "rounded-[16px]"
-            }`}
-            >
+          className={`relative bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all duration-300 ${
+            activeMegaMenu ? "rounded-t-[16px]" : "rounded-[16px]"
+          }`}
+          onMouseLeave={() => setActiveMegaMenu(null)}
+        >
+          <div
+            className={`flex items-center justify-between px-5 lg:px-6 transition-all duration-300 ${
+              activeMegaMenu ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"
+            } ${scrolled ? "min-h-[58px] md:min-h-[74px]" : "min-h-[60px] md:min-h-[85px]"}`}
+          >
             {/* Logo */}
             <Link href="/" className="flex shrink-0 items-center">
               <Image
-        src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/logo-2024-new.webp"
-        width={200}
-        height={72}
-        alt="GTCFX"
-        className="lg:w-[200px] lg:h-[72px] md:w-[120px] md:h-[53px] w-[130px] h-[47px] cursor-pointer"
-        onClick={() => router.push("/", { locale })}
-      />
+                src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/logo-2024-new.webp"
+                width={200}
+                height={72}
+                alt="GTCFX"
+                priority
+                className={`cursor-pointer object-contain transition-all duration-300 ${
+                  scrolled
+                    ? "w-[120px] h-[42px] md:w-[150px] md:h-[54px]"
+                    : "w-[130px] h-[47px] md:w-[120px] md:h-[53px] lg:w-[200px] lg:h-[72px]"
+                }`}
+              />
             </Link>
 
             {/* Desktop Nav */}
@@ -105,6 +122,7 @@ export default function MainHeader({ locale = 'en' }) {
               </Link>
 
               <LanguageSwitcher locale={locale} />
+              <DownloadQR />
             </div>
 
             {/* Mobile Toggle */}
@@ -140,10 +158,8 @@ export default function MainHeader({ locale = 'en' }) {
             </button>
           </div>
 
-          {/* Desktop Mega Menu */}
           <MegaMenuPanel menu={megaMenuData[activeMegaMenu]} />
 
-          {/* Mobile Menu */}
           {mobileOpen && (
             <div className="border-t border-[#ececec] px-5 py-5 lg:hidden">
               <nav className="flex flex-col">

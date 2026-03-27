@@ -11,6 +11,7 @@ import AwardsMarquee from '../components/common/home/AwardsMarquee';
 import RevealOnScroll from '../components/RevealOnScroll';
 import HeroSection from '../components/home2/HeroSection';
 import AwardsTropy from '../components/home2/AwardsTropy';
+import PlatformsSection from '../components/home2/PlatformsSection';
 
 
 export default async function HomePage({ params }) {
@@ -53,7 +54,7 @@ export default async function HomePage({ params }) {
 
 
 <RevealOnScroll>
-  <AppPromoSection />
+ <PlatformsSection/>
 </RevealOnScroll>
 
 <RevealOnScroll>
