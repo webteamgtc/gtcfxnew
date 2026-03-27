@@ -205,7 +205,7 @@ export default function HeroSection() {
                   </div>
 
                   <div className="relative flex w-full justify-end h-96 md:h-[500px]">
-                    <div className="relative w-full max-w-[650px]">
+                    <div className="relative w-full max-w-[650px] mr-[-60px]">
                       <Image
                         src={slide.image}
                         alt={slide.imageAlt}

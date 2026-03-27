@@ -41,7 +41,7 @@ export default function PlatformsSection() {
         </div>
 
         {/* Center Image */}
-       <div className="flex justify-center my-5">
+           <div className="flex justify-center my-5">
   <div className="relative w-full max-w-[1000px] aspect-[2/1]">
     <Image
       src="/home/mobile-rep.webp"
@@ -51,6 +51,7 @@ export default function PlatformsSection() {
     />
   </div>
 </div>
+
 
         {/* Bottom Icons */}
         <div className="flex flex-wrap justify-center gap-3 md:gap-20 max-w-5xl mx-auto bg-white p-2 md:rounded-full border border-gray-300">

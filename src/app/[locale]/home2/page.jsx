@@ -33,9 +33,8 @@ export default async function HomePage({ params }) {
 
 
 
- 
-  <RevealOnScroll>
- <AwardsMarquee />
+<RevealOnScroll>
+  <Counter />
 </RevealOnScroll>
 
 
@@ -43,8 +42,9 @@ export default async function HomePage({ params }) {
   <MarketTabsSection />
 </RevealOnScroll>
 
+
 <RevealOnScroll>
-  <Counter />
+  <SecurityBanner />
 </RevealOnScroll>
 
 
@@ -55,12 +55,9 @@ export default async function HomePage({ params }) {
 
 
 <RevealOnScroll>
-  <SecurityBanner />
-</RevealOnScroll>
-
-<RevealOnScroll>
  <PlatformsSection/>
 </RevealOnScroll>
+
 
 <RevealOnScroll>
   <BlogsSection />
