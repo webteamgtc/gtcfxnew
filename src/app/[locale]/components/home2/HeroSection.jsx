@@ -167,7 +167,7 @@ export default function HeroSection() {
           >
             {heroSlides.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="grid min-h-[720px] items-center gap-4 pt-10 lg:grid-cols-2">
+                <div className="grid min-h-[780px] items-center gap-4 pt-10 lg:grid-cols-2 md:pb-16">
                   <div className="pt-20 lg:pt-28">
                     <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-gray-500 bg-white px-4 py-2 shadow-[0_6px_20px_rgba(0,0,0,0.08)]">
                       <span className="rounded-full bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] px-3 py-2 text-[11px] font-semibold uppercase leading-none text-white">

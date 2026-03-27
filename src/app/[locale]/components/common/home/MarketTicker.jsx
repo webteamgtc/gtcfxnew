@@ -15,7 +15,7 @@ export default function MarketTicker() {
             className="pts-assets-ticker tape-cards"
             data-icons="true"
             data-assets="btcusd,usdjpy,eurusd,gbpusd"
-            data-direction="right"
+            data-direction="left"
             data-speed="10"
             data-chart="baseline"
           ></div>

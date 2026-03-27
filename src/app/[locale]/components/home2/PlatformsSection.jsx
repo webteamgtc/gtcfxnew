@@ -3,8 +3,13 @@ import Link from "next/link";
 const platforms = [
   {
     icon: "/home/gtcfx.svg",
-    title: "GTC Trading Platform",
+    title: "Client Portal",
     link: "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww",
+  },
+   {
+    icon: "/home/gtcfx.svg",
+    title: "GTC Go App",
+    link: "https://qrcodes.pro/YW9ULf",
   },
   {
     icon: "/home/mt4.svg",
@@ -16,11 +21,7 @@ const platforms = [
     title: "MT5 Trading Platform",
     link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe",
   },
-  {
-    icon: "/home/gtcfx.svg",
-    title: "GTC Go Mobile App",
-    link: "https://qrcodes.pro/YW9ULf",
-  },
+ 
 ];
 
 export default function PlatformsSection() {
@@ -40,19 +41,19 @@ export default function PlatformsSection() {
         </div>
 
         {/* Center Image */}
-        <div className="flex justify-center my-5">
-          <div className="relative w-full max-w-[1000px] h-[320px] md:h-[450px] lg:h-[500px]">
-            <Image
-              src="/home/mobile-rep.webp" // 👈 your image
-              alt="Trading Platforms"
-              fill
-              className="object-contain"
-            />
-          </div>
-        </div>
+       <div className="flex justify-center my-5">
+  <div className="relative w-full max-w-[1000px] aspect-[2/1]">
+    <Image
+      src="/home/mobile-rep.webp"
+      alt="Trading Platforms"
+      fill
+      className="object-contain"
+    />
+  </div>
+</div>
 
         {/* Bottom Icons */}
-        <div className="flex flex-wrap justify-center gap-3 md:gap-14 max-w-5xl mx-auto bg-white p-2 md:rounded-full border border-gray-300">
+        <div className="flex flex-wrap justify-center gap-3 md:gap-20 max-w-5xl mx-auto bg-white p-2 md:rounded-full border border-gray-300">
           {platforms.map((item, index) => (
            <Link
       key={index}
