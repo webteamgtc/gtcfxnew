@@ -1,121 +1,122 @@
 export const megaMenuData = {
-  about: {
-    title: "About Us",
-    columns: [
-      {
-        heading: "Who we are",
-        links: [
-          { label: "Our story", href: "/about/our-story" },
-          { label: "Why GTCFX", href: "/about/why-gtcfx" },
-          { label: "Global presence", href: "/about/global-presence" },
-        ],
-      },
-      {
-        heading: "Company",
-        links: [
-          { label: "Leadership", href: "/about/leadership" },
-          { label: "Careers", href: "/about/careers" },
-          { label: "Contact us", href: "/contact" },
-        ],
-      },
-      {
-        heading: "Trust",
-        links: [
-          { label: "Security", href: "/about/security" },
-          { label: "Compliance", href: "/about/compliance" },
-          { label: "Client protection", href: "/about/client-protection" },
-        ],
-      },
-      {
-        heading: "Resources",
-        links: [
-          { label: "News", href: "/news" },
-          { label: "Announcements", href: "/announcements" },
-          { label: "Support", href: "/support" },
-        ],
-      },
-    ],
-  },
+about: {
+  title: "About Us",
+  columns: [
+    {
+      heading: "Who we are",
+      links: [
+        { label: "About GTCFX", href: "/about-us" },
+        { label: "Why GTCFX", href: "/why-gtc-group" },
+        { label: "Regulations", href: "/about/global-presence" },
+       
+      ],
+    },
+    {
+      heading: "Company",
+      links: [
+        { label: "GTCFX Global Presence", href: "/about/global-presence" },
+        { label: "GTCFX Awards", href: "/about/leadership" },
+        { label: "Fund Security", href: "/about/security" },
+      ],
+    },
+    {
+      heading: "Highlights",
+      links: [
+        { label: "Market Insights", href: "/news" },
+        { label: "Company News", href: "/announcements" },
+        { label: "Earnings & Dividends Calendar", href: "/support" },
+        { label: "Economic Calendar & News", href: "/support" },
+        { label: "Trading Hours & Holidays", href: "/support" },
+      ],
+    },
+    {
+      heading: "Get in Touch",
+      links: [
+        { label: "Careers", href: "/about/careers" }, // moved here for better UX
+        { label: "Contact Us", href: "/contact" },
+       
+      ],
+    },
+  ],
+},
 
-  account: {
-    title: "Account",
-    columns: [
-      {
-        heading: "Getting started",
-        links: [
-          { label: "Open live account", href: "/account/live" },
-          { label: "Open demo account", href: "/account/demo" },
-          { label: "Account verification", href: "/account/verification" },
-        ],
-      },
-      {
-        heading: "Funding",
-        links: [
-          { label: "Deposits", href: "/account/deposits" },
-          { label: "Withdrawals", href: "/account/withdrawals" },
-          { label: "Transfer funds", href: "/account/transfers" },
-        ],
-      },
-      {
-        heading: "Manage account",
-        links: [
-          { label: "Client portal", href: "/account/portal" },
-          { label: "Account types", href: "/account/types" },
-          { label: "Leverage", href: "/account/leverage" },
-        ],
-      },
-      {
-        heading: "Support",
-        links: [
-          { label: "FAQs", href: "/faq" },
-          { label: "Help center", href: "/support" },
-          { label: "Contact team", href: "/contact" },
-        ],
-      },
-    ],
-  },
-
+account: {
+  title: "Account",
+  columns: [
+    {
+      heading: "Get Started",
+      links: [
+        { label: "Open Live Account", href: "/account/live" },
+        { label: "Open Demo Account", href: "/account/demo" },
+        { label: "Fund Your Account", href: "/account/verification" },
+      ],
+    },
+    {
+      heading: "Fund & Transfer",
+      links: [
+        { label: "Deposit Funds", href: "/account/deposits" },
+        { label: "Withdraw Funds", href: "/account/withdrawals" },
+        { label: "Internal Transfers", href: "/account/transfers" },
+      ],
+    },
+    {
+      heading: "Account Management",
+      links: [
+        { label: "Swap Update", href: "/account/portal" },
+        { label: "Swap-Free Trading", href: "/account/types" },
+        { label: " Dynamic Leverage", href: "/account/leverage" },
+      ],
+    },
+    {
+      heading: "Support",
+      links: [
+        { label: "Glossary/FAQ's", href: "/faq" },
+        { label: "Tutorial Videos", href: "/support" },
+        { label: "Contact Us", href: "/contact" },
+      ],
+    },
+  ],
+},
   trading: {
     title: "Trading",
     columns: [
-      {
-        heading: "Ways to trade",
-        links: [
-          { label: "CFD trading", href: "/trading/cfd-trading" },
-          { label: "Rebates for All Traders", href: "/trading/rebates" },
-        ],
-      },
-      {
-        heading: "Trading platforms",
-        links: [
-          { label: "All platforms", href: "/platforms" },
-          { label: "Web platform", href: "/platforms/web" },
-          { label: "Mobile apps", href: "/platforms/mobile" },
-          { label: "TradingView", href: "/platforms/tradingview" },
-          { label: "MT4", href: "/platforms/mt4" },
-          { label: "API documentation", href: "/platforms/api" },
-          { label: "MT5", href: "/platforms/mt5" },
-        ],
-      },
-      {
-        heading: "Trading info",
-        links: [
-          { label: "Margin Calls", href: "/trading/margin-calls" },
-          { label: "How withdrawals work", href: "/trading/withdrawals" },
-          { label: "24/5 index CFD trading", href: "/trading/index-cfd" },
-          { label: "Fraud prevention", href: "/trading/fraud-prevention" },
-        ],
-      },
-      {
-        heading: "Trading tools",
-        links: [
-          { label: "Crypto Calculator", href: "/tools/crypto-calculator" },
-          { label: "Currency strength meter", href: "/tools/currency-strength" },
-          { label: "Forex Calculator", href: "/tools/forex-calculator" },
-          { label: "Demo trading", href: "/tools/demo-trading" },
-          { label: "CFD calculator", href: "/tools/cfd-calculator" },
-        ],
-      },
+     {
+      heading: "Instruments",
+      links: [
+        { label: "Forex CFDs", href: "/trading/cfd-trading" },
+        { label: "Energies CFDs", href: "/trading/rebates" },
+        { label: "Commodities CFDs", href: "/trading/commodities" },
+        { label: "Equity Indices CFDs", href: "/trading/index-cfd" },
+        { label: "Metals CFDs", href: "/trading/metals" },
+      ],
+    },
+    {
+      heading: "Platforms",
+      links: [
+        { label: "MT4 Trading Platform", href: "/platforms/mt4" },
+        { label: "MT5 Trading Platform", href: "/platforms/mt5" },
+        { label: "Download Trading Platform", href: "/platforms" },
+      ],
+    },
+    {
+      heading: "Trading Hub",
+      links: [
+        { label: "Account Tutorial Videos", href: "/tools/demo-trading" },
+        { label: "Glossary & FAQs", href: "/trading/margin-calls" },
+        { label: "Dynamic Leverage", href: "/trading/withdrawals" },
+        { label: "Swap Update", href: "/trading/fraud-prevention" },
+        { label: "Swap-Free Trading at GTCFX", href: "/tools/cfd-calculator" },
+      ],
+    },
+    {
+      heading: "Trading Tools",
+      links: [
+        { label: "Forex Calculator", href: "/tools/forex-calculator" },
+        { label: "CFD Calculator", href: "/tools/cfd-calculator" },
+       
+        { label: "Demo Trading", href: "/tools/demo-trading" },
+      ],
+    },
     ],
   },
 

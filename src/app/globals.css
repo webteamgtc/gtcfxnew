@@ -34,6 +34,8 @@ a:hover {
 
 @layer components {
 
+
+  
   /* =========================
      HEADINGS
   ========================= */
@@ -41,9 +43,9 @@ a:hover {
   .HeadingH1 {
     @apply text-[32px] leading-[1.1] font-semibold tracking-[-0.02em] text-white
            md:text-[44px]
-           xl:text-[50px]
-           4xl:text-[54px]
-           6xl:text-[64px];
+           xl:text-[55px]
+           4xl:text-[56px]
+           6xl:text-[58px];
   }
 
   .HeadingH2 {

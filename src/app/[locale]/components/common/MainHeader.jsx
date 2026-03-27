@@ -116,7 +116,7 @@ export default function MainHeader({ locale = "en" }) {
 
               <Link
                 href="/partner-with-us"
-                className="inline-flex h-10 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
+                className="inline-flex h-10 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] md:text-[px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
               >
                 Partner With Us
               </Link>

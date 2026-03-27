@@ -169,7 +169,7 @@ export default function MainFooter() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 flex flex-col gap-3 md:flex-row md:items-center bg-white text-center justify-center text-primary py-2 text-xs md:text-sm rounded-lg">
+        <div className="mt-12 flex flex-col gap-3 md:flex-row md:items-center bg-primary text-center justify-center text-white py-2 text-xs md:text-sm rounded-lg">
           © COPYRIGHT 2026 GTCFX - ALL RIGHTS RESERVED
         </div>
       </div>
