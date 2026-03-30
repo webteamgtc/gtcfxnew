@@ -33,7 +33,7 @@ about: {
       heading: "Get in Touch",
       links: [
         { label: "Careers", href: "/about/careers" }, // moved here for better UX
-        { label: "Contact Us", href: "/contact" },
+        { label: "Contact Us", href: "/contact-us" },
        
       ],
     },
