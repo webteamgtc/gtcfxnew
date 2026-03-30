@@ -56,7 +56,7 @@ const CompanyIntro = () => {
           {aboutItems.map((item, index) => (
             <div
               key={index}
-              className="rounded-3xl border border-[#E5E7EB] bg-white p-6 shadow-sm transition hover:shadow-md md:p-8"
+              className="rounded-3xl border border-[#E5E7EB] bg-[#F1F2F4] p-6 shadow-sm transition hover:shadow-md md:p-8"
             >
               <div className="flex flex-col gap-4 md:flex-row md:items-start md:gap-8">
                 <div className="md:w-[220px] md:flex-shrink-0">

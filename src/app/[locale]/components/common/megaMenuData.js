@@ -6,8 +6,8 @@ about: {
       heading: "Who we are",
       links: [
         { label: "About GTCFX", href: "/about-us" },
-        { label: "Why GTCFX", href: "/why-gtc-group" },
-        { label: "Regulations", href: "/about/global-presence" },
+        { label: "Why GTC Group", href: "/why-gtc-group" },
+        { label: "Regulations", href: "/global-presence" },
        
       ],
     },
