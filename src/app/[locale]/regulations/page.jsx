@@ -21,7 +21,7 @@ export default async function AboutPage({ params }) {
     <>
       <InnerPageBanner
         description="GTC Group LLC-FZ, a limited liability company registered in the UAE, owns the following entities globally, together the GTC Financial Group."
-        backgroundImage="/breadcamp/regulation.webp"
+        backgroundImage="/breadcamp/regulations.webp"
         mobileBackgroundImage="/breadcamp/about-mobile.webp"
       />
 
