@@ -4,6 +4,7 @@ import CompanyIntro from "../components/about/CompanyIntro";
 import AwardsMarquee from "../components/common/home/AwardsMarquee";
 import Counter from "../components/common/home/Counter";
 import ReviewsSection from "../components/common/ReviewsSection";
+import WhyChooseGTC from "../components/about/WhyChooseGTC";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -27,10 +28,8 @@ export default async function AboutPage({ params }) {
         backgroundImage="/breadcamp/about.webp"
         mobileBackgroundImage="/breadcamp/about-mobile.webp"
       />
-      <AwardsMarquee />
-      <CompanyIntro />
-      <Counter />
-      <ReviewsSection />
+      <WhyChooseGTC />
+  
 
       {/* other sections */}
     </>
