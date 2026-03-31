@@ -25,5 +25,187 @@
   "nav": {
     "home": "Home",
     "about": "About"
+  },
+  "contactUsForm": {
+    "registrationStatusLabel": "Are you a registered client?",
+    "registrationStatusSelect": "Select registration status",
+    "registrationStatusRegistered": "Registered",
+    "registrationStatusNotRegistered": "Not Registered",
+
+    "queryTypeLabel": "Query type",
+    "queryTypeSelect": "Select query type",
+    "queryTypeGeneral": "General Query",
+    "queryTypeCompliance": "Compliance Query",
+
+    "ticketTypeLabel": "Ticket type",
+    "ticketTypeSelect": "Select ticket type",
+    "ticketTypeAccountRegistration": "Account/Registration",
+    "ticketTypeDeposits": "Deposits",
+    "ticketTypeWithdrawals": "Withdrawals",
+    "ticketTypeTradingAccountQueries": "Trading account queries",
+    "ticketTypeAccountOpeningLinks": "Add account opening links",
+    "ticketTypePartnerClientTransfer": "Partner / Client Transfer Request",
+    "ticketTypePromotionsBonuses": "Promotions/Bonuses",
+    "ticketTypeTradingInvestigation": "Trading investigation",
+    "ticketTypeKycQueries": "KYC queries",
+    "ticketTypeOther": "Other",
+
+    "tradeAccountLabel": "Trade account",
+    "tradeAccountPlaceholder": "Trade account",
+
+    "transactionIdsLabel": "Transaction ID(s)",
+    "transactionIdsPlaceholder": "Transaction ID(s)",
+
+    "tradeOrderIdsLabel": "Trade order(s) ID",
+    "tradeOrderIdsPlaceholder": "Trade order(s) ID",
+
+    "dateTimeIncidentLabel": "Date and time of incident",
+    "dateTimeIncidentPlaceholder": "e.g. 2024-01-15 14:30",
+
+    "promotionBonusTypeLabel": "Promotion/Bonus type",
+    "promotionBonusTypeSelect": "Select type",
+    "promotionBonusTypeIssue": "Issue",
+    "promotionBonusTypeRequest": "Request",
+
+    "depositAmountLabel": "Deposit amount",
+    "depositAmountPlaceholder": "Deposit amount",
+
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Subject",
+
+    "firstNameLabel": "First name",
+    "firstNamePlaceholder": "First name",
+    "lastNameLabel": "Last name",
+    "lastNamePlaceholder": "Last name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Email",
+    "phoneLabel": "Phone number",
+    "countryLabel": "Country",
+    "countrySelect": "Select country",
+
+    "ticketDescriptionLabel": "Ticket description",
+    "ticketDescriptionPlaceholder": "Detailed explanation of your case...",
+
+    "depositDisclaimer": "Please make sure your deposit details are correct before submitting.",
+    "withdrawalDisclaimer": "Please ensure your withdrawal details are correct before submitting.",
+
+    "attachmentLabel": "Attachment",
+    "attachmentOptional": "(optional)",
+    "attachmentHelp": "Screenshots, receipts, logs, or supporting documents.",
+
+    "submitDisclaimer": "After submitting the form, you will receive an email with your case number.",
+    "sending": "Sending...",
+    "submit": "Submit",
+
+    "termsPrefix": "By clicking Submit, I confirm that: (1) I have read and agree to the",
+    "termsLinkText": "Client Agreements;",
+    "termsSuffix": "2) I consent to GTCFX contacting me at reasonable times; and (3) my number is not on the Do Not Call Register (DNCR).",
+
+    "toastSubmitted": "Submitted successfully.",
+    "toastError": "An error occurred.",
+
+    "errorRegistrationStatus": "Registration status is required",
+    "errorQueryType": "Query type is required",
+    "errorInvalidEmail": "Invalid email",
+    "errorEmail": "Email is required",
+    "errorMinLetters": "At least 2 letters",
+    "errorFirstName": "First name is required",
+    "errorLastName": "Last name is required",
+    "errorPhone": "Phone is required",
+    "errorCountry": "Country is required",
+    "errorSubject": "Subject is required",
+    "errorDescription": "Description is required",
+    "errorCaptcha": "Please complete the captcha",
+    "errorTicketType": "Ticket type is required",
+    "errorPromotionBonusType": "Promotion/Bonus type is required",
+    "errorTradeAccount": "Trade account is required",
+    "errorTradeOrderIds": "Trade order(s) ID is required",
+    "errorDateTimeIncident": "Date and time of incident is required"
+  },
+  "contactUsToolFree": {
+    "whatsappHeading": "WhatsApp Contact",
+    "whatsappNumber": "+44 800 048 8461",
+    "whatsappHref": "https://wa.me/448000488461",
+    "globalHeading": "Call Us Global Toll Free",
+    "globalPrimaryNumber": "800 667788",
+    "globalPrimaryHref": "tel:+971800667788"
+  },
+  "earningsPage": {
+    "bannerTitle": "Earnings & Dividends Calendar",
+    "bannerPara": "Our earnings & dividends calendar below shows the next earnings releases as well as the dividend dates for every share and index CFD you can trade with GTC. We also recommend checking this calendar before trading stocks and indices.",
+    "bannerDatePrefix": "Ex-Dividend:",
+    "howToCalculateHeading": "How to Calculate Dividend",
+    "howToCalculateTitle1": "Dividend payment received when holding a long position:",
+    "howToCalculatePara1": "Dividend Payment = Component Dividend (per index contract) × Contract Size × Volume × Currency Multiplier × Account Currency Multiplier",
+    "howToCalculateTitle2": "Dividend charge deducted when holding a short position:",
+    "howToCalculatePara2": "Dividend Charge = Component Dividend (per index contract) × Contract Size × Volume × Currency Multiplier × Account Currency Multiplier",
+    "noData": "No earnings data available right now."
+  },
+  "earningsMarginPanel": {
+    "howStockEarning": {
+      "title": "How Stock & Index Earnings & Dividends Affect Your Margin",
+      "desc": "We’ve prepared a quick guide, which explains the calendar. Basically, it tells you when corporate events hit, how we adjust margin, and why it maers to your account.",
+      "item1": {
+        "heading": "1) Why we flag earnings and dividends",
+        "para1": "Providers often flag index and margin each earnings or dividend cycle to reduce risk through exposure. That’s why we list these dates on the calendar. The flagged instrument shows the products where the event will impact volatility."
+      },
+      "item2": {
+        "heading": "2) Reading the margin tiers",
+        "para1": "Keep your risk in line! View margin tiers in levels. This ensures stronger logic is applied to the scale of your positions."
+      },
+      "item3": {
+        "heading": "3) Share example of earnings",
+        "para1": "Let’s look at a simplified example, based on Apple’s latest:",
+        "list1": "Instrument: AAPL",
+        "list2": "Share price: $182.40",
+        "list3": "Expected EPS: $2.84",
+        "list4": "Reported EPS: $2.90",
+        "para2": "If the figure is higher in another currency, go short and convert. If it’s less than that — then supply the return risk."
+      },
+      "item4": {
+        "heading": "4) Index example of a Dividend adjustment",
+        "para1": "Let’s take a look at an example of a dividend adjustment that’s based on the CHN50:",
+        "list1": "Instrument: CHN50",
+        "list2": "Dividend size: 1.50",
+        "list3": "You’re long 1 lot – so 50 lots x 0.5 lots = 200 lots",
+        "list4": "1.50 × 50 = $75",
+        "list5": "PnL Credit: $75.00"
+      },
+      "item5": {
+        "heading": "5) Dividend cash adjustments",
+        "para1": "When an instrument goes ex-dividend, you can balance it against liquidity gaps:",
+        "list": {
+          "one": "If you're long (and open on ex-date) – the dividend is credited to your ledger.",
+          "two": "If not or sold (closed) pre-ex-date – the dividend is deducted from your ledger."
+        }
+      },
+      "item6": {
+        "heading": "6) Your responsibility",
+        "para1": "During these high-margin periods, the new requirements might trigger “free margin” shortages. Ensure enough capital or margin is maintained on your positions through logic calls or proactive trading setups."
+      },
+      "item7": {
+        "heading": "7) Heads-up on dates & times",
+        "para1": "Spreads/dates are shown as estimates. At times, one calendar event can trigger multiple products in the same index. Stay one call ahead and protect margin to be outpaced of your margin. Trade smart and stay protected.",
+        "para2": "Stay one call ahead and protect margin to be outpaced of your margin. Trade smart and stay protected."
+      }
+    },
+    "btnText": "Refer Your Traders"
+  },
+  "earningsFaq": {
+    "heading": "Frequently Asked Questions",
+    "question1": "What affects stock and index CFDs around earnings dates?",
+    "answer1": "Earnings releases can increase volatility, spread changes, and margin requirements on related CFDs.",
+    "question2": "What is an ex-dividend date in CFD trading?",
+    "answer2": "It is the date when dividend adjustment is applied based on your open position direction.",
+    "question3": "Do long and short positions get treated differently?",
+    "answer3": "Yes. Long positions are generally credited while short positions are generally charged for dividend adjustments.",
+    "question4": "Why should I check the earnings calendar before trading?",
+    "answer4": "It helps you plan exposure, avoid surprises, and prepare for potential margin and volatility shifts.",
+    "question5": "Can one event impact multiple instruments?",
+    "answer5": "Yes. A single corporate event may affect several related index or stock CFDs.",
+    "question6": "How can I reduce risk during high-margin periods?",
+    "answer6": "Use smaller position sizes, monitor free margin, and keep a risk buffer before major events.",
+    "question7": "Where can I get help if I’m unsure?",
+    "answer7": "Contact support before market close for guidance on instrument details and margin impact."
   }
 }

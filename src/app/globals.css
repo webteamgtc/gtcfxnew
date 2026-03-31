@@ -111,6 +111,33 @@ a:hover {
   box-sizing: border-box;
 }
 
+/* Trading hours table: always show a usable horizontal scrollbar when content overflows */
+.trading-hours-table-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #9aa3c0 #eef0f6;
+}
+
+.trading-hours-table-scroll::-webkit-scrollbar {
+  height: 12px;
+}
+
+.trading-hours-table-scroll::-webkit-scrollbar-track {
+  background: #eef0f6;
+  border-radius: 9999px;
+}
+
+.trading-hours-table-scroll::-webkit-scrollbar-thumb {
+  background: #9aa3c0;
+  border-radius: 9999px;
+}
+
+.trading-hours-table-scroll::-webkit-scrollbar-thumb:hover {
+  background: #7a839e;
+}
+
 @layer components {
   .marquee-track {
     width: max-content;
