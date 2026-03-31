@@ -106,7 +106,23 @@ const getValidationSchema = (text) =>
     return Yup.object().shape(base);
   });
 
-const inputClass = (touched, error) =>
+const ICON_BG = {
+  user: `bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%3E%3Cpath%20d='M12%2012a4%204%200%201%200%200-8%204%204%200%200%200%200%208Zm0%202c-4.418%200-8%202.239-8%205v1h16v-1c0-2.761-3.582-5-8-5Z'%20fill='%239CA3AF'/%3E%3C/svg%3E")]`,
+  email: `bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%3E%3Cpath%20d='M4%206h16v12H4V6Zm1.8%201.5L12%2012l6.2-4.5'%20stroke='%239CA3AF'%20stroke-width='1.8'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E")]`,
+  briefcase: `bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%3E%3Cpath%20d='M8%207V5a1%201%200%200%201%201-1h6a1%201%200%200%201%201%201v2M4%209h16v9a1%201%200%200%201-1%201H5a1%201%200%200%201-1-1V9Z'%20stroke='%239CA3AF'%20stroke-width='1.8'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E")]`,
+  hash: `bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%3E%3Cpath%20d='M9%203 7%2021M17%203l-2%2018M4%209h17M3%2015h17'%20stroke='%239CA3AF'%20stroke-width='1.8'%20stroke-linecap='round'/%3E%3C/svg%3E")]`,
+  clock: `bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%3E%3Ccircle%20cx='12'%20cy='12'%20r='8'%20stroke='%239CA3AF'%20stroke-width='1.8'/%3E%3Cpath%20d='M12%207v5l3%202'%20stroke='%239CA3AF'%20stroke-width='1.8'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E")]`,
+  cash: `bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%3E%3Crect%20x='3'%20y='6'%20width='18'%20height='12'%20rx='2'%20stroke='%239CA3AF'%20stroke-width='1.8'/%3E%3Cpath%20d='M12%209v6M10%2011.2c0-.66.54-1.2%201.2-1.2h1.1c.66%200%201.2.54%201.2%201.2%200%20.66-.54%201.2-1.2%201.2h-1.1c-.66%200-1.2.54-1.2%201.2'%20stroke='%239CA3AF'%20stroke-width='1.4'%20stroke-linecap='round'/%3E%3C/svg%3E")]`,
+  subject: `bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='none'%3E%3Cpath%20d='M5%205h14v14H5V5Zm3%204h8M8%2013h8'%20stroke='%239CA3AF'%20stroke-width='1.8'%20stroke-linecap='round'/%3E%3C/svg%3E")]`,
+};
+
+const inputClass = (touched, error, iconClass = ICON_BG.user) =>
+  `block w-full rounded-lg bg-white ${iconClass} bg-no-repeat bg-[position:left_0.75rem_center] bg-[length:16px_16px] pl-10 pr-3 py-2.5 text-[15px] leading-6 text-gray-900 placeholder:text-gray-400 shadow-sm ring-1 ring-inset outline-none transition ${touched && error
+    ? "ring-red-600 focus:ring-red-600"
+    : "ring-gray-200 focus:ring-primary/80"
+  } focus:ring-2`;
+
+const textareaClass = (touched, error) =>
   `block w-full rounded-lg bg-white px-3 py-2.5 text-[15px] leading-6 text-gray-900 placeholder:text-gray-400 shadow-sm ring-1 ring-inset outline-none transition ${touched && error
     ? "ring-red-600 focus:ring-red-600"
     : "ring-gray-200 focus:ring-primary/80"
@@ -460,7 +476,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.trade_account}
-                        className={inputClass(formik.touched.trade_account, formik.errors.trade_account)}
+                        className={inputClass(formik.touched.trade_account, formik.errors.trade_account, ICON_BG.briefcase)}
                       />
                       {formik.touched.trade_account && formik.errors.trade_account && (
                         <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.trade_account}</p>
@@ -489,7 +505,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             value={formik.values.trade_account}
-                            className={inputClass(formik.touched.trade_account, formik.errors.trade_account)}
+                            className={inputClass(formik.touched.trade_account, formik.errors.trade_account, ICON_BG.briefcase)}
                           />
                           {formik.touched.trade_account && formik.errors.trade_account && (
                             <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.trade_account}</p>
@@ -501,15 +517,29 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                           <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
                             {text("transactionIdsLabel", "Transaction ID(s)")}
                           </label>
-                          <input
-                            type="text"
-                            name="transaction_ids"
-                            placeholder={text("transactionIdsPlaceholder", "Transaction ID(s)")}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.transaction_ids}
-                            className={inputClass(false, false)}
-                          />
+                          <div className="relative">
+                            <span className="pointer-events-none absolute left-3 top-1/2 z-10 -translate-y-1/2 text-gray-400">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="1.8"
+                                className="h-4 w-4"
+                              >
+                                <path d="M9 3 7 21M17 3l-2 18M4 9h17M3 15h17" strokeLinecap="round" />
+                              </svg>
+                            </span>
+                            <input
+                              type="text"
+                              name="transaction_ids"
+                              placeholder={text("transactionIdsPlaceholder", "Transaction ID(s)")}
+                              onChange={formik.handleChange}
+                              onBlur={formik.handleBlur}
+                              value={formik.values.transaction_ids}
+                              className={inputClass(false, false, "")}
+                            />
+                          </div>
                         </div>
                       )}
 
@@ -527,7 +557,8 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                             value={formik.values.trade_order_ids}
                             className={inputClass(
                               formik.touched.trade_order_ids,
-                              formik.errors.trade_order_ids
+                              formik.errors.trade_order_ids,
+                              ICON_BG.hash
                             )}
                           />
                           {formik.touched.trade_order_ids &&
@@ -553,7 +584,8 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                             value={formik.values.date_time_incident}
                             className={inputClass(
                               formik.touched.date_time_incident,
-                              formik.errors.date_time_incident
+                              formik.errors.date_time_incident,
+                              ICON_BG.clock
                             )}
                           />
                           {formik.touched.date_time_incident &&
@@ -607,7 +639,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             value={formik.values.deposit_amount}
-                            className={inputClass(false, false)}
+                            className={inputClass(false, false, ICON_BG.cash)}
                           />
                         </div>
                       )}
@@ -624,7 +656,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.subject}
-                    className={inputClass(formik.touched.subject, formik.errors.subject)}
+                    className={inputClass(formik.touched.subject, formik.errors.subject, ICON_BG.subject)}
                   />
                   {formik.touched.subject && formik.errors.subject && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.subject}</p>
@@ -647,7 +679,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.first_name}
-                    className={inputClass(formik.touched.first_name, formik.errors.first_name)}
+                    className={inputClass(formik.touched.first_name, formik.errors.first_name, ICON_BG.user)}
                   />
                   {formik.touched.first_name && formik.errors.first_name && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.first_name}</p>
@@ -665,7 +697,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.last_name}
-                    className={inputClass(formik.touched.last_name, formik.errors.last_name)}
+                    className={inputClass(formik.touched.last_name, formik.errors.last_name, ICON_BG.user)}
                   />
                   {formik.touched.last_name && formik.errors.last_name && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.last_name}</p>
@@ -682,7 +714,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
-                    className={inputClass(formik.touched.email, formik.errors.email)}
+                    className={inputClass(formik.touched.email, formik.errors.email, ICON_BG.email)}
                   />
                   {formik.touched.email && formik.errors.email && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.email}</p>
@@ -693,18 +725,30 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
                     {text("phoneLabel", "Phone number")} *
                   </label>
-                  <PhoneInput
-                    international
-                    countryCallingCodeEditable={false}
-                    defaultCountry={countryCode}
-                    value={formik.values.phone}
-                    onChange={(phone) => formik.setFieldValue("phone", phone)}
-                    onBlur={() => formik.setFieldTouched("phone", true)}
-                    className={`w-full rounded-lg bg-white px-3 py-2.5 text-[15px] leading-6 text-gray-900 shadow-sm ring-1 ring-inset outline-none transition focus:ring-2 ${formik.touched.phone && formik.errors.phone
-                      ? "ring-red-600 focus:ring-red-600"
-                      : "ring-gray-200 focus:ring-primary/80"
-                      }`}
-                  />
+                  <div className="relative">
+                    <span className="pointer-events-none absolute left-3 top-1/2 z-10 -translate-y-1/2 text-gray-400">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="h-4 w-4"
+                      >
+                        <path d="M3.9 2.4a2 2 0 0 1 2.1-.5l2.3.8a2 2 0 0 1 1.3 1.5l.3 2a2 2 0 0 1-.6 1.8L8 9.3a15.4 15.4 0 0 0 6.7 6.7l1.3-1.3a2 2 0 0 1 1.8-.6l2 .3a2 2 0 0 1 1.5 1.3l.8 2.3a2 2 0 0 1-.5 2.1l-1.2 1.2a3 3 0 0 1-2.7.8c-4.2-.9-8.2-3.1-11.5-6.4-3.3-3.3-5.5-7.3-6.4-11.5a3 3 0 0 1 .8-2.7L3.9 2.4Z" />
+                      </svg>
+                    </span>
+                    <PhoneInput
+                      international
+                      countryCallingCodeEditable={false}
+                      defaultCountry={countryCode}
+                      value={formik.values.phone}
+                      onChange={(phone) => formik.setFieldValue("phone", phone)}
+                      onBlur={() => formik.setFieldTouched("phone", true)}
+                      className={`w-full rounded-lg bg-white pl-10 pr-3 py-2.5 text-[15px] leading-6 text-gray-900 shadow-sm ring-1 ring-inset outline-none transition focus:ring-2 ${formik.touched.phone && formik.errors.phone
+                        ? "ring-red-600 focus:ring-red-600"
+                        : "ring-gray-200 focus:ring-primary/80"
+                        }`}
+                    />
+                  </div>
                   {formik.touched.phone && formik.errors.phone && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.phone}</p>
                   )}
@@ -753,7 +797,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.message}
-                  className={inputClass(formik.touched.message, formik.errors.message)}
+                  className={textareaClass(formik.touched.message, formik.errors.message)}
                 />
                 {formik.touched.message && formik.errors.message && (
                   <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.message}</p>
@@ -784,7 +828,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                     formik.setFieldValue("attachment", e.target.files?.[0] ?? null)
                   }
                   onBlur={() => formik.setFieldTouched("attachment", true)}
-                  className="block w-fit pr-2 rounded-lg bg-white text-sm text-gray-600 shadow-sm ring-1 ring-inset ring-gray-200 file:mr-4 file:rounded-md file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-medium file:text-white hover:file:opacity-95"
+                  className="block w-fit pr-2 rounded-lg bg-white text-sm text-gray-600 file:mr-4 file:rounded-md file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-medium file:text-white hover:file:opacity-95"
                 />
                 <p className="text-xs text-gray-500 mt-1 ltr:text-left rtl:text-right">
                   {text("attachmentHelp", "Screenshots, receipts, logs, or supporting documents.")}
