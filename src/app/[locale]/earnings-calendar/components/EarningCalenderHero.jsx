@@ -1,11 +1,11 @@
 import InnerPageBanner from "../../components/common/InnerPageBanner";
 import PageHeroCommon from "../../components/common/PageHero";
 
-function MarketOverviewIllustration() {
+function CalendarIllustration() {
   return (
     <div className="relative mx-auto w-full max-w-[520px]">
       <img
-        src="/market-overview-banner.svg"
+        src="/earning-banner.svg"
         alt="Calendar"
         className="h-full w-full object-contain"
       />
@@ -13,7 +13,7 @@ function MarketOverviewIllustration() {
   );
 }
 
-export default function MarketOverviewHero() {
+export default function EarningsCalendarHero() {
   return (
     <InnerPageBanner
     description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."

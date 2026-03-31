@@ -97,7 +97,7 @@ export default function TradingToolsSection() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:mt-12 md:grid-cols-2 md:gap-8">
+        <div className="mt-8 grid gap-4 md:mt-12 md:grid-cols-2 md:gap-8">
           {tools.map((t) => (
             <ToolCard
               key={t.title}

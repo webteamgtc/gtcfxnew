@@ -1,4 +1,4 @@
-import PageHeroCommon from "../../components/common/PageHero";
+import InnerPageBanner from "../../components/common/InnerPageBanner";
 
 function CalendarIllustration() {
   return (
@@ -14,11 +14,11 @@ function CalendarIllustration() {
 
 export default function EconomicCalendarHero() {
   return (
-    <PageHeroCommon
-      title="Economic Calendar"
-      description="Stay updated with our economic calendar. Keep track of upcoming economic events and their effects on market movements."
-      right={<CalendarIllustration />}
-    />
+    <InnerPageBanner
+    description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
+    backgroundImage="/breadcamp/new-about.webp"
+    mobileBackgroundImage="/breadcamp/about-mobile.webp"
+  />
   );
 }
 
