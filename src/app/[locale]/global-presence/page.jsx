@@ -1,10 +1,6 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import CompanyIntro from "../components/about/CompanyIntro";
-import AwardsMarquee from "../components/common/home/AwardsMarquee";
-import Counter from "../components/common/home/Counter";
-import ReviewsSection from "../components/common/ReviewsSection";
-import WhyChooseGTC from "../components/about/WhyChooseGTC";
+import GlobalPresenceMapSection from "../components/about/GlobalPresenceMapSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -24,13 +20,13 @@ export default async function AboutPage({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. "
-        backgroundImage="/breadcamp/about.webp"
+        description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
+        backgroundImage="/breadcamp/new-about.webp"
         mobileBackgroundImage="/breadcamp/about-mobile.webp"
       />
-      <WhyChooseGTC />
-  
+
+    <GlobalPresenceMapSection />
+
 
       {/* other sections */}
     </>

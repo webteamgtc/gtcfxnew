@@ -7,32 +7,32 @@ about: {
       links: [
         { label: "About GTCFX", href: "/about-us" },
         { label: "Why GTC Group", href: "/why-gtc-group" },
-        { label: "Regulations", href: "/global-presence" },
+        { label: "Regulations", href: "/regulations" },
        
       ],
     },
     {
       heading: "Company",
       links: [
-        { label: "GTCFX Global Presence", href: "/about/global-presence" },
-        { label: "GTCFX Awards", href: "/about/leadership" },
-        { label: "Fund Security", href: "/about/security" },
+        { label: "Global Presence", href: "/global-presence" },
+        { label: "Awards", href: "/awards" },
+        { label: "Fund Security", href: "/compensation-fund" },
       ],
     },
     {
       heading: "Highlights",
       links: [
-        { label: "Market Insights", href: "/news" },
-        { label: "Company News", href: "/announcements" },
-        { label: "Earnings & Dividends Calendar", href: "/support" },
-        { label: "Economic Calendar & News", href: "/support" },
-        { label: "Trading Hours & Holidays", href: "/support" },
+        { label: "Market Insights", href: "/blogs" },
+        { label: "Company News", href: "/company-news" },
+        { label: "Earnings & Dividends Calendar", href: "/earnings-calendar" },
+        { label: "Economic Calendar & News", href: "/economic-calendar" },
+        { label: "Trading Hours & Holidays", href: "/market-overview" },
       ],
     },
     {
       heading: "Get in Touch",
       links: [
-        { label: "Careers", href: "/about/careers" }, // moved here for better UX
+        { label: "Careers", href: "/careers" }, // moved here for better UX
         { label: "Contact Us", href: "/contact-us" },
        
       ],

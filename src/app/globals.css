@@ -77,9 +77,10 @@ a:hover {
   ========================= */
 
   .Text {
-    @apply text-[14px] leading-[1.6] font-normal
-           md:text-[16px]
-           xl:text-[18px];
+    @apply text-[14px]  font-normal leading-7 text-[#4B5563] md:text-base md:leading-8
+           md:text-[15px]
+           xl:text-[16px];
+           
   }
 
   .TextSmall {

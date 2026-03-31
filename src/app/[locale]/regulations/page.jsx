@@ -1,10 +1,6 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import CompanyIntro from "../components/about/CompanyIntro";
-import AwardsMarquee from "../components/common/home/AwardsMarquee";
-import Counter from "../components/common/home/Counter";
-import ReviewsSection from "../components/common/ReviewsSection";
-import WhyChooseGTC from "../components/about/WhyChooseGTC";
+import GlobalPresenceSection from "../components/about/GlobalPresenceSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -24,13 +20,13 @@ export default async function AboutPage({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. "
-        backgroundImage="/breadcamp/about.webp"
+        description="GTC Group LLC-FZ, a limited liability company registered in the UAE, owns the following entities globally, together the GTC Financial Group."
+        backgroundImage="/breadcamp/regulations.webp"
         mobileBackgroundImage="/breadcamp/about-mobile.webp"
       />
-      <WhyChooseGTC />
-  
+
+    <GlobalPresenceSection />
+
 
       {/* other sections */}
     </>
