@@ -1,5 +1,5 @@
 import { getDictionary } from '@/i18n/request';
-import HeroSection from './components/common/home/HeroSection';
+import HeroSection from './components/home2/HeroSection';
 import FeaturesSection from './components/common/home/FeaturesSection';
 import Counter from './components/common/home/Counter';
 import MarketTabsSection from './components/common/home/MarketTabsSection';
@@ -10,6 +10,8 @@ import BlogsSection from './components/common/home/BlogsSection';
 import SecurityBanner from './components/common/home/SecurityBanner';
 import AwardsMarquee from './components/common/home/AwardsMarquee';
 import RevealOnScroll from './components/RevealOnScroll';
+import TradingTicker from './components/home2/TradingTicker';
+import PlatformsSection from './components/home2/PlatformsSection';
 
 
 export default async function HomePage({ params }) {
@@ -21,7 +23,7 @@ export default async function HomePage({ params }) {
    <>
    <HeroSection />
   <RevealOnScroll>
-  <AwardsMarquee />
+  <TradingTicker />
 </RevealOnScroll>
 
 <RevealOnScroll>
@@ -35,21 +37,17 @@ export default async function HomePage({ params }) {
 <RevealOnScroll>
   <MarketTabsSection />
 </RevealOnScroll>
-
 <RevealOnScroll>
-  <MarketTicker />
+  <SecurityBanner />
 </RevealOnScroll>
 
 <RevealOnScroll>
   <TradingFeaturesSection />
 </RevealOnScroll>
 
-<RevealOnScroll>
-  <SecurityBanner />
-</RevealOnScroll>
 
 <RevealOnScroll>
-  <AppPromoSection />
+ <PlatformsSection />
 </RevealOnScroll>
 
 <RevealOnScroll>

@@ -92,7 +92,7 @@ function BlogCard({
       </div>
 
       <div className="mt-0.5 flex flex-1 flex-col gap-2 md:gap-2.5">
-        <h3 className="HeadingH4 ">{title}</h3>
+        <h3 className="HeadingH5">{title}</h3>
 
         <div className="mt-auto border-t border-[#2f2f2f]/25 pt-3">
           <div className="flex items-center justify-between gap-3">
@@ -132,7 +132,7 @@ export default function BlogsSection() {
           </p>
         </div>
 
-        <div className="hidden max-w-6xl mx-auto items-stretch gap-6 md:grid md:grid-cols-3 md:gap-8">
+        <div className="hidden items-stretch gap-6 md:grid md:grid-cols-3 md:gap-8">
           {posts.map((post, index) => (
             <BlogCard
               key={index}

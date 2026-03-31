@@ -46,25 +46,25 @@ account: {
     {
       heading: "Get Started",
       links: [
-        { label: "Open Live Account", href: "/account/live" },
-        { label: "Open Demo Account", href: "/account/demo" },
-        { label: "Fund Your Account", href: "/account/verification" },
+        { label: "Open Live Account", href: "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww" },
+        { label: "Open Demo Account", href: "/free-demo-account" },
+        { label: "Fund Your Account", href: "/deposit" },
       ],
     },
     {
       heading: "Fund & Transfer",
       links: [
-        { label: "Deposit Funds", href: "/account/deposits" },
+        { label: "Account Types", href: "/account-types" },
         { label: "Withdraw Funds", href: "/account/withdrawals" },
         { label: "Internal Transfers", href: "/account/transfers" },
       ],
     },
     {
-      heading: "Account Management",
+      heading: "Event & Promotions",
       links: [
-        { label: "Swap Update", href: "/account/portal" },
-        { label: "Swap-Free Trading", href: "/account/types" },
-        { label: " Dynamic Leverage", href: "/account/leverage" },
+        { label: "GTC Go App", href: "/gtc-go-app" },
+        { label: "Events & Exhibitions", href: "/events-and-exhibitions" },
+       
       ],
     },
     {
