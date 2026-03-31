@@ -22,8 +22,8 @@ export default async function AboutPage({ params }) {
       <InnerPageBanner
         description="Trading with us offers the optimal avenue for investing your money
             wisely and profitably. "
-        backgroundImage="/breadcamp/awards.webp"
-        mobileBackgroundImage="/breadcamp/awards-mob.webp"
+        backgroundImage="/breadcamp/awardpc.webp"
+        mobileBackgroundImage="/breadcamp/award-mob.webp"
       />
       <AwardsSection />
   

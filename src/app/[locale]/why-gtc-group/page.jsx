@@ -26,8 +26,8 @@ export default async function AboutPage({ params }) {
       <InnerPageBanner
         description="Trading with us offers the optimal avenue for investing your money
             wisely and profitably. "
-        backgroundImage="/breadcamp/about.webp"
-        mobileBackgroundImage="/breadcamp/about-mobile.webp"
+        backgroundImage="/breadcamp/whygtc.webp"
+        mobileBackgroundImage="/breadcamp/why-mobile.webp"
       />
       <WhyChooseGTC />
   
