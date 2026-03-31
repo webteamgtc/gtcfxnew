@@ -1,6 +1,6 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import AwardsSection from "../components/about/AwardsSection";
+import SecurityOfFundSection from "../components/about/SecurityOfFundSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -20,13 +20,13 @@ export default async function AboutPage({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. "
-        backgroundImage="/breadcamp/awards.webp"
-        mobileBackgroundImage="/breadcamp/awards-mob.webp"
+        description="GTC Global Trade Capital Ltd. is a official member of the Financial Commission, an international organization engaged in the resolution of disputes in the financial services industry for the forex market."
+        backgroundImage="/breadcamp/security.webp"
+        mobileBackgroundImage="/breadcamp/security-mob.webp"
       />
-      <AwardsSection />
-  
+
+    <SecurityOfFundSection />
+
 
       {/* other sections */}
     </>
