@@ -17,8 +17,8 @@ export default function EarningsCalendarHero() {
   return (
     <InnerPageBanner
     description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
-    backgroundImage="/breadcamp/new-about.webp"
-    mobileBackgroundImage="/breadcamp/about-mobile.webp"
+    backgroundImage="/breadcamp/earning.webp"
+    mobileBackgroundImage="/breadcamp/earning-mobile.webp"
   />
   );
 }

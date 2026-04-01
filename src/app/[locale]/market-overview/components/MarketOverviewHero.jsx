@@ -17,8 +17,8 @@ export default function MarketOverviewHero() {
   return (
     <InnerPageBanner
     description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
-    backgroundImage="/breadcamp/new-about.webp"
-    mobileBackgroundImage="/breadcamp/about-mobile.webp"
+    backgroundImage="/breadcamp/holiday.webp"
+    mobileBackgroundImage="/breadcamp/holiday-mobile.webp"
   />
   );
 }

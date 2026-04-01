@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import SingleBlogSection from "../../components/common/SingleblogSection";
+import SingleBlogSection from "../../components/blogs/SingleblogSection";
 import BlogItem from "../../components/common/BlogItem";
 
 const DEFAULT_STRAPI_API_BASE = "https://api.gtcfx.com/api";

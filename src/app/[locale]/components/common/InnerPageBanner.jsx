@@ -41,16 +41,18 @@ export default function InnerPageBanner({
 
   const currentLocale = localeList.includes(pathParts[0]) ? pathParts[0] : "";
   const segments = pathParts.filter((segment) => !localeList.includes(segment));
+  const breadcrumbSegments =
+    segments.length > 1 ? segments.slice(0, -1) : segments;
 
   const homeHref = currentLocale ? `/${currentLocale}` : "/";
 
   const breadcrumbItems = [
     { label: "Home", href: homeHref },
-    ...segments.map((segment, index) => {
+    ...breadcrumbSegments.map((segment, index) => {
       const href =
         (currentLocale ? `/${currentLocale}` : "") +
         "/" +
-        segments.slice(0, index + 1).join("/");
+        breadcrumbSegments.slice(0, index + 1).join("/");
 
       return {
         label: formatLabel(segment),

@@ -3,10 +3,10 @@ import React, { useCallback, useEffect, useState, useMemo } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import SocialBanner from "./SocialBanner";
+import SocialBanner from "../common/SocialBanner";
 import { fetchStrapiCollection, mapStrapiLocale, toAbsoluteStrapiMediaUrl } from "@/lib/strapi";
 import MorePosts from "./MorePosts";
-
+import TradingViewWidget from "./DetailWidget";
 const SingleDetailPage = ({ url, page }) => {
     const params = useParams();
     const [data, setData] = useState(null);
@@ -497,7 +497,10 @@ const SingleDetailPage = ({ url, page }) => {
                                     </div>
                                 )}
 
-
+                                         <div className="">
+                                            
+                                            <TradingViewWidget />
+                                        </div>
 
                                 {/* Related Posts */}
                                 {!isLoading && recentLoading ? (

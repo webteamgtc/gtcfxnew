@@ -109,8 +109,8 @@ export default async function CompanyNewsPage({ params }) {
           "bannerDescription",
           "GTCFX News & Market Updates - Stay Informed, Trade Smarter"
         )}
-        backgroundImage="/breadcamp/contact.webp"
-        mobileBackgroundImage="/breadcamp/contact-mobile.webp"
+        backgroundImage="/breadcamp/campany.webp"
+        mobileBackgroundImage="/breadcamp/campany-mobile.webp"
       />
 
       <section className="container mx-auto py-10">

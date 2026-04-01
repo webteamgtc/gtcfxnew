@@ -1,6 +1,6 @@
 import InnerPageBanner from "../../components/common/InnerPageBanner";
 import { getDictionary } from "@/i18n/request";
-import SingleDetailPage from "../../components/common/SingleDetailPage";
+import SingleDetailPage from "../../components/blogs/SingleDetailPage";
 
 export default async function CompanyNewsDetailPage({ params }) {
   const { locale } = await params;

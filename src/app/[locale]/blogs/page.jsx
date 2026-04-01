@@ -109,8 +109,8 @@ export default async function CompanyNewsPage({ params }) {
           "bannerDescription",
           "Market Insights & CFD Trading Strategies - GTCFX Blog"
         )}
-        backgroundImage="/breadcamp/contact.webp"
-        mobileBackgroundImage="/breadcamp/contact-mobile.webp"
+        backgroundImage="/breadcamp/blog.webp"
+        mobileBackgroundImage="/breadcamp/blog-mobile.webp"
       />
 
       <section className="container mx-auto py-10">
