@@ -70,7 +70,7 @@ export default function MainHeader({ locale = "en" }) {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden items-center gap-8 lg:flex xl:gap-10">
+            <nav className="hidden items-center justify-end gap-8 lg:flex xl:gap-5">
               {navItems.map((item) => {
                 const isActive = activeMegaMenu === item.key;
 
