@@ -12,6 +12,7 @@ function formatLabel(slug) {
     "contact-us": "Contact Us",
     "prime-tech": "Prime & Tech",
     "why-gtcfx": "Why GTCFX",
+    "why-gtc-group": "Why GTC Group",
     faq: "FAQ",
     blogs: "Blogs",
   };
