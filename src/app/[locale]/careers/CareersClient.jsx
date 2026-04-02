@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { Suspense, useState } from "react";
 import { GrWorkshop } from "react-icons/gr";
 import WhyWorking from "./components/WhyWorking";
 import CareerSection from "./components/CareerSection";
@@ -45,7 +45,9 @@ export default function CareersClient({ careers = {} }) {
 
       <WhyWorking messages={careers} />
       <CareerSection messages={careers} onJobSelect={handleJobSelect} selectedJobTitle={selectedJobTitle} />
-      <ApplyNow messages={careers} selectedJobTitle={selectedJobTitle} />
+      <Suspense fallback={null}>
+        <ApplyNow messages={careers} selectedJobTitle={selectedJobTitle} />
+      </Suspense>
     </div>
   );
 }
