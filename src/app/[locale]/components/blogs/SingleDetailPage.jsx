@@ -341,7 +341,7 @@ const SingleDetailPage = ({ url, page }) => {
                 <>
                     <section className="container mt-8 grid grid-cols-1 gap-8 pb-14 lg:mt-10 lg:grid-cols-12 lg:gap-10">
                         <div className={detailFlexClass}>
-                            <div className={`${sectionBase} mb-6 flex flex-wrap items-center justify-between gap-3 px-4 py-3`}>
+                            <div className={`${sectionBase} md:mb-6 mb-4 flex flex-wrap items-center justify-between gap-3 md:px-4 px-2 md:py-3 py-2`}>
                                 <Link
                                     href={`/${params?.locale || "en"}/${url || "company-news"}`}
                                     className="inline-flex items-center gap-2 rounded-lg px-2 py-1 text-sm font-semibold text-primary transition hover:bg-primary/5 hover:text-primary/80"
@@ -364,7 +364,7 @@ const SingleDetailPage = ({ url, page }) => {
                             </div>
 
                             {tocItems.length > 0 && (
-                                <div className={`${sectionBase} mb-6 p-4 lg:hidden`}>
+                                <div className={`${sectionBase} md:mb-6 mb-4 md:p-4 p-2 lg:hidden`}>
                                     <label htmlFor="mobile-toc" className="mb-2 block text-sm font-semibold text-gray-900">
                                         Jump to section
                                     </label>
@@ -390,7 +390,7 @@ const SingleDetailPage = ({ url, page }) => {
 
 
                             {/* Blog Content */}
-                            <article className={`${sectionBase} mb-8`}>
+                            <article className={`${sectionBase} md:mb-8 mb-6`}>
                                 <div
                                     className="single-blog-descreption prose prose-lg max-w-none prose-headings:mb-4 prose-headings:font-bold prose-headings:text-gray-900 prose-p:text-gray-700 prose-p:leading-8 prose-p:mb-6 prose-a:text-secondary prose-a:no-underline hover:prose-a:underline prose-strong:text-gray-900 prose-img:rounded-xl prose-img:shadow-lg prose-img:my-8 prose-blockquote:border-l-4 prose-blockquote:border-secondary prose-blockquote:bg-slate-50 prose-blockquote:rounded-r-lg prose-blockquote:py-2 prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-600 prose-ul:list-disc prose-ol:list-decimal prose-li:marker:text-secondary"
                                     dangerouslySetInnerHTML={{
@@ -400,7 +400,7 @@ const SingleDetailPage = ({ url, page }) => {
                             </article>
 
                             {/* Divider */}
-                            <div className="my-10 flex items-center justify-center">
+                            <div className="md:my-10 my-8 flex items-center justify-center">
                                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
                                 <div className="mx-4 flex h-7 w-7 items-center justify-center rounded-full bg-secondary/10">
                                     <span className="h-2 w-2 rounded-full bg-secondary" />
@@ -410,7 +410,7 @@ const SingleDetailPage = ({ url, page }) => {
 
                             {/* Author Details Section */}
                             {author && (
-                                <div className={`${sectionBase} mb-8 p-5 md:p-6`}>
+                                <div className={`${sectionBase} md:mb-8 mb-6 md:p-5 p-4 md:py-6 py-4`}>
                                     <div className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-primary/70">
                                         <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
                                         About the author
@@ -470,7 +470,7 @@ const SingleDetailPage = ({ url, page }) => {
                         </div>
 
                         {page != "sub" && (
-                            <div className="space-y-6 self-start lg:sticky lg:top-24 lg:col-span-4">
+                            <div className="md:space-y-6 space-y-4 self-start lg:sticky lg:top-24 lg:col-span-4">
                                 {tocItems.length > 0 && (
                                     <div className={`rounded-3xl bg-[#ECECEF] p-4 md:p-5 hidden lg:block`}>
                                         <h3 className="mb-3 flex items-center gap-2 text-lg font-bold text-gray-900">
@@ -479,7 +479,7 @@ const SingleDetailPage = ({ url, page }) => {
                                             </svg>
                                             Table of Contents
                                         </h3>
-                                        <div className="max-h-[340px] space-y-1.5 overflow-auto pr-1">
+                                        <div className="md:max-h-[340px] max-h-[280px] space-y-1.5 overflow-auto pr-1">
                                             {tocItems.map((item) => (
                                                 <button
                                                     key={item.id}
