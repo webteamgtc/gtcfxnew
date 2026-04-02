@@ -192,7 +192,7 @@ export default function BlogFeeds({
                 }
             >
                 {rest.length > 0 && (
-                    <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3 gap-y-8">
                         {rest.map((post, idx) => {
                             const attrs = post?.attributes ?? post ?? {};
                             const id = post?.id || `${attrs?.slug || "post"}-${idx}`;

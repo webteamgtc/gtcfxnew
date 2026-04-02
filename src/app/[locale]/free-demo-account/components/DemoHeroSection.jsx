@@ -1,6 +1,7 @@
 "use client";
 
 import PrimaryButton from "../../components/common/PrimaryButton";
+import MainIBForm from "../../components/MainIBForm";
 
 const benefits = [
   {
@@ -32,7 +33,7 @@ function FeatureCard({ item }) {
       <div className="absolute inset-0 bg-gradient-to-br from-[#263788]/5 via-transparent to-[#b68756]/10 opacity-0 transition duration-300 group-hover:opacity-100" />
 
       <div className="relative z-10">
-      
+
 
         {/* Icon */}
         <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#263788]/10 text-[20px] transition-all duration-300 group-hover:bg-[#263788] group-hover:text-white">
@@ -53,7 +54,7 @@ function FeatureCard({ item }) {
   );
 }
 
-export default function DemoHeroSection({ children }) {
+export default function DemoHeroSection({ messages }) {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
       {/* Background */}
@@ -76,7 +77,7 @@ export default function DemoHeroSection({ children }) {
           </h2>
 
           <p className="Text mx-auto max-w-3xl">
-           Explore GTCFX MT5 and WebTrader platforms in a secure, risk-free environment. Practice trading with real-time market data and sharpen your strategy with zero financial exposur
+            Explore GTCFX MT5 and WebTrader platforms in a secure, risk-free environment. Practice trading with real-time market data and sharpen your strategy with zero financial exposur
           </p>
         </div>
 
@@ -89,9 +90,9 @@ export default function DemoHeroSection({ children }) {
 
         {/* CTA */}
         <div className="mt-10 text-center">
-  <PrimaryButton href="/register">
-    Open Demo Account
-  </PrimaryButton>
+          <PrimaryButton href="/register">
+            Open Demo Account
+          </PrimaryButton>
 
         </div>
 
@@ -107,13 +108,14 @@ export default function DemoHeroSection({ children }) {
 
             {/* Form body */}
             <div className="mt-5">
-              {children ? (
+              <MainIBForm messages={messages} />
+              {/* {children ? (
                 children
               ) : (
                 <div className="rounded-2xl border border-dashed border-[#D1D5DB] bg-[#F9FAFB] px-5 py-10 text-center text-sm text-[#6B7280]">
                   Place your form here
                 </div>
-              )}
+              )} */}
             </div>
           </div>
         </div>

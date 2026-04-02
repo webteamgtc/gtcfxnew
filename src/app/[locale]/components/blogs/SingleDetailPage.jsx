@@ -7,6 +7,7 @@ import SocialBanner from "../common/SocialBanner";
 import { fetchStrapiCollection, mapStrapiLocale, toAbsoluteStrapiMediaUrl } from "@/lib/strapi";
 import MorePosts from "./MorePosts";
 import TradingViewWidget from "./DetailWidget";
+import CommentForm from "./CommentForm";
 const SingleDetailPage = ({ url, page }) => {
     const params = useParams();
     const [data, setData] = useState(null);
@@ -460,13 +461,12 @@ const SingleDetailPage = ({ url, page }) => {
                                 </div>
                             )}
 
-                            {/* Comment Form */}
-                            {/* {data && (
+                            {data && (
                                 <CommentForm
                                     blogSlug={data?.attributes?.slug}
                                     blogId={data?.id}
                                 />
-                            )} */}
+                            )}
                         </div>
 
                         {page != "sub" && (
@@ -497,10 +497,10 @@ const SingleDetailPage = ({ url, page }) => {
                                     </div>
                                 )}
 
-                                         <div className="">
-                                            
-                                            <TradingViewWidget />
-                                        </div>
+                                <div className="">
+
+                                    <TradingViewWidget />
+                                </div>
 
                                 {/* Related Posts */}
                                 {!isLoading && recentLoading ? (

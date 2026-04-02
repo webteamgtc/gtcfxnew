@@ -176,3 +176,9 @@ a:hover {
     border-radius: 9999px;
   }
 }
+
+.js-copyright-label,
+.tradingview-widget-copyright .js-copyright-label,
+.tradingview-widget-copyright {
+  display: none !important;
+}

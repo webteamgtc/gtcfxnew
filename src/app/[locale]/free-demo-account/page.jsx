@@ -20,6 +20,7 @@ export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
+  const accountForm = dict?.accounts?.accountForm || {};
 
   return (
     <>
@@ -28,7 +29,7 @@ export default async function AboutPage({ params }) {
         backgroundImage="/breadcamp/demo.webp"
         mobileBackgroundImage="/breadcamp/demo-mob.webp"
       />
-      <DemoHeroSection />
+      <DemoHeroSection messages={accountForm} />
       <Counter />
       <FeaturesSection />
       <TradingTicker />
