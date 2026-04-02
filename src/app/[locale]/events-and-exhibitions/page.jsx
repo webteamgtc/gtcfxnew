@@ -1,6 +1,5 @@
 import { getDictionary } from "@/i18n/request";
-import InnerPageBanner from "../components/common/InnerPageBanner";
-import AwardsSection from "../components/about/AwardsSection";
+import EventHero from "./components/HeroSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -19,10 +18,10 @@ export default async function AboutPage({ params }) {
 
   return (
     <>
-      
+      <EventHero />
   
 
       {/* other sections */}
-    </> 
+    </>
   );
 }
