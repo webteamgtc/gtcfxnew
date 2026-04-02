@@ -113,8 +113,8 @@ export default async function CompanyNewsPage({ params }) {
         mobileBackgroundImage="/breadcamp/campany-mobile.webp"
       />
 
-      <section className="container mx-auto py-10">
-        <div className="mb-6">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
+        <div className="container relative z-10">
           <div className="mb-4 flex items-center gap-3 text-[#b68756]">
             <p className="text-secondary text-4xl md:text-5xl">
               <MdOutlineNewspaper />
@@ -124,14 +124,13 @@ export default async function CompanyNewsPage({ params }) {
               <span className="text-[#b68756]">{text("titleHighlight", "News")}</span>
             </h2>
           </div>
-          <p className="Text mt-2 max-w-4xl">
+          <p className="Text my-5 max-w-4xl">
             {text(
               "intro",
               "Read the latest company news, market updates, and insights from GTCFX. Stay informed and make confident trading decisions every day."
             )}
           </p>
-        </div>
-        <CompanyNewsFeed
+           <CompanyNewsFeed
           initialPosts={firstBatch.rows}
           initialTotal={firstBatch.total}
           initialLocale={firstBatch.usedLocale}
@@ -139,6 +138,8 @@ export default async function CompanyNewsPage({ params }) {
           pageLimit={6}
           uiText={uiText}
         />
+        </div>
+       
       </section>
     </>
   );

@@ -1,5 +1,6 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
+import AccountTypesComparison from "./components/AccountTypesComparison";
 
 
 export async function generateMetadata({ params }) {
@@ -24,6 +25,7 @@ export default async function AboutPage({ params }) {
         backgroundImage="/breadcamp/deposit.webp"
         mobileBackgroundImage="/breadcamp/account-mobile.webp"
       />
+      <AccountTypesComparison />
  
   
 

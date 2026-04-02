@@ -71,7 +71,7 @@ const EarningsDividendsCalendar = ({ locale = "en", messages = {} }) => {
     }, [fetchData]);
 
     return (
-        <section className="bg-white py-8 md:py-10">
+        <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
             <div className="container mx-auto">
                 <h2 className="HeadingH3 mb-8">
                     {text("bannerDatePrefix", "Ex-Dividend")} {data?.[0]?.attributes?.date || ""} (GMT+3)
