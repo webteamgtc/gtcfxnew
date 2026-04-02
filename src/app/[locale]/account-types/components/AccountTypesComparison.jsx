@@ -159,7 +159,7 @@ function AccountTopCard({ title, subtitle, variant = "standard" }) {
     >
       <StarBadge variant={variant}>{title}</StarBadge>
 
-      <h3 className="mt-5 text-[28px] font-bold leading-tight text-primary md:text-[34px]">
+      <h3 className="HeadingH4 my-5 font-semibold">
         {title}
       </h3>
 
@@ -182,7 +182,7 @@ function BenefitsCard({ title, items, variant = "standard" }) {
       }`}
     >
       <h3
-        className={`text-[22px] font-semibold leading-tight md:text-[28px] ${
+        className={`HeadingH4 font-semibold ${
           isECN ? "text-[#b68756]" : "text-primary"
         }`}
       >
@@ -283,11 +283,11 @@ export default function AccountTypesComparisonPremium() {
             Account Types
           </span>
 
-          <h2 className="HeadingH3 mt-4 text-primary">
+          <h2 className="HeadingH3 my-5 text-primary">
             Compare Our <span className="text-[#b68756]">Trading Accounts</span>
           </h2>
 
-          <p className="mt-5 text-[15px] leading-7 text-[#4B5563] md:text-lg md:leading-8">
+          <p className="Text">
             Unlock the potential for profit by opening a live account and trading
             our competitive financial products with favorable spreads. Compare
             our account types and choose the option that best matches your

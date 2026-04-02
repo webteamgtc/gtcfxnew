@@ -55,8 +55,7 @@ account: {
       heading: "Fund & Transfer",
       links: [
         { label: "Account Types", href: "/account-types" },
-        { label: "Withdraw Funds", href: "/account/withdrawals" },
-        { label: "Internal Transfers", href: "/account/transfers" },
+     
       ],
     },
     {
