@@ -16,8 +16,8 @@ export default function EconomicCalendarHero() {
   return (
     <InnerPageBanner
     description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
-    backgroundImage="/breadcamp/new-about.webp"
-    mobileBackgroundImage="/breadcamp/about-mobile.webp"
+    backgroundImage="/breadcamp/economic.webp"
+    mobileBackgroundImage="/breadcamp/economic-mobile.webp"
   />
   );
 }
