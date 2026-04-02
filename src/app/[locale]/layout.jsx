@@ -5,6 +5,7 @@ import { LocaleProvider } from './LocaleProvider';
 import MainHeader from './components/common/MainHeader';
 import MainFooter from './components/common/MainFooter';
 import TradingTicker from './components/home2/TradingTicker';
+import { ToastContainer } from "react-toastify";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -37,6 +38,7 @@ export default async function LocaleLayout({ children, params }) {
         <main>{children}</main>
       <MainFooter locale={locale} /> 
       </div>
+      <ToastContainer autoClose={3000} />
     </LocaleProvider>
   );
 }
