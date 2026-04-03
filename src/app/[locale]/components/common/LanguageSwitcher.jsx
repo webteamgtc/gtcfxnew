@@ -33,14 +33,14 @@ const FLAGCDN_COUNTRY = {
 export function flagCdnSrc(localeCode) {
   const key = String(localeCode || "en").toLowerCase();
   const iso = FLAGCDN_COUNTRY[key] || (key.length === 2 ? key : "gb");
-  return `https://flagcdn.com/32x24/${iso}.png`;
+  return `https://flagcdn.com/128x96/${iso}.png`;
 }
 
 // Single source of truth for language order + labels (flags come from FlagCDN)
 const LANGUAGES =[
-  { code: "en", label: "English",sub: "Global", flagSrc: "/en.webp" },
-  { code: "ar", label: "العربية",sub: "Arabic", flagSrc: "/ar.webp" },
-  { code: "zh", label: "中文",sub: "Chinese", flagSrc: "/zh-hans.webp" },
+  { code: "en", label: "English",sub: "Global", flagSrc: "/gb.svg" },
+  { code: "ar", label: "العربية",sub: "Arabic", flagSrc: "/ar.svg" },
+  { code: "zh", label: "中文",sub: "Chinese", flagSrc: "/zh-hans.svg" },
   { code: "zh-tw", label: "台灣",sub: "Chinese", flagSrc: "/zh-TW.webp" },
   { code: "es", label: "Español",sub: "Spanish", flagSrc: "/es-ES.webp" },
   { code: "it", label: "Italian",sub: "Italian", flagSrc: "/it-IT.webp" },
@@ -176,13 +176,12 @@ export function LanguageDrawerPanel({
                 }
               >
                 <span className="inline-flex md:h-8 h-6 md:w-8 w-6 shrink-0 items-center justify-center overflow-hidden rounded-full">
-                  <Image
-                    src={flagCdnSrc(lang.code)}
-                    alt={lang.flagAlt}
-                    width={32}
-                    height={32}
-                    className="md:h-8 h-6 md:w-8 w-6 object-cover"
-                  />
+                <Image
+                src={flagCdnSrc(lang.code)}
+                width={32}
+                height={24}
+                className="object-contain"
+              />
                 </span>
                 {isMobileLike && compactMobile ? (
                   <span className="text-[12px] font-semibold text-[#111827] leading-none">
