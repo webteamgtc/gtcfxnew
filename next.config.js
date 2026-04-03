@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: 'api.gtcfx.com',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'flagcdn.com',
+        pathname: '/**',
+      },
     ],
   },
 };
