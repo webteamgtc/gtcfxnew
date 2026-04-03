@@ -38,27 +38,27 @@ export function flagCdnSrc(localeCode) {
 
 // Single source of truth for language order + labels (flags come from FlagCDN)
 const LANGUAGES =[
-  { code: "en", label: "English", flagSrc: "/en.webp" },
-  { code: "ar", label: "العربية", flagSrc: "/ar.webp" },
-  { code: "zh", label: "中文", flagSrc: "/zh-hans.webp" },
-  { code: "zh-tw", label: "台灣", flagSrc: "/zh-TW.webp" },
-  { code: "es", label: "Español", flagSrc: "/es-ES.webp" },
-  { code: "it", label: "Italian", flagSrc: "/it-IT.webp" },
-  { code: "fa", label: "فارسی", flagSrc: "/fa-IR.webp" },
-  { code: "tl", label: "Filipino", flagSrc: "/tl-PH.webp" },
-  { code: "fr", label: "Français", flagSrc: "/fr-FR.webp" },
-  { code: "vi", label: "Tiếng Việt", flagSrc: "/vi-VN.webp" },
-  { code: "hi", label: "हिंदी", flagSrc: "/hi-IN.webp" },
-  { code: "ms", label: "Melayu", flagSrc: "/ms-MY.webp" },
-  { code: "tr", label: "Türk", flagSrc: "/tr-TR.webp" },
-  { code: "id", label: "Bahasa", flagSrc: "/id-ID.webp" },
-  { code: "ps", label: "پښتو", flagSrc: "/ps-AF.webp" },
-  { code: "ru", label: "Русский", flagSrc: "/ru_RU.webp" },
-  { code: "ja", label: "日本国", flagSrc: "/ja-JP.webp" },
-  { code: "ko", label: "한국어", flagSrc: "/ko-KR.webp" },
-  { code: "pt", label: "Português", flagSrc: "/pt-PT.webp" },
-  { code: "th", label: "แบบไทย", flagSrc: "/th-TH.webp" },
-  { code: "ur", label: "اردو", flagSrc: "/ur-PK.webp" },
+  { code: "en", label: "English",sub: "Global", flagSrc: "/en.webp" },
+  { code: "ar", label: "العربية",sub: "Arabic", flagSrc: "/ar.webp" },
+  { code: "zh", label: "中文",sub: "Chinese", flagSrc: "/zh-hans.webp" },
+  { code: "zh-tw", label: "台灣",sub: "Chinese", flagSrc: "/zh-TW.webp" },
+  { code: "es", label: "Español",sub: "Spanish", flagSrc: "/es-ES.webp" },
+  { code: "it", label: "Italian",sub: "Italian", flagSrc: "/it-IT.webp" },
+  { code: "fa", label: "فارسی",sub: "Persian", flagSrc: "/fa-IR.webp" },
+  { code: "tl", label: "Filipino",sub: "Filipino", flagSrc: "/tl-PH.webp" },
+  { code: "fr", label: "Français",sub: "French", flagSrc: "/fr-FR.webp" },
+  { code: "vi", label: "Tiếng Việt",sub: "Vietnamese", flagSrc: "/vi-VN.webp" },
+  { code: "hi", label: "हिंदी",sub: "Hindi", flagSrc: "/hi-IN.webp" },
+  { code: "ms", label: "Melayu",sub: "Malaysian", flagSrc: "/ms-MY.webp" },
+  { code: "tr", label: "Türk",sub: "Turkish", flagSrc: "/tr-TR.webp" },
+  { code: "id", label: "Bahasa",sub: "Indonesian", flagSrc: "/id-ID.webp" },
+  { code: "ps", label: "پښتو",sub: "Pashto", flagSrc: "/ps-AF.webp" },
+  { code: "ru", label: "Русский",sub: "Russian", flagSrc: "/ru_RU.webp" },
+  { code: "ja", label: "日本国",sub: "Japanese", flagSrc: "/ja-JP.webp" },
+  { code: "ko", label: "한국어",sub: "Korean", flagSrc: "/ko-KR.webp" },
+  { code: "pt", label: "Português",sub: "Portuguese", flagSrc: "/pt-PT.webp" },
+  { code: "th", label: "แบบไทย",sub: "Thai", flagSrc: "/th-TH.webp" },
+  { code: "ur", label: "اردو",sub: "Urdu", flagSrc: "/ur-PK.webp" },
 
   // Add more languages as needed
 ];
@@ -68,7 +68,7 @@ const DRAWER_LANGUAGES = LANGUAGES.map((l) => ({
   code: l.code,
   label: l.label,
   name: l.label,
-  sub: l.label,
+  sub: l.sub,
   flagAlt: l.label,
 }));
 
@@ -193,9 +193,9 @@ export function LanguageDrawerPanel({
                     <span className="block truncate text-[14px] font-medium text-dark">
                       {lang.name}
                     </span>
-                    {/* <span className="block truncate text-[12px] text-[#6b7280]">
+                    <span className="block truncate text-[12px] text-[#6b7280]">
                       {lang.sub}
-                    </span> */}
+                    </span>
                   </span>
                 )}
               </Link>
