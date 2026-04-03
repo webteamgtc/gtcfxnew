@@ -3,45 +3,80 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
-const SHORT_LANGUAGES = [
-  { code: "en", label: "EN", flag: "/flags/gb.svg", alt: "English" },
-  { code: "ar", label: "AR", flag: "/flags/ae.svg", alt: "Arabic" },
-  { code: "zh", label: "ZH", flag: "/flags/HK.svg", alt: "Chinese" },
+/** App locale → ISO 3166-1 alpha-2 for FlagCDN PNGs */
+const FLAGCDN_COUNTRY = {
+  en: "gb",
+  ar: "ae",
+  zh: "cn",
+  "zh-tw": "tw",
+  fr: "fr",
+  es: "es",
+  vi: "vn",
+  hi: "in",
+  it: "it",
+  tr: "tr",
+  id: "id",
+  ml: "in",
+  ps: "af",
+  ru: "ru",
+  ja: "jp",
+  ko: "kr",
+  fa: "ir",
+  tl: "ph",
+  pt: "pt",
+  th: "th",
+  ur: "pk",
+};
+
+export function flagCdnSrc(localeCode) {
+  const key = String(localeCode || "en").toLowerCase();
+  const iso = FLAGCDN_COUNTRY[key] || (key.length === 2 ? key : "gb");
+  return `https://flagcdn.com/32x24/${iso}.png`;
+}
+
+// Single source of truth for language order + labels (flags come from FlagCDN)
+const LANGUAGES =[
+  { code: "en", label: "English", flagSrc: "/en.webp" },
+  { code: "ar", label: "العربية", flagSrc: "/ar.webp" },
+  { code: "zh", label: "中文", flagSrc: "/zh-hans.webp" },
+  { code: "zh-tw", label: "台灣", flagSrc: "/zh-TW.webp" },
+  { code: "es", label: "Español", flagSrc: "/es-ES.webp" },
+  { code: "it", label: "Italian", flagSrc: "/it-IT.webp" },
+  { code: "fa", label: "فارسی", flagSrc: "/fa-IR.webp" },
+  { code: "tl", label: "Filipino", flagSrc: "/tl-PH.webp" },
+  { code: "fr", label: "Français", flagSrc: "/fr-FR.webp" },
+  { code: "vi", label: "Tiếng Việt", flagSrc: "/vi-VN.webp" },
+  { code: "hi", label: "हिंदी", flagSrc: "/hi-IN.webp" },
+  { code: "ms", label: "Melayu", flagSrc: "/ms-MY.webp" },
+  { code: "tr", label: "Türk", flagSrc: "/tr-TR.webp" },
+  { code: "id", label: "Bahasa", flagSrc: "/id-ID.webp" },
+  { code: "ps", label: "پښتو", flagSrc: "/ps-AF.webp" },
+  { code: "ru", label: "Русский", flagSrc: "/ru_RU.webp" },
+  { code: "ja", label: "日本国", flagSrc: "/ja-JP.webp" },
+  { code: "ko", label: "한국어", flagSrc: "/ko-KR.webp" },
+  { code: "pt", label: "Português", flagSrc: "/pt-PT.webp" },
+  { code: "th", label: "แบบไทย", flagSrc: "/th-TH.webp" },
+  { code: "ur", label: "اردو", flagSrc: "/ur-PK.webp" },
+
+  // Add more languages as needed
 ];
 
-const DRAWER_LANGUAGES = [
-  { code: "en", name: "English", sub: "Global", flagPath: "/flags/gb.svg", flagAlt: "English" },
-  { code: "de", name: "Deutsch", sub: "German", flag: "DE" },
-  { code: "ms", name: "Bahasa Melayu", sub: "Malaysian", flagPath: "/flags/MY.svg", flagAlt: "Malay" },
-  { code: "zh", name: "中文简体", sub: "Chinese", flagPath: "/flags/HK.svg", flagAlt: "Chinese" },
-  { code: "th", name: "ไทย", sub: "Thai", flag: "TH" },
-  { code: "nl", name: "Dutch", sub: "Dutch", flag: "NL" },
-  { code: "lt", name: "Lietuvių", sub: "Lithuanian", flag: "LT" },
-  { code: "no", name: "Norsk", sub: "Norwegian", flag: "NO" },
-  { code: "ru", name: "Русский", sub: "Russian", flag: "RU" },
+/** Same order as LANGUAGES — single source for drawer + lookups */
+const DRAWER_LANGUAGES = LANGUAGES.map((l) => ({
+  code: l.code,
+  label: l.label,
+  name: l.label,
+  sub: l.label,
+  flagAlt: l.label,
+}));
 
-  { code: "es", name: "Español", sub: "Spanish", flag: "ES" },
-  { code: "ar", name: "العربية", sub: "Arabic", flagPath: "/flags/ae.svg", flagAlt: "Arabic" },
-  { code: "ko", name: "한국어", sub: "Korean", flagPath: "/flags/KR.svg", flagAlt: "Korean" },
-  { code: "hu", name: "Magyar", sub: "Hungarian", flag: "HU" },
-  { code: "hi", name: "हिन्दी", sub: "Hindi", flagPath: "/flags/IN.svg", flagAlt: "Hindi" },
-  { code: "sv", name: "Svenska", sub: "Swedish", flag: "SV" },
-  { code: "da", name: "Dansk", sub: "Danish", flag: "DA" },
-  { code: "ro", name: "Română", sub: "Romanian", flag: "RO" },
-
-  { code: "pt", name: "Português", sub: "Portuguese", flag: "PT" },
-  { code: "it", name: "Italiano", sub: "Italian", flag: "IT" },
-  { code: "fr", name: "Français", sub: "French", flag: "FR" },
-  { code: "id", name: "Bahasa Indonesia", sub: "Indonesian", flagPath: "/flags/ID.svg", flagAlt: "Indonesian" },
-  { code: "cs", name: "Čeština", sub: "Czech", flag: "CS" },
-  { code: "vi", name: "Tiếng Việt", sub: "Vietnamese", flagPath: "/flags/VN.svg", flagAlt: "Vietnamese" },
-  { code: "uk", name: "Українська", sub: "Ukrainian", flag: "UK" },
-  { code: "fi", name: "Suomi", sub: "Finnish", flag: "FI" },
-  { code: "et", name: "Eesti", sub: "Estonian", flag: "ET" },
-  { code: "tr", name: "Türkçe", sub: "Turkish", flag: "TR" },
-];
+// Short list used in the header dropdown trigger
+const SHORT_LANGUAGE_CODES = ["en", "ar", "zh"];
+const SHORT_LANGUAGES = SHORT_LANGUAGE_CODES.map((code) =>
+  DRAWER_LANGUAGES.find((l) => l.code === code),
+).filter(Boolean);
 
 export function LanguageDrawerPanel({
   locale = "en",
@@ -140,20 +175,14 @@ export function LanguageDrawerPanel({
                       }`
                 }
               >
-                <span className="inline-flex md:h-8 h-6 md:w-8 w-6 shrink-0 items-center justify-center">
-                  {lang.flagPath ? (
-                    <Image
-                      src={lang.flagPath}
-                      alt={lang.flagAlt || lang.name}
-                      width={18}
-                      height={18}
-                      className="md:h-8 h-6 md:w-8 w-6 rounded-full object-cover"
-                    />
-                  ) : (
-                    <span className="text-[12px] font-semibold text-[#111827]">
-                      {lang.flag || codeLabel}
-                    </span>
-                  )}
+                <span className="inline-flex md:h-8 h-6 md:w-8 w-6 shrink-0 items-center justify-center overflow-hidden rounded-full">
+                  <Image
+                    src={flagCdnSrc(lang.code)}
+                    alt={lang.flagAlt}
+                    width={32}
+                    height={32}
+                    className="md:h-8 h-6 md:w-8 w-6 object-cover"
+                  />
                 </span>
                 {isMobileLike && compactMobile ? (
                   <span className="text-[12px] font-semibold text-[#111827] leading-none">
@@ -164,9 +193,9 @@ export function LanguageDrawerPanel({
                     <span className="block truncate text-[14px] font-medium text-dark">
                       {lang.name}
                     </span>
-                    <span className="block truncate text-[12px] text-[#6b7280]">
+                    {/* <span className="block truncate text-[12px] text-[#6b7280]">
                       {lang.sub}
-                    </span>
+                    </span> */}
                   </span>
                 )}
               </Link>
@@ -232,7 +261,8 @@ export default function LanguageSwitcher({
   };
 
   const currentLanguage =
-    SHORT_LANGUAGES.find((lang) => lang.code === locale) || SHORT_LANGUAGES[0];
+    DRAWER_LANGUAGES.find((lang) => lang.code === locale) ||
+    SHORT_LANGUAGES[0];
 
   return (
     <div className="relative group">
@@ -252,8 +282,8 @@ export default function LanguageSwitcher({
         aria-label="Select language"
       >
         <Image
-          src={currentLanguage.flag}
-          alt={currentLanguage.alt}
+          src={flagCdnSrc(currentLanguage.code)}
+          alt={currentLanguage.flagAlt}
           width={16}
           height={16}
           className="h-4 w-4 rounded-full object-cover"
@@ -328,8 +358,8 @@ export default function LanguageSwitcher({
                 }`}
               >
                 <Image
-                  src={lang.flag}
-                  alt={lang.alt}
+                  src={flagCdnSrc(lang.code)}
+                  alt={lang.flagAlt}
                   width={18}
                   height={18}
                   className="h-[18px] w-[18px] rounded-full object-cover"

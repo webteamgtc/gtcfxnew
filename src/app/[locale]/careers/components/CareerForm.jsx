@@ -2,6 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { FiMessageSquare, FiPhoneCall } from "react-icons/fi";
+import { GiWorld } from "react-icons/gi";
+import { MdManageAccounts } from "react-icons/md";
+import { RiUserLocationLine } from "react-icons/ri";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
@@ -28,8 +33,26 @@ const ApplyNow = ({ messages = {}, selectedJobTitle }) => {
       : "ring-gray-200 focus:ring-primary/80"
     } focus:ring-2`;
 
+  const inputWithIconClass = (touched, error) =>
+    `block w-full rounded-lg bg-white pr-3 py-2.5 pl-10 text-[15px] leading-6 text-gray-900 placeholder:text-gray-400 shadow-sm ring-1 ring-inset outline-none transition ${touched && error
+      ? "ring-red-600 focus:ring-red-600"
+      : "ring-gray-200 focus:ring-primary/80"
+    } focus:ring-2`;
+
+  const textareaWithIconClass = (touched, error) =>
+    `block w-full rounded-lg bg-white pr-3 py-2.5 pl-10 text-[15px] leading-6 text-gray-900 placeholder:text-gray-400 shadow-sm ring-1 ring-inset outline-none transition ${touched && error
+      ? "ring-red-600 focus:ring-red-600"
+      : "ring-gray-200 focus:ring-primary/80"
+    } focus:ring-2`;
+
   const selectClass = (touched, error) =>
     `w-full appearance-none rounded-lg bg-white bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%20fill='none'%3E%3Cpath%20d='M6%208l4%204%204-4'%20stroke='%236B7280'%20stroke-width='1.8'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E")] bg-no-repeat bg-[position:right_0.85rem_center] bg-[length:14px_14px] pl-3 pr-12 py-2.5 text-[15px] leading-6 text-gray-900 shadow-sm ring-1 ring-inset outline-none transition ${touched && error
+      ? "ring-red-600 focus:ring-red-600"
+      : "ring-gray-200 focus:ring-primary/80"
+    } focus:ring-2`;
+
+  const selectWithIconClass = (touched, error) =>
+    `w-full appearance-none rounded-lg bg-white bg-[url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%20fill='none'%3E%3Cpath%20d='M6%208l4%204%204-4'%20stroke='%236B7280'%20stroke-width='1.8'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E")] bg-no-repeat bg-[position:right_0.85rem_center] bg-[length:14px_14px] pl-10 pr-12 py-2.5 text-[15px] leading-6 text-gray-900 shadow-sm ring-1 ring-inset outline-none transition ${touched && error
       ? "ring-red-600 focus:ring-red-600"
       : "ring-gray-200 focus:ring-primary/80"
     } focus:ring-2`;
@@ -194,108 +217,132 @@ const ApplyNow = ({ messages = {}, selectedJobTitle }) => {
             onChange={formik.handleChange}
             value={formik.values.job_title}
           />
-          <input
-            type="text"
-            name="first_name"
-            id="first_name"
-            placeholder={formText("first_name", "First Name")}
-            className={inputClass(formik.touched.first_name, formik.errors.first_name)}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.first_name}
-          />
+          <div className="relative">
+            <RiUserLocationLine className="absolute top-[16px] -translate-y-1 left-3 text-gray-400 h-5 w-5" />
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              placeholder={formText("first_name", "First Name")}
+              className={inputWithIconClass(formik.touched.first_name, formik.errors.first_name)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.first_name}
+            />
+          </div>
         </div>
         <div className=" md:col-span-3 col-span-12">
-          <input
-            type="text"
-            name="last_name"
-            id="last_name"
-            placeholder={formText("last_name", "Last Name")}
-            className={inputClass(formik.touched.last_name, formik.errors.last_name)}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.last_name}
-          />
+          <div className="relative">
+            <RiUserLocationLine className="absolute top-[16px] -translate-y-1 left-3 text-gray-400 h-5 w-5" />
+            <input
+              type="text"
+              name="last_name"
+              id="last_name"
+              placeholder={formText("last_name", "Last Name")}
+              className={inputWithIconClass(formik.touched.last_name, formik.errors.last_name)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.last_name}
+            />
+          </div>
         </div>
         <div className=" md:col-span-3 col-span-12">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder={formText("email", "Email Address")}
-            className={inputClass(formik.touched.email, formik.errors.email)}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
-          />
+          <div className="relative">
+            <CiMail className="absolute top-[16px] -translate-y-1 left-3 text-gray-400 h-5 w-5" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder={formText("email", "Email Address")}
+              className={inputWithIconClass(formik.touched.email, formik.errors.email)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.email}
+            />
+          </div>
         </div>
         <div className=" md:col-span-3 col-span-12">
-          <input
-            type="text"
-            name="phone"
-            id="phone"
-            placeholder={formText("phone", "Phone Number")}
-            className={inputClass(formik.touched.phone, formik.errors.phone)}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.phone}
-          />
+          <div className="relative">
+            <FiPhoneCall className="absolute top-[16px] -translate-y-1 left-3 text-gray-400 h-5 w-5" />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder={formText("phone", "Phone Number")}
+              className={inputWithIconClass(formik.touched.phone, formik.errors.phone)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.phone}
+            />
+          </div>
         </div>
         <div className=" md:col-span-3 col-span-12">
-          <input
-            type="text"
-            name="city"
-            id="city"
-            placeholder={formText("city", "City")}
-            className={inputClass(formik.touched.city, formik.errors.city)}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.city}
-          />
+          <div className="relative">
+            <GiWorld className="absolute top-[16px] -translate-y-1 left-3 text-gray-400 h-5 w-5" />
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder={formText("city", "City")}
+              className={inputWithIconClass(formik.touched.city, formik.errors.city)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.city}
+            />
+          </div>
         </div>
         <div className=" md:col-span-6 col-span-12">
-          <input
-            type="text"
-            name="url"
-            id="url"
-            placeholder={formText("url", "LinkedIn Profile URL")}
-            className={inputClass(formik.touched.url, formik.errors.url)}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.url}
-          />
+          <div className="relative">
+            <GiWorld className="absolute top-[16px] -translate-y-1 left-3 text-gray-400 h-5 w-5" />
+            <input
+              type="text"
+              name="url"
+              id="url"
+              placeholder={formText("url", "LinkedIn Profile URL")}
+              className={inputWithIconClass(formik.touched.url, formik.errors.url)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.url}
+            />
+          </div>
         </div>
         <div className=" md:col-span-3 col-span-12">
-          <select
-            id="experience"
-            name="experience"
-            autoComplete="country-name"
-            placeholder={formText("note", "Personal Note")}
-            className={selectClass(formik.touched.experience, formik.errors.experience)}
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.experience}
-          >
-            <option value="">{formText("exper.label", "Experience")}</option>
-            <option value="fresher">{formText("exper.one", "Fresher")}</option>
-            <option value="1-2">{formText("exper.sec", "1 - 2 years")}</option>
-            <option value="3-5">{formText("exper.third", "3 - 5 years")}</option>
-            <option value="5-10">{formText("exper.fourth", "5 - 10 years")}</option>
-            <option value="10">{formText("exper.fivth", "10+ years")}</option>
-          </select>
+          <div className="relative">
+            <MdManageAccounts className="absolute top-[16px] -translate-y-1 left-3 text-gray-400 h-5 w-5" />
+            <select
+              id="experience"
+              name="experience"
+              autoComplete="country-name"
+              placeholder={formText("note", "Personal Note")}
+              className={selectWithIconClass(formik.touched.experience, formik.errors.experience)}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.experience}
+            >
+              <option value="">{formText("exper.label", "Experience")}</option>
+              <option value="fresher">{formText("exper.one", "Fresher")}</option>
+              <option value="1-2">{formText("exper.sec", "1 - 2 years")}</option>
+              <option value="3-5">{formText("exper.third", "3 - 5 years")}</option>
+              <option value="5-10">{formText("exper.fourth", "5 - 10 years")}</option>
+              <option value="10">{formText("exper.fivth", "10+ years")}</option>
+            </select>
+          </div>
         </div>
 
         <div className="col-span-12">
-          <textarea
-            placeholder={formText("note", "Personal Note")}
-            className={textareaClass(formik.touched.message, formik.errors.message)}
-            rows="4"
-            name="message"
-            id="message"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.message}
-          />
+          <div className="relative">
+            <FiMessageSquare className="absolute top-3.5 left-3 text-gray-400 h-5 w-5" />
+            <textarea
+              placeholder={formText("note", "Personal Note")}
+              className={textareaWithIconClass(formik.touched.message, formik.errors.message)}
+              rows="4"
+              name="message"
+              id="message"
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              value={formik.values.message}
+            />
+          </div>
         </div>
       </div>
       <div className="mt-4">
