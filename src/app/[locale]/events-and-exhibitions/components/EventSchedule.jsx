@@ -6,12 +6,12 @@ function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const STRAPI_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL || "";
+const STRAPI_MEDIA_URL = process.env.NEXT_PUBLIC_STRAPI_MEDIA_URL || "";
 
 function getStrapiImageUrl(url) {
   if (!url) return "/event/event-circle.svg";
   if (url.startsWith("http")) return url;
-  return `${STRAPI_URL}${url}`;
+  return `${STRAPI_MEDIA_URL}${url}`;
 }
 
 function getYearFromDate(value) {
