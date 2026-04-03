@@ -1,96 +1,3 @@
-// "use client";
-// import React from "react";
-// import Image from "next/image";
-// import { FaPhone } from "react-icons/fa";
-
-// const KeyBenefits = () => {
-//   return (
-//     <section className="py-16 md:py-24 bg-white">
-//       <div className="container">
-//         <div className="text-center mb-12">
-//           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#24358b] mb-4">
-//             Key Benefits
-//           </h2>
-//           <h3 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
-//             What Makes a GTCFX Event Different?
-//           </h3>
-//           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-//             Every GTCFX event is a high-profile international event that brings together industry leaders, professionals, and key decision-makers who speak from experience, not from theory.
-//           </p>
-//         </div>
-
-//         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-//           {/* Left Content */}
-//           <div className="space-y-8">
-//             <div className="flex items-start gap-4">
-//               <div className="flex-shrink-0 w-12 h-12 bg-[#24358b] rounded-lg flex items-center justify-center">
-//                 <span className="text-white text-2xl">🎤</span>
-//               </div>
-//               <div>
-//                 <h4 className="text-xl md:text-2xl font-semibold text-[#24358b] mb-2">
-//                   Real Market Voices, Not Just Speakers
-//                 </h4>
-//                 <p className="text-gray-600 leading-relaxed">
-//                   Our speakers are industry veterans who have navigated real market challenges and achieved tangible results. They share practical insights and actionable strategies that you can implement immediately.
-//                 </p>
-//               </div>
-//             </div>
-
-//             <div className="flex items-start gap-4">
-//               <div className="flex-shrink-0 w-12 h-12 bg-[#24358b] rounded-lg flex items-center justify-center">
-//                 <span className="text-white text-2xl">💡</span>
-//               </div>
-//               <div>
-//                 <h4 className="text-xl md:text-2xl font-semibold text-[#24358b] mb-2">
-//                   Practical Insight You Can Actually Use
-//                 </h4>
-//                 <p className="text-gray-600 leading-relaxed">
-//                   Every session is designed to provide you with tools, techniques, and knowledge that you can apply directly to your trading or business operations. No theory, just real-world applications.
-//                 </p>
-//               </div>
-//             </div>
-
-//             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-//               <button className="bg-[#24358b] hover:bg-[#1d2a6f] text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
-//                 Learn More About
-//               </button>
-//               <a
-//                 href="tel:+00123456789"
-//                 className="flex items-center justify-center gap-2 bg-[#8B4513] hover:bg-[#6B3410] text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200"
-//               >
-//                 <FaPhone />
-//                 Get Now! +00123456789
-//               </a>
-//             </div>
-//           </div>
-
-//           {/* Right Images */}
-//           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-//             <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-//               <Image
-//                 src="/speaker-podium.jpg"
-//                 alt="Speaker at podium"
-//                 fill
-//                 className="object-cover"
-//               />
-//             </div>
-//             <div className="relative h-64 rounded-lg overflow-hidden shadow-lg">
-//               <Image
-//                 src="/conference-stage.jpg"
-//                 alt="Conference stage"
-//                 fill
-//                 className="object-cover"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default KeyBenefits;
-
 
 "use client";
 
@@ -107,14 +14,14 @@ export default function KeyBenefitsSection() {
               Key Benefits
             </div>
 
-            <h2 className="mt-4 text-center md:text-left md:text-[38px] text-[24px] font-extrabold md:leading-[1.2] leading-[1.3] text-primary capitalize">
+            <h2 className="HeadingH3 py-2">
               What Makes a GTCFX Event
               <br className="hidden md:block" />{" "}
               Different?
             </h2>
 
 
-            <p className="mt-4 max-w-[440px] text-center md:text-left md:text-[16px] text-[14px] font-normal leading-[1.5] text-[#8D9099]">
+            <p className="Text">
               Every GTCFX event is designed with intention. Not to impress on
               the surface but to deliver real value, real conversations, and
               real industry insight.
