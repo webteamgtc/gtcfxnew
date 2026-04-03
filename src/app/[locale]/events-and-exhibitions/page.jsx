@@ -55,7 +55,7 @@ export default async function AboutPage({ params }) {
 
   return (
     <>
-      <EventHero />
+      <EventHero messages={dict} />
       <KeyBenefitsSection />
       <EventScheduleSection eventsData={eventsData ?? { data: [] }} events={eventsData?.data ?? []} />
       <SpeakersSection />
