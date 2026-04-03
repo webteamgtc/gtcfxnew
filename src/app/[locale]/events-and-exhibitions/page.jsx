@@ -1,5 +1,9 @@
 import { getDictionary } from "@/i18n/request";
 import EventHero from "./components/HeroSection";
+import KeyBenefitsSection from "./components/KeyBenefits";
+import EventScheduleSection from "./components/EventSchedule";
+import SpeakersSection from "./components/Speakers";
+import ReviewsSection from "../components/common/ReviewsSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -18,7 +22,13 @@ export default async function AboutPage({ params }) {
 
   return (
     <>
-      <EventHero />
+      <EventHero /> 
+      <KeyBenefitsSection />
+     
+      <SpeakersSection />
+      <ReviewsSection />
+      
+   
   
 
       {/* other sections */}

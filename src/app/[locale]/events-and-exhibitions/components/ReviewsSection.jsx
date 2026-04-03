@@ -288,7 +288,7 @@ export default function ReviewsSection() {
   const totalReviews = 45;
 
   return (
-    <section className="w-full pt-10">
+    <section className="w-full py-10 md:py-16">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center">
           <h2 className="mt-[10px] max-w-xl mx-auto text-[24px] font-extrabold leading-[1.3] text-primary capitalize md:text-[38px] md:leading-[1.2]">

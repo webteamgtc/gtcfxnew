@@ -291,9 +291,9 @@ export default function ReviewsSection() {
     <section className="w-full py-10 md:py-16">
       <div className="mx-auto max-w-6xl px-4">
         <div className="text-center flex flex-col gap-4">
-          <h2 className="HeadingH2 capitalize">
+          <h2 className="HeadingH3 capitalize">
             Read our reviews to find <br className="hidden sm:block" />
-            out more about us
+            out <span className="text-secondary">more</span> about us
           </h2>
           <p className="Text">
             Read the feedback from our clients around the world

@@ -37,13 +37,13 @@ export default function EventHero({ eventsData }) {
   }, [targetDate]);
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden  py-12 md:py-20">
       {/* Background (replace with your image) */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('/event/ifbg.webp')",
+            "url('/breadcamp/event.webp')",
         }}
       />
       {/* Dark overlay */}
@@ -53,13 +53,13 @@ export default function EventHero({ eventsData }) {
       }}
       />
 
-      <div className="relative mx-auto container py-12 md:py-20">
-        <div className="grid gap-10 md:grid-cols-12 items-center">
+      <div className="relative mx-auto container">
+        <div className="grid gap-10 md:grid-cols-12 items-center min-h-[60vh]">
           {/* Left content */}
           <div className="md:col-span-8 lg:col-span-8">
            
-            <h2 className="mt-8 max-w-2xl text-center md:text-left text-[24px] font-extrabold md:leading-[1.09] leading-[1.2] tracking-[-0.02em] text-white md:text-[56px] 2xl:text-6xl uppercase 2xl:leading-[4.5rem]">
-            A Meeting Point for the People Shaping the Markets
+            <h2 className="mt-8 max-w-2xl text-center md:text-left text-[24px] font-bold md:leading-[1.09] leading-[1.2] tracking-[-0.02em] text-white md:text-[56px] 2xl:text-6xl uppercase 2xl:leading-[4.5rem]">
+            A Meeting Point for the <span className="text-secondary">People Shaping </span> the Markets
             </h2>
 
             <p className="mt-6 max-w-[540px] text-center md:text-left text-[14px] leading-[1.55] text-white md:text-[20px]">
@@ -83,7 +83,7 @@ export default function EventHero({ eventsData }) {
         <div className="mt-16">
           <div className="flex items-center gap-4">
             <div className="h-px flex-1 bg-white/10" />
-            <p className="text-center text-lg md:text-[22px] lg:text-3xl font-semibold tracking-wide text-white uppercase">
+            <p className="text-center text-lg md:text-[22px] lg:text-2xl tracking-wide text-white uppercase">
               New Events & Exhibitions Coming Soon ...
             </p>
             <div className="h-px flex-1 bg-white/10" />
@@ -93,8 +93,6 @@ export default function EventHero({ eventsData }) {
         </div>
       </div>
 
-      {/* Subtle vignette */}
-      <div className="pointer-events-none absolute inset-0 shadow-[inset_0_-140px_220px_rgba(0,0,0,0.65)]" />
     </section>
   );
 }

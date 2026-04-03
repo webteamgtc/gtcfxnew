@@ -199,7 +199,7 @@ function SpeakerCard({ s }) {
       {/* Name/Role row */}
       <div className="flex items-center text-center justify-center md:px-[26px] px-4 md:pt-[14px] pt-4">
         <div>
-          <p className="md:text-[18px] text-[16px] font-semibold text-[#000]">{s.name}</p>
+          <p className="HeadingH5 text-semibold">{s.name}</p>
           <p className="mt-1 md:text-[16px] text-[14px] font-normal text-[#777777]">{s.role}</p>
         </div>
 
@@ -215,13 +215,13 @@ export default function SpeakersSection() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         {/* Top */}
         <div className="text-center">
-          <div className="flex items-center justify-center gap-[8px] md:text-[22px] text-[18px] text-secondary font-semibold">
+          <div className="flex items-center justify-center gap-[8px] md:text-[22px] text-[18px] text-primary font-semibold">
             <Dot />
             <span>Our Speakers</span>
           </div>
 
-            <h2 className="mt-[10px] md:text-[38px] max-w-xl mx-auto text-[24px] font-extrabold md:leading-[1.2] leading-[1.3]  text-primary">
-            Our Expert Voices Shaping the Global Markets
+            <h2 className="HeadingH3 py-2 max-w-xl mx-auto">
+            Our Expert Voices <span className="text-secondary">Shaping the </span>Global Markets
           </h2>
 
           <p className="mx-auto mt-[12px] md:text-[16px] text-[14px] max-w-3xl font-normal leading-[1.5] text-[#515151]">
