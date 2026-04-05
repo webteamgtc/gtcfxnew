@@ -30,10 +30,11 @@ const FLAGCDN_COUNTRY = {
   ur: "pk",
 };
 
+/** Width-based PNG (sharper than 128×96 when scaled down); FlagCDN serves up to w2560 */
 export function flagCdnSrc(localeCode) {
   const key = String(localeCode || "en").toLowerCase();
   const iso = FLAGCDN_COUNTRY[key] || (key.length === 2 ? key : "gb");
-  return `https://flagcdn.com/128x96/${iso}.png`;
+  return `https://flagcdn.com/w320/${iso}.png`;
 }
 
 // Single source of truth for language order + labels (flags come from FlagCDN)
@@ -175,13 +176,15 @@ export function LanguageDrawerPanel({
                       }`
                 }
               >
-                <span className="inline-flex md:h-8 h-6 md:w-8 w-6 shrink-0 items-center justify-center overflow-hidden rounded-full">
-                <Image
-                src={flagCdnSrc(lang.code)}
-                width={32}
-                height={24}
-                className="object-contain"
-              />
+                <span className="relative inline-block md:h-8 h-6 md:w-8 w-6 shrink-0 overflow-hidden rounded-full">
+                  <Image
+                    src={flagCdnSrc(lang.code)}
+                    alt={lang.flagAlt}
+                    fill
+                    sizes="(max-width: 768px) 24px, 32px"
+                    quality={92}
+                    className=" object-center"
+                  />
                 </span>
                 {isMobileLike && compactMobile ? (
                   <span className="text-[12px] font-semibold text-[#111827] leading-none">
@@ -280,13 +283,16 @@ export default function LanguageSwitcher({
         }`}
         aria-label="Select language"
       >
-        <Image
-          src={flagCdnSrc(currentLanguage.code)}
-          alt={currentLanguage.flagAlt}
-          width={16}
-          height={16}
-          className="h-4 w-4 rounded-full object-cover"
-        />
+        <span className="relative h-4 w-4 shrink-0 overflow-hidden rounded-full">
+          <Image
+            src={flagCdnSrc(currentLanguage.code)}
+            alt={currentLanguage.flagAlt}
+            fill
+            sizes="16px"
+            quality={92}
+            className="object-contain object-center"
+          />
+        </span>
         <span className="text-[14px] font-medium leading-none">
           {currentLanguage.label}
         </span>
@@ -356,13 +362,16 @@ export default function LanguageSwitcher({
                     : "text-[#2f2f2f] hover:bg-[#f7f7f7]"
                 }`}
               >
-                <Image
-                  src={flagCdnSrc(lang.code)}
-                  alt={lang.flagAlt}
-                  width={18}
-                  height={18}
-                  className="h-[18px] w-[18px] rounded-full object-cover"
-                />
+                <span className="relative h-[18px] w-[18px] shrink-0 overflow-hidden rounded-full">
+                  <Image
+                    src={flagCdnSrc(lang.code)}
+                    alt={lang.flagAlt}
+                    fill
+                    sizes="18px"
+                    quality={92}
+                    className="object-contain object-center"
+                  />
+                </span>
                 <span>{lang.label}</span>
               </Link>
             );
