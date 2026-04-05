@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 function formatLabel(slug) {
   if (!slug) return "";
@@ -28,8 +29,9 @@ function formatLabel(slug) {
     .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
-export default function InnerPageBanner({
+export default function TradingHeroSection({
   title,
+  rightImage,
   description = "",
   backgroundImage = "/images/banner/default-banner.webp",
   mobileBackgroundImage = "/images/banner/default-banner-mobile.webp",
@@ -43,27 +45,7 @@ export default function InnerPageBanner({
   const localeList = ["en", "ar", "zh"];
   const pathParts = pathname.split("/").filter(Boolean);
 
-  const currentLocale = localeList.includes(pathParts[0]) ? pathParts[0] : "";
   const segments = pathParts.filter((segment) => !localeList.includes(segment));
-  const breadcrumbSegments =
-    segments.length > 1 ? segments.slice(0, -1) : segments;
-
-  const homeHref = currentLocale ? `/${currentLocale}` : "/";
-
-  const breadcrumbItems = [
-    { label: "Home", href: homeHref },
-    ...breadcrumbSegments.map((segment, index) => {
-      const href =
-        (currentLocale ? `/${currentLocale}` : "") +
-        "/" +
-        breadcrumbSegments.slice(0, index + 1).join("/");
-
-      return {
-        label: formatLabel(segment),
-        href,
-      };
-    }),
-  ];
 
   const pageTitle =
     title || formatLabel(segments[segments.length - 1]) || "Page Title";
@@ -126,39 +108,17 @@ export default function InnerPageBanner({
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[78%] bg-gradient-to-b from-transparent via-white/20 to-white/95" />
 
         {/* Content */}
-        <div className="relative z-10 container">
-          <div className="flex min-h-[500px] items-start pt-24 md:min-h-[400px] md:pt-28 lg:min-h-[450px] lg:pt-32">
+        <div
+          className={`relative z-10 container grid ${
+            rightImage ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"
+          }`}
+        >
+          <div className="flex min-h-[350px] items-center pt-24 md:min-h-[400px] md:pt-28 lg:min-h-[450px] lg:pt-32">
             <div
               className={`w-full max-w-[720px] ${
                 align === "center" ? "mx-auto text-center" : "text-left"
               }`}
             >
-              {/* Breadcrumb */}
-              <div className="mb-5 flex flex-wrap items-center gap-2 pt-16 text-sm font-semibold text-white md:text-base">
-                {breadcrumbItems.map((item, index) => {
-                  const isLast = index === breadcrumbItems.length - 1;
-
-                  return (
-                    <div
-                      key={`${item.label}-${index}`}
-                      className="flex items-center gap-2"
-                    >
-                      {!isLast ? (
-                        <Link
-                          href={item.href}
-                          className="text-white transition hover:text-[#d7b082]"
-                        >
-                          {item.label}
-                        </Link>
-                      ) : (
-                        <span className="text-white/95">{item.label}</span>
-                      )}
-
-                      {!isLast && <span className="text-secondary">→</span>}
-                    </div>
-                  );
-                })}
-              </div>
 
               {/* Title */}
               <h2 className="HeadingH2 text-secondary">{pageTitle}</h2>
@@ -171,6 +131,17 @@ export default function InnerPageBanner({
               )}
             </div>
           </div>
+          {rightImage ? (
+            <div className="flex items-center justify-center pb-10 pt-6 md:pb-0 md:pt-24 lg:pt-32">
+              <Image
+                src={rightImage}
+                alt=""
+                width={560}
+                height={560}
+                className="h-auto object-contain w-full max-w-[300px]"
+              />
+            </div>
+          ) : null}
         </div>
       </div>
     </section>

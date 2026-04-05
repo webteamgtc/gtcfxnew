@@ -69,7 +69,7 @@ account: {
     {
       heading: "Support",
       links: [
-        { label: "Glossary/FAQ's", href: "/faq" },
+        { label: "Glossary/FAQ's", href: "/glossary-faqs" },
         { label: "Tutorial Videos", href: "/support" },
         { label: "Contact Us", href: "/contact" },
       ],
@@ -82,11 +82,11 @@ account: {
      {
       heading: "Instruments",
       links: [
-        { label: "Forex CFDs", href: "/trading/cfd-trading" },
-        { label: "Energies CFDs", href: "/trading/rebates" },
-        { label: "Commodities CFDs", href: "/trading/commodities" },
-        { label: "Equity Indices CFDs", href: "/trading/index-cfd" },
-        { label: "Metals CFDs", href: "/trading/metals" },
+        { label: "Forex CFDs", href: "/forex" },
+        { label: "Energies CFDs", href: "/cfd-energy" },
+        { label: "Commodities CFDs", href: "/commodities" },
+        { label: "Equity Indices CFDs", href: "/indices" },
+        { label: "Metals CFDs", href: "/precious-metals" },
       ],
     },
     {
@@ -101,7 +101,7 @@ account: {
       heading: "Trading Hub",
       links: [
         { label: "Account Tutorial Videos", href: "/tools/demo-trading" },
-        { label: "Glossary & FAQs", href: "/trading/margin-calls" },
+        { label: "Glossary & FAQs", href: "/glossary-faqs" },
         { label: "Dynamic Leverage", href: "/trading/withdrawals" },
         { label: "Swap Update", href: "/trading/fraud-prevention" },
         { label: "Swap-Free Trading at GTCFX", href: "/tools/cfd-calculator" },

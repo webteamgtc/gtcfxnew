@@ -1,5 +1,28 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async redirects() {
+    const moves = [
+      ["cfd-trading", "cfd-trading"],
+      ["metals", "metals"],
+      ["energy-cfds", "energy-cfds"],
+    ];
+    const out = [];
+    for (const [fromSeg, toSeg] of moves) {
+      out.push({
+        source: `/trading/${fromSeg}`,
+        destination: `/${toSeg}`,
+        permanent: true,
+      });
+      for (const loc of ["ar", "zh"]) {
+        out.push({
+          source: `/${loc}/trading/${fromSeg}`,
+          destination: `/${loc}/${toSeg}`,
+          permanent: true,
+        });
+      }
+    }
+    return out;
+  },
  images: {
     remotePatterns: [
       {
