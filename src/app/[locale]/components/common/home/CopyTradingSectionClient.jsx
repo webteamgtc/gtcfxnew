@@ -36,11 +36,12 @@ export default function CopyTradingSectionClient({ initialData }) {
   if (!visibleItems.length) return null;
 
   return (
-    <div className="container pt-10 md:pt-14">
+    <section className=" pt-10 md:py-16 bg-[#F1F2F4]">
+      <div className="container">
       <div className="flex justify-between items-center gap-4">
         <div className="flex flex-col gap-4 items-start">
           <h2 className="HeadingH2">
-                    Copy Trading <span className="text-secondary"></span>
+                    Copy Trading <span className="text-secondary">Made Simple</span>
                   </h2>
                   <p className="Text max-w-3xl">
                     Follow top-performing traders and automatically copy their trades in real time. Choose who to follow, set your investment amount, and stay in control an easy way to trade without constant monitoring.
@@ -183,7 +184,8 @@ export default function CopyTradingSectionClient({ initialData }) {
           );
         })}
       </Swiper>
-    </div>
+      </div>
+    </section>
   );
 }
 
