@@ -12,6 +12,7 @@ import AwardsMarquee from './components/common/home/AwardsMarquee';
 import RevealOnScroll from './components/RevealOnScroll';
 import TradingTicker from './components/home2/TradingTicker';
 import PlatformsSection from './components/home2/PlatformsSection';
+import CopyTradingSection from './components/common/home/CopyTradingSection';
 
 
 export default async function HomePage({ params }) {
@@ -40,7 +41,9 @@ export default async function HomePage({ params }) {
 <RevealOnScroll>
   <SecurityBanner />
 </RevealOnScroll>
-
+<RevealOnScroll>
+  <CopyTradingSection />
+</RevealOnScroll>
 <RevealOnScroll>
   <TradingFeaturesSection />
 </RevealOnScroll>
