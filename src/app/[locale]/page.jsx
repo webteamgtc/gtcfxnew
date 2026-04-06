@@ -54,7 +54,7 @@ export default async function HomePage({ params }) {
 </RevealOnScroll>
 
 <RevealOnScroll>
-  <BlogsSection />
+  <BlogsSection locale={locale} />
 </RevealOnScroll>
 
    </>
