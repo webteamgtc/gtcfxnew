@@ -175,10 +175,67 @@ a:hover {
     opacity: 1;
     border-radius: 9999px;
   }
+
+  /* Leaderboard pagination: keep it visible and below cards */
+  .leaderboard.swiper {
+    padding-bottom: 28px;
+  }
+
+ 
+
+  .leaderboard .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: #101638;
+    opacity: 0.9;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+
+  }
+
+  .leaderboard .swiper-pagination {margin-bottom: -7px;}
+
+  .leaderboard .swiper-pagination-bullet-active {
+    width: 28px;
+    height: 8px;
+    background: #b68756;
+    opacity: 1;
+    border-radius: 9999px;
+  }
 }
 
 .js-copyright-label,
 .tradingview-widget-copyright .js-copyright-label,
 .tradingview-widget-copyright {
   display: none !important;
+}
+
+
+.leaderboard 
+  .swiper-slide {
+    text-align: left;
+    font-size: 18px;
+    border-radius: 1.5rem;
+    border: 1px solid #e0d9d9a6;
+    /* Center slide text vertically */
+    box-shadow: 0 0.125rem 0.625rem rgba(16, 57, 175, 0.2196078431);
+    background: transparent
+      linear-gradient(180deg, #ffffff 0%, #ffffff 75%, #f1f2f6 100%) 0% 0%
+      no-repeat padding-box;
+  
+}
+
+
+.leaderboard_table thead tr th{
+  padding: 10px 10px;
+  background-color: #b28752;
+}
+.leaderboard_table tbody tr td{
+  padding: 10px 10px;
+  border-bottom: 1px solid #DDD;
+}
+
+
+.chartss{
+  min-height: 63px!important;
 }

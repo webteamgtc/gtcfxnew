@@ -2,17 +2,6 @@ import Image from "next/image";
 
 const sections = [
   {
-    title: "Copy Trading Made Simple",
-    description:
-      "Follow top-performing traders and automatically copy their trades in real time. Choose who to follow, set your investment amount, and stay in control on an easy way to trade without constant monitoring.",
-    primaryBtn: "Explore Copy Trading",
-    secondaryBtn: "Review More Copy Trading",
-    image: "/home/pamm.webp",
-    imageAlt: "Copy Trading App Screen",
-    reverse: false,
-    imageCard: false,
-  },
-  {
     title: "Invest Smarter with PAMM",
     description:
       "Invest with professional money managers who trade using structured strategies. Your funds stay in your account, performance is transparent, and the process is truly hands-free ideal for long-term investing.",
