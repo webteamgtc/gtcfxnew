@@ -25,13 +25,12 @@ export default async function GlossaryFaqsPage({ params }) {
 
   return (
     <>
-      <InnerPageBanner
-        title={glossaryFaqs.title}
-        description={glossaryFaqs.des}
-        backgroundImage="/breadcamp/about.webp"
-        mobileBackgroundImage="/breadcamp/about-mobile.webp"
-      />
-         <section className="bg-white py-10 md:py-14">
+     <InnerPageBanner
+             description="Explore key trading terms and find answers to common questions about GTCFX’s products, services, and trading conditions."
+             backgroundImage="/breadcamp/faqs.webp"
+             mobileBackgroundImage="/breadcamp/faq-mobile.webp"
+           />
+         <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
           <div className="container mx-auto">
             <GlossaryList
               browseByLetter={glossaryFaqs.browseByLetter}
