@@ -18,7 +18,7 @@ export default function GlossaryList({
       </p>
 
       <div
-        className="flex flex-wrap justify-center gap-2 rounded-2xl border border-gray-300 bg-gray-100 p-2 md:gap-2.5 md:rounded-3xl md:p-2.5"
+        className="flex flex-wrap justify-center gap-1 rounded-2xl border border-gray-300 bg-gray-100 p-2 md:gap-2 md:rounded-3xl md:p-2"
         role="tablist"
         aria-label={browseByLetter}
       >

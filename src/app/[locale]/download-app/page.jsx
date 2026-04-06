@@ -1,6 +1,6 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import GlobalPresenceMapSection from "../components/about/GlobalPresenceMapSection";
+import AwardsSection from "../components/about/AwardsSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -20,13 +20,13 @@ export default async function AboutPage({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
-        backgroundImage="/breadcamp/globel.webp"
-        mobileBackgroundImage="/breadcamp/globel-mobile.webp"
+        description="Trading with us offers the optimal avenue for investing your money
+            wisely and profitably. "
+        backgroundImage="/breadcamp/awardpc.webp"
+        mobileBackgroundImage="/breadcamp/award-mob.webp"
       />
-
-    <GlobalPresenceMapSection />
-
+      <AwardsSection />
+  
 
       {/* other sections */}
     </>

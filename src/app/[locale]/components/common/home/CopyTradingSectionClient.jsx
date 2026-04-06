@@ -38,9 +38,15 @@ export default function CopyTradingSectionClient({ initialData }) {
   return (
     <div className="container pt-10 md:pt-14">
       <div className="flex justify-between items-center gap-4">
-        <h2 className="HeadingH3">
-          Copy Trading Made Simple
-        </h2>
+        <div className="flex flex-col gap-4 items-start">
+          <h2 className="HeadingH2">
+                    Copy Trading <span className="text-secondary"></span>
+                  </h2>
+                  <p className="Text max-w-3xl">
+                    Follow top-performing traders and automatically copy their trades in real time. Choose who to follow, set your investment amount, and stay in control an easy way to trade without constant monitoring.
+                  </p>
+        </div>
+        
         <div className="flex flex-row gap-3">
           <button className="rounded-full bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] hover:from-[#263788] hover:via-[#101638] hover:to-[#263788] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:opacity-90">
             Explore Copy Trading
@@ -99,64 +105,81 @@ export default function CopyTradingSectionClient({ initialData }) {
               : `https://flagcdn.com/96x72/${countryCode}.webp`;
 
           return (
-            <SwiperSlide key={slideKey} className="h-full">
-              <div
-                className="w-full min-h-40 cursor-pointer"
-                onClick={() => router.push(`/leaderboard/${single?.profileId}`)}
-              >
-                <div className="flex items-center justify-between p-4 pb-0">
-                  <div className="relative">
-                    <img
-                      className="h-12 w-12 rounded-full"
-                      src={
-                        single?.public?.avatarPath ||
-                        "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/avatar.webp"
-                      }
-                      alt=""
-                    />
-                    <div className="absolute -right-2 top-0 h-6 w-6 rounded-full">
-                      <img
-                        className="h-full w-full rounded-full object-cover"
-                        src={flagSrc}
-                        alt=""
-                      />
-                    </div>
-                  </div>
+            <SwiperSlide key={slideKey} className="h-full !overflow-visible">
+  <div
+    className="group w-full cursor-pointer rounded-2xl border border-gray-200 bg-white p-1 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(25,32,85,0.15)]"
+    onClick={() => router.push(`/leaderboard/${single?.profileId}`)}
+  >
+    {/* Inner Card */}
+    <div className="rounded-2xl bg-gradient-to-b from-white to-[#f8faff] p-3">
 
-                  <div>
-                    <button
-                      className="cursor-pointer rounded-[25px] border-2 border-secondary px-2 py-1 text-sm"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.open(
-                          `https://gtccopy.com/portal/registration/subscription?provider=${single?.accountId}&backLink=true&backUrl=https%3A%2F%2Fratings.gtccopy.com%2Fwidgets%2Fratings%3FwidgetKey=social_platform_ratings&lang=en&wlid=2b9e7678-160f-48f5-9a5f-5f5bef2d9d26&widgetKey=social_platform_ratings`,
-                          "_blank"
-                        );
-                      }}
-                    >
-                      Copy
-                    </button>
-                  </div>
-                </div>
+      {/* Header */}
+      <div className="flex items-center justify-between">
+        
+        {/* Avatar */}
+        <div className="relative flex items-center gap-2">
+          <div className="relative">
+            <img
+              className="h-12 w-12 rounded-full border-2 border-white shadow-md"
+              src={
+                single?.public?.avatarPath ||
+                "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/avatar.webp"
+              }
+              alt=""
+            />
 
-                <div className="mt-2 px-3">
-                  <h4 className="text-base line-clamp-1 font-semibold text-secondary">
-                    {single?.accountName}
-                  </h4>
-                </div>
+            {/* Flag */}
+            <div className="absolute -right-1 -top-1 h-5 w-5 overflow-hidden rounded-full border border-white shadow">
+              <img
+                className="h-full w-full object-cover"
+                src={flagSrc}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
 
-                <ChartWrapperComponent item={single} height={150} width={"100%"} />
+        {/* Copy Button */}
+        <button
+          className="rounded-full border border-secondary px-3 py-1 text-xs font-medium text-secondary transition-all duration-300 hover:bg-secondary hover:text-white hover:shadow-md"
+          onClick={(e) => {
+            e.stopPropagation();
+            window.open(
+              `https://gtccopy.com/portal/registration/subscription?provider=${single?.accountId}&backLink=true&backUrl=https%3A%2F%2Fratings.gtccopy.com%2Fwidgets%2Fratings%3FwidgetKey=social_platform_ratings&lang=en&wlid=2b9e7678-160f-48f5-9a5f-5f5bef2d9d26&widgetKey=social_platform_ratings`,
+              "_blank"
+            );
+          }}
+        >
+          Copy
+        </button>
+      </div>
 
+      {/* Name */}
+      <div className="mt-3">
+        <h4 className="line-clamp-1 text-base font-semibold text-secondary group-hover:text-primary transition">
+          {single?.accountName}
+        </h4>
+      </div>
 
-                <div className="mt-2 flex items-center justify-between px-3 pb-3">
-                  <div>
-                    <h5 className="text-[10px]">Max Profit</h5>
-                    <p className="text-sm font-semibold">{single?.maxProfit}%</p>
-                  </div>
-                  <FaAngleRight className="text-secondary" />
-                </div>
-              </div>
-            </SwiperSlide>
+      {/* Chart */}
+      <div className="mt-3 rounded-xl bg-white p-2 shadow-sm">
+        <ChartWrapperComponent item={single} height={140} width={"100%"} />
+      </div>
+
+      {/* Footer */}
+      <div className="mt-3 flex items-center justify-between">
+        <div>
+          <p className="text-[11px] text-gray-500">Max Profit</p>
+          <p className="text-sm font-semibold text-gray-800 group-hover:text-secondary">
+            {single?.maxProfit}%
+          </p>
+        </div>
+
+        <FaAngleRight className="text-secondary transition-all duration-300 group-hover:translate-x-2 group-hover:scale-110" />
+      </div>
+    </div>
+  </div>
+</SwiperSlide>
           );
         })}
       </Swiper>
