@@ -86,7 +86,7 @@ export default function FeaturesSection() {
   return (
     <section className="py-10 md:py-14 bg-[#fff]">
       <div className="container">
-        <div className="text-center flex flex-col items-center gap-8">
+        <div className="text-center flex flex-col items-center gap-5">
           <h2 className="HeadingH2">
             Invest with the World's <br className="hidden md:block" />
             <span className="text-secondary">Premier Online Trading</span> Platform
@@ -98,7 +98,7 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="mt-14 hidden md:grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-6 hidden md:grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {features.map((item, index) => (
             <FeatureCard key={index} item={item} index={index} />
           ))}
