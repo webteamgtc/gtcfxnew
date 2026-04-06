@@ -92,9 +92,9 @@ account: {
     {
       heading: "Platforms",
       links: [
-        { label: "MT4 Trading Platform", href: "/platforms/mt4" },
-        { label: "MT5 Trading Platform", href: "/platforms/mt5" },
-        { label: "Download Trading Platform", href: "/platforms" },
+        { label: "MT4 Trading Platform", href: "/mt4-platform" },
+        { label: "MT5 Trading Platform", href: "/mt5-platform" },
+        { label: "Download Trading Platform", href: "/download-app" },
       ],
     },
     {
