@@ -574,7 +574,7 @@ export default function CommonLeadForm({
         <form onSubmit={formik.handleSubmit} className={`relative w-full min-w-0 ${className}`}>
             <div className={phoneStyleId}>
                 <div
-                    className={`relative overflow-hidden rounded-[20px] md:p-8 p-4 ${
+                    className={`relative overflow-hidden rounded-[20px] md:p-5 p-4 ${
                         isIb ? "md:px-16 px-4 md:py-12 py-8" : ""
                     } ${cardClassName}`}
                     style={{
@@ -609,7 +609,7 @@ export default function CommonLeadForm({
                             </div>
                         )}
 
-                        <div className="mt-5 grid md:grid-cols-2 grid-cols-1 gap-4">
+                        <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                             <div className="min-w-0">
                                 <div
                                     className="mb-1 text-[14px] font-normal"
@@ -689,7 +689,7 @@ export default function CommonLeadForm({
                             </div>
                         </div>
 
-                        <div className="mt-4 min-w-0">
+                        <div className="mt-3 min-w-0">
                             <div
                                 className="mb-1 text-[14px] font-normal"
                                 style={{ color: appearance.labelColor }}
@@ -728,7 +728,7 @@ export default function CommonLeadForm({
                             )}
                         </div>
 
-                        <div className="mt-4 min-w-0">
+                        <div className="mt-3 min-w-0">
                             <div
                                 className="mb-1 text-[14px] font-normal"
                                 style={{ color: appearance.labelColor }}
@@ -753,7 +753,7 @@ export default function CommonLeadForm({
                             )}
                         </div>
 
-                        <div className="mt-4 min-w-0">
+                        <div className="mt-3 min-w-0">
                             <div
                                 className="mb-1 text-[14px] font-normal"
                                 style={{ color: appearance.labelColor }}
@@ -789,7 +789,7 @@ export default function CommonLeadForm({
                             )}
                         </div>
 
-                        <div className="mt-4 flex flex-col md:flex-row items-stretch md:items-center gap-4 min-w-0">
+                        <div className="mt-3 flex flex-col md:flex-row items-stretch md:items-center gap-4 min-w-0">
                             <button
                                 type="button"
                                 onClick={sendPhoneVerificationCode}
@@ -857,7 +857,7 @@ export default function CommonLeadForm({
                         )}
 
                         <p
-                            className="mt-6 text-[14px] font-normal leading-[1.5] break-words"
+                            className="mt-3 text-[13px] font-normal leading-[1.5] break-words"
                             style={{ color: appearance.disclaimerMuted }}
                         >
                             <span className="font-medium" style={{ color: appearance.linkColor }}>
@@ -877,13 +877,13 @@ export default function CommonLeadForm({
                         </p>
 
                         <label
-                            className="mt-4 flex items-start gap-3 text-xs md:text-[14px] font-medium"
+                            className="mt-3 flex items-start gap-3 text-xs md:text-[13px] font-medium"
                             style={{ color: appearance.disclaimerMuted }}
                         >
                             <input
                                 type="checkbox"
                                 {...formik.getFieldProps("terms")}
-                                className="mt-0.5 h-5 w-5 rounded border-[#D1D5DB]"
+                                className="mt-0.5 h-4 w-4 rounded border-[#D1D5DB]"
                                 checked={formik.values.terms}
                             />
                             <span className="break-words">
@@ -909,7 +909,7 @@ export default function CommonLeadForm({
                         <button
                             type="submit"
                             disabled={loading || !isOtpVerified}
-                            className="mt-8 py-4 w-full rounded-full text-[16px] font-medium transition hover:brightness-110 disabled:cursor-not-allowed"
+                            className="mt-5 py-4 w-full rounded-full text-[16px] font-medium transition hover:brightness-110 disabled:cursor-not-allowed"
                             style={
                                 loading || !isOtpVerified
                                     ? {
