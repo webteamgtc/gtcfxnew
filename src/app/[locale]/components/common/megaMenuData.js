@@ -102,9 +102,9 @@ account: {
       links: [
         { label: "Account Tutorial Videos", href: "/tools/demo-trading" },
         { label: "Glossary & FAQs", href: "/glossary-faqs" },
-        { label: "Dynamic Leverage", href: "/trading/withdrawals" },
-        { label: "Swap Update", href: "/trading/fraud-prevention" },
-        { label: "Swap-Free Trading at GTCFX", href: "/tools/cfd-calculator" },
+        { label: "Dynamic Leverage", href: "/dynamic-leverage" },
+        { label: "Swap Update", href: "/swap-update" },
+        { label: "Swap-Free Trading at GTCFX", href: "swap-free-trading" },
       ],
     },
     {
