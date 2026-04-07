@@ -548,7 +548,7 @@
       "desc4_2": "Factors like extreme weather, production cuts, and changes in global consumption can significantly affect energy prices. With GTCFX, you can trade Energy CFDs efficiently, taking advantage of both rising and falling markets while benefiting from tight spreads and fast execution.",
       "title5": "Oil CFD Trading",
       "desc5": "Oil CFD trading enables traders to capitalize on crude oil price movements without having to own or store physical oil. The oil market is active 24 hours a day and is ideal for traders who seek volatility and liquidity. Through GTCFX, you can access real-time data, advanced analytics, and a variety of energy CFD instruments to help you make informed trading decisions.",
-       "faq_title": "Frequently Asked Questions",
+      "faq_title": "Frequently Asked Questions",
       "faq1Q": "What are energy symbol in MT4/MT5?",
       "faq1A1_1": "In MetaTrader 4 (MT4) and MetaTrader 5 (MT5), Forex symbols are representations of different currency pairs that traders can trade on the platform. These symbols are typically composed of a three-letter abbreviation for the base currency and a three-letter abbreviation for the quote currency.",
       "faq1A1_2": "For example, in the symbol EUR/USD, EUR represents the Euro (base currency), and USD represents the US Dollar (quote currency). The Forex symbols are used to identify and track the value of one currency relative to another.",
@@ -839,7 +839,8 @@
       "mobileBackgroundImage": "/breadcamp/fund-mobile.webp",
       "sectionImages": [
         "/home/products/commodities-image.webp",
-        "/account/forex/mobiles.webp"      ],
+        "/account/forex/mobiles.webp"
+      ],
       "rightImage": "/home/products/commodities-image.webp",
       "disclaimer": "*** The above applicable only for GTC Global Ltd, (FSCM) & GTC Global Trade Capital Co, (VFSC) Clients.",
       "faqSubtitle": "Answers about commodity CFDs, metals, energy, agricultural markets, and trading with GTCFX.",
@@ -948,7 +949,7 @@
       "mobileBackgroundImage": "/breadcamp/fund-mobile.webp",
       "sectionImages": [
         "/account/forex/forex-banner.webp",
-       "/account/forex/mobiles.webp"
+        "/account/forex/mobiles.webp"
       ],
       "rightImage": "/home/products/indices-image.webp",
       "disclaimer": "*** The above applicable only for GTC Global Ltd, (FSCM) & GTC Global Trade Capital Co, (VFSC) Clients.",
@@ -1090,6 +1091,397 @@
       "rightImage": "/home/products/metals-image.webp",
       "disclaimer": "*** The above applicable only for GTC Global Ltd, (FSCM) & GTC Global Trade Capital Co, (VFSC) Clients.",
       "faqSubtitle": "Answers about metal CFDs, gold and silver, strategies, and trading with GTCFX."
+    }
+  },
+  "swapFreePage": {
+    "hero": {
+      "badge": "Swap-free trading at GTCFX",
+      "title": "Trade without swap charges",
+      "description1": "Trade without overnight swap charges on selected instruments — designed for traders who require interest-free trading conditions for religious or personal reasons.",
+      "description2": "Swap-free trading removes these interest-based charges on eligible instruments. This structure is ideal for traders following Islamic financial principles or anyone who prefers interest-free conditions."
+    },
+    "whyChoose": {
+      "title": "Why Choose Swap-Free at GTCFX?",
+      "subtitle": "Our goal is to provide flexible and fair-trading conditions while ensuring compliance with global standards.",
+      "features": {
+        "noSwapCharges": {
+          "icon": "%",
+          "title": "No Overnight Swap Charges",
+          "description": "Trade selected instruments without paying overnight swap or rollover fees."
+        },
+        "regionBased": {
+          "icon": "🌍",
+          "title": "Region-Based Eligibility",
+          "description": "Swap-free status available for clients in Islamic and approved regions."
+        },
+        "transparent": {
+          "icon": "✔️",
+          "title": "Transparent Trading Policy",
+          "description": "Clear and fair conditions with no hidden rules or unclear fee structures."
+        },
+        "fastActivation": {
+          "icon": "⚡",
+          "title": "Fast Account Activation",
+          "description": "Enable swap-free status quickly with Support or Live Chat assistance."
+        },
+        "longTerm": {
+          "icon": "⏳",
+          "title": "Ideal for Long-Term Trading",
+          "description": "Hold trades longer without accumulating interest-based overnight fees."
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "How Swap-Free Works",
+      "subtitle": "Swap-free status may be automatically applied based on your region or enabled upon request.",
+      "onceActivated": {
+        "title": "Once activated:",
+        "points": {
+          "point1": "Eligible instruments incur no swap fees when held overnight",
+          "point2": "All other trading conditions remain unchanged",
+          "point3": "Trading behaviour may be periodically reviewed",
+          "point4": "Swap-free accounts may be adjusted if activity is found to be non-compliant"
+        }
+      },
+      "eligibility": {
+        "title": "Eligibility Criteria",
+        "description": "Swap-free status may be granted based on:",
+        "criteria": {
+          "country": {
+            "title": "1. Country / Region",
+            "description": "Clients in selected Islamic or approved regions may qualify automatically."
+          },
+          "trading": {
+            "title": "2. Trading Behaviour",
+            "description": "Accounts should reflect normal trading patterns.",
+            "note": "Unusual or non-standard activity may trigger a review."
+          }
+        }
+      }
+    },
+    "instruments": {
+      "title": "Instruments Covered",
+      "description1": "Swap-free applies only to selected instruments. Coverage may vary depending on region and liquidity-provider conditions.",
+      "description2": "Examples of Eligible Categories",
+      "categories": {
+        "majorFx": "Major FX pairs (e.g., EURUSD, GBPUSD, USDJPY, AUDUSD)",
+        "preciousMetals": "Selected precious metals (e.g., XAUUSD, XAGUSD)",
+        "minorsExotics": "Selected minors & exotics",
+        "indicesEnergies": "Selected indices & energies",
+        "cryptocurrencies": "Selected cryptocurrencies"
+      },
+      "note": "For the live list, please refer to the Contract Specifications section in your trading platform.",
+      "nonSwapFree": {
+        "title": "Non–Swap-Free Instruments",
+        "description": "These instruments do not qualify for swap-free status and will always remain under standard swap conditions.",
+        "forexPairs": {
+          "title": "Forex Pairs",
+          "pairs": "GBPJPY,EURZAR,GBPZAR,USDCNH"
+        },
+        "commodities": {
+          "title": "Commodities & Energies",
+          "items": "CUCUSD,NGCUSD,XPDUSD,XPTUSD"
+        },
+        "crypto": {
+          "title": "Cryptocurrencies (USDT Format)",
+          "items": "ADAUSDT,ATMUSDT,BATUSDT,BCHUSDT,DOGUSDT,DSHUSDT,LTCUSDT,TRUMPUSDT,TRXUSDT,XLMUSDT,XMRUSDT,XRPUSDT,ZECUSDT"
+        }
+      }
+    },
+    "howToEnable": {
+      "title": "How to Enable Swap-Free",
+      "description": "To activate swap-free, simply contact our:",
+      "contact": "👉 Live Chat or Email our support team at:",
+      "email": "support@gtcfx.com",
+      "confirmation": "We will review your eligibility and apply swap-free status where appropriate. You will receive a confirmation once activated."
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "points": {
+        "point1": "GTCFX may approve, decline, or revoke swap-free at its discretion",
+        "point2": "Trading activity may be reviewed for compliance",
+        "point3": "Administrative fees may apply in some regions",
+        "point4": "Swap-free removes interest-based swap charges only",
+        "point5": "All other normal trading costs (spreads, commissions, slippage, etc.) still apply"
+      },
+      "note": "Please reach out to our team for any additional details."
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "q1": "Does swap-free mean all overnight costs are removed?",
+        "a1": "No. Swap-free removes interest-based swap charges only. Other normal trading costs such as spreads, commissions, and slippage may still apply.",
+        "q2": "Can my swap-free status be removed?",
+        "a2": "Yes. If your trading activity is inconsistent with normal use or the swap-free terms, your account status may be reviewed and adjusted.",
+        "q3": "Is swap-free available worldwide?",
+        "a3": "No. Swap-free availability depends on your country or region and applicable regulatory and compliance requirements.",
+        "q4": "Are all instruments swap-free?",
+        "a4": "No. Only selected instruments qualify as swap-free. Certain instruments, such as those listed under Non–Swap-Free Instruments, will always remain under standard swap conditions."
+      }
+    }
+  },
+  "swapUpdate": {
+    "metaData": {
+      "title": "Swap Update",
+      "des": "View the latest swap rates (overnight financing) by instrument group. Values may change based on liquidity and market conditions."
+    },
+    "content": {
+      "heading1": "Swap Rates",
+      "des1": "Swap values are indicative and may vary by account type and platform.",
+      "des2": "Please refer to your trading terminal for the most up-to-date swap information."
+    }
+  },
+  "dynamicLeverage": {
+    "lervageHero": {
+      "title": "Dynamic Leverage",
+      "description": "GTCFX utilizes a dynamic leverage model across various financial instruments, including FX majors, FX minors, metals, indices, commodities, stocks/shares, energy, and Digital Currency Assets, to help you maximize your trading potential."
+    },
+    "whatLervage": {
+      "title": "What is Dynamic Leverage?",
+      "description": "Dynamic leverage at GTCFX automatically adjusts based on your trading positions. This model is applied per instrument, meaning your leverage decreases as your trading volume increases. This approach enables you to optimize your trading potential.",
+      "boostTrades": "Boost Your Trades",
+      "leverage": "Upto 1:2000 Leverage",
+      "leverageDescription": "No matter the size of your trading capital, we're increasing your investment power by offering dynamic leverage, up to an outstanding 1:2000.",
+      "leverageDetails": {
+        "one": "Up to 1:2000 on Forex currencies",
+        "two": "Up to 1:2000 on Metals",
+        "three": "Up to 1:400 on Commodities & Energy",
+        "four": "Up to 1:250 on Digital Currency Assets currency CFDs",
+        "five": "Up to 1:125 on Indices",
+        "six": "Up to 1:20 Stocks/Shares"
+      },
+      "scaleTrades": "Scale Your Trades",
+      "dynamicLeverageTiers": "Dynamic Leverage Tiers",
+      "tiersDescription": "These dynamic leverage tiers ensure you have the flexibility to scale your trades while controlling the risk exposure.",
+      "example": "Example",
+      "exampleDetails": {
+        "one": "If you trade up to 5 lots on EURUSD and up to 5 lots on GBPUSD, both positions will maintain a leverage of 1:2000.",
+        "two": "However, if you trade 4 more lots on EURUSD, the first 5 lots will have a leverage of 1:2000, while the next 4 lots will be calculated at a leverage of 1:1000."
+      },
+      "disclaimer": "This applies to all other trading instruments according to the dynamic leverage tiers mentioned above"
+    },
+    "popUp": {
+      "leveragePopTitle": "Introducing Dynamic Leverage",
+      "description": "Effective September 9th, 2024, GTCFX will implement a dynamic leverage model across a wide range of financial instruments, including FX majors, FX minors, metals, indices, commodities, stocks/shares, energy, and Digital Currency Assets currencies. Please note that all trades executed from September 9th, 2024 onwards will be subject to this updated leverage structure.",
+      "agreedButton": "Agreed"
+    },
+    "tieredLeverage": {
+      "heading": "FAQ's on Tiered Margin/Leverage",
+      "one": {
+        "ques": "How does tiered leverage work?",
+        "ans": "Tiered leverage reduces the leverage ratio as the size of the trade increases. For example, a small position might have a leverage of 1:500, but as the position size grows, the leverage might drop to 1:200, 1:100, or even lower, requiring more margin to maintain the trade."
+      },
+      "two": {
+        "ques": "Can tiered leverage affect my trading strategy?",
+        "ans": "If you're trading large positions, the increased margin requirements due to tiered leverage could limit your ability to open additional positions or force you to close existing ones."
+      },
+      "three": {
+        "ques": "Is tiered leverage the same for all assets?",
+        "ans": "No, tiered leverage can vary between different asset classes. For example, leverage for forex pairs might be higher than for commodities or indices."
+      },
+      "four": {
+        "ques": "What happens if I can't meet the margin requirements due to tiered leverage?",
+        "ans": "If you can't meet the margin requirements, you will be required to add more funds to your account to enable you to trade larger volumes."
+      },
+      "five": {
+        "ques": "Is tiered leverage applied automatically?",
+        "ans": "Yes, tiered leverage is typically applied automatically by the trading platform based on the size of your position."
+      },
+      "six": {
+        "ques": "How can I calculate the margin required with tiered leverage?",
+        "ans": "You can calculate the margin required by checking the margin calculator provided by your trading platform."
+      }
+    },
+    "highMarginRequirement": {
+      "heading": "FAQs – High Margin Requirement (HMR)",
+      "one": {
+        "ques": "What is High Margin Requirement (HMR)?",
+        "paragraphs": {
+          "one": "HMR is a temporary increase in the margin required to open new trades during periods of elevated market risk such as daily rollover and major economic announcements.",
+          "two": "It is a protective risk-management mechanism."
+        }
+      },
+      "two": {
+        "ques": "Why does my margin level drop even if price did not move?",
+        "paragraphs": {
+          "one": "During HMR, the required margin per position increases.",
+          "two": "Because margin increases while equity remains the same, your margin level (%) decreases even if the market price has not changed."
+        }
+      },
+      "three": {
+        "ques": "Will my trade be closed because of HMR?",
+        "paragraphs": {
+          "one": "HMR itself does not close trades.",
+          "two": "However, if the margin level falls to the platform stop-out level due to the temporary margin increase, the trading platform will automatically close positions according to normal trading rules."
+        }
+      },
+      "four": {
+        "ques": "Are existing trades affected?",
+        "paragraphs": {
+          "one": "Your trade price, stop loss, and take profit remain unchanged.",
+          "two": "However, the margin required to maintain the position may temporarily increase, which can reduce free margin."
+        }
+      },
+      "five": {
+        "ques": "Does HMR widen spreads?",
+        "paragraphs": {
+          "one": "No.",
+          "two": "Spread changes are caused by market liquidity and pricing from liquidity providers, not by HMR.",
+          "three": "HMR only changes the margin requirement."
+        }
+      },
+      "six": {
+        "ques": "Does HMR apply to all instruments?",
+        "paragraphs": {
+          "one": "HMR mainly affects the following instruments:"
+        },
+        "list": {
+          "one": "Forex pairs",
+          "two": "Gold and Silver",
+          "three": "Indices",
+          "four": "Energy products",
+          "five": "CFDs"
+        },
+        "note": "Some instruments may experience stronger effects during news releases depending on volatility."
+      },
+      "seven": {
+        "ques": "Why is Gold affected the most?",
+        "paragraphs": {
+          "one": "Gold reacts strongly to the following factors:"
+        },
+        "list": {
+          "one": "Inflation data (CPI)",
+          "two": "Employment data (NFP)",
+          "three": "Interest rate expectations"
+        },
+        "note": "Because price movements can be extremely fast, additional margin protection is applied."
+      },
+      "eight": {
+        "ques": "How long does HMR last?",
+        "paragraphs": {
+          "one": "HMR typically lasts for the following periods:"
+        },
+        "list": {
+          "one": "Daily rollover: approximately 45 minutes",
+          "two": "Major economic news: around the release window"
+        },
+        "note": "The duration may vary depending on market liquidity."
+      },
+      "nine": {
+        "ques": "Can I avoid HMR?",
+        "paragraphs": {
+          "one": "Yes. You can avoid HMR effects by:"
+        },
+        "list": {
+          "one": "Not opening new positions during the rollover window",
+          "two": "Maintaining sufficient free margin",
+          "three": "Reducing leverage before major news events"
+        }
+      },
+      "ten": {
+        "ques": "Is this common in the industry?",
+        "paragraphs": {
+          "one": "Yes.",
+          "two": "Temporary margin increases during high-volatility periods are a standard risk-control practice used across professional trading environments and liquidity providers."
+        }
+      },
+      "eleven": {
+        "ques": "Why wasn’t I notified individually?",
+        "paragraphs": {
+          "one": "HMR is a system-controlled, market-condition-based mechanism applied simultaneously to all accounts.",
+          "two": "Because activation depends on live market risk conditions, individual notifications are not always possible."
+        }
+      }
+    },
+    "dynamicLeverageDetailsTitle": "Dynamic Leverage Details",
+    "dynamicLeverageDetailsDescription": "Dynamic leverage at GTCFX automatically adjusts based on your trading positions. This model is applied per instrument, meaning your leverage decreases as your trading volume increases. This approach enables you to optimize your trading potential.",
+    "update": {
+      "title": "Fixed Leverage Schedule",
+      "intro": "The following fixed leverage rules apply to all trades during specified market conditions:",
+      "weekend": {
+        "title": "Weekend Transition Periods",
+        "beforeFridayClose": "Before Friday Market Close (3 hours)",
+        "afterMondayOpen": "After Monday Market Open (1 hour)",
+        "china": "China (GMT+8)",
+        "server": "Server (GMT+3)",
+        "uae": "UAE (GMT+4)",
+        "cutoff": "XAUUSD cutoff"
+      },
+      "economic": {
+        "title": "Economic News Events",
+        "list": [
+          "15 minutes before high-impact news releases",
+          "5 minutes after news releases",
+          "During periods of expected extreme volatility"
+        ]
+      },
+      "legend": {
+        "china": "China (GMT+8)",
+        "server": "Server (GMT+3)",
+        "uae": "UAE (GMT+4)"
+      },
+      "important": {
+        "title": "Important Notes",
+        "list": [
+          "Margin calculations remain fixed after the period ends",
+          "Existing positions are not affected",
+          "Applies to all instruments and account types"
+        ]
+      },
+      "times": {
+        "friday": {
+          "china": "02:00",
+          "server": "21:00",
+          "uae": "22:00"
+        },
+        "monday": {
+          "china": [
+            "06:00",
+            "07:00"
+          ],
+          "server": [
+            "01:00",
+            "02:00"
+          ],
+          "uae": [
+            "02:00",
+            "03:00"
+          ]
+        }
+      },
+      "hmrBox": {
+        "title": "HMR:",
+        "list": {
+          "one": "does not modify trade entry price",
+          "two": "does not widen spreads by itself",
+          "three": "does not manually close trades",
+          "four": "does not affect positions opened before the HMR period"
+        },
+        "paragraphs": {
+          "one": "However, because margin requirements temporarily increase, your margin level (%) may fall.",
+          "two": "If your margin level reaches the stop-out level, the platform will automatically close positions according to normal platform risk rules."
+        },
+        "highlight": "After the HMR period ends, margin requirements automatically return to normal."
+      },
+      "rollover": {
+        "title": "Daily Night Rollover Period",
+        "schedule": {
+          "label": "Every trading day:",
+          "time": "23:30 – 00:15",
+          "timezone": "Server Time",
+          "days": "From Monday night to Friday night"
+        },
+        "points": {
+          "one": "During this short time window, leverage is automatically reduced.",
+          "two": "Lower leverage means more margin is required to hold the same trade size."
+        }
+      },
+      "hmrNotice": {
+        "title": "High Margin Requirement (HMR) Notice",
+        "paragraphs": {
+          "one": "During specific market risk periods (daily rollover and major economic announcements), the platform temporarily increases the margin required to open new trades."
+        }
+      }
     }
   }
 }
