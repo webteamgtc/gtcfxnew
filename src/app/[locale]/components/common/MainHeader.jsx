@@ -103,15 +103,17 @@ export default function MainHeader({ locale = "en" }) {
             {/* Desktop Right */}
             <div className="hidden items-center gap-2.5 lg:flex">
               <Link
-                href="/login"
-                className="inline-flex h-10 items-center justify-center rounded-[10px] border border-[#d7d7d7] px-5 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary hover:text-primary"
+                href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+                target="_blank"
+                className="inline-flex h-10 items-center hover:no-underline hover:bg-primary hover:text-white justify-center rounded-[10px] border border-[#d7d7d7] px-5 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary hover:text-primary"
               >
                 Log in
               </Link>
 
               <Link
-                href="/partner-with-us"
-                className="inline-flex h-10 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] md:text-[px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
+                href="https://reg.gtcfx.com/uae/partners-campaign"
+                target="_blank"
+                className="inline-flex hover:no-underline hover:bg-secondary h-10 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] md:text-[px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
               >
                 Partner With Us
               </Link>
@@ -248,7 +250,8 @@ export default function MainHeader({ locale = "en" }) {
 
                   <div className="mt-5 flex flex-col gap-3">
                     <Link
-                      href="/login"
+                      href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+                target="_blank"
                       className="inline-flex h-11 items-center justify-center rounded-[10px] border border-[#d9d9d9] px-5 text-[14px] font-medium text-[#333]"
                       onClick={() => setMobileOpen(false)}
                     >
@@ -256,7 +259,8 @@ export default function MainHeader({ locale = "en" }) {
                     </Link>
 
                     <Link
-                      href="/partner-with-us"
+                      href="https://reg.gtcfx.com/uae/partners-campaign"
+                      target="_blank"
                       className="inline-flex h-11 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] font-medium text-white"
                       onClick={() => setMobileOpen(false)}
                     >

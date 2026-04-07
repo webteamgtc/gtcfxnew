@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 export default function PrimaryButton({
   children,
   href = "/",
@@ -25,7 +26,8 @@ export default function PrimaryButton({
 
   return (
     <Link
-      href={href}
+      href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+        target="_blank"
       className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
     >
       {children}

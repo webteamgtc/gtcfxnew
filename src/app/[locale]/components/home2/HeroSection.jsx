@@ -32,11 +32,11 @@ const heroSlides = [
     ],
     primaryBtn: {
       label: "Open Live Account",
-      href: "/register",
+      href: "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww",
     },
     secondaryBtn: {
       label: "Free Demo Account",
-      href: "/demo",
+      href: "/free-demo-account",
       variant: "dark",
     },
     image: "/home/slider/slider1.webp",
@@ -61,11 +61,11 @@ const heroSlides = [
     ],
     primaryBtn: {
       label: "Partner With Us",
-      href: "/partners",
+      href: "https://reg.gtcfx.com/uae/partners-campaign",
     },
     secondaryBtn: {
-      label: "Learn More",
-      href: "/about",
+      label: "Account Types",
+      href: "/account-types",
       variant: "dark",
     },
     image: "/home/slider/traphy-2026.webp",
@@ -94,7 +94,7 @@ const heroSlides = [
     },
     secondaryBtn: {
       label: "Start Trading",
-      href: "/register",
+      href: "https://mygtcfx.com/",
       variant: "dark",
     },
     image: "/home/slider/slider2.webp",
@@ -119,7 +119,7 @@ const heroSlides = [
     ],
     primaryBtn: {
       label: "Download App",
-      href: "/app",
+      href: "https://qrcodes.pro/YW9ULf",
     },
     secondaryBtn: {
       label: "Open Account",

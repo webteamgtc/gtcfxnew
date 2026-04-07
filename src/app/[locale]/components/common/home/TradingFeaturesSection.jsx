@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const sections = [
   {
@@ -68,12 +69,12 @@ export default function TradingFeaturesSection() {
           </p>
 
           <div className="flex flex-row gap-3">
-            <button className="rounded-full bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] hover:from-[#263788] hover:via-[#101638] hover:to-[#263788] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:opacity-90">
+            <Link href="https://gtcpamm.com/app/" target="_blank" className="rounded-full hover:no-underline bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] hover:from-[#263788] hover:via-[#101638] hover:to-[#263788] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:opacity-90">
               {item.primaryBtn}
-            </button>
-            <button className="rounded-full border border-[#8f8f8f] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:bg-white bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788]">
+            </Link>
+            <Link href="https://gtcpamm.com/app/" target="_blank" className="rounded-full  hover:no-underline border border-[#8f8f8f] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:bg-white bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788]">
               {item.secondaryBtn}
-            </button>
+            </Link>
           </div>
         </div>
 

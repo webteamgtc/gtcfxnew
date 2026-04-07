@@ -18,7 +18,7 @@ export default function MarketTabsSection() {
       contentDescription:
         "With a Tightest Spread Starting from 0 PIPS Offering Leverage up to 1:2000 & No restriction",
       buttonText: "Explore Forex",
-      buttonLink: "/",
+      buttonLink: "/forex",
       image:
         "/home/products/currencies-image.webp",
     },
@@ -30,7 +30,7 @@ export default function MarketTabsSection() {
       contentDescription:
         "Experience a Competitive Advantage When Trading Global Energy CFD Markets with Us",
       buttonText: "Trade Energy",
-      buttonLink: "/",
+      buttonLink: "/cfd-energy",
       image:
         "/home/products/energy-image.webp",
     },
@@ -42,7 +42,7 @@ export default function MarketTabsSection() {
       contentDescription:
         "Access a broad range of commodity markets with reliable execution and flexible trading conditions.",
       buttonText: "Explore Commodities",
-      buttonLink: "/",
+      buttonLink: "/commodities",
       image:
         "/home/products/commodities-image.webp",
     },
@@ -54,7 +54,7 @@ export default function MarketTabsSection() {
       contentDescription:
         "Follow the world’s major markets and trade global indices with speed, precision and confidence.",
       buttonText: "Explore Indices",
-      buttonLink: "/",
+      buttonLink: "/indices",
       image:
         "/home/products/indices-image.webp",
     },
@@ -66,7 +66,7 @@ export default function MarketTabsSection() {
       contentDescription:
         "Maximize your profit potential with ultra-competitive Gold CFD spreads, starting at just 4 cents.",
       buttonText: "Explore Metals",
-      buttonLink: "/",
+      buttonLink: "/precious-metals",
       image:
         "/home/products/metals-image.webp",
     },
@@ -143,7 +143,7 @@ export default function MarketTabsSection() {
 
             <Link
               href={currentTab.buttonLink}
-              className="TextButton mt-10 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-white transition hover:opacity-90"
+              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-white transition hover:opacity-90"
             >
               {currentTab.buttonText}
             </Link>
