@@ -37,9 +37,9 @@ export default function CopyTradingSectionClient({ initialData }) {
   if (!visibleItems.length) return null;
 
   return (
-    <section className=" pt-10 md:py-16 bg-[#F1F2F4]">
+    <section className="py-10 md:py-16 bg-[#F1F2F4]">
       <div className="container">
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex flex-col gap-4 items-start">
           <h2 className="HeadingH2">
                     Copy Trading <span className="text-secondary">Made Simple</span>

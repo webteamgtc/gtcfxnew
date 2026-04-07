@@ -89,7 +89,7 @@ export default function MarketTabsSection() {
   }, []);
 
   return (
-    <section className="py-10 md:py-16">
+    <section className="pt-10 md:py-16">
       <div className="container">
         {/* Fixed Heading */}
         <div className="mx-auto max-w-[1100px] text-center flex flex-col items-center gap-8">

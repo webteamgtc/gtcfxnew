@@ -49,13 +49,13 @@ export default function MainFooter() {
   ];
 
  const socialLinks = [
-  { icon: "/icons/fb.svg", href: "/" },
-  { icon: "/icons/insta.svg", href: "/" },
-  { icon: "/icons/x.svg", href: "/" },
-  { icon: "/icons/youtube.svg", href: "/" },
-  { icon: "/icons/linkedin.svg", href: "/" },
-  { icon: "/icons/tiktok.svg", href: "/" },
-  { icon: "/icons/tele.svg", href: "/" },
+  { icon: "/icons/fb.svg", href: "https://www.facebook.com/GTCFXGlobalTradeCapital" },
+  { icon: "/icons/insta.svg", href: "https://www.instagram.com/gtcfxofficial/" },
+  { icon: "/icons/x.svg", href: "https://x.com/GTC_fx" },
+  { icon: "/icons/youtube.svg", href: "https://www.youtube.com/channel/UCnKWakjm1b9Bm63xgwNFXHA" },
+  { icon: "/icons/linkedin.svg", href: "https://linkedin.com/company/gtcfx-official" },
+  { icon: "/icons/tiktok.svg", href: "https://www.tiktok.com/@gtcgroup_official" },
+  { icon: "/icons/tele.svg", href: "https://t.me/gtc_vip_signal" },
 ];
 
   const disclaimers = [
@@ -67,57 +67,11 @@ export default function MainFooter() {
   ];
 
   return (
-    <footer className=" bg-[#F1F2F4] pt-16 pb-10">
+    <footer className=" bg-[#F1F2F4] pt-10 pb-10">
       <div className="container">
-        {/* Top row */}
-        <div className="flex flex-col gap-6 border-b border-[#d9d9d9] pb-8 lg:flex-row lg:items-center lg:justify-between">
-          <h2 className="HeadingH3">
-            Connecting you to global markets, anytime, anywhere.
-          </h2>
 
-          <div className="flex flex-wrap items-center gap-3">
-            {socialLinks.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                className="flex h-9 w-9 items-center justify-center rounded-[6px] border border-[#7d7d7d] transition hover:bg-white"
-              >
-                <img
-                  src={item.icon}
-                  alt="social icon"
-                  className="h-[20px] w-[20px] object-contain"
-                />
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* Link columns */}
-        <div className="grid gap-8 border-b border-[#d9d9d9] py-10 md:grid-cols-2 xl:grid-cols-5">
-          {footerColumns.map((column) => (
-            <div key={column.title}>
-              <h3 className="mb-4 text-[12px] font-semibold uppercase tracking-[0.02em] text-[#2f2f2f]">
-                {column.title}
-              </h3>
-
-              <ul className="space-y-2.5">
-                {column.links.map((link) => (
-                  <li key={link.label}>
-                    <Link
-                      href={link.href}
-                      className="TextSmall text-[#4f4f4f] transition hover:text-primary"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-
-        {/* Logo + App buttons */}
-        <div className="flex flex-col gap-6 border-b border-[#d9d9d9] py-2 md:flex-row md:items-center md:justify-between">
+             {/* Logo + App buttons */}
+        <div className="flex flex-col gap-6 md:border-b border-[#d9d9d9] py-2 md:flex-row md:items-center md:justify-between md:hidden mb-5">
           <div className="flex items-center">
             <Image
   src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/logo-2024-new.webp"
@@ -131,7 +85,7 @@ export default function MainFooter() {
 
           <div className="flex flex-row items-center gap-4">
 
-  <Link href="/" className="relative w-[140px] h-[42px]">
+  <Link href="/" className="relative w-[160px] h-[45px]">
     <Image
       src="/icons/app.svg"
       fill
@@ -140,7 +94,92 @@ export default function MainFooter() {
     />
   </Link>
 
-  <Link href="/" className="relative w-[140px] h-[42px]">
+  <Link href="/" className="relative  w-[160px] h-[45px]">
+    <Image
+      src="/icons/play.svg"
+      fill
+      alt="Get it on Google Play"
+      className="object-contain"
+    />
+  </Link>
+
+</div>
+        </div>
+
+        {/* Top row */}
+        <div className="flex flex-col gap-6 border-b border-[#d9d9d9] pb-8 lg:flex-row lg:items-center lg:justify-between">
+          <h2 className="HeadingH3 hidden md:block">
+            Connecting you to global markets, anytime, anywhere.
+          </h2>
+
+          
+
+          <div className="flex flex-wrap items-center gap-3">
+            {socialLinks.map((item, index) => (
+              <Link
+                key={index}
+                href={item.href}
+                className="flex h-10 w-10 items-center justify-center  transition hover:bg-white"
+              >
+                <img
+                  src={item.icon}
+                  alt="social icon"
+                  className="h-[50px] w-[50px] md:w-32 md:h-32 object-contain" 
+                />
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Link columns */}
+        <div className="grid gap-8 border-b border-[#d9d9d9] py-10 md:grid-cols-2 xl:grid-cols-5">
+          {footerColumns.map((column) => (
+            <div key={column.title}>
+              <h3 className="mb-4 text-[12px] md:text-base font-semibold uppercase tracking-[0.02em] text-secondary">
+                {column.title}
+              </h3>
+
+              <ul className="space-y-2.5">
+                {column.links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      href={link.href}
+                      className="TextSmall text-[#4f4f4f] transition hover:no-underline hover:text-secondary"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {/* Logo + App buttons */}
+        <div className="hidden md:flex flex-col gap-6 border-b border-[#d9d9d9] py-2 md:flex-row md:items-center md:justify-between">
+          <div className="flex items-center">
+            <Image
+  src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/logo-2024-new.webp"
+  alt="GTCFX Logo"
+  width={130}
+  height={36}
+  className="w-[130px] h-auto object-contain"
+/>
+         
+          </div>
+
+          <div className="flex flex-row items-center gap-4">
+
+  <Link href="/" className="relative w-[160px] h-[45px]">
+    <Image
+      src="/icons/app.svg"
+      fill
+      alt="Download on the App Store"
+      className="object-contain"
+    />
+  </Link>
+
+  <Link href="/" className="relative  w-[160px] h-[45px]">
     <Image
       src="/icons/play.svg"
       fill
