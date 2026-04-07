@@ -39,11 +39,12 @@ export default async function HomePage({ params }) {
   <MarketTabsSection />
 </RevealOnScroll>
 <RevealOnScroll>
-  <SecurityBanner />
-</RevealOnScroll>
-<RevealOnScroll>
   <CopyTradingSection />
 </RevealOnScroll>
+<RevealOnScroll>
+  <SecurityBanner />
+</RevealOnScroll>
+
 <RevealOnScroll>
   <TradingFeaturesSection />
 </RevealOnScroll>

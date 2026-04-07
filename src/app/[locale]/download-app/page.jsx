@@ -1,6 +1,7 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import AwardsSection from "../components/about/AwardsSection";
+import TradingPlatformsSection from "./components/TradingPlatformsSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -25,7 +26,7 @@ export default async function AboutPage({ params }) {
         backgroundImage="/breadcamp/awardpc.webp"
         mobileBackgroundImage="/breadcamp/award-mob.webp"
       />
-      <AwardsSection />
+      <TradingPlatformsSection />
   
 
       {/* other sections */}
