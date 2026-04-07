@@ -25,8 +25,8 @@ export default function DynamicLeverageClient({ locale, copy }) {
       <InnerPageBanner
         title={pick(hero, "title", "Dynamic Leverage")}
         description={pick(hero, "description", "")}
-        backgroundImage="/breadcamp/about.webp"
-        mobileBackgroundImage="/breadcamp/about-mobile.webp"
+        backgroundImage="/breadcamp/leverage.webp"
+        mobileBackgroundImage="/breadcamp/dynamic-mobile.webp"
       />
       <WhatLervage copy={copy} />
       <LeverageTable copy={copy} locale={locale} />

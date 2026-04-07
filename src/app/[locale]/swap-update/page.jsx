@@ -187,8 +187,8 @@ export default async function SwapUpdatePage({ params }) {
       <InnerPageBanner
         title={pick(meta, "title", "Swap Update")}
         description={pick(meta, "des", "")}
-        backgroundImage="/breadcamp/about.webp"
-        mobileBackgroundImage="/breadcamp/about-mobile.webp"
+        backgroundImage="/breadcamp/swap-update.webp"
+        mobileBackgroundImage="/breadcamp/swap-mobile.webp"
       />
 
       <section className="bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-12 lg:py-14 ">

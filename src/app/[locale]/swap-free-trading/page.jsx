@@ -43,8 +43,8 @@ export default async function SwapFreeTradingPage({ params }) {
       <InnerPageBanner
         title={t("hero.title")}
         description={`${t("hero.description1")}`}
-              backgroundImage="/breadcamp/about.webp"
-        mobileBackgroundImage="/breadcamp/about-mobile.webp"
+              backgroundImage="/breadcamp/swap.webp"
+        mobileBackgroundImage="/breadcamp/swap-free-mobile.webp"
       />
 
       <main className="bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] text-slate-900">
