@@ -14,41 +14,42 @@ export default async function LiquidityTechnologyPage({ params }) {
   const directAccessCopy = dict?.primeTech?.directAccess || {};
   const assetData = [
     {
-        name: copy.Chooseliquidity.option1.title,
-        description: copy.Chooseliquidity.option1.desc,
-        imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon1.webp",
-        alt: "Forex"
+      name: copy?.Chooseliquidity?.option1?.title,
+      description: copy?.Chooseliquidity?.option1?.desc,
+      imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon1.webp",
+      alt: "Forex",
     },
     {
-      name: copy.Chooseliquidity.option2.title,
-        description: copy.Chooseliquidity.option2.desc,
-        imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon8.webp",
-        alt: "Crypto CFDs"
+      name: copy?.Chooseliquidity?.option2?.title,
+      description: copy?.Chooseliquidity?.option2?.desc,
+      imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon8.webp",
+      alt: "Crypto CFDs",
     },
     {
-      name: copy.Chooseliquidity.option3.title,
-        description: copy.Chooseliquidity.option3.desc,
+      name: copy?.Chooseliquidity?.option3?.title,
+      description: copy?.Chooseliquidity?.option3?.desc,
       imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon6.webp",
-      alt: "Indices"
-  },
-    {
-      name: copy.Chooseliquidity.option4.title,
-      description: copy.Chooseliquidity.option4.desc,
-        imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon3.webp",
-        alt: "CFDs"
+      alt: "Indices",
     },
     {
-      name: copy.Chooseliquidity.option5.title,
-      description: copy.Chooseliquidity.option5.desc,
-        imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon4.webp",
-        alt: "Commodities"
-    },{
-            name: copy.Chooseliquidity.option6.title,
-      description: copy.Chooseliquidity.option6.desc,
-        imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon5.webp",
-        alt: "Indices"
-    }
-];
+      name: copy?.Chooseliquidity?.option4?.title,
+      description: copy?.Chooseliquidity?.option4?.desc,
+      imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon3.webp",
+      alt: "CFDs",
+    },
+    {
+      name: copy?.Chooseliquidity?.option5?.title,
+      description: copy?.Chooseliquidity?.option5?.desc,
+      imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon4.webp",
+      alt: "Commodities",
+    },
+    {
+      name: copy?.Chooseliquidity?.option6?.title,
+      description: copy?.Chooseliquidity?.option6?.desc,
+      imageUrl: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/home/icon/icon5.webp",
+      alt: "Indices",
+    },
+  ].filter((x) => x?.name);
   return (
     <div>
         <InnerPageBanner
