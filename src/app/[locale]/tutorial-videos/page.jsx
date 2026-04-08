@@ -4,6 +4,7 @@ import CompanyIntro from "../components/about/CompanyIntro";
 import AwardsMarquee from "../components/common/home/AwardsMarquee";
 import Counter from "../components/common/home/Counter";
 import ReviewsSection from "../components/common/ReviewsSection";
+import TutorialVideosPageSection from "./components/TutorialVideosPageSection";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -23,14 +24,11 @@ export default async function AboutPage({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Watch GTCFX tutorial videos and learn how to open, verify, and manage your trading account easily."
+        description="Browse our easy-to-follow video guides and get the help you need to trade with more confidence."
         backgroundImage="/breadcamp/tutorial.webp"
         mobileBackgroundImage="/breadcamp/tutorial-mobile.webp"
       />
-      <AwardsMarquee />
-      <CompanyIntro />
-      <Counter />
-      <ReviewsSection />
+      <TutorialVideosPageSection />
 
       {/* other sections */}
     </>

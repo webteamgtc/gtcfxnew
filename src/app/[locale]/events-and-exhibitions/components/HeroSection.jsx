@@ -75,7 +75,7 @@ export default function EventHero({ eventsData, messages }) {
           </div>
 
           {/* Right form card - iFXExpo Dubai 2026 registration */}
-          <div className="md:col-span-5 lg:col-span-5 flex flex-col">
+          <div className="md:col-span-5 lg:col-span-5 flex flex-col md:mt-14">
             <CommonLeadForm
               messages={messages}
               successRedirect="/en/thank-you"

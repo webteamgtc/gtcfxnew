@@ -6,6 +6,7 @@ import MainHeader from './components/common/MainHeader';
 import MainFooter from './components/common/MainFooter';
 import TradingTicker from './components/home2/TradingTicker';
 import { ToastContainer } from "react-toastify";
+import StickyContactBar from './components/common/StickyContactBar';
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -33,7 +34,7 @@ export default async function LocaleLayout({ children, params }) {
   return (
     <LocaleProvider locale={locale} messages={dict}>
       <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen">
-       
+       <StickyContactBar />
         <MainHeader locale={locale} />
         <main>{children}</main>
       <MainFooter locale={locale} /> 
