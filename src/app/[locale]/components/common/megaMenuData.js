@@ -152,7 +152,7 @@ export const megaMenuData = {
        {
         heading: "Resources",
         links: [
-          { label: "Legal Documents", href: "/legal-documents" },
+          { label: "Legal Documents", href: "/legal-policies-client-agreements" },
           { label: "Restricted Countries", href: "/restricted-countries" },
           { label: "Margin Bonus", href: "/margin-bonus" },
           { label: "GTC AI Tools", href: "https://ai.gtcfx.com/", external: true },
