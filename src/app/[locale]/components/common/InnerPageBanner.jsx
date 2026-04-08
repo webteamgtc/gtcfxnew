@@ -33,7 +33,7 @@ export default function InnerPageBanner({
   description = "",
   backgroundImage = "/images/banner/default-banner.webp",
   mobileBackgroundImage = "/images/banner/default-banner-mobile.webp",
-  height = "min-h-[0px] md:min-h-[500px] lg:min-h-[500px]",
+  height = "min-h-[0px] md:min-h-[500px] lg:min-h-[450px]",
   overlay = true,
   align = "left",
   className = "",
