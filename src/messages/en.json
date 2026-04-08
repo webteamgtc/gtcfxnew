@@ -1483,5 +1483,170 @@
         }
       }
     }
+  },
+  "platform": {
+    "mt4PlatformPage": {
+      "bannerText": {
+        "heading": "MT4 Trading Platform",
+        "para1": "MetaTrader 4, often referred to as MT4, is a widely used and highly popular trading platform in the world of forex (foreign exchange) trading.",
+        "para2": "It was developed by Meta Quotes Software and has become a standard choice for both novice and experienced traders.",
+        "trade": {
+          "heading1": "Trade With The Most",
+          "heading2": "Comprehensive Trading Platform",
+          "btnText": "Open Live Account"
+        }
+      },
+      "advantages": {
+        "title": "OUR MT4 TRADING PLATFORM ADVANTAGES",
+        "column1": {
+          "heading1": "User friendly interface.",
+          "heading2": "Accessible to traders of all levels of experience.",
+          "heading3": "Fast execution.",
+          "heading4": "Efficiency and depth of features.",
+          "heading5": "MT4 provides an extensive set of technical analysis tools.",
+          "heading6": "This allows traders to analyze price movements and make informed trading decisions.",
+          "heading7": "Automated trading through expert advisors (EAs).",
+          "heading8": "Custom indicators and scripts."
+        },
+        "column2": {
+          "heading1": "Backtesting trading strategies.",
+          "heading2": "One click trading.",
+          "heading3": "Mobile trading.",
+          "heading4": "Real time quotes and news.",
+          "heading5": "Community and support.",
+          "heading6": "Secure",
+          "heading7": "Multiple order types.",
+          "heading8": "Multiple asset classes."
+        }
+      }
+    },
+    "mt5PlatformPage": {
+      "bannerText": {
+        "heading": "MT5 Trading Platform",
+        "para1": "MetaTrader 5, often referred to as MT5, is a widely used and highly popular trading platform in the world of forex (foreign exchange) trading.",
+        "para2": "It was developed by Meta Quotes Software and has become a standard choice for both novice and experienced traders.",
+        "trade": {
+          "heading1": "Trade With The Most",
+          "heading2": "Comprehensive Trading Platform",
+          "btnText": "Open Live Account                                              "
+        }
+      },
+      "advantages": {
+        "title": "OUR MT5 TRADING PLATFORM ADVANTAGES",
+        "column1": {
+          "heading1": "User-Friendly Interface.",
+          "heading2": "Accessible to traders of all levels of experience.",
+          "heading3": "Fast Execution.",
+          "heading4": "Efficiency and depth of features.",
+          "heading5": "MT5 provides an extensive set of technical analysis tools.",
+          "heading6": "This allows traders to analyze price movements and make informed trading decisions.",
+          "heading7": "Automated Trading through Expert Advisors (EAs).",
+          "heading8": "Custom Indicators and Scripts."
+        },
+        "column2": {
+          "heading1": "Backtesting trading strategies.",
+          "heading2": "One-Click Trading.",
+          "heading3": "Mobile Trading.",
+          "heading4": "Real-Time Quotes and News.",
+          "heading5": "Community and Support.",
+          "heading6": "Secure.",
+          "heading7": "Multiple Order Types.",
+          "heading8": "Multiple Asset Classes."
+        }
+      }
+    }
+  },
+  "primeTech": {
+    "liquidityTechnologyPage": {
+      "metaData": {
+        "title": "GTC Prime | Best in Class Liquidity | Trading | Risk Solutions For Global trading community",
+        "des": "GTC Prime with advance infrastructure and comprehensive expertise, offer tailor made pricing sourced from tier 1 banks with DMA execution."
+      },
+      "banner": {
+        "title": "Liquidity | Connectivity | Risk Solutions",
+        "subTitle": "Access To 8 Asset Markets With Over 27,000 Trading Instruments",
+        "liveAccount": "Open Live Account                                              "
+      },
+      "whoServe": {
+        "heading": "Who We Serve",
+        "desc": "GTC Prime with advance infrastructure and comprehensive expertise, offer tailor made pricing sourced from tier 1 banks with DMA execution. Our services have the full capacity to manage our clients trading demands and expectations.",
+        "broker": {
+          "title": "Broker",
+          "desc": "GTC Prime offers a flexible, customized and end-to-end broker solution that aligns with your risk strategy. Our solution is designed and integrated with liquidity/prime of prime and advanced risk management & analytics to meet the high quality standards for our clients. Our clients working in STP/ECN models enjoy significantly improved spreads and much lower fees. "
+        },
+        "hedge": {
+          "title": "Hegde Funds & Assets",
+          "desc": "Our tools create a prime performance experience for our clients across the board. With a diversified portfolio of multiple asset classes, Tier 1 banks liquidity and unmatched support service, our clients experience a reliable and trusted relationship with GTC prime enabling them to offer safe, secure and optimized pricing."
+        },
+        "professional": {
+          "title": "Professional Clients",
+          "desc": "With GTC Prime, you can experience efficient trading via a single platform, institutional pricing backed by competitive margins & attractive commission and segregated accounts for funds. Our solutions and services help drive your portfolio forward with a bespoke solution perfectly matching your needs."
+        },
+        "view_more": "Click to View More"
+      },
+      "offerTitle": {
+        "heading": "What We Offer",
+        "liquidity": {
+          "title": "Liquidity",
+          "desc": "At GTC Prime, we offer liquidity solutions that can be customized to meet your specific needs and goals. Our technology-driven approach allows us to serve clients around the world, including hedge funds, brokers, exchanges, and other professional clients."
+        },
+        "connectivity": {
+          "title": "Connectivity",
+          "desc": "Connectivity is an essential element of successful trading. At GTC Prime, we offer reliable and fast connectivity solutions to connect our clients to the world’s financial markets. We understand the importance of speed and low latency in trading, and that’s why we have partnered with leading technology providers to deliver cutting-edge connectivity solutions."
+        },
+        "risk": {
+          "title": "Risk Management",
+          "desc": "Welcome to the Risk Management page of GTC Prime, a leading liquidity provider firm that offers comprehensive solutions to help brokers, hedge funds, asset managers, professional traders, and private trading desks manage their risks and protect their investments."
+        }
+      },
+      "Chooseliquidity": {
+        "title": "Why Choose GTCFX Liquidity & Technology",
+        "option1": {
+          "title": "Trusted Partner",
+          "desc": "We are a regulated Liquidity Provider with a team of experienced professionals."
+        },
+        "option2": {
+          "title": "Competitive Pricing",
+          "desc": "Thanks to our proprietary solutions we can offer lower commission and a minimum monthly fee as low as $1000."
+        },
+        "option3": {
+          "title": "Low Latency Execution",
+          "desc": "We host our servers close to our liquidity sources to minimize execution latency."
+        },
+        "option4": {
+          "title": "Deep Liquidity",
+          "desc": "Take advantage of our deep liquidity across all of our multi-asset instruments. Up to 10 levels of Market Depth."
+        },
+        "option5": {
+          "title": "In-House Technology",
+          "desc": "Based on advanced technology developed by the team of highly qualified experts to provide robust and scalable solutions."
+        },
+        "option6": {
+          "title": "Comprehensive Solutions",
+          "desc": "We are like a one-stop-shop offering our clients, product packages tailored to their needs."
+        }
+      },
+      "counter": {
+        "option1": "Served Clients",
+        "option2": "Introducing Broker",
+        "option3": "Paid-up Capital",
+        "option4": "Daily trades",
+        "billion": "Billion",
+        "million": "Million"
+      }
+    },
+    "directAccess": {
+      "heading": "Direct Access to Top Tier Liquidity Provider",
+      "desc": "GTCFX is a trusted liquidity provider that gives you access to easy-to-use FX liquidity platforms. With our liquidity solutions, you can trade efficiently at low costs and with fast execution. You can count on our transparent and reliable service, ensuring your trades remain private. With our state-of-the-art technology and dedicated team, we support your business in liquidity trading.",
+      "point1": "Low spreads & Commissions",
+      "point2": "Ultra Fast Execution",
+      "point3": "Up to 10 levels of market Depth",
+      "point4": "Quick Integration",
+      "point5": "Ultra Fast Price Feeds",
+      "point6": "Fast onboarding Procedure",
+      "lpLabel": "UNLOCKING PROFITABLE OPPORTUNITIES",
+      "lpLabel1": "YOUR BEST INVESTMENT JOURNEY BEGINS WITH US",
+      "butttonLp": "Apply For Liquidity Service"
+    }
   }
 }
