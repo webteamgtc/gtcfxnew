@@ -6,10 +6,13 @@ export default async function Mt4PlatformPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const copy = dict?.platform?.mt4PlatformPage || {};
+  const trade1 = copy?.bannerText?.trade?.heading1 || "";
+  const trade2 = copy?.bannerText?.trade?.heading2 || "";
+  const bannerDescription = `${trade1} ${trade2}`.trim();
   return (
     <>
       <InnerPageBanner
-        description= {`${copy.bannerText.trade.heading1} ${copy.bannerText.trade.heading2}`}
+        description={bannerDescription}
         backgroundImage="/breadcamp/mt4.webp"
         mobileBackgroundImage="/breadcamp/mt4-mobile.webp"
       />
