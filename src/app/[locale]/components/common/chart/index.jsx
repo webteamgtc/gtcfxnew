@@ -116,9 +116,12 @@ const ColumnChart = (props) => {
         label,
         strokeWidth = [1],
         showAxis = false,
-        grid = false
+        grid = false,
+        /** 'area' (default) or 'bar' — bar uses solid fill, no area gradient */
+        variant = "area",
     } = props;
 
+    const isBar = variant === "bar";
     const chartHeight = Number(height) || 350;
     const safeSeries =
         Array.isArray(seriesData) && seriesData.length > 0
@@ -127,7 +130,7 @@ const ColumnChart = (props) => {
 
     const options = {
         chart: {
-            type: 'area',
+            type: isBar ? "bar" : "area",
             height: chartHeight,
             zoom: {
                 enabled: false
@@ -136,14 +139,14 @@ const ColumnChart = (props) => {
                 show: false,
             },
             sparkline: {
-                enabled: true,
+                enabled: !showAxis,
             },
             animations: {
                 enabled: false,
             },
             redrawOnParentResize: false,
-        
-    },
+
+        },
         noData: {
             text: "",
             align: "center",
@@ -152,69 +155,94 @@ const ColumnChart = (props) => {
             enabled: false
         },
         colors: ["#1039af"],
-        stroke: {
-            show: true,
-            curve: "straight",
-            lineCap: "butt",
-            width: strokeWidth,
-            dashArray: 0,
-        },
+        ...(isBar
+            ? {
+                  plotOptions: {
+                      bar: {
+                          borderRadius: 4,
+                          columnWidth: "55%",
+                      },
+                  },
+                  fill: {
+                      type: "solid",
+                      opacity: 1,
+                  },
+                  stroke: {
+                      show: false,
+                      width: 0,
+                  },
+              }
+            : {
+                  stroke: {
+                      show: true,
+                      curve: "straight",
+                      lineCap: "butt",
+                      width: strokeWidth,
+                      dashArray: 0,
+                  },
+              }),
         xaxis: {
             type: 'datetime',
             labels: {
                 show: showAxis || false
-},
-    axisBorder: {
-        show: false
-    },
-    axisTicks: {
-        show: false,
-    },
-    crosshairs: {
-        show: false
-    }
+            },
+            axisBorder: {
+                show: false
+            },
+            axisTicks: {
+                show: false,
+            },
+            crosshairs: {
+                show: false
+            }
         },
-yaxis: {
-    tickAmount: 4,
-        labels: {
-        show: showAxis || false
-    },
-    title: {
-        text: label,
-            style: {
-            color: "#b68756",
-                fontSize: '16px',
+        yaxis: {
+            tickAmount: 4,
+            labels: {
+        show: showAxis || false,
+        formatter: (val) => {
+            const n = Number(val);
+            if (!Number.isFinite(n)) return "";
+            return n.toFixed(2);
+        },
+            },
+            title: {
+                text: label,
+                style: {
+                    color: "#b68756",
+                    fontSize: '16px',
                     fontWeight: 600,
-                        cssClass: 'apexcharts-yaxis-title',
+                    cssClass: 'apexcharts-yaxis-title',
                 },
-    }
-},
-grid: {
-    show: grid || false,
-    padding: {
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0,
-    },
+            }
         },
-legend: {
-    horizontalAlign: 'left'
-}
+        grid: {
+            show: grid || false,
+            padding: {
+                top: 0,
+                right: 0,
+                bottom: 0,
+                // When axes are visible, ApexCharts needs left padding
+                left: showAxis ? 18 : 0,
+            },
+        },
+        legend: {
+            horizontalAlign: 'left'
+        }
     };
 
-return (
-    <div className="w-full">
-        <Chart
-            options={options}
-            series={safeSeries}
-            type="area"
-            height={chartHeight}
-            width={width === "100%" ? "100%" : width || 250}
-            className="chartss"
-        />
-    </div>
-);
+    return (
+        <div className="w-full">
+            <Chart
+                options={options}
+                series={safeSeries}
+                type={isBar ? "bar" : "area"}
+                height={chartHeight}
+                width={width === "100%" ? "100%" : width || 250}
+                className="chartss"
+            />
+        </div>
+    );
 };
 
 export default ColumnChart;
