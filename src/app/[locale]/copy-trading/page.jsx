@@ -3,6 +3,7 @@ import InnerPageBanner from "../components/common/InnerPageBanner";
 import CopyTradingHero from "./components/CopyTradingHero";
 import WhatIsCopyTradingSection from "./components/WhatIsCopyTradingSection";
 import CopyTradingHowItWorks from "./components/CopyTradingHowItWorks";
+import CopyRatingData from "./components/CopyRatingData";
 
 
 export async function generateMetadata({ params }) {
@@ -19,7 +20,7 @@ export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
-
+  const copy = dict.copy || {};
   return (
     <>
       <InnerPageBanner
@@ -30,6 +31,7 @@ export default async function AboutPage({ params }) {
       />
       <CopyTradingHero />
       <WhatIsCopyTradingSection />
+      <CopyRatingData copy={copy} />
       <CopyTradingHowItWorks />
   
 
