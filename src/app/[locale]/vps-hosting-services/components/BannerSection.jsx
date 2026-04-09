@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Image from "next/image";
  import PrimaryButton from "../../components/common/PrimaryButton";
 import { translationText } from "@/i18n/tranlsationText";
@@ -39,7 +39,9 @@ const BannerSection = ({ copy }) => {
             <PrimaryButton href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww" target="_blank">{copy?.hero?.button}</PrimaryButton>
            </div>
           <div>
-            <VpsHostingForm copy={copy} />
+            <Suspense fallback={null}>
+              <VpsHostingForm copy={copy} />
+            </Suspense>
                     {/* <VpsHostingForm /> */}
           </div>
         </div>
