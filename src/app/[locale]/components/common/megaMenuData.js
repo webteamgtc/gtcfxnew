@@ -107,21 +107,21 @@ export const megaMenuData = {
         ],
       },
       {
-        heading: "Latest Offers",
+        heading: "Partner with Us",
         links: [
           {
-            label: "Golden Falcon Awards 2026",
-            href: "https://falconawards.gtcfx.com/",
-            external: true,
-          },
-          {
-            label: "Register an IB",
+            label: "IB Program",
             href: "https://reg.gtcfx.com/uae/partners-campaign",
             external: true,
           },
           {
-            label: "GTCVIP Loyalty Rewards",
-            href: "https://www.gtcvip.com/",
+            label: "Affiliate Program",
+            href: "https://www.gtcaffiliates.com/",
+            external: true,
+          },
+          {
+            label: "GTC Prime",
+            href: "https://gtcprime.com/", 
             external: true,
           },
         ],
@@ -135,33 +135,43 @@ export const megaMenuData = {
       {
         heading: "Prime Services",
         links: [
-          { label: "Institutional Liquidity", href: "/prime/liquidity" },
-          { label: "White Label", href: "/prime/white-label" },
-          { label: "Introducing Brokers", href: "/partners/ib" },
+          { label: "Liquidity & Technology", href: "/liquidity-technology" },
+          { label: "Copy Trading", href: "/copy-trading" },
+      
         ],
       },
+     
       {
-        heading: "Technology",
+        heading: "Trading Tools",
         links: [
-          { label: "API Solutions", href: "/prime/api" },
-          { label: "Bridge Solutions", href: "/prime/bridge" },
-          { label: "Execution Technology", href: "/prime/execution" },
+          { label: "PAMM Account", href: "/pamm-account" },
+          { label: "MAM Account", href: "/mam-account" },
+          { label: "VPS", href: "/vps-hosting-services" },
         ],
       },
-      {
-        heading: "Infrastructure",
+       {
+        heading: "Resources",
         links: [
-          { label: "Hosting", href: "/prime/hosting" },
-          { label: "VPS", href: "/prime/vps" },
-          { label: "Connectivity", href: "/prime/connectivity" },
+          { label: "Legal Documents", href: "/legal-policies-client-agreements" },
+          { label: "Restricted Countries", href: "/restricted-countries" },
+          { label: "Margin Bonus", href: "/margin-bonus" },
+          { label: "GTC AI Tools", href: "https://ai.gtcfx.com/", external: true },
         ],
       },
-      {
-        heading: "More",
+       {
+        heading: "Latest Offers",
         links: [
-          { label: "Partnership Solutions", href: "/partners" },
-          { label: "Contact Sales", href: "/contact-us" },
-          { label: "Documentation", href: "/docs" },
+          {
+            label: "Golden Falcon Awards 2026",
+            href: "https://falconawards.gtcfx.com/",
+            external: true,
+          },
+        
+          {
+            label: "GTCVIP Loyalty Rewards",
+            href: "https://www.gtcvip.com/",
+            external: true,
+          },
         ],
       },
     ],

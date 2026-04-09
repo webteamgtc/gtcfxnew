@@ -29,7 +29,7 @@ export default function MegaMenuPanel({ menu }) {
         >
           {menu.columns.map((column) => (
             <div key={column.heading}>
-              <h4 className="mb-6 text-[16px] font-semibold text-primary">
+              <h4 className="mb-6 text-[16px] font-semibold text-secondary">
                 {column.heading}
               </h4>
 
