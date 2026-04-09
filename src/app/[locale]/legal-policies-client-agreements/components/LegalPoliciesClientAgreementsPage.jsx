@@ -3,126 +3,152 @@
 import { useState } from "react";
 
 const legalData = {
-  consultancy: {
-    label: "GTC Financial Consultancy",
-    sections: [
-      {
-        title: "Documents",
-        items: [
-          {
-            title: "Client Onboarding Application GTC FC - MU - Retail V1.0",
-            href: "/docs/consultancy/client-onboarding-retail.pdf",
-          },
-          {
-            title: "Corporate Onboarding Application GTC FC - MU - Corporate V1.0",
-            href: "/docs/consultancy/corporate-onboarding.pdf",
-          },
-          {
-            title: "Terms of Business",
-            href: "/docs/consultancy/terms-of-business.pdf",
-          },
-          {
-            title: "Complaint Handling Policy",
-            href: "/docs/consultancy/complaint-handling-policy.pdf",
-          },
-          {
-            title: "Conflict of Interest Policy",
-            href: "/docs/consultancy/conflict-of-interest-policy.pdf",
-          },
-          {
-            title: "Risk Warning Policy",
-            href: "/docs/consultancy/risk-warning-policy.pdf",
-          },
-          {
-            title: "Cookie Policy",
-            href: "/docs/consultancy/cookie-policy.pdf",
-          },
-          {
-            title: "Privacy Policy",
-            href: "/docs/consultancy/privacy-policy.pdf",
-          },
-        ],
-      },
-    ],
-  },
-
-  mauritius: {
-    label: "GTC Global LTD ( Mauritius)",
-    sections: [
-      {
-        title: "Documents",
-        items: [
-          {
-            title: "Client Onboarding Application - MU - Retail",
-            href: "/docs/mauritius/client-onboarding-retail.pdf",
-          },
-          {
-            title: "Corporate Onboarding Application - MU - Corporate",
-            href: "/docs/mauritius/corporate-onboarding.pdf",
-          },
-          {
-            title: "Client Agreement",
-            href: "/docs/mauritius/client-agreement.pdf",
-          },
-          {
-            title: "Privacy Policy",
-            href: "/docs/mauritius/privacy-policy.pdf",
-          },
-          {
-            title: "Risk Disclosure",
-            href: "/docs/mauritius/risk-disclosure.pdf",
-          },
-          {
-            title: "Cookie Policy",
-            href: "/docs/mauritius/cookie-policy.pdf",
-          },
-          {
-            title: "Website Disclaimer",
-            href: "/docs/mauritius/website-disclaimer.pdf",
-          },
-          {
-            title: "Terms & Conditions",
-            href: "/docs/mauritius/terms-and-conditions.pdf",
-          },
-        ],
-      },
-    ],
-  },
-
-  vanuatu: {
-    label: "GTC Global Trade Capital Co.Ltd (Vanuatu)",
-    sections: [
-      {
-        title: "Documents",
-        items: [
-          {
-            title: "Client Agreement",
-            href: "/docs/vanuatu/client-agreement.pdf",
-          },
-          {
-            title: "Privacy Policy",
-            href: "/docs/vanuatu/privacy-policy.pdf",
-          },
-          {
-            title: "Risk Disclosure",
-            href: "/docs/vanuatu/risk-disclosure.pdf",
-          },
-          {
-            title: "Cookie Policy",
-            href: "/docs/vanuatu/cookie-policy.pdf",
-          },
-          {
-            title: "Website Disclaimer",
-            href: "/docs/vanuatu/website-disclaimer.pdf",
-          },
-          {
-            title: "Terms & Conditions",
-            href: "/docs/vanuatu/terms-and-conditions.pdf",
-          },
-        ],
-      },
-    ],
-  },
+  "GTC Financial Consultancy": [
+    {
+      title: "GTC Financial Consultancy and GTC Global LTD ( Mauritius)",
+      items: [
+        {
+          name: "Client Onboarding Application GTC FC - MU – Retail V1.0",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/01.+Client+Onboarding+Application+GTC+FC+-+Retail+V1.0+.pdf",
+        },
+        {
+          name: "Corporate Onboarding Application GTC FC - MU - Corporate V1.0",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/01.+Corporate+Onboarding+Application+GTC+FC+-+MU+V1.0.pdf",
+        },
+        {
+          name: "Terms of Business",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/03.+GTC+FC-MU+Retail+TOB+V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Complaint Handling Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/04.+Complaint+Handling+Policy+V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Conflict of Interest Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/05.+Conflict+of+Interest+Policy+V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Risk Warning Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/06.+GTC+Financial+Consultancy+LLC+%E2%80%93+Risk+Warning+Notice+V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Cookie Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/07.+GTC+Financial+COnultancy+LLC+-+Cookie+Policy++V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Privacy Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Ltd/08.+Privacy+Policy+%E2%80%93+GTC+Financial+Consultancy+LLC+V1.0+09-06-2025.pdf",
+        },
+      ],
+    },
+    {
+      title: "GTC Financial Consultancy and GTC Global Trade Capital Co.Ltd (Vanuatu)",
+      items: [
+        {
+          name: "Client Onboarding Application GTC FC - VA – Retail V1.0",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/01.+Client+Onboarding+Application+GTC+FC+-+Retail+V1.0+.pdf#",
+        },
+        {
+          name: "Corporate Onboarding Application GTC FC - VA - Corporate V1.0",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/01.+Client+Onboarding+Application+GTC+FC+-+Vanuatu+-+Croporate+V1.0.pdf",
+        },
+        {
+          name: "Terms of Business",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/03.+GTC+FC+TOB+V1.0+V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Complaint Handling Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/04.+Complaint+Handling+Policy++V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Conflict of Interest Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/05.+Conflict+of+Interest+Policy+V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Risk Disclosure",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/06.+GTC+Financial+Consultancy+LLC+%E2%80%93+Risk+Warning+Notice+1.0V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Cookie Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/07.+GTC+Financial+COnultancy+LLC+-+Cookie+Policy+V1.0+09-06-2025.pdf",
+        },
+        {
+          name: "Privacy Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Financial+Consultancy/GTC+Fin+Consultancy+%26+GTC+Global+Trade+Capital+Ltd/08.+Privacy+Policy+%E2%80%93+GTC+Financial+Consultancy+LLC+V1.0+09-06-2025.pdf",
+        },
+      ],
+    },
+  ],
+  "GTC Global LTD ( Mauritius)": [
+    {
+      title: "Documents",
+      items: [
+        {
+          name: "Client Onboarding Application - MU – Retail",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/Individual+Application+Form+-GTC+Global+Ltd..pdf",
+        },
+        {
+          name: "Corporate Onboarding Application - MU - Corporate",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/Corporate+Account+Opening+-+GTC+Global+Ltd..pdf",
+        },
+        {
+          name: "Client Agreement",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/Mauritius+TOB+-+Proposed+Clauses+to+add.pdf",
+        },
+        {
+          name: "Privacy Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/PRIVACY%2BPOLICY%2BGTCFX.pdf",
+        },
+        {
+          name: "Risk Disclosure",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/Risk%2BWarning.pdf",
+        },
+        {
+          name: "Cookie Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/Cookie%2BPolicy.pdf",
+        },
+        {
+          name: "Website Disclaimer",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/Website%2BDisclaimer.pdf",
+        },
+        {
+          name: "Terms & Conditions",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+LTD/TERMS+AND+CONDITIONS+-+GTC+Global+Ltd.pdf",
+        },
+      ],
+    },
+  ],
+  "GTC Global Trade Capital Co.Ltd (Vanuatu)": [
+    {
+      title: "Documents",
+      items: [
+        {
+          name: "Client Agreement",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+Trade+Capital+Co.+Ltd+(VANUATU)/Vanuatu+-+TOB.pdf",
+        },
+        {
+          name: "Privacy Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+Trade+Capital+Co.+Ltd+(VANUATU)/Vanuatu++PRIVACY%2BPOLICY%2BGTCFX.pdf",
+        },
+        {
+          name: "Risk Disclosure",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+Trade+Capital+Co.+Ltd+(VANUATU)/Vanuatu+-+Risk%2BWarning.pdf",
+        },
+        {
+          name: "Cookie Policy",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+Trade+Capital+Co.+Ltd+(VANUATU)/Vanuatu++-+Cookie%2BPolicy.pdf",
+        },
+        {
+          name: "Website Disclaimer",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+Trade+Capital+Co.+Ltd+(VANUATU)/Vanuatu++-+Website%2BDisclaimer.pdf",
+        },
+        {
+          name: "Terms & Conditions",
+          link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/Website+Client+Document/GTC+Global+Trade+Capital+Co.+Ltd+(VANUATU)/T%26S+-+GTC+GLOBAL+TRADE+CAPITAL+CO.+LTD.pdf",
+        },
+      ],
+    },
+  ],
 };
 
 function PdfIcon() {
@@ -167,7 +193,7 @@ function ChevronIcon({ open }) {
 function DocumentRow({ item }) {
   return (
     <a
-      href={item.href}
+      href={item.link}
       target="_blank"
       rel="noopener noreferrer"
       className="group flex items-center justify-between gap-4 rounded-2xl border border-[#E5E7EB] bg-white px-4 py-4 transition-all duration-300 hover:border-[#b68756]/30 hover:bg-[#fffaf5]"
@@ -175,7 +201,7 @@ function DocumentRow({ item }) {
       <div className="flex items-center gap-3">
         <PdfIcon />
         <span className="text-sm font-medium leading-6 text-primary md:text-base">
-          {item.title}
+          {item.name}
         </span>
       </div>
 
@@ -212,9 +238,10 @@ function Accordion({ section, defaultOpen = true }) {
 }
 
 export default function LegalPoliciesClientAgreementsPage() {
-  const [activeTab, setActiveTab] = useState("consultancy");
+  const tabs = Object.keys(legalData);
+  const [activeTab, setActiveTab] = useState(tabs[0] || "");
 
-  const current = legalData[activeTab];
+  const current = legalData[activeTab] || [];
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F8FAFC] py-14 md:py-20">
@@ -244,7 +271,7 @@ export default function LegalPoliciesClientAgreementsPage() {
 
         {/* Tabs */}
         <div className="mt-10 flex flex-wrap gap-3 border-b border-[#E5E7EB] pb-5">
-          {Object.entries(legalData).map(([key, item]) => {
+          {Object.entries(legalData).map(([key]) => {
             const active = activeTab === key;
 
             return (
@@ -258,7 +285,7 @@ export default function LegalPoliciesClientAgreementsPage() {
                     : "bg-white text-primary border border-[#E5E7EB] hover:bg-[#F8FAFC]"
                 }`}
               >
-                {item.label}
+                {key}
               </button>
             );
           })}
@@ -266,7 +293,7 @@ export default function LegalPoliciesClientAgreementsPage() {
 
         {/* Content */}
         <div className="mt-8 space-y-5">
-          {current.sections.map((section, index) => (
+          {current.map((section, index) => (
             <Accordion
               key={`${activeTab}-${index}`}
               section={section}
