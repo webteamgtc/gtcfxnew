@@ -21,8 +21,8 @@ export default async function AboutPage({ params }) {
     <>
       <InnerPageBanner
         description="Due to regulatory requirements, GTCFX services are not available in certain jurisdictions. "
-        backgroundImage="/breadcamp/regulations.webp"
-        mobileBackgroundImage="/breadcamp/mobile-regu.webp"
+        backgroundImage="/breadcamp/rest-country.webp"
+        mobileBackgroundImage="/breadcamp/rest-country-mobile.webp"
       />
       <RestrictedCountriesPage />
 

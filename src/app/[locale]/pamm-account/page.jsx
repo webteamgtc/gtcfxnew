@@ -11,9 +11,9 @@ export default async function PammAccountPage({ params }) {
   return (
     <div>
       <InnerPageBanner
-        description={bannerDescription}
-        backgroundImage="/breadcamp/mt5.webp"
-        mobileBackgroundImage="/breadcamp/mt5-mobile.webp"
+        description="Access professionally managed trading strategies and benefit from expert trading performance without actively trading."
+        backgroundImage="/breadcamp/pamm-mobile.webp"
+        mobileBackgroundImage="/breadcamp/pamm.webp"
       />
       <ManagedAccountBannerSection
         title={copy?.banner?.title || ""}

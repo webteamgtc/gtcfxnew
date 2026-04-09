@@ -1,6 +1,7 @@
 import { getDictionary } from "@/i18n/request";
-import LegalPoliciesClientAgreementsPage from "./components/LegalPoliciesClientAgreementsPage";
 import InnerPageBanner from "../components/common/InnerPageBanner";
+import SwapFreeTermsPage from "../components/documents/SwapFreeTermsPage";
+import WebsiteDisclaimerPage from "../components/documents/WebsiteDisclaimerPage";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -12,7 +13,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function pages({ params }) {
+export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
@@ -20,12 +21,11 @@ export default async function pages({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Explore our legal documents, policies, and client agreements. "
+        description="GTCFX makes no representation or warranty as to the accuracy or completeness of the information provided and accepts no liability for any loss arising from reliance on such content."
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
-      <LegalPoliciesClientAgreementsPage /> 
-      
+      <WebsiteDisclaimerPage />
 
       {/* other sections */}
     </>

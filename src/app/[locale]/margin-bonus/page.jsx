@@ -21,8 +21,8 @@ export default async function pages({ params }) {
     <>
       <InnerPageBanner
         description="Enhance your trading power with additional margin support, giving you greater flexibility to seize market opportunities. "
-        backgroundImage="/breadcamp/regulations.webp"
-        mobileBackgroundImage="/breadcamp/mobile-regu.webp"
+        backgroundImage="/breadcamp/bonue.webp"
+        mobileBackgroundImage="/breadcamp/bonue-mobile.webp"
       />
       <MarginBonusPageSection />
 
