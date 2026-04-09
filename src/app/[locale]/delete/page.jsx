@@ -1,6 +1,6 @@
 import { getDictionary } from "@/i18n/request";
-import LegalPoliciesClientAgreementsPage from "./components/LegalPoliciesClientAgreementsPage";
 import InnerPageBanner from "../components/common/InnerPageBanner";
+import DeleteAccountPage from "./components/DeleteAccountPage";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function pages({ params }) {
+export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
@@ -20,12 +20,11 @@ export default async function pages({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Explore our legal documents, policies, and client agreements. "
-        backgroundImage="/breadcamp/legal.webp"
-        mobileBackgroundImage="/breadcamp/legal-mobile.webp"
+        description="Request to delete your trading account securely and permanently. "
+        backgroundImage="/breadcamp/delete.webp"
+        mobileBackgroundImage="/breadcamp/delete-mobile.webp"
       />
-      <LegalPoliciesClientAgreementsPage /> 
-      
+      <DeleteAccountPage />
 
       {/* other sections */}
     </>

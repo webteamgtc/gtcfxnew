@@ -14,9 +14,9 @@ export default async function VpsHostingServicesPage({ params }) {
   return (
     <div>
       <InnerPageBanner
-        description={bannerDescription}
-        backgroundImage="/breadcamp/about.webp"
-        mobileBackgroundImage="/breadcamp/about-mobile.webp"
+        description="Ensure uninterrupted trading with high-performance VPS hosting, designed for low latency, fast execution, and 24/7 reliability."
+        backgroundImage="/breadcamp/vps.webp"
+        mobileBackgroundImage="/breadcamp/vps-mobile.webp"
       />
       <BannerSection copy={copy} />
       <VPSHosting copy={copy} />

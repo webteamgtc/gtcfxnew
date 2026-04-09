@@ -11,9 +11,9 @@ export default async function MamAccountPage({ params }) {
   return (
     <div>
       <InnerPageBanner
-        description={copy?.banner?.title || ""}
-        backgroundImage="/breadcamp/mt5.webp"
-        mobileBackgroundImage="/breadcamp/mt5-mobile.webp"
+        description="Streamline multi-account trading with a powerful MAM solution built for performance, flexibility, and precise trade allocation."
+        backgroundImage="/breadcamp/mam.webp"
+        mobileBackgroundImage="/breadcamp/mam-mobile.webp"
       />
 
       <ManagedAccountBannerSection

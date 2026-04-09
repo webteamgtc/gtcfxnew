@@ -1,6 +1,6 @@
 import { getDictionary } from "@/i18n/request";
-import LegalPoliciesClientAgreementsPage from "./components/LegalPoliciesClientAgreementsPage";
 import InnerPageBanner from "../components/common/InnerPageBanner";
+import SwapFreeTermsPage from "../components/documents/SwapFreeTermsPage";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function pages({ params }) {
+export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
@@ -20,12 +20,11 @@ export default async function pages({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Explore our legal documents, policies, and client agreements. "
+        description="Explore the terms and conditions for swap-free accounts, including how they work and the requirements to maintain them. "
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
-      <LegalPoliciesClientAgreementsPage /> 
-      
+      <SwapFreeTermsPage />
 
       {/* other sections */}
     </>

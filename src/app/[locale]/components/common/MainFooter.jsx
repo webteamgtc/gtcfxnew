@@ -2,51 +2,63 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function MainFooter() {
-  const footerColumns = [
-    {
-      title: "WHY TRADE WITH GTCFX",
-      links: [
-        { label: "Low Spreads & Fast Execution", href: "/" },
-        { label: "Multiple Account Types", href: "/" },
-        { label: "24/7 Customer Support", href: "/" },
-        { label: "Deep Liquidity & No Requotes", href: "/" },
-      ],
-    },
-    {
-      title: "ACCOUNTS",
-      links: [{ label: "Account Types", href: "/" }],
-    },
-    {
-      title: "OUR OFFERING",
-      links: [
-        { label: "GTCFX Copy Trading", href: "/" },
-        { label: "GTC Trading Competitions", href: "/" },
-        { label: "GTC Traders Club | VIP Club", href: "/" },
-        { label: "Refer a Friend", href: "/" },
-      ],
-    },
-    {
-      title: "PLATFORM",
-      links: [
-        { label: "MetaTrader 4 (MT4)", href: "/" },
-        { label: "MetaTrader 5 (MT5)", href: "/" },
-        { label: "GTC GO App", href: "/" },
-      ],
-    },
-    {
-      title: "ABOUT GTCFX",
-      links: [
-        { label: "About Us", href: "/" },
-        { label: "Careers", href: "/" },
-        { label: "Regulation & Licensing", href: "/" },
-        { label: "Legal Documents", href: "/" },
-        { label: "Awards & Recognition", href: "/" },
-        { label: "Corporate Responsibility", href: "/" },
-        { label: "Contact Us", href: "/" },
-        { label: "Help center", href: "/" },
-      ],
-    },
-  ];
+const footerColumns = [
+  {
+    title: "Trading",
+    links: [
+      { label: "Account Types", href: "/account-types" },
+      { label: "Deposit Funds", href: "/deposit" },
+      { label: "Withdraw Funds", href: "/withdraw" },
+      { label: "Trading Conditions", href: "/trading-conditions" },
+      { label: "Dynamic Leverage", href: "/dynamic-leverage" },
+    ],
+  },
+  {
+    title: "Platforms",
+    links: [
+      { label: "MT4 Platform", href: "/mt4-platform" },
+      { label: "MT5 Platform", href: "/mt5-platform" },
+      { label: "GTC GO App", href: "/gtc-go-app" },
+      { label: "WebTrader", href: "/webtrader" },
+      { label: "VPS Hosting", href: "/vps-hosting-services" },
+    ],
+  },
+  {
+    title: "Tools & Features",
+    links: [
+      { label: "Copy Trading", href: "/copy-trading" },
+      { label: "PAMM Account", href: "/pamm-account" },
+      { label: "MAM Account", href: "/mam-account" },
+      { label: "Swap-Free Trading", href: "/swap-free-trading" },
+      { label: "Margin Bonus", href: "/margin-bonus" },
+    ],
+  },
+  {
+    title: "Insights & Resources",
+    links: [
+      { label: "Market Insights", href: "/blogs" },
+      { label: "Company News", href: "/company-news" },
+      { label: "Economic Calendar", href: "/economic-calendar" },
+      { label: "Earnings Calendar", href: "/earnings-calendar" },
+      { label: "Trading Hours", href: "/markets-time-holidays" },
+       { label: "Website Disclaimer", href: "/website-disclaimer" },
+      { label: "Restricted Countries", href: "/restricted-countries" },
+    ],
+  },
+  {
+    title: "Company & Legal",
+    links: [
+      { label: "About Us", href: "/about-us" },
+      { label: "Global Presence", href: "/global-presence" },
+      { label: "Awards", href: "/awards" },
+      { label: "Careers", href: "/careers" },
+      { label: "Contact Us", href: "/contact-us" },
+      { label: "Regulations", href: "/regulations" },
+      { label: "Risk Disclosure", href: "/risk-disclosure" },
+     
+    ],
+  },
+];
 
  const socialLinks = [
   { icon: "/icons/fb.svg", href: "https://www.facebook.com/GTCFXGlobalTradeCapital" },
@@ -132,7 +144,7 @@ export default function MainFooter() {
         </div>
 
         {/* Link columns */}
-        <div className="grid gap-8 border-b border-[#d9d9d9] py-10 md:grid-cols-2 xl:grid-cols-5">
+        <div className="grid gap-5 border-b border-[#d9d9d9] py-10 md:grid-cols-2 xl:grid-cols-5">
           {footerColumns.map((column) => (
             <div key={column.title}>
               <h3 className="mb-4 text-[12px] md:text-base font-semibold uppercase tracking-[0.02em] text-secondary">

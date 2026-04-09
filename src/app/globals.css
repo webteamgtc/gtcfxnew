@@ -69,7 +69,8 @@ a:hover {
 
   .HeadingH5 {
     @apply text-[16px] leading-[1.3] font-medium
-           md:text-[17px];
+           md:text-[17px]
+           xl:text-[19px];
   }
 
   /* =========================
