@@ -1,5 +1,9 @@
 import { NextResponse } from 'next/server';
-import { locales, defaultLocale } from '@/i18n/config';
+import {
+  locales,
+  defaultLocale,
+  resolveLocaleFromAcceptLanguage,
+} from '@/i18n/config';
 
 const PUBLIC_FILE = /\.(.*)$/;
 
@@ -40,17 +44,9 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
-  // Detect preferred language
-  let locale = defaultLocale;
-  const acceptLanguage = request.headers.get('accept-language');
-
-  if (acceptLanguage) {
-    const preferred = acceptLanguage
-      .split(',')
-      .map((s) => s.split(';')[0].trim().slice(0, 2));
-
-    locale = locales.find((l) => preferred.includes(l)) ?? defaultLocale;
-  }
+  const locale = resolveLocaleFromAcceptLanguage(
+    request.headers.get('accept-language')
+  );
 
   // Default locale → rewrite (clean URL)
   if (locale === defaultLocale) {

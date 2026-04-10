@@ -1,19 +1,14 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
-import { localeDir } from '@/i18n/config';
+import { localeDir, localeHreflang } from '@/i18n/config';
 
-export function LocaleProvider({ children }) {
-  const pathname = usePathname();
-
+export function LocaleProvider({ children, locale = 'en' }) {
   useEffect(() => {
-    const segment = pathname?.split('/')[1];
-    const locale = segment === 'ar' ? 'ar' : 'en';
-    const dir = localeDir[locale];
-    document.documentElement.lang = locale;
+    const dir = localeDir[locale] || 'ltr';
+    document.documentElement.lang = localeHreflang[locale] || locale;
     document.documentElement.dir = dir;
-  }, [pathname]);
+  }, [locale]);
 
   return <>{children}</>;
 }

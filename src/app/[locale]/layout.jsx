@@ -1,5 +1,5 @@
 import { getDictionary } from '@/i18n/request';
-import { locales } from '@/i18n/config';
+import { locales, localeDir } from '@/i18n/config';
 import { notFound } from 'next/navigation';
 import { LocaleProvider } from './LocaleProvider';
 import MainHeader from './components/common/MainHeader';
@@ -7,7 +7,8 @@ import MainFooter from './components/common/MainFooter';
 import TradingTicker from './components/home2/TradingTicker';
 import { ToastContainer } from "react-toastify";
 import StickyContactBar from './components/common/StickyContactBar';
-import { getPageMetadata } from '@/lib/metadata/getPageMetadata';
+import ThirdPartyScripts from './components/common/seo/ThirdPartyScripts';
+import { getLocaleSeoMetadata } from './components/common/seo/localeSeoMetadata';
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -15,13 +16,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  return getPageMetadata({
-    locale,
-    key: 'home',
-    path: '',
-    fallbackTitle: 'GTC FX',
-    fallbackDescription: 'Trading & Finance',
-  });
+  return getLocaleSeoMetadata(locale);
 }
 
 export default async function LocaleLayout({ children, params }) {
@@ -30,7 +25,7 @@ export default async function LocaleLayout({ children, params }) {
   if (!locales.includes(locale)) notFound();
 
   const dict = await getDictionary(locale);
-  const isRTL = locale === 'ar';
+  const isRTL = localeDir[locale] === 'rtl';
 
   return (
     <LocaleProvider locale={locale} messages={dict}>
@@ -40,6 +35,7 @@ export default async function LocaleLayout({ children, params }) {
         <main>{children}</main>
       <MainFooter locale={locale} /> 
       </div>
+      <ThirdPartyScripts />
       <ToastContainer autoClose={3000} />
     </LocaleProvider>
   );

@@ -1,9 +1,8 @@
-import enMetaData from "@/messages/metadata/en";
 import { getCanonicalUrl } from "@/lib/canonicalUrl";
+import enMessages from "@/messages/en.json";
+import { locales, localeHreflang, localeOpenGraph } from "@/i18n/config";
 
-const metadataByLocale = {
-  en: enMetaData,
-};
+const defaultMetaData = enMessages?.metaData || enMessages?.metadata || {};
 
 const DEFAULT_METADATA = {
   title: "GTC FX",
@@ -19,21 +18,40 @@ export function getPageMetadata({
   fallbackDescription = DEFAULT_METADATA.description,
   fallbackImage = "/opengraph-image.jpg",
 }) {
-  const localeMeta = metadataByLocale[locale] || metadataByLocale.en || {};
-  const pageMeta = localeMeta?.[key];
-  const dictMeta = dict?.metaData?.[key];
+  const dictMetaRoot = dict?.metaData || dict?.metadata || {};
+  const pageMeta = defaultMetaData?.[key];
+  const dictMeta = dictMetaRoot?.[key];
   const title = pageMeta?.title || dictMeta?.title || fallbackTitle;
   const description = pageMeta?.des || dictMeta?.des || fallbackDescription;
   const canonical = getCanonicalUrl(locale, path);
   const ogImage = fallbackImage.startsWith("http")
     ? fallbackImage
     : getCanonicalUrl(locale, fallbackImage);
+  const cleanPath = String(path || "").replace(/^\/+|\/+$/g, "");
+  const isBlogPage =
+    /^blogs(\/|$)/.test(cleanPath) ||
+    /^latest-news(\/|$)/.test(cleanPath) ||
+    /^company-news(\/|$)/.test(cleanPath) ||
+    /^research(\/|$)/.test(cleanPath);
+
+  const languageAlternates = isBlogPage
+    ? { en: getCanonicalUrl("en", cleanPath) }
+    : Object.fromEntries(
+        locales.map((lc) => [
+          localeHreflang[lc] || lc,
+          getCanonicalUrl(lc, cleanPath),
+        ])
+      );
 
   return {
     title,
     description,
     alternates: {
       canonical,
+      languages: {
+        ...languageAlternates,
+        "x-default": getCanonicalUrl("en", cleanPath),
+      },
     },
     openGraph: {
       title,
@@ -41,7 +59,7 @@ export function getPageMetadata({
       url: canonical,
       siteName: "GTCFX",
       type: "website",
-      locale: locale === "ar" ? "ar_AE" : "en_US",
+      locale: localeOpenGraph[locale] || "en_US",
       images: [
         {
           url: ogImage,
