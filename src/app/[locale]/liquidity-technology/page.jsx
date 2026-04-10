@@ -6,6 +6,18 @@ import WhatWeOfferSection from "./components/WhatWeOffer";
 import Counter from "../components/common/home/Counter";
 import DirectAccessSection from "./components/DirectAccess";
 import LiquditySection from "./components/LiquditySection";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: "liquidityTechnology",
+    path: "liquidity-technology",
+    fallbackTitle: "Liquidity & Technology - GTC FX",
+    fallbackDescription: "Institutional liquidity and trading technology.",
+  });
+}
 
 export default async function LiquidityTechnologyPage({ params }) {
   const { locale } = await params;

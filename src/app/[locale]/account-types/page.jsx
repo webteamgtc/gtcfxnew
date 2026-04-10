@@ -1,23 +1,23 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import AccountTypesComparison from "./components/AccountTypesComparison";
-
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "accountTypes",
+    dict,
+    path: "account-types",
+    fallbackTitle: "Account Types - GTC FX",
+    fallbackDescription: "Explore different account types and find the one that suits your trading needs.",
+  });
 }
-
-export default async function AboutPage({ params }) {
+export default async function AccountTypesPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
-
   return (
     <>
       <InnerPageBanner

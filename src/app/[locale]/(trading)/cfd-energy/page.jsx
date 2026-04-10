@@ -1,14 +1,19 @@
 import { notFound } from "next/navigation";
 import { getTradingPageProduct } from "../productConfig";
 import TradingProductView from "../components/TradingProductView";
-
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { getDictionary } from "@/i18n/request";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const p = await getTradingPageProduct(locale, "energy");
-  return {
-    title: p?.metaTitle ?? "Energy CFD Trading | GTCFX",
-    description: p?.metaDescription,
-  };
+  const dict = await getDictionary(locale);
+  return getPageMetadata({
+    locale,
+    key: "energy",
+    dict,
+    path: "cfd-energy",
+    fallbackTitle: "Energy CFD Trading - GTC FX",
+    fallbackDescription: "Trade energy CFDs with GTCFX and gain exposure to global energy markets. Invest in oil, gas, and renewable energy sources with flexible contracts and risk management tools.",
+  });
 }
 
 export default async function EnergyCfdsPage({ params }) {

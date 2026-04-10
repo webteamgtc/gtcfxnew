@@ -2,6 +2,18 @@ import { getDictionary } from "@/i18n/request";
 import PageHeroCommon from "../components/common/PageHero";
 import SwapTab from "./components/SwapTab";
 import InnerPageBanner from "../components/common/InnerPageBanner";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: "swapTermsCondition",
+    path: "swap-update",
+    fallbackTitle: "Swap Update - GTC FX",
+    fallbackDescription: "Latest swap rate updates from GTCFX.",
+  });
+}
 
 const SWAP_DATA = {
   Forex: [

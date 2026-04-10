@@ -1,6 +1,18 @@
 import { getDictionary } from "@/i18n/request";
 import PlatformAdvantages from "./components/PlatformAdvantage";
 import InnerPageBanner from "../components/common/InnerPageBanner";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: "mt5Platform",
+    path: "mt5-platform",
+    fallbackTitle: "MT5 Platform - GTC FX",
+    fallbackDescription: "Trade with the MT5 platform at GTCFX.",
+  });
+}
 
 export default async function Mt5PlatformPage({ params }) {
   const { locale } = await params;

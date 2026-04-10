@@ -4,16 +4,20 @@ import CopyTradingHero from "./components/CopyTradingHero";
 import WhatIsCopyTradingSection from "./components/WhatIsCopyTradingSection";
 import CopyTradingHowItWorks from "./components/CopyTradingHowItWorks";
 import CopyRatingData from "./components/CopyRatingData";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "copyTrading",
+    dict,
+    path: "copy-trading",
+    fallbackTitle: "Copy Trading - GTC FX",
+    fallbackDescription: "Copy top strategies with GTCFX.",
+  });
 }
 
 export default async function AboutPage({ params }) {

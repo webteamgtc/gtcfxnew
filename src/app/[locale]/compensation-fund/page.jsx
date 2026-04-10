@@ -1,15 +1,19 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import SecurityOfFundSection from "../components/about/SecurityOfFundSection";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "compensationFund",
+    dict,
+    path: "compensation-fund",
+    fallbackTitle: "Compensation Fund - GTC FX",
+    fallbackDescription: "Explore our compensation fund and how it protects your trading funds.",
+  });
 }
 
 export default async function AboutPage({ params }) {

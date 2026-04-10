@@ -1,5 +1,17 @@
 import EconomicCalendarHero from "./components/EconomicCalendarHero";
 import TradingToolsSection from "./components/TradingToolsSection";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: "economicCalendar",
+    path: "economic-calendar",
+    fallbackTitle: "Economic Calendar - GTC FX",
+    fallbackDescription: "Track global economic events in real time.",
+  });
+}
 
 export default function EconomicCalendarPage() {
   return (

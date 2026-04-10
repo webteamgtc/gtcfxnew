@@ -1,15 +1,19 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import GlobalPresenceMapSection from "../components/about/GlobalPresenceMapSection";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "globalPresence",
+    dict,
+    path: "global-presence",
+    fallbackTitle: "Global Presence - GTC FX",
+    fallbackDescription: "Explore our global presence and see where we are located.",
+  });
 }
 
 export default async function AboutPage({ params }) {

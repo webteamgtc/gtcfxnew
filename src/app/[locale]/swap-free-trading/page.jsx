@@ -2,6 +2,18 @@ import Image from "next/image";
 import { getDictionary } from "@/i18n/request";
 import PageHeroCommon from "../components/common/PageHero";
 import InnerPageBanner from "../components/common/InnerPageBanner";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: "swapTermsCondition",
+    path: "swap-free-trading",
+    fallbackTitle: "Swap Free Trading - GTC FX",
+    fallbackDescription: "Learn swap-free trading terms and eligibility.",
+  });
+}
 
 function get(obj, path) {
   return String(path)

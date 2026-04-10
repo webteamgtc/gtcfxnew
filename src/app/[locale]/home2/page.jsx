@@ -13,6 +13,18 @@ import HeroSection from '../components/home2/HeroSection';
 import AwardsTropy from '../components/home2/AwardsTropy';
 import PlatformsSection from '../components/home2/PlatformsSection';
 import TradingTicker from '../components/home2/TradingTicker';
+import { getPageMetadata } from '@/lib/metadata/getPageMetadata';
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: 'home',
+    path: 'home2',
+    fallbackTitle: 'Home - GTC FX',
+    fallbackDescription: 'Trade global markets with GTCFX.',
+  });
+}
 
 
 export default async function HomePage({ params }) {

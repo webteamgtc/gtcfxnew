@@ -4,15 +4,19 @@ import CompanyIntro from "../components/about/CompanyIntro";
 import AwardsMarquee from "../components/common/home/AwardsMarquee";
 import Counter from "../components/common/home/Counter";
 import ReviewsSection from "../components/common/ReviewsSection";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "aboutUs",
+    dict,
+    path: "about-us",
+    fallbackTitle: "About - GTC FX",
+    fallbackDescription: "Learn more about GTCFX.",
+  });
 }
 
 export default async function AboutPage({ params }) {
