@@ -3,16 +3,19 @@ import InnerPageBanner from "../components/common/InnerPageBanner";
 import { FundHero } from "./components/FundHero";
 import { FundMethods } from "./components/FundMethods";
 import { FundSteps } from "./components/FundSteps";
-
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "deposit",
+    dict,
+    path: "deposit",
+    fallbackTitle: "Deposit - GTC FX",
+    fallbackDescription: "Fund your account at your own ease and comfort",
+  });
 }
 
 export default async function AboutPage({ params }) {

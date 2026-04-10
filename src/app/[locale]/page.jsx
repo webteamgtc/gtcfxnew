@@ -13,6 +13,18 @@ import RevealOnScroll from './components/RevealOnScroll';
 import TradingTicker from './components/home2/TradingTicker';
 import PlatformsSection from './components/home2/PlatformsSection';
 import CopyTradingSection from './components/common/home/CopyTradingSection';
+import { getPageMetadata } from '@/lib/metadata/getPageMetadata';
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: 'home',
+    path: '',
+    fallbackTitle: 'GTC FX',
+    fallbackDescription: 'Trading & Finance',
+  });
+}
 
 
 export default async function HomePage({ params }) {

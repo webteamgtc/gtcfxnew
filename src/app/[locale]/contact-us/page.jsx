@@ -3,15 +3,18 @@ import InnerPageBanner from '../components/common/InnerPageBanner';
 import ContactForm from './components/ContactFrom';
 import ToolFreeContact from './components/ToolFree';
 import { MdOutlineContactPhone } from "react-icons/md";
-
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? 'Contact US  - GTC FX',
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "contactUs",
+    dict,
+    path: "contact-us",
+    fallbackTitle: "Contact Us - GTC FX",
+    fallbackDescription: "Need assistance? Get in touch with the GTCFX support team for fast, professional help. We’re here to guide your CFD trading journey with care.",
+  });
 }
 
 export default async function AboutPage({ params }) {

@@ -1,15 +1,19 @@
 import { getDictionary } from "@/i18n/request";
  import LeaderDetailPage from "../components/LeaderDetailPage";
 import InnerPageBanner from "../../components/common/InnerPageBanner";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
-  const { locale } = await params;
+  const { locale, slug } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.leaderboardTitle ?? "Leaderboard - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "leaderboard",
+    dict,
+    path: `leaderboard/${slug}`,
+    fallbackTitle: "Leaderboard - GTC FX",
+    fallbackDescription: "Explore our leaderboard and see the top traders.",
+  });
 }
 
 export default async function pages({ params }) {

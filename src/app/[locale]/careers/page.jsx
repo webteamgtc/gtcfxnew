@@ -1,15 +1,19 @@
 import { getDictionary } from '@/i18n/request';
 import InnerPageBanner from '../components/common/InnerPageBanner';
 import CareersClient from "./CareersClient";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? 'Contact US  - GTC FX',
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "career",
+    dict,
+    path: "careers",
+    fallbackTitle: "career - GTC FX",
+    fallbackDescription: "Explore our careers and join our team.",
+  });
 }
 
 export default async function CareersPage({ params }) {

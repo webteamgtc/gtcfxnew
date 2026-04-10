@@ -2,6 +2,18 @@ import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import ManagedAccountBannerSection from "../components/common/ManagedAccountBannerSection";
 import ManagedAccountFaqs from "../components/common/ManagedAccountFaqs";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  return getPageMetadata({
+    locale,
+    key: "mamAccount",
+    path: "mam-account",
+    fallbackTitle: "MAM Account - GTC FX",
+    fallbackDescription: "Manage multiple accounts with MAM tools.",
+  });
+}
 
 export default async function MamAccountPage({ params }) {
   const { locale } = await params;

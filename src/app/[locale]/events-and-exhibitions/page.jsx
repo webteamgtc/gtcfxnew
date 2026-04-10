@@ -5,17 +5,21 @@ import EventScheduleSection from "./components/EventSchedule";
 import SpeakersSection from "./components/Speakers";
 import ReviewsSection from "../components/common/ReviewsSection";
 import { fetchStrapiCollection, mapStrapiLocale } from "@/lib/strapi";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "eventsAndExhibitions",
+    dict,
+    path: "events-and-exhibitions",
+    fallbackTitle: "Events and Exhibitions - GTC FX",
+    fallbackDescription: "Explore our upcoming events and exhibitions.",
+  });
 }
 
 async function getEventsData(locale) {

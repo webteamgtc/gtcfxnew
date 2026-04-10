@@ -7,6 +7,7 @@ import MainFooter from './components/common/MainFooter';
 import TradingTicker from './components/home2/TradingTicker';
 import { ToastContainer } from "react-toastify";
 import StickyContactBar from './components/common/StickyContactBar';
+import { getPageMetadata } from '@/lib/metadata/getPageMetadata';
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -14,13 +15,13 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-
-  return {
-    title: meta.title ?? 'GTC FX',
-    description: meta.description ?? 'Trading & Finance',
-  };
+  return getPageMetadata({
+    locale,
+    key: 'home',
+    path: '',
+    fallbackTitle: 'GTC FX',
+    fallbackDescription: 'Trading & Finance',
+  });
 }
 
 export default async function LocaleLayout({ children, params }) {

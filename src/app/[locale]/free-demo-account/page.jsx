@@ -5,15 +5,19 @@ import Counter from "../components/common/home/Counter";
 import FeaturesSection from "../components/common/home/FeaturesSection";
 import TradingTicker from "../components/home2/TradingTicker";
 import ReviewsSection from "../components/common/ReviewsSection";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "freeDemoAccount",
+    dict,
+    path: "free-demo-account",
+    fallbackTitle: "Free Demo Account - GTC FX",
+    fallbackDescription: "Get a free demo account to test our trading platforms.",
+  });
 }
 
 export default async function AboutPage({ params }) {

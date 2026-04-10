@@ -2,22 +2,19 @@ import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import RevealOnScroll from "../components/RevealOnScroll";
 import GlossaryList from "./components/glossaryList";
-
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  const g = dict.glossaryFaqs || dict.glossary || {};
-  return {
-    title: meta.glossaryFaqsTitle ?? "Glossary & FAQs | GTCFX",
-    description:
-      meta.glossaryFaqsDescription ??
-      meta.glossaryFaqsDes ??
-      g.des ??
-      meta.description,
-  };
+  return getPageMetadata({
+    locale,
+    key: "glossaryFaqs",
+    dict,
+    path: "glossary-faqs",
+    fallbackTitle: "Glossary and FAQs - GTC FX",
+    fallbackDescription: "Explore key trading terms and find answers to common questions about GTCFX’s products, services, and trading conditions.",
+  });
 }
-
 export default async function GlossaryFaqsPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
