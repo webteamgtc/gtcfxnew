@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { locales } from "@/i18n/config";
 
 function formatLabel(slug) {
   if (!slug) return "";
@@ -42,10 +43,9 @@ export default function TradingHeroSection({
 }) {
   const pathname = usePathname();
 
-  const localeList = ["en", "ar", "zh"];
   const pathParts = pathname.split("/").filter(Boolean);
 
-  const segments = pathParts.filter((segment) => !localeList.includes(segment));
+  const segments = pathParts.filter((segment) => !locales.includes(segment));
 
   const pageTitle =
     title || formatLabel(segments[segments.length - 1]) || "Page Title";

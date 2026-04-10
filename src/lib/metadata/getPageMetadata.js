@@ -1,9 +1,8 @@
-import enMetaData from "@/messages/metadata/en";
 import { getCanonicalUrl } from "@/lib/canonicalUrl";
+import enMessages from "@/messages/en.json";
+import { locales, localeHreflang, localeOpenGraph } from "@/i18n/config";
 
-const metadataByLocale = {
-  en: enMetaData,
-};
+const defaultMetaData = enMessages?.metaData || enMessages?.metadata || {};
 
 const DEFAULT_METADATA = {
   title: "GTC FX",
@@ -18,30 +17,69 @@ export function getPageMetadata({
   fallbackTitle = DEFAULT_METADATA.title,
   fallbackDescription = DEFAULT_METADATA.description,
   fallbackImage = "/opengraph-image.jpg",
+  /** When set, wins over JSON/dict `key` title (e.g. Strapi post title). */
+  overrideTitle,
+  /** When set, wins over JSON/dict `key` description. */
+  overrideDescription,
+  /** Absolute image URL for OG/Twitter (e.g. Strapi media). */
+  overrideOgImageUrl,
 }) {
-  const localeMeta = metadataByLocale[locale] || metadataByLocale.en || {};
-  const pageMeta = localeMeta?.[key];
-  const dictMeta = dict?.metaData?.[key];
-  const title = pageMeta?.title || dictMeta?.title || fallbackTitle;
-  const description = pageMeta?.des || dictMeta?.des || fallbackDescription;
+  const dictMetaRoot = dict?.metaData || dict?.metadata || {};
+  const pageMeta = defaultMetaData?.[key];
+  const dictMeta = dictMetaRoot?.[key];
+  const title =
+    (typeof overrideTitle === "string" && overrideTitle.trim()) ||
+    pageMeta?.title ||
+    dictMeta?.title ||
+    fallbackTitle;
+  const description =
+    (typeof overrideDescription === "string" && overrideDescription.trim()) ||
+    pageMeta?.des ||
+    dictMeta?.des ||
+    fallbackDescription;
   const canonical = getCanonicalUrl(locale, path);
-  const ogImage = fallbackImage.startsWith("http")
-    ? fallbackImage
-    : getCanonicalUrl(locale, fallbackImage);
+  const ogImage =
+    typeof overrideOgImageUrl === "string" && overrideOgImageUrl.startsWith("http")
+      ? overrideOgImageUrl
+      : fallbackImage.startsWith("http")
+        ? fallbackImage
+        : getCanonicalUrl(locale, fallbackImage);
+  const cleanPath = String(path || "").replace(/^\/+|\/+$/g, "");
+  const isBlogPage =
+    /^blogs(\/|$)/.test(cleanPath) ||
+    /^latest-news(\/|$)/.test(cleanPath) ||
+    /^company-news(\/|$)/.test(cleanPath) ||
+    /^research(\/|$)/.test(cleanPath);
+
+  const languageAlternates = isBlogPage
+    ? { en: getCanonicalUrl("en", cleanPath) }
+    : Object.fromEntries(
+        locales.map((lc) => [
+          localeHreflang[lc] || lc,
+          getCanonicalUrl(lc, cleanPath),
+        ])
+      );
 
   return {
     title,
     description,
     alternates: {
       canonical,
+      languages: {
+        ...languageAlternates,
+        "x-default": getCanonicalUrl("en", cleanPath),
+      },
     },
     openGraph: {
       title,
       description,
       url: canonical,
       siteName: "GTCFX",
-      type: "website",
-      locale: locale === "ar" ? "ar_AE" : "en_US",
+      type:
+        typeof overrideTitle === "string" && overrideTitle.trim()
+          ? "article"
+          : "website",
+      locale: localeOpenGraph[locale] || "en_US",
       images: [
         {
           url: ogImage,

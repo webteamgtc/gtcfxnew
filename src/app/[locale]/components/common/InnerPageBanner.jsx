@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { locales, defaultLocale } from "@/i18n/config";
 
 function formatLabel(slug) {
   if (!slug) return "";
@@ -40,15 +41,17 @@ export default function InnerPageBanner({
 }) {
   const pathname = usePathname();
 
-  const localeList = ["en", "ar", "zh"];
   const pathParts = pathname.split("/").filter(Boolean);
 
-  const currentLocale = localeList.includes(pathParts[0]) ? pathParts[0] : "";
-  const segments = pathParts.filter((segment) => !localeList.includes(segment));
+  const currentLocale = locales.includes(pathParts[0]) ? pathParts[0] : "";
+  const segments = pathParts.filter((segment) => !locales.includes(segment));
   const breadcrumbSegments =
     segments.length > 1 ? segments.slice(0, -1) : segments;
 
-  const homeHref = currentLocale ? `/${currentLocale}` : "/";
+  const homeHref =
+    currentLocale && currentLocale !== defaultLocale
+      ? `/${currentLocale}`
+      : "/";
 
   const breadcrumbItems = [
     { label: "Home", href: homeHref },
