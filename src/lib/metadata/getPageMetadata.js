@@ -17,16 +17,33 @@ export function getPageMetadata({
   fallbackTitle = DEFAULT_METADATA.title,
   fallbackDescription = DEFAULT_METADATA.description,
   fallbackImage = "/opengraph-image.jpg",
+  /** When set, wins over JSON/dict `key` title (e.g. Strapi post title). */
+  overrideTitle,
+  /** When set, wins over JSON/dict `key` description. */
+  overrideDescription,
+  /** Absolute image URL for OG/Twitter (e.g. Strapi media). */
+  overrideOgImageUrl,
 }) {
   const dictMetaRoot = dict?.metaData || dict?.metadata || {};
   const pageMeta = defaultMetaData?.[key];
   const dictMeta = dictMetaRoot?.[key];
-  const title = pageMeta?.title || dictMeta?.title || fallbackTitle;
-  const description = pageMeta?.des || dictMeta?.des || fallbackDescription;
+  const title =
+    (typeof overrideTitle === "string" && overrideTitle.trim()) ||
+    pageMeta?.title ||
+    dictMeta?.title ||
+    fallbackTitle;
+  const description =
+    (typeof overrideDescription === "string" && overrideDescription.trim()) ||
+    pageMeta?.des ||
+    dictMeta?.des ||
+    fallbackDescription;
   const canonical = getCanonicalUrl(locale, path);
-  const ogImage = fallbackImage.startsWith("http")
-    ? fallbackImage
-    : getCanonicalUrl(locale, fallbackImage);
+  const ogImage =
+    typeof overrideOgImageUrl === "string" && overrideOgImageUrl.startsWith("http")
+      ? overrideOgImageUrl
+      : fallbackImage.startsWith("http")
+        ? fallbackImage
+        : getCanonicalUrl(locale, fallbackImage);
   const cleanPath = String(path || "").replace(/^\/+|\/+$/g, "");
   const isBlogPage =
     /^blogs(\/|$)/.test(cleanPath) ||
@@ -58,7 +75,10 @@ export function getPageMetadata({
       description,
       url: canonical,
       siteName: "GTCFX",
-      type: "website",
+      type:
+        typeof overrideTitle === "string" && overrideTitle.trim()
+          ? "article"
+          : "website",
       locale: localeOpenGraph[locale] || "en_US",
       images: [
         {

@@ -1,74 +1,21 @@
 import { MdOutlineNewspaper } from "react-icons/md";
 import { getDictionary } from "@/i18n/request";
-import {
-  fetchStrapiCollection,
-  mapStrapiLocale,
-} from "@/lib/strapi";
+import { fetchBlogsStrapiPage } from "@/lib/strapiBlogs";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import BlogFeeds from "./components/BlogFeeds";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export const dynamic = "force-dynamic";
 
 async function getBlogs(locale, start = 0, limit = 6) {
-  const populateParams = {
-    "populate[imageUrl][fields][0]": "url",
-    "populate[category][fields][0]": "name",
-    "populate[category][fields][1]": "slug",
-    "populate[author][fields][0]": "name",
-    "populate[author][populate][authorImg][fields][0]": "url",
-  };
-
-  const attemptParams = [
-    // Some Strapi setups expect relation filtering with id path
-    {
-      ...populateParams,
-      "filters[category][id][$eq]": 6,
-      "pagination[start]": start,
-      "pagination[limit]": limit,
-    },
-    // Keep previous style as a secondary attempt
-    {
-      ...populateParams,
-      "filters[category][$eq]": 6,
-      "pagination[start]": start,
-      "pagination[limit]": limit,
-    },
-    // Final fallback: no category filter
-    {
-      ...populateParams,
-      "pagination[start]": start,
-      "pagination[limit]": limit,
-    },
-  ];
-
-  const tryLoad = async (loc) => {
-    for (const params of attemptParams) {
-      try {
-        const res = await fetchStrapiCollection("blogs", {
-          locale: loc,
-          populate: null,
-          sort: "createdAt:desc",
-          params,
-          cache: "no-store",
-        });
-        if (Array.isArray(res?.data)) return res;
-      } catch (error) {
-        console.error("[blogs] blogs fetch attempt failed:", error?.message || error);
-      }
-    }
-    return { data: [] };
-  };
-
-  const mappedLocale = mapStrapiLocale(locale);
-  let res = await tryLoad(mappedLocale);
-  let usedLocale = mappedLocale;
-  if ((!res?.data || res.data.length === 0) && locale !== "en") {
-    res = await tryLoad("en");
-    usedLocale = "en";
-  }
-
-  const rows = Array.isArray(res?.data) ? res.data : [];
-  const total = Number(res?.meta?.pagination?.total || rows.length || 0);
+  const { data, meta, usedLocale } = await fetchBlogsStrapiPage(
+    locale,
+    start,
+    limit,
+    "no-store"
+  );
+  const rows = Array.isArray(data) ? data : [];
+  const total = Number(meta?.pagination?.total || rows.length || 0);
   return {
     rows,
     total,
@@ -79,11 +26,14 @@ async function getBlogs(locale, start = 0, limit = 6) {
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.blogsTitle ?? "Blogs - GTC FX",
-    description: meta.blogsDescription,
-  };
+  return getPageMetadata({
+    locale,
+      key: "blogs",
+    dict,
+    path: "blogs",
+    fallbackTitle: "Blogs - GTC FX",
+    fallbackDescription: "Read market insights from GTCFX.",
+  });
 }
 
 export default async function CompanyNewsPage({ params }) {
