@@ -19,7 +19,7 @@ const footerColumns = [
       { label: "MT4 Platform", href: "/mt4-platform" },
       { label: "MT5 Platform", href: "/mt5-platform" },
       { label: "GTC GO App", href: "/gtc-go-app" },
-      { label: "WebTrader", href: "/webtrader" },
+      { label: "Download Trading Platform", href: "/download-app" },
       { label: "VPS Hosting", href: "/vps-hosting-services" },
     ],
   },
@@ -40,8 +40,8 @@ const footerColumns = [
       { label: "Company News", href: "/company-news" },
       { label: "Economic Calendar", href: "/economic-calendar" },
       { label: "Earnings Calendar", href: "/earnings-calendar" },
-      { label: "Trading Hours", href: "/markets-time-holidays" },
-       { label: "Website Disclaimer", href: "/website-disclaimer" },
+         { label: "Website Disclaimer", href: "/website-disclaimer" },
+       { label: "Risk Disclosure", href: "/risk-disclosure" },
       { label: "Restricted Countries", href: "/restricted-countries" },
     ],
   },
@@ -49,13 +49,14 @@ const footerColumns = [
     title: "Company & Legal",
     links: [
       { label: "About Us", href: "/about-us" },
+      { label: "Why GTC Group", href: "/why-gtc-group" },
       { label: "Global Presence", href: "/global-presence" },
       { label: "Awards", href: "/awards" },
       { label: "Careers", href: "/careers" },
       { label: "Contact Us", href: "/contact-us" },
       { label: "Regulations", href: "/regulations" },
-      { label: "Risk Disclosure", href: "/risk-disclosure" },
-     
+      
+      
     ],
   },
 ];
