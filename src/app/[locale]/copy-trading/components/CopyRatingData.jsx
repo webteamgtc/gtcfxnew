@@ -31,7 +31,7 @@ const CopyRatingData = ({ copy }) => {
     return (
         <>
 
-            <div className="bg-gray-100 py-8 md:py-16 2xl:py-20" >
+            <div className="bg-gray-100 py-8 md:py-16 " >
                 <TopPerformer copy={copy} />
             </div >
             <div className="bg-white py-12 md:py-16 2xl:py-20" >
