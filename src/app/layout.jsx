@@ -1,5 +1,6 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+// Arabic (`ar`) uses Noto Kufi Arabic on the locale shell — see `src/app/fonts/notoKufiArabic.js` and `[locale]/layout.jsx`.
 
 const inter = Inter({
   subsets: ['latin'],

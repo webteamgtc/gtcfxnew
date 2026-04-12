@@ -4,8 +4,8 @@ const SITE_NAME = "GTCFX";
 const COPYRIGHT = "GTC Global SA (Pty) Ltd";
 const FACEBOOK_DOMAIN_VERIFICATION = "60dqaxv53ub77e10r0xc6bmbl9y2b3";
 
-export function getLocaleSeoMetadata(locale) {
-  const base = getPageMetadata({
+export async function getLocaleSeoMetadata(locale) {
+  const base = await getPageMetadata({
     locale,
     key: "home",
     path: "",

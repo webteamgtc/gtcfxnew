@@ -1,5 +1,6 @@
 import { getDictionary } from '@/i18n/request';
 import { locales, localeDir } from '@/i18n/config';
+import { notoKufiArabic } from '@/app/fonts/notoKufiArabic';
 import { notFound } from 'next/navigation';
 import { LocaleProvider } from './LocaleProvider';
 import MainHeader from './components/common/MainHeader';
@@ -26,10 +27,18 @@ export default async function LocaleLayout({ children, params }) {
 
   const dict = await getDictionary(locale);
   const isRTL = localeDir[locale] === 'rtl';
+  const isArabic = locale === 'ar';
 
   return (
     <LocaleProvider locale={locale} messages={dict}>
-      <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen">
+      <div
+        dir={isRTL ? 'rtl' : 'ltr'}
+        className={
+          isArabic
+            ? `min-h-screen ${notoKufiArabic.variable} font-arabic`
+            : 'min-h-screen'
+        }
+      >
        <StickyContactBar />
         <MainHeader locale={locale} />
         <main>{children}</main>

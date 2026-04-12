@@ -4,6 +4,30 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
+import { locales, defaultLocale } from "@/i18n/config";
+
+/** Match middleware: default locale has no /en prefix in the browser URL. */
+function getLocalizedPath(pathname, targetLocale) {
+  if (!pathname) pathname = "/";
+  const segments = pathname.split("/").filter(Boolean);
+
+  if (
+    segments.length > 0 &&
+    locales.some((l) => l.toLowerCase() === segments[0].toLowerCase())
+  ) {
+    segments.shift();
+  }
+
+  const cleanPath = segments.length ? `/${segments.join("/")}` : "/";
+
+  if (targetLocale === defaultLocale) {
+    return cleanPath;
+  }
+
+  return cleanPath === "/"
+    ? `/${targetLocale}`
+    : `/${targetLocale}${cleanPath}`;
+}
 
 /** App locale → ISO 3166-1 alpha-2 for FlagCDN PNGs */
 const FLAGCDN_COUNTRY = {
@@ -89,16 +113,6 @@ export function LanguageDrawerPanel({
 }) {
   const pathname = usePathname();
 
-  const getLocalizedPath = (targetLocale) => {
-    if (!pathname) return `/${targetLocale}`;
-    const segments = pathname.split("/").filter(Boolean);
-    if (segments.length > 0) {
-      segments[0] = targetLocale;
-      return `/${segments.join("/")}`;
-    }
-    return `/${targetLocale}`;
-  };
-
   const isMobile = variant === "mobile";
   const isInline = variant === "mobile-inline";
   const isDropdown = variant === "mobile-dropdown";
@@ -162,7 +176,7 @@ export function LanguageDrawerPanel({
             return (
               <Link
                 key={lang.code}
-                href={getLocalizedPath(lang.code)}
+                href={getLocalizedPath(pathname, lang.code)}
                 onClick={() => onClose?.()}
                 className={
                   isMobileLike && compactMobile
@@ -249,19 +263,6 @@ export default function LanguageSwitcher({
   const pathname = usePathname();
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
 
-  const getLocalizedPath = (targetLocale) => {
-    if (!pathname) return `/${targetLocale}`;
-
-    const segments = pathname.split("/").filter(Boolean);
-
-    if (segments.length > 0) {
-      segments[0] = targetLocale;
-      return `/${segments.join("/")}`;
-    }
-
-    return `/${targetLocale}`;
-  };
-
   const currentLanguage =
     DRAWER_LANGUAGES.find((lang) => lang.code === locale) ||
     SHORT_LANGUAGES[0];
@@ -279,7 +280,7 @@ export default function LanguageSwitcher({
         className={`inline-flex items-center justify-center gap-2 rounded-[10px] transition-colors duration-200 ${
           mobile
             ? "h-10 px-3 bg-white text-[#111827] border border-[#d9d9d9] hover:bg-[#f7f7f7]"
-            : "h-10 px-3 bg-[#2f2f2f] text-white hover:opacity-90"
+            : "xl:h-10 h-8 px-3 bg-[#2f2f2f] text-white hover:opacity-90"
         }`}
         aria-label="Select language"
       >
@@ -355,7 +356,7 @@ export default function LanguageSwitcher({
             return (
               <Link
                 key={lang.code}
-                href={getLocalizedPath(lang.code)}
+                href={getLocalizedPath(pathname, lang.code)}
                 className={`flex items-center gap-3 rounded-[8px] px-3 py-2 text-[14px] transition-colors duration-200 ${
                   isActive
                     ? "bg-[#f3f6fb] font-medium text-primary"
