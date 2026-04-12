@@ -1,6 +1,7 @@
 import { getCanonicalUrl } from "@/lib/canonicalUrl";
 import enMessages from "@/messages/en.json";
 import { locales, localeHreflang, localeOpenGraph } from "@/i18n/config";
+import { getDictionary } from "@/i18n/request";
 
 const defaultMetaData = enMessages?.metaData || enMessages?.metadata || {};
 
@@ -9,10 +10,10 @@ const DEFAULT_METADATA = {
   description: "Trading & Finance",
 };
 
-export function getPageMetadata({
+export async function getPageMetadata({
   locale = "en",
   key,
-  dict = null,
+  dict: dictProp = null,
   path = "",
   fallbackTitle = DEFAULT_METADATA.title,
   fallbackDescription = DEFAULT_METADATA.description,
@@ -24,18 +25,19 @@ export function getPageMetadata({
   /** Absolute image URL for OG/Twitter (e.g. Strapi media). */
   overrideOgImageUrl,
 }) {
+  const dict = dictProp ?? (await getDictionary(locale));
   const dictMetaRoot = dict?.metaData || dict?.metadata || {};
   const pageMeta = defaultMetaData?.[key];
   const dictMeta = dictMetaRoot?.[key];
   const title =
     (typeof overrideTitle === "string" && overrideTitle.trim()) ||
-    pageMeta?.title ||
     dictMeta?.title ||
+    pageMeta?.title ||
     fallbackTitle;
   const description =
     (typeof overrideDescription === "string" && overrideDescription.trim()) ||
-    pageMeta?.des ||
     dictMeta?.des ||
+    pageMeta?.des ||
     fallbackDescription;
   const canonical = getCanonicalUrl(locale, path);
   const ogImage =

@@ -16,7 +16,7 @@ module.exports = {
     },
 
     extend: {
-      screens: {
+      screens: {    
         '3xl': '1600px',
         '4xl': '1920px',
         '5xl': '2250px',
@@ -35,6 +35,11 @@ module.exports = {
 
       fontFamily: {
         sans: ['var(--font-primary)', 'sans-serif'],
+        arabic: [
+          'var(--font-arabic)',
+          'var(--font-primary)',
+          'sans-serif',
+        ],
       },
     },
   },

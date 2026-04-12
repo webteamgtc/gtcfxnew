@@ -7,6 +7,11 @@ import { megaMenuData } from "./megaMenuData";
 import LanguageSwitcher, { LanguageDrawerPanel } from "./LanguageSwitcher";
 import Image from "next/image";
 import DownloadQR from "./DownloadQR";
+import { localizedHref } from "@/i18n/localizedHref";
+
+function isExternalNavHref(href = "") {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
 
 export default function MainHeader({ locale = "en" }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -48,11 +53,11 @@ export default function MainHeader({ locale = "en" }) {
           onMouseLeave={() => setActiveMegaMenu(null)}
         >
           <div
-            className={`flex items-center justify-between px-5 lg:px-6 transition-all duration-300 ${activeMegaMenu ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"
+            className={`flex items-center justify-between px-3 xl:px-6 transition-all duration-300 ${activeMegaMenu ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"
               } ${scrolled ? "min-h-[58px] md:min-h-[74px]" : "min-h-[60px] md:min-h-[85px]"}`}
           >
             {/* Logo */}
-            <Link href="/" className="flex shrink-0 items-center">
+            <Link href={localizedHref(locale, "/")} className="flex shrink-0 items-center">
               <Image
                 src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/logo-2024-new.webp"
                 width={200}
@@ -60,14 +65,14 @@ export default function MainHeader({ locale = "en" }) {
                 alt="GTCFX"
                 priority
                 className={`cursor-pointer object-contain transition-all duration-300 ${scrolled
-                    ? "w-[120px] h-[42px] md:w-[150px] md:h-[54px]"
-                    : "w-[130px] h-[47px] md:w-[120px] md:h-[53px] lg:w-[200px] lg:h-[72px]"
+                    ? "w-[120px] h-[42px] sm:w-[130px] sm:h-[47px] md:w-[150px] md:h-[54px]"
+                    : "w-[130px] h-[47px] sm:w-[130px] sm:h-[47px] md:w-[120px] md:h-[53px] xl:w-[200px] xl:h-[72px]"
                   }`}
               />
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden items-center justify-end gap-8 lg:flex xl:gap-5">
+            <nav className="hidden items-center justify-end gap-2 lg:flex xl:gap-5">
               {navItems.map((item) => {
                 const isActive = activeMegaMenu === item.key;
 
@@ -76,7 +81,7 @@ export default function MainHeader({ locale = "en" }) {
                     key={item.key}
                     type="button"
                     onMouseEnter={() => setActiveMegaMenu(item.key)}
-                    className={`flex items-center gap-2 text-[15px] font-medium leading-none transition-colors duration-200 ${isActive ? "text-primary" : "text-[#2f2f2f] hover:text-primary"
+                    className={`flex items-center gap-2 xl:text-[15px] text-[13px] font-medium leading-none transition-colors duration-200 ${isActive ? "text-primary" : "text-[#2f2f2f] hover:text-primary"
                       }`}
                   >
                     <span>{item.label}</span>
@@ -105,7 +110,7 @@ export default function MainHeader({ locale = "en" }) {
               <Link
                 href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
                 target="_blank"
-                className="inline-flex h-10 items-center hover:no-underline hover:bg-primary hover:text-white justify-center rounded-[10px] border border-[#d7d7d7] px-5 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary hover:text-primary"
+                className="inline-flex xl:h-10 h-8 items-center hover:no-underline hover:bg-primary hover:text-white justify-center rounded-[10px] border border-[#d7d7d7] xl:px-5 px-3 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary hover:text-primary"
               >
                 Log in
               </Link>
@@ -113,7 +118,7 @@ export default function MainHeader({ locale = "en" }) {
               <Link
                 href="https://reg.gtcfx.com/uae/partners-campaign"
                 target="_blank"
-                className="inline-flex hover:no-underline hover:bg-secondary h-10 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] md:text-[px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
+                className="inline-flex hover:no-underline hover:bg-secondary xl:h-10 h-8 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] xl:px-5 px-3 text-[13px] xl:text-[15px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
               >
                 Partner With Us
               </Link>
@@ -176,7 +181,10 @@ export default function MainHeader({ locale = "en" }) {
             </div>
           </div>
 
-          <MegaMenuPanel menu={megaMenuData[activeMegaMenu]} />
+          <MegaMenuPanel
+            menu={megaMenuData[activeMegaMenu]}
+            locale={locale}
+          />
           {activeMegaMenu === "language" && (
             <LanguageDrawerPanel locale={locale} variant="desktop" />
           )}
@@ -224,10 +232,17 @@ export default function MainHeader({ locale = "en" }) {
                                   </h4>
 
                                   <ul className="space-y-3">
-                                    {column.links.map((link) => (
+                                    {column.links.map((link) => {
+                                      const external =
+                                        link.external ||
+                                        isExternalNavHref(link.href);
+                                      const href = external
+                                        ? link.href
+                                        : localizedHref(locale, link.href);
+                                      return (
                                       <li key={link.label}>
                                         <Link
-                                          href={link.href}
+                                          href={href}
                                           className="text-[14px] text-[#4b4b4b]"
                                           onClick={() => {
                                             setMobileOpen(false);
@@ -237,7 +252,8 @@ export default function MainHeader({ locale = "en" }) {
                                           {link.label}
                                         </Link>
                                       </li>
-                                    ))}
+                                    );
+                                    })}
                                   </ul>
                                 </div>
                               ))}

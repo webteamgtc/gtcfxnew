@@ -1,10 +1,11 @@
 import Link from "next/link";
+import { localizedHref } from "@/i18n/localizedHref";
 
 function isExternalLink(href = "") {
   return href.startsWith("http://") || href.startsWith("https://");
 }
 
-export default function MegaMenuPanel({ menu }) {
+export default function MegaMenuPanel({ menu, locale = "en" }) {
   if (!menu || !menu.columns?.length) return null;
 
   return (
@@ -36,11 +37,14 @@ export default function MegaMenuPanel({ menu }) {
               <ul className="space-y-5">
                 {column.links.map((link) => {
                   const external = link.external || isExternalLink(link.href);
+                  const href = external
+                    ? link.href
+                    : localizedHref(locale, link.href);
 
                   return (
                     <li key={`${column.heading}-${link.label}`}>
                       <Link
-                        href={link.href}
+                        href={href}
                         target={external ? "_blank" : undefined}
                         rel={external ? "noopener noreferrer" : undefined}
                         className="text-[15px] leading-[1.4] text-[#202020] transition-colors duration-300 hover:text-secondary hover:no-underline"
