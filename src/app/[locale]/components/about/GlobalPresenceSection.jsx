@@ -97,7 +97,7 @@ function AffiliateCard({ item }) {
         </h3>
       </div>
 
-   <div className="mt-5 inline-flex rounded-2xl bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 py-2">
+   <div className="mt-5 inline-flex rounded-2xl bg-primary-gradient px-5 py-2">
   <p className="text-xs sm:text-sm font-light uppercase tracking-[0.04em] text-[#fff]">
     {item.entity}
   </p>

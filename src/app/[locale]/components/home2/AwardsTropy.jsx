@@ -16,7 +16,7 @@ const marqueeAwards = [...awards, ...awards];
 
 export default function AwardsTropy() {
   return (
-    <section className="overflow-hidden bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788]">
+    <section className="overflow-hidden bg-primary-gradient">
       <div className="">
       
         <div className="relative overflow-hidden">

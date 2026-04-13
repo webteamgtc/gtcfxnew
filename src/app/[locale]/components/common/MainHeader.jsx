@@ -125,7 +125,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
               <Link
                 href="https://reg.gtcfx.com/uae/partners-campaign"
                 target="_blank"
-                className="inline-flex hover:no-underline hover:bg-secondary xl:h-10 h-8 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] xl:px-5 px-3 text-[13px] xl:text-[15px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
+                className="inline-flex hover:no-underline hover:bg-secondary xl:h-10 h-8 items-center justify-center rounded-[10px] bg-primary-gradient xl:px-5 px-3 text-[13px] xl:text-[15px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
               >
                 {partnerText}
               </Link>
@@ -284,7 +284,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
                     <Link
                       href="https://reg.gtcfx.com/uae/partners-campaign"
                       target="_blank"
-                      className="inline-flex h-11 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] font-medium text-white"
+                      className="inline-flex h-11 items-center justify-center rounded-[10px] bg-primary-gradient px-5 text-[14px] font-medium text-white"
                       onClick={() => setMobileOpen(false)}
                     >
                       {partnerText}
