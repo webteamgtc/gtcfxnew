@@ -41,6 +41,9 @@ module.exports = {
           'sans-serif',
         ],
       },
+      backgroundImage: {
+    'primary-gradient': 'linear-gradient(to right, #1e2a78, #243caa)',
+  },
     },
   },
 

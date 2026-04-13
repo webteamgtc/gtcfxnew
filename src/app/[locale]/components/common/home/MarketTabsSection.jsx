@@ -12,9 +12,9 @@ export default function MarketTabsSection() {
     const tabs = [
     {
       key: "forex",
-      label: "Forex CFDs",
+      label: "Forex",
       icon: "/home/forex.svg",
-      contentTitle: "Trade Forex CFDs",
+      contentTitle: "Trade Forex",
       contentDescription:
         "With a Tightest Spread Starting from 0 PIPS Offering Leverage up to 1:2000 & No restriction",
       buttonText: "Explore Forex",
@@ -24,7 +24,7 @@ export default function MarketTabsSection() {
     },
       {
       key: "energy",
-      label: "Energy CFDs",
+      label: "Energy",
       icon: "/home/energy.svg",
       contentTitle: "Invest in Energy",
       contentDescription:
@@ -36,7 +36,7 @@ export default function MarketTabsSection() {
     },
     {
       key: "commodities",
-      label: "Commodities CFDs",
+      label: "Commodities",
       icon: "/home/commed.svg",
       contentTitle: "Trade Commodities",
       contentDescription:
@@ -48,7 +48,7 @@ export default function MarketTabsSection() {
     },
     {
       key: "indices",
-      label: "Indices CFDs",
+      label: "Indices",
       icon: "/home/indices.svg",
       contentTitle: "Trade Indices",
       contentDescription:
@@ -60,9 +60,9 @@ export default function MarketTabsSection() {
     },
     {
       key: "liquidity",
-      label: "Metals CFDs",
+      label: "Metals",
       icon: "/home/first.svg",
-      contentTitle: "Trade Metal CFDs",
+      contentTitle: "Trade Metal",
       contentDescription:
         "Maximize your profit potential with ultra-competitive Gold CFD spreads, starting at just 4 cents.",
       buttonText: "Explore Metals",
@@ -92,16 +92,16 @@ export default function MarketTabsSection() {
     <section className="pt-10 md:py-16">
       <div className="container">
         {/* Fixed Heading */}
-        <div className="mx-auto max-w-[1100px] text-center flex flex-col items-center gap-8">
-          <h2 className="HeadingH2 max-w-[800px] mx-auto">Direct Access to <span className="text-secondary">Top Tier Liquidity </span>Provider</h2>
+        <div className="mx-auto max-w-[900px] text-center flex flex-col items-center gap-8">
+          <h2 className="HeadingH2 max-w-[700px] mx-auto">Trade Global <span className="text-secondary">CFD Markets</span> with <span className="text-secondary">Institutional-Grade</span> Liquidity </h2>
 
           <p className="Text">
-            GTCFX is a trusted liquidity provider that gives you access to easy-to-use FX liquidity platforms. With our liquidity solutions, you can trade efficiently at low costs and with fast execution. You can count on our transparent and reliable service, ensuring your trades remain private. With our state-of-the-art technology and dedicated team, we support your business in liquidity trading.
+            GTCFX delivers institutional-grade liquidity, empowering traders with fast execution, competitive pricing, and seamless access to global CFD markets. Our advanced infrastructure ensures efficient, transparent, and reliable trading performance.
           </p>
         </div>
 
         {/* Tabs — desktop */}
-        <div className="mt-12 hidden md:flex flex-wrap items-center justify-center gap-3 md:gap-4">
+        <div className="mt-12 hidden md:flex flex-wrap items-center justify-center gap-3 md:gap-6">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.key;
 
@@ -112,7 +112,7 @@ export default function MarketTabsSection() {
                 onClick={() => setActiveTab(tab.key)}
                 className={`flex min-w-[160px] flex-col items-center shadow-lg justify-center gap-2 rounded-[14px] border px-5 py-5 transition-all duration-300 md:min-w-[200px] ${
                   isActive
-                    ? "border-[#1f2d98] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] text-white shadow-[0_12px_25px_rgba(31,45,152,0.18)]"
+                    ? "bg-gradient-to-r from-[#1e2a78] to-[#243caa] text-white shadow-lg"
                     : "bg-[#F1F2F4] border-[#ececec] text-[#4b4b4b] hover:border-[#d9dffb] hover:bg-white"
                 }`}
               >
