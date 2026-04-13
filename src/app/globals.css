@@ -72,7 +72,9 @@ a:hover {
            md:text-[17px]
            xl:text-[19px];
   }
-
+html {
+  scroll-behavior: smooth;
+}
   /* =========================
      TEXT / PARAGRAPH (UPDATED SMALLER)
   ========================= */

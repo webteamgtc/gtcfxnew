@@ -35,9 +35,9 @@ export default function StickyContactBar() {
           href={item.href}
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex h-12 w-12 items-center justify-center rounded-full text-white shadow-lg transition hover:scale-105 ${item.bg}`}
+          className={`flex h-10 w-10 items-center justify-center rounded-full text-white shadow-lg transition hover:scale-105 ${item.bg}`}
         >
-          {item.icon}
+          {item.icon }
         </Link>
       ))}
     </div>

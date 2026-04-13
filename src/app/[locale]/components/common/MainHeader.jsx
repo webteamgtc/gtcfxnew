@@ -110,7 +110,7 @@ export default function MainHeader({ locale = "en" }) {
               <Link
                 href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
                 target="_blank"
-                className="inline-flex xl:h-10 h-8 items-center hover:no-underline hover:bg-primary hover:text-white justify-center rounded-[10px] border border-[#d7d7d7] xl:px-5 px-3 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary hover:text-primary"
+                className="inline-flex xl:h-10 h-8 items-center hover:no-underline hover:bg-primary hover:text-white justify-center rounded-[10px] border border-[#d7d7d7] xl:px-5 px-3 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary"
               >
                 Log in
               </Link>

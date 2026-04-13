@@ -233,6 +233,124 @@
         "des": "Use this secure form to delete your GTCFX trading account. Verify your email via OTP and confirm your login ID to safely process your account removal request."
     }
   },
+"navigation": {
+    "menu": {
+      "about": "About Us",
+      "account": "Account",
+      "trading": "Trading & Platform",
+      "prime": "Prime & Tech"
+    },
+    "about": {
+      "lable": "About Us",
+      "firstcolumn": {
+        "heading": "Who We Are",
+        "option1": "About GTCFX",
+        "option2": "Why GTC Group",
+        "option3": "Regulations"
+      },
+      "secondcolumn": {
+        "heading": "Company",
+        "option1": "Global Presence",
+        "option2": "Awards",
+        "option3": "Fund Security"
+      },
+      "thirdcolumn": {
+        "heading": "Highlights",
+        "option1": "Market Insights",
+        "option2": "Company News",
+        "option3": "Earnings & Dividends Calendar",
+        "option4": "Economic Calendar & News",
+        "option5": "Trading Hours & Holidays"
+      },
+      "fourthcolumn": {
+        "heading": "Get in Touch",
+        "option1": "Careers",
+        "option2": "Contact Us"
+      }
+    },
+
+    "account": {
+      "lable": "Account",
+      "firstcolumn": {
+        "heading": "Get Started",
+        "option1": "Open Live Account",
+        "option2": "Open Demo Account",
+        "option3": "Fund Your Account"
+      },
+      "secondcolumn": {
+        "heading": "Accounts",
+        "option1": "Account Types"
+      },
+      "thirdcolumn": {
+        "heading": "Events & Promotions",
+        "option1": "GTC Go App",
+        "option2": "Events & Exhibitions"
+      },
+      "fourthcolumn": {
+        "heading": "Support",
+        "option1": "Glossary & FAQs",
+        "option2": "Tutorial Videos",
+        "option3": "Contact Us"
+      }
+    },
+
+    "trading": {
+      "lable": "Trading & Platform",
+      "firstcolumn": {
+        "heading": "Instruments",
+        "option1": "Forex CFDs",
+        "option2": "Energies CFDs",
+        "option3": "Commodities CFDs",
+        "option4": "Equity Indices CFDs",
+        "option5": "Metals CFDs"
+      },
+      "secondcolumn": {
+        "heading": "Platforms",
+        "option1": "MT4 Trading Platform",
+        "option2": "MT5 Trading Platform",
+        "option3": "Download Trading Platform"
+      },
+      "thirdcolumn": {
+        "heading": "Leverage & Swap",
+        "option1": "Dynamic Leverage",
+        "option2": "Swap Update",
+        "option3": "Swap-Free Trading at GTCFX"
+      },
+      "fourthcolumn": {
+        "heading": "Partner with Us",
+        "option1": "IB Program",
+        "option2": "Affiliate Program",
+        "option3": "GTC Prime"
+      }
+    },
+
+    "prime": {
+      "lable": "Prime & Tech",
+      "firstcolumn": {
+        "heading": "Prime Services",
+        "option1": "Liquidity & Technology",
+        "option2": "Copy Trading"
+      },
+      "secondcolumn": {
+        "heading": "Trading Tools",
+        "option1": "PAMM Account",
+        "option2": "MAM Account",
+        "option3": "VPS"
+      },
+      "thirdcolumn": {
+        "heading": "Resources",
+        "option1": "Legal Documents",
+        "option2": "Restricted Countries",
+        "option3": "Margin Bonus",
+        "option4": "GTC AI Tools"
+      },
+      "fourthcolumn": {
+        "heading": "Latest Offers",
+        "option1": "Golden Falcon Awards 2026",
+        "option2": "GTCVIP Loyalty Rewards"
+      }
+    }
+  },
   "home": {
     "title": "Welcome to GTC FX",
     "subtitle": "Trade smarter with our platform",
