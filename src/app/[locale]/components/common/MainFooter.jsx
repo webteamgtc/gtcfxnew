@@ -34,15 +34,17 @@ const footerColumns = [
     ],
   },
   {
-    title: "Insights & Resources",
+    title: "Resources",
     links: [
-      { label: "Market Insights", href: "/blogs" },
-      { label: "Company News", href: "/company-news" },
-      { label: "Economic Calendar", href: "/economic-calendar" },
-      { label: "Earnings Calendar", href: "/earnings-calendar" },
-         { label: "Website Disclaimer", href: "/website-disclaimer" },
-       { label: "Risk Disclosure", href: "/risk-disclosure" },
-      { label: "Restricted Countries", href: "/restricted-countries" },
+      { label: "Website Disclaimer", href: "/website-disclaimer" },
+    { label: "Risk Disclosure", href: "/risk-disclosure" },
+    { label: "Restricted Countries", href: "/restricted-countries" },
+    { label: "Swap Free Terms & Conditions", href: "/swap-free-terms-and-conditions" },
+    { label: "Deposit & Refund Policy", href: "/deposit-and-refund-policy" },
+    { label: "KYC & Compliance Policy", href: "/kyc-compliance-policy" },
+    { label: "Cookie Policy", href: "/cookie-policy" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+      
     ],
   },
   {
@@ -51,10 +53,13 @@ const footerColumns = [
       { label: "About Us", href: "/about-us" },
       { label: "Why GTC Group", href: "/why-gtc-group" },
       { label: "Global Presence", href: "/global-presence" },
-      { label: "Awards", href: "/awards" },
-      { label: "Careers", href: "/careers" },
-      { label: "Contact Us", href: "/contact-us" },
       { label: "Regulations", href: "/regulations" },
+      { label: "Market Insights", href: "/blogs" },
+        { label: "Company News", href: "/company-news" },
+    { label: "Earnings Calendar", href: "/earnings-calendar" },
+
+      { label: "Contact Us", href: "/contact-us" },
+      
       
       
     ],
