@@ -56,7 +56,7 @@ export default function DownloadQR() {
             />
           </div>
 
-          <p className="text-sm font-medium text-[#2f2f2f] pb-2">
+          <p className="text-sm font-medium text-primary pb-2">
             Download App
           </p>
         </div>

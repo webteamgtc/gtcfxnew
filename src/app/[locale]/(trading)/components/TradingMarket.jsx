@@ -35,7 +35,7 @@ export default function TradingMarket({
                                         onClick={() => onTabChange(tab.key)}
                                         className={`snap-start shrink-0 flex items-center gap-2 rounded-xl border px-3 py-2.5 text-left text-sm font-semibold transition-all ${isActive
                                                 ? "border-primary bg-gradient-to-r from-[#263788] to-[#101638] text-white shadow-md"
-                                                : "border-slate-200 bg-white text-[#2f2f2f] hover:border-primary/40 hover:bg-slate-50"
+                                                : "border-slate-200 bg-white text-primary hover:border-primary/40 hover:bg-slate-50"
                                             }`}
                                     >
                                         <img
@@ -53,7 +53,7 @@ export default function TradingMarket({
 
                 <div className="mx-auto grid max-w-[1060px] items-center gap-8 md:gap-10 lg:grid-cols-2 lg:gap-12">
                     <div className="max-w-[480px] lg:max-w-none">
-                        <h3 className="HeadingH3 text-[#2f2f2f] transition-opacity duration-200">
+                        <h3 className="HeadingH3 text-primary transition-opacity duration-200">
                             {currentTab.contentTitle}
                         </h3>
                         <p className="Text mt-4 text-slate-600">{currentTab.contentDescription}</p>

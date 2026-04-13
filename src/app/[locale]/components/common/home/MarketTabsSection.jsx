@@ -16,7 +16,7 @@ export default function MarketTabsSection() {
       icon: "/home/forex.svg",
       contentTitle: "Trade Forex",
       contentDescription:
-        "With a Tightest Spread Starting from 0 PIPS Offering Leverage up to 1:2000 & No restriction",
+        "Gain access to deep FX liquidity with 200+ trading pairs, tight spreads, competitive margins, and lightning-fast execution.",
       buttonText: "Explore Forex",
       buttonLink: "/forex",
       image:
@@ -28,7 +28,7 @@ export default function MarketTabsSection() {
       icon: "/home/energy.svg",
       contentTitle: "Invest in Energy",
       contentDescription:
-        "Experience a Competitive Advantage When Trading Global Energy CFD Markets with Us",
+        "Access the energy markets with strong liquidity, tight spreads, and reliable execution.",
       buttonText: "Trade Energy",
       buttonLink: "/cfd-energy",
       image:
@@ -40,7 +40,7 @@ export default function MarketTabsSection() {
       icon: "/home/commed.svg",
       contentTitle: "Trade Commodities",
       contentDescription:
-        "Access a broad range of commodity markets with reliable execution and flexible trading conditions.",
+        "Gain deep liquidity, competitive pricing, and seamless execution across metals, energy, and other key commodity markets.",
       buttonText: "Explore Commodities",
       buttonLink: "/commodities",
       image:
@@ -52,7 +52,7 @@ export default function MarketTabsSection() {
       icon: "/home/indices.svg",
       contentTitle: "Trade Indices",
       contentDescription:
-        "Follow the world’s major markets and trade global indices with speed, precision and confidence.",
+        "Tap into global indices liquidity with tight spreads, rapid execution, and competitive pricing.",
       buttonText: "Explore Indices",
       buttonLink: "/indices",
       image:
@@ -64,7 +64,7 @@ export default function MarketTabsSection() {
       icon: "/home/first.svg",
       contentTitle: "Trade Metal",
       contentDescription:
-        "Maximize your profit potential with ultra-competitive Gold CFD spreads, starting at just 4 cents.",
+        "Enhance your business with deep metals liquidity, featuring tight spreads and dependable pricing.",
       buttonText: "Explore Metals",
       buttonLink: "/precious-metals",
       image:
@@ -110,7 +110,7 @@ export default function MarketTabsSection() {
                 key={tab.key}
                 type="button"
                 onClick={() => setActiveTab(tab.key)}
-                className={`flex min-w-[160px] flex-col items-center shadow-lg justify-center gap-2 rounded-[14px] border px-5 py-5 transition-all duration-300 md:min-w-[200px] ${
+                className={`flex flex-row min-w-[160px] items-center shadow-lg justify-center gap-2 md:gap-4 rounded-[14px] border px-5 py-5 transition-all duration-300 md:min-w-[200px] ${
                   isActive
                     ? "bg-gradient-to-r from-[#1e2a78] to-[#243caa] text-white shadow-lg"
                     : "bg-[#F1F2F4] border-[#ececec] text-[#4b4b4b] hover:border-[#d9dffb] hover:bg-white"
@@ -132,8 +132,8 @@ export default function MarketTabsSection() {
         {/* Changing Content — desktop */}
         <div className="max-w-[1060px] mx-auto py-10 hidden md:grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left */}
-          <div className="max-w-[420px]">
-            <h3 className="HeadingH3 text-[#2f2f2f]">
+          <div className="max-w-[520px]">
+            <h3 className="HeadingH3 text-primary">
               {currentTab.contentTitle}
             </h3>
 
@@ -143,7 +143,7 @@ export default function MarketTabsSection() {
 
             <Link
               href={currentTab.buttonLink}
-              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-white transition hover:opacity-90"
+              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-full bg-primary-gradient bg-[length:200%_200%] transition-all duration-500 hover:bg-right px-6 py-3 text-white hover:opacity-90"
             >
               {currentTab.buttonText}
             </Link>
@@ -185,7 +185,7 @@ export default function MarketTabsSection() {
                 </div>
 
 
-                <h3 className="HeadingH3 text-[#2f2f2f]">{tab.contentTitle}</h3>
+                <h3 className="HeadingH3 text-primary">{tab.contentTitle}</h3>
 
                 <p className="Text mt-4">{tab.contentDescription}</p>
 

@@ -12,10 +12,10 @@ export default function PrimaryButton({
     "inline-flex items-center justify-center rounded-full transition text-center duration-300 font-medium  hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary whitespace-nowrap";
 
   const variants = {
-    primary: "bg-primary-gradient hover:from-[#B68756] hover:via-[#995F22] hover:to-[#995F22] text-white hover:opacity-90",
+    primary: "bg-primary-gradient bg-primary-gradient bg-[length:200%_200%] transition-all duration-500 hover:bg-right text-white hover:opacity-90",
     outline:
       "border border-primary text-primary hover:bg-primary hover:text-white",
-    dark: "bg-[#2f2f2f] text-white hover:opacity-90 bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22]",
+    dark: "bg-primary text-white hover:opacity-90 bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22]",
   };
 
   const sizes = {

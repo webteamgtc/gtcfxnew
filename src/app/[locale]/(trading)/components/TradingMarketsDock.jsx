@@ -52,7 +52,7 @@ export default function TradingMarketsDock({ tabs, activeTab, onTabChange }) {
                     className={`flex w-full items-center gap-2.5 rounded-xl px-2.5 py-2.5 text-left text-[13px] font-semibold transition-all ${
                       isActive
                         ? "bg-gradient-to-r from-[#263788] to-[#101638] text-white shadow-md"
-                        : "text-[#2f2f2f] hover:bg-slate-50"
+                        : "text-primary hover:bg-slate-50"
                     }`}
                   >
                     <span

@@ -65,7 +65,7 @@ const WhatWeOfferSection = ({ copy }) => {
           <div className="max-w-[1060px] mx-auto mt-10 rounded-[18px] border border-[#ececec] bg-[#F8FAFC] p-6 md:p-10">
             <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-14">
               <div className="max-w-[520px]">
-                <h3 className="HeadingH3 text-[#2f2f2f]">{currentTab.title}</h3>
+                <h3 className="HeadingH3 text-primary">{currentTab.title}</h3>
                 <p className="Text mt-4 ltr:text-left rtl:text-right">
                   {currentTab.desc}
                 </p>

@@ -88,7 +88,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
                     key={item.key}
                     type="button"
                     onMouseEnter={() => setActiveMegaMenu(item.key)}
-                    className={`flex items-center gap-2 xl:text-[15px] text-[13px] font-medium leading-none transition-colors duration-200 ${isActive ? "text-primary" : "text-[#2f2f2f] hover:text-primary"
+                    className={`flex items-center gap-2 xl:text-[15px] text-[13px] font-medium leading-none transition-colors duration-200 ${isActive ? "text-primary" : "text-primary hover:text-primary"
                       }`}
                   >
                     <span>{item.label}</span>
@@ -210,7 +210,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
                           <button
                             type="button"
                             onClick={() => toggleMobileSection(item.key)}
-                            className="flex w-full items-center justify-between text-left text-[15px] font-medium text-[#2f2f2f]"
+                            className="flex w-full items-center justify-between text-left text-[15px] font-medium text-primary"
                           >
                             <span>{item.label}</span>
                             <svg

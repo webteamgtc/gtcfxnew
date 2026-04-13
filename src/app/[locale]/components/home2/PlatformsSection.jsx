@@ -89,11 +89,11 @@ export default function PlatformsSection() {
                 </div>
 
                 {/* Text */}
-                <div className="flex-1">
-                  <h4 className="text-[16px] font-semibold leading-tight text-black">
+                <div className="flex-1 ga">
+                  <h4 className="text-[16px] font-semibold leading-tight text-primary">
                     {item.title}
                   </h4>
-                  <p className="mt-1 text-[14px] leading-[1.4] text-[#333]">
+                  <p className="mt-2 text-[14px] leading-[1.4] text-[#4B5563]">
                     {item.description}
                   </p>
                 </div>

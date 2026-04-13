@@ -22,11 +22,11 @@ function FeatureCard({ item, index, mobile = false }) {
         {item.tag}
       </span>
 
-      <h3 className="mt-4 text-[20px] md:text-[22px] font-semibold text-[#2f2f2f] transition-colors duration-300 group-hover:text-[#1e2f99]">
+      <h3 className="mt-4 text-[20px] md:text-[22px] font-semibold text-primary transition-colors duration-300 group-hover:text-[#1e2f99]">
         {item.title}
       </h3>
 
-      <p className="mt-3 text-[14px] md:text-base text-primary leading-relaxed">
+      <p className="mt-3 text-[14px] md:text-base text-[#4B5563] leading-relaxed">
         {item.description}
       </p>
 
@@ -87,7 +87,7 @@ export default function FeaturesSection() {
     <section className="py-10 md:py-14 bg-[#fff]">
       <div className="container">
         <div className="text-center flex flex-col items-center gap-5">
-          <h2 className="HeadingH2">
+          <h2 className="HeadingH2 text-primary">
             Invest with the World's <br className="hidden md:block" />
             <span className="text-secondary">Premier Online Trading</span> Platform
           </h2>
