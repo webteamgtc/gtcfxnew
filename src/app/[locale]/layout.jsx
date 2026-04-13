@@ -40,7 +40,7 @@ export default async function LocaleLayout({ children, params }) {
         }
       >
        <StickyContactBar />
-        <MainHeader locale={locale} />
+        <MainHeader locale={locale} navigation={dict?.navigation} />
         <main>{children}</main>
       <MainFooter locale={locale} /> 
       </div>

@@ -3,29 +3,36 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import MegaMenuPanel from "./MegaMenuPanel";
-import { megaMenuData } from "./megaMenuData";
+import { getMegaMenuData, getNavItems } from "./megaMenuData";
 import LanguageSwitcher, { LanguageDrawerPanel } from "./LanguageSwitcher";
 import Image from "next/image";
 import DownloadQR from "./DownloadQR";
 import { localizedHref } from "@/i18n/localizedHref";
+import { translationTextByPath } from "@/i18n/tranlsationText";
 
 function isExternalNavHref(href = "") {
   return href.startsWith("http://") || href.startsWith("https://");
 }
 
-export default function MainHeader({ locale = "en" }) {
+export default function MainHeader({ locale = "en", navigation = {} }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobilePanel, setMobilePanel] = useState("menu"); // menu | language
   const [activeMegaMenu, setActiveMegaMenu] = useState(null);
   const [mobileExpanded, setMobileExpanded] = useState(null);
   const [scrolled, setScrolled] = useState(false);
 
-  const navItems = [
-    { label: "About Us", key: "about" },
-    { label: "Account", key: "account" },
-    { label: "Trading & Platform", key: "trading" },
-    { label: "Prime & Tech", key: "prime" },
-  ];
+  const navItems = getNavItems(navigation);
+  const megaMenuData = getMegaMenuData(navigation);
+  const loginText = translationTextByPath(
+    "topbar.member",
+    "Log in",
+    navigation
+  );
+  const partnerText = translationTextByPath(
+    "topbar.rgister",
+    "Partner With Us",
+    navigation
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -112,7 +119,7 @@ export default function MainHeader({ locale = "en" }) {
                 target="_blank"
                 className="inline-flex xl:h-10 h-8 items-center hover:no-underline hover:bg-primary hover:text-white justify-center rounded-[10px] border border-[#d7d7d7] xl:px-5 px-3 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary"
               >
-                Log in
+                {loginText}
               </Link>
 
               <Link
@@ -120,7 +127,7 @@ export default function MainHeader({ locale = "en" }) {
                 target="_blank"
                 className="inline-flex hover:no-underline hover:bg-secondary xl:h-10 h-8 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] xl:px-5 px-3 text-[13px] xl:text-[15px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
               >
-                Partner With Us
+                {partnerText}
               </Link>
 
               <div onMouseEnter={() => setActiveMegaMenu("language")}>
@@ -271,7 +278,7 @@ export default function MainHeader({ locale = "en" }) {
                       className="inline-flex h-11 items-center justify-center rounded-[10px] border border-[#d9d9d9] px-5 text-[14px] font-medium text-[#333]"
                       onClick={() => setMobileOpen(false)}
                     >
-                      Log in
+                      {loginText}
                     </Link>
 
                     <Link
@@ -280,7 +287,7 @@ export default function MainHeader({ locale = "en" }) {
                       className="inline-flex h-11 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] font-medium text-white"
                       onClick={() => setMobileOpen(false)}
                     >
-                      Partner With Us
+                      {partnerText}
                     </Link>
                   </div>
                 </>
