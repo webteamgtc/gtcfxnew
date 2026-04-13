@@ -1,11 +1,17 @@
 {
   "navigation": {
-    "tobbar": {
+    "topbar": {
       "liclabel": "SCA许可证",
       "partner": "与NASDAQ 上市公司BHAT合作",
       "member": "会员登录",
       "account": "创建账户",
       "rgister": "注册成为合作伙伴"
+    },
+    "menu": {
+      "about": "关于我们",
+      "account": "账户",
+      "trading": "交易和平台",
+      "prime": "Prime 与科技"
     },
     "about": {
       "lable": "关于我们",
@@ -17,67 +23,104 @@
         "option3": "GTC监管"
       },
       "secondcolumn": {
-        "heading": "全球业务",
-        "option1": "GTCFX全球业务",
-        "option2": "GTCFX奖项",
+        "heading": "公司",
+        "option1": "全球业务",
+        "option2": "奖项",
         "option3": "资金安全"
       },
       "thirdcolumn": {
         "heading": "亮点",
-        "option1": "GTCFX最新动态",
-        "option2": "工作机会",
-        "option3": "联系我们",
-        "option4": "GTCFX博客"
+        "option1": "市场洞察",
+        "option2": "公司新闻",
+        "option3": "财报与股息日历",
+        "option4": "经济日历与新闻",
+        "option5": "交易时间与假期"
+      },
+      "fourthcolumn": {
+        "heading": "联系我们",
+        "option1": "职业机会",
+        "option2": "联系我们"
       }
     },
     "account": {
       "lable": "账户",
       "des": "我们提供专为新手和资深交易者定制的超低门槛专业账户",
       "firstcolumn": {
-        "heading": "我们提供",
+        "heading": "开始使用",
         "option1": "开设实盘账户",
-        "option3": "免费模拟账户",
-        "option2": "为您的账户充值"
+        "option2": "开设模拟账户",
+        "option3": "为您的账户入金"
       },
       "secondcolumn": {
-        "heading": "GTC资产",
-        "option1": "交易账户类型",
-        "option2": "文件"
+        "heading": "账户",
+        "option1": "账户类型"
       },
       "thirdcolumn": {
-        "heading": "促销活动",
-        "option1": "交易返现奖励计划",
-        "option2": "模拟交易大赛"
+        "heading": "活动与推广",
+        "option1": "GTC Go App",
+        "option2": "活动与展会"
+      },
+      "fourthcolumn": {
+        "heading": "支持",
+        "option1": "术语与常见问题",
+        "option2": "教学视频",
+        "option3": "联系我们"
       }
     },
     "trading": {
       "lable": "交易和平台",
       "des": "提供最高1:2000的杠杆，以及从0点开始的最低点差。\n提供多样化的交易产品，涵盖超过27,000种货币对、股票、贵金属、能源和股指，具有竞争力的点差、无拒单、无滑点，且交易执行安全。",
       "firstcolumn": {
-        "heading": "产品",
-        "option1": "外汇",
-        "option2": "贵金属",
-        "option3": "股票 CFD",
-        "option4": "大宗商品",
-        "option5": "股指",
-        "option6": "能源",
-        "option7": "股票"
+        "heading": "交易品种",
+        "option1": "外汇 CFDs",
+        "option2": "能源 CFDs",
+        "option3": "大宗商品 CFDs",
+        "option4": "股指 CFDs",
+        "option5": "贵金属 CFDs"
       },
       "secondcolumn": {
         "heading": "平台",
         "option1": "MT4 交易平台",
         "option2": "MT5 交易平台",
-        "option3": "下载交易平台",
-        "option4": "cTrader 平台"
+        "option3": "下载交易平台"
       },
       "thirdcolumn": {
-        "heading": "交易",
-        "option1": "市场动态",
-        "option2": "经济日历与新闻",
-        "option3": "市场时间与假期",
-        "option4": "术语/常见问题解答",
-        "option5": "动态杠杆",
-        "option6": "隔夜利息更新"
+        "heading": "杠杆与隔夜利息",
+        "option1": "动态杠杆",
+        "option2": "隔夜利息更新",
+        "option3": "GTCFX 无隔夜利息交易"
+      },
+      "fourthcolumn": {
+        "heading": "与我们合作",
+        "option1": "IB 计划",
+        "option2": "联盟计划",
+        "option3": "GTC Prime"
+      }
+    },
+    "prime": {
+      "lable": "Prime 与科技",
+      "firstcolumn": {
+        "heading": "Prime 服务",
+        "option1": "流动性与技术",
+        "option2": "跟单交易"
+      },
+      "secondcolumn": {
+        "heading": "交易工具",
+        "option1": "PAMM 账户",
+        "option2": "MAM 账户",
+        "option3": "VPS"
+      },
+      "thirdcolumn": {
+        "heading": "资源",
+        "option1": "法律文件",
+        "option2": "受限国家",
+        "option3": "保证金赠金",
+        "option4": "GTC AI 工具"
+      },
+      "fourthcolumn": {
+        "heading": "最新优惠",
+        "option1": "金鹰奖 2026",
+        "option2": "GTCVIP 忠诚奖励"
       }
     },
     "partner": {

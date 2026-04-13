@@ -45,6 +45,7 @@ export default function LeaderCardGridItem({
   const pnlText = formatMoney(item?.totalProfit);
   const roiText = formatPercent(item?.maxProfit);
   const copyUrl = buildGtccopySubscriptionUrl(getCopyProviderId(item));
+  const mockUrl = "https://gtccopy.com/portal/login"
 
   const handleCardClick = () => {
     const href = getDetailPath(item);
@@ -175,7 +176,7 @@ export default function LeaderCardGridItem({
               className="TextButton rounded-lg bg-slate-100 py-2.5 text-slate-700 transition hover:bg-slate-200"
               onClick={(e) => {
                 e.stopPropagation();
-                onMockClick?.(item, e);
+                window.open(mockUrl, "_blank");
               }}
             >
               {mockButtonLabel}
