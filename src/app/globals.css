@@ -73,9 +73,6 @@ a:hover {
            md:text-[17px]
            xl:text-[19px];
   }
-html {
-  scroll-behavior: smooth;
-}
 
 
   /* =========================
@@ -240,8 +237,60 @@ html {
   padding: 10px 10px;
   border-bottom: 1px solid #DDD;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 .chartss{
   min-height: 63px!important;
+}
+
+.home2-chart-reveal {
+  animation: home2ChartClipReveal 2s ease-out forwards;
+  transform-origin: bottom center;
+  will-change: clip-path, transform, opacity;
+}
+
+@keyframes home2ChartClipReveal {
+  0% {
+    opacity: 0;
+    clip-path: inset(100% 0 0 0);
+    transform: translateY(30px);
+    filter: blur(3px);
+  }
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.mobile-review-swiper {
+  width: 100%;
+  padding-bottom: 34px;
+}
+
+.mobile-review-swiper .swiper-slide {
+  width: 100% !important;
+}
+
+.mobile-review-swiper .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.mobile-review-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.35);
+  opacity: 1;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.mobile-review-swiper .swiper-pagination-bullet-active {
+  width: 26px;
+  height: 10px;
+  background: #b68756;
+  border-radius: 9999px;
 }

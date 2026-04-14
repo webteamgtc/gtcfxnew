@@ -190,7 +190,7 @@ export function LanguageDrawerPanel({
                       }`
                 }
               >
-                <span className="relative inline-block md:h-8 h-6 md:w-8 w-6 shrink-0 overflow-hidden rounded-full">
+                <span className="relative inline-block md:h-7 h-6 md:w-7 w-6 shrink-0 overflow-hidden rounded-full">
                   <Image
                     src={flagCdnSrc(lang.code)}
                     alt={lang.flagAlt}
