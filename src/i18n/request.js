@@ -12,14 +12,45 @@ async function loadEnglish() {
   return BUNDLED_LOCALE_LOADERS.en();
 }
 
+function isPlainObject(value) {
+  return value != null && typeof value === "object" && !Array.isArray(value);
+}
+
+/**
+ * Use English dictionary as the base and overlay locale values.
+ * This avoids sprinkling English fallbacks across components.
+ */
+function deepMerge(base, override) {
+  if (!isPlainObject(base) || !isPlainObject(override)) {
+    return override ?? base;
+  }
+
+  const merged = { ...base };
+  for (const key of Object.keys(override)) {
+    const baseValue = base[key];
+    const overrideValue = override[key];
+    merged[key] =
+      isPlainObject(baseValue) && isPlainObject(overrideValue)
+        ? deepMerge(baseValue, overrideValue)
+        : overrideValue ?? baseValue;
+  }
+  return merged;
+}
+
 /**
  * Server-only: load messages for a locale (used by `[locale]/layout.jsx` and pages).
  * Bundled locales import from `@/messages`; others fetch from S3, fallback to English.
  */
 export async function getDictionary(locale) {
+  const english = await loadEnglish();
+  if (!locale || locale === "en") {
+    return english;
+  }
+
   const bundled = BUNDLED_LOCALE_LOADERS[locale];
   if (bundled) {
-    return bundled();
+    const localized = await bundled();
+    return deepMerge(english, localized);
   }
 
   try {
@@ -30,8 +61,9 @@ export async function getDictionary(locale) {
     if (!res.ok) {
       throw new Error(`messages ${res.status}`);
     }
-    return res.json();
+    const localized = await res.json();
+    return deepMerge(english, localized);
   } catch {
-    return loadEnglish();
+    return english;
   }
 }

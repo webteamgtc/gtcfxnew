@@ -164,7 +164,46 @@
   },
   "common": {
     "liveAccount": "افتح حساب للتداول",
-    "demoAccount": "حساب تجريبي مجاني "
+    "demoAccount": "حساب تجريبي مجاني ",
+    "counter": {
+      "stats": {
+        "servedClients": {
+          "value": 985000,
+          "suffix": " +",
+          "label": "عميل تم خدمتهم",
+          "duration": 2500
+        },
+        "tradingInstruments": {
+          "value": 27000,
+          "suffix": " +",
+          "label": "أدوات التداول",
+          "duration": 2200
+        },
+        "destinationsWorldwide": {
+          "value": 20,
+          "suffix": " +",
+          "label": "وجهات حول العالم",
+          "duration": 1800
+        },
+        "monthlyTrades": {
+          "value": 750,
+          "prefix": "$",
+          "suffix": " مليار",
+          "label": "التداولات الشهرية",
+          "duration": 2500
+        }
+      }
+    },
+    "reviews": {
+      "totalReviews": 45,
+      "titleLine1": "اقرأ تقييماتنا لتتعرف",
+      "titleLine2Prefix": "على",
+      "titleHighlight": "المزيد",
+      "titleLine2Suffix": "عنا",
+      "subtitle": "اطلع على آراء عملائنا من مختلف أنحاء العالم",
+      "summary": "عرض {total} تقييمًا عبر TradingView وApp Store وGoogle Play وTrustpilot.",
+      "swipeTip": "نصيحة: اسحب يمينًا أو يسارًا لرؤية المزيد من التقييمات."
+    }
   },
   "metaData": {
     "earningPage": {
@@ -746,7 +785,7 @@
       "phone": "667788 800 971+",
       "more_info": "إذا كان لديك أي أسئلة أو استفسارات إضافية، يرجى إكمال النموذج التالي، وسنقوم بالاتصال بك في أقرب وقت ممكن. ",
       "form": {
-        "title": "تواصل معنا عبر الواتساب",
+          "title": "تواصل معنا عبر الواتساب",
         "registrationStatus": "هل أنت عميل مسجل؟",
         "first-name": "الاسم الأول",
         "last-name": "اسم العائلة",
@@ -768,7 +807,7 @@
         "message": "شرح تفصيلي لحالتك...",
         "attachment": "المرفق",
         "file": "لقطات الشاشة، والإيصالات، والسجلات، أو المستندات الداعمة.",
-        "optional": "اختياري",
+  "optional": "اختياري",
         "submit": "إرسال",
         "sending": "جاري الإرسال..."
       },
@@ -797,10 +836,10 @@
           "notRegistered": "غير مسجل"
         },
         "queryType": {
-          "select": "اختر نوع الاستفسار",
-          "general": "استفسار عام",
-          "compliance": "استفسار متعلق بالامتثال"
-        },
+  "select": "اختر نوع الاستفسار",
+  "general": "استفسار عام",
+  "compliance": "استفسار متعلق بالامتثال"
+},
         "ticketType": {
           "select": "اختر نوع التذكرة",
           "accountRegistration": "إدارة الحساب/التسجيل",

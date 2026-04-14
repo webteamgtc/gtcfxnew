@@ -28,6 +28,7 @@ export default async function LocaleLayout({ children, params }) {
   const dict = await getDictionary(locale);
   const isRTL = localeDir[locale] === 'rtl';
   const isArabic = locale === 'ar';
+  console.log(locale);
 
   return (
     <LocaleProvider locale={locale} messages={dict}>
