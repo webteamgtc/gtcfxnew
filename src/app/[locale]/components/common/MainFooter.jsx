@@ -218,7 +218,7 @@ const footerColumns = [
                 key={index}
                 className="TextSmall flex items-start gap-3 text-[#5a5a5a]"
               >
-                <span className="mt-[7px] h-[4px] w-[4px] shrink-0 rounded-full bg-[#5a5a5a]" />
+                <span className="mt-[7px] h-[4px] w-[4px] shrink-0 rounded-xl bg-[#5a5a5a]" />
                 <span>{item}</span>
               </li>
             ))}
@@ -226,9 +226,7 @@ const footerColumns = [
         </div>
 
         {/* Bottom */}
-        <div className="mt-12 flex flex-col gap-3 md:flex-row md:items-center bg-primary text-center justify-center text-white py-2 text-xs md:text-sm rounded-lg">
-          © COPYRIGHT 2026 GTCFX - ALL RIGHTS RESERVED
-        </div>
+        <p className="text-xs mt-10 text-[#5a5a5a]">© COPYRIGHT 2026 GTCFX - ALL RIGHTS RESERVED</p>
       </div>
     </footer>
   );

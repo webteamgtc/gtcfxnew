@@ -111,7 +111,7 @@ function DashIcon() {
 function StarBadge({ children, variant = "standard" }) {
   return (
     <div
-      className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold md:text-sm ${
+      className={`inline-flex items-center gap-2 rounded-xl px-3 py-1 text-xs font-semibold md:text-sm ${
         variant === "ecn"
           ? "bg-[#b68756]/10 text-[#b68756]"
           : "bg-[#263788]/10 text-[#263788]"
@@ -279,7 +279,7 @@ export default function AccountTypesComparisonPremium() {
       <div className="container relative z-10">
         {/* Intro */}
         <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             Account Types
           </span>
 
@@ -425,8 +425,8 @@ export default function AccountTypesComparisonPremium() {
       </div>
 
       {/* background glow */}
-      <div className="pointer-events-none absolute left-[-100px] top-24 h-[240px] w-[240px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-100px] top-24 h-[240px] w-[240px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }

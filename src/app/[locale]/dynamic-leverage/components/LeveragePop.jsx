@@ -31,7 +31,7 @@ const LeveragePop = ({ copy, isOpen, onClose }) => {
             {pop.leveragePopTitle}
           </h2>
           <button onClick={onClose} className="text-gray-600 outline-0">
-            <IoCloseSharp className="h-6 w-6 rounded-full bg-secondary text-white outline-0" />
+            <IoCloseSharp className="h-6 w-6 rounded-xl bg-secondary text-white outline-0" />
           </button>
         </div>
 

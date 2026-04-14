@@ -65,7 +65,7 @@ function ReviewCard({ item, mobile = false }) {
       ].join(" ")}
     >
       <div className={`relative shrink-0 ${mobile ? "h-8 w-8" : "h-8 w-8"}`}>
-        <Image src={item.logo} alt={item.name} fill className="object-contain  rounded-full" />
+        <Image src={item.logo} alt={item.name} fill className="object-contain  rounded-xl" />
       </div>
 
       <div className="flex min-w-0 flex-col">
@@ -137,7 +137,7 @@ export default function HeroSectionHome2() {
           <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
             <Link
               href="/register"
-              className="inline-flex min-h-[54px] items-center hover:no-underline justify-center rounded-xl bg-[#2563eb] px-6 text-[16px] font-semibold text-white transition hover:bg-[#1d4ed8] md:px-8 md:text-[18px]"
+              className="inline-flex min-h-[54px] items-center hover:no-underline justify-center rounded-xl bg-[#172154] px-6 text-[16px] font-semibold text-white transition hover:bg-secondary md:px-8 md:text-[18px]"
             >
               Open Live Account
             </Link>
@@ -150,11 +150,8 @@ export default function HeroSectionHome2() {
             </Link>
           </div>
 
-          <small className="mt-3 text-xs text-white md:text-sm">
-            Start in minutes
-          </small>
 
-          <div className="xl:mt-16 w-full max-w-[1120px] md:mt-20 lg:mt-24">
+          <div className="2xl:mt-32 w-full max-w-[1120px] md:mt-20 lg:mt-24">
             <div className="block md:hidden px-10">
               <MobilePeekCarousel
                 items={reviews}

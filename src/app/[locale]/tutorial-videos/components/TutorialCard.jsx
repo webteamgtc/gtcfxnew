@@ -33,7 +33,7 @@ function TutorialCard({ featured }) {
 
         {/* Play Button */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="h-12 w-12 rounded-full bg-white/90 flex items-center justify-center">
+          <div className="h-12 w-12 rounded-xl bg-white/90 flex items-center justify-center">
             ▶
           </div>
         </div>

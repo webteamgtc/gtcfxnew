@@ -107,13 +107,13 @@ function PlatformCard({ title, items, icon }) {
 export default function TradingPlatformsSection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F8FAFC] py-16 md:py-20">
-      <div className="pointer-events-none absolute left-[-80px] top-16 h-[220px] w-[220px] rounded-full bg-[#263788]/8 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-80px] bottom-10 h-[240px] w-[240px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-80px] top-16 h-[220px] w-[220px] rounded-xl bg-[#263788]/8 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-80px] bottom-10 h-[240px] w-[240px] rounded-xl bg-[#b68756]/10 blur-3xl" />
 
       <div className="container relative z-10">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             Trading Platforms
           </span>
 
@@ -199,7 +199,7 @@ export default function TradingPlatformsSection() {
 
             {/* Right visual */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="absolute h-[280px] w-[280px] rounded-full bg-white/10 blur-3xl" />
+              <div className="absolute h-[280px] w-[280px] rounded-xl bg-white/10 blur-3xl" />
               <div className="relative w-full max-w-[460px]">
                 <Image
                   src="/app/mobile-banner.webp"

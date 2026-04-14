@@ -47,13 +47,13 @@ const features = [
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
       {/* Background glows */}
-      <div className="pointer-events-none absolute left-[-120px] top-0 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-[#fef2f2] to-[#ffedd5] opacity-60 blur-[120px]" />
-      <div className="pointer-events-none absolute right-[-120px] top-10 h-[420px] w-[420px] rounded-full bg-gradient-to-br from-[#dbeafe] to-[#e0e7ff] opacity-70 blur-[120px]" />
+      <div className="pointer-events-none absolute left-[-120px] top-0 h-[420px] w-[420px] rounded-xl bg-gradient-to-br from-[#fef2f2] to-[#ffedd5] opacity-60 blur-[120px]" />
+      <div className="pointer-events-none absolute right-[-120px] top-10 h-[420px] w-[420px] rounded-xl bg-gradient-to-br from-[#dbeafe] to-[#e0e7ff] opacity-70 blur-[120px]" />
 
       <div className="container relative z-10">
         {/* Header */}
         <div className="mx-auto mb-8 max-w-3xl text-center md:mb-12">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             GTC GO Features
           </span>
 
@@ -104,7 +104,7 @@ const features = [
           <button
             type="button"
             onClick={handleScrollToHero}
-            className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-gradient-to-r from-[#293794] to-[#000021] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-200/60 transition-all duration-300 hover:-translate-y-0.5 hover:opacity-95 md:min-h-[56px] md:px-10 md:text-base"
+            className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-gradient-to-r from-[#293794] to-[#000021] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-200/60 transition-all duration-300 hover:-translate-y-0.5 hover:opacity-95 md:min-h-[56px] md:px-10 md:text-base"
           >
             Download App Now
           </button>

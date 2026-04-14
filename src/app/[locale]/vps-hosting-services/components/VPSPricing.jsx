@@ -30,7 +30,7 @@ function PricingCard({ index, ...props }) {
       <div className="mt-6 flex justify-center">
         <button
           type="button"
-          className="TextButton rounded-full bg-secondary px-6 py-3 text-white transition-colors hover:bg-primary"
+          className="TextButton rounded-xl bg-secondary px-6 py-3 text-white transition-colors hover:bg-primary"
           onClick={() => {
             const banner = document.getElementById("top-banner");
             if (banner) banner.scrollIntoView({ behavior: "smooth" });

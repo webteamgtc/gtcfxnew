@@ -147,13 +147,13 @@ function TutorialCard({ video, onOpen }) {
 
    
         {/* duration */}
-        <div className="absolute right-5 top-5 inline-flex rounded-full bg-black/45 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
+        <div className="absolute right-5 top-5 inline-flex rounded-xl bg-black/45 px-3 py-1 text-xs font-semibold text-white backdrop-blur-sm">
           {video.duration}
         </div>
 
         {/* floating play button */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white/90 text-[#263788] shadow-xl transition duration-300 group-hover:scale-110">
+          <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-white/90 text-[#263788] shadow-xl transition duration-300 group-hover:scale-110">
             <PlayIcon />
           </div>
         </div>
@@ -162,7 +162,7 @@ function TutorialCard({ video, onOpen }) {
 
       {/* Bottom content area */}
       <div className="relative p-6">
-        <div className="absolute left-6 top-0 h-1 w-14 -translate-y-1/2 rounded-full bg-gradient-to-r from-[#293794] to-[#b68756]" />
+        <div className="absolute left-6 top-0 h-1 w-14 -translate-y-1/2 rounded-xl bg-gradient-to-r from-[#293794] to-[#b68756]" />
 
         <p className="text-[15px] leading-7 text-[#4B5563]">
           {video.description}
@@ -207,7 +207,7 @@ function VideoModal({ video, onClose }) {
         {/* Header */}
         <div className="flex items-start justify-between gap-4 border-b border-[#E5E7EB] px-5 py-4 md:px-6">
           <div>
-            <div className="inline-flex rounded-full bg-[#b68756]/10 px-3 py-1 text-xs font-semibold text-[#b68756]">
+            <div className="inline-flex rounded-xl bg-[#b68756]/10 px-3 py-1 text-xs font-semibold text-[#b68756]">
               {video.category}
             </div>
             <h3 className="mt-3 text-lg font-semibold text-primary md:text-2xl">
@@ -218,7 +218,7 @@ function VideoModal({ video, onClose }) {
           <button
             type="button"
             onClick={onClose}
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#E5E7EB] bg-white text-slate-700 transition hover:bg-[#F8FAFC]"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#E5E7EB] bg-white text-slate-700 transition hover:bg-[#F8FAFC]"
             aria-label="Close video popup"
           >
             <CloseIcon />
@@ -261,12 +261,12 @@ export default function TutorialVideosPageSection() {
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
-        <div className="pointer-events-none absolute left-[-100px] top-10 h-[240px] w-[240px] rounded-full bg-[#263788]/5 blur-3xl" />
-        <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+        <div className="pointer-events-none absolute left-[-100px] top-10 h-[240px] w-[240px] rounded-xl bg-[#263788]/5 blur-3xl" />
+        <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
 
         <div className="container relative z-10">
           <div className="mx-auto max-w-4xl text-center">
-            <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+            <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
               Video Tutorials
             </span>
 

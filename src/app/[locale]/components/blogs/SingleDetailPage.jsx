@@ -320,7 +320,7 @@ const SingleDetailPage = ({ url, page }) => {
             {notFound ? (
                 <section className="container py-16">
                     <div className="mx-auto max-w-2xl rounded-2xl border border-gray-200 bg-white p-8 text-center shadow-sm">
-                        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary/10 text-primary">
+                        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
                             <svg className="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9.172 9a4 4 0 015.656 0M9 15h.01M15 15h.01M12 21a9 9 0 100-18 9 9 0 000 18z" />
                             </svg>
@@ -402,8 +402,8 @@ const SingleDetailPage = ({ url, page }) => {
                             {/* Divider */}
                             <div className="md:my-10 my-8 flex items-center justify-center">
                                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
-                                <div className="mx-4 flex h-7 w-7 items-center justify-center rounded-full bg-secondary/10">
-                                    <span className="h-2 w-2 rounded-full bg-secondary" />
+                                <div className="mx-4 flex h-7 w-7 items-center justify-center rounded-xl bg-secondary/10">
+                                    <span className="h-2 w-2 rounded-xl bg-secondary" />
                                 </div>
                                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-gray-300 to-transparent" />
                             </div>
@@ -412,7 +412,7 @@ const SingleDetailPage = ({ url, page }) => {
                             {author && (
                                 <div className={`${sectionBase} md:mb-8 mb-6 md:p-5 p-4 md:py-6 py-4`}>
                                     <div className="mb-4 flex items-center gap-2 text-xs font-semibold uppercase tracking-wide text-primary/70">
-                                        <span className="h-1.5 w-1.5 rounded-full bg-secondary" />
+                                        <span className="h-1.5 w-1.5 rounded-xl bg-secondary" />
                                         About the author
                                     </div>
                                     <div className="flex flex-col items-start gap-6 md:flex-row">
@@ -424,11 +424,11 @@ const SingleDetailPage = ({ url, page }) => {
                                                         src={authorImage}
                                                         alt={authorName}
                                                         fill
-                                                        className="rounded-full object-cover border-2 border-primary"
+                                                        className="rounded-xl object-cover border-2 border-primary"
                                                         unoptimized
                                                     />
                                                 ) : (
-                                                    <div className="flex h-full w-full items-center justify-center rounded-full border-2 border-primary/40 bg-gradient-to-br from-primary to-secondary text-2xl font-bold text-white md:text-3xl">
+                                                    <div className="flex h-full w-full items-center justify-center rounded-xl border-2 border-primary/40 bg-gradient-to-br from-primary to-secondary text-2xl font-bold text-white md:text-3xl">
                                                         {authorName.charAt(0).toUpperCase()}
                                                     </div>
                                                 )}
@@ -516,7 +516,7 @@ const SingleDetailPage = ({ url, page }) => {
                                     recentData?.length > 0 && (
                                         <div className="rounded-3xl bg-[#ECECEF] p-4 md:p-5">
                                             <h3 className="mb-4 flex items-center gap-2 text-xl font-bold text-[#070B17]">
-                                                <span className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-primary/10">
+                                                <span className="inline-flex h-7 w-7 items-center justify-center rounded-xl bg-primary/10">
                                                     <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                                                     </svg>

@@ -17,7 +17,7 @@ export default function TradingAdvantages({
       "bg-white py-14 md:py-16";
 
   const cardClass =
-    "group flex flex-row items-center gap-4 rounded-full border rounded-3xl border border-[#E5E7EB] bg-[#F1F2F4] p-[2px] ps-3 pe-4 py-2.5 shadow-sm transition-all hover:shadow-md md:gap-5 md:ps-4 md:pe-5 md:py-3 lg:justify-center";
+    "group flex flex-row items-center gap-4 rounded-xl border rounded-3xl border border-[#E5E7EB] bg-[#F1F2F4] p-[2px] ps-3 pe-4 py-2.5 shadow-sm transition-all hover:shadow-md md:gap-5 md:ps-4 md:pe-5 md:py-3 lg:justify-center";
 
   return (
     <section className={sectionClass}>

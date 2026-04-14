@@ -130,7 +130,7 @@ export function LanguageDrawerPanel({
         <div className="mb-6 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className="text-[18px] font-semibold text-dark">Select language</span>
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] text-sm text-white">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] text-sm text-white">
               →
             </span>
           </div>
@@ -190,7 +190,7 @@ export function LanguageDrawerPanel({
                       }`
                 }
               >
-                <span className="relative inline-block md:h-7 h-6 md:w-7 w-6 shrink-0 overflow-hidden rounded-full">
+                <span className="relative inline-block md:h-7 h-6 md:w-7 w-6 shrink-0 overflow-hidden rounded-xl">
                   <Image
                     src={flagCdnSrc(lang.code)}
                     alt={lang.flagAlt}
@@ -284,7 +284,7 @@ export default function LanguageSwitcher({
         }`}
         aria-label="Select language"
       >
-        <span className="relative h-4 w-4 shrink-0 overflow-hidden rounded-full">
+        <span className="relative h-4 w-4 shrink-0 overflow-hidden rounded-xl">
           <Image
             src={flagCdnSrc(currentLanguage.code)}
             alt={currentLanguage.flagAlt}
@@ -363,7 +363,7 @@ export default function LanguageSwitcher({
                     : "text-primary hover:bg-[#f7f7f7]"
                 }`}
               >
-                <span className="relative h-[18px] w-[18px] shrink-0 overflow-hidden rounded-full">
+                <span className="relative h-[18px] w-[18px] shrink-0 overflow-hidden rounded-xl">
                   <Image
                     src={flagCdnSrc(lang.code)}
                     alt={lang.flagAlt}

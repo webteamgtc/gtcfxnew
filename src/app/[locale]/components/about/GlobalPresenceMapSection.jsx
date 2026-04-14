@@ -69,14 +69,14 @@ function RegionCard({ title, countries }) {
         <h3 className="HeadingH4">
           {title}
         </h3>
-        <span className="h-3 w-3 rounded-full bg-[#b68756] shadow-[0_0_0_6px_rgba(182,135,86,0.12)]" />
+        <span className="h-3 w-3 rounded-xl bg-[#b68756] shadow-[0_0_0_6px_rgba(182,135,86,0.12)]" />
       </div>
 
       <div className="flex flex-wrap gap-3">
         {countries.map((country, index) => (
           <span
             key={index}
-            className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-2 text-sm font-medium text-[#8B5E34] transition group-hover:border-[#b68756]/30 group-hover:bg-[#b68756]/15"
+            className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-2 text-sm font-medium text-[#8B5E34] transition group-hover:border-[#b68756]/30 group-hover:bg-[#b68756]/15"
           >
             {country}
           </span>
@@ -92,7 +92,7 @@ export default function GlobalPresenceMapSection() {
       <div className="container relative z-10">
         {/* Intro */}
         <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             Global Presence
           </span>
 
@@ -113,7 +113,7 @@ export default function GlobalPresenceMapSection() {
           {stats.map((item, index) => (
             <div
               key={index}
-              className="rounded-full border border-[#E5E7EB] bg-white px-5 py-3 shadow-sm"
+              className="rounded-xl border border-[#E5E7EB] bg-white px-5 py-3 shadow-sm"
             >
               <div className="flex items-center gap-2">
                 <span className="text-lg font-bold text-primary md:text-xl">
@@ -149,8 +149,8 @@ export default function GlobalPresenceMapSection() {
       </div>
 
       {/* soft background effects */}
-      <div className="pointer-events-none absolute left-[-100px] top-20 h-[240px] w-[240px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-80px] bottom-10 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-100px] top-20 h-[240px] w-[240px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-80px] bottom-10 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }

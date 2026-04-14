@@ -15,9 +15,9 @@ const AssetSection = ({ assetData, title }) => {
                         .map((asset, index) => (
                             <div
                                 key={index}
-                                className="flex items-center gap-4 rounded-full border border-slate-200 bg-slate-100 px-5 py-4 shadow-sm"
+                                className="flex items-center gap-4 rounded-xl border border-slate-200 bg-slate-100 px-5 py-4 shadow-sm"
                             >
-                                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5">
+                                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white shadow-sm ring-1 ring-black/5">
                                     <div className="relative h-7 w-7">
                                         <Image
                                             src={asset.imageUrl}

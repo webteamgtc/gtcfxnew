@@ -27,8 +27,8 @@ const LiquditySection = ({ copy }) => {
                 </div>
             </div>
 
-            <div className="pointer-events-none absolute left-[-120px] top-20 h-[260px] w-[260px] rounded-full bg-[#263788]/5 blur-3xl" />
-            <div className="pointer-events-none absolute right-[-120px] bottom-10 h-[280px] w-[280px] rounded-full bg-[#b68756]/10 blur-3xl" />
+            <div className="pointer-events-none absolute left-[-120px] top-20 h-[260px] w-[260px] rounded-xl bg-[#263788]/5 blur-3xl" />
+            <div className="pointer-events-none absolute right-[-120px] bottom-10 h-[280px] w-[280px] rounded-xl bg-[#b68756]/10 blur-3xl" />
         </section>
     );
 };

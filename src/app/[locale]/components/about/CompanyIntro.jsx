@@ -32,7 +32,7 @@ const CompanyIntro = () => {
     <section className="bg-white py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center flex flex-col gap-4 items-center justify-center">
-          <span className="rounded-full bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="rounded-xl bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             {text(t("title", ""), "")}
           </span>
 

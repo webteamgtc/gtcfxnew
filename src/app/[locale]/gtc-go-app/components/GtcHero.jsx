@@ -26,7 +26,7 @@ const GtcHero = ({
           <div
             className="
               absolute right-0 top-10 hidden h-[520px] w-[520px]
-              rounded-full bg-gradient-to-br
+              rounded-xl bg-gradient-to-br
               from-[#e8eefc] via-[#b8c6e0] to-[#9aa7c0]
               opacity-60 blur-[50px] sm:block
             "
@@ -75,7 +75,7 @@ const GtcHero = ({
 
           {/* iOS / Android label */}
           <div className="mt-3 hidden md:flex items-center justify-center gap-4 lg:justify-start">
-            <span className="rounded-full border border-primary/30 px-4 py-1 text-sm text-white lg:text-base">
+            <span className="rounded-xl border border-primary/30 px-4 py-1 text-sm text-white lg:text-base">
               Available on iOS &amp; Android
             </span>
           </div>

@@ -72,7 +72,7 @@ const ReviewCard = ({ name, text }) => {
     <article className="mx-auto w-full max-w-sm rounded-2xl bg-[#f8f8f8]/90 border border-slate-100 shadow-sm shadow-slate-200/60 p-4 flex flex-col gap-3">
       {/* Header */}
       <div className="flex items-center gap-3">
-        <div className="h-10 w-10 rounded-full bg-gradient-to-br from-[#293794] to-[#000021] flex items-center justify-center text-white text-sm font-semibold">
+        <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-[#293794] to-[#000021] flex items-center justify-center text-white text-sm font-semibold">
           {initial}
         </div>
 

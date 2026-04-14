@@ -585,7 +585,7 @@ export default function CommonLeadForm({
                 >
                     {!isIb && (
                         <div
-                            className="md:flex hidden pointer-events-none absolute -bottom-10 right-6 h-[460px] md:w-[88%] rounded-full"
+                            className="md:flex hidden pointer-events-none absolute -bottom-10 right-6 h-[460px] md:w-[88%] rounded-xl"
                             style={{ backgroundColor: appearance.decorativeBlob }}
                         />
                     )}
@@ -909,7 +909,7 @@ export default function CommonLeadForm({
                         <button
                             type="submit"
                             disabled={loading || !isOtpVerified}
-                            className="mt-5 py-4 w-full rounded-full text-[16px] font-medium transition hover:brightness-110 disabled:cursor-not-allowed"
+                            className="mt-5 py-4 w-full rounded-xl text-[16px] font-medium transition hover:brightness-110 disabled:cursor-not-allowed"
                             style={
                                 loading || !isOtpVerified
                                     ? {

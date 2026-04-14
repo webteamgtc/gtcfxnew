@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const GtcFeatureSection = () => {
   const numberBox =
-    "flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#293794] to-[#000021] text-white text-sm font-semibold shadow-md shadow-blue-200/30 md:h-12 md:w-12 md:text-base";
+    "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#293794] to-[#000021] text-white text-sm font-semibold shadow-md shadow-blue-200/30 md:h-12 md:w-12 md:text-base";
 
   return (
     <section className="relative py-12 md:py-14 bg-[#f8f8f8] overflow-hidden border-t border-slate-200 border-b" id="trading">
@@ -21,7 +21,7 @@ const GtcFeatureSection = () => {
               h-[320px] w-[320px]
               md:h-[420px] md:w-[420px]
               lg:h-[520px] lg:w-[520px]
-              rounded-full
+              rounded-xl
               bg-gradient-to-br from-[#e8eefc] via-[#b8c6e0] to-[#9aa7c0]
               opacity-60 blur-[50px]
               sm:block
@@ -42,7 +42,7 @@ const GtcFeatureSection = () => {
         {/* RIGHT: Content */}
         <div className="order-2 space-y-5 text-center ltr:lg:text-left rtl:lg:text-right lg:space-y-4">
           
-       <span className="inline-flex rounded-full bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+       <span className="inline-flex rounded-xl bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
           Track Trading & Rewards
           </span>
 

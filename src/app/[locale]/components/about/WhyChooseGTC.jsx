@@ -172,6 +172,20 @@ export default function WhyChooseGTC() {
         t("note_desc2", ""),
       icon: "platform",
     },
+     {
+      id: "3",
+      title: t("note_title3", ""),
+      description:
+        t("note_desc3", ""),
+      icon: "platform",
+    },
+     {
+      id: "4",
+      title: t("note_title4", ""),
+      description:
+        t("note_desc4", ""),
+      icon: "platform",
+    },
 
   ];
   
@@ -249,7 +263,7 @@ export default function WhyChooseGTC() {
         <div className="">
           <div className="mb-5 flex items-center gap-3 text-[#b68756]">
             <Icons.intro />
-            <span className="text-[22px] font-semibold text-primary md:text-[42px]">
+            <span className="HeadingH2">
               {t("title", "")}
             </span>
           </div>
@@ -270,7 +284,7 @@ export default function WhyChooseGTC() {
         <div className="relative mt-14">
           {/* background center image effect */}
           <div className="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex">
-            <div className="h-[460px] w-[460px] rounded-full bg-[#b68756]/5 blur-3xl" />
+            <div className="h-[460px] w-[460px] rounded-xl bg-[#b68756]/5 blur-3xl" />
           </div>
 
           <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -289,8 +303,8 @@ export default function WhyChooseGTC() {
       </div>
 
       {/* background glows */}
-      <div className="pointer-events-none absolute left-[-120px] top-20 h-[260px] w-[260px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-120px] bottom-10 h-[280px] w-[280px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-120px] top-20 h-[260px] w-[260px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-120px] bottom-10 h-[280px] w-[280px] rounded-xl bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }

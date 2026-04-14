@@ -74,13 +74,13 @@ function SectionCard({ number, title, children }) {
 export default function MarginBonusPageSection() {
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] py-14 md:py-20">
-      <div className="pointer-events-none absolute left-[-100px] top-10 h-[260px] w-[260px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[280px] w-[280px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-100px] top-10 h-[260px] w-[260px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[280px] w-[280px] rounded-xl bg-[#b68756]/10 blur-3xl" />
 
       <div className="container relative z-10">
         {/* Hero */}
         <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             Margin Bonus Promotion
           </span>
 
@@ -144,7 +144,7 @@ export default function MarginBonusPageSection() {
                 {restrictedCountries.map((country) => (
                   <span
                     key={country}
-                    className="rounded-full border border-[#E5E7EB] bg-white px-3 py-1 text-sm text-[#4B5563]"
+                    className="rounded-xl border border-[#E5E7EB] bg-white px-3 py-1 text-sm text-[#4B5563]"
                   >
                     {country}
                   </span>

@@ -62,13 +62,13 @@ export default function DemoHeroSection({ messages }) {
       <div className="absolute inset-0 bg-gradient-to-b from-[#F8FAFC] via-white to-[#F8FAFC]" />
 
       {/* Background glows */}
-      <div className="pointer-events-none absolute left-[-100px] top-10 h-[260px] w-[260px] rounded-full bg-[#263788]/10 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[280px] w-[280px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-100px] top-10 h-[260px] w-[260px] rounded-xl bg-[#263788]/10 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[280px] w-[280px] rounded-xl bg-[#b68756]/10 blur-3xl" />
 
       <div className="container relative z-10">
         {/* Header content */}
         <div className="text-center flex flex-col items-center gap-4">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             Free Demo Account
           </span>
 

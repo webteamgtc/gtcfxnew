@@ -47,11 +47,11 @@ const LeaderCard = (props) => {
                   <div className="flex items-center gap-3">
                     <div className="relative">
                       <img
-                        className="h-12 w-12 rounded-full object-cover"
+                        className="h-12 w-12 rounded-xl object-cover"
                         src={avatar}
                         alt=""
                       />
-                      <div className="absolute -right-1 top-0 h-4 w-4 overflow-hidden rounded-full ring-2 ring-white">
+                      <div className="absolute -right-1 top-0 h-4 w-4 overflow-hidden rounded-xl ring-2 ring-white">
                         {countryCode?.length > 3 || countryCode === "" ? (
                           <img
                             className="h-full w-full object-cover"

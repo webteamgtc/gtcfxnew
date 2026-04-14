@@ -271,7 +271,7 @@ const VpsHostingForm = ({ copy }) => {
         </div>
         <button
           disabled={loading}
-          className="mt-4 w-full rounded-full bg-primary py-3 TextButton text-center text-white transition hover:opacity-95 disabled:opacity-60"
+          className="mt-4 w-full rounded-xl bg-primary py-3 TextButton text-center text-white transition hover:opacity-95 disabled:opacity-60"
           type="submit"
         >
           {loading

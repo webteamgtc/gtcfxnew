@@ -28,10 +28,10 @@ export default function CopyTradingSectionClient({ initialData }) {
           </div>
 
           <div className="flex flex-row gap-3">
-            <Link href="https://gtccopy.com/portal/login?redirectUrl=%2F" target="_blank" className="rounded-full hover:no-underline bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] hover:from-[#263788] hover:via-[#101638] hover:to-[#263788] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:opacity-90">
+            <Link href="https://gtccopy.com/portal/login?redirectUrl=%2F" target="_blank" className="rounded-xl hover:no-underline bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] hover:from-[#263788] hover:via-[#101638] hover:to-[#263788] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:opacity-90">
               Explore Copy Trading
             </Link>
-            <Link href="https://gtccopy.com/portal/login?redirectUrl=%2F" target="_blank" className="rounded-full  hover:no-underline border border-[#8f8f8f] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:bg-white bg-primary-gradient">
+            <Link href="https://gtccopy.com/portal/login?redirectUrl=%2F" target="_blank" className="rounded-xl  hover:no-underline border border-[#8f8f8f] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:bg-white bg-primary-gradient">
               Review More Copy Trading
             </Link>
           </div>

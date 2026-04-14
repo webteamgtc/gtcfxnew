@@ -320,7 +320,7 @@ function PolicySectionCard({ section }) {
 
         <div className="min-w-0 flex-1">
           <div className="mb-2 flex items-center gap-3">
-            <span className="inline-flex rounded-full bg-[#0F3B8C] px-3 py-1 text-xs font-semibold tracking-[0.16em] text-white">
+            <span className="inline-flex rounded-xl bg-[#0F3B8C] px-3 py-1 text-xs font-semibold tracking-[0.16em] text-white">
               {section.number}
             </span>
             <span className="h-px flex-1 bg-gradient-to-r from-[#D8E4F8] to-transparent" />
@@ -360,14 +360,14 @@ export default function KycCompliancePolicy() {
     <div className="bg-[linear-gradient(180deg,#F4F8FF_0%,#FFFFFF_35%,#F8FBFF_100%)]">
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#0F3B8C]/8 blur-3xl" />
-          <div className="absolute right-0 top-16 h-72 w-72 rounded-full bg-[#B68756]/10 blur-3xl" />
+          <div className="absolute left-0 top-0 h-72 w-72 rounded-xl bg-[#0F3B8C]/8 blur-3xl" />
+          <div className="absolute right-0 top-16 h-72 w-72 rounded-xl bg-[#B68756]/10 blur-3xl" />
         </div>
 
         <div className="container pt-14 pb-10 md:pt-20 md:pb-14">
           <div className="max-w-4xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#D9E5F7] bg-white/80 px-4 py-2 text-sm font-medium text-[#0F3B8C] backdrop-blur">
-              <span className="h-2 w-2 rounded-full bg-[#B68756]" />
+            <div className="mb-4 inline-flex items-center gap-2 rounded-xl border border-[#D9E5F7] bg-white/80 px-4 py-2 text-sm font-medium text-[#0F3B8C] backdrop-blur">
+              <span className="h-2 w-2 rounded-xl bg-[#B68756]" />
               KYC, Due Diligence & Compliance
             </div>
 
@@ -401,7 +401,7 @@ export default function KycCompliancePolicy() {
             </div>
 
             <div className="rounded-[28px] border border-[#E7D4AE] bg-[linear-gradient(180deg,#FFFDF8_0%,#FFF7EA_100%)] p-6 shadow-[0_12px_32px_rgba(182,135,86,0.10)]">
-              <div className="mb-3 inline-flex rounded-full bg-[#B68756] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
+              <div className="mb-3 inline-flex rounded-xl bg-[#B68756] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
                 Key Notice
               </div>
 
@@ -438,7 +438,7 @@ export default function KycCompliancePolicy() {
             <section className="rounded-[28px] border border-[#DCE7F8] bg-white p-6 shadow-[0_12px_32px_rgba(15,59,140,0.06)] md:p-8">
               <div className="grid gap-6 md:grid-cols-1 md:items-center">
                 <div>
-                  <div className="mb-3 inline-flex rounded-full bg-[#EFF4FF] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#0F3B8C]">
+                  <div className="mb-3 inline-flex rounded-xl bg-[#EFF4FF] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#0F3B8C]">
                     Need Assistance?
                   </div>
 

@@ -8,7 +8,7 @@ const proseLight =
 function StepBadge({ index }) {
   const n = String(index + 1).padStart(2, "0");
   return (
-    <span className="inline-flex w-fit items-center rounded-full bg-gradient-to-r from-[#263788] via-[#1e2f8a] to-[#101638] px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-lg shadow-primary/25 ring-2 ring-white/20">
+    <span className="inline-flex w-fit items-center rounded-xl bg-gradient-to-r from-[#263788] via-[#1e2f8a] to-[#101638] px-3.5 py-1.5 text-xs font-bold uppercase tracking-[0.2em] text-white shadow-lg shadow-primary/25 ring-2 ring-white/20">
       {n}
     </span>
   );
@@ -18,11 +18,11 @@ function ContentCard({ headingId, title, children, index, centeredIntro }) {
   return (
     <div className="relative overflow-hidden rounded-2xl border border-white/60 bg-white/95 p-7 shadow-[0_28px_90px_-28px_rgba(38,55,136,0.55)] backdrop-blur-sm md:rounded-3xl md:p-9 lg:p-10 lg:shadow-[0_36px_100px_-32px_rgba(38,55,136,0.6)]">
       <div
-        className="pointer-events-none absolute -end-16 -top-24 h-56 w-56 rounded-full bg-gradient-to-br from-primary/20 to-secondary/15 blur-3xl"
+        className="pointer-events-none absolute -end-16 -top-24 h-56 w-56 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/15 blur-3xl"
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute -bottom-20 -start-12 h-44 w-44 rounded-full bg-gradient-to-tr from-[#101638]/10 to-primary/10 blur-2xl"
+        className="pointer-events-none absolute -bottom-20 -start-12 h-44 w-44 rounded-xl bg-gradient-to-tr from-[#101638]/10 to-primary/10 blur-2xl"
         aria-hidden
       />
 
@@ -42,7 +42,7 @@ function ContentCard({ headingId, title, children, index, centeredIntro }) {
           {title}
         </h2>
         <span
-          className={`h-1 rounded-full bg-gradient-to-r from-secondary via-primary to-dark ${
+          className={`h-1 rounded-xl bg-gradient-to-r from-secondary via-primary to-dark ${
             centeredIntro ? "w-20" : "w-24 md:w-28"
           }`}
           aria-hidden

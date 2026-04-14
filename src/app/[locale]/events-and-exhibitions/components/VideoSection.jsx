@@ -50,7 +50,7 @@ export default function VideoPressSection() {
       >
         {/* Play button – visible when paused */}
         {!isPlaying && (
-          <div className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:scale-105 pointer-events-none">
+          <div className="flex h-[70px] w-[70px] items-center justify-center rounded-xl bg-white/90 shadow-lg transition hover:scale-105 pointer-events-none">
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
@@ -62,7 +62,7 @@ export default function VideoPressSection() {
         )}
         {/* Pause button – visible when playing */}
         {isPlaying && (
-          <div className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white/90 shadow-lg transition hover:scale-105 pointer-events-none">
+          <div className="flex h-[70px] w-[70px] items-center justify-center rounded-xl bg-white/90 shadow-lg transition hover:scale-105 pointer-events-none">
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"

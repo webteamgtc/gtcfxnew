@@ -46,7 +46,7 @@ export default function VPSHosting({ copy }) {
             />
           </svg>
 
-          <span className="text-[22px] font-semibold text-primary md:text-[42px]">
+          <span className="HeadingH2">
             {parts.length > 1 ? (
               <>
                 {parts[0]}

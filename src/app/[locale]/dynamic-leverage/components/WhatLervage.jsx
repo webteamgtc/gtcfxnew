@@ -30,7 +30,7 @@ const WhatLervage = ({ copy }) => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-2 md:gap-4 pt-10">
           <div className="basis-full md:basis-1/5 flex flex-col gap-6 md:gap-16 justify-center items-center">
             <div className="ltr:text-left rtl:text-right flex flex-col items-start justify-start gap-3 md:w-96">
-              <button className="TextSmall bg-primary rounded-full text-white px-3 h-6">
+              <button className="TextSmall bg-primary rounded-xl text-white px-3 h-6">
               {w.boostTrades}
               </button>
               <h3 className="HeadingH4 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text m-0 p-0 justify-center gap-2 items-center py-2">
@@ -56,7 +56,7 @@ const WhatLervage = ({ copy }) => {
           </div>
           <div className="basis-full md:basis-1/5 flex flex-col gap-6 md:gap-16 justify-center items-center">
             <div className="ltr:text-left rtl:text-right flex flex-col items-start justify-start gap-3 md:w-96">
-              <button className="TextSmall bg-primary rounded-full text-white px-3 h-6">
+              <button className="TextSmall bg-primary rounded-xl text-white px-3 h-6">
               {w.scaleTrades}
               </button>
               <h3 className="HeadingH4 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text m-0 p-0 justify-center gap-2 items-center py-2">

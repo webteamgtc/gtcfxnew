@@ -59,7 +59,7 @@ export default function TradingMarket({
                         <p className="Text mt-4 text-slate-600">{currentTab.contentDescription}</p>
                         <Link
                             href={tabHref(locale, currentTab.buttonLink)}
-                            className="TextButton mt-8 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-white transition hover:opacity-90 md:mt-10"
+                            className="TextButton mt-8 inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-white transition hover:opacity-90 md:mt-10"
                         >
                             {currentTab.buttonText}
                         </Link>

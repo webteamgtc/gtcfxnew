@@ -207,13 +207,13 @@ function SourceMark({ source }) {
   if (!info) return null;
 
   return (
-    <div className="flex items-center gap-2 text-xs font-medium text-gray-600 rounded-full">
+    <div className="flex items-center gap-2 text-xs font-medium text-gray-600 rounded-xl">
       <Image
         src={info.img}
         alt={info.label}
         width={24}
         height={24}
-        className="object-contain rounded-full"
+        className="object-contain rounded-xl"
       />
       <span>{info.label}</span>
     </div>
@@ -335,7 +335,7 @@ export default function ReviewsSection() {
                     alt={p.label}
                     width={25}
                     height={25}
-                    className="object-contain rounded-full"
+                    className="object-contain rounded-xl"
                   />
                 </div>
 

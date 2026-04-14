@@ -29,7 +29,7 @@ function PhoneWatchlist({ className }) {
     <div
       className={`relative overflow-hidden rounded-[2rem] border-[3px] border-[#1a1a1a] bg-white shadow-[0_20px_50px_rgba(0,0,0,0.12)] ${className}`}
     >
-      <div className="absolute left-1/2 top-2 h-5 w-16 -translate-x-1/2 rounded-full bg-[#1a1a1a]/90" aria-hidden />
+      <div className="absolute left-1/2 top-2 h-5 w-16 -translate-x-1/2 rounded-xl bg-[#1a1a1a]/90" aria-hidden />
       <div className="space-y-2 bg-[#f2f3f5] px-2.5 pb-4 pt-8">
         <div className="flex items-center justify-between text-[9px] font-semibold text-[#1a1a1a] md:text-[10px]">
           <span>$100,000.00</span>
@@ -39,13 +39,13 @@ function PhoneWatchlist({ className }) {
         </div>
         <div className="flex justify-center gap-3 text-[8px] text-[#555] md:text-[9px]">
           <span className="flex flex-col items-center gap-0.5">
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white text-[10px] font-bold text-primary shadow-sm">
+            <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-white text-[10px] font-bold text-primary shadow-sm">
               Q
             </span>
             Quick Trade
           </span>
           <span className="flex flex-col items-center gap-0.5">
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white text-[10px] font-bold text-primary shadow-sm">
+            <span className="flex h-7 w-7 items-center justify-center rounded-xl bg-white text-[10px] font-bold text-primary shadow-sm">
               I
             </span>
             Invite
@@ -88,7 +88,7 @@ function PhoneTrade({ className }) {
     <div
       className={`relative overflow-hidden rounded-[2rem] border-[3px] border-[#1a1a1a] bg-white shadow-[0_24px_60px_rgba(0,0,0,0.15)] ${className}`}
     >
-      <div className="absolute left-1/2 top-2 h-5 w-16 -translate-x-1/2 rounded-full bg-[#1a1a1a]/90" aria-hidden />
+      <div className="absolute left-1/2 top-2 h-5 w-16 -translate-x-1/2 rounded-xl bg-[#1a1a1a]/90" aria-hidden />
       <div className="space-y-2 bg-[#f2f3f5] px-2.5 pb-4 pt-8">
         <div className="text-center text-[10px] font-bold text-[#1a1a1a] md:text-[11px]">
           XPDUSD

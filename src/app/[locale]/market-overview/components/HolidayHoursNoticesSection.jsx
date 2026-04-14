@@ -217,22 +217,22 @@ export default async function HolidayHoursNoticesSection({ locale }) {
 
         <ul className="mt-10 space-y-3 leading-[1.7] Text">
           <li className="flex gap-3">
-            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#293B93]" />
+            <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
             Please note these times provided are subject to change, any changes
             to the times can always be found in the Specification of the
             instrument in the trading terminal.
           </li>
           <li className="flex gap-3">
-            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#293B93]" />
+            <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
             Please note that there could be unexpected periods of volatility, low
             liquidity, and some LP’s will increase the spreads during holidays.
           </li>
           <li className="flex gap-3">
-            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#293B93]" />
+            <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
             Dates are subject to change by the respective markets.
           </li>
           <li className="flex gap-3">
-            <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#293B93]" />
+            <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
             Clients are kindly requested to manage their accounts and positions
             during the trading hours of the company as listed above.{" "}
           </li>

@@ -99,7 +99,7 @@ const HowItWorksSection = () => {
             onClick={() => {
               document.getElementById("hero")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className="mt-6 px-8 py-3 rounded-full bg-gradient-to-r from-[#293794] to-[#000021] text-white font-semibold shadow-lg shadow-blue-200 hover:opacity-90 transition"
+            className="mt-6 px-8 py-3 rounded-xl bg-gradient-to-r from-[#293794] to-[#000021] text-white font-semibold shadow-lg shadow-blue-200 hover:opacity-90 transition"
           >
             Download App Now
           </button>

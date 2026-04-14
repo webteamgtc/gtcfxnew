@@ -143,7 +143,7 @@ export default function MarketTabsSection() {
 
             <Link
               href={currentTab.buttonLink}
-              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-full bg-primary-gradient bg-[length:200%_200%] transition-all duration-500 hover:bg-right px-6 py-3 text-white hover:opacity-90"
+              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-xl bg-primary-gradient bg-[length:200%_200%] transition-all duration-500 hover:bg-right px-6 py-3 text-white hover:opacity-90"
             >
               {currentTab.buttonText}
             </Link>
@@ -191,7 +191,7 @@ export default function MarketTabsSection() {
 
                 <Link
                   href={tab.buttonLink}
-                  className="TextButton mt-8 inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-white transition hover:opacity-90"
+                  className="TextButton mt-8 inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 text-white transition hover:opacity-90"
                 >
                   {tab.buttonText}
                 </Link>
