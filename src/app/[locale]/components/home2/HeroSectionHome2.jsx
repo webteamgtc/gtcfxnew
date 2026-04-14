@@ -58,18 +58,18 @@ function ReviewCard({ item, mobile = false }) {
   return (
     <div
       className={[
-        "flex items-center gap-3 border border-gray-200/10 bg-primary shadow-[0_6px_20px_rgba(0,0,0,0.08)]",
+        "flex items-center gap-4 border border-gray-200/10 bg-primary-gradient shadow-[0_6px_20px_rgba(0,0,0,0.08)]",
         mobile
           ? "w-full min-h-[86px] rounded-[14px] px-4 py-4"
           : "justify-center rounded-lg px-4 py-4",
       ].join(" ")}
     >
       <div className={`relative shrink-0 ${mobile ? "h-8 w-8" : "h-8 w-8"}`}>
-        <Image src={item.logo} alt={item.name} fill className="object-contain" />
+        <Image src={item.logo} alt={item.name} fill className="object-contain  rounded-full" />
       </div>
 
       <div className="flex min-w-0 flex-col">
-        <span className="text-left text-[14px] font-semibold leading-none text-white">
+        <span className="text-left text-[12px] font-semibold leading-none text-white">
           {item.name}
         </span>
 
@@ -86,12 +86,12 @@ export default function HeroSectionHome2() {
   return (
     <section className="relative overflow-hidden bg-primary-gradient">
       <div aria-hidden="true" className="pointer-events-none absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(182,135,86,0.08)_0%,rgba(35,47,116,0)_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(182,135,86,0.08)_0%,rgba(35,47,116,0)_65%)]" />
 
-        <div className="absolute inset-x-0 bottom-48 md:bottom-0 opacity-60">
+        <div className="absolute inset-x-0 bottom-24 md:bottom-0 opacity-30">
           <div className="container">
             <Image
-              src="/home2/mountain.webp"
+              src="/home2/bg-overlay.webp"
               alt=""
               width={1440}
               height={708}
@@ -114,17 +114,17 @@ export default function HeroSectionHome2() {
               />
             </div>
           </div>
-        </div>
+        </div> 
       </div>
 
       <div className="container relative z-10">
-        <div className="flex min-h-[92vh] flex-col items-center justify-center text-center pt-28 pb-10 md:pt-28 md:pb-0 lg:pt-32 lg:pb-0">
-          <p className="mb-3 text-sm font-medium text-white md:text-base">
+        <div className="flex min-h-[100vh] 2xl:min-h-[95vh] 3xl:min-h-[90vh] 4xl:min-h-[90vh] 5xl:min-h-[60vh] flex-col items-center justify-center text-center pt-28 pb-10 md:pt-28 md:pb-0 lg:pt-32 lg:pb-0">
+          <p className="mb-3 text-sm font-medium text-white md:text-base uppercase">
             Global network across
             <span className="font-bold text-secondary"> 22+ destinations.</span>
           </p>
 
-          <h1 className="max-w-[700px] text-[35px] font-semibold leading-[1.05] tracking-[-0.03em] text-white md:text-[40px] lg:text-[50px] xl:text-[60px]">
+          <h1 className="md:max-w-xl 2xl:max-w-[500px] 3xl:max-w-[700px] text-[35px] font-semibold leading-[1.05] tracking-[-0.03em] text-white md:text-[40px] lg:text-[50px] 2xl:text-[50px] 3xl:text-[60px]">
             Trade <span className="font-bold text-secondary">Global Markets </span>
             with Confidence
           </h1>
@@ -134,17 +134,17 @@ export default function HeroSectionHome2() {
             environment built for speed, security and precision.
           </p>
 
-          <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+          <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
             <Link
               href="/register"
-              className="inline-flex min-h-[54px] items-center justify-center rounded-xl bg-[#2563eb] px-6 text-[16px] font-semibold text-white transition hover:bg-[#1d4ed8] md:px-8 md:text-[18px]"
+              className="inline-flex min-h-[54px] items-center hover:no-underline justify-center rounded-xl bg-[#2563eb] px-6 text-[16px] font-semibold text-white transition hover:bg-[#1d4ed8] md:px-8 md:text-[18px]"
             >
               Open Live Account
             </Link>
 
             <Link
               href="/demo"
-              className="inline-flex min-h-[54px] items-center justify-center rounded-xl border border-white/30 px-6 text-[16px] font-semibold text-white transition hover:bg-white/10 md:px-8 md:text-[18px]"
+              className="inline-flex min-h-[54px] items-center  hover:no-underline justify-center rounded-xl border border-white/30 px-6 text-[16px] font-semibold text-white transition hover:bg-white/10 md:px-8 md:text-[18px]"
             >
               Free Demo Account
             </Link>
@@ -154,7 +154,7 @@ export default function HeroSectionHome2() {
             Start in minutes
           </small>
 
-          <div className="mt-16 w-full max-w-[1120px] md:mt-20 lg:mt-24">
+          <div className="xl:mt-16 w-full max-w-[1120px] md:mt-20 lg:mt-24">
             <div className="block md:hidden px-10">
               <MobilePeekCarousel
                 items={reviews}
