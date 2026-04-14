@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
 
-const apiKey = "aa56a11c3bf04cb28fcb49a630b0769e";
-
 const BLOCKED_EMAIL_DOMAINS = [
   "suijiyou.net",
   "yopmail.com",
@@ -54,7 +52,6 @@ export async function POST(req) {
     const emailLower = email.toLowerCase();
     const domain = emailLower.split("@").pop();
 
-    // 1. Block disposable domains
     if (BLOCKED_EMAIL_DOMAINS.includes(domain)) {
       return NextResponse.json(
         { valid: false, reason: "blocked_domain" },
@@ -62,21 +59,8 @@ export async function POST(req) {
       );
     }
 
-    // 2. ZeroBounce validation
-    const url = `https://api.zerobounce.net/v2/validate?api_key=${apiKey}&email=${emailLower}`;
-    const response = await fetch(url);
-    const data = await response.json();
-
-    // 3. Accept only valid
-    if (data.status === "valid") {
-      return NextResponse.json(
-        { valid: true, reason: "zerobounce_valid" },
-        { status: 200 }
-      );
-    }
-
     return NextResponse.json(
-      { valid: false, reason: data.status || "invalid" },
+      { valid: true, reason: "valid" },
       { status: 200 }
     );
   } catch (error) {

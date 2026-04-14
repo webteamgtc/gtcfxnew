@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useLocaleMessages, usePathTranslation } from "../../../LocaleProvider";
 
 function CounterItem({
   value,
@@ -52,6 +53,8 @@ function CounterItem({
 export default function Counter() {
   const sectionRef = useRef(null);
   const [startAnimation, setStartAnimation] = useState(false);
+  const messages = useLocaleMessages();
+  const t = usePathTranslation("common.counter.stats");
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -71,29 +74,38 @@ export default function Counter() {
 
   const stats = [
     {
-      value: 985000,
-      suffix: " +",
-      label: "Served Clients",
-      duration: 2500,
+      value: t(messages?.common?.counter?.stats?.servedClients?.value) || 985000,
+      suffix: t("servedClients.suffix", " +"),
+      label: t("servedClients.label", "Served Clients"),
+      duration:
+        Number(messages?.common?.counter?.stats?.servedClients?.duration) || 2500,
     },
     {
-      value: 27000,
-      suffix: " +",
-      label: "Trading Instruments",
-      duration: 2200,
+      value:
+        Number(messages?.common?.counter?.stats?.tradingInstruments?.value) || 27000,
+      suffix: t("tradingInstruments.suffix", " +"),
+      label: t("tradingInstruments.label", "Trading Instruments"),
+      duration:
+        Number(messages?.common?.counter?.stats?.tradingInstruments?.duration) ||
+        2200,
     },
     {
-      value: 20,
-      suffix: " +",
-      label: "Destinations Worldwide",
-      duration: 1800,
+      value:
+        Number(messages?.common?.counter?.stats?.destinationsWorldwide?.value) ||
+        20,
+      suffix: t("destinationsWorldwide.suffix", " +"),
+      label: t("destinationsWorldwide.label", "Destinations Worldwide"),
+      duration:
+        Number(messages?.common?.counter?.stats?.destinationsWorldwide?.duration) ||
+        1800,
     },
     {
-      value: 750,
-      prefix: "$",
-      suffix: " Billion",
-      label: "Monthly Trades",
-      duration: 2500,
+      value: Number(messages?.common?.counter?.stats?.monthlyTrades?.value) || 750,
+      prefix: t("monthlyTrades.prefix", "$"),
+      suffix: t("monthlyTrades.suffix", " Billion"),
+      label: t("monthlyTrades.label", "Monthly Trades"),
+      duration:
+        Number(messages?.common?.counter?.stats?.monthlyTrades?.duration) || 2500,
     },
   ];
 

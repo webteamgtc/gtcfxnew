@@ -428,10 +428,426 @@
       }
     }
   },
+  "common": {
+    "counter": {
+      "stats": {
+        "servedClients": {
+          "value": 985000,
+          "suffix": " +",
+          "label": "Served Clients",
+          "duration": 2500
+        },
+        "tradingInstruments": {
+          "value": 27000,
+          "suffix": " +",
+          "label": "Trading Instruments",
+          "duration": 2200
+        },
+        "destinationsWorldwide": {
+          "value": 20,
+          "suffix": " +",
+          "label": "Destinations Worldwide",
+          "duration": 1800
+        },
+        "monthlyTrades": {
+          "value": 750,
+          "prefix": "$",
+          "suffix": " Billion",
+          "label": "Monthly Trades",
+          "duration": 2500
+        }
+      }
+    },
+    "reviews": {
+      "totalReviews": 45,
+      "titleLine1": "Read our reviews to find",
+      "titleLine2Prefix": "out",
+      "titleHighlight": "more",
+      "titleLine2Suffix": "about us",
+      "subtitle": "Read the feedback from our clients around the world",
+      "summary": "Showing out of {total} reviews across TradingView, App Store, Google Play and Trustpilot.",
+      "swipeTip": "Tip: swipe left/right to see more reviews.",
+      "items": [
+        {
+          "id": "1",
+          "source": "Google",
+          "date": "2025-11-27",
+          "name": "William Jones",
+          "rating": 5,
+          "text": "Just wanted to share how impressed I am with GTCFX. The platform is incredibly slick—super quick, totally dependable, and a breeze to use, which makes trading really smooth. Their support team is top-notch; always responsive and really helpful. And when it comes to money, deposits and withdrawals are always processed quickly and without a hitch. Big thumbs up from me!"
+        },
+        {
+          "id": "2",
+          "source": "Trustpilot",
+          "date": "2026-01-27",
+          "name": "Aidan Baynes",
+          "rating": 5,
+          "text": "GTCFX has been very reliable for me. The platform runs smoothly, execution is fast, and overall performance feels stable."
+        },
+        {
+          "id": "3",
+          "source": "Google",
+          "date": "2026-01-19",
+          "name": "jijeesh gopakumar",
+          "rating": 5,
+          "text": "GTC FX is a reliable and smooth trading platform. Fast execution, tight spreads, and quick withdrawals. Support team is helpful and professional. Truly a trusted broker — highly recommended!"
+        },
+        {
+          "id": "4",
+          "source": "Trustpilot",
+          "date": "2025-12-16",
+          "name": "Lonnie Allen",
+          "rating": 5,
+          "text": "I’ve been on GTCFX for a while and honestly enjoy the experience. The interface is clean, things load quickly, and executing trades is stress-free. Support answers fast whenever I reach out. Everything feels solid and consistent"
+        },
+        {
+          "id": "5",
+          "source": "Google",
+          "date": "2025-08-03",
+          "name": "Kulbir Singh",
+          "rating": 5,
+          "text": "GTC FX offers a user-friendly platform with quick trade execution and responsive support. Overall a solid and trustworthy trading experience"
+        },
+        {
+          "id": "8",
+          "source": "Trustpilot",
+          "date": "2026-01-26",
+          "name": "Michael Gallager",
+          "rating": 4.5,
+          "text": "The platform is clean and easy to navigate. I’ve had smooth execution and steady performance since I started. Spreads are low, and everything works the way I expect. Still using it happily."
+        },
+        {
+          "id": "6",
+          "source": "Google",
+          "date": "2025-08-12",
+          "name": "Layla",
+          "rating": 4,
+          "text": "I usually check the spreads early in the morning before work, and GTCFX has been consistent so far — no sudden surprises like I had with my old broker."
+        },
+        {
+          "id": "7",
+          "source": "Trustpilot",
+          "date": "2023-05-22",
+          "name": "Naveed Mushtaq",
+          "rating": 5,
+          "text": "Good Execution and Deposit/Withdrawal Have been trading with GTC for one month Experience has been pleasant The online portal is easy to use, the trade execution has minimum slippage Swap free account was requested and approved immediately"
+        },
+        {
+          "id": "9",
+          "source": "Google",
+          "date": "2025-02-18",
+          "name": "Mizam Yahya",
+          "rating": 5,
+          "text": "The support team at GTCFX is incredibly responsive. I had a small issue with my deposit, and their team was quick to help me resolve it. The agents are always friendly and knowledgeable, making the experience smooth and stress-free. Highly recommend GTCFX!"
+        },
+        {
+          "id": "10",
+          "source": "Trustpilot",
+          "date": "2025-10-22",
+          "name": "Martina Ferrari",
+          "rating": 5,
+          "text": "It really lived up to my expectations… It really lived up to my expectations when it comes to banking features. The first deposit took a little longer than expected, but after that, every transaction has been seamless and prompt."
+        },
+        {
+          "id": "11",
+          "source": "Google",
+          "date": "2025-06-22",
+          "name": "Muhammad Wasif Baig",
+          "rating": 5,
+          "text": "GTCFX continues to impress me with their quick responses and reliable service. Anytime I’ve had a question, the support team has been there to help. Whether it’s account issues or technical support, they always resolve it quickly and professionally. I’m very satisfied with my experience."
+        },
+        {
+          "id": "12",
+          "source": "Trustpilot",
+          "date": "2026-01-06",
+          "name": "David Velasco",
+          "rating": 5,
+          "text": "What I like most about GTCFX is how fast everything is. Execution is quick, and the platform stays stable. Spreads are also low, which helps a lot. It’s been a positive experience."
+        }
+      ]
+    }
+  },
   "about": {
-    "title": "About Us",
-    "description": "We are a leading financial services provider, committed to transparency and client success.",
-    "mission": "Our mission is to make professional trading accessible to everyone."
+    "about-gtc-group": {
+      "title": "About Us",
+      "bannerDes":"The GTCFX brand encompasses multiple companies that provide a diverse range of online trading products, serving over 985,000 clients across more than 100 countries.",
+      "subTitle": "Globally Trusted & Multi-Regulated Broker",
+      "heading1": "Professional",
+      "desc1_1": "GTCFX is a global leader in financial derivatives, established in 2012. The GTCFX brand encompasses multiple companies that provide a diverse range of online trading products, serving over 985,000 clients across more than 100 countries.",
+      "desc1_2": " GTCFX is recognized for its commitment to delivering top-tier financial services, with a strong emphasis on excellence and innovation.",
+      "desc1_3": "",
+      "heading2": "Regulated",
+      "desc2_1": "GTC Global Ltd and GTC Global Trade Capital Co. Limited., who provide the services on this Website, operate under stringent regulatory oversight and adhere to high standards of anti-money laundering (AML) and know-your-customer (KYC) practices, maintaining integrity and reliability in the fintech industry.",
+      "desc2_2": " GTC Global Ltd and GTC Global Trade Capital Co. Limited. comply with the laws and regulations in Mauritius and Vanuatu respectively. Other entities within the GTC Financial Group have their own AML/CTF procedures that are designed in compliance with the local laws and regulations.",
+      "heading3": "Experienced",
+      "desc3": "Since our establishment, we've firmly established our expertise in the trading arena.",
+      "desc3_1":" Throughout our journey, we've been trailblazers in shaping the financial services industry, consistently innovating exceptional products, services, and trading platforms that set new standards.",
+      "heading4": "Trusted",
+      "desc4": "Our continuous growth and unwavering focus on customer satisfaction make us a trusted partner forthose in search of top-notch financial derivatives solutions.",
+      "desc4_1": "Explore our comprehensive offerings and experience the excellence that has solidified our position as a global industry leader."
+    },
+    "tradeInvest": {
+      "part1": "TRADE AND INVEST",
+      "part2": "WITH THE WORLD’S LEADING ONLINE TRADING PROVIDER",
+      "liveAccount": "Open Live Account                                              "
+    },
+    "why-gtc-group": {
+      "title": "Why Choose GTC?",
+      "sub_title1_1": "Unlocking Profitable Opportunities: Your Best Investment Journey Begins with Us",
+      "sub_title1_2": "Trading with us offers the optimal avenue for investing your money wisely and profitably. Our trading platform provides a secure and efficient environment, ensuring that your investment endeavors are backed by cutting-edge technology and expert support.",
+      "sub_title1_3": "With a commitment to delivering the best trading experience, we empower you to navigate financial markets seamlessly, making informed decisions that can lead to lucrative returns on your investments. Join us and unlock the potential for financial growth and success in your trading journey.",
+      "heading1_1": "Trade With The",
+      "heading1_2": " Best Broker",
+      "point1_1": "Tightest Spread In The Market Spreads Starting From 0.0* Pips",
+      "point1_2": "Most Stable Trading Platforms",
+      "point1_3": "Raw Spreads From 0.0 Pips",
+      "point1_4": "Competitive Rebates & Commissions In The Industry For Our IB’s.",
+      "point1_5": "Secure, Instant And Fast Execution",
+      "point1_6": "MT4/MT5 Trading Platform",
+      "point1_7": "Dedicated Relationship Manager",
+      "point1_8": "Various Funding Methods Including: Credit Card, Wire Transfer, Digital Currency Assets currency",
+      "heading2_1": "Customize your",
+      "heading2_2": "Trading Strategies",
+      "point2_1": "Access To 7 Markets With Over 27,000 Trading Instruments",
+      "point2_2": "Leverage Up To 1:2000",
+      "point2_3": "Negative Balance Protection",
+      "point2_4": "No Trading Restrictions On EA.",
+      "point2_5": "No Price Slippage.",
+      "point2_6": "No Commissions.",
+      "point2_7": "No Requotes.",
+      "point2_8": "No Rejections.",
+      "heading3_1": "Empowering Success with ",
+      "heading3_2": "Cutting-Edge ",
+      "heading3_3": "Technology",
+      "point3_1": "ECN Accounts With Direct Access To Top Tier Banks.",
+      "point3_2": "Direct Access To Top Tier Banks.",
+      "point3_3": "No Dealing Desk Intervention.",
+      "point3_4": "Tier 1 Liquidity Pricing.",
+      "point3_5": "Instant And Fast Execution.",
+      "heading4_1": "Utilizing ",
+      "heading4_2": "Top Tools ",
+      "heading4_3": "for Success",
+      "point4_1": "PAMM & MAM Accounts",
+      "point4_2": "Signal Centre Tool.",
+      "point4_3": "VPS.",
+      "point4_4": "Expert Analysis.",
+      "point4_5": "Autochartist",
+      "point4_6": "Acuity Trading Tool.",
+      "note_title1": "No Compromises, Only Excellence:",
+      "note_desc1": "We never compromise on factors that impact client performance. That's why we offer tight spreads and ensure the best execution.",
+      "note_title2": "ADVANCED TRADING PLATFORMS:",
+      "note_desc2": "GTC offers cutting-edge forex trading platforms tailored to meet the requirements of a diverse global clientele.",
+      "note_title3": "EXPERTISE BACKED BY EXPERIENCE:",
+      "note_desc3": "Our extensive experience and in-depth knowledge of global financial markets are the cornerstones of our expertise.",
+      "note_title4": "SUPERIOR SERVICES:",
+      "note_desc4": "We are committed to delivering top-tier services in currency trading, as well as CFDs, equity indices, precious metals, and energies.",
+      "note_title5": "OUR OPERATIONAL PHILOSOPHY:",
+      "note_desc5": "At GTC, our operational philosophy is straightforward: client satisfaction leads to loyalty. We take pride in our reputation, which is built on credibility and our ability to meet and exceed client expectations. To stay at the forefront of industry trends and technology, we continuously monitor developments, ensuring we adapt to the evolving needs of our sophisticated and demanding clients."
+    },
+    "gtc-regulations": {
+      "title": "GTC Financial Group’s Presence Globally ",
+      "des": "GTC Group LLC-FZ, a limited liability company registered in the UAE, owns the following entities globally, together the GTC Financial Group. Each of these entities provides financial services according to their respective licences in the relevant jurisdiction. Each entity within the GTC Financial Group specialises in different services and is managed separately by experienced teams. The services and products on this website are offered by two group entities, being GTC Global Ltd and GTC Global Trade Capital Co. Limited.",
+      "sub_title": "Information on operating GTC Affiliates:",
+      "regulation1_1": "SCA",
+      "regulation1_2": "Securities and Commodities Authority",
+      "regulation1_3": "United Arab Emirates",
+      "regulation1_4": "GTC MULTI TRADING DMCC is regulated by the Securities and Commodities Authority of the UAE, under license Number 20200000007. The company is licensed to do Broker Direct Clearing Member services under DGCX Derivative Futures.",
+      "regulationnew_4": "GTC FINANCIAL CONSULTANCY is regulated by the Securities and Commodities Authority of the UAE.",
+      "regulation2_1": "ASIC",
+      "regulation2_2": "Australian Securities & Investments Commission",
+      "regulation2_3": "Australia",
+      "regulation2_4": "GTC Global (Australia) Pty Ltd holds an Australian Financial Services Licence number 496371. GTC Global (Australia) focuses on providing education services to Australian clients.",
+      "regulation3_1": "FSCM",
+      "regulation3_2": "Financial Services Commission, Mauritius",
+      "regulation3_3": "Mauritius",
+      "regulation3_4": "GTC Global Ltd, is a limited company incorporated in Mauritius (company number: C188049) and licensed by the Financial Services Commission, Mauritius (No. GB22200292) to trade as an SEC-2.",
+      "regulation4_1": "VFSC",
+      "regulation4_2": "Vanuatu Financial Services Commission",
+      "regulation4_3": "Vanuatu",
+      "regulation4_4": "GTC Global Trade Capital Co. Limited, is a global finance brokerage company registered, supervised, and authorized by the Vanuatu Financial Services Commission of the Republic of Vanuatu Company license number: 40354. Registered address: 1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu.",
+      "regulation5_1": "FCA",
+      "regulation5_2": "Financial Conduct Authority",
+      "regulation5_3": "United Kingdom",
+      "regulation5_4": "Global Markets Group Limited, a company registered in England & Wales under company number 09493910, is authorised and regulated by the Financial Conduct Authority with reference number 744501. GTC GROUP L.L.C-FZ is a minority shareholder in Global Markets Group Limited.",
+      "regulation5_5": "Registered Office: Green Park House, 15 Stratton Street, London W1J 8LQ, UK",
+      "regulation5_6": "Website: ",
+      "regulation6_1": "SFPL",
+      "regulation6_2": "South Africa Proprietary Limited",
+      "regulation6_3": "South Africa",
+      "regulation6_4": "GTC Global South Africa Proprietary Limited (registration number: 2020/810937/07) hold a Financial Services Provider Licence number 51545. Register address is First Floor Kildare Centre, Cnr Kildare Road and Main Street, Newlands, Cape Town, Western Cape, 7550, South Africa.",
+      "notice": "GTC Financial Group provides a wide range of financial services to clients. Different entities within the group have different licences and offerings as they are managed separately. If you are interested to know more about which entity you are dealing with, we encourage you to contact us."
+    },
+    "client-fund-insurance": {
+      "title": "Security Of Fund",
+      "sub_title1_1": "GTC Global Trade Capital Ltd. is a official member of the Financial Commission, an international organization engaged in the resolution of disputes in the financial services industry for the forex market.",
+      "sub_title1_2": "The Financial Commission was established to be a neutral third party committee to fairly review and resolve complaints. It aims to facilitate a simpler, swifter resolution than through industry regulators and the legal system.",
+      "sub_title1_3": "The Commission ensures that traders and brokers have their disputes resolved in a quick, efficient, unbiased and authentic manner, while making sure that all parties walk away with a fair and thorough answer to their concerns. The Commission also provides additional protection for traders by using the Compensation Fund.",
+      "sub_title1_4": "It is noted that the Financial Commission is an independent external dispute resolution (EDR) organization.",
+      "heading1": "How does it work?",
+      "desc1_1": "The Compensation Fund acts as an insurance policy for members’ clients. This fund is held in a separate bank account and is only used if a member refuses to adhere to a judgment from the Financial Commission.",
+      "heading2": "How is the Security Of Fund financed?",
+      "desc2_1": "The Compensation Fund is financed by the Financial Commission through the allocation of 10% of the monthly membership dues.",
+      "heading3": "Who is covered?",
+      "desc3_1": "The fund will only be used for a judgment that has been issued by the Financial Commission. The fund does not cover traders’ losses incurred while engaging in self-directed trading. It also does not apply to a broker’s entire client base should the broker become insolvent.",
+      "heading4": "What is the maximum coverage?",
+      "desc4_1": "The Compensation Fund will only cover judgments made by the Financial Commission of up to €20,000 per client.",
+      "desc4_2": "For more information, please refer to the website of the FDRC and our Client Agreement.",
+      "visitButton": "Visit Now",
+      "downloadButton": "Download PDF File"
+    },
+    "careers": {
+      "title": "Careers",
+      "sub-title": "We are a leading financial technology company specializing in foreign exchange trading solutions. At GTCFX, we believe in fostering a dynamic and inclusive work environment where innovation thrives, and talent is nurtured. As we continue to grow and expand our global presence, we are constantly seeking passionate individuals who are eager to make a meaningful impact in the financial technology sector.",
+      "why-working": "Why Working in GTCFX?",
+      "heading1_1": "Innovative ",
+      "heading1_2": "Environment:",
+      "desc1": "Join a team of forward-thinkers and innovators who are passionate about pushing the boundaries of financial technology. At GTCFX, you'll have the opportunity to work with cutting-edge technology and shape the future of foreign exchange trading.",
+      "heading2_1": "Collaborative ",
+      "heading2_2": "Culture:",
+      "desc2": "We believe in the power of collaboration and teamwork. At GTCFX, you'll be part of a supportive and inclusive community where your ideas are valued, and collaboration is encouraged across all levels of the organization.",
+      "heading3_1": "Professional ",
+      "heading3_2": "Growth:",
+      "desc3": "We believe in the power of collaboration and teamwork. At GTCFX, you'll be part of a supportive and inclusive community where your ideas are valued, and collaboration is encouraged across all levels of the organization.",
+      "heading4_1": "Global ",
+      "heading4_2": "Impact:",
+      "desc4": "We believe in the power of collaboration and teamwork. At GTCFX, you'll be part of a supportive and inclusive community where your ideas are valued, and collaboration is encouraged across all levels of the organization.",
+      "form": {
+        "title": "What Are You Looking For In Your Next Job",
+        "sub_title": "Apply Now For Success",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "city": "City",
+        "url": "LinkedIn Profile URL",
+        "exper": {
+          "label": "Experience",
+          "one": "Fresher",
+          "sec": "1 - 2 years",
+          "third": "3 - 5 years",
+          "fourth": "5 - 10 years",
+          "fivth": "10+ years"
+        },
+        "note": "Personal Note",
+        "attach": "Attach your cv",
+        "btnText": "Apply  Now",
+        "terms": "By clicking Submit, I acknowledge that I have read, understood and agree to the Clients Agreement and give my consent to GTCFX to contact me."
+      },
+      "jobs": "Current Jobs",
+      "apply": "Apply"
+    },
+    "contact-us": {
+      "title": "Contact Us",
+      "sub_title1_1": "Your satisfaction is our top priority. We are dedicated to ensuring that you have a seamless and rewarding experience with our services.",
+      "sub_title1_2": "Our team is committed to going above and beyond to meet your needs. Whether it's addressing your concerns, assisting you with technical issues, or providing expert guidance, we are here to serve you. Your success and contentment are at the heart of our mission, and we're always ready to assist you in any way we can.",
+      "live_chat": "Live Chat",
+      "globalHeading": "Call Us Global Toll Free",
+      "localHeading": "Call Us Local Toll Free",
+      "support_email": "support@gtcfx.com",
+      "phone": "+971 800 667788",
+      "more_info": "We'd Love to Hear From You",
+      "form": {
+        "title": "Contact Us Via WhatsApp",
+        "registrationStatus": "Are you a registered client?",
+        "first-name": "First name",
+        "last-name": "Last name",
+        "email": "Email address",
+        "phone": "Phone number",
+        "ticketType": "Ticket type",
+        "complaintType": "Complaint type",
+        "tradingComplaintType": "Trading complaint type",
+        "promotionBonusType": "Promotion/Bonus type",
+        "tradeAccount": "Trade account",
+        "tradeAccounts": "Trade account(s)",
+        "transactionIds": "Transaction ID(s)",
+        "tradeOrderIds": "Trade order(s) ID",
+        "dateTimeIncident": "Date and time of incident",
+        "depositAmount": "Deposit amount",
+        "subject": "Subject",
+        "queryType": "Query type",
+        "ticketDescription": "Ticket description",
+        "message": "Detailed explanation of your case...",
+        "attachment": "Attachment",
+        "file": "Screenshots, receipts, logs, or supporting documents.",
+        "optional": "Optional",
+        "submit": "Submit",
+        "sending": "Sending..."
+      },
+      "error": {
+        "registrationStatus": "Registration status is required",
+        "queryType": "Query type is required",
+        "firstName": "First name is required",
+        "lastName": "Last name is required",
+        "min": "At least 2 letters",
+        "email": "Email is required",
+        "invalidEmail": "Invalid email address",
+        "ticketType": "Ticket type is required",
+        "complaintType": "Complaint type is required",
+        "tradingComplaintType": "Trading complaint type is required",
+        "promotionBonusType": "Promotion/Bonus type is required",
+        "tradeAccount": "Trade account is required",
+        "subject": "Subject is required",
+        "tradeOrderIds": "Trade order(s) ID is required",
+        "dateTimeIncident": "Date and time of incident is required",
+        "message": "Please write explanation ..."
+      },
+       "options": {
+        "registration": {
+          "select": "Select registration status",
+          "registered": "Registered",
+          "notRegistered": "Not Registered"
+        },
+        "queryType": {
+          "select": "Select query type",
+          "general": "General query",
+          "compliance": "Compliance query"
+        },
+        "ticketType": {
+          "select": "Select ticket type",
+          "accountRegistration": "Account management/Registration",
+          "deposits": "Deposits",
+          "withdrawals": "Withdrawals",
+          "tradingAccountQueries": "Trading account queries",
+          "accountOpeningLinks": "Account opening links",
+          "partnerClientTransfer": "Partner/Client transfer request",
+          "promotionsBonuses": "Promotions/Bonuses",
+          "tradingInvestigation": "Trading investigation",
+          "complaint": "Complaint",
+          "kycQueries": "KYC queries",
+          "lead": "Lead",
+          "other": "Other"
+        },
+        "complaintType": {
+          "select": "Select complaint type",
+          "tradingIssues": "Trading Issues",
+          "copyTrading": "Copy Trading",
+          "pamm": "PAMM",
+          "mam": "MAM",
+          "rebates": "Rebates",
+          "serverIssues": "Server Issues",
+          "depositsWithdrawals": "Deposits / Withdrawals",
+          "compliance": "Compliance",
+          "onboarding": "Onboarding",
+          "otherComplaints": "Other Complaints"
+        },
+        "tradingComplaintType": {
+          "select": "Select type",
+          "slippage": "Slippage",
+          "stopOut": "Stop out"
+        },
+        "promotionBonusType": {
+          "select": "Select type",
+          "issue": "Issue",
+          "request": "Request"
+        }
+      },
+       "messages": {
+        "depositDisclaimer": "To help us process your deposit requests quickly, please attach the required documents: the deposit receipt or proof of payment.",
+        "withdrawalDisclaimer": "To help us process your withdrawal request quickly, please attach a bank statement covering the transaction period.",
+        "submitDisclaimer": "After submitting the form, you will receive an email with your case number."
+      },
+      "contactTerms": "By clicking Submit, I acknowledge that I have read, understood and agree to the Clients Agreement and give my consent to GTCFX to contact me."
+    }
   },
   "nav": {
     "home": "Home",

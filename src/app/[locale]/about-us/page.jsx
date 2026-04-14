@@ -23,11 +23,14 @@ export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
+  const aboutGroup = about?.["about-gtc-group"] || {};
+  const bannerDescription =
+    aboutGroup?.bannerDes || "";
 
   return (
     <>
       <InnerPageBanner
-        description="The GTCFX brand encompasses multiple companies that provide a diverse range of online trading products, serving over 985,000 clients across more than 100 countries."
+        description={bannerDescription}
         backgroundImage="/breadcamp/about.webp"
         mobileBackgroundImage="/breadcamp/about-mobile.webp"
       />

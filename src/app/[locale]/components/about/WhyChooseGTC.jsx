@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathTranslation } from "../../LocaleProvider";
+
 const Icons = {
   intro: () => (
     <svg
@@ -96,102 +98,7 @@ const Icons = {
   ),
 };
 
-const featureCards = [
-  {
-    id: "1",
-    title: "NO COMPROMISES, ONLY EXCELLENCE:",
-    description:
-      "We never compromise on factors that impact client performance. That's why we offer tight spreads and ensure the best execution.",
-    icon: "shield",
-  },
-  {
-    id: "2",
-    title: "ADVANCED TRADING PLATFORMS:",
-    description:
-      "GTC offers cutting-edge forex trading platforms tailored to meet the requirements of a diverse global clientele.",
-    icon: "platform",
-  },
-  {
-    id: "3",
-    title: "EXPERTISE BACKED BY EXPERIENCE:",
-    description:
-      "Our extensive experience and in-depth knowledge of global financial markets are the cornerstones of our expertise.",
-    icon: "expertise",
-  },
-  {
-    id: "4",
-    title: "SUPERIOR SERVICES:",
-    description:
-      "We are committed to delivering top-tier services in currency trading, as well as CFDs, equity indices, precious metals, and energies.",
-    icon: "services",
-  },
-];
 
-const featureLists = [
-  {
-    title: (
-      <>
-        Trade With The <span className="text-[#b68756]">Best Broker</span>
-      </>
-    ),
-    items: [
-      "Tightest Spread In The Market Spreads Starting From 0.0* Pips",
-      "Most Stable Trading Platforms",
-      "Competitive Rebates & Commissions In The Industry For Our IB’s.",
-      "Secure, Instant And Fast Execution",
-      "MT4/MT5 Trading Platform",
-      "Dedicated Relationship Manager",
-      "Various Funding Methods Including: Credit Card, Wire Transfer, Digital Currency Assets currency",
-    ],
-  },
-  {
-    title: (
-      <>
-        Customize your <span className="text-[#b68756]">Trading Strategies</span>
-      </>
-    ),
-    items: [
-      "Access To 7 Markets With Over 27,000 Trading Instruments",
-      "Leverage Up To 1:2000",
-      "Negative Balance Protection",
-      "No Trading Restrictions On EA.",
-      "No Price Slippage.",
-      "No Commissions.",
-      "No Requotes.",
-      "No Rejections.",
-    ],
-  },
-  {
-    title: (
-      <>
-        Empowering Success with{" "}
-        <span className="text-[#b68756]">Cutting-Edge Technology</span>
-      </>
-    ),
-    items: [
-      "ECN Accounts With Direct Access To Top Tier Banks.",
-      "Direct Access To Top Tier Banks.",
-      "No Dealing Desk Intervention.",
-      "Tier 1 Liquidity Pricing.",
-      "Instant And Fast Execution.",
-    ],
-  },
-  {
-    title: (
-      <>
-        Utilizing <span className="text-[#b68756]">Top Tools</span> for Success
-      </>
-    ),
-    items: [
-      "PAMM & MAM Accounts",
-      "Signal Centre Tool.",
-      "VPS.",
-      "Expert Analysis.",
-      "Autochartist",
-      "Acuity Trading Tool.",
-    ],
-  },
-];
 
 function TopCard({ card }) {
   const Icon = Icons[card.icon];
@@ -249,6 +156,92 @@ function FeatureBlock({ title, items }) {
 }
 
 export default function WhyChooseGTC() {
+  const t = usePathTranslation("about.why-gtc-group");
+  const featureCards = [
+    {
+      id: "1",
+      title: t("note_title1", ""),
+      description:
+        t("note_desc1", ""),
+      icon: "shield",
+    },
+    {
+      id: "2",
+      title: t("note_title2", ""),
+      description:
+        t("note_desc2", ""),
+      icon: "platform",
+    },
+
+  ];
+  
+  const featureLists = [
+    {
+      title: (
+        <>
+          {t("heading1_1", "")} <span className="text-[#b68756]">{t("heading1_2", "")}</span>
+        </>
+      ),
+      items: [
+        t("point1_1", ""),
+        t("point1_2", ""),
+        t("point1_3", ""),
+        t("point1_4", ""),
+        t("point1_5", ""),
+        t("point1_6", ""),
+        t("point1_7", ""),
+        t("point1_8", ""),
+      ],
+    },
+    {
+      title: (
+        <>
+          {t("heading2_1", "")} <span className="text-[#b68756]">{t("heading2_2", "")}</span>
+        </>
+      ),
+      items: [
+        t("point2_1", ""),
+        t("point2_2", ""),
+        t("point2_3", ""),
+        t("point2_4", ""),
+        t("point2_5", ""),
+        t("point2_6", ""),
+        t("point2_7", ""),
+        t("point2_8", ""),
+      ],
+    },
+    {
+      title: (
+        <>
+          {t("heading3_1", "")}{" "}
+          <span className="text-[#b68756]">{t("heading3_2", "")}</span>
+          {t("heading3_3", "")}
+        </>
+      ),
+      items: [
+        t("point3_1", ""),
+        t("point3_2", ""),
+        t("point3_3", ""),
+        t("point3_4", ""),
+        t("point3_5", ""),
+      ],
+    },
+    {
+      title: (
+        <>
+          {t("heading4_1", "")} <span className="text-[#b68756]">{t("heading4_2", "")}</span> {t("heading4_3", "")}
+        </>
+      ),
+      items: [
+        t("point4_1", ""),
+        t("point4_2", ""),
+        t("point4_3", ""),
+        t("point4_4", ""),
+        t("point4_5", ""),
+        t("point4_6", ""),
+      ],
+    },
+  ];
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] py-10 md:py-16">
       <div className="container relative z-10">
@@ -257,28 +250,19 @@ export default function WhyChooseGTC() {
           <div className="mb-5 flex items-center gap-3 text-[#b68756]">
             <Icons.intro />
             <span className="text-[22px] font-semibold text-primary md:text-[42px]">
-              Why Choose <span className="text-[#b68756]">GTC?</span>
+              {t("title", "")}
             </span>
           </div>
 
           <p className="text-[18px] leading-8 text-primary md:text-[24px] md:leading-10">
-            Unlocking Profitable Opportunities: Your Best Investment Journey
-            Begins with Us
+            {t("sub_title1_1", "")}
           </p>
 
           <p className="mt-6 text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
-            Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. Our trading platform provides a secure and
-            efficient environment, ensuring that your investment endeavors are
-            backed by cutting-edge technology and expert support.
+            {t("sub_title1_2", "")}
           </p>
-
-          <p className="mt-5 text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
-            With a commitment to delivering the best trading experience, we
-            empower you to navigate financial markets seamlessly, making
-            informed decisions that can lead to lucrative returns on your
-            investments. Join us and unlock the potential for financial growth
-            and success in your trading journey.
+          <p className="mt-3 text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
+            {t("sub_title1_3", "")}
           </p>
         </div>
 

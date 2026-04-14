@@ -1,54 +1,47 @@
-// src/components/CompanyIntro.jsx
+"use client";
+
 import React from "react";
+import { usePathTranslation } from "../../LocaleProvider";
+
+const text = (value, fallback) =>
+  typeof value === "string" && value.trim().length > 0 ? value : fallback;
 
 const CompanyIntro = () => {
+  const t = usePathTranslation("about.about-gtc-group");
+
   const aboutItems = [
     {
-      title: "Professional",
-      paragraphs: [
-        "GTCFX is a global leader in financial derivatives, established in 2012. The GTCFX brand encompasses multiple companies that provide a diverse range of online trading products, serving over 985,000 clients across more than 100 countries.",
-        "GTCFX is recognized for its commitment to delivering top-tier financial services, with a strong emphasis on excellence and innovation.",
-      ],
+      title: text(t("heading1", ""), ""),
+      paragraphs: [text(t("desc1_1", ""), ""), text(t("desc1_2", ""), "")].filter(Boolean),
     },
     {
-      title: "Regulated",
-      paragraphs: [
-        "GTC Global Ltd and GTC Global Trade Capital Co. Limited., who provide the services on this Website, operate under stringent regulatory oversight and adhere to high standards of anti-money laundering (AML) and know-your-customer (KYC) practices, maintaining integrity and reliability in the fintech industry.",
-        "GTC Global Ltd and GTC Global Trade Capital Co. Limited. comply with the laws and regulations in Mauritius and Vanuatu respectively. Other entities within the GTC Financial Group have their own AML/CTF procedures that are designed in compliance with the local laws and regulations.",
-      ],
+      title: text(t("heading2", ""), ""),
+      paragraphs: [text(t("desc2_1", ""), ""), text(t("desc2_2", ""), "")].filter(Boolean),
     },
     {
-      title: "Experienced",
-      paragraphs: [
-        "Since our establishment, we've firmly established our expertise in the trading arena.",
-        "Throughout our journey, we've been trailblazers in shaping the financial services industry, consistently innovating exceptional products, services, and trading platforms that set new standards.",
-      ],
+      title: text(t("heading3", ""), ""),
+      paragraphs: [text(t("desc3", ""), ""), text(t("desc3_1", ""), "")].filter(Boolean),
     },
     {
-      title: "Trusted",
-      paragraphs: [
-        "Our continuous growth and unwavering focus on customer satisfaction make us a trusted partner for those in search of top-notch financial derivatives solutions.",
-        "Explore our comprehensive offerings and experience the excellence that has solidified our position as a global industry leader.",
-      ],
+      title: text(t("heading4", ""), ""),
+      paragraphs: [text(t("desc4", ""), ""), text(t("desc4_1", ""), "")].filter(Boolean),
     },
-  ];
+  ].filter((item) => item.title || item.paragraphs.length);
 
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-3xl text-center flex flex-col gap-4 items-center justify-center">
           <span className="rounded-full bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            About GTCFX
+            {text(t("title", ""), "")}
           </span>
 
           <h2 className="HeadingH3 mt-4 text-primary">
-            Globally Trusted & Multi-Regulated Broker
+            {text(t("subTitle", ""), "")}
           </h2>
 
           <p className="Text md:leading-8">
-            From regulation and reliability to innovation and trust, GTCFX is
-            committed to delivering a professional trading experience across
-            global markets.
+            {text(t("desc1_2", ""), "")}
           </p>
         </div>
 

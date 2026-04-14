@@ -363,7 +363,46 @@
   },
   "common": {
     "liveAccount": "开设实盘账户",
-    "demoAccount": "免费模拟账户"
+    "demoAccount": "免费模拟账户",
+    "counter": {
+      "stats": {
+        "servedClients": {
+          "value": 985000,
+          "suffix": " +",
+          "label": "服务客户数",
+          "duration": 2500
+        },
+        "tradingInstruments": {
+          "value": 27000,
+          "suffix": " +",
+          "label": "交易品种",
+          "duration": 2200
+        },
+        "destinationsWorldwide": {
+          "value": 20,
+          "suffix": " +",
+          "label": "全球服务范围",
+          "duration": 1800
+        },
+        "monthlyTrades": {
+          "value": 750,
+          "prefix": "$",
+          "suffix": " 亿",
+          "label": "每月交易额",
+          "duration": 2500
+        }
+      }
+    },
+    "reviews": {
+      "totalReviews": 45,
+      "titleLine1": "阅读我们的评价，了解",
+      "titleLine2Prefix": "更多",
+      "titleHighlight": "关于",
+      "titleLine2Suffix": "我们的信息",
+      "subtitle": "查看来自全球客户的真实反馈",
+      "summary": "当前展示来自 TradingView、App Store、Google Play 和 Trustpilot 的 {total} 条评价。",
+      "swipeTip": "提示：左右滑动可查看更多评价。"
+    }
   },
   "home": {
     "hero": {
