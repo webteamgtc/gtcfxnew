@@ -50,7 +50,7 @@ const WhatWeOfferSection = ({ copy }) => {
                 onClick={() => setActiveTab(tab.key)}
                 className={`flex min-w-[160px] flex-col items-center justify-center gap-2 rounded-[14px] border px-5 py-4 transition-all duration-300 md:min-w-[210px] ${
                   isActive
-                    ? "border-[#1f2d98] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] text-white shadow-[0_12px_25px_rgba(31,45,152,0.18)]"
+                    ? "border-[#1f2d98] bg-primary-gradient text-white shadow-[0_12px_25px_rgba(31,45,152,0.18)]"
                     : "bg-[#F1F2F4] border-[#ececec] text-[#4b4b4b] hover:border-[#d9dffb] hover:bg-white"
                 }`}
               >
@@ -65,7 +65,7 @@ const WhatWeOfferSection = ({ copy }) => {
           <div className="max-w-[1060px] mx-auto mt-10 rounded-[18px] border border-[#ececec] bg-[#F8FAFC] p-6 md:p-10">
             <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 lg:gap-14">
               <div className="max-w-[520px]">
-                <h3 className="HeadingH3 text-[#2f2f2f]">{currentTab.title}</h3>
+                <h3 className="HeadingH3 text-primary">{currentTab.title}</h3>
                 <p className="Text mt-4 ltr:text-left rtl:text-right">
                   {currentTab.desc}
                 </p>

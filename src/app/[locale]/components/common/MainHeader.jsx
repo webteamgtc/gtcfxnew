@@ -88,7 +88,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
                     key={item.key}
                     type="button"
                     onMouseEnter={() => setActiveMegaMenu(item.key)}
-                    className={`flex items-center gap-2 xl:text-[15px] text-[13px] font-medium leading-none transition-colors duration-200 ${isActive ? "text-primary" : "text-[#2f2f2f] hover:text-primary"
+                    className={`flex items-center gap-2 xl:text-[15px] text-[13px] font-medium leading-none transition-colors duration-200 ${isActive ? "text-primary" : "text-primary hover:text-primary"
                       }`}
                   >
                     <span>{item.label}</span>
@@ -115,7 +115,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
             {/* Desktop Right */}
             <div className="hidden items-center gap-2.5 lg:flex">
               <Link
-                href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+                href="https://mygtcfx.com/"
                 target="_blank"
                 className="inline-flex xl:h-10 h-8 items-center hover:no-underline hover:bg-primary hover:text-white justify-center rounded-[10px] border border-[#d7d7d7] xl:px-5 px-3 text-[14px] font-medium text-[#333] transition-colors duration-200 hover:border-primary"
               >
@@ -125,7 +125,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
               <Link
                 href="https://reg.gtcfx.com/uae/partners-campaign"
                 target="_blank"
-                className="inline-flex hover:no-underline hover:bg-secondary xl:h-10 h-8 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] xl:px-5 px-3 text-[13px] xl:text-[15px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
+                className="inline-flex hover:no-underline bg-secondary xl:h-10 h-8 items-center justify-center rounded-[10px] hover:bg-primary-gradient xl:px-5 px-3 text-[13px] xl:text-[15px] font-medium text-white transition-opacity duration-200 hover:opacity-90"
               >
                 {partnerText}
               </Link>
@@ -210,7 +210,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
                           <button
                             type="button"
                             onClick={() => toggleMobileSection(item.key)}
-                            className="flex w-full items-center justify-between text-left text-[15px] font-medium text-[#2f2f2f]"
+                            className="flex w-full items-center justify-between text-left text-[15px] font-medium text-primary"
                           >
                             <span>{item.label}</span>
                             <svg
@@ -284,7 +284,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
                     <Link
                       href="https://reg.gtcfx.com/uae/partners-campaign"
                       target="_blank"
-                      className="inline-flex h-11 items-center justify-center rounded-[10px] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 text-[14px] font-medium text-white"
+                      className="inline-flex h-11 items-center justify-center rounded-[10px] bg-primary-gradient px-5 text-[14px] font-medium text-white"
                       onClick={() => setMobileOpen(false)}
                     >
                       {partnerText}

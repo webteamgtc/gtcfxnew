@@ -173,7 +173,7 @@ export default function HeroSection() {
                       <span className="rounded-full bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] px-3 py-2 text-[11px] font-semibold uppercase leading-none text-white">
                         {slide.badge}
                       </span>
-                      <span className="text-[14px] font-medium text-[#2f2f2f] md:text-lg">
+                      <span className="text-[14px] font-medium text-primary md:text-lg">
                         {slide.badgeText}
                       </span>
                     </div>

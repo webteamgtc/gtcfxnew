@@ -280,7 +280,7 @@ export default function LanguageSwitcher({
         className={`inline-flex items-center justify-center gap-2 rounded-[10px] transition-colors duration-200 ${
           mobile
             ? "h-10 px-3 bg-white text-[#111827] border border-[#d9d9d9] hover:bg-[#f7f7f7]"
-            : "xl:h-10 h-8 px-3 bg-[#2f2f2f] text-white hover:opacity-90"
+            : "xl:h-10 h-8 px-3 bg-primary text-white hover:opacity-90"
         }`}
         aria-label="Select language"
       >
@@ -360,7 +360,7 @@ export default function LanguageSwitcher({
                 className={`flex items-center gap-3 rounded-[8px] px-3 py-2 text-[14px] transition-colors duration-200 ${
                   isActive
                     ? "bg-[#f3f6fb] font-medium text-primary"
-                    : "text-[#2f2f2f] hover:bg-[#f7f7f7]"
+                    : "text-primary hover:bg-[#f7f7f7]"
                 }`}
               >
                 <span className="relative h-[18px] w-[18px] shrink-0 overflow-hidden rounded-full">

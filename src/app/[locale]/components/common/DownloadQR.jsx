@@ -23,7 +23,7 @@ export default function DownloadQR() {
       {/* Icon Button */}
       <button
   onClick={() => setOpen(!open)}
-  className="group relative flex xl:h-10 h-8 xl:w-10 w-8 items-center justify-center rounded-lg bg-secondary transition-all duration-300 hover:bg-primary"
+  className="group relative flex xl:h-10 h-8 xl:w-10 w-8 items-center justify-center rounded-lg bg-[#29a643] transition-all duration-300 hover:bg-primary"
 >
   {/* Icon */}
   <svg
@@ -56,7 +56,7 @@ export default function DownloadQR() {
             />
           </div>
 
-          <p className="text-sm font-medium text-[#2f2f2f] pb-2">
+          <p className="text-sm font-medium text-primary pb-2">
             Download App
           </p>
         </div>

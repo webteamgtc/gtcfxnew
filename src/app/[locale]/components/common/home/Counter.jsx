@@ -112,7 +112,7 @@ export default function Counter() {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788]  py-5 md:py-8"
+      className="bg-primary-gradient  py-5 md:py-8"
     >
       <div className="container">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-8">

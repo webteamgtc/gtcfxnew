@@ -31,7 +31,7 @@ export default function HeroSection() {
                 <span className="rounded-full  bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] px-3 py-2 text-[11px] font-semibold uppercase leading-none text-white">
                   New
                 </span>
-                <span className="text-[14px] md:text-lg font-medium text-[#2f2f2f]">
+                <span className="text-[14px] md:text-lg font-medium text-primary">
                   GTC GO Trading App
                 </span>
               </div>

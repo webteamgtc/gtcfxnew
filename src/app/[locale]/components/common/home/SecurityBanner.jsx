@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function SecurityBanner() {
   return (
-    <div className="bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788]  py-5 md:py-8 text-white">
+    <div className="bg-gradient-to-r from-[#1e2a78] to-[#243caa]  py-5 md:py-8 text-white">
       <div className="container flex flex-col items-center justify-center gap-2 text-center md:flex-row md:gap-4">
 
         {/* Icon (clean like screenshot) */}

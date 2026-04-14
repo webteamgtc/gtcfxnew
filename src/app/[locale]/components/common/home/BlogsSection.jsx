@@ -187,10 +187,10 @@ function BlogCard({
       <div className="mt-0.5 flex flex-1 flex-col gap-2 md:gap-2.5">
         <h3 className="HeadingH5">{title}</h3>
 
-        <div className="mt-auto border-t border-[#2f2f2f]/25 pt-3">
+        <div className="mt-auto border-t border-primary/25 pt-3">
           <div className="flex items-center justify-between gap-3">
-            <div className="flex min-w-0 flex-1 items-center gap-2 text-[#2f2f2f]">
-              <IconClock className="h-4 w-4 shrink-0 text-[#2f2f2f]" />
+            <div className="flex min-w-0 flex-1 items-center gap-2 text-primary">
+              <IconClock className="h-4 w-4 shrink-0 text-primary" />
               <time
                 dateTime={dateIso}
                 className="TextSmall font-normal leading-snug"
@@ -201,7 +201,7 @@ function BlogCard({
 
             <Link
               href={href}
-              className="TextSmall shrink-0 font-normal text-[#2f2f2f] underline decoration-[#2f2f2f] underline-offset-[3px] transition hover:opacity-80"
+              className="TextSmall shrink-0 font-normal text-primary underline decoration-primary underline-offset-[3px] transition hover:opacity-80"
             >
               Read&nbsp;→
             </Link>

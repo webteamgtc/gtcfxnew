@@ -12,11 +12,11 @@ export default function MarketTabsSection() {
     const tabs = [
     {
       key: "forex",
-      label: "Forex CFDs",
+      label: "Forex",
       icon: "/home/forex.svg",
-      contentTitle: "Trade Forex CFDs",
+      contentTitle: "Trade Forex",
       contentDescription:
-        "With a Tightest Spread Starting from 0 PIPS Offering Leverage up to 1:2000 & No restriction",
+        "Gain access to deep FX liquidity with 200+ trading pairs, tight spreads, competitive margins, and lightning-fast execution.",
       buttonText: "Explore Forex",
       buttonLink: "/forex",
       image:
@@ -24,11 +24,11 @@ export default function MarketTabsSection() {
     },
       {
       key: "energy",
-      label: "Energy CFDs",
+      label: "Energy",
       icon: "/home/energy.svg",
       contentTitle: "Invest in Energy",
       contentDescription:
-        "Experience a Competitive Advantage When Trading Global Energy CFD Markets with Us",
+        "Access the energy markets with strong liquidity, tight spreads, and reliable execution.",
       buttonText: "Trade Energy",
       buttonLink: "/cfd-energy",
       image:
@@ -36,11 +36,11 @@ export default function MarketTabsSection() {
     },
     {
       key: "commodities",
-      label: "Commodities CFDs",
+      label: "Commodities",
       icon: "/home/commed.svg",
       contentTitle: "Trade Commodities",
       contentDescription:
-        "Access a broad range of commodity markets with reliable execution and flexible trading conditions.",
+        "Gain deep liquidity, competitive pricing, and seamless execution across metals, energy, and other key commodity markets.",
       buttonText: "Explore Commodities",
       buttonLink: "/commodities",
       image:
@@ -48,11 +48,11 @@ export default function MarketTabsSection() {
     },
     {
       key: "indices",
-      label: "Indices CFDs",
+      label: "Indices",
       icon: "/home/indices.svg",
       contentTitle: "Trade Indices",
       contentDescription:
-        "Follow the world’s major markets and trade global indices with speed, precision and confidence.",
+        "Tap into global indices liquidity with tight spreads, rapid execution, and competitive pricing.",
       buttonText: "Explore Indices",
       buttonLink: "/indices",
       image:
@@ -60,11 +60,11 @@ export default function MarketTabsSection() {
     },
     {
       key: "liquidity",
-      label: "Metals CFDs",
+      label: "Metals",
       icon: "/home/first.svg",
-      contentTitle: "Trade Metal CFDs",
+      contentTitle: "Trade Metal",
       contentDescription:
-        "Maximize your profit potential with ultra-competitive Gold CFD spreads, starting at just 4 cents.",
+        "Enhance your business with deep metals liquidity, featuring tight spreads and dependable pricing.",
       buttonText: "Explore Metals",
       buttonLink: "/precious-metals",
       image:
@@ -92,16 +92,16 @@ export default function MarketTabsSection() {
     <section className="pt-10 md:py-16">
       <div className="container">
         {/* Fixed Heading */}
-        <div className="mx-auto max-w-[1100px] text-center flex flex-col items-center gap-8">
-          <h2 className="HeadingH2 max-w-[800px] mx-auto">Direct Access to <span className="text-secondary">Top Tier Liquidity </span>Provider</h2>
+        <div className="mx-auto max-w-[900px] text-center flex flex-col items-center gap-8">
+          <h2 className="HeadingH2 max-w-[700px] mx-auto">Trade Global <span className="text-secondary">CFD Markets</span> with <span className="text-secondary">Institutional-Grade</span> Liquidity </h2>
 
           <p className="Text">
-            GTCFX is a trusted liquidity provider that gives you access to easy-to-use FX liquidity platforms. With our liquidity solutions, you can trade efficiently at low costs and with fast execution. You can count on our transparent and reliable service, ensuring your trades remain private. With our state-of-the-art technology and dedicated team, we support your business in liquidity trading.
+            GTCFX delivers institutional-grade liquidity, empowering traders with fast execution, competitive pricing, and seamless access to global CFD markets. Our advanced infrastructure ensures efficient, transparent, and reliable trading performance.
           </p>
         </div>
 
         {/* Tabs — desktop */}
-        <div className="mt-12 hidden md:flex flex-wrap items-center justify-center gap-3 md:gap-4">
+        <div className="mt-12 hidden md:flex flex-wrap items-center justify-center gap-3 md:gap-6">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.key;
 
@@ -110,9 +110,9 @@ export default function MarketTabsSection() {
                 key={tab.key}
                 type="button"
                 onClick={() => setActiveTab(tab.key)}
-                className={`flex min-w-[160px] flex-col items-center shadow-lg justify-center gap-2 rounded-[14px] border px-5 py-5 transition-all duration-300 md:min-w-[200px] ${
+                className={`flex flex-row min-w-[160px] items-center shadow-lg justify-center gap-2 md:gap-4 rounded-[14px] border px-5 py-5 transition-all duration-300 md:min-w-[200px] ${
                   isActive
-                    ? "border-[#1f2d98] bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] text-white shadow-[0_12px_25px_rgba(31,45,152,0.18)]"
+                    ? "bg-gradient-to-r from-[#1e2a78] to-[#243caa] text-white shadow-lg"
                     : "bg-[#F1F2F4] border-[#ececec] text-[#4b4b4b] hover:border-[#d9dffb] hover:bg-white"
                 }`}
               >
@@ -132,8 +132,8 @@ export default function MarketTabsSection() {
         {/* Changing Content — desktop */}
         <div className="max-w-[1060px] mx-auto py-10 hidden md:grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left */}
-          <div className="max-w-[420px]">
-            <h3 className="HeadingH3 text-[#2f2f2f]">
+          <div className="max-w-[520px]">
+            <h3 className="HeadingH3 text-primary">
               {currentTab.contentTitle}
             </h3>
 
@@ -143,7 +143,7 @@ export default function MarketTabsSection() {
 
             <Link
               href={currentTab.buttonLink}
-              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-white transition hover:opacity-90"
+              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-full bg-primary-gradient bg-[length:200%_200%] transition-all duration-500 hover:bg-right px-6 py-3 text-white hover:opacity-90"
             >
               {currentTab.buttonText}
             </Link>
@@ -185,7 +185,7 @@ export default function MarketTabsSection() {
                 </div>
 
 
-                <h3 className="HeadingH3 text-[#2f2f2f]">{tab.contentTitle}</h3>
+                <h3 className="HeadingH3 text-primary">{tab.contentTitle}</h3>
 
                 <p className="Text mt-4">{tab.contentDescription}</p>
 
