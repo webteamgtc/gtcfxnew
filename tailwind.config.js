@@ -24,10 +24,10 @@ module.exports = {
       },
 
       colors: {
-        primary: '#232f74',
+        primary: '#000032',
         secondary: '#b68756',
         accent: '#192152',
-        dark: '#232f74',
+        dark: '#000032',
         light: '#F8FAFC',
         border: '#E5E7EB',
         muted: '#6B7280',
@@ -42,7 +42,7 @@ module.exports = {
         ],
       },
       backgroundImage: {
-    'primary-gradient': 'linear-gradient(90deg, #1e2a78 0%, #243caa 50%, #1e2a78 100%)',
+    'primary-gradient': 'linear-gradient(90deg, #000032 0%, #2d2f81 50%, #000032 100%)',
   },
     },
   },

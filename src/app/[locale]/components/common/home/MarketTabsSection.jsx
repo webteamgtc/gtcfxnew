@@ -112,7 +112,7 @@ export default function MarketTabsSection() {
                 onClick={() => setActiveTab(tab.key)}
                 className={`flex flex-row min-w-[160px] items-center shadow-lg justify-center gap-2 md:gap-4 rounded-[14px] border px-5 py-5 transition-all duration-300 md:min-w-[200px] ${
                   isActive
-                    ? "bg-gradient-to-r from-[#1e2a78] to-[#243caa] text-white shadow-lg"
+                    ? "bg-primary-gradient  text-white shadow-lg"
                     : "bg-[#F1F2F4] border-[#ececec] text-[#4b4b4b] hover:border-[#d9dffb] hover:bg-white"
                 }`}
               >
