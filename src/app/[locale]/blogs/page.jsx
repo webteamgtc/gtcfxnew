@@ -50,11 +50,21 @@ export default async function CompanyNewsPage({ params }) {
     readMore: text("readMore", "Read More"),
     emptyState: text("emptyState", "No blogs available right now."),
     endMessage: text("endMessage", "No more items"),
+    loading: text("loading", "Loading..."),
+    defaultCategory: text("defaultCategory", "Blogs"),
+    defaultExcerpt: text(
+      "defaultExcerpt",
+      "Read the latest updates and announcements from our team."
+    ),
+    untitled: text("untitled", "Untitled Article"),
+    imageAlt: text("imageAlt", "news image"),
+    defaultDate: text("defaultDate", "Mar 26, 2026"),
   };
 
   return (
     <>
       <InnerPageBanner
+        title={text("bannerTitle", "Blogs")}
         description={text(
           "bannerDescription",
           "Market Insights & CFD Trading Strategies - GTCFX Blog"

@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 const tabs = [
   { key: "fx", label: "FX" },
@@ -388,6 +389,7 @@ function normalizeRows(rawRows) {
 }
 
 export default function TradingHoursSection() {
+  const t = usePathTranslation("tradingTools.marketOverView.holiday");
   const [active, setActive] = useState("fx");
 
   const rows = useMemo(() => {
@@ -400,15 +402,13 @@ export default function TradingHoursSection() {
     <section className="bg-[#F4F4F4] py-8 md:py-14">
       <div className="container">
         <h2 className="HeadingH2">
-          Forex &amp; CFD Trading Hours
+          {t("trading", "Forex & CFD Trading Hours")}
         </h2>
         <p className="Text mt-3">
-          View the latest trading hours for Forex, Metals, Commodities, and
-          other financial instruments. GTCFX provides updated market session
-          times to help you plan your trades effectively. Please note these
-          times provided are subject to change. For the most accurate and
-          real-time session details, please refer to your trading terminal or
-          check the specifications of each instrument.
+          {t(
+            "hours",
+            "View the latest trading hours for Forex, Metals, Commodities, and other financial instruments. GTCFX provides updated market session times to help you plan your trades effectively. Please note these times provided are subject to change. For the most accurate and real-time session details, please refer to your trading terminal or check the specifications of each instrument."
+          )}
         </p>
 
         <div className="mt-10 flex flex-wrap items-center gap-2 md:gap-3">

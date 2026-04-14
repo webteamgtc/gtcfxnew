@@ -1,70 +1,98 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { localizedHref } from "@/i18n/localizedHref";
+import { useLocale, usePathTranslation } from "../../LocaleProvider";
 
-export default function MainFooter() {
-const footerColumns = [
-  {
-    title: "Trading",
-    links: [
-      { label: "Account Types", href: "/account-types" },
-      { label: "Deposit Funds", href: "/deposit" },
-      { label: "Withdraw Funds", href: "/withdraw" },
-      { label: "Trading Conditions", href: "/trading-conditions" },
-      { label: "Dynamic Leverage", href: "/dynamic-leverage" },
-    ],
-  },
-  {
-    title: "Platforms",
-    links: [
-      { label: "MT4 Platform", href: "/mt4-platform" },
-      { label: "MT5 Platform", href: "/mt5-platform" },
-      { label: "GTC GO App", href: "/gtc-go-app" },
-      { label: "Download Trading Platform", href: "/download-app" },
-      { label: "VPS Hosting", href: "/vps-hosting-services" },
-    ],
-  },
-  {
-    title: "Tools & Features",
-    links: [
-      { label: "Copy Trading", href: "/copy-trading" },
-      { label: "PAMM Account", href: "/pamm-account" },
-      { label: "MAM Account", href: "/mam-account" },
-      { label: "Swap-Free Trading", href: "/swap-free-trading" },
-      { label: "Margin Bonus", href: "/margin-bonus" },
-    ],
-  },
-  {
-    title: "Resources",
-    links: [
-      { label: "Website Disclaimer", href: "/website-disclaimer" },
-    { label: "Risk Disclosure", href: "/risk-disclosure" },
-    { label: "Restricted Countries", href: "/restricted-countries" },
-    { label: "Swap Free Terms & Conditions", href: "/swap-free-terms-and-conditions" },
-    { label: "Deposit & Refund Policy", href: "/deposit-and-refund-policy" },
-    { label: "KYC & Compliance Policy", href: "/kyc-compliance-policy" },
-    { label: "Cookie Policy", href: "/cookie-policy" },
-    { label: "Privacy Policy", href: "/privacy-policy" },
-      
-    ],
-  },
-  {
-    title: "Company & Legal",
-    links: [
-      { label: "About Us", href: "/about-us" },
-      { label: "Why GTC Group", href: "/why-gtc-group" },
-      { label: "Global Presence", href: "/global-presence" },
-      { label: "Regulations", href: "/regulations" },
-      { label: "Market Insights", href: "/blogs" },
-        { label: "Company News", href: "/company-news" },
-    { label: "Earnings Calendar", href: "/earnings-calendar" },
+export default function MainFooter({ locale: localeProp = "en" }) {
+  const locale = useLocale() || localeProp;
+  const t = usePathTranslation("footerLink");
+  const currentYear = new Date().getFullYear();
+  const copyrightText = (t(
+    "footerCopyRight.copyRightText",
+    "© COPYRIGHT {year} GTCFX - ALL RIGHTS RESERVED"
+  ) || "")
+    .replace("{year}", String(currentYear))
+    .replace(/\b(19|20)\d{2}\b/, String(currentYear));
 
-      { label: "Contact Us", href: "/contact-us" },
-      
-      
-      
-    ],
-  },
-];
+  const footerColumns = [
+    {
+      title: t("link.label"),
+      links: [
+        { label: t("link.menu1"), href: "/about-us" },
+        { label: t("link.menu2"), href: "/regulations" },
+        { label: t("link.menu3"), href: "/awards" },
+        { label: t("link.menu4"), href: "/compensation-fund" },
+        { label: t("link.menu5"), href: "/global-presence" },
+        { label: t("link.menu6"), href: "/why-gtc-group" },
+        { label: t("link.menu7"), href: "/restricted-countries" },
+        { label: t("link.menu8"), href: "/careers" },
+        { label: t("link.menu9"), href: "/contact-us" },
+        { label: t("link.menu10"), href: "/glossary-faqs" },
+        { label: t("link.menu11"), href: "/company-news" },
+        { label: t("link.menu12"), href: "/blogs" },
+      ],
+    },
+    {
+      title: t("rules.label", "Trading & Platforms"),
+      links: [
+        { label: t("rules.menu1"), href: "/forex" },
+        { label: t("rules.menu2"  ), href: "/precious-metals" },
+        { label: t("rules.menu3"), href: "/indices" },
+        { label: t("rules.menu4"), href: "/commodities" },
+        { label: t("rules.menu5"), href: "/indices" },
+        { label: t("rules.menu6"), href: "/cfd-energy" },
+        { label: t("rules.menu7"), href: "/mt4-platform" },
+        { label: t("rules.menu8"), href: "/mt5-platform" },
+        { label: t("rules.menu9"), href: "/download-app" },
+        { label: t("rules.menu10"), href: "/download-app" },
+      ],
+    },
+    {
+      title: t("update.label"),
+      links: [
+        { label: t("update.menu1"), href: "/liquidity-technology" },
+        { label: t("update.menu2"), href: "/copy-trading" },
+        { label: t("update.menu3"), href: "/pamm-account" },
+        { label: t("update.menu4"), href: "/mam-account" },
+        { label: t("update.menu5"), href: "/tutorial-videos" },
+        { label: t("update.menu6"), href: "/tutorial-videos" },
+        { label: t("update.menu7"), href: "/tutorial-videos" },
+        { label: t("update.menu8"), href: "/blogs" },
+        { label: t("update.menu9"), href: "/vps-hosting-services" },
+        { label: t("update.menu10"), href: "/legal-policies-client-agreements" },
+      ],
+    },
+    {
+      title: t("policy.label"),
+      links: [
+        { label: t("policy.menu1"), href: "/privacy-policy" },
+        { label: t("policy.menu2"), href: "/withdraw" },
+        { label: t("policy.menu3"), href: "/kyc-compliance-policy" },
+        { label: t("policy.menu4"), href: "/deposit-and-refund-policy" },
+        { label: t("policy.menu5"), href: "/website-disclaimer" },
+        { label: t("policy.menu6"), href: "/swap-free-terms-and-conditions" },
+        { label: t("policy.menu7"), href: "/risk-disclosure" },
+        { label: t("policy.menu8"), href: "/company-news" },
+        { label: t("policy.menu9"), href: "/blogs" },
+        { label: t("policy.menu10"), href: "/website-disclaimer" },
+      ],
+    },
+    {
+      title: t("contact.label"),
+      links: [
+        {
+          label: `${t("contact.menu1")} ${t("contact.num")}`.trim(),
+          href: "tel:+971800667788",
+        },
+        {
+          label: `${t("contact.menu2")} support@gtcfx.com`.trim(),
+          href: "mailto:support@gtcfx.com",
+        },
+      ],
+    },
+  ];
 
  const socialLinks = [
   { icon: "/icons/fb.svg", href: "https://www.facebook.com/GTCFXGlobalTradeCapital" },
@@ -77,12 +105,26 @@ const footerColumns = [
 ];
 
   const disclaimers = [
-    "This website is owned and operated by GTC Global SA (Pty) Ltd, a private limited company incorporated in South Africa (Company Number: 2020/810937/07) and licensed by the Financial Sector Conduct Authority of South Africa (FSP No. 51545) to operate as an Intermediary. Registered Address: 18 Cavendish Road, Clarement, Cape Town, Western Cape, 7708, South Africa. The financial services and products promoted on this website are offered by GTC Global Trade Capital Co. Limited, a company authorised by the Vanuatu Financial Services Commission of the Republic of Vanuatu (Company License Number: 40354). Registered Address: 1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu.",
-    "GTC Global SA (Pty) Ltd and GTC Global Trade Capital Co. Limited are part of the GTC Financial Group which comprises a network of entities across the globe.",
-    "Investing in derivative products carries significant risks and may not be suitable for all investors. The use of leverage in these instruments can increase both the level of risk and potential for losses. Before making any decision to engage in foreign exchange trading or Contracts for Difference (CFDs), it is essential to carefully consider your investment objectives, level of experience, and risk tolerance. You should only invest funds that you can afford to lose. We strongly encourage you to educate yourself thoroughly on the associated risks and, if you have any questions, seek advice from an independent financial or tax advisor.",
-    "GTC Global SA (Pty) Ltd and GTC Global Trade Capital Co. Limited do not provide services to individuals residing in specific jurisdictions and/or jurisdictions where distribution of such services would be contrary to local law or regulations.",
-    "Each entity within the GTC Financial Group operates independently. The financial products and services offered on this website are provided SOLELY by GTC Global Trade Capital Co. Limited.",
-  ];
+    t(
+      "footerNotice.firstPara",
+    ),
+    `${t(
+      "footerNotice.gtc_group_heading1",
+    )} ${t(
+      "footerNotice.gtc_group_para1",
+    )}`.trim(),
+    t(
+      "footerNotice.gtc_multi_trading_para",
+    ),
+    `${t(
+      "footerNotice.gtc_global_pty_heading",
+    )} ${t(
+      "footerNotice.gtc_global_pty_para",
+    )}`.trim(),
+    t(
+      "footerNotice.eightPara",
+    ),
+  ].filter(Boolean);
 
   return (
     <footer className=" bg-[#F1F2F4] pt-10 pb-10">
@@ -127,7 +169,9 @@ const footerColumns = [
         {/* Top row */}
         <div className="flex flex-col gap-6 border-b border-[#d9d9d9] pb-8 lg:flex-row lg:items-center lg:justify-between">
           <h2 className="HeadingH3 hidden md:block">
-            Connecting you to global markets, anytime, anywhere.
+            {t(
+              "footerHeading",
+            )}
           </h2>
 
           
@@ -161,7 +205,9 @@ const footerColumns = [
                 {column.links.map((link) => (
                   <li key={link.label}>
                     <Link
-                      href={link.href}
+                      href={
+                        link.href.startsWith("/") ? localizedHref(locale, link.href) : link.href
+                      }
                       className="TextSmall text-[#4f4f4f] transition hover:no-underline hover:text-secondary"
                     >
                       {link.label}
@@ -227,7 +273,7 @@ const footerColumns = [
 
         {/* Bottom */}
         <div className="mt-12 flex flex-col gap-3 md:flex-row md:items-center bg-primary text-center justify-center text-white py-2 text-xs md:text-sm rounded-lg">
-          © COPYRIGHT 2026 GTCFX - ALL RIGHTS RESERVED
+          {copyrightText}
         </div>
       </div>
     </footer>

@@ -20,11 +20,16 @@ export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
+  const fund = about["client-fund-insurance"] || {};
 
   return (
     <>
       <InnerPageBanner
-        description="GTC Global Trade Capital Ltd. is a official member of the Financial Commission, an international organization engaged in the resolution of disputes in the financial services industry for the forex market."
+        title={fund.title || "Security Of Fund"}
+        description={
+          fund.sub_title1_1 ||
+          "GTC Global Trade Capital Ltd. is a official member of the Financial Commission, an international organization engaged in the resolution of disputes in the financial services industry for the forex market."
+        }
         backgroundImage="/breadcamp/security.webp"
         mobileBackgroundImage="/breadcamp/security-mob.webp"
       />

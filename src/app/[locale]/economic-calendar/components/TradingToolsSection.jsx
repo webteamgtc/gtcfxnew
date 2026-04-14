@@ -1,3 +1,7 @@
+ "use client";
+
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
+
 function ToolIcon({ children }) {
   return (
     <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#e8eeff] text-[#1f2d98]">
@@ -59,30 +63,40 @@ function ToolCard({ icon, title, description }) {
 }
 
 export default function TradingToolsSection() {
+  const t = usePathTranslation("tradingTools.economicCal.content");
+
   const tools = [
     {
       icon: <IconCalendar />,
-      title: "Economic Calendar",
-      description:
-        "Stay updated with our economic calendar. Keep track of upcoming economic events and their effects on market movements.",
+      title: t("economicCal", "Economic Calendar"),
+      description: t(
+        "detailEco",
+        "Stay updated with our economic calendar. Keep track of upcoming economic events and their effects on market movements."
+      ),
     },
     {
       icon: <IconInfo />,
-      title: "What is an Economic Calendar?",
-      description:
-        "An economic calendar is a schedule of events and releases of specific data affecting the rise and fall of financial assets.",
+      title: t("whatEco", "What is an Economic Calendar?"),
+      description: t(
+        "detail2",
+        "An economic calendar is a schedule of events and releases of specific data affecting the rise and fall of financial assets."
+      ),
     },
     {
       icon: <IconBuilding />,
-      title: "Company News",
-      description:
-        "Keep up with all the latest company updates and overhauls. Be in the know and read up on all that happens here at GTC in our very own company news section.",
+      title: t("comNews", "Company News"),
+      description: t(
+        "detailComp",
+        "Keep up with all the latest company updates and overhauls. Be in the know and read up on all that happens here at GTC in our very own company news section."
+      ),
     },
     {
       icon: <IconNews />,
-      title: "News",
-      description:
-        "Dive in, to our news section and find out all the latest news on the financial market as we post regular updates about the markets and their analysis.",
+      title: t("newsHeading", "News"),
+      description: t(
+        "detailNew",
+        "Dive in, to our news section and find out all the latest news on the financial market as we post regular updates about the markets and their analysis."
+      ),
     },
   ];
 
@@ -91,9 +105,13 @@ export default function TradingToolsSection() {
       <div className="container">
         <div className="mx-auto max-w-[780px] text-center">
           <h2 className="HeadingH2 ">
-            Trading Tools</h2>
+            {t("tradingHeading", "Trading Tools")}
+          </h2>
           <p className="Text mt-3 ">
-            GTCFX offers a variety of tools to enhance your trading Experience
+            {t(
+              "subTitle",
+              "GTCFX offers a variety of tools to enhance your trading Experience"
+            )}
           </p>
         </div>
 

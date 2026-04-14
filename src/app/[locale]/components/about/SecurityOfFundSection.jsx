@@ -1,5 +1,7 @@
 "use client";
 
+import { usePathTranslation } from "../../LocaleProvider";
+
 function ShieldIcon() {
   return (
     <svg
@@ -35,25 +37,30 @@ function PdfIcon() {
   );
 }
 
-const infoCards = [
-  {
-    title: "How does it work?",
-    description:
-      "The Compensation Fund acts as an insurance policy for members’ clients. This fund is held in a separate bank account and is only used if a member refuses to adhere to a judgment from the Financial Commission.",
-  },
-  {
-    title: "How is the Security Of Fund financed?",
-    description:
-      "The Compensation Fund is financed by the Financial Commission through the allocation of 10% of the monthly membership dues.",
-  },
-  {
-    title: "Who is covered?",
-    description:
-      "The fund will only be used for a judgment that has been issued by the Financial Commission. The fund does not cover traders’ losses incurred while engaging in self-directed trading. It also does not apply to a broker’s entire client base should the broker become insolvent.",
-  },
-];
-
 export default function SecurityOfFundSection() {
+  const t = usePathTranslation("about.client-fund-insurance");
+
+  const infoCards = [
+    {
+      title: t("heading1", "How does it work?"),
+      description: t(
+        "desc1_1"
+      ),
+    },
+    {
+      title: t("heading2", "How is the Security Of Fund financed?"),
+      description: t(
+        "desc2_1"
+      ),
+    },
+    {
+      title: t("heading3"),
+      description: t(
+        "desc3_1"
+      ),
+    },
+  ];
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
       <div className="container relative z-10">
@@ -64,32 +71,21 @@ export default function SecurityOfFundSection() {
               <div className="flex items-center gap-3 text-[#b68756]">
                 <ShieldIcon />
                 <h2 className="HeadingH3 text-primary">
-                  Security Of <span className="text-[#b68756]">Fund</span>
+                  {t("title")}
                 </h2>
               </div>
 
               <p className="mt-6 text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
-                GTC Global Trade Capital Ltd. is an official member of the
-                Financial Commission, an international organization engaged in
-                the resolution of disputes in the financial services industry for
-                the forex market.
+                {t("sub_title1_1")}
               </p>
 
               <p className="mt-5 text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
-                The Financial Commission was established to be a neutral third
-                party committee to fairly review and resolve complaints. It aims
-                to facilitate a simpler, swifter resolution than through
-                industry regulators and the legal system. The Commission ensures
-                that traders and brokers have their disputes resolved in a
-                quick, efficient, unbiased and authentic manner, while making
-                sure that all parties walk away with a fair and thorough answer
-                to their concerns. The Commission also provides additional
-                protection for traders by using the Compensation Fund.
+                {t("sub_title1_2")} {t("sub_title1_3")}
               </p>
 
               <p className="mt-5 text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
-                It is noted that the Financial Commission is an independent
-                external dispute resolution (EDR) organization.
+                {t(
+                  "sub_title1_4"                )}
               </p>
 
               {/* CTA Buttons */}
@@ -98,7 +94,7 @@ export default function SecurityOfFundSection() {
                   href="#"
                   className="inline-flex min-h-[50px] items-center justify-center rounded-xl bg-[#263788] px-6 text-sm font-semibold text-white transition hover:opacity-90 md:px-8 md:text-base"
                 >
-                  Visit Now
+                  {t("visitButton", "Visit Now")}
                 </a>
 
                 <a
@@ -106,7 +102,7 @@ export default function SecurityOfFundSection() {
                   className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-xl border border-[#263788] bg-white px-6 text-sm font-semibold text-[#263788] transition hover:bg-[#263788]/5 md:px-8 md:text-base"
                 >
                   <PdfIcon />
-                  Download PDF File
+                  {t("downloadButton")}
                 </a>
               </div>
             </div>
@@ -116,22 +112,21 @@ export default function SecurityOfFundSection() {
           <div className="lg:col-span-4">
             <div className="rounded-[32px] bg-gradient-to-br from-[#263788] via-[#1F2C73] to-[#101638] p-6 text-white shadow-[0_20px_60px_rgba(38,55,136,0.18)] md:p-8">
               <span className="inline-flex rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-[#E5D0B2]">
-                Client Protection
+                {t("protectionBadge")}
               </span>
 
               <h3 className="mt-5 text-[28px] font-bold leading-tight md:text-[36px]">
-                Up to <span className="text-secondary">€20,000</span>
+                {t("upToLabel", "Up to")}{" "}
+                <span className="text-secondary">€20,000</span>
               </h3>
 
               <p className="mt-4 text-sm leading-7 text-white/85 md:text-base">
-                The Compensation Fund covers judgments made by the Financial
-                Commission of up to €20,000 per client.
+                {t("sideDescription")}
               </p>
 
               <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4">
                 <p className="text-sm leading-7 text-white/80">
-                  This protection strengthens client confidence by supporting a
-                  fair and independent dispute resolution process.
+                  {t("sideNote")}
                 </p>
               </div>
             </div>
@@ -161,20 +156,17 @@ export default function SecurityOfFundSection() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-4">
               <div className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-                Maximum Coverage
+                {t("maximumCoverageBadge")}
               </div>
 
               <h3 className="HeadingH3 py-3">
-                What is the maximum coverage?
+                {t("heading4")}
               </h3>
             </div>
 
             <div className="lg:col-span-8">
               <p className="text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
-                The Compensation Fund will only cover judgments made by the
-                Financial Commission of up to <span className="font-semibold text-primary">€20,000</span>{" "}
-                per client. For more information, please refer to the website of
-                the FDRC and our Client Agreement.
+                {t("desc4_1", "")} {t("desc4_2", "")}
               </p>
             </div>
           </div>

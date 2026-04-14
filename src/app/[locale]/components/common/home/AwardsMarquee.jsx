@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { useLocale } from "../../../LocaleProvider";
+import { localeDir } from "@/i18n/config";
 
 const awards = [
   "/awards/1.webp",
@@ -22,6 +26,9 @@ const awards = [
 const marqueeAwards = [...awards, ...awards];
 
 export default function AwardsMarquee() {
+  const locale = useLocale();
+  const isRtl = localeDir[locale] === "rtl";
+
   return (
     <section className="overflow-hidden bg-gray-100 border border-gray-200">
       <div className="">
@@ -29,11 +36,16 @@ export default function AwardsMarquee() {
         <div className="relative overflow-hidden">
 
 
-          <div className="marquee-track flex items-center gap-8 md:gap-12">
+          <div
+            dir="ltr"
+            className={`marquee-track flex items-center gap-8 md:gap-12 ${
+              isRtl ? "marquee-track-rtl" : ""
+            }`}
+          >
             {marqueeAwards.map((logo, index) => (
               <div
                 key={index}
-                className="flex h-[200px] w-[180px] shrink-0 items-center justify-centerpx-4 py-3"
+                className="flex h-[200px] w-[180px] shrink-0 items-center justify-center px-4 py-3"
               >
                 <Image
                   src={logo}

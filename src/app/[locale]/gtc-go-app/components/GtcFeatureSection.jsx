@@ -2,8 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 const GtcFeatureSection = () => {
+  const t = usePathTranslation("gtcGoApp.featureSection");
+
   const numberBox =
     "flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[#293794] to-[#000021] text-white text-sm font-semibold shadow-md shadow-blue-200/30 md:h-12 md:w-12 md:text-base";
 
@@ -43,20 +46,22 @@ const GtcFeatureSection = () => {
         <div className="order-2 space-y-5 text-center ltr:lg:text-left rtl:lg:text-right lg:space-y-4">
           
        <span className="inline-flex rounded-full bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-          Track Trading & Rewards
+          {t("badge")}
           </span>
 
 
           {/* Title */}
           <h2 className="HeadingH3 max-w-lg">
-            A Smarter, Faster, <span className="text-[#b68756]">More Stable</span> Trading System
+            {t("titlePrefix")}{" "}
+            <span className="text-[#b68756]">
+              {t("titleHighlight")}
+            </span>{" "}
+            {t("titleSuffix")}
           </h2>
 
           {/* Description */}
           <p className="Text">
-            See your trading activity, account performance, and GTC VIP rewards in one place.
-            GTC GO helps you follow markets in real time while GTC VIP keeps you updated on your
-            points, tier level, and upcoming benefits.
+            {t("description")}
           </p>
 
           {/* Features */}
@@ -67,10 +72,10 @@ const GtcFeatureSection = () => {
               <div className={numberBox}>01</div>
               <div className="space-y-1 text-left">
                 <p className="text-sm font-semibold text-slate-900 sm:text-base">
-                  Major upgrades completed on Nov 8 & Nov 15, 2026.
+                  {t("items.item1.title")}
                 </p>
                 <p className="text-xs leading-6 text-slate-600 sm:text-sm">
-                  GTC GO and GTC VIP are now fully live, optimized, and ready to support real trading and rewards.
+                  {t("items.item1.description")}
                 </p>
               </div>
             </div>
@@ -80,10 +85,10 @@ const GtcFeatureSection = () => {
               <div className={numberBox}>02</div>
               <div className="space-y-1 text-left">
                 <p className="text-sm font-semibold text-slate-900 sm:text-base">
-                  Designed to improve performance, stability & user experience.
+                  {t("items.item2.title")}
                 </p>
                 <p className="text-xs leading-6 text-slate-600 sm:text-sm">
-                  Faster loading times, smoother navigation, and better trade execution reliability.
+                  {t("items.item2.description")}
                 </p>
               </div>
             </div>
@@ -93,10 +98,10 @@ const GtcFeatureSection = () => {
               <div className={numberBox}>03</div>
               <div className="space-y-1 text-left">
                 <p className="text-sm font-semibold text-slate-900 sm:text-base">
-                  New features across Web & Mobile.
+                  {t("items.item3.title")}
                 </p>
                 <p className="text-xs leading-6 text-slate-600 sm:text-sm">
-                  The latest tools rolled out for both GTC GO web version and mobile apps.
+                  {t("items.item3.description")}
                 </p>
               </div>
             </div>

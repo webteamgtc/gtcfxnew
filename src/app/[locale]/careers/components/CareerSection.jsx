@@ -2,12 +2,13 @@
 import React, { useState } from 'react'
 import { FaLongArrowAltRight, FaChevronDown, FaChevronUp, FaBriefcase } from 'react-icons/fa';
 import { HiOutlineBriefcase, HiOutlineClock, HiOutlineAcademicCap } from 'react-icons/hi';
+import { useLocale, usePathTranslation } from '../../LocaleProvider';
+import { localeDir } from '@/i18n/config';
 
 const CareerSection = ({ messages = {}, onJobSelect }) => {
-    const text = (key, fallback = "") => {
-        const val = messages?.[key];
-        return typeof val === "string" && val.length ? val : fallback;
-    };
+    const text = usePathTranslation("about.careers");
+    const locale = useLocale();
+    const isRTL = localeDir[locale] === "rtl";
     const jobText = (key, fallback = "") => {
         const val = messages?.jobUi?.[key];
         return typeof val === "string" && val.length ? val : fallback;
@@ -171,7 +172,7 @@ const CareerSection = ({ messages = {}, onJobSelect }) => {
         <section className='relative z-30 mt-5'>
             <div className='flex flex-col space-y-2'>
                 <div>
-                    <h2 className='HeadingH3 py-6 text-primary'>{text("jobs", "Current Jobs")}</h2>
+                    <h2 className='HeadingH3 py-6 text-primary'>{text("currentJobs")}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                         {boxContents.map((box, index) => (
                             <div
@@ -527,7 +528,10 @@ const CareerSection = ({ messages = {}, onJobSelect }) => {
                                         onClick={() => onJobSelect && onJobSelect(box.title)}
                                         className={`flex-1 ${applyButtonClass}`}
                                     >
-                                        {text("apply", "Apply")} <FaLongArrowAltRight className="ml-2" />
+                                        {text("applyNow")}{" "}
+                                        <FaLongArrowAltRight
+                                            className={isRTL ? "mr-2 rotate-180" : "ml-2"}
+                                        />
                                     </button>
                                 </div>
                             </div>

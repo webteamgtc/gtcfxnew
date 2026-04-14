@@ -83,10 +83,6 @@ export async function fetchBlogsStrapiPage(
   const mappedLocale = mapStrapiLocale(locale);
   let res = await tryLoad(mappedLocale);
   let usedLocale = mappedLocale;
-  if ((!res?.data || res.data.length === 0) && locale !== "en") {
-    res = await tryLoad("en");
-    usedLocale = "en";
-  }
   return {
     data: res?.data,
     meta: res?.meta,

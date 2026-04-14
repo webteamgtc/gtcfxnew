@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FcAndroidOs } from "react-icons/fc";
-import { FaAppStoreIos } from "react-icons/fa6";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 
 
@@ -10,6 +9,7 @@ export default function MobileAppDownloadBanner({
   androidLink = "https://play.google.com/store/apps/details?id=your_android_app_id",
   iosLink = "https://apps.apple.com/app/idXXXXXXXXX",
 }) {
+  const t = usePathTranslation("gtcGoApp.mobileDownloadBanner");
 
   const [platform, setPlatform] = useState(null); // "android" | "ios" | "unknown"
 
@@ -46,13 +46,15 @@ export default function MobileAppDownloadBanner({
         {/* Text */}
         <div className="space-y-1 mb-3">
           <p className="text-xs uppercase tracking-[0.16em] text-[#FACC15]">
-           Get the app
+            {t("eyebrow")}
           </p>
           <h3 className="text-lg font-semibold leading-snug">
-           Download the GTCFX Mobile App
+            {t("title")}
           </h3>
           <p className="text-[11px] text-slate-200/90">
-           Trade, track and manage your GTC GO & GTC VIP account directly from your phone.
+            {t(
+              "description",
+            )}
           </p>
         </div>
 
@@ -68,9 +70,11 @@ export default function MobileAppDownloadBanner({
              
               <span className="text-left leading-tight">
                 <span className="block text-[10px] uppercase opacity-80">
-                  Download on
+                  {t("downloadOn")}
                 </span>
-                <span className="block text-xs">Google Play</span>
+                <span className="block text-xs">
+                  {t("googlePlay")}
+                </span>
               </span>
             </a>
           )}
@@ -85,9 +89,11 @@ export default function MobileAppDownloadBanner({
              
               <span className="text-left leading-tight">
                 <span className="block text-[10px] uppercase opacity-80">
-                 Download on
+                  {t("downloadOn")}
                 </span>
-                <span className="block text-xs">App Store</span>
+                <span className="block text-xs">
+                  {t("appStore")}
+                </span>
               </span>
             </a>
           )}

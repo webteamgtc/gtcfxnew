@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { locales, defaultLocale } from "@/i18n/config";
+import { locales, defaultLocale, localeDir } from "@/i18n/config";
+import { useLocale } from "../../LocaleProvider";
 
 function formatLabel(slug) {
   if (!slug) return "";
@@ -40,7 +41,8 @@ export default function InnerPageBanner({
   className = "",
 }) {
   const pathname = usePathname();
-
+  const locale = useLocale();
+  const isRTL = localeDir[locale] === "rtl";
   const pathParts = pathname.split("/").filter(Boolean);
 
   const currentLocale = locales.includes(pathParts[0]) ? pathParts[0] : "";
@@ -72,7 +74,9 @@ export default function InnerPageBanner({
     title || formatLabel(segments[segments.length - 1]) || "Page Title";
 
   const overlayGradient = overlay
-    ? "linear-gradient(90deg, rgba(22,38,132,0.92) 0%, rgba(35,58,170,0.78) 35%, rgba(28,42,110,0.35) 62%, rgba(255,255,255,0.08) 100%)"
+    ? isRTL
+      ? "linear-gradient(270deg, rgba(22,38,132,0.92) 0%, rgba(35,58,170,0.78) 35%, rgba(28,42,110,0.35) 62%, rgba(255,255,255,0.08) 100%)"
+      : "linear-gradient(90deg, rgba(22,38,132,0.92) 0%, rgba(35,58,170,0.78) 35%, rgba(28,42,110,0.35) 62%, rgba(255,255,255,0.08) 100%)"
     : "";
 
   return (
@@ -129,15 +133,21 @@ export default function InnerPageBanner({
         <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[78%] bg-gradient-to-b from-transparent via-white/20 to-white/95" />
 
         {/* Content */}
-        <div className="relative z-10 container">
+        <div className="relative z-10 container" dir={isRTL ? "rtl" : "ltr"}>
           <div className="flex min-h-[500px] items-start pt-24 md:min-h-[400px] md:pt-28 lg:min-h-[450px] lg:pt-32">
             <div
               className={`w-full max-w-[720px] ${
-                align === "center" ? "mx-auto text-center" : "text-left"
+                align === "center"
+                  ? "mx-auto text-center"
+                  : isRTL
+                  ? "text-right"
+                  : "text-left"
               }`}
             >
               {/* Breadcrumb */}
-              <div className="mb-5 flex flex-wrap items-center gap-2 pt-16 text-sm font-semibold text-white md:text-base">
+              <div
+                className={`mb-5 flex flex-wrap items-center gap-2 pt-16 text-sm font-semibold text-white md:text-base`}
+              >
                 {breadcrumbItems.map((item, index) => {
                   const isLast = index === breadcrumbItems.length - 1;
 
@@ -157,7 +167,11 @@ export default function InnerPageBanner({
                         <span className="text-white/95">{item.label}</span>
                       )}
 
-                      {!isLast && <span className="text-secondary">→</span>}
+                      {!isLast && (
+                        <span className="text-secondary">
+                          {isRTL ? "←" : "→"}
+                        </span>
+                      )}
                     </div>
                   );
                 })}
@@ -168,7 +182,11 @@ export default function InnerPageBanner({
 
               {/* Description */}
               {description && (
-                <p className="mt-5 max-w-[560px] text-base leading-7 text-white/95 md:text-lg md:leading-8">
+                <p
+                  className={`mt-5 max-w-[560px] text-base leading-7 text-white/95 md:text-lg md:leading-8 ${
+                    align === "center" ? "mx-auto" : isRTL ? "ml-auto" : ""
+                  }`}
+                >
                   {description}
                 </p>
               )}

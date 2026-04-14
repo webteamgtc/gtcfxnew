@@ -1,5 +1,7 @@
+"use client";
+
 import InnerPageBanner from "../../components/common/InnerPageBanner";
-import PageHeroCommon from "../../components/common/PageHero";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 function MarketOverviewIllustration() {
   return (
@@ -14,12 +16,18 @@ function MarketOverviewIllustration() {
 }
 
 export default function MarketOverviewHero() {
+  const t = usePathTranslation("tradingTools.marketOverView.holiday");
+
   return (
     <InnerPageBanner
-    description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
-    backgroundImage="/breadcamp/holiday.webp"
-    mobileBackgroundImage="/breadcamp/holiday-mobile.webp"
-  />
+      title={t("title", "Holiday Hours & Notices")}
+      description={t(
+        "des",
+        "Market holidays may affect the trading schedule and volatility of the markets."
+      )}
+      backgroundImage="/breadcamp/holiday.webp"
+      mobileBackgroundImage="/breadcamp/holiday-mobile.webp"
+    />
   );
 }
 

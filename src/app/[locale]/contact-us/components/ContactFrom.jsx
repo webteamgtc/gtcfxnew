@@ -11,6 +11,8 @@ import "react-phone-number-input/style.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import useCountriesDetails from "@/context/useCountriesDetails";
 import { useLocationDetail } from "@/context/useLocationDetail";
+import { useLocale, usePathTranslation } from "../../LocaleProvider";
+import { localeDir } from "@/i18n/config";
 
 
 const getBaseInitialValues = () => ({
@@ -138,47 +140,58 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
   const [loading, setLoading] = useState(false);
   const [countryCode, setCountryCode] = useState("AE");
   const router = useRouter();
-
-  const text = (key, fallback) => {
-    const v = messages?.[key];
-    return typeof v === "string" && v.length ? v : fallback;
-  };
-
+  const currentLocale = useLocale() || locale;
+  const isRTL = localeDir[currentLocale] === "rtl";
+  const text = usePathTranslation("about.contactUsForm");
   const { countryList } = useCountriesDetails(locale);
   const { countryData } = useLocationDetail();
 
+  const directionalInputClass = (baseClass) =>
+    `${baseClass} ${
+      isRTL
+        ? "bg-[position:right_0.75rem_center] pr-10 pl-3"
+        : "bg-[position:left_0.75rem_center] pl-10 pr-3"
+    }`;
+
+  const directionalSelectClass = (baseClass) =>
+    `${baseClass} ${
+      isRTL
+        ? "bg-[position:left_0.85rem_center] pl-10 pr-3"
+        : "bg-[position:right_0.85rem_center] pl-3 pr-12"
+    }`;
+
   const REGISTRATION_OPTIONS = useMemo(
     () => [
-      { value: "", label: text("registrationStatusSelect", "Select registration status") },
-      { value: "Registered", label: text("registrationStatusRegistered", "Registered") },
-      { value: "Not Registered", label: text("registrationStatusNotRegistered", "Not Registered") },
+      { value: "", label: text("registrationStatusSelect") },
+      { value: "Registered", label: text("registrationStatusRegistered") },
+      { value: "Not Registered", label: text("registrationStatusNotRegistered") },
     ],
     [messages]
   );
 
   const QUERY_TYPE_OPTIONS = useMemo(
     () => [
-      { value: "", label: text("queryTypeSelect", "Select query type") },
-      { value: "General Query", label: text("queryTypeGeneral", "General Query") },
-      { value: "Compliance Query", label: text("queryTypeCompliance", "Compliance Query") },
+      { value: "", label: text("queryTypeSelect") },
+      { value: "General Query", label: text("queryTypeGeneral") },
+      { value: "Compliance Query", label: text("queryTypeCompliance") },
     ],
     [messages]
   );
 
   const TICKET_TYPES = useMemo(
     () => [
-      { value: "", label: text("ticketTypeSelect", "Select ticket type") },
-      { value: "Account/Registration", label: text("ticketTypeAccountRegistration", "Account/Registration") },
-      { value: "Deposits", label: text("ticketTypeDeposits", "Deposits") },
-      { value: "Withdrawals", label: text("ticketTypeWithdrawals", "Withdrawals") },
-      { value: "Trading account queries", label: text("ticketTypeTradingAccountQueries", "Trading account queries") },
-      { value: "Add account opening links", label: text("ticketTypeAccountOpeningLinks", "Add account opening links") },
-      { value: "Partner / Client Transfer Request", label: text("ticketTypePartnerClientTransfer", "Partner / Client Transfer Request") },
-      { value: "Promotions/Bonuses", label: text("ticketTypePromotionsBonuses", "Promotions/Bonuses") },
-      { value: "Trading investigation", label: text("ticketTypeTradingInvestigation", "Trading investigation") },
+        { value: "", label: text("ticketTypeSelect") },
+      { value: "Account/Registration", label: text("ticketTypeAccountRegistration") },
+      { value: "Deposits", label: text("ticketTypeDeposits") },
+      { value: "Withdrawals", label: text("ticketTypeWithdrawals") },
+      { value: "Trading account queries", label: text("ticketTypeTradingAccountQueries") },
+      { value: "Add account opening links", label: text("ticketTypeAccountOpeningLinks") },
+      { value: "Partner / Client Transfer Request", label: text("ticketTypePartnerClientTransfer") },
+      { value: "Promotions/Bonuses", label: text("ticketTypePromotionsBonuses") },
+      { value: "Trading investigation", label: text("ticketTypeTradingInvestigation") },
       // { value: "Complaint", label: t("options.ticketType.complaint") },
-      { value: "KYC queries", label: text("ticketTypeKycQueries", "KYC queries") },
-      { value: "Other", label: text("ticketTypeOther", "Other") },
+      { value: "KYC queries", label: text("ticketTypeKycQueries") },
+      { value: "Other", label: text("ticketTypeOther") },
     ],
     [messages]
   );
@@ -186,9 +199,9 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
 
   const PROMOTION_BONUS_TYPES = useMemo(
     () => [
-      { value: "", label: text("promotionBonusTypeSelect", "Select type") },
-      { value: "Issue", label: text("promotionBonusTypeIssue", "Issue") },
-      { value: "Request", label: text("promotionBonusTypeRequest", "Request") },
+      { value: "", label: text("promotionBonusTypeSelect") },
+      { value: "Issue", label: text("promotionBonusTypeIssue") },
+      { value: "Request", label: text("promotionBonusTypeRequest") },
     ],
     [messages]
   );
@@ -286,12 +299,12 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
           });
         } catch (_) { }
 
-        toast.success(text("toastSubmitted", "Submitted successfully."));
+        toast.success(text("toastSubmitted"));
         formik.resetForm({ values: getBaseInitialValues() });
         router.push(`/${locale}/thank-you`);
       } catch (error) {
         console.error(error);
-        toast.error(error?.message || text("toastError", "An error occurred."));
+        toast.error(error?.message || text("toastError"));
       } finally {
         setLoading(false);
       }
@@ -353,14 +366,14 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                 {/* Are you a registered client? */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("registrationStatusLabel", "Are you a registered client?")} *
+                    {text("registrationStatusLabel")} *
                   </label>
                   <select
                     name="registration_status"
-                    className={selectClass(
+                    className={directionalSelectClass(selectClass(
                       formik.touched.registration_status,
                       formik.errors.registration_status
-                    )}
+                    ))}
                     value={formik.values.registration_status}
                     onChange={(e) => {
                       formik.handleChange(e);
@@ -393,14 +406,14 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                 {/* Query type */}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("queryTypeLabel", "Query type")} *
+                    {text("queryTypeLabel")} *
                   </label>
                   <select
                     name="query_type"
-                    className={selectClass(
+                    className={directionalSelectClass(selectClass(
                       formik.touched.query_type,
                       formik.errors.query_type
-                    )}
+                    ))}
                     value={formik.values.query_type}
                     onChange={(e) => {
                       formik.handleChange(e);
@@ -431,14 +444,14 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                 {formik.values.query_type === "General Query" && (
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                      {text("ticketTypeLabel", "Ticket type")} *
+                        {text("ticketTypeLabel")} *
                     </label>
                     <select
                       name="ticket_type"
-                      className={selectClass(
+                      className={directionalSelectClass(selectClass(
                         formik.touched.ticket_type,
                         formik.errors.ticket_type
-                      )}
+                      ))}
                       value={formik.values.ticket_type}
                       onChange={(e) => {
                         formik.handleChange(e);
@@ -467,16 +480,16 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                   <div>
                     <div className="mb-3">
                       <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                        {text("tradeAccountLabel", "Trade account")} {tradeAccountRequired ? "*" : ""}
+                        {text("tradeAccountLabel")} {tradeAccountRequired ? "*" : ""}
                       </label>
                       <input
                         type="text"
                         name="trade_account"
-                        placeholder={text("tradeAccountPlaceholder", "Trade account")}
+                        placeholder={text("tradeAccountPlaceholder")}
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.trade_account}
-                        className={inputClass(formik.touched.trade_account, formik.errors.trade_account, ICON_BG.briefcase)}
+                        className={directionalInputClass(inputClass(formik.touched.trade_account, formik.errors.trade_account, ICON_BG.briefcase))}
                       />
                       {formik.touched.trade_account && formik.errors.trade_account && (
                         <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.trade_account}</p>
@@ -496,16 +509,16 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                       {showTradeAccount && (
                         <div className="mb-3">
                           <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                            {text("tradeAccountLabel", "Trade account")} {tradeAccountRequired ? "*" : ""}
+                            {text("tradeAccountLabel")} {tradeAccountRequired ? "*" : ""}
                           </label>
                           <input
                             type="text"
                             name="trade_account"
-                            placeholder={text("tradeAccountPlaceholder", "Trade account")}
+                            placeholder={text("tradeAccountPlaceholder")}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             value={formik.values.trade_account}
-                            className={inputClass(formik.touched.trade_account, formik.errors.trade_account, ICON_BG.briefcase)}
+                            className={directionalInputClass(inputClass(formik.touched.trade_account, formik.errors.trade_account, ICON_BG.briefcase))}
                           />
                           {formik.touched.trade_account && formik.errors.trade_account && (
                             <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.trade_account}</p>
@@ -515,10 +528,10 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                       {showTransactionIds && (
                         <div className="mb-3">
                           <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                            {text("transactionIdsLabel", "Transaction ID(s)")}
+                            {text("transactionIdsLabel")}
                           </label>
                           <div className="relative">
-                            <span className="pointer-events-none absolute left-3 top-1/2 z-10 -translate-y-1/2 text-gray-400">
+                            <span className={`pointer-events-none absolute top-1/2 z-10 -translate-y-1/2 text-gray-400 ${isRTL ? "right-3" : "left-3"}`}>
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
@@ -533,11 +546,11 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                             <input
                               type="text"
                               name="transaction_ids"
-                              placeholder={text("transactionIdsPlaceholder", "Transaction ID(s)")}
+                              placeholder={text("transactionIdsPlaceholder")}
                               onChange={formik.handleChange}
                               onBlur={formik.handleBlur}
                               value={formik.values.transaction_ids}
-                              className={inputClass(false, false, "")}
+                              className={`${inputClass(false, false, "")} ${isRTL ? "pr-10 pl-3" : "pl-10 pr-3"}`}
                             />
                           </div>
                         </div>
@@ -546,20 +559,20 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                       {showTradeOrderIds && (
                         <div className="mb-3">
                           <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                            {text("tradeOrderIdsLabel", "Trade order(s) ID")} *
+                            {text("tradeOrderIdsLabel")} *
                           </label>
                           <input
                             type="text"
                             name="trade_order_ids"
-                            placeholder={text("tradeOrderIdsPlaceholder", "Trade order(s) ID")}
+                            placeholder={text("tradeOrderIdsPlaceholder")}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             value={formik.values.trade_order_ids}
-                            className={inputClass(
+                            className={directionalInputClass(inputClass(
                               formik.touched.trade_order_ids,
                               formik.errors.trade_order_ids,
                               ICON_BG.hash
-                            )}
+                            ))}
                           />
                           {formik.touched.trade_order_ids &&
                             formik.errors.trade_order_ids && (
@@ -573,20 +586,20 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                       {showDateTimeIncident && (
                         <div className="mb-3">
                           <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                            {text("dateTimeIncidentLabel", "Date and time of incident")} *
+                            {text("dateTimeIncidentLabel")} *
                           </label>
                           <input
                             type="text"
                             name="date_time_incident"
-                            placeholder={text("dateTimeIncidentPlaceholder", "e.g. 2024-01-15 14:30")}
+                            placeholder={text("dateTimeIncidentPlaceholder")}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             value={formik.values.date_time_incident}
-                            className={inputClass(
+                            className={directionalInputClass(inputClass(
                               formik.touched.date_time_incident,
                               formik.errors.date_time_incident,
                               ICON_BG.clock
-                            )}
+                            ))}
                           />
                           {formik.touched.date_time_incident &&
                             formik.errors.date_time_incident && (
@@ -600,14 +613,14 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                       {showPromotionBonusType && (
                         <div className="mb-3">
                           <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                            {text("promotionBonusTypeLabel", "Promotion/Bonus type")} *
+                            {text("promotionBonusTypeLabel")} *
                           </label>
                           <select
                             name="promotion_bonus_type"
-                            className={selectClass(
+                            className={directionalSelectClass(selectClass(
                               formik.touched.promotion_bonus_type,
                               formik.errors.promotion_bonus_type
-                            )}
+                            ))}
                             value={formik.values.promotion_bonus_type}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
@@ -630,16 +643,16 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                       {showDepositAmount && (
                         <div>
                           <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                            {text("depositAmountLabel", "Deposit amount")}
+                              {text("depositAmountLabel")}
                           </label>
                           <input
                             type="text"
                             name="deposit_amount"
-                            placeholder={text("depositAmountPlaceholder", "Deposit amount")}
+                            placeholder={text("depositAmountPlaceholder")}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
                             value={formik.values.deposit_amount}
-                            className={inputClass(false, false, ICON_BG.cash)}
+                            className={directionalInputClass(inputClass(false, false, ICON_BG.cash))}
                           />
                         </div>
                       )}
@@ -647,16 +660,16 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                   )}
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("subjectLabel", "Subject")} *
+                    {text("subjectLabel")} *
                   </label>
                   <input
                     type="text"
                     name="subject"
-                    placeholder={text("subjectPlaceholder", "Subject")}
+                    placeholder={text("subjectPlaceholder")}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.subject}
-                    className={inputClass(formik.touched.subject, formik.errors.subject, ICON_BG.subject)}
+                    className={directionalInputClass(inputClass(formik.touched.subject, formik.errors.subject, ICON_BG.subject))}
                   />
                   {formik.touched.subject && formik.errors.subject && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.subject}</p>
@@ -670,16 +683,16 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("firstNameLabel", "First name")} *
+                    {text("firstNameLabel")} *
                   </label>
                   <input
                     type="text"
                     name="first_name"
-                    placeholder={text("firstNamePlaceholder", "First name")}
+                    placeholder={text("firstNamePlaceholder")}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.first_name}
-                    className={inputClass(formik.touched.first_name, formik.errors.first_name, ICON_BG.user)}
+                    className={directionalInputClass(inputClass(formik.touched.first_name, formik.errors.first_name, ICON_BG.user))}
                   />
                   {formik.touched.first_name && formik.errors.first_name && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.first_name}</p>
@@ -688,16 +701,16 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("lastNameLabel", "Last name")} *
+                    {text("lastNameLabel")} *
                   </label>
                   <input
                     type="text"
                     name="last_name"
-                    placeholder={text("lastNamePlaceholder", "Last name")}
+                    placeholder={text("lastNamePlaceholder")}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.last_name}
-                    className={inputClass(formik.touched.last_name, formik.errors.last_name, ICON_BG.user)}
+                    className={directionalInputClass(inputClass(formik.touched.last_name, formik.errors.last_name, ICON_BG.user))}
                   />
                   {formik.touched.last_name && formik.errors.last_name && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.last_name}</p>
@@ -705,16 +718,16 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("emailLabel", "Email")} *
+                    {text("emailLabel")} *
                   </label>
                   <input
                     type="email"
                     name="email"
-                    placeholder={text("emailPlaceholder", "Email")}
+                    placeholder={text("emailPlaceholder")}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
-                    className={inputClass(formik.touched.email, formik.errors.email, ICON_BG.email)}
+                    className={directionalInputClass(inputClass(formik.touched.email, formik.errors.email, ICON_BG.email))}
                   />
                   {formik.touched.email && formik.errors.email && (
                     <p className="text-red-600 text-xs mt-1 rtl:text-right ltr:text-left">{formik.errors.email}</p>
@@ -723,10 +736,10 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("phoneLabel", "Phone number")} *
+                    {text("phoneLabel")} *
                   </label>
                   <div className="relative">
-                    <span className="pointer-events-none absolute left-3 top-1/2 z-10 -translate-y-1/2 text-gray-400">
+                    <span className={`pointer-events-none absolute top-1/2 z-10 -translate-y-1/2 text-gray-400 ${isRTL ? "right-3" : "left-3"}`}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -743,7 +756,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                       value={formik.values.phone}
                       onChange={(phone) => formik.setFieldValue("phone", phone)}
                       onBlur={() => formik.setFieldTouched("phone", true)}
-                      className={`w-full rounded-lg bg-white pl-10 pr-3 py-2.5 text-[15px] leading-6 text-gray-900 shadow-sm ring-1 ring-inset outline-none transition focus:ring-2 ${formik.touched.phone && formik.errors.phone
+                      className={`w-full rounded-lg bg-white py-2.5 text-[15px] leading-6 text-gray-900 shadow-sm ring-1 ring-inset outline-none transition focus:ring-2 ${isRTL ? "pr-10 pl-3" : "pl-10 pr-3"} ${formik.touched.phone && formik.errors.phone
                         ? "ring-red-600 focus:ring-red-600"
                         : "ring-gray-200 focus:ring-primary/80"
                         }`}
@@ -759,17 +772,17 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                    {text("countryLabel", "Country")} *
+                    {text("countryLabel")} *
                   </label>
                   <select
-                    className={selectClass(formik.touched.country, formik.errors.country)}
+                    className={directionalSelectClass(selectClass(formik.touched.country, formik.errors.country))}
                     name="country"
                     value={formik.values.country}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                   >
                     <option value="" disabled hidden>
-                      {text("countrySelect", "Select country")}
+                      {text("countrySelect")}
                     </option>
                     {countryList.map((country, index) => (
                       <option key={index} value={country.nameInEnglish}>
@@ -788,12 +801,12 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
             <div className="mt-6 grid grid-cols-1 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                  {text("ticketDescriptionLabel", "Ticket description")} *
+                  {text("ticketDescriptionLabel")} *
                 </label>
                 <textarea
                   name="message"
                   rows={5}
-                  placeholder={text("ticketDescriptionPlaceholder", "Detailed explanation of your case...")}
+                  placeholder={text("ticketDescriptionPlaceholder")}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   value={formik.values.message}
@@ -806,20 +819,20 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
 
               {showDepositDisclaimer && (
                 <div className="p-3 bg-amber-50 border border-amber-200 rounded text-sm text-amber-800">
-                  {text("depositDisclaimer", "Please make sure your deposit details are correct before submitting.")}
+                  {text("depositDisclaimer")}
                 </div>
               )}
 
               {showWithdrawalDisclaimer && (
                 <div className="p-3 bg-amber-50 border border-amber-200 rounded text-sm text-amber-800">
-                  {text("withdrawalDisclaimer", "Please ensure your withdrawal details are correct before submitting.")}
+                  {text("withdrawalDisclaimer")}
                 </div>
               )}
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1 ltr:text-left rtl:text-right">
-                  {text("attachmentLabel", "Attachment")}{" "}
-                  {text("attachmentOptional", "(optional)")}
+                  {text("attachmentLabel")}{" "}
+                  {text("attachmentOptional")}
                 </label>
                 <input
                   type="file"
@@ -831,7 +844,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
                   className="block w-fit pr-2 rounded-lg bg-white text-sm text-gray-600 file:mr-4 file:rounded-md file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-medium file:text-white hover:file:opacity-95"
                 />
                 <p className="text-xs text-gray-500 mt-1 ltr:text-left rtl:text-right">
-                  {text("attachmentHelp", "Screenshots, receipts, logs, or supporting documents.")}
+                  {text("attachmentHelp")}
                 </p>
               </div>
             </div>
@@ -852,8 +865,7 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
             )}
             <p className="text-sm text-gray-600 italic">
               {text(
-                "submitDisclaimer",
-                "By submitting this form, you agree that we may contact you regarding your query."
+                "submitDisclaimer"
               )}
             </p>
           </div>
@@ -864,18 +876,18 @@ const ContactForm = ({ locale = "en", messages = {} }) => {
               type="submit"
               className="w-[140px] h-[50px] rounded-xl bg-primary text-white text-[16px] font-semibold shadow-sm transition hover:opacity-95 disabled:cursor-not-allowed disabled:opacity-60"
             >
-              {loading ? text("sending", "Sending...") : text("submit", "Submit")}
+              {loading ? text("sending") : text("submit")}
             </button>
             <p className="inline px-3 text-[11px] text-primary pt-5">
-              {text("termsPrefix", "Terms")}{" "}
+                  {text("termsPrefix")}{" "}
               <Link
                 href="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/pdf-files/Vanuatu.pdf"
                 target="_blank"
                 className="underline text-secondary underline]"
               >
-                {text("termsLinkText", "Read more")}
+                {text("termsLinkText")}
               </Link>{" "}
-              {text("termsSuffix", "before submitting.")}
+              {text("termsSuffix")}
             </p>
           </div>
         </div>

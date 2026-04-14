@@ -5,12 +5,10 @@ import { GrWorkshop } from "react-icons/gr";
 import WhyWorking from "./components/WhyWorking";
 import CareerSection from "./components/CareerSection";
 import ApplyNow from "./components/CareerForm";
+import { usePathTranslation } from "../LocaleProvider";
 
 export default function CareersClient({ careers = {} }) {
-  const text = (key, fallback) =>
-    typeof careers?.[key] === "string" && careers[key].length
-      ? careers[key]
-      : fallback;
+  const text = usePathTranslation("about.careers");
 
   const [selectedJobTitle, setSelectedJobTitle] = useState("");
 
@@ -32,14 +30,12 @@ export default function CareersClient({ careers = {} }) {
             <GrWorkshop />
           </p>
           <h2 className="HeadingH3 text-primary">
-            {text("title", "Careers")} <span className="text-[#b68756]">GTCFX</span>
+            {text("title")} <span className="text-[#b68756]">GTCFX</span>
           </h2>
         </div>
         <p className="Text mt-3">
           {text(
-            "sub-title2",
-            "At GTCFX, we believe in fostering a dynamic and inclusive work environment where innovation thrives, and talent is nurtured."
-          )}
+            "desc"          )}
         </p>
       </div>
 

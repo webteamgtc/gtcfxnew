@@ -150,6 +150,10 @@ html {
     animation: awards-marquee 50s linear infinite;
   }
 
+  .marquee-track-rtl {
+    animation-name: awards-marquee-rtl;
+  }
+
   .marquee-track:hover {
     animation-play-state: paused;
   }
@@ -161,6 +165,15 @@ html {
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes awards-marquee-rtl {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50%);
   }
 }
 
