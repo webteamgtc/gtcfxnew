@@ -1,6 +1,6 @@
 "use client";
 
-import { usePathTranslation } from "../../LocaleProvider";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 function BuildingIcon() {
   return (
@@ -39,7 +39,7 @@ function AffiliateCard({ item }) {
         </h3>
       </div>
 
-   <div className="mt-5 inline-flex rounded-2xl bg-primary-gradient px-5 py-2">
+   <div className="mt-5 inline-flex rounded-2xl bg-gradient-to-r from-[#263788] via-[#101638] to-[#263788] px-5 py-2">
   <p className="text-xs sm:text-sm font-light uppercase tracking-[0.04em] text-[#fff]">
     {item.entity}
   </p>
@@ -51,7 +51,7 @@ function AffiliateCard({ item }) {
 
       {item.website ? (
         <div className="mt-5 flex flex-wrap items-center gap-2">
-          <span className="text-sm font-semibold text-primary">Website:</span>
+          <span className="text-sm font-semibold text-primary">{item.websiteLabel}</span>
           <a
             href={`https://${item.website}`}
             target="_blank"
@@ -67,60 +67,91 @@ function AffiliateCard({ item }) {
 }
 
 export default function GlobalPresenceSection() {
-  const t = usePathTranslation("about.gtc-regulations");
-
-  const sectionTitle = t("title", "GTC Financial Group’s Presence Globally");
-  const sectionDescription = t(
-    "des",
-    ""
-  );
-  const sectionSubtitle = t(
-    "sub_title",
-    ""
-  );
-  const sectionNotice = t(
-    "notice",
-    ""
-  );
-
-  const translatedAffiliates = [
+  const t = usePathTranslation("regulationPage");
+  const affiliates = [
     {
-      country: t("regulation1_3", ""),
-      entity: t("regulation1_1", ""),
-      description: t("regulation1_4", ""),
+      country: t("affiliates.one.country", "United Arab Emirates"),
+      flag: "🇦🇪",
+      entity: t("affiliates.one.entity", "GTC MULTI TRADING DMCC"),
+      description: t(
+        "affiliates.one.description",
+        "GTC MULTI TRADING DMCC is regulated by the Securities and Commodities Authority of the UAE, under license Number 20200000007. The company is licensed to do Broker Direct Clearing Member services under DGCX Derivative Futures."
+      ),
+      website: "www.gtcmtd.com",
+      websiteLabel: t("websiteLabel", "Website:"),
     },
     {
-      country: t("regulation1_3", ""),
-      entity: t("regulation1_1", ""),
-      description: t("regulationnew_4", ""),
+      country: t("affiliates.two.country", "United Arab Emirates"),
+      flag: "🇦🇪",
+      entity: t("affiliates.two.entity", "GTC FINANCIAL CONSULTANCY"),
+      description: t(
+        "affiliates.two.description",
+        "GTC FINANCIAL CONSULTANCY is regulated by the Securities and Commodities Authority of the UAE."
+      ),
+      website: "www.gtcfc.com",
+      websiteLabel: t("websiteLabel", "Website:"),
     },
     {
-      country: t("regulation5_3", ""),
-      entity: t("regulation5_1", ""),
-      description: `${t("regulation5_4", "")} ${t(
-        "regulation5_5",
-        ""
-      )}`.trim(),
+      country: t("affiliates.three.country", "United Kingdom"),
+      flag: "🇬🇧",
+      entity: t("affiliates.three.entity", "Global Markets Group Limited"),
+      description: t(
+        "affiliates.three.description",
+        "Global Markets Group Limited, a company registered in England & Wales under company number 09493910, is authorised and regulated by the Financial Conduct Authority with reference number 744501. GTC GROUP L.L.C-FZ is a minority shareholder in Global Markets Group Limited. Registered Office: Green Park House, 15 Stratton Street, London W1J 8LQ, UK."
+      ),
+      website: "www.gmgmarkets.co.uk",
+      websiteLabel: t("websiteLabel", "Website:"),
     },
     {
-      country: t("regulation2_3", ""),
-      entity: t("regulation2_1", ""),
-      description: t("regulation2_4", ""),
+      country: t("affiliates.four.country", "Australia"),
+      flag: "🇦🇺",
+      entity: t("affiliates.four.entity", "GTC Global (Australia) Pty Ltd"),
+      description: t(
+        "affiliates.four.description",
+        "GTC Global (Australia) Pty Ltd holds an Australian Financial Services Licence number 496371. GTC Global (Australia) focuses on providing education services to Australian clients."
+      ),
+      website: "",
+      websiteLabel: t("websiteLabel", "Website:"),
     },
     {
-      country: t("regulation3_3", ""),
-      entity: t("regulation3_1", ""),
-      description: t("regulation3_4", ""),
+      country: t("affiliates.five.country", "Mauritius"),
+      flag: "🇲🇺",
+      entity: t("affiliates.five.entity", "GTC Global Ltd"),
+      description: t(
+        "affiliates.five.description",
+        "GTC Global Ltd. is a limited company incorporated in Mauritius (company number: C188049) and licensed by the Financial Services Commission, Mauritius (No. GB22200292) to trade as an SEC-2."
+      ),
+      website: "",
+      websiteLabel: t("websiteLabel", "Website:"),
     },
     {
-      country: t("regulation6_3", ""),
-      entity: t("regulation6_1", ""),
-      description: t("regulation6_4", ""),
+      country: t("affiliates.six.country", "South Africa"),
+      flag: "🇿🇦",
+      entity: t(
+        "affiliates.six.entity",
+        "GTC Global South Africa Proprietary Limited"
+      ),
+      description: t(
+        "affiliates.six.description",
+        "GTC Global South Africa Proprietary Limited (registration number: 2020/810937/07) hold a Financial Services Provider Licence number 51545. Register address is First Floor Kildare Centre, Cnr Kildare Road and Main Street, Newlands, Cape Town, Western Cape, 7550, South Africa."
+      ),
+      website: "",
+      websiteLabel: t("websiteLabel", "Website:"),
     },
     {
-      country: t("regulation4_3", ""),
-      entity: t("regulation4_1", ""),
-      description: t("regulation4_4", ""),
+      country: t("affiliates.seven.country", "Vanuatu"),
+      flag: "🇻🇺",
+      entity: t(
+        "affiliates.seven.entity",
+        "GTC Global Trade Capital Co. Limited"
+      ),
+      description: t(
+        "affiliates.seven.description",
+        "GTC Global Trade Capital Co. Limited, is a global finance brokerage company registered, supervised, and authorized by the Vanuatu Financial Services Commission of the Republic of Vanuatu Company license number: 40354. Registered address: 1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu."
+      ),
+      website: "",
+      websiteLabel: t("websiteLabel", "Website:"),
+      fullWidth: true,
     },
   ];
 
@@ -132,22 +163,28 @@ export default function GlobalPresenceSection() {
           <div className="mb-5 flex items-center gap-3 text-[#b68756]">
             <BuildingIcon />
             <h2 className="HeadingH3 text-primary">
-              {sectionTitle}
+              {t("titleStart", "GTC Financial Group’s")}{" "}
+              <span className="text-[#b68756]">
+                {t("titleHighlight", "Presence Globally")}
+              </span>
             </h2>
           </div>
 
           <p className="text-[15px] leading-7 text-[#374151] md:text-[17px] md:leading-8">
-            {sectionDescription}
+            {t(
+              "intro",
+              "GTC Group LLC-FZ, a limited liability company registered in the UAE, owns the following entities globally, together the GTC Financial Group. Each of these entities provides financial services according to their respective licences in the relevant jurisdiction. Each entity within the GTC Financial Group specialises in different services and is managed separately by experienced teams. The services and products on this website are offered by two group entities, being GTC Global Ltd and GTC Global Trade Capital Co. Limited."
+            )}
           </p>
 
-          <div className="mt-8 inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-5 py-2 text-sm font-semibold text-[#b68756] md:text-base">
-            {sectionSubtitle}
+          <div className="mt-8 inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-5 py-2 text-sm font-semibold text-[#b68756] md:text-base">
+            {t("badge", "Information on operating GTC Affiliates")}
           </div>
         </div>
 
         {/* Cards */}
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
-          {translatedAffiliates.map((item, index) => (
+          {affiliates.map((item, index) => (
             <AffiliateCard key={index} item={item} />
           ))}
         </div>
@@ -155,14 +192,17 @@ export default function GlobalPresenceSection() {
         {/* Closing note */}
         <div className="mt-12  text-center">
           <p className="text-[15px] leading-7 text-[#4B5563] md:text-[17px] md:leading-8">
-            {sectionNotice}
+            {t(
+              "closing",
+              "GTC Financial Group provides a wide range of financial services to clients. Different entities within the group have different licences and offerings as they are managed separately. If you are interested to know more about which entity you are dealing with, we encourage you to contact us."
+            )}
           </p>
         </div>
       </div>
 
       {/* background effects */}
-      <div className="pointer-events-none absolute left-[-100px] top-20 h-[240px] w-[240px] rounded-xl bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-20 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-100px] top-20 h-[240px] w-[240px] rounded-full bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-20 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }
