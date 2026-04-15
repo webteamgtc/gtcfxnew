@@ -19,21 +19,18 @@ async function getCompanyNews(locale, start = 0, limit = 6) {
   };
 
   const attemptParams = [
-    // Some Strapi setups expect relation filtering with id path
     {
       ...populateParams,
       "filters[category][id][$eq]": 7,
       "pagination[start]": start,
       "pagination[limit]": limit,
     },
-    // Keep previous style as a secondary attempt
     {
       ...populateParams,
       "filters[category][$eq]": 7,
       "pagination[start]": start,
       "pagination[limit]": limit,
     },
-    // Final fallback: no category filter
     {
       ...populateParams,
       "pagination[start]": start,
@@ -51,20 +48,26 @@ async function getCompanyNews(locale, start = 0, limit = 6) {
           params,
           cache: "no-store",
         });
+
         if (Array.isArray(res?.data)) return res;
       } catch (error) {
-        console.error("[company-news] blogs fetch attempt failed:", error?.message || error);
+        console.error(
+          "[company-news] blogs fetch attempt failed:",
+          error?.message || error
+        );
       }
     }
+
     return { data: [] };
   };
 
   const mappedLocale = mapStrapiLocale(locale);
-  let res = await tryLoad(mappedLocale);
-  let usedLocale = mappedLocale;
+  const res = await tryLoad(mappedLocale);
+  const usedLocale = mappedLocale;
 
   const rows = Array.isArray(res?.data) ? res.data : [];
   const total = Number(res?.meta?.pagination?.total || rows.length || 0);
+
   return {
     rows,
     total,
@@ -75,10 +78,13 @@ async function getCompanyNews(locale, start = 0, limit = 6) {
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
+  const meta = dict.metadata?.companyNews || {};
+
   return {
-    title: meta.companyNewsTitle ?? "Company News - GTC FX",
-    description: meta.companyNewsDescription,
+    title: meta.title ?? "Company News - GTC FX",
+    description:
+      meta.des ??
+      "Explore the latest updates, announcements, and developments from GTCFX across global markets.",
   };
 }
 
@@ -86,12 +92,14 @@ export default async function CompanyNewsPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const companyNews = dict.companyNews || {};
+
   const text = (key, fallback) => {
     const value = companyNews?.[key];
     return typeof value === "string" && value.length ? value : fallback;
   };
 
   const firstBatch = await getCompanyNews(locale, 0, 6);
+
   const uiText = {
     readMore: text("readMore", "Read More"),
     emptyState: text("emptyState", "No company news available right now."),
@@ -125,27 +133,31 @@ export default async function CompanyNewsPage({ params }) {
             <p className="text-secondary text-4xl md:text-5xl">
               <MdOutlineNewspaper />
             </p>
+
             <h2 className="HeadingH3 text-primary">
               {text("titlePrefix", "Company")}{" "}
-              <span className="text-[#b68756]">{text("titleHighlight", "News")}</span>
+              <span className="text-[#b68756]">
+                {text("titleHighlight", "News")}
+              </span>
             </h2>
           </div>
+
           <p className="Text my-5 max-w-4xl">
             {text(
               "intro",
               "Read the latest company news, market updates, and insights from GTCFX. Stay informed and make confident trading decisions every day."
             )}
           </p>
-           <CompanyNewsFeed
-          initialPosts={firstBatch.rows}
-          initialTotal={firstBatch.total}
-          initialLocale={firstBatch.usedLocale}
-          routeLocale={locale}
-          pageLimit={6}
-          uiText={uiText}
-        />
+
+          <CompanyNewsFeed
+            initialPosts={firstBatch.rows}
+            initialTotal={firstBatch.total}
+            initialLocale={firstBatch.usedLocale}
+            routeLocale={locale}
+            pageLimit={6}
+            uiText={uiText}
+          />
         </div>
-       
       </section>
     </>
   );

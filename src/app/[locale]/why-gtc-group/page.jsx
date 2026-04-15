@@ -1,18 +1,17 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import CompanyIntro from "../components/about/CompanyIntro";
-import AwardsMarquee from "../components/common/home/AwardsMarquee";
-import Counter from "../components/common/home/Counter";
-import ReviewsSection from "../components/common/ReviewsSection";
 import WhyChooseGTC from "../components/about/WhyChooseGTC";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
+  const meta = dict.metadata?.whyGtcGroup || {};
+
   return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
+    title: meta.title ?? "Why Choose GTCFX | Benefits of Trading with GTCFX",
+    description:
+      meta.des ??
+      "Discover the benefits of trading with GTCFX, including competitive spreads, fast execution, advanced platforms, and reliable global support.",
   };
 }
 
@@ -24,15 +23,11 @@ export default async function AboutPage({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. "
+        description="Trading with us offers the optimal avenue for investing your money wisely and profitably."
         backgroundImage="/breadcamp/whygtc.webp"
         mobileBackgroundImage="/breadcamp/why-mobile.webp"
       />
       <WhyChooseGTC />
-  
-
-      {/* other sections */}
     </>
   );
 }
