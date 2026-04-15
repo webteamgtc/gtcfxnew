@@ -1,39 +1,53 @@
 "use client";
 
 import React from "react";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 
 const GtcFeatures = () => {
+  const t = usePathTranslation("gtcGoApp.features");
 
 const features = [
     {
-      title: "Smarter Copy Trading",
-      desc: "Flexible, powerful and designed for real traders. Follow signals with custom cycles.",
+      title: t("items.smarterCopyTrading.title"),
+      desc: t(
+        "items.smarterCopyTrading.description"
+      ),
       Icon: IconFunctionalApp,
     },
     {
-      title: "High-quality Design",
-      desc: "Clean, intuitive and built to make every trading interaction smoother and faster.",
+      title: t("items.highQualityDesign.title"),
+      desc: t(
+        "items.highQualityDesign.description"
+      ),
       Icon: IconHighQualityDesign,
     },
     {
-      title: "Essential Integrations",
-      desc: "Connect easily with key tools and services across your trading workflow.",
+      title: t("items.essentialIntegrations.title"),
+      desc: t(
+        "items.essentialIntegrations.description"
+      ),
       Icon: IconEssentialIntegrations,
     },
     {
-      title: "Essential Components",
-      desc: "All the core features you need for a complete, unified trading experience.",
+      title: t("items.essentialComponents.title"),
+      desc: t(
+        "items.essentialComponents.description"
+      ),
       Icon: IconEssentialComponents,
     },
     {
-      title: "Fully Customizable",
-      desc: "Adapt the platform to your style, preferences and trading strategies.",
+      title: t("items.fullyCustomizable.title"),
+      desc: t(
+        "items.fullyCustomizable.description"
+      ),
       Icon: IconFullyCustomizable,
     },
     {
-      title: "Regular Free Updates",
-      desc: "Continuous improvements and new features rolled out with no extra cost.",
+      title: t("items.regularFreeUpdates.title"),
+      desc: t(
+        "items.regularFreeUpdates.description"
+      ),
       Icon: IconRegularUpdates,
     },
   ];
@@ -54,16 +68,16 @@ const features = [
         {/* Header */}
         <div className="mx-auto mb-8 max-w-3xl text-center md:mb-12">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            GTC GO Features
+          {t("badge")}
           </span>
 
           <h2 className="HeadingH3 py-3">
-           Unlock the Full Power of GTCFX
+            {t("title")}
 
           </h2>
 
           <p className="Text">
-           Explore the features that make the GTC GO App & GTC VIP Program a complete trading ecosystem.
+            {t("description")}
  </p>
         </div>
 
@@ -106,7 +120,7 @@ const features = [
             onClick={handleScrollToHero}
             className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-gradient-to-r from-[#293794] to-[#000021] px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-200/60 transition-all duration-300 hover:-translate-y-0.5 hover:opacity-95 md:min-h-[56px] md:px-10 md:text-base"
           >
-            Download App Now
+            {t("cta")}
           </button>
         </div>
       </div>

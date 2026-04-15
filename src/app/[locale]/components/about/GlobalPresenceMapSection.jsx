@@ -1,66 +1,6 @@
 "use client";
 
-const regions = [
-  {
-    title: "Middle East",
-    countries: [
-      "United Arab Emirates",
-      "Cyprus",
-      "Jordan",
-      "KSA",
-    ],
-  },
-  {
-    title: "Europe",
-    countries: [
-      "United Kingdom",
-      "Turkey",
-    ],
-  },
-  {
-    title: "Asia",
-    countries: [
-      "China",
-      "Hong Kong",
-      "India",
-      "Pakistan",
-      "Thailand",
-      "Vietnam",
-      "Malaysia",
-      "Philippines",
-      "Indonesia",
-    ],
-  },
-  {
-    title: "Africa",
-    countries: [
-      "South Africa",
-      "Nigeria",
-      "Mauritius",
-    ],
-  },
-  {
-    title: "Oceania",
-    countries: [
-      "Australia",
-      "Vanuatu",
-    ],
-  },
-  {
-    title: "Americas",
-    countries: [
-      "USA",
-      "Mexico",
-      "Chile",
-    ],
-  },
-];
-
-const stats = [
-  { value: "22+", label: "Destinations" },
-  { value: "100+", label: "Countries Reached" },
-  { value: "985,000+", label: "Clients Served" },
-];
+import { usePathTranslation } from "../../LocaleProvider";
 
 function RegionCard({ title, countries }) {
   return (
@@ -87,24 +27,92 @@ function RegionCard({ title, countries }) {
 }
 
 export default function GlobalPresenceMapSection() {
+  const t = usePathTranslation("about.global-presence-map");
+
+  const regions = [
+    {
+      title: t("regions.middleEast", "Middle East"),
+      countries: [
+        t("countries.unitedArabEmirates", "United Arab Emirates"),
+        t("countries.cyprus", "Cyprus"),
+        t("countries.jordan", "Jordan"),
+        t("countries.ksa", "KSA"),
+      ],
+    },
+    {
+      title: t("regions.europe", "Europe"),
+      countries: [
+        t("countries.unitedKingdom", "United Kingdom"),
+        t("countries.turkey", "Turkey"),
+      ],
+    },
+    {
+      title: t("regions.asia", "Asia"),
+      countries: [
+        t("countries.china", "China"),
+        t("countries.hongKong", "Hong Kong"),
+        t("countries.india", "India"),
+        t("countries.pakistan", "Pakistan"),
+        t("countries.thailand", "Thailand"),
+        t("countries.vietnam", "Vietnam"),
+        t("countries.malaysia", "Malaysia"),
+        t("countries.philippines", "Philippines"),
+        t("countries.indonesia", "Indonesia"),
+      ],
+    },
+    {
+      title: t("regions.africa", "Africa"),
+      countries: [
+        t("countries.southAfrica", "South Africa"),
+        t("countries.nigeria", "Nigeria"),
+        t("countries.mauritius", "Mauritius"),
+      ],
+    },
+    {
+      title: t("regions.oceania", "Oceania"),
+      countries: [
+        t("countries.australia", "Australia"),
+        t("countries.vanuatu", "Vanuatu"),
+      ],
+    },
+    {
+      title: t("regions.americas", "Americas"),
+      countries: [
+        t("countries.usa", "USA"),
+        t("countries.mexico", "Mexico"),
+        t("countries.chile", "Chile"),
+      ],
+    },
+  ];
+
+  const stats = [
+    { value: "22+", label: t("stats.destinations", "Destinations") },
+    { value: "100+", label: t("stats.countriesReached", "Countries Reached") },
+    { value: "985,000+", label: t("stats.clientsServed", "Clients Served") },
+  ];
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
       <div className="container relative z-10">
         {/* Intro */}
         <div className="mx-auto max-w-4xl text-center">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            Global Presence
+          {t("badge", "Global Presence")}
           </span>
 
           <h2 className="HeadingH3 mt-4 text-primary pb-4">
-            A Network Across <span className="text-[#b68756]">Key Global Markets</span>
+            {t("titlePrefix", "A Network Across")}{" "}
+            <span className="text-[#b68756]">
+              {t("titleHighlight", "Key Global Markets")}
+            </span>
+            {t("titleSuffix", "") ? ` ${t("titleSuffix")}` : ""}
           </h2>
 
           <p className="Text">
-            At GTCFX, our international presence reflects our commitment to serving
-            clients across major financial hubs and emerging markets. With teams and
-            operations spanning multiple regions, we deliver localized support with a
-            truly global perspective.
+            {t(
+              "description",
+              "At GTCFX, our international presence reflects our commitment to serving clients across major financial hubs and emerging markets. With teams and operations spanning multiple regions, we deliver localized support with a truly global perspective."
+            )}
           </p>
         </div>
 
@@ -141,9 +149,10 @@ export default function GlobalPresenceMapSection() {
         {/* Bottom note */}
         <div className="mx-auto mt-10 max-w-4xl text-center">
           <p className="text-sm leading-7 text-[#6B7280] md:text-base">
-            Our expanding footprint enables us to connect with clients, partners,
-            and markets worldwide while maintaining a strong focus on local needs
-            and personalized service.
+            {t(
+              "bottomNote",
+              "Our expanding footprint enables us to connect with clients, partners, and markets worldwide while maintaining a strong focus on local needs and personalized service."
+            )}
           </p>
         </div>
       </div>

@@ -714,6 +714,62 @@
       "note_title5": "运营理念",
       "note_desc5": "GTCFX的运营理念简单而坚定：客户满意铸就长久信赖。我们以行业领先的合规标准和超预期的服务品质为荣。通过持续跟踪行业趋势和技术演进，我们不断优化服务体系，始终满足高端客户的动态需求。"
     },
+    "global-presence-map": {
+      "bannerTitle": "全球布局",
+      "bannerDescription": "在 GTCFX，我们是一支全球化团队，业务版图覆盖全球 22+ 个重要地区。",
+      "badge": "全球布局",
+      "titlePrefix": "覆盖",
+      "titleHighlight": "全球关键市场",
+      "titleSuffix": "的网络",
+      "description": "GTCFX 的国际化布局体现了我们服务全球主要金融中心与新兴市场的承诺。凭借覆盖多地区的团队与运营体系，我们以全球视野提供本地化支持。",
+      "bottomNote": "不断扩展的全球足迹，让我们能够连接全球客户、合作伙伴与市场，同时始终专注于本地需求与个性化服务。",
+      "stats": {
+        "destinations": "地区覆盖",
+        "countriesReached": "覆盖国家",
+        "clientsServed": "服务客户"
+      },
+      "regions": {
+        "middleEast": "中东",
+        "europe": "欧洲",
+        "asia": "亚洲",
+        "africa": "非洲",
+        "oceania": "大洋洲",
+        "americas": "美洲"
+      },
+      "countries": {
+        "unitedArabEmirates": "阿联酋",
+        "cyprus": "塞浦路斯",
+        "jordan": "约旦",
+        "ksa": "沙特阿拉伯",
+        "unitedKingdom": "英国",
+        "turkey": "土耳其",
+        "china": "中国",
+        "hongKong": "中国香港",
+        "india": "印度",
+        "pakistan": "巴基斯坦",
+        "thailand": "泰国",
+        "vietnam": "越南",
+        "malaysia": "马来西亚",
+        "philippines": "菲律宾",
+        "indonesia": "印度尼西亚",
+        "southAfrica": "南非",
+        "nigeria": "尼日利亚",
+        "mauritius": "毛里求斯",
+        "australia": "澳大利亚",
+        "vanuatu": "瓦努阿图",
+        "usa": "美国",
+        "mexico": "墨西哥",
+        "chile": "智利"
+      }
+    },
+    "awards-section": {
+      "bannerTitle": "奖项荣誉",
+      "bannerDescription": "与我们交易，为您提供更明智、更高效的投资方式。",
+      "badge": "奖项与认可",
+      "titlePrefix": "获奖的差价合约经纪商",
+      "titleHighlight": "卓越实力备受认可",
+      "description": "GTCFX 在多项国际金融展会与行业活动中屡获认可，体现了我们在创新、服务质量与全球交易解决方案方面的持续追求。"
+    },
     "gtc-regulations": {
       "title": "GTC Group合规架构",
       "des": "由阿联酋注册的GTC Group LLC-FZ作为控股主体，GTC金融集团通过全球多持牌实体开展业务。各实体依据属地监管牌照权限提供差异化金融服务，并由专业团队独立运营。本网站所涉金融产品与服务均由GTC Global Ltd（毛里求斯）及GTC Global Trade Capital Co. Limited（瓦努阿图）具体提供。",
@@ -763,7 +819,12 @@
       "desc4_1": "单个客户最高可获得20,000欧元的补偿金赔付。",
       "desc4_2": "详细条款请参阅《金融争议调解中心章程》及我司《客户协议》。",
       "visitButton": "立即访问",
-      "downloadButton": "下载PDF文件"
+      "downloadButton": "下载PDF文件",
+      "protectionBadge": "客户保障",
+      "upToLabel": "最高可达",
+      "sideDescription": "补偿基金可覆盖金融委员会裁决下单个客户最高20,000欧元的赔付。",
+      "sideNote": "该保障机制通过公平、独立的争议解决流程进一步增强客户信心。",
+      "maximumCoverageBadge": "最高保额"
     },
     "company-news": {
       "title": "GTCFX最新动态",
@@ -771,7 +832,10 @@
     },
     "careers": {
       "title": "人才招聘",
-      "sub-title": "随着全球业务的快速扩张，我们持续寻找志同道合的卓越人才，共同推动外汇交易行业的变革发展。",
+      "currentJobs": "在招岗位",
+      "applyNow": "立即申请",
+      "bannerText": "我们是一家领先的金融科技公司，专注于外汇交易解决方案。",
+      "desc":"在GTCFX，我们相信培养一个充满活力和包容性的工作环境，创新得以蓬勃发展，人才得以培养。随着我们不断成长和扩展全球影响力，我们一直在寻找充满激情的人们，他们渴望在金融科技领域产生有意义的影响。",
       "why-working": "为何选择GTCFX？",
       "heading1_1": "创新",
       "heading1_2": "环境：",
@@ -810,117 +874,95 @@
       "jobs": "在招岗位",
       "apply": "申请"
     },
+    "contactUsForm": {
+      "registrationStatusLabel": "您是已注册客户吗？",
+      "registrationStatusSelect": "请选择注册状态",
+      "registrationStatusRegistered": "已注册",
+      "registrationStatusNotRegistered": "未注册",
+      "queryTypeLabel": "咨询类型",
+      "queryTypeSelect": "请选择咨询类型",
+      "queryTypeGeneral": "一般咨询",
+      "queryTypeCompliance": "合规咨询",
+      "ticketTypeLabel": "工单类型",
+      "ticketTypeSelect": "请选择工单类型",
+      "ticketTypeAccountRegistration": "账户/注册",
+      "ticketTypeDeposits": "入金",
+      "ticketTypeWithdrawals": "出金",
+      "ticketTypeTradingAccountQueries": "交易账户咨询",
+      "ticketTypeAccountOpeningLinks": "添加开户链接",
+      "ticketTypePartnerClientTransfer": "合作伙伴/客户转移申请",
+      "ticketTypePromotionsBonuses": "促销/赠金",
+      "ticketTypeTradingInvestigation": "交易调查",
+      "ticketTypeKycQueries": "KYC咨询",
+      "ticketTypeOther": "其他",
+      "tradeAccountLabel": "交易账户",
+      "tradeAccountPlaceholder": "交易账户",
+      "transactionIdsLabel": "交易编号",
+      "transactionIdsPlaceholder": "交易编号",
+      "tradeOrderIdsLabel": "交易订单编号",
+      "tradeOrderIdsPlaceholder": "交易订单编号",
+      "dateTimeIncidentLabel": "事件发生日期和时间",
+      "dateTimeIncidentPlaceholder": "例如：2024-01-15 14:30",
+      "promotionBonusTypeLabel": "促销/赠金类型",
+      "promotionBonusTypeSelect": "请选择类型",
+      "promotionBonusTypeIssue": "问题反馈",
+      "promotionBonusTypeRequest": "申请请求",
+      "depositAmountLabel": "入金金额",
+      "depositAmountPlaceholder": "入金金额",
+      "subjectLabel": "主题",
+      "subjectPlaceholder": "主题",
+      "firstNameLabel": "名字",
+      "firstNamePlaceholder": "名字",
+      "lastNameLabel": "姓氏",
+      "lastNamePlaceholder": "姓氏",
+      "emailLabel": "电子邮箱",
+      "emailPlaceholder": "电子邮箱",
+      "phoneLabel": "电话号码",
+      "countryLabel": "国家",
+      "countrySelect": "请选择国家",
+      "ticketDescriptionLabel": "工单描述",
+      "ticketDescriptionPlaceholder": "请详细说明您的问题...",
+      "depositDisclaimer": "提交前请确认您的入金信息准确无误。",
+      "withdrawalDisclaimer": "提交前请确认您的出金信息准确无误。",
+      "attachmentLabel": "附件",
+      "attachmentOptional": "（可选）",
+      "attachmentHelp": "截图、收据、日志或其他支持文件。",
+      "submitDisclaimer": "提交表单后，您将收到包含案件编号的电子邮件。",
+      "sending": "发送中...",
+      "submit": "提交",
+      "termsPrefix": "点击提交即表示我确认：(1) 我已阅读并同意",
+      "termsLinkText": "客户协议；",
+      "termsSuffix": "(2) 我同意GTCFX在合理时间联系我；(3) 我的号码未列入拒接来电登记册（DNCR）。",
+      "toastSubmitted": "提交成功。",
+      "toastError": "发生错误。",
+      "errorRegistrationStatus": "注册状态为必填项",
+      "errorQueryType": "咨询类型为必填项",
+      "errorInvalidEmail": "邮箱格式无效",
+      "errorEmail": "电子邮箱为必填项",
+      "errorMinLetters": "至少输入2个字符",
+      "errorFirstName": "名字为必填项",
+      "errorLastName": "姓氏为必填项",
+      "errorPhone": "电话号码为必填项",
+      "errorCountry": "国家为必填项",
+      "errorSubject": "主题为必填项",
+      "errorDescription": "描述为必填项",
+      "errorCaptcha": "请完成验证码验证",
+      "errorTicketType": "工单类型为必填项",
+      "errorPromotionBonusType": "促销/赠金类型为必填项",
+      "errorTradeAccount": "交易账户为必填项",
+      "errorTradeOrderIds": "交易订单编号为必填项",
+      "errorDateTimeIncident": "事件发生日期和时间为必填项"
+    },
     "contact-us": {
       "title": "联系我们",
-      "sub_title1_1": "客户满意是我们不懈追求的目标。我们致力于为您打造流畅卓越的服务体验，您的成功就是我们最大的成就。",
-      "sub_title1_2": "我们始终以超越期待的服务标准为使命。无论是交易咨询、技术支援还是专业指导，GTCFX专业团队全天候待命。您的成功是我们不懈追求的目标，我们承诺以全方位支持助力您的财富增长计划。",
+      "sub_title1_1": "您的满意度是我们最优先考虑的。我们致力于确保您获得无缝且满意的体验与我们的服务。",
+      "sub_title1_2": "我们的团队致力于超越您的需求。无论是解决您的顾虑，协助技术问题，还是提供专家指导，我们都在这里为您服务。您的成功和满意度是我们使命的核心，我们随时准备以任何方式帮助您。",
       "live_chat": "在线聊天",
       "globalHeading": "拨打全球免费电话",
       "localHeading": "拨打全球免费电话",
       "support_email": "support@gtcfx.com",
       "phone": "+971 800 667788",
-      "more_info": "期待您的来电",
-      "form": {
-         "title": "通过 WhatsApp 联系我们",
-        "registrationStatus": "您是否已注册客户？",
-        "first-name": "名字",
-        "last-name": "姓氏",
-        "email": "电子邮箱",
-        "phone": "电话号码",
-          "queryType": "咨询类型",
-        "ticketType": "工单类型",
-        "complaintType": "投诉类型",
-        "tradingComplaintType": "交易投诉类型",
-        "promotionBonusType": "促销/奖金类型",
-        "tradeAccount": "交易账户",
-        "tradeAccounts": "交易账户",
-        "transactionIds": "交易编号",
-        "tradeOrderIds": "交易订单编号",
-        "dateTimeIncident": "事件日期和时间",
-        "depositAmount": "入金金额",
-        "subject": "主题",
-        "ticketDescription": "工单描述",
-        "message": "详细说明您的情况…",
-        "attachment": "附件",
-        "file": "截图、收据、日志或证明材料。",
-  "optional": "可选",
-        "submit": "提交",
-        "sending": "正在发送…"
-      },
-      "error": {
-        "registrationStatus": "请选择注册状态",
-        "firstName": "请输入名字",
-        "queryType": "请选择咨询类型是必填项",
-        "lastName": "请输入姓氏",
-        "min": "至少2个字符",
-        "email": "请输入邮箱",
-        "invalidEmail": "邮箱格式无效",
-        "ticketType": "请选择工单类型",
-        "complaintType": "请选择投诉类型",
-        "tradingComplaintType": "请选择交易投诉类型",
-        "promotionBonusType": "请选择促销/奖金类型",
-        "tradeAccount": "请输入交易账户",
-        "subject": "请输入主题",
-         "message": "消息是必填的",
-        "tradeOrderIds": "请输入交易订单编号",
-        "dateTimeIncident": "请输入事件日期和时间"
-      },
-      "options": {
-        "registration": {
-          "select": "选择注册状态",
-          "registered": "已注册",
-          "notRegistered": "未注册"
-        },
-        "queryType": {
-    "select": "请选择咨询类型",
-    "general": "一般咨询",
-    "compliance": "合规咨询"
-  },
-        "ticketType": {
-          "select": "选择工单类型",
-          "accountRegistration": "账户管理/注册",
-          "deposits": "入金",
-          "withdrawals": "出金",
-          "tradingAccountQueries": "交易账户咨询",
-          "accountOpeningLinks": "开户链接",
-          "partnerClientTransfer": "合作伙伴/客户转账申请",
-          "promotionsBonuses": "促销/奖金",
-          "tradingInvestigation": "交易调查",
-          "complaint": "投诉",
-          "kycQueries": "KYC 咨询",
-          "lead": "潜在客户",
-          "other": "其他"
-        },
-        "complaintType": {
-          "select": "选择类型",
-          "tradingIssues": "交易问题",
-          "copyTrading": "跟单交易",
-          "pamm": "PAMM",
-          "mam": "MAM",
-          "rebates": "返佣",
-          "serverIssues": "服务器问题",
-          "depositsWithdrawals": "入金/出金",
-          "compliance": "合规",
-          "onboarding": "入职",
-          "otherComplaints": "其他投诉"
-        },
-        "tradingComplaintType": {
-          "select": "选择类型",
-          "slippage": "滑点",
-          "stopOut": "止损"
-        },
-        "promotionBonusType": {
-          "select": "选择类型",
-          "issue": "问题",
-          "request": "申请"
-        }
-      },
-      "messages": {
-        "depositDisclaimer": "为帮助我们快速处理您的入金申请，请附上所需文件：入金收据或付款凭证。",
-        "withdrawalDisclaimer": "为帮助我们快速处理您的出金申请，请附上涵盖交易期间的银行对账单。",
-        "submitDisclaimer": "提交表单后，您将收到一封包含案件编号的电子邮件。"
-      },
-      "contactTerms": "提交即表示已阅读并同意《客户协议》，并授权GTCFX与我联系。"
+      "more_info": "我们期待您的来电"
     }
   },
   "accounts": {
@@ -994,6 +1036,84 @@
           "des": "接受银行电汇转账"
         }
       }
+    },
+    "earningsPage": {
+      "bannerTitle": "财报与股息日历",
+      "bannerPara": "下方财报与股息日历展示了您可在 GTC 交易的所有股票及指数差价合约的最新财报发布时间和除息日期。我们也建议您在交易股票和指数前先查看此日历。",
+      "bannerDatePrefix": "除息日：",
+      "howToCalculateHeading": "如何计算股息调整",
+      "howToCalculateTitle1": "持有多头仓位时收到的股息：",
+      "howToCalculatePara1": "股息入账 = 指数成分股息（每指数合约）× 合约规模 × 手数 × 货币换算系数 × 账户货币换算系数",
+      "howToCalculateTitle2": "持有空头仓位时扣除的股息：",
+      "howToCalculatePara2": "股息扣减 = 指数成分股息（每指数合约）× 合约规模 × 手数 × 货币换算系数 × 账户货币换算系数",
+      "noData": "当前暂无财报数据。"
+    },
+    "earningsMarginPanel": {
+      "howStockEarning": {
+        "title": "股票与指数财报/股息如何影响您的保证金",
+        "desc": "我们准备了简要指南来说明该日历。它会告诉您公司事件何时发生、我们如何调整保证金，以及这为何会影响您的账户。",
+        "item1": {
+          "heading": "1）为什么要标记财报与股息",
+          "para1": "流动性提供方通常会在财报或股息周期调整指数与保证金要求，以降低风险敞口。因此我们会在日历中列出这些日期。被标记的产品表示该事件可能影响其波动性。"
+        },
+        "item2": {
+          "heading": "2）如何理解保证金分层",
+          "para1": "让风险管理更可控！按层级查看保证金要求，可根据仓位规模应用更稳健的风控逻辑。"
+        },
+        "item3": {
+          "heading": "3）股票财报示例",
+          "para1": "以下以 Apple 最新数据做一个简化示例：",
+          "list1": "产品：AAPL",
+          "list2": "股价：$182.40",
+          "list3": "预期 EPS：$2.84",
+          "list4": "公布 EPS：$2.90",
+          "para2": "当数据高于预期时，市场波动通常会放大。请先规划风险与仓位，再做交易决策。"
+        },
+        "item4": {
+          "heading": "4）指数股息调整示例",
+          "para1": "以下是基于 CHN50 的股息调整示例：",
+          "list1": "产品：CHN50",
+          "list2": "股息值：1.50",
+          "list3": "您持有 1 手多单 - 合约规模 50",
+          "list4": "1.50 × 50 = $75",
+          "list5": "盈亏入账：$75.00"
+        },
+        "item5": {
+          "heading": "5）股息现金调整",
+          "para1": "当产品进入除息日时，系统会根据您的持仓方向进行调整：",
+          "list": {
+            "one": "若您为多头（且在除息日持仓），股息将计入您的账户。",
+            "two": "若您为空头或在除息日前平仓，股息将从您的账户扣除。"
+          }
+        },
+        "item6": {
+          "heading": "6）您的责任",
+          "para1": "在高保证金阶段，新要求可能触发“可用保证金”不足。请提前确保仓位有足够资金或保证金，并做好主动风控。"
+        },
+        "item7": {
+          "heading": "7）日期与时间提醒",
+          "para1": "点差与日期为预估值。有时一个日历事件可能同时影响同一指数下的多个产品。请提前管理保证金。",
+          "para2": "保持领先一步，理性交易，保护账户安全。"
+        }
+      },
+      "btnText": "推荐您的交易者"
+    },
+    "earningsFaq": {
+      "heading": "常见问题",
+      "question1": "财报日期前后，股票和指数 CFD 会受到哪些影响？",
+      "answer1": "财报发布可能提高相关 CFD 的波动率，并导致点差与保证金要求变化。",
+      "question2": "CFD 交易中的除息日（Ex-dividend）是什么？",
+      "answer2": "这是根据您持仓方向应用股息调整的日期。",
+      "question3": "多头和空头仓位会被区别处理吗？",
+      "answer3": "会。通常多头会获得股息入账，空头会被扣除股息。",
+      "question4": "为什么交易前要查看财报日历？",
+      "answer4": "它能帮助您规划敞口、减少突发风险，并提前应对保证金和波动变化。",
+      "question5": "一个事件会影响多个产品吗？",
+      "answer5": "会。单一公司事件可能影响多个相关的股票或指数 CFD 产品。",
+      "question6": "在高保证金时期如何降低风险？",
+      "answer6": "建议缩小仓位、监控可用保证金，并在重大事件前预留风险缓冲。",
+      "question7": "如果我不确定该怎么做，可以在哪里获得帮助？",
+      "answer7": "请在收盘前联系支持团队，获取产品细节与保证金影响的专业协助。"
     },
     "account_types": {
       "metaData": {
@@ -1912,9 +2032,15 @@
       },
       "holiday": {
         "title": "节假日交易时间及通知",
+        "bannerTitle": "市场节假日可能影响交易时间表和市场波动性。不同国家的节假日安排有所不同，因此及时了解最新的节假日交易时间变更对合理安排交易计划至关重要。",
         "des": "市场节假日可能影响交易时间表和市场波动性。不同国家的节假日安排有所不同，因此及时了解最新的节假日交易时间变更对合理安排交易计划至关重要。",
         "trading": "外汇及差价合约交易时间",
-        "hours": "查看外汇、贵金属、大宗商品及其他金融产品的最新交易时间。GTCFX提供更新的市场交易时段信息，助您有效规划交易策略。请注意，上述时间可能发生变动。如需获取最准确且实时的交易时段详情，请参考您的交易终端或查阅各交易产品的详细规格说明。"
+        "hours": "查看外汇、贵金属、大宗商品及其他金融产品的最新交易时间。GTCFX提供更新的市场交易时段信息，助您有效规划交易策略。请注意，上述时间可能发生变动。如需获取最准确且实时的交易时段详情，请参考您的交易终端或查阅各交易产品的详细规格说明。",
+        "noData": "暂无数据",
+        "note1": "请注意，以上时间可能会变更，任何更新可在交易终端中的产品规格里查看。",
+        "note2": "请注意，节假日期间可能出现突发波动、流动性降低，部分流动性提供商可能会扩大点差。",
+        "note3": "具体日期以相关市场最新安排为准。",
+        "note4": "请客户根据以上公司交易时段妥善管理账户与持仓。"
       }
     },
     "trading_hours": {
@@ -3016,6 +3142,7 @@
       "menu3": "通信地址：",
       "menu4": "营业时间："
     },
+    "footerHeading": "连接您到全球市场，随时随地。",
     "footerNotice": {
       "firstPara": "本网站由在南非注册的私人有限公司GTC Global SA (Pty) Ltd（公司编号：2020/810937/07）拥有并运营，并持有南非金融行业行为监管局颁发的金融服务提供商牌照（FSP编号：51545），获准作为金融中介机构运营。注册地址：18 Cavendish Road, Clarement, Cape Town, Western Cape, 7708, South Africa。本网站推广的金融服务及产品由经瓦努阿图共和国金融服务委员会授权的GTC Global Trade Capital Co. Limited（公司牌照编号：40354）提供。注册地址：1/Floor, B&P House, Kumul Highway, Port Vila, Vanua。",
       "gtc_group_heading1": "GTC Global SA (Pty) Ltd 与 GTC Global Trade Capital Co. Limited",
@@ -4470,21 +4597,68 @@
         }
       }
     },
+    "blogs": {
+      "bannerTitle": "博客",
+      "bannerDescription": "GTCFX 博客 - 市场洞察与差价合约交易策略",
+      "titlePrefix": "博客",
+      "intro": "通过 GTCFX 博客保持领先 - 获取差价合约市场资讯、交易技巧与策略，助您更聪明地交易并持续成长。",
+      "readMore": "阅读更多",
+      "emptyState": "当前暂无可用博客。",
+      "endMessage": "没有更多内容",
+      "loading": "加载中...",
+      "defaultCategory": "博客",
+      "defaultExcerpt": "查看我们团队的最新更新与公告。",
+      "untitled": "未命名文章",
+      "imageAlt": "新闻图片",
+      "defaultDate": "2026年3月26日"
+    },
     "gtcGoApp": {
     "hero": {
       "eyebrow": "奖励与智能交易的未来，由此启程。",
+      "titlePrefix": "GTC GO 与 GTC VIP",
+      "titleHighlight": "双核心动力引擎",
+      "titleSuffix": "助力 GTCFX",
       "title1": "GTC GO 与 GTC VIP",
       "title2": "GTCFX 的双核心动力引擎",
       "description": "GTCFX 汇聚两大重磅发布：史上最大的忠诚度计划 GTC VIP，以及为速度、智能和无缝用户体验而全新设计的下一代交易平台 GTC GO。",
+      "qrAlt": "下载 GTC GO 应用的二维码",
+      "availability": "可在 iOS 与 Android 上使用",
       "availableOn": "可在 iOS 与 Android 上使用",
       "appImageAlt": "GTCFX 移动应用界面",
       "qrCodeAlt": "GTCFX 移动应用二维码"
     },
     "features": {
+      "badge": "GTC GO 功能",
       "title": "释放 GTCFX 的全部潜能",
+      "description": "探索使 GTC GO 应用与 GTC VIP 计划成为完整交易生态系统的各项功能。",
+      "cta": "立即下载应用",
       "subtitle": "探索使 GTC GO 应用与 GTC VIP 计划成为完整交易生态系统的各项功能。",
       "downloadButton": "立即下载应用",
       "items": {
+        "smarterCopyTrading": {
+          "title": "更智能的跟单交易",
+          "description": "灵活、强大，专为真实交易者设计。支持自定义结算周期跟单信号。"
+        },
+        "highQualityDesign": {
+          "title": "高品质设计",
+          "description": "简洁直观的设计，旨在让每一次交易交互都更顺畅、更快速。"
+        },
+        "essentialIntegrations": {
+          "title": "核心集成",
+          "description": "在您的整个交易工作流中，轻松连接关键工具与服务。"
+        },
+        "essentialComponents": {
+          "title": "核心组件",
+          "description": "为您提供完整、统一交易体验所需的所有核心功能。"
+        },
+        "fullyCustomizable": {
+          "title": "高度可定制",
+          "description": "根据您的风格、偏好和交易策略，自定义平台设置。"
+        },
+        "regularFreeUpdates": {
+          "title": "定期免费更新",
+          "description": "持续改进和新功能发布，无需额外费用。"
+        },
         "smarterCopy": {
           "title": "更智能的跟单交易",
           "description": "灵活、强大，专为真实交易者设计。支持自定义结算周期跟单信号。"
@@ -4512,6 +4686,10 @@
       }
     },
     "featureSection": {
+      "badge": "追踪交易与奖励",
+      "titlePrefix": "更智能、更快速、",
+      "titleHighlight": "更稳定",
+      "titleSuffix": "的交易系统",
       "eyebrow": "追踪交易与奖励",
       "title": "更智能、更快速、更稳定的交易系统",
       "description": "在一处查看您的交易活动、账户表现和 GTC VIP 奖励。GTC GO 助您实时追踪市场，而 GTC VIP 则随时更新您的积分、会员等级和即将到期的福利。",
@@ -4546,6 +4724,21 @@
         "extraFunds": "可为后续跟单头寸追加资金。",
         "withdrawals": "只要没有未平仓交易，信号账户即可随时提款。"
       }
+    },
+    "copyTradingSection": {
+      "badge": "跟单交易升级",
+      "titleLine1": "跟单交易更灵活",
+      "titleLine2": "也更强大",
+      "description": "GTC GO 引入更智能的跟单交易体验，为信号提供者和跟随者在每笔交易中提供更多控制权、透明度和灵活性。",
+      "points": {
+        "point1": "私有域信号 - 仅通过链接分享",
+        "point2": "社交信号 - 对所有用户可见且可发现",
+        "point3": "所有发布内容新增“信号类型”标签",
+        "point4": "自定义结算周期（分钟、小时、日、月、年）",
+        "point5": "可为后续跟单仓位追加资金",
+        "point6": "无未平仓交易时可随时提款"
+      },
+      "cta": "立即下载应用"
     },
     "testimonials": {
       "title": "备受全球 GTCFX 交易者喜爱",
@@ -4602,6 +4795,7 @@
     "howItWorks": {
       "title": "运作方式",
       "subtitle": "只需简单几步，即可开始使用 GTC GO 平台和 GTC VIP 忠诚度计划。",
+      "cta": "立即下载应用",
       "downloadButton": "立即下载应用",
       "steps": {
         "step1": {
@@ -4617,6 +4811,14 @@
           "description": "通过一个功能强大的移动应用，追踪交易、监控奖励、跟单信号，并管理一切。"
         }
       }
+    },
+    "mobileDownloadBanner": {
+      "eyebrow": "获取应用",
+      "title": "下载 GTCFX 移动应用",
+      "description": "直接在手机上交易、追踪并管理您的 GTC GO 与 GTC VIP 账户。",
+      "downloadOn": "下载平台",
+      "googlePlay": "Google Play",
+      "appStore": "App Store"
     },
     "mobileBanner": {
       "eyebrow": "获取应用",
@@ -4637,6 +4839,22 @@
       "openAccount": "立即开户",
       "joinVip": "加入 GTC VIP"
     }
+  },
+  "companyNews": {
+    "bannerTitle": "公司新闻",
+    "bannerDescription": "GTCFX 新闻与市场更新 - 保持信息领先，交易更自信",
+    "titlePrefix": "公司",
+    "titleHighlight": "新闻",
+    "intro": "查看 GTCFX 最新公司新闻、市场更新与深度洞察。保持信息领先，每天做出更自信的交易决策。",
+    "readMore": "阅读更多",
+    "emptyState": "当前暂无公司新闻。",
+    "endMessage": "没有更多内容",
+    "loading": "加载中...",
+    "defaultCategory": "公司新闻",
+    "defaultExcerpt": "查看我们团队的最新更新与公告。",
+    "untitled": "未命名文章",
+    "imageAlt": "新闻图片",
+    "defaultDate": "2026年3月26日"
   }
   
 }

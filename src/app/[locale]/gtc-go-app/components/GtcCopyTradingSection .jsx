@@ -2,8 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 const GtcCopyTradingSection = () => {
+  const t = usePathTranslation("gtcGoApp.copyTradingSection");
+
   return (
     <section
       className="relative py-14 md:py-16 bg-white"
@@ -16,33 +19,32 @@ const GtcCopyTradingSection = () => {
 
           {/* Eyebrow */}
           <span className="inline-flex rounded-xl bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            Copy Trading Upgraded
+          {t("badge")}
           </span>
 
           {/* Title */}
           <h2 className="HeadingH3">
-            Copy Trading Made More Flexible
+            {t("titleLine1")}
             <span className="block text-secondary">
-              And More Powerful
+              {t("titleLine2")}
             </span>
           </h2>
 
           {/* Description */}
           <p className="text-base md:text-lg text-slate-600 leading-7">
-            GTC GO introduces a smarter copy trading experience, giving both signal
-            providers and followers more control, transparency, and flexibility across every trade.
+            {t("description")}
           </p>
 
           {/* FEATURES */}
           <ul className="space-y-4 text-sm md:text-base text-slate-700">
             
             {[
-              "Private Domain Signals – shared only by link",
-              "Social Signals – visible and discoverable by all users",
-              'New "Signal Type" label on all publications',
-              "Custom settlement cycles (minute, hour, day, month, year)",
-              "Ability to add extra funds to follow-up positions",
-              "Withdraw anytime when there are no open trades",
+              t("points.point1"),
+              t("points.point2"),
+              t("points.point3"),
+              t("points.point4"),
+              t("points.point5"),
+              t("points.point6"),
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-3">
                 
@@ -67,7 +69,7 @@ const GtcCopyTradingSection = () => {
               }}
               className="inline-flex items-center px-7 py-3 rounded-xl bg-gradient-to-r from-[#293794] to-[#000021] text-white text-sm md:text-base font-semibold shadow-lg shadow-blue-200/40 hover:scale-[1.02] hover:opacity-90 transition"
             >
-              Download App Now
+              {t("cta")}
             </button>
           </div>
         </div>

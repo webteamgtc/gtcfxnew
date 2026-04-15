@@ -62,10 +62,6 @@ async function getCompanyNews(locale, start = 0, limit = 6) {
   const mappedLocale = mapStrapiLocale(locale);
   let res = await tryLoad(mappedLocale);
   let usedLocale = mappedLocale;
-  if ((!res?.data || res.data.length === 0) && locale !== "en") {
-    res = await tryLoad("en");
-    usedLocale = "en";
-  }
 
   const rows = Array.isArray(res?.data) ? res.data : [];
   const total = Number(res?.meta?.pagination?.total || rows.length || 0);
@@ -100,11 +96,21 @@ export default async function CompanyNewsPage({ params }) {
     readMore: text("readMore", "Read More"),
     emptyState: text("emptyState", "No company news available right now."),
     endMessage: text("endMessage", "No more items"),
+    loading: text("loading", "Loading..."),
+    defaultCategory: text("defaultCategory", "Company News"),
+    defaultExcerpt: text(
+      "defaultExcerpt",
+      "Read the latest updates and announcements from our team."
+    ),
+    untitled: text("untitled", "Untitled Article"),
+    imageAlt: text("imageAlt", "news image"),
+    defaultDate: text("defaultDate", "Mar 26, 2026"),
   };
 
   return (
     <>
       <InnerPageBanner
+        title={text("bannerTitle", "Company News")}
         description={text(
           "bannerDescription",
           "GTCFX News & Market Updates - Stay Informed, Trade Smarter"

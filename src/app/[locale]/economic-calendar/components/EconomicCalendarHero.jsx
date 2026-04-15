@@ -1,4 +1,7 @@
+ "use client";
+
 import InnerPageBanner from "../../components/common/InnerPageBanner";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 function CalendarIllustration() {
   return (
@@ -13,12 +16,18 @@ function CalendarIllustration() {
 }
 
 export default function EconomicCalendarHero() {
+  const t = usePathTranslation("tradingTools.economicCal.bannerText");
+
   return (
     <InnerPageBanner
-    description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
-    backgroundImage="/breadcamp/economic.webp"
-    mobileBackgroundImage="/breadcamp/economic-mobile.webp"
-  />
+      title={t("heading", "ECONOMIC CALENDAR")}
+      description={t(
+        "description",
+        "Stay updated with our economic calendar. Keep track of upcoming economic events and their effects on market movements."
+      )}
+      backgroundImage="/breadcamp/economic.webp"
+      mobileBackgroundImage="/breadcamp/economic-mobile.webp"
+    />
   );
 }
 

@@ -1,13 +1,23 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiGlobalFill } from "react-icons/ri";
+import { usePathTranslation } from "../../LocaleProvider";
 const ToolFreeContact = ({ messages = {} }) => {
+  const tAbout = usePathTranslation("about.contact-us");
+  const tToolFree = usePathTranslation("contactUsToolFree");
   const text = (key, fallback) => {
-    const value = messages?.[key];
-    return typeof value === "string" && value.length ? value : fallback;
+    const fromAbout = tAbout(key, "");
+    if (typeof fromAbout === "string" && fromAbout.trim().length > 0) {
+      return fromAbout;
+    }
+    const fromMessages = messages?.[key];
+    if (typeof fromMessages === "string" && fromMessages.trim().length > 0) {
+      return fromMessages;
+    }
+    return tToolFree(key, fallback);
   };
-
   // Define an array of toll-free numbers with corresponding country flags and phone numbers
   const tollFreeNumbers = [
     {
@@ -48,7 +58,7 @@ const ToolFreeContact = ({ messages = {} }) => {
   const localTollFreeNumbers = tollFreeNumbers.filter(item => item.type === "local");
 
   const whatsapp = {
-    label: text("whatsappHeading", "Contact Us Via WhatsApp"),
+    label: text("live_chat", "Contact Us Via WhatsApp"),
     number: text("whatsappNumber", "+44 800 048 8461"),
     href: text("whatsappHref", "https://wa.me/448000488461"),
   };
@@ -56,7 +66,7 @@ const ToolFreeContact = ({ messages = {} }) => {
   const globalPrimary = globalTollFreeNumbers[0] ?? tollFreeNumbers[0];
   const globalCall = {
     label: text("globalHeading", "Call Us Global Toll Free"),
-    number: text("globalPrimaryNumber", globalPrimary?.phoneNumber ?? "800 667788"),
+    number: text("phone", text("globalPrimaryNumber", globalPrimary?.phoneNumber ?? "800 667788")),
     href: text("globalPrimaryHref", globalPrimary?.link ?? "tel:+971800667788"),
   };
 

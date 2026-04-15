@@ -19,17 +19,11 @@ export async function generateMetadata({ params }) {
 export default async function CareersPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const careers = dict.careers || {};
-  const text = (key, fallback) =>
-    typeof careers?.[key] === "string" && careers[key].length ? careers[key] : fallback;
-
+  const careers = dict.about.careers || {};
   return (
     <>
       <InnerPageBanner
-        description={text(
-          "sub-title",
-          "We are a leading financial technology company specializing in foreign exchange trading solutions."
-        )}
+        description={careers?.bannerText}
         backgroundImage="/breadcamp/career.webp"
         mobileBackgroundImage="/breadcamp/career-mobile.webp"
       />

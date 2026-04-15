@@ -26,6 +26,10 @@ export function useLocaleMessages() {
   return useContext(LocaleContext)?.messages || {};
 }
 
+export function useLocale() {
+  return useContext(LocaleContext)?.locale || 'en';
+}
+
 /**
  * Client helper so components can call `t("path.to.key", "fallback")`
  * without passing `messages` into each call.

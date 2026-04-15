@@ -1,4 +1,6 @@
 import { fetchHolidayScheduleMatrix } from "@/lib/holiday-schedule";
+import { getDictionary } from "@/i18n/request";
+import { translationTextByPath } from "@/i18n/tranlsationText";
 
 const staticColumns = [
   { key: "instrument", label: "Instrument" },
@@ -187,6 +189,9 @@ function HolidayTableFromSheet({ matrix }) {
 }
 
 export default async function HolidayHoursNoticesSection({ locale }) {
+  const dict = await getDictionary(locale);
+  const t = (path, fallback = "") =>
+    translationTextByPath(`tradingTools.marketOverView.holiday.${path}`, fallback, dict);
   const matrix = await fetchHolidayScheduleMatrix(locale);
   const useRemote =
     Array.isArray(matrix) &&
@@ -197,12 +202,12 @@ export default async function HolidayHoursNoticesSection({ locale }) {
   return (
     <section className="bg-white py-8 md:py-14">
       <div className="container">
-        <h2 className="HeadingH2">Holiday Hours &amp; Notices</h2>
+        <h2 className="HeadingH2">{t("title", "Holiday Hours & Notices")}</h2>
         <p className="Text mt-3">
-          Market holidays may affect the trading schedule and volatility of the
-          market. This can vary from country to country, so it is important to
-          stay up to date with the upcoming changes and holiday trading hours to
-          plan your trades accordingly.
+          {t(
+            "des",
+            "Market holidays may affect the trading schedule and volatility of the markets. This can vary from country to country, so it is important to stay up to date with the upcoming changes and holiday trading hours to plan your trades accordingly."
+          )}
         </p>
 
         <div className="trading-hours-table-scroll mt-10 max-w-full rounded-xl bg-white">
@@ -210,7 +215,7 @@ export default async function HolidayHoursNoticesSection({ locale }) {
             {useRemote ? (
               <HolidayTableFromSheet matrix={matrix} />
             ) : (
-             <div>No data available</div>
+              <div>{t("noData", "No data available")}</div>
             )}
           </div>
         </div>
@@ -218,23 +223,28 @@ export default async function HolidayHoursNoticesSection({ locale }) {
         <ul className="mt-10 space-y-3 leading-[1.7] Text">
           <li className="flex gap-3">
             <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
-            Please note these times provided are subject to change, any changes
-            to the times can always be found in the Specification of the
-            instrument in the trading terminal.
+            {t(
+              "note1",
+              "Please note these times provided are subject to change, any changes to the times can always be found in the Specification of the instrument in the trading terminal."
+            )}
           </li>
           <li className="flex gap-3">
             <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
-            Please note that there could be unexpected periods of volatility, low
-            liquidity, and some LP’s will increase the spreads during holidays.
+            {t(
+              "note2",
+              "Please note that there could be unexpected periods of volatility, low liquidity, and some LP’s will increase the spreads during holidays."
+            )}
           </li>
           <li className="flex gap-3">
             <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
-            Dates are subject to change by the respective markets.
+            {t("note3", "Dates are subject to change by the respective markets.")}
           </li>
           <li className="flex gap-3">
             <span className="mt-2 h-2 w-2 shrink-0 rounded-xl bg-[#293B93]" />
-            Clients are kindly requested to manage their accounts and positions
-            during the trading hours of the company as listed above.{" "}
+            {t(
+              "note4",
+              "Clients are kindly requested to manage their accounts and positions during the trading hours of the company as listed above."
+            )}
           </li>
         </ul>
       </div>
