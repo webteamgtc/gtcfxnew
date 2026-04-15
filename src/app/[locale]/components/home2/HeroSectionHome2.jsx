@@ -118,8 +118,8 @@ export default function HeroSectionHome2() {
       </div>
 
       <div className="container relative z-10">
-        <div className="flex min-h-[100vh] 2xl:min-h-[95vh] 3xl:min-h-[90vh] 4xl:min-h-[90vh] 5xl:min-h-[60vh] flex-col items-center justify-center text-center pt-28 pb-10 md:pt-28 md:pb-0 lg:pt-32 lg:pb-0">
-          <p className="mb-3 text-sm font-medium text-white md:text-base uppercase">
+        <div className="flex min-h-[87vh] 2xl:min-h-[95vh] 3xl:min-h-[90vh] 4xl:min-h-[90vh] 5xl:min-h-[60vh] flex-col items-center justify-center text-center pt-28 pb-10 md:pt-28 md:pb-0 lg:pt-32 lg:pb-0">
+          <p className="mb-3 text-xs md:text-sm font-medium text-white lg:text-base uppercase">
             Global network across
             <span className="font-bold text-secondary"> 22+ destinations.</span>
           </p>
@@ -129,7 +129,7 @@ export default function HeroSectionHome2() {
             with Confidence
           </h1>
 
-          <p className="mt-4 max-w-[680px] text-[15px] leading-7 text-white md:text-[17px] md:leading-8 lg:text-[20px]">
+          <p className="mt-4 max-w-[680px] text-sm leading-7 text-white md:text-[17px] md:leading-8 lg:text-[20px]">
             Access Forex, Indices, Commodities and CFDs through a powerful trading
             environment built for speed, security and precision.
           </p>
@@ -137,7 +137,7 @@ export default function HeroSectionHome2() {
           <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
             <Link
               href="/register"
-              className="inline-flex min-h-[54px] items-center hover:no-underline justify-center rounded-xl bg-[#172154] px-6 text-[16px] font-semibold text-white transition hover:bg-secondary md:px-8 md:text-[18px]"
+              className="inline-flex min-h-[54px] items-center hover:no-underline justify-center border border-white/20  rounded-xl bg-[#172154] px-7 text-[16px] font-semibold text-white transition hover:bg-secondary md:px-8 md:text-[18px]"
             >
               Open Live Account
             </Link>
@@ -151,7 +151,7 @@ export default function HeroSectionHome2() {
           </div>
 
 
-          <div className="2xl:mt-32 w-full max-w-[1120px] md:mt-20 lg:mt-24">
+          <div className="mt-10 2xl:mt-32 w-full max-w-[1120px] md:mt-20 lg:mt-24">
             <div className="block md:hidden px-10">
               <MobilePeekCarousel
                 items={reviews}
