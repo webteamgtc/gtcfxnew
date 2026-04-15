@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useParams, useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 export default function SingleBlogSection(props) {
-    const { posts } = props;
+    const { posts, uiText = {} } = props;
     const { locale } = useParams();
     const router = useRouter();
     const pathname = usePathname();
@@ -15,7 +15,11 @@ export default function SingleBlogSection(props) {
     const imageUrl =
         attrs?.imageUrl?.data?.attributes?.url || attrs?.image || posts?.image || "";
     const categoryName =
-        attrs?.category?.data?.attributes?.name || attrs?.category?.name || attrs?.category || "Company News";
+        attrs?.category?.data?.attributes?.name ||
+        attrs?.category?.name ||
+        attrs?.category ||
+        uiText.defaultCategory ||
+        "Company News";
     const title = attrs?.title || posts?.title || "";
     const description = attrs?.short_descreption || attrs?.shortDescription || attrs?.description || posts?.excerpt || "";
     const authorName = attrs?.author?.name || attrs?.author?.data?.attributes?.name || "";

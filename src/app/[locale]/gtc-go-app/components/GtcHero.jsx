@@ -3,10 +3,13 @@
 import React from "react";
 import Image from "next/image";
 import MobileAppDownloadBanner from "./MobileAppDownloadBanner";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 const GtcHero = ({
   backgroundImage = "/app/banner-app.webp",
 }) => {
+  const t = usePathTranslation("gtcGoApp.hero");
+
   return (
     <section
       id="hero"
@@ -48,26 +51,32 @@ const GtcHero = ({
         <div className="order-2 flex flex-col items-center space-y-4 text-center ltr:lg:text-left rtl:lg:text-right lg:order-1 lg:items-start">
           {/* Eyebrow text */}
           <p className="max-w-[300px] text-sm font-medium uppercase text-secondary md:max-w-full md:text-base">
-            The future of rewards and smart trading begins here.
+            {t(
+              "eyebrow",
+            )}
           </p>
 
           {/* Heading */}
           <h2 className="HeadingH2 text-white">
-            GTC GO &amp; GTC VIP The <span className="text-secondary">Two Power Engines</span> of GTCFX
+            {t("titlePrefix")}{" "}
+            <span className="text-secondary">
+              {t("titleHighlight")}
+            </span>{" "}
+            {t("titleSuffix")}
           </h2>
 
           {/* Description */}
           <p className="Text text-white">
-            GTCFX brings together two major launches GTC VIP, our biggest loyalty
-            program ever, and GTC GO, our next-generation trading platform redesigned
-            for speed, intelligence, and a seamless user experience.
+            {t(
+              "description",
+            )}
           </p>
 
           {/* QR CODE */}
           <div className="relative hidden h-[160px] w-[160px] md:block">
             <Image
               src="/app/qrcode.webp"
-              alt="QR code to download GTC GO app"
+              alt={t("qrAlt")}
               fill
               className="object-contain"
             />
@@ -76,7 +85,7 @@ const GtcHero = ({
           {/* iOS / Android label */}
           <div className="mt-3 hidden md:flex items-center justify-center gap-4 lg:justify-start">
             <span className="rounded-xl border border-primary/30 px-4 py-1 text-sm text-white lg:text-base">
-              Available on iOS &amp; Android
+            {t("availability")}
             </span>
           </div>
 

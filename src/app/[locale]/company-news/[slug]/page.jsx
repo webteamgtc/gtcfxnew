@@ -26,6 +26,7 @@ export default async function CompanyNewsDetailPage({ params }) {
   return (
     <>
       <InnerPageBanner
+        title={text("bannerTitle", "Company News")}
         description={text("bannerDescription", "GTCFX News & Market Updates - Stay Informed, Trade Smarter")}
         backgroundImage="/breadcamp/contact.webp"
         mobileBackgroundImage="/breadcamp/contact-mobile.webp"

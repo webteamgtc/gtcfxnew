@@ -4,7 +4,8 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import clsx from "clsx";
 import Image from "next/image";
-import { useLocaleMessages, usePathTranslation } from "../../LocaleProvider";
+import { useLocale, useLocaleMessages, usePathTranslation } from "../../LocaleProvider";
+import { localeDir } from "@/i18n/config";
 
 // ✅ Bottom ratings row (logos as images)
 const PLATFORM_RATINGS = [
@@ -142,8 +143,10 @@ function ReviewCard({ r }) {
 
 export default function ReviewsSection() {
   const [reviews, setReviews] = useState([]);
+  const locale = useLocale();
   const messages = useLocaleMessages();
   const t = usePathTranslation("common.reviews");
+  const isRtl = localeDir[locale] === "rtl";
   const configuredReviews = useMemo(
     () =>
       Array.isArray(messages?.common?.reviews?.items)
@@ -161,12 +164,18 @@ export default function ReviewsSection() {
     [messages?.common?.reviews?.items]
   );
 
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "center",
-    loop: true,
-    dragFree: true,
-    containScroll: false,
-  });
+  const emblaOptions = useMemo(
+    () => ({
+      align: "center",
+      loop: true,
+      dragFree: true,
+      containScroll: false,
+      direction: isRtl ? "rtl" : "ltr",
+    }),
+    [isRtl]
+  );
+
+  const [emblaRef, emblaApi] = useEmblaCarousel(emblaOptions);
 
   // ✅ randomize on load
   useEffect(() => {
@@ -187,7 +196,8 @@ export default function ReviewsSection() {
     const start = () => {
       stop();
       intervalRef.current = setInterval(() => {
-        emblaApi.scrollNext();
+        if (isRtl) emblaApi.scrollPrev();
+        else emblaApi.scrollNext();
       }, 2200);
     };
 
@@ -198,7 +208,7 @@ export default function ReviewsSection() {
     return () => {
       stop();
     };
-  }, [emblaApi]);
+  }, [emblaApi, isRtl]);
 
   const totalReviews = Number(messages?.common?.reviews?.totalReviews) || 45;
   const summaryTemplate = t(
@@ -228,7 +238,7 @@ export default function ReviewsSection() {
 
       {/* ✅ Full width carousel (end-to-end) */}
       <div className="mt-10 w-full">
-        <div ref={emblaRef} className="overflow-hidden">
+        <div ref={emblaRef} dir={isRtl ? "rtl" : "ltr"} className="overflow-hidden">
           <div className="flex gap-6 px-6 sm:px-10 lg:px-16">
             {reviews.map((r) => (
               <div key={r.id} className="shrink-0">

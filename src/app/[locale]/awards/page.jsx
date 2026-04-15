@@ -19,12 +19,16 @@ export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
+  const awardsSection = about["awards-section"] || {};
 
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. "
+        title={awardsSection?.bannerTitle || "Awards"}
+        description={
+          awardsSection?.bannerDescription ||
+          "Trading with us offers the optimal avenue for investing your money wisely and profitably."
+        }
         backgroundImage="/breadcamp/awardpc.webp"
         mobileBackgroundImage="/breadcamp/award-mob.webp"
       />

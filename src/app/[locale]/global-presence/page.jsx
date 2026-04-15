@@ -20,11 +20,17 @@ export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const about = dict.about || {};
+  const globalPresenceMap = about["global-presence-map"] || {};
 
   return (
     <>
       <InnerPageBanner
-        description="At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
+        title={globalPresenceMap.bannerTitle || "Global Presence"}
+        description={
+          globalPresenceMap.bannerDescription ||
+          dict?.metadata?.globalPresence?.des ||
+          "At GTCFX, we're a global team with a presence in over 22 destinations worldwide."
+        }
         backgroundImage="/breadcamp/globel.webp"
         mobileBackgroundImage="/breadcamp/globel-mobile.webp"
       />

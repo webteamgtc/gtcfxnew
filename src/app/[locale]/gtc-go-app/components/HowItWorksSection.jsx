@@ -1,13 +1,17 @@
 "use client";
 
 import React from "react";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 const HowItWorksSection = () => {
+  const t = usePathTranslation("gtcGoApp.howItWorks");
+
   const steps = [
     {
-      title: "Download the App",
-      description:
-        "Get the GTC GO & GTC VIP app from the App Store or Google Play and log in with your GTCFX account.",
+      title: t("steps.step1.title"),
+      description: t(
+        "steps.step1.description"
+      ),
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -22,9 +26,10 @@ const HowItWorksSection = () => {
       ),
     },
     {
-      title: "Set up your profile",
-      description:
-        "Set up your profile and link your trading accounts.Customize preferences in seconds.",
+      title: t("steps.step2.title"),
+      description: t(
+        "steps.step2.description"
+      ),
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -39,9 +44,10 @@ const HowItWorksSection = () => {
       ),
     },
     {
-      title: "Enjoy the features",
-      description:
-        "Track trades, monitor rewards, follow signals, and manage everything from one powerful mobile app.",
+      title: t("steps.step3.title"),
+      description: t(
+        "steps.step3.description"
+      ),
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -63,10 +69,10 @@ const HowItWorksSection = () => {
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-8">
           <h2 className="text-2xl md:text-3xl font-semibold bg-gradient-to-r from-[#293794] via-[#000021] to-[#000021] text-transparent bg-clip-text">
-            How It Works
+            {t("title")}
           </h2>
           <p className="mt-3 text">
-            Start using the GTC GO platform and GTC VIP loyalty program in just a few simple steps.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -101,7 +107,7 @@ const HowItWorksSection = () => {
             }}
             className="mt-6 px-8 py-3 rounded-xl bg-gradient-to-r from-[#293794] to-[#000021] text-white font-semibold shadow-lg shadow-blue-200 hover:opacity-90 transition"
           >
-            Download App Now
+            {t("cta")}
           </button>
         </div>
       </div>

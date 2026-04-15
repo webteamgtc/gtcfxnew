@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
 import SingleBlogSection from "../../components/blogs/SingleblogSection";
 import BlogItem from "../../components/common/BlogItem";
+import { useLocale } from "../../LocaleProvider";
 
 const DEFAULT_STRAPI_API_BASE = "https://api.gtcfx.com/api";
 
@@ -34,27 +35,26 @@ function getImageUrl(post) {
   return `${base}${media}`;
 }
 
-function getCategoryName(post) {
+function getCategoryName(post, fallbackCategory = "Company News") {
   const attrs = post?.attributes ?? post ?? {};
   return (
     attrs?.category?.data?.attributes?.name ||
     attrs?.category?.name ||
-    "Company News"
+    fallbackCategory
   );
 }
 
-function getExcerpt(post) {
+function getExcerpt(post, fallbackExcerpt = "Read the latest updates and announcements from our team.") {
   const attrs = post?.attributes ?? post ?? {};
   return (
     attrs?.descreption || attrs?.short_descreption ||
     attrs?.shortDescription ||
-
-    "Read the latest updates and announcements from our team."
+    fallbackExcerpt
   );
 }
 
-function formatDate(isoString) {
-  if (!isoString) return "Mar 26, 2026";
+function formatDate(isoString, fallbackDate = "Mar 26, 2026") {
+  if (!isoString) return fallbackDate;
   try {
     return new Date(isoString).toLocaleDateString("en-US", {
       month: "short",
@@ -62,7 +62,7 @@ function formatDate(isoString) {
       year: "numeric",
     });
   } catch {
-    return "Mar 26, 2026";
+    return fallbackDate;
   }
 }
 
@@ -119,9 +119,6 @@ async function fetchBlogsBatch(locale, start, limit) {
   };
 
   let response = await runAttempt(baseLocale);
-  if ((!response || !response?.data?.length) && baseLocale !== "en") {
-    response = await runAttempt("en");
-  }
   return response || { data: [], meta: { pagination: { total: 0 } }, usedLocale: baseLocale };
 }
 
@@ -137,7 +134,8 @@ export default function CompanyNewsFeed({
   const [total, setTotal] = useState(initialTotal);
   const [start, setStart] = useState(initialPosts.length);
   const [loadingMore, setLoadingMore] = useState(false);
-  const [effectiveLocale] = useState(initialLocale || "en");
+  const contextLocale = useLocale();
+  const effectiveLocale = contextLocale || routeLocale || initialLocale || "en";
 
   const hasMore = start < total;
   const featured = posts[0];
@@ -175,7 +173,7 @@ export default function CompanyNewsFeed({
 
   return (
     <>
-      <SingleBlogSection posts={featured} />
+      <SingleBlogSection posts={featured} uiText={uiText} />
 
       <InfiniteScroll
         dataLength={posts.length}
@@ -183,7 +181,9 @@ export default function CompanyNewsFeed({
         hasMore={hasMore}
         scrollThreshold={0.75}
         loader={
-          <p className="TextSmall pt-6 text-center text-[#6B7280]">Loading...</p>
+          <p className="TextSmall pt-6 text-center text-[#6B7280]">
+            {uiText.loading || "Loading..."}
+          </p>
         }
         endMessage={
           <p className="TextSmall pt-6 text-center text-[#6B7280]">
@@ -199,15 +199,21 @@ export default function CompanyNewsFeed({
               return (
                 <BlogItem
                   key={id}
-                  category={getCategoryName(post)}
-                  title={attrs?.title || "Untitled Article"}
+                  category={getCategoryName(post, uiText.defaultCategory || "Company News")}
+                  title={attrs?.title || uiText.untitled || "Untitled Article"}
                   readTime={attrs?.readTime}
-                  excerpt={getExcerpt(post)}
-                  date={formatDate(attrs?.publishedAt || attrs?.createdAt)}
+                  excerpt={getExcerpt(
+                    post,
+                    uiText.defaultExcerpt || "Read the latest updates and announcements from our team."
+                  )}
+                  date={formatDate(
+                    attrs?.publishedAt || attrs?.createdAt,
+                    uiText.defaultDate || "Mar 26, 2026"
+                  )}
                   dateIso={attrs?.publishedAt || attrs?.createdAt || "2026-03-26"}
                   href={`/${routeLocale}/company-news/${attrs?.slug || attrs?.documentId || post?.slug || ""}`}
                   imageSrc={getImageUrl(post)}
-                  imageAlt={attrs?.title || "news image"}
+                  imageAlt={attrs?.title || uiText.imageAlt || "news image"}
                 />
               );
             })}
