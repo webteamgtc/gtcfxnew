@@ -120,46 +120,14 @@
 "use client";
 
 import { useState } from "react";
-
-const speakers = [
-  {
-    name: "Jameel Ahmad",
-    role: "Chief Analyst",
-    img: "/event/Frame2.png",
-    accent: "from-[#1B2A86] to-[#0B1656]",
-    hasShareStack: true,
-  },
-  {
-    name: "Mohamed Daher Ali Ahmed",
-    role: "Sr. VP of Liquidity & Partnership",
-    img: "/event/Frame4.png",
-    accent: "from-[#1B2A86] to-[#0B1656]",
-    hasShareStack: true,
-
-  },
-  {
-    name: "Ahmed Fouad",
-    role: "Head of Institutional Sales",
-    img: "/event/Frame3.png",
-    accent: "from-[#1B2A86] to-[#0B1656]",
-    hasShareStack: true,
-  },
-];
-
-function ShareIcon({ className = "" }) {
-  return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
-      <path d="M18.585 9.5481L10.3273 14.6931C10.4731 15.1679 10.5186 15.6521 10.4638 16.1444L18.1206 19.0179C18.6491 18.2876 19.3281 17.8221 20.1576 17.6214C20.986 17.4208 21.8026 17.5304 22.6053 17.9493C23.4068 18.3693 23.9586 18.9759 24.2596 19.7693C24.5606 20.5626 24.556 21.3839 24.2456 22.2333C23.9353 23.0826 23.4021 23.7068 22.6461 24.1081C21.8901 24.5094 21.0735 24.6051 20.1985 24.3951C19.3235 24.1851 18.6351 23.7348 18.1335 23.0418C17.6341 22.3476 17.4288 21.5449 17.5198 20.6326L9.86296 17.7591C9.45616 18.3559 8.87277 18.8103 8.19462 19.0588C7.52307 19.3042 6.79143 19.3328 6.10279 19.1404C5.40993 18.9651 4.78885 18.5783 4.32578 18.0339C3.8627 17.4895 3.5806 16.8145 3.51862 16.1024C3.43954 15.392 3.58304 14.6745 3.92929 14.0491C4.27288 13.4218 4.81026 12.9224 5.46112 12.6258C6.10111 12.3136 6.81983 12.1998 7.52496 12.2991C8.23037 12.3995 8.88608 12.72 9.39862 13.2149L17.6563 8.06994C17.4008 7.19494 17.4463 6.36427 17.7928 5.5791C18.1393 4.79394 18.7226 4.21527 19.5428 3.84077C20.363 3.46744 21.1785 3.40444 21.9905 3.64944C22.8025 3.8956 23.4488 4.40194 23.9318 5.16844C24.4148 5.93494 24.5886 6.7376 24.4521 7.57644C24.3156 8.41644 23.8956 9.12344 23.1933 9.6986C22.491 10.2726 21.7116 10.5421 20.8553 10.5059C19.999 10.4686 19.243 10.1489 18.5861 9.54694V9.5481H18.585Z" fill="white" />
-    </svg>
-  );
-}
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 function Dot() {
   return <span className="inline-block h-2 w-2 rounded-xl bg-[#293B93]" />;
 }
 
 function SpeakerCard({ s }) {
-  const [showShareStack, setShowShareStack] = useState(false);
+  const [showShareStack] = useState(false);
 
   return (
     <div className="relative bg-[#fff] p-3 border border-gray-200">
@@ -210,6 +178,30 @@ function SpeakerCard({ s }) {
 }
 
 export default function SpeakersSection() {
+const t = usePathTranslation("eventPage");
+  const speakers = [
+    {
+      name: t("speakers.cards.one.name"),
+      role: t("speakers.cards.one.role"),
+      img: "/event/Frame2.png",
+      accent: "from-[#1B2A86] to-[#0B1656]",
+      hasShareStack: true,
+    },
+    {
+      name: t("speakers.cards.two.name"),
+      role: t("speakers.cards.two.role"),
+      img: "/event/Frame4.png",
+      accent: "from-[#1B2A86] to-[#0B1656]",
+      hasShareStack: true,
+    },
+    {
+      name: t("speakers.cards.three.name"),
+      role: t("speakers.cards.three.role"),
+      img: "/event/Frame3.png",
+      accent: "from-[#1B2A86] to-[#0B1656]",
+      hasShareStack: true,
+    },
+  ];
   return (
     <section className="w-full bg-gray-100 md:py-[56px] py-10">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
@@ -217,15 +209,17 @@ export default function SpeakersSection() {
         <div className="text-center">
           <div className="flex items-center justify-center gap-[8px] md:text-[22px] text-[18px] text-primary font-semibold">
             <Dot />
-            <span>Our Speakers</span>
+            <span>{t("speakers.label")}</span>
           </div>
 
             <h2 className="HeadingH3 py-2 max-w-xl mx-auto">
-            Our Expert Voices <span className="text-secondary">Shaping the </span>Global Markets
+            {t("speakers.titleStart")}{" "}
+            <span className="text-secondary">{t("speakers.titleHighlight")}</span>{" "}
+            {t("speakers.titleEnd")}
           </h2>
 
           <p className="mx-auto mt-[12px] md:text-[16px] text-[14px] max-w-3xl font-normal leading-[1.5] text-[#515151]">
-          Every GTCFX event is led by professionals who work at the heart of the markets. Not commentators. Not theorists. But people who understand price, liquidity, risk, and real trading decisions.
+            {t("speakers.description")}
           </p>
         </div>
 
@@ -241,8 +235,7 @@ export default function SpeakersSection() {
   
 
           <p className="md:text-[16px] text-[14px] font-normal">
-            Join our speaker and help weave innovation, quality, and success
-            together worldwide.
+            {t("speakers.bottomNote")}
           </p>
         </div>
       </div>

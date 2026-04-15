@@ -14,14 +14,7 @@ import { toast } from "react-toastify";
 import Select from "react-select";
 import { usePathname, useRouter, useSearchParams, useParams } from "next/navigation";
 import enDefault from "@/messages/en.json";
-
-const readPath = (obj, path) =>
-    path.split(".").reduce(
-        (acc, part) => (acc != null && acc[part] != null ? acc[part] : undefined),
-        obj
-    );
-
-/** @typedef {import("react").CSSProperties} CSSProperties */
+import { usePathTranslation } from "../../LocaleProvider";
 
 /** Default visual tokens — override via `appearance` prop */
 export const DEFAULT_LEAD_FORM_APPEARANCE = {
@@ -225,16 +218,7 @@ export default function CommonLeadForm({
 
     const formMessages = messagesProp?.home?.form ?? messagesProp?.form ?? {};
     const fallbackForm = enDefault?.home?.form ?? {};
-    const t = useCallback(
-        (key, fallback = "") => {
-            const val = readPath(formMessages, key);
-            if (typeof val === "string" && val.length) return val;
-            const fromEn = readPath(fallbackForm, key);
-            if (typeof fromEn === "string" && fromEn.length) return fromEn;
-            return fallback;
-        },
-        [formMessages]
-    );
+   const t = usePathTranslation("home.form");
 
     const offers = useMemo(
         () => [

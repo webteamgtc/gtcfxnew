@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 function cn(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -83,7 +84,7 @@ function mapStrapiEventToScheduleItem(event) {
 export default function EventScheduleSection({ eventsData, events: eventsFromStrapi }) {
   const strapiEvents = Array.isArray(eventsFromStrapi) ? eventsFromStrapi : eventsData?.data ?? [];
   const hasStrapiData = Array.isArray(strapiEvents) && strapiEvents.length > 0;
-
+  const t = usePathTranslation("eventPage");
   const allMappedItems = useMemo(() => {
     if (!hasStrapiData) return [];
     return strapiEvents.map(mapStrapiEventToScheduleItem);
@@ -164,13 +165,13 @@ export default function EventScheduleSection({ eventsData, events: eventsFromStr
           <div className="flex items-center justify-center gap-2 text-center text-white">
             <span className="h-2 w-2 rounded-xl bg-white" />
             <p className="flex items-center justify-center gap-[8px] md:text-[22px] text-[18px] text-secondary font-semibold ">
-              Our Event Schedule
+              {t("eventSchedule.label")}
             </p>
           </div>
 
           <h2 className="mt-4 text-center md:text-[38px] text-[24px] font-extrabold md:leading-[1.2] leading-[1.3]  text-white capitalize">
-            Explore the complete schedule <br />
-            for our event
+            {t("eventSchedule.title")} <br />
+            {t("eventSchedule.description")}
           </h2>
 
           {/* Year pills */}
@@ -200,7 +201,7 @@ export default function EventScheduleSection({ eventsData, events: eventsFromStr
           <div className="md:mt-14 mt-10">
             {items.length === 0 ? (
               <div className="rounded-[14px] bg-white/6 p-6 text-center text-sm text-white/70">
-                No schedule added for {year} yet.
+                {t("eventSchedule.noSchedule", { year })}
               </div>
             ) : (
               <div className="space-y-0">

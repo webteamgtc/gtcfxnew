@@ -14,10 +14,12 @@ import OtpInput from "react-otp-input";
 import useCountriesDetails from "@/context/useCountriesDetails";
 import { useLocationDetail } from "@/context/useLocationDetail";
 import { toast } from "react-toastify";
+import { localeDir } from "@/i18n/config";
 
 const MainIBForm = ({ messages = {} }) => {
     const params = useParams();
     const locale = params?.locale || "en";
+    const isRTL = localeDir[locale] === "rtl";
 
     // Dictionary-based translation helper (matches how other modules work)
     const t = (key) => {
@@ -56,6 +58,10 @@ const MainIBForm = ({ messages = {} }) => {
     const [state, setState] = useState({
         verifed: false,
     });
+
+    const iconPositionClass = isRTL ? "right-3" : "left-3";
+    const inputPaddingClass = isRTL ? "pr-9 pl-4" : "pl-9 pr-4";
+    const actionButtonSideClass = isRTL ? "left-3" : "right-3";
 
     const sendPhoneVerificationCode = async () => {
         if (!formik?.values?.phone) {
@@ -315,10 +321,10 @@ const MainIBForm = ({ messages = {} }) => {
                         {/* Full Name & Email */}
                         <div className="grid grid-cols-1 gap-4 mb-3">
                             <div className="relative">
-                                <RiUserLocationLine className="absolute top-4 left-3 text-gray-400 h-5 w-5" />
+                                <RiUserLocationLine className={`absolute top-4 ${iconPositionClass} text-gray-400 h-5 w-5`} />
                                 <input
                                     type="text"
-                                    className={`w-full px-4 bg-white py-3 pl-9 border ${formik.touched.nickname && formik.errors.nickname ? "border-red-500" : "border-gray-300"} rounded-lg focus:outline-none`}
+                                    className={`w-full bg-white py-3 ${inputPaddingClass} border ${formik.touched.nickname && formik.errors.nickname ? "border-red-500" : "border-gray-300"} rounded-lg focus:outline-none`}
                                     placeholder={t("firstName")}
                                     {...formik.getFieldProps("nickname")}
                                 />
@@ -329,10 +335,10 @@ const MainIBForm = ({ messages = {} }) => {
                                 )}
                             </div>
                             <div className="relative">
-                                <CiMail className="absolute top-4 left-3 text-gray-400 h-5 w-5" />
+                                <CiMail className={`absolute top-4 ${iconPositionClass} text-gray-400 h-5 w-5`} />
                                 <input
                                     type="email"
-                                    className={`w-full bg-white px-4 py-3 pl-9 border ${formik.touched.email && formik.errors.email ? "border-red-500" : "border-gray-300"} rounded-lg focus:outline-none`}
+                                    className={`w-full bg-white py-3 ${inputPaddingClass} border ${formik.touched.email && formik.errors.email ? "border-red-500" : "border-gray-300"} rounded-lg focus:outline-none`}
                                     placeholder={t("email")}
                                     {...formik.getFieldProps("email")}
                                 />
@@ -363,7 +369,7 @@ const MainIBForm = ({ messages = {} }) => {
                                         !formik.values.phone ||
                                         !isValidPhoneNumber(formik.values.phone)
                                     }
-                                    className="absolute top-2.5 bg-primary right-3 rounded-md cursor-pointer text-white py-1.5 px-2 text-xs disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className={`absolute top-2.5 bg-primary ${actionButtonSideClass} rounded-md cursor-pointer text-white py-1.5 px-2 text-xs disabled:opacity-50 disabled:cursor-not-allowed`}
                                 >
                                     {phoneOtpLoading ? t("sending") : t("getCode")}
                                 </button>
@@ -436,9 +442,9 @@ const MainIBForm = ({ messages = {} }) => {
                                 </div>
                             )}
                             <div className="relative">
-                                <MdManageAccounts className="absolute top-4 left-3 text-gray-400 h-5 w-5" />
+                                <MdManageAccounts className={`absolute top-4 ${iconPositionClass} text-gray-400 h-5 w-5`} />
                                 <select
-                                    className={`w-full bg-white px-4 py-3 pl-9 border ${formik.touched.platform && formik.errors.platform ? "border-red-500" : "border-gray-300"} rounded-lg text-gray-700`}
+                                    className={`w-full bg-white py-3 ${inputPaddingClass} border ${formik.touched.platform && formik.errors.platform ? "border-red-500" : "border-gray-300"} rounded-lg text-gray-700`}
                                     {...formik.getFieldProps("platform")}
                                 >
                                     <option value="">{t("accountType")}</option>
@@ -485,9 +491,9 @@ const MainIBForm = ({ messages = {} }) => {
             </div> */}
 
                         <div className="relative mb-4">
-                            <GiWorld className="absolute top-4 left-3 text-gray-400 h-5 w-5" />
+                            <GiWorld className={`absolute top-4 ${iconPositionClass} text-gray-400 h-5 w-5`} />
                             <select
-                                className={`w-full bg-white px-4 py-3 pl-9 border ${formik.touched.country && formik.errors.country ? "border-red-500" : "border-gray-300"} rounded-lg text-gray-700`}
+                                className={`w-full bg-white py-3 ${inputPaddingClass} border ${formik.touched.country && formik.errors.country ? "border-red-500" : "border-gray-300"} rounded-lg text-gray-700`}
                                 {...formik.getFieldProps("country")}
                             >
                                 <option value="">{t("accountType")}</option>

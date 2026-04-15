@@ -2,8 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
-const tutorialVideos = [
+const defaultTutorialVideos = [
   {
     id: 1,
     title: "How to Open an Account in GTCFX Portal",
@@ -174,7 +175,7 @@ function TutorialCard({ video, onOpen }) {
   );
 }
 
-function VideoModal({ video, onClose }) {
+function VideoModal({ video, onClose, closeLabel, invalidYoutubeLabel }) {
   const embedUrl = useMemo(() => getYoutubeEmbedUrl(video?.youtubeUrl), [video]);
 
   useEffect(() => {
@@ -219,7 +220,7 @@ function VideoModal({ video, onClose }) {
             type="button"
             onClick={onClose}
             className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-[#E5E7EB] bg-white text-slate-700 transition hover:bg-[#F8FAFC]"
-            aria-label="Close video popup"
+            aria-label={closeLabel}
           >
             <CloseIcon />
           </button>
@@ -238,7 +239,7 @@ function VideoModal({ video, onClose }) {
               />
             ) : (
               <div className="flex h-full items-center justify-center px-6 text-center text-white">
-                Invalid YouTube link. Please check the video URL.
+                {invalidYoutubeLabel}
               </div>
             )}
           </div>
@@ -256,7 +257,19 @@ function VideoModal({ video, onClose }) {
 }
 
 export default function TutorialVideosPageSection() {
+  const t = usePathTranslation("tutorialPage");
   const [activeVideo, setActiveVideo] = useState(null);
+  const tutorialVideos = defaultTutorialVideos.map((item, index) => {
+    const key = ["one", "two", "three", "four", "five", "six", "seven"][index];
+    return {
+      ...item,
+        title: t(`videos.${key}.title`),
+      description: t(`videos.${key}.description`),
+      category: t(`videos.${key}.category`),
+      duration: t(`videos.${key}.duration`),
+      youtubeUrl: t(`videos.${key}.youtubeUrl`),
+    };
+  });
 
   return (
     <>
@@ -267,16 +280,18 @@ export default function TutorialVideosPageSection() {
         <div className="container relative z-10">
           <div className="mx-auto max-w-4xl text-center">
             <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-              Video Tutorials
+              {t("eyebrow")}
             </span>
 
             <h2 className="HeadingH3 mt-5">
-              GTCFX <span className="text-[#b68756]">Tutorial Videos</span>
+              {t("titleStart")}{" "}
+              <span className="text-[#b68756]">
+                {t("titleHighlight")}
+              </span>
             </h2>
 
             <p className="mt-5 text-[15px] leading-7 text-[#4B5563] md:text-lg md:leading-8">
-              Learn how to open your account, verify your profile, deposit funds,
-              and manage your trading journey with clear step-by-step video guides.
+              {t("description")}
             </p>
           </div>
 
@@ -295,6 +310,8 @@ export default function TutorialVideosPageSection() {
       <VideoModal
         video={activeVideo}
         onClose={() => setActiveVideo(null)}
+        closeLabel={t("closeVideoPopup")}
+        invalidYoutubeLabel={t("invalidYoutubeUrl")}
       />
     </>
   );

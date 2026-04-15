@@ -1,24 +1,27 @@
-const steps = [
-  {
-    title: "Login",
-    desc: "Access your client portal securely.",
-  },
-  {
-    title: "Deposit",
-    desc: "Click on wallet or deposit section.",
-  },
-  {
-    title: "Select Method",
-    desc: "Choose your preferred payment option.",
-  },
-];
+"use client";
+import { usePathTranslation } from "../../LocaleProvider";
 
 export function FundSteps() {
+  const t = usePathTranslation("depositPage.steps");
+  const steps = [
+    {
+      title: t("items.one.title"),
+      desc: t("items.one.desc"),
+    },
+    {
+      title: t("items.two.title"),
+      desc: t("items.two.desc"),
+    },
+    {
+      title: t("items.three.title"),
+      desc: t("items.three.desc"),
+    },
+  ];
   return (
     <section className="bg-primary text-white py-10 md:py-16">
       <div className="container text-center">
         <h2 className="HeadingH3 text-white">
-          How to Fund Your Account
+          {t("title")}
         </h2>
 
         <div className="mt-12 grid gap-8 md:grid-cols-3">

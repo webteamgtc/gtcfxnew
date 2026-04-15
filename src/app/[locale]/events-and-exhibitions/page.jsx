@@ -56,13 +56,14 @@ export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const eventsData = await getEventsData(locale);
+  const eventPage = dict?.eventPage || {};
 
   return (
     <>
-      <EventHero messages={dict} />
-      <KeyBenefitsSection />
+      <EventHero messages={eventPage} locale={locale} />
+      <KeyBenefitsSection messages={eventPage} />
       <EventScheduleSection eventsData={eventsData ?? { data: [] }} events={eventsData?.data ?? []} />
-      <SpeakersSection />
+      <SpeakersSection messages={eventPage} />
       <ReviewsSection />
       {/* other sections */}
     </>

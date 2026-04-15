@@ -1,34 +1,38 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import CompanyIntro from "../components/about/CompanyIntro";
-import AwardsMarquee from "../components/common/home/AwardsMarquee";
-import Counter from "../components/common/home/Counter";
-import ReviewsSection from "../components/common/ReviewsSection";
 import TutorialVideosPageSection from "./components/TutorialVideosPageSection";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { translationTextByPath } from "@/i18n/tranlsationText";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+  return getPageMetadata({
+    locale,
+    key: "tutorialVideo",
+    dict,
+    path: "tutorial-videos",
+    fallbackTitle: "Tutorial Videos - GTC FX",
+    fallbackDescription:
+      "Browse our easy-to-follow video guides and get the help you need to trade with more confidence.",
+  });
 }
 
-export default async function AboutPage({ params }) {
+export default async function TutorialVideosPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const tutorialPage = dict?.tutorialPage || {};
+
 
   return (
     <>
       <InnerPageBanner
-        description="Browse our easy-to-follow video guides and get the help you need to trade with more confidence."
+        title={tutorialPage?.bannerTitle}
+        description={tutorialPage?.bannerDescription}
         backgroundImage="/breadcamp/tutorial.webp"
         mobileBackgroundImage="/breadcamp/tutorial-mobile.webp"
       />
-      <TutorialVideosPageSection />
+        <TutorialVideosPageSection />
 
       {/* other sections */}
     </>
