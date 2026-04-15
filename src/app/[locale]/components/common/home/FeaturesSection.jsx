@@ -1,4 +1,13 @@
 "use client";
+import {
+  RiExchangeDollarLine,
+  RiBarChartBoxLine,
+  RiLineChartLine,
+  RiFlashlightLine,
+  RiSettings3Line,
+  RiCustomerService2Line,
+} from "react-icons/ri";
+
 import MobilePeekCarousel from "../MobilePeekCarousel";
 import PrimaryButton from "../PrimaryButton";
 
@@ -8,30 +17,36 @@ function FeatureCard({ item, index, mobile = false }) {
     : [
         item.highlight
           ? "bg-[#eef2ff] border-[#c7d2fe]"
-          : "bg-[#F1F2F4] border-[#ececec] bg-op",
+          : "bg-[#F1F2F4] border-[#ececec]",
         "hover:bg-[#eef2ff] hover:border-[#c7d2fe] hover:shadow-[0_12px_30px_rgba(59,92,255,0.15)] hover:-translate-y-1",
       ].join(" ");
 
+  const Icon = item.icon;
+
   return (
     <div
-      className={`group relative rounded-[14px] md:rounded-[16px] p-6 border transition-all duration-300 ${surface}`}
+      className={`group relative rounded-[14px] md:rounded-[10px] p-8  border transition-all duration-300 ${surface}`}
     >
-      <div className="mb-5 h-[2px] w-[40px] bg-primary transition-all duration-300 group-hover:w-[60px]" />
+      <div className="flex items-center justify-between gap-4">
+        <span className="inline-flex items-center rounded-xl bg-secondary px-3 py-1 text-[10px] text-white transition-all duration-300 md:text-xs group-hover:bg-primary">
+          {item.tag}
+        </span>
 
-      <span className="bg-secondary text-[10px] md:text-xs rounded-xl text-white px-3 h-7 py-1">
-        {item.tag}
-      </span>
+        <div className="text-[#A3A3A3] transition-all duration-300 group-hover:text-secondary group-hover:scale-110">
+          <Icon className="h-5 w-5 md:h-6 md:w-6" />
+        </div>
+      </div>
 
-      <h3 className="mt-4 text-[20px] md:text-[22px] font-semibold text-primary transition-colors duration-300 group-hover:text-[#1e2f99]">
+      <h3 className="mt-5 text-[20px] font-semibold text-primary transition-colors duration-300 group-hover:text-[#1e2f99] md:text-[22px]">
         {item.title}
       </h3>
 
-      <p className="mt-3 text-[14px] md:text-base text-[#4B5563] leading-relaxed">
+      <p className="mt-3 text-[14px] leading-relaxed text-[#4B5563] md:text-base">
         {item.description}
       </p>
 
       {item.highlight && (
-        <span className="absolute top-4 right-4 text-[11px] px-3 py-1 rounded-xl bg-[#3b5cff] text-white transition-transform duration-300 group-hover:scale-105">
+        <span className="absolute right-4 top-4 rounded-xl bg-[#3b5cff] px-3 py-1 text-[11px] text-white transition-transform duration-300 group-hover:scale-105">
           New Offering
         </span>
       )}
@@ -46,20 +61,24 @@ export default function FeaturesSection() {
       title: "Tightest Spread",
       description:
         "Offering the industry's tightest Spread, from 0 pips on FX & 5 cents on Gold",
+      icon: RiExchangeDollarLine,
       badge: false,
     },
     {
       tag: "Leverage",
       title: "Best Leverage",
       description:
-        "Providing the highest leverage, up to 1:2000, with minimal margin requirements starting from 0.1%",
+        "Trade with leverage up to 1:2000 and low margin requirements from 0.1%.",
+      icon: RiBarChartBoxLine,
       badge: false,
+      highlight: false,
     },
     {
       tag: "Instrument",
       title: "Trading Instrument",
       description:
         "Access to over 27,000 instruments across seven trading markets",
+      icon: RiLineChartLine,
       badge: false,
     },
     {
@@ -67,6 +86,7 @@ export default function FeaturesSection() {
       title: "Ultra-fast Execution",
       description:
         "Trade with top-tier liquidity for fast, secure execution in just 10ms.",
+      icon: RiFlashlightLine,
       badge: false,
     },
     {
@@ -74,19 +94,21 @@ export default function FeaturesSection() {
       title: "Dynamic Leverage",
       description:
         "Dynamic leverage at GTCFX automatically adjusts based on your trading positions.",
+      icon: RiSettings3Line,
     },
     {
       tag: "Client Support",
       title: "24/7 Global Support",
       description:
         "24/7 multilingual support for traders worldwide, whenever you need it.",
+      icon: RiCustomerService2Line,
     },
   ];
 
   return (
-    <section className="py-10 md:py-14 bg-[#fff]">
+    <section className="bg-[#fff] py-10 md:py-14">
       <div className="container">
-        <div className="text-center flex flex-col items-center gap-5">
+        <div className="flex flex-col items-center gap-5 text-center">
           <h2 className="HeadingH2 text-primary">
             Invest with the World's <br className="hidden md:block" />
             <span className="text-secondary">Premier Online Trading</span> Platform
@@ -98,7 +120,7 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="mt-6 hidden md:grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-6 hidden gap-6 md:grid md:grid-cols-2 xl:grid-cols-3">
           {features.map((item, index) => (
             <FeatureCard key={index} item={item} index={index} />
           ))}
@@ -113,10 +135,10 @@ export default function FeaturesSection() {
             )}
           />
         </div>
-<div className="flex justify-center mt-5 md:mt-8"><PrimaryButton href="/register">
-  Open Live Account
-</PrimaryButton></div>
-        
+
+        <div className="mt-5 flex justify-center md:mt-8">
+          <PrimaryButton href="/register">Open Live Account</PrimaryButton>
+        </div>
       </div>
     </section>
   );
