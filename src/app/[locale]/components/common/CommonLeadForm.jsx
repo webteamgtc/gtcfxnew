@@ -14,14 +14,8 @@ import { toast } from "react-toastify";
 import Select from "react-select";
 import { usePathname, useRouter, useSearchParams, useParams } from "next/navigation";
 import enDefault from "@/messages/en.json";
-
-const readPath = (obj, path) =>
-    path.split(".").reduce(
-        (acc, part) => (acc != null && acc[part] != null ? acc[part] : undefined),
-        obj
-    );
-
-/** @typedef {import("react").CSSProperties} CSSProperties */
+import { usePathTranslation } from "../../LocaleProvider";
+import { localeDir } from "@/i18n/config";
 
 /** Default visual tokens — override via `appearance` prop */
 export const DEFAULT_LEAD_FORM_APPEARANCE = {
@@ -217,6 +211,7 @@ export default function CommonLeadForm({
     const router = useRouter();
     const routeParams = useParams();
     const locale = routeParams?.locale ?? "en";
+    const isRTL = localeDir[locale] === "rtl";
 
     const appearance = useMemo(() => mergeAppearance(appearanceProp), [appearanceProp]);
     const endpoints = useMemo(() => mergeEndpoints(endpointsProp), [endpointsProp]);
@@ -225,16 +220,7 @@ export default function CommonLeadForm({
 
     const formMessages = messagesProp?.home?.form ?? messagesProp?.form ?? {};
     const fallbackForm = enDefault?.home?.form ?? {};
-    const t = useCallback(
-        (key, fallback = "") => {
-            const val = readPath(formMessages, key);
-            if (typeof val === "string" && val.length) return val;
-            const fromEn = readPath(fallbackForm, key);
-            if (typeof fromEn === "string" && fromEn.length) return fromEn;
-            return fallback;
-        },
-        [formMessages]
-    );
+   const t = usePathTranslation("home.form");
 
     const offers = useMemo(
         () => [
@@ -535,14 +521,17 @@ export default function CommonLeadForm({
       .${phoneStyleId} .phone-input-wrapper .PhoneInput {
         display: flex; align-items: center; width: 100%; height: 100%;
         background: ${bg} !important;
+        direction: ${isRTL ? "rtl" : "ltr"};
       }
       .${phoneStyleId} .phone-input-wrapper .PhoneInputInput {
         border: none !important; outline: none !important;
         background: ${bg} !important; font-size: 14px !important; font-weight: 500 !important;
-        color: ${fg} !important; height: 100% !important; padding: 0 !important; flex: 1; margin-left: 8px;
+        color: ${fg} !important; height: 100% !important; padding: 0 !important; flex: 1;
+        margin-left: ${isRTL ? "0" : "8px"}; margin-right: ${isRTL ? "8px" : "0"};
+        direction: ltr; text-align: ${isRTL ? "right" : "left"};
       }
       .${phoneStyleId} .phone-input-wrapper .PhoneInputInput::placeholder { color: ${ph} !important; }
-      .${phoneStyleId} .PhoneInputCountry { flex-direction: row !important; }
+      .${phoneStyleId} .PhoneInputCountry { flex-direction: ${isRTL ? "row-reverse" : "row"} !important; }
       .${phoneStyleId} .phone-input-wrapper .PhoneInputCountryIcon { width: 20px !important; height: 15px !important; }
       .${phoneStyleId} .phone-input-wrapper .PhoneInputCountrySelect {
         border: none !important; background: ${bg} !important; font-size: 14px !important;
@@ -564,7 +553,7 @@ export default function CommonLeadForm({
             const el = document.getElementById(phoneStyleId);
             if (el) el.remove();
         };
-    }, [appearance.fieldPlaceholder, appearance.fieldText, appearance.phoneWrapperBg, phoneStyleId]);
+    }, [appearance.fieldPlaceholder, appearance.fieldText, appearance.phoneWrapperBg, isRTL, phoneStyleId]);
 
     const inputBase =
         "h-[46px] w-full min-w-0 rounded-[8px] border px-3 text-[14px] font-medium outline-none transition-colors";
@@ -585,7 +574,7 @@ export default function CommonLeadForm({
                 >
                     {!isIb && (
                         <div
-                            className="md:flex hidden pointer-events-none absolute -bottom-10 right-6 h-[460px] md:w-[88%] rounded-xl"
+                            className="md:flex hidden pointer-events-none absolute -bottom-10 right-6 h-[460px] md:w-[88%] rounded-full"
                             style={{ backgroundColor: appearance.decorativeBlob }}
                         />
                     )}
@@ -763,6 +752,7 @@ export default function CommonLeadForm({
 
                             <div
                                 className="phone-input-wrapper flex items-center rounded-[8px] border px-3 min-w-0 w-full"
+                                dir={isRTL ? "rtl" : "ltr"}
                                 style={{
                                     height: 46,
                                     backgroundColor: appearance.phoneWrapperBg,
@@ -778,6 +768,12 @@ export default function CommonLeadForm({
                                     }
                                     value={formik.values.phone}
                                     onChange={(phone) => formik.setFieldValue("phone", phone)}
+                                    dir={isRTL ? "rtl" : "ltr"}
+                                    countrySelectProps={{ dir: isRTL ? "rtl" : "ltr" }}
+                                    numberInputProps={{
+                                        dir: "ltr",
+                                        style: { textAlign: isRTL ? "right" : "left" },
+                                    }}
                                     className="w-full min-w-0"
                                 />
                             </div>

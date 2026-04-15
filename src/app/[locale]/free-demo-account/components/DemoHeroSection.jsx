@@ -3,28 +3,7 @@
 import PrimaryButton from "../../components/common/PrimaryButton";
 import MainIBForm from "../../components/MainIBForm";
 
-const benefits = [
-  {
-    icon: "📊",
-    title: "Real Market Data",
-    desc: "Practice with live market conditions in real-time",
-  },
-  {
-    icon: "🛡️",
-    title: "Zero Risk Trading",
-    desc: "Trade without any financial exposure",
-  },
-  {
-    icon: "⚡",
-    title: "Instant Setup",
-    desc: "Get started within seconds, no delays",
-  },
-  {
-    icon: "💻",
-    title: "MT4 & MT5 Access",
-    desc: "Use industry-leading trading platforms",
-  },
-];
+
 
 function FeatureCard({ item }) {
   return (
@@ -55,6 +34,28 @@ function FeatureCard({ item }) {
 }
 
 export default function DemoHeroSection({ messages }) {
+  const benefits = [
+    {
+      icon: "📊",
+      title: messages?.benefits?.one?.title,
+      desc: messages?.benefits?.one?.desc,
+    },
+    {
+      icon: "🛡️",
+      title: messages?.benefits?.two?.title,
+      desc: messages?.benefits?.two?.desc,
+    },
+    {
+      icon: "⚡",
+      title: messages?.benefits?.three?.title,
+      desc: messages?.benefits?.three?.desc,
+    },
+    {
+      icon: "💻",
+      title: messages?.benefits?.four?.title,
+      desc: messages?.benefits?.four?.desc,
+    },
+  ];
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
       {/* Background */}
@@ -69,15 +70,15 @@ export default function DemoHeroSection({ messages }) {
         {/* Header content */}
         <div className="text-center flex flex-col items-center gap-4">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            Free Demo Account
+            {messages?.eyebrow}
           </span>
 
           <h2 className="HeadingH3 mx-auto max-w-xl ">
-            Trade Smarter, Not Riskier <span className="text-[#b68756]">Open Your Free Demo</span> Account Today
+            {messages?.titleStart} <span className="text-[#b68756]">{messages?.titleHighlight}</span> {messages?.titleEnd}
           </h2>
 
           <p className="Text mx-auto max-w-3xl">
-            Explore GTCFX MT5 and WebTrader platforms in a secure, risk-free environment. Practice trading with real-time market data and sharpen your strategy with zero financial exposur
+            {messages?.description}
           </p>
         </div>
 
@@ -91,7 +92,7 @@ export default function DemoHeroSection({ messages }) {
         {/* CTA */}
         <div className="mt-10 text-center">
           <PrimaryButton href="/register">
-            Open Demo Account
+            {messages?.ctaButton}
           </PrimaryButton>
 
         </div>
@@ -102,13 +103,13 @@ export default function DemoHeroSection({ messages }) {
             {/* Form header */}
             <div className="rounded-2xl bg-gradient-to-r from-[#263788] to-[#101638] px-5 py-4 text-center">
               <h2 className="text-lg font-bold uppercase tracking-[0.03em] text-white md:text-xl">
-                Apply for a Demo Account
+                {messages?.formHeader}
               </h2>
             </div>
 
             {/* Form body */}
             <div className="mt-5">
-              <MainIBForm messages={messages} />
+              <MainIBForm messages={messages?.accountForm} />
               {/* {children ? (
                 children
               ) : (

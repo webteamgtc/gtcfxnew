@@ -23,7 +23,7 @@ export default async function AboutPage({ params }) {
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money wisely and profitably."
+        description={about?.["why-gtc-group"]?.bannerDescription}
         backgroundImage="/breadcamp/whygtc.webp"
         mobileBackgroundImage="/breadcamp/why-mobile.webp"
       />

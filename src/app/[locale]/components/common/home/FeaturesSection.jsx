@@ -10,6 +10,7 @@ import {
 
 import MobilePeekCarousel from "../MobilePeekCarousel";
 import PrimaryButton from "../PrimaryButton";
+import { usePathTranslation } from "../../../LocaleProvider";
 
 function FeatureCard({ item, index, mobile = false }) {
   const surface = mobile
@@ -55,52 +56,47 @@ function FeatureCard({ item, index, mobile = false }) {
 }
 
 export default function FeaturesSection() {
+  const t = usePathTranslation("home.invest");
   const features = [
     {
-      tag: "Spread",
-      title: "Tightest Spread",
-      description:
-        "Offering the industry's tightest Spread, from 0 pips on FX & 5 cents on Gold",
+      tag: t("items.one.tag"),
+      title: t("items.one.title"),
+      description: t("items.one.description"),
       icon: RiExchangeDollarLine,
       badge: false,
     },
     {
-      tag: "Leverage",
-      title: "Best Leverage",
-      description:
-        "Trade with leverage up to 1:2000 and low margin requirements from 0.1%.",
+      tag: t("items.two.tag"),
+      title: t("items.two.title"),
+      description: t("items.two.description"),
       icon: RiBarChartBoxLine,
       badge: false,
       highlight: false,
     },
     {
-      tag: "Instrument",
-      title: "Trading Instrument",
-      description:
-        "Access to over 27,000 instruments across seven trading markets",
+      tag: t("items.three.tag"),
+      title: t("items.three.title"),
+      description: t("items.three.description"),
       icon: RiLineChartLine,
       badge: false,
     },
     {
-      tag: "Execution",
-      title: "Ultra-fast Execution",
-      description:
-        "Trade with top-tier liquidity for fast, secure execution in just 10ms.",
+      tag: t("items.four.tag"),
+      title: t("items.four.title"),
+      description: t("items.four.description"),
       icon: RiFlashlightLine,
       badge: false,
     },
     {
-      tag: "Flexible Trading",
-      title: "Dynamic Leverage",
-      description:
-        "Dynamic leverage at GTCFX automatically adjusts based on your trading positions.",
+      tag: t("items.five.tag"),
+      title: t("items.five.title"),
+      description: t("items.five.description"),
       icon: RiSettings3Line,
     },
     {
-      tag: "Client Support",
-      title: "24/7 Global Support",
-      description:
-        "24/7 multilingual support for traders worldwide, whenever you need it.",
+      tag: t("items.six.tag"),
+      title: t("items.six.title"),
+      description: t("items.six.description"),
       icon: RiCustomerService2Line,
     },
   ];
@@ -110,13 +106,16 @@ export default function FeaturesSection() {
       <div className="container">
         <div className="flex flex-col items-center gap-5 text-center">
           <h2 className="HeadingH2 text-primary">
-            Invest with the World's <br className="hidden md:block" />
-            <span className="text-secondary">Premier Online Trading</span> Platform
+            {t("titleLine1")}{" "}
+            <br className="hidden md:block" />
+            <span className="text-secondary">
+              {t("titleHighlight")}
+            </span>{" "}
+            {t("titleLine2")}
           </h2>
 
           <p className="Text">
-            Trade 27,000 financial products with the most stable platform, our
-            MetaTrader Platform offers favorable spreads.
+            {t("description")}
           </p>
         </div>
 
@@ -135,10 +134,12 @@ export default function FeaturesSection() {
             )}
           />
         </div>
-
-        <div className="mt-5 flex justify-center md:mt-8">
-          <PrimaryButton href="/register">Open Live Account</PrimaryButton>
+        <div className="flex justify-center mt-5 md:mt-8">
+          <PrimaryButton href="/register">
+            {t("cta")}
+          </PrimaryButton>
         </div>
+        
       </div>
     </section>
   );

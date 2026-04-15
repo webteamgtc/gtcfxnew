@@ -4,6 +4,7 @@ import { FundHero } from "./components/FundHero";
 import { FundMethods } from "./components/FundMethods";
 import { FundSteps } from "./components/FundSteps";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { translationTextByPath } from "@/i18n/tranlsationText";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -21,12 +22,22 @@ export async function generateMetadata({ params }) {
 export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const bannerTitle = translationTextByPath(
+    "depositPage.bannerTitle",
+    "Deposit Funds",
+    dict
+  );
+  const bannerDescription = translationTextByPath(
+    "depositPage.bannerDescription",
+    "Fund your account at your own ease and comfort",
+    dict
+  );
 
   return (
     <>
       <InnerPageBanner
-        description="Fund your account at your own ease and comfort"
+        title={bannerTitle}
+        description={bannerDescription}
         backgroundImage="/breadcamp/deposit.webp"
         mobileBackgroundImage="/breadcamp/fund-mobile.webp"
       />

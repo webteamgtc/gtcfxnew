@@ -23,19 +23,18 @@ export async function generateMetadata({ params }) {
 export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
-  const accountForm = dict?.accounts?.accountForm || {};
+  const demoAccount = dict.demoAccount || {};
 
   return (
     <>
       <InnerPageBanner
-        description="Master the Markets with GTCFX Advanced Trading Platforms"
+        description={demoAccount?.bannerDescription}
         backgroundImage="/breadcamp/demo.webp"
         mobileBackgroundImage="/breadcamp/demo-mob.webp"
       />
-      <DemoHeroSection messages={accountForm} />
+      <DemoHeroSection messages={demoAccount} />
       <Counter />
-      <FeaturesSection />
+      <FeaturesSection/>
       <TradingTicker />
       <ReviewsSection />
   

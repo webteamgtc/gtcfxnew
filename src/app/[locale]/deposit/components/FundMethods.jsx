@@ -1,31 +1,36 @@
-const methods = [
-  {
-    title: "Online Payments",
-    desc: "Secure online payment channels based on your region.",
-    icon: "💳",
-  },
-  {
-    title: "Wallet Payments",
-    desc: "Apple Pay, Google Pay, Skrill, Neteller and more.",
-    icon: "👛",
-  },
-  {
-    title: "Bank Transfer",
-    desc: "Reliable wire transfers to our global banking partners.",
-    icon: "🏦",
-  },
-];
+"use client";
+import { usePathTranslation } from "../../LocaleProvider";
 
 export function FundMethods() {
+  const t = usePathTranslation("depositPage.methods");
+  const methods = [
+    {
+      title: t("items.one.title"),
+      desc: t("items.one.desc"),
+      icon: "💳",
+    },
+    {
+      title: t("items.two.title"),
+      desc: t("items.two.desc"),
+      icon: "👛",
+    },
+    {
+      title: t("items.three.title"),
+      desc: t("items.three.desc"),
+      icon: "🏦",
+    },
+  ];
   return (
     <section className="bg-gray-100 border-t border-b border-gray-300 py-10 md:py-16">
       <div className="container text-center">
         <h2 className="HeadingH3">
-          Different <span className="text-[#b68756]">Payment Methods</span> to Fund
+          {t("titleStart")}{" "}
+          <span className="text-[#b68756]">{t("titleHighlight")}</span>{" "}
+          {t("titleEnd")}
         </h2>
 
         <p className="Text mt-5">
-          Choose your preferred funding method and start trading instantly.
+          {t("description")}
         </p>
 
         <div className="mt-10 grid gap-6 md:grid-cols-3">

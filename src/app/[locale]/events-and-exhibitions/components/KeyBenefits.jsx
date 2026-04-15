@@ -1,7 +1,9 @@
-
 "use client";
 
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
+
 export default function KeyBenefitsSection() {
+  const t = usePathTranslation("eventPage");
   return (
     <section className="w-full bg-white py-10 md:py-16">
       <div className="mx-auto max-w-6xl px-4 md:px-6">
@@ -11,20 +13,18 @@ export default function KeyBenefitsSection() {
             {/* Top bullet */}
             <div className="flex items-center justify-center md:justify-start gap-2 md:text-[22px] text-[18px] text-secondary font-semibold">
               <span className="h-2 w-2 rounded-xl bg-[#293B93]" />
-              Key Benefits
+              {t("benefits.label")}
             </div>
 
             <h2 className="HeadingH3 py-2">
-              What Makes a GTCFX Event
+              {t("benefits.titleStart")}
               <br className="hidden md:block" />{" "}
-              Different?
+              {t("benefits.titleEnd")}
             </h2>
 
 
             <p className="Text">
-              Every GTCFX event is designed with intention. Not to impress on
-              the surface but to deliver real value, real conversations, and
-              real industry insight.
+              {t("benefits.description")}
             </p>
 
             {/* Divider */}
@@ -42,12 +42,10 @@ export default function KeyBenefitsSection() {
 
               <div className="flex-1">
                 <h4 className="md:text-[16px] text-[14px] font-extrabold text-[#000]">
-                  Real Market Voices, Not Just Speakers
+                  {t("benefits.item1.title")}
                 </h4>
                 <p className="mt-2 max-w-[520px] md:text-[16px] text-[14px] font-normal leading-[1.5] text-[#8D9099]">
-                  Our sessions are led by professionals who work inside the
-                  markets every day, traders, partners, and industry leaders who
-                  speak from experience, not slides.
+                  {t("benefits.item1.desc")}
                 </p>
               </div>
             </div>
@@ -66,12 +64,10 @@ export default function KeyBenefitsSection() {
 
               <div className="flex-1">
                 <h4 className="md:text-[16px] text-[14px] font-extrabold text-[#000]">
-                  Practical Insight You Can Actually Use
+                  {t("benefits.item2.title")}
                 </h4>
                 <p className="mt-2 max-w-[520px] md:text-[16px] text-[14px] font-normal leading-[1.5] text-[#8D9099]">
-                  From market structure to strategy thinking, discussions focus
-                  on ideas you can take back, reflect on, and apply whether
-                  you're trading, managing teams, or growing a business.
+                  {t("benefits.item2.desc")}
                 </p>
               </div>
             </div>
@@ -107,10 +103,10 @@ export default function KeyBenefitsSection() {
 
                 <div className="leading-tight">
                   <div className=" md:text-[16px] text-[14px] leading-none font-extrabold text-[#000]">
-                    Call Now!
+                    {t("benefits.callTitle")}
                   </div>
                   <div className=" md:text-[16px] text-[14px] mt-1 leading-none text-[#6D6D6D]">
-                  +971 800 667788
+                    {t("benefits.callNumber")}
                   </div>
                 </div>
               </div>

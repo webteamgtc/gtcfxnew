@@ -1,93 +1,5 @@
 "use client";
-
-const mainComparisonRows = [
-  {
-    label: "Minimum Deposit",
-    standard: "No minimum deposit",
-    ecn: "Minimum deposits from $3,000",
-    highlight: true,
-  },
-  {
-    label: "Leverage",
-    standard: "Up to 1:2000 ***",
-    ecn: "Up to 1:500 ***",
-  },
-  {
-    label: "Spreads",
-    standard: "Average spreads 1.0 pips",
-    ecn: "Raw spreads 0.0 pips",
-    highlight: true,
-  },
-  {
-    label: "Commission",
-    standard: "0 Commission Charges",
-    ecn: "Commission $5 / standard lot",
-    highlight: true,
-  },
-  {
-    label: "Execution",
-    standard: "Secure, instant and fast execution",
-    ecn: "Secure, instant and fast execution",
-  },
-  {
-    label: "Bank Access",
-    standard: "Direct access to top tier banks",
-    ecn: "Direct access to top tier banks",
-  },
-  {
-    label: "Markets",
-    standard: "Access to 7 markets with over 27,000 trading instruments",
-    ecn: "Access to 7 markets with over 27,000 trading instruments",
-  },
-  {
-    label: "Trading Restrictions",
-    standard: "No trading restrictions",
-    ecn: "No trading restrictions",
-  },
-  {
-    label: "Price Slippage",
-    standard: "No price slippage*",
-    ecn: "No price slippage*",
-  },
-  {
-    label: "Requotes",
-    standard: "No requotes",
-    ecn: "No requotes",
-  },
-  {
-    label: "Rejections",
-    standard: "No rejections",
-    ecn: "No rejections",
-  },
-  {
-    label: "Trading Platform",
-    standard: "Meta Trader (MT) trading platform",
-    ecn: "Meta Trader (MT) trading platform",
-  },
-  {
-    label: "Advanced Access",
-    standard: "MAM, PAMM, API available",
-    ecn: "MAM, PAMM, API available",
-  },
-  {
-    label: "Protection",
-    standard: "Negative balance protection",
-    ecn: "Negative balance protection",
-  },
-];
-
-const standardExtras = [
-  "Designed for flexible entry with no minimum deposit",
-  "Simple structure with zero commission charges",
-  "Suitable for traders looking for accessible market entry",
-];
-
-const ecnExtras = [
-  "Offering tier 1 liquidity with ECN technology",
-  "Market analysis",
-  "Free advance trading tools and signals",
-  "Dedicated relationship manager",
-];
+import { usePathTranslation } from "../../LocaleProvider";
 
 function CheckIcon() {
   return (
@@ -205,7 +117,14 @@ function BenefitsCard({ title, items, variant = "standard" }) {
   );
 }
 
-function MobileAccountCard({ title, variant, rows, extras }) {
+function MobileAccountCard({
+  title,
+  variant,
+  rows,
+  extras,
+  benefitsTitle,
+  openButtonLabel,
+}) {
   const isECN = variant === "ecn";
 
   return (
@@ -244,7 +163,7 @@ function MobileAccountCard({ title, variant, rows, extras }) {
             isECN ? "text-[#b68756]" : "text-primary"
           }`}
         >
-          {isECN ? "Exclusive ECN Benefits" : "Standard Account Benefits"}
+          {benefitsTitle}
         </h4>
 
         <ul className="mt-4 space-y-3">
@@ -266,7 +185,7 @@ function MobileAccountCard({ title, variant, rows, extras }) {
               : "bg-[#263788] text-white hover:opacity-90"
           }`}
         >
-          Open {title}
+          {openButtonLabel}
         </a>
       </div>
     </div>
@@ -274,38 +193,144 @@ function MobileAccountCard({ title, variant, rows, extras }) {
 }
 
 export default function AccountTypesComparisonPremium() {
+  const t = usePathTranslation("accountType");
+  const mainComparisonRows = [
+    {
+      label: t("comparison.minimumDeposit.label"),
+      standard: t("comparison.minimumDeposit.standard"),
+      ecn: t("comparison.minimumDeposit.ecn"),
+      highlight: true,
+    },
+    {
+      label: t("comparison.leverage.label"),
+      standard: t("comparison.leverage.standard"),
+      ecn: t("comparison.leverage.ecn"),
+    },
+    {
+      label: t("comparison.spreads.label"),
+      standard: t("comparison.spreads.standard"),
+      ecn: t("comparison.spreads.ecn"),
+      highlight: true,
+    },
+    {
+      label: t("comparison.commission.label"),
+      standard: t("comparison.commission.standard"),
+      ecn: t("comparison.commission.ecn"),
+      highlight: true,
+    },
+    {
+      label: t("comparison.execution.label"),
+      standard: t(
+        "comparison.execution.standard"
+      ),
+      ecn: t("comparison.execution.ecn"),
+    },
+    {
+      label: t("comparison.bankAccess.label"),
+      standard: t(
+        "comparison.bankAccess.standard"
+      ),
+      ecn: t("comparison.bankAccess.ecn"),
+    },
+    {
+      label: t("comparison.markets.label"),
+      standard: t(
+        "comparison.markets.standard"
+      ),
+      ecn: t("comparison.markets.ecn"),
+    },
+    {
+      label: t("comparison.tradingRestrictions.label"),
+      standard: t(
+        "comparison.tradingRestrictions.standard"
+      ),
+      ecn: t("comparison.tradingRestrictions.ecn"),
+    },
+    {
+      label: t("comparison.priceSlippage.label"),
+      standard: t("comparison.priceSlippage.standard"),
+      ecn: t("comparison.priceSlippage.ecn"),
+    },
+    {
+      label: t("comparison.requotes.label"),
+      standard: t("comparison.requotes.standard"),
+      ecn: t("comparison.requotes.ecn"),
+    },
+    {
+      label: t("comparison.rejections.label"),
+      standard: t("comparison.rejections.standard"),
+      ecn: t("comparison.rejections.ecn"),
+    },
+    {
+      label: t("comparison.tradingPlatform.label"),
+      standard: t(
+          "comparison.tradingPlatform.standard"
+      ),
+      ecn: t(
+        "comparison.tradingPlatform.ecn" 
+      ),
+    },
+    {
+      label: t("comparison.advancedAccess.label"),
+      standard: t("comparison.advancedAccess.standard"),
+      ecn: t("comparison.advancedAccess.ecn"),
+    },
+    {
+      label: t("comparison.protection.label"),
+      standard: t(
+        "comparison.protection.standard"
+      ),
+      ecn: t("comparison.protection.ecn"),
+    },
+  ];
+
+  const standardExtras = [
+    t("benefits.standard.one"),
+    t("benefits.standard.two"),
+    t("benefits.standard.three"),
+  ];
+
+  const ecnExtras = [
+    t("benefits.ecn.one"),
+    t("benefits.ecn.two"),
+    t("benefits.ecn.three"),
+    t("benefits.ecn.four"),
+  ];
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
       <div className="container relative z-10">
         {/* Intro */}
         <div className="mx-auto max-w-4xl text-center">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            Account Types
+            {t("eyebrow")}
           </span>
 
           <h2 className="HeadingH3 my-5 text-primary">
-            Compare Our <span className="text-[#b68756]">Trading Accounts</span>
+            {t("titleStart")}{" "}
+            <span className="text-[#b68756]">
+              {t("titleHighlight")}
+            </span>
           </h2>
 
           <p className="Text">
-            Unlock the potential for profit by opening a live account and trading
-            our competitive financial products with favorable spreads. Compare
-            our account types and choose the option that best matches your
-            trading style.
+            {t("description")}
           </p>
         </div>
 
         {/* Top cards */}
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
           <AccountTopCard
-            title="Standard Account"
-            subtitle="A flexible account designed for accessible market entry, competitive spreads, and commission-free trading."
+            title={t("cards.standard.title")}
+            subtitle={t(
+              "cards.standard.subtitle")}
             variant="standard"
           />
 
           <AccountTopCard
-            title="ECN Account"
-            subtitle="A premium account built for raw spreads, direct market access, and advanced trading support."
+            title={t("cards.ecn.title")}
+            subtitle={t(
+              "cards.ecn.subtitle")}
             variant="ecn"
           />
         </div>
@@ -318,11 +343,15 @@ export default function AccountTypesComparisonPremium() {
               <div className="bg-[#F9FAFB]" />
 
               <div className="border-r border-[#E5E7EB] px-6 py-6 text-center">
-                <StarBadge variant="standard">Standard Account</StarBadge>
+                <StarBadge variant="standard">
+                  {t("cards.standard.title")}
+                </StarBadge>
               </div>
 
               <div className="bg-[#fffaf5] px-6 py-6 text-center">
-                <StarBadge variant="ecn">ECN Account</StarBadge>
+                <StarBadge variant="ecn">
+                  {t("cards.ecn.title")}
+                </StarBadge>
               </div>
             </div>
 
@@ -361,13 +390,13 @@ export default function AccountTypesComparisonPremium() {
           {/* Extra benefits below table */}
           <div className="mt-8 grid grid-cols-2 gap-6">
             <BenefitsCard
-              title="Standard Account Benefits"
+              title={t("benefits.standard.title")}
               items={standardExtras}
               variant="standard"
             />
 
             <BenefitsCard
-              title="Exclusive ECN Benefits"
+              title={t("benefits.ecn.title")}
               items={ecnExtras}
               variant="ecn"
             />
@@ -379,14 +408,14 @@ export default function AccountTypesComparisonPremium() {
               href="/account/live"
               className="flex min-h-[56px] items-center justify-center rounded-xl bg-[#263788] px-6 text-sm font-semibold text-white transition hover:opacity-90 md:text-base"
             >
-              Open Standard Account
+              {t("cta.openStandard")}
             </a>
 
             <a
               href="/account/live"
               className="flex min-h-[56px] items-center justify-center rounded-xl bg-[#b68756] px-6 text-sm font-semibold text-[#111827] transition hover:opacity-90 md:text-base"
             >
-              Open ECN Account
+              {t("cta.openEcn")}
             </a>
           </div>
         </div>
@@ -394,17 +423,21 @@ export default function AccountTypesComparisonPremium() {
         {/* Mobile / Tablet */}
         <div className="mt-12 grid grid-cols-1 gap-6 lg:hidden">
           <MobileAccountCard
-            title="Standard Account"
+            title={t("cards.standard.title")}
             variant="standard"
             rows={mainComparisonRows}
             extras={standardExtras}
+            benefitsTitle={t("benefits.standard.title")}
+            openButtonLabel={t("cta.openStandard")}
           />
 
           <MobileAccountCard
-            title="ECN Account"
+            title={t("cards.ecn.title")}
             variant="ecn"
             rows={mainComparisonRows}
             extras={ecnExtras}
+            benefitsTitle={t("benefits.ecn.title")}
+            openButtonLabel={t("cta.openEcn")}
           />
         </div>
 
@@ -412,13 +445,14 @@ export default function AccountTypesComparisonPremium() {
         <div className="mt-10 rounded-[24px] border border-[#E5E7EB] bg-white px-5 py-5 md:px-6">
           <div className="space-y-3 text-sm leading-7 text-[#4B5563] md:text-[15px]">
             <p>
-              * Trading in markets with low volatility and high liquidity, under
-              normal market volatility liquidity condition.
+              {t(
+                "notes.one",
+              )}
             </p>
-            <p>** Accounts above $50K</p>
+            <p>{t("notes.two")}</p>
             <p>
-              *** The above applicable only for GTC Global Ltd. (FSCM) & GTC
-              Global Trade Capital Co. (VFSC) Clients.
+              {t(
+                "notes.three"              )}
             </p>
           </div>
         </div>
