@@ -965,10 +965,10 @@
     },
     "careers": {
       "title": "Careers",
-        "currentJobs": "Current Jobs",
-        "applyNow": "Apply Now",
+      "currentJobs": "Current Jobs",
+      "applyNow": "Apply Now",
       "bannerText": "We are a leading financial technology company specializing in foreign exchange trading solutions. ",
-      "desc":"At GTCFX, we believe in fostering a dynamic and inclusive work environment where innovation thrives, and talent is nurtured. As we continue to grow and expand our global presence, we are constantly seeking passionate individuals who are eager to make a meaningful impact in the financial technology sector.",
+      "desc": "At GTCFX, we believe in fostering a dynamic and inclusive work environment where innovation thrives, and talent is nurtured. As we continue to grow and expand our global presence, we are constantly seeking passionate individuals who are eager to make a meaningful impact in the financial technology sector.",
       "why-working": "Why Working in GTCFX?",
       "heading1_1": "Innovative ",
       "heading1_2": "Environment:",
@@ -1017,7 +1017,7 @@
       "support_email": "support@gtcfx.com",
       "phone": "+971 800 667788",
       "more_info": "We'd Love to Hear From You"
-        },
+    },
     "tradingTools": {
       "economicCal": {
         "bannerText": {
@@ -1038,19 +1038,19 @@
         }
       },
       "marketOverView": {
-      "holiday": {
-        "title": "Holiday Hours & Notices",
-        "bannerTitle": "At GTCFX, we're a global team with a presence in over 22 destinations worldwide.",
-        "des": "Market holidays may affect the trading schedule and volatility of the markets. This can vary from country to country, so it is important to stay up to date with the upcoming changes and holiday trading hours to plan your trades accordingly.",
-        "trading": "Forex & CFD Trading Hours",
-        "hours": "View the latest trading hours for Forex, Metals, Commodities, and other financial instruments. GTCFX provides updated market session times to help you plan your trades effectively. Please note these times provided are subject to change. For the most accurate and real-time session details, please refer to your trading terminal or check the specifications of each instrument.",
-        "noData": "No data available",
-        "note1": "Please note these times provided are subject to change, any changes to the times can always be found in the Specification of the instrument in the trading terminal.",
-        "note2": "Please note that there could be unexpected periods of volatility, low liquidity, and some LP’s will increase the spreads during holidays.",
-        "note3": "Dates are subject to change by the respective markets.",
-        "note4": "Clients are kindly requested to manage their accounts and positions during the trading hours of the company as listed above."
+        "holiday": {
+          "title": "Holiday Hours & Notices",
+          "bannerTitle": "At GTCFX, we're a global team with a presence in over 22 destinations worldwide.",
+          "des": "Market holidays may affect the trading schedule and volatility of the markets. This can vary from country to country, so it is important to stay up to date with the upcoming changes and holiday trading hours to plan your trades accordingly.",
+          "trading": "Forex & CFD Trading Hours",
+          "hours": "View the latest trading hours for Forex, Metals, Commodities, and other financial instruments. GTCFX provides updated market session times to help you plan your trades effectively. Please note these times provided are subject to change. For the most accurate and real-time session details, please refer to your trading terminal or check the specifications of each instrument.",
+          "noData": "No data available",
+          "note1": "Please note these times provided are subject to change, any changes to the times can always be found in the Specification of the instrument in the trading terminal.",
+          "note2": "Please note that there could be unexpected periods of volatility, low liquidity, and some LP’s will increase the spreads during holidays.",
+          "note3": "Dates are subject to change by the respective markets.",
+          "note4": "Clients are kindly requested to manage their accounts and positions during the trading hours of the company as listed above."
+        }
       }
-    }
     },
     "nav": {
       "home": "Home",
@@ -1220,53 +1220,6 @@
       "answer6": "Use smaller position sizes, monitor free margin, and keep a risk buffer before major events.",
       "question7": "Where can I get help if I’m unsure?",
       "answer7": "Contact support before market close for guidance on instrument details and margin impact."
-    },
-    "accounts": {
-      "accountForm": {
-        "demoHeading": "APPLY FOR A DEMO ACCOUNT",
-        "firstName": "Full Name",
-        "lastName": "Last Name",
-        "email": "Email Address",
-        "phone": "Phone Number",
-        "dob": "Date of Birth",
-        "platform": "Preferred Trading Platform",
-        "selectPlaceholder": "Please Select Option",
-        "country": "Country Of Residence",
-        "termOfService": "Terms of service",
-        "termText": "By clicking Submit, I confirm that: (1) I have read and agree to the",
-        "termText2": "Client Agreements;",
-        "termText3": "(2) I consent to GTCFX contacting me at reasonable times; and (3) my number is not on the Do Not Call Register (DNCR).",
-        "submit": "Submit",
-        "sending": "Sending...",
-        "error": {
-          "firstName": "Full Name is required",
-          "lastName": "Last Name is required",
-          "email": "Email Address is required",
-          "account_no": "Account Number is required",
-          "phone": "Phone Number is required",
-          "dob": "Date of Birth is required",
-          "platform": "Platform is required",
-          "country": "Country is required",
-          "termOfService": "Please accept terms and conditions",
-          "otpRequired": "OTP is required"
-        },
-        "minLimit": "At least 3 letters",
-        "accountType": "Select Account",
-        "mt5Account": "MT5 Demo Account",
-        "getCode": "Get Code",
-        "otpSend": "OTP has been sent to given Email",
-        "otpSendPhone": "OTP has been sent to given Phone Number",
-        "otpSuccess": "Otp Verified Successfully!",
-        "otpFail": "Otp Verification Failed!",
-        "sent": "Success! Please check your Email",
-        "sentPhone": "Success! Please check your Whatsapp",
-        "error1": "Failed to send OTP. Please try again.",
-        "invalidEmail": "Invalid email address. Please use a valid email.",
-        "verified": "OTP Verified!",
-        "wrong": "Wrong OTP, please try again.",
-        "enterOtp": "Please enter the OTP.",
-        "verifyOTP": "Verify"
-      }
     },
     "thankYouLiveAccount": {
       "content": {
@@ -2893,83 +2846,143 @@
           }
         }
       }
+    }
+  },
+  "accounts": {
+    "accountForm": {
+      "demoHeading": "APPLY FOR A DEMO ACCOUNT",
+      "firstName": "Full Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "dob": "Date of Birth",
+      "platform": "Preferred Trading Platform",
+      "selectPlaceholder": "Please Select Option",
+      "country": "Country Of Residence",
+      "termOfService": "Terms of service",
+      "termText": "By clicking Submit, I confirm that: (1) I have read and agree to the",
+      "termText2": "Client Agreements;",
+      "termText3": "(2) I consent to GTCFX contacting me at reasonable times; and (3) my number is not on the Do Not Call Register (DNCR).",
+      "submit": "Submit",
+      "sending": "Sending...",
+      "error": {
+        "firstName": "Full Name is required",
+        "lastName": "Last Name is required",
+        "email": "Email Address is required",
+        "account_no": "Account Number is required",
+        "phone": "Phone Number is required",
+        "dob": "Date of Birth is required",
+        "platform": "Platform is required",
+        "country": "Country is required",
+        "termOfService": "Please accept terms and conditions",
+        "otpRequired": "OTP is required"
+      },
+      "minLimit": "At least 3 letters",
+      "accountType": "Select Account",
+      "mt5Account": "MT5 Demo Account",
+      "getCode": "Get Code",
+      "otpSend": "OTP has been sent to given Email",
+      "otpSendPhone": "OTP has been sent to given Phone Number",
+      "otpSuccess": "Otp Verified Successfully!",
+      "otpFail": "Otp Verification Failed!",
+      "sent": "Success! Please check your Email",
+      "sentPhone": "Success! Please check your Whatsapp",
+      "error1": "Failed to send OTP. Please try again.",
+      "invalidEmail": "Invalid email address. Please use a valid email.",
+      "verified": "OTP Verified!",
+      "wrong": "Wrong OTP, please try again.",
+      "enterOtp": "Please enter the OTP.",
+      "verifyOTP": "Verify"
     },
-    "footerLink": {
-      "link": {
-        "label": "Quick Links",
-        "menu1": "About GTCFX",
-        "menu2": "GTC Regulations",
-        "menu3": "GTC Awards",
-        "menu4": "Security of Funds",
-        "menu5": "GTC Global Presence",
-        "menu6": "Why GTC Group",
-        "menu7": "Restricted Countries",
-        "menu8": "Careers",
-        "menu9": "Contact Us",
-        "menu10": "Glossary / FAQs",
-        "menu11": "Company News",
-        "menu12": "GTC Blogs"
-      },
-      "rules": {
-        "label": "Trading & Platforms",
-        "menu1": "Forex",
-        "menu2": "Precious Metals",
-        "menu3": "Share CFDs",
-        "menu4": "Commodities",
-        "menu5": "Indices",
-        "menu6": "Energy",
-        "menu7": "MT4 Trading Platform",
-        "menu8": "MT5 Trading Platform",
-        "menu9": "cTrader Platform",
-        "menu10": "Download Trading Platform"
-      },
-      "update": {
-        "label": "Technology & Prime Services",
-        "menu1": "Liquidity & Technology",
-        "menu2": "Copy Trading",
-        "menu3": "PAMM Account",
-        "menu4": "MAM Account",
-        "menu5": "Signal Centre Tool",
-        "menu6": "Autochartist Tool",
-        "menu7": "Acuity Trading Tool",
-        "menu8": "Expert Analysis",
-        "menu9": "VPS Hosting",
-        "menu10": "Client Agreement"
-      },
-      "policy": {
-        "label": "Policies",
-        "menu1": "Privacy Policy",
-        "menu2": "Withdrawal Policy",
-        "menu3": "KYC / Compliance Policy",
-        "menu4": "Deposit & Refund Policy",
-        "menu5": "Due Diligence Policy",
-        "menu6": "Terms & Conditions",
-        "menu7": "Risk Warning",
-        "menu8": "Company News",
-        "menu9": "Market Insights",
-        "menu10": "AML Manual"
-      },
-      "contact": {
-        "label": "Contact Us",
-        "num": "+971 800 667788",
-        "menu1": "Phone:",
-        "menu2": "Email:",
-        "menu3": "P.O. Box:",
-        "menu4": "Timing:"
-      },
-      "footerHeading": "Connecting you to global markets, anytime, anywhere.",
-      "footerNotice": {
-        "firstPara": "This website is owned and operated by GTC Global SA (Pty) Ltd, a private limited company incorporated in South Africa (Company Number: 2020/810937/07) and licensed by the Financial Sector Conduct Authority of South Africa (FSP No. 51545) to operate as an Intermediary. Registered Address: 18 Cavendish Road, Clarement, Cape Town, Western Cape, 7708, South Africa. The financial services and products promoted on this website are offered by GTC Global Trade Capital Co. Limited, a company authorised by the Vanuatu Financial Services Commission of the Republic of Vanuatu (Company License Number: 40354). Registered Address: 1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu.",
-        "gtc_group_heading1": "GTC Global SA (Pty) Ltd and GTC Global Trade Capital Co. Limited",
-        "gtc_group_para1": "are part of the GTC Financial Group which comprises a network of entities across the globe.",
-        "gtc_multi_trading_para": "Investing in derivative products carries significant risks and may not be suitable for all investors. The use of leverage in these instruments can increase both the level of risk and potential for losses. Before making any decision to engage in foreign exchange trading or Contracts for Difference (CFDs), it is essential to carefully consider your investment objectives, level of experience, and risk tolerance. You should only invest funds that you can afford to lose. We strongly encourage you to educate yourself thoroughly on the associated risks and, if you have any questions, seek advice from an independent financial or tax advisor.",
-        "gtc_global_pty_heading": "GTC Global SA (Pty) Ltd and GTC Global Trade Capital Co. Limited",
-        "gtc_global_pty_para": "do not provide services to individuals residing in specific jurisdictions and/or jurisdictions where distribution of such services would be contrary to local law or regulations.",
-        "eightPara": "Each entity within the GTC Financial Group operates independently. The financial products and services offered on this website are provided SOLELY by GTC Global Trade Capital Co. Limited."
-      },
-      "footerCopyRight": {
-        "copyRightText": "© COPYRIGHT 2026 GTCFX - ALL RIGHTS RESERVED"
+    "freeDemoAccount": {
+      "eyebrow": "Free Demo Account",
+      "titleStart": "Trade Smarter, Not Riskier",
+      "titleHighlight": "Open Your Free Demo",
+      "titleEnd": "Account Today",
+      "description": "Explore GTCFX MT5 and WebTrader platforms in a secure, risk-free environment. Practice trading with real-time market data and sharpen your strategy with zero financial exposure.",
+      "ctaButton": "Open Demo Account",
+      "formHeader": "Apply for a Demo Account",
+      "benefits": {
+        "one": {
+          "title": "Real Market Data",
+          "desc": "Practice with live market conditions in real-time"
+        },
+        "two": {
+          "title": "Zero Risk Trading",
+          "desc": "Trade without any financial exposure"
+        },
+        "three": {
+          "title": "Instant Setup",
+          "desc": "Get started within seconds, no delays"
+        },
+        "four": {
+          "title": "MT4 & MT5 Access",
+          "desc": "Use industry-leading trading platforms"
+        }
       }
+    }
+  },
+  "footerLink": {
+    "columns": {
+      "trading": {
+        "label": "Trading",
+        "menu1": "Account Types",
+        "menu2": "Deposit Funds",
+        "menu3": "Withdraw Funds",
+        "menu4": "Trading Conditions",
+        "menu5": "Dynamic Leverage"
+      },
+      "platforms": {
+        "label": "Platforms",
+        "menu1": "MT4 Platform",
+        "menu2": "MT5 Platform",
+        "menu3": "GTC GO App",
+        "menu4": "Download Trading Platform",
+        "menu5": "VPS Hosting"
+      },
+      "tools": {
+        "label": "Tools & Features",
+        "menu1": "Copy Trading",
+        "menu2": "PAMM Account",
+        "menu3": "MAM Account",
+        "menu4": "Swap-Free Trading",
+        "menu5": "Margin Bonus"
+      },
+      "resources": {
+        "label": "Insights & Resources",
+        "menu1": "Market Insights",
+        "menu2": "Company News",
+        "menu3": "Economic Calendar",
+        "menu4": "Earnings Calendar",
+        "menu5": "Website Disclaimer",
+        "menu6": "Risk Disclosure",
+        "menu7": "Restricted Countries"
+      },
+      "companyLegal": {
+        "label": "Company & Legal",
+        "menu1": "About Us",
+        "menu2": "Why GTC Group",
+        "menu3": "Global Presence",
+        "menu4": "Awards",
+        "menu5": "Careers",
+        "menu6": "Contact Us",
+        "menu7": "Regulations"
+      }
+    },
+    "footerHeading": "Connecting you to global markets, anytime, anywhere.",
+    "storeButtons": {
+      "appStoreAlt": "Download on the App Store",
+      "googlePlayAlt": "Get it on Google Play"
+    },
+    "footerNotice": {
+      "firstPara": "This website is owned and operated by GTC Global SA (Pty) Ltd, a private limited company incorporated in South Africa (Company Number: 2020/810937/07) and licensed by the Financial Sector Conduct Authority of South Africa (FSP No. 51545) to operate as an Intermediary. Registered Address: 18 Cavendish Road, Clarement, Cape Town, Western Cape, 7708, South Africa. The financial services and products promoted on this website are offered by GTC Global Trade Capital Co. Limited, a company authorised by the Vanuatu Financial Services Commission of the Republic of Vanuatu (Company License Number: 40354). Registered Address: 1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu.",
+      "secondPara": "GTC Global SA (Pty) Ltd and GTC Global Trade Capital Co. Limited are part of the GTC Financial Group which comprises a network of entities across the globe.",
+      "thirdPara": "Investing in derivative products carries significant risks and may not be suitable for all investors. The use of leverage in these instruments can increase both the level of risk and potential for losses. Before making any decision to engage in foreign exchange trading or Contracts for Difference (CFDs), it is essential to carefully consider your investment objectives, level of experience, and risk tolerance. You should only invest funds that you can afford to lose. We strongly encourage you to educate yourself thoroughly on the associated risks and, if you have any questions, seek advice from an independent financial or tax advisor.",
+      "fourthPara": "GTC Global SA (Pty) Ltd and GTC Global Trade Capital Co. Limited do not provide services to individuals residing in specific jurisdictions and/or jurisdictions where distribution of such services would be contrary to local law or regulations.",
+      "fifthPara": "Each entity within the GTC Financial Group operates independently. The financial products and services offered on this website are provided SOLELY by GTC Global Trade Capital Co. Limited."
+    },
+    "footerCopyRight": {
+      "copyRightText": "© COPYRIGHT {year} GTCFX - ALL RIGHTS RESERVED"
     }
   }
 }
