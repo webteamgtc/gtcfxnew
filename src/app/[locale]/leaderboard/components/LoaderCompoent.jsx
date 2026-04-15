@@ -6,7 +6,7 @@ const LoaderComponent = () => {
                 <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
                     <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                         <div className="flex items-center gap-4">
-                            <div className="h-14 w-14 rounded-full bg-slate-200" />
+                            <div className="h-14 w-14 rounded-xl bg-slate-200" />
                             <div className="space-y-2">
                                 <div className="h-4 w-44 rounded bg-slate-200" />
                                 <div className="h-3 w-64 rounded bg-slate-100" />

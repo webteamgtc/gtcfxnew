@@ -72,7 +72,7 @@
 //                 />
 //                 {post.id === 1 && (
 //                   <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-//                     <button className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center hover:bg-white transition-colors">
+//                     <button className="w-16 h-16 bg-white/90 rounded-xl flex items-center justify-center hover:bg-white transition-colors">
 //                       <FaPlay className="text-[#24358b] ml-1" />
 //                     </button>
 //                   </div>
@@ -110,7 +110,7 @@ export default function LatestBlogSection() {
       <div className="mx-auto max-w-6xl px-4">
         {/* Top label */}
         <div className="flex items-center justify-center gap-[8px] md:text-[22px] text-[18px] text-[#000]">
-          <span className="inline-block h-2 w-2 rounded-full bg-[#293B93]" />
+          <span className="inline-block h-2 w-2 rounded-xl bg-[#293B93]" />
           <span>Latest Blogs</span>
         </div>
 
@@ -138,7 +138,7 @@ export default function LatestBlogSection() {
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-center gap-2">
-                  <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-full bg-[#F2E9FF] text-[10px] text-[#7C3AED]">
+                  <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-xl bg-[#F2E9FF] text-[10px] text-[#7C3AED]">
                     ◎
                   </span>
                   <p className="md:text-[16px] text-[14px] font-normal text-[#707070]">Mamoona Anjum</p>
@@ -179,7 +179,7 @@ export default function LatestBlogSection() {
 
                 <div className="px-5 pb-5 pt-4">
                   <div className="flex items-center gap-2">
-                    <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-full bg-[#F2E9FF] text-[10px] text-[#7C3AED]">
+                    <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-xl bg-[#F2E9FF] text-[10px] text-[#7C3AED]">
                       ◎
                     </span>
                     <p className="md:text-[16px] text-[14px] font-normal text-[#707070]">Mamoona Anjum</p>
@@ -214,7 +214,7 @@ export default function LatestBlogSection() {
 
                 <div className="px-5 pb-5 pt-4">
                   <div className="flex items-center gap-2">
-                    <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-full bg-[#F2E9FF] text-[10px] text-[#7C3AED]">
+                    <span className="inline-flex h-[18px] w-[18px] items-center justify-center rounded-xl bg-[#F2E9FF] text-[10px] text-[#7C3AED]">
                       ◎
                     </span>
                     <p className="md:text-[16px] text-[14px] font-normal text-[#707070]">Mamoona Anjum</p>

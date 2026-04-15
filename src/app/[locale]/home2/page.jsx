@@ -2,18 +2,15 @@ import { getDictionary } from '@/i18n/request';
 import FeaturesSection from '../components/common/home/FeaturesSection';
 import Counter from '../components/common/home/Counter';
 import MarketTabsSection from '../components/common/home/MarketTabsSection';
-import MarketTicker from '../components/common/home/MarketTicker';
 import TradingFeaturesSection from '../components/common/home/TradingFeaturesSection';
-import AppPromoSection from '../components/common/home/AppPromoSection';
 import BlogsSection from '../components/common/home/BlogsSection';
 import SecurityBanner from '../components/common/home/SecurityBanner';
-import AwardsMarquee from '../components/common/home/AwardsMarquee';
 import RevealOnScroll from '../components/RevealOnScroll';
-import HeroSection from '../components/home2/HeroSection';
-import AwardsTropy from '../components/home2/AwardsTropy';
+import HeroSection from '../components/common/home/HeroSection';
 import PlatformsSection from '../components/home2/PlatformsSection';
 import TradingTicker from '../components/home2/TradingTicker';
 import { getPageMetadata } from '@/lib/metadata/getPageMetadata';
+import HeroSectionHome2 from '../components/home2/HeroSectionHome2';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -34,7 +31,7 @@ export default async function HomePage({ params }) {
 
   return (
    <>
-   <HeroSection />
+   <HeroSectionHome2 />
   <RevealOnScroll>
   <TradingTicker />
 </RevealOnScroll>

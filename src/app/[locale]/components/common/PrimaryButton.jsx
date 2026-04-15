@@ -9,7 +9,7 @@ export default function PrimaryButton({
   className = "",
 }) {
   const base =
-    "inline-flex items-center justify-center rounded-full transition text-center duration-300 font-medium  hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary whitespace-nowrap";
+    "inline-flex min-h-[54px] items-center hover:no-underline justify-center rounded-xl text-sm md:text-base transition text-center duration-300 font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary whitespace-nowrap";
 
   const variants = {
     primary: "bg-primary-gradient bg-primary-gradient bg-[length:200%_200%] transition-all duration-500 hover:bg-right text-white hover:opacity-90",

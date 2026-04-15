@@ -245,14 +245,14 @@ export default function LegalPoliciesClientAgreementsPage() {
 
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F8FAFC] py-14 md:py-20">
-      <div className="pointer-events-none absolute left-[-100px] top-10 h-[240px] w-[240px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-100px] top-10 h-[240px] w-[240px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
 
       <div className="container relative z-10">
         {/* Hero */}
         <div className="overflow-hidden rounded-[32px] bg-gradient-to-r from-[#263788] to-[#1A225E] px-6 py-10 text-white shadow-[0_20px_50px_rgba(38,55,136,0.18)] md:px-10 md:py-12">
           <div className="max-w-4xl">
-            <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-1.5 text-sm font-semibold text-[#E5D0B2]">
+            <span className="inline-flex rounded-xl border border-white/10 bg-white/10 px-4 py-1.5 text-sm font-semibold text-[#E5D0B2]">
               Legal Documents
             </span>
 

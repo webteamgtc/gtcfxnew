@@ -27,8 +27,8 @@ export default function HeroSection() {
             {/* Left Content */}
             <div className="pt-20 lg:pt-28">
               {/* Badge */}
-              <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-gray-500 bg-white px-4 py-2 shadow-[0_6px_20px_rgba(0,0,0,0.08)]">
-                <span className="rounded-full  bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] px-3 py-2 text-[11px] font-semibold uppercase leading-none text-white">
+              <div className="mb-7 inline-flex items-center gap-3 rounded-xl border border-gray-500 bg-white px-4 py-2 shadow-[0_6px_20px_rgba(0,0,0,0.08)]">
+                <span className="rounded-xl  bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] px-3 py-2 text-[11px] font-semibold uppercase leading-none text-white">
                   New
                 </span>
                 <span className="text-[14px] md:text-lg font-medium text-primary">

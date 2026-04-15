@@ -87,7 +87,7 @@ export default function PlatformAdvantages({
 
         <div className="relative container mt-14">
           <div className="pointer-events-none absolute inset-0 hidden items-center justify-center lg:flex">
-            <div className="h-[420px] w-[420px] rounded-full bg-[#b68756]/5 blur-3xl" />
+            <div className="h-[420px] w-[420px] rounded-xl bg-[#b68756]/5 blur-3xl" />
           </div>
 
           <div className="relative grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -97,8 +97,8 @@ export default function PlatformAdvantages({
         </div>
       </div>
 
-      <div className="pointer-events-none absolute left-[-120px] top-20 h-[260px] w-[260px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-120px] bottom-10 h-[280px] w-[280px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-120px] top-20 h-[260px] w-[260px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-120px] bottom-10 h-[280px] w-[280px] rounded-xl bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }

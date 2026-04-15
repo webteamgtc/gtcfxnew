@@ -70,11 +70,11 @@ export default function LeaderCardGridItem({
           <div className="flex min-w-0 items-center gap-3">
             <div className="relative">
               <img
-                className="h-12 w-12 rounded-full object-cover"
+                className="h-12 w-12 rounded-xl object-cover"
                 src={avatar}
                 alt=""
               />
-              <div className="absolute -right-1 top-0 h-4 w-4 overflow-hidden rounded-full ring-2 ring-white">
+              <div className="absolute -right-1 top-0 h-4 w-4 overflow-hidden rounded-xl ring-2 ring-white">
                 {countryCode?.length > 3 || countryCode === "" ? (
                   <img
                     className="h-full w-full object-cover"
@@ -96,24 +96,24 @@ export default function LeaderCardGridItem({
                 <h4 className="TextButton truncate font-semibold text-slate-900">
                   {item?.accountName}
                 </h4>
-                <span className="inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-100 text-slate-400">
+                <span className="inline-flex h-5 w-5 items-center justify-center rounded-xl bg-slate-100 text-slate-400">
                   ★
                 </span>
               </div>
 
               <div className="TextSmall mt-1 flex items-center gap-2 text-slate-500">
                 <span>#{formatInteger(item?.rank)}</span>
-                <span className="h-1 w-1 rounded-full bg-slate-300" />
+                <span className="h-1 w-1 rounded-xl bg-slate-300" />
                 <span>{item?.account?.country || "-"}</span>
-                <span className="h-1 w-1 rounded-full bg-slate-300" />
+                <span className="h-1 w-1 rounded-xl bg-slate-300" />
                 <span>
                   {item?.account?.leverage
                     ? `1:${formatInteger(item?.account?.leverage)}`
                     : "-"}
                 </span>
-                <span className="h-1 w-1 rounded-full bg-slate-300" />
+                <span className="h-1 w-1 rounded-xl bg-slate-300" />
                 <span>{item?.account?.currency || "-"}</span>
-                <span className="h-1 w-1 rounded-full bg-slate-300" />
+                <span className="h-1 w-1 rounded-xl bg-slate-300" />
                 <span className="TextSmall rounded-md bg-slate-100 px-2 py-0.5 font-medium text-slate-600">
                   API
                 </span>

@@ -23,7 +23,7 @@ export default function WhatIsCopyTradingSection() {
     <section className="bg-white py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             What Is Copy Trading
           </span>
 

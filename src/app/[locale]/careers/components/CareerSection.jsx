@@ -21,7 +21,7 @@ const CareerSection = ({ messages = {}, onJobSelect }) => {
     };
 
     const applyButtonClass =
-        "inline-flex items-center justify-center rounded-full transition text-center duration-300 font-medium hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary whitespace-nowrap bg-gradient-to-r hover:from-[#B68756] hover:via-[#995F22] hover:to-[#995F22] from-[#263788] via-[#101638] to-[#263788] text-white hover:opacity-90 px-6 py-3 TextButton";
+        "inline-flex items-center justify-center rounded-xl transition text-center duration-300 font-medium hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary whitespace-nowrap bg-gradient-to-r hover:from-[#B68756] hover:via-[#995F22] hover:to-[#995F22] from-[#263788] via-[#101638] to-[#263788] text-white hover:opacity-90 px-6 py-3 TextButton";
 
     const boxContents = [
         {
@@ -206,11 +206,11 @@ const CareerSection = ({ messages = {}, onJobSelect }) => {
 
                                     {/* Quick Info Tags */}
                                     <div className="flex flex-wrap gap-2 mb-4">
-                                        <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 text-xs rounded-full">
+                                        <span className="inline-flex items-center gap-1 px-3 py-1 bg-blue-50 text-blue-700 text-xs rounded-xl">
                                             <HiOutlineBriefcase className="text-sm" />
                                             {jobText("fullTime", "Full-time")}
                                         </span>
-                                        <span className="inline-flex items-center gap-1 px-3 py-1 bg-green-50 text-green-700 text-xs rounded-full">
+                                        <span className="inline-flex items-center gap-1 px-3 py-1 bg-green-50 text-green-700 text-xs rounded-xl">
                                             <HiOutlineClock className="text-sm" />
                                             {jobText("flexible", "Flexible")}
                                         </span>

@@ -54,7 +54,7 @@ export default function RestrictedCountriesPage() {
             {restrictedPrimary.map((country, i) => (
               <span
                 key={i}
-                className="px-4 py-2 rounded-full bg-[#293794]/10 text-[#293794] text-sm font-medium"
+                className="px-4 py-2 rounded-xl bg-[#293794]/10 text-[#293794] text-sm font-medium"
               >
                 {country}
               </span>

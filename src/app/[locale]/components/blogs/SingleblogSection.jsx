@@ -78,7 +78,7 @@ export default function SingleBlogSection(props) {
                     }}
                 >
                     <div className="flex items-center gap-x-4 text-xs">
-                        <a className="relative z-10 rounded-full bg-secondary px-3 py-1.5 text-white">
+                        <a className="relative z-10 rounded-xl bg-secondary px-3 py-1.5 text-white">
                             {categoryName}
                         </a>
                     </div>
@@ -99,7 +99,7 @@ export default function SingleBlogSection(props) {
                                 <img
                                     src={toMediaUrl(authorImage)}
                                     alt=""
-                                    className="h-10 w-10 rounded-full bg-gray-50"
+                                    className="h-10 w-10 rounded-xl bg-gray-50"
                                 />
                             ) : null}
 

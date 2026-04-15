@@ -10,7 +10,7 @@ export default function KeyBenefitsSection() {
           <div className="lg:col-span-6">
             {/* Top bullet */}
             <div className="flex items-center justify-center md:justify-start gap-2 md:text-[22px] text-[18px] text-secondary font-semibold">
-              <span className="h-2 w-2 rounded-full bg-[#293B93]" />
+              <span className="h-2 w-2 rounded-xl bg-[#293B93]" />
               Key Benefits
             </div>
 

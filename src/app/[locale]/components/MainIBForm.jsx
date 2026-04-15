@@ -542,7 +542,7 @@ const MainIBForm = ({ messages = {} }) => {
                             <button
                                 disabled={!isOtpVerified}
                                 type="submit"
-                                className="bg-primary text-white font-semibold py-1 px-8 rounded-full text-lg"
+                                className="bg-primary text-white font-semibold py-1 px-8 rounded-xl text-lg"
                             >
                                 {loading ? t("sending") : t("submit")}
                             </button>

@@ -64,7 +64,7 @@ export default function MobileAppDownloadBanner({
             <a
               href={androidLink}
               target="_blank"
-              className="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2 rounded-full bg-[#29a643] px-3 py-2 text-xs font-semibold text-white hover:opacity-90 transition"
+              className="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2 rounded-xl bg-[#29a643] px-3 py-2 text-xs font-semibold text-white hover:opacity-90 transition"
             >
               {/* Simple Android icon replacement */}
              
@@ -83,7 +83,7 @@ export default function MobileAppDownloadBanner({
             <a
               href={iosLink}
               target="_blank"
-              className="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2 rounded-full bg-white/10 border border-white/30 px-3 py-2 text-xs font-semibold text-white hover:bg-white/15 transition"
+              className="flex-1 min-w-[140px] inline-flex items-center justify-center gap-2 rounded-xl bg-white/10 border border-white/30 px-3 py-2 text-xs font-semibold text-white hover:bg-white/15 transition"
             >
               {/* Simple Apple icon */}
              

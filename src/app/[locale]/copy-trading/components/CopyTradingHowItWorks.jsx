@@ -21,12 +21,12 @@ const steps = [
 export default function CopyTradingHowItWorks() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] to-white py-16 md:py-20">
-      <div className="pointer-events-none absolute left-[-120px] top-10 h-[240px] w-[240px] rounded-full bg-[#263788]/6 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-120px] bottom-0 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-120px] top-10 h-[240px] w-[240px] rounded-xl bg-[#263788]/6 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-120px] bottom-0 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
 
       <div className="container relative z-10">
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             How It Works
           </span>
 

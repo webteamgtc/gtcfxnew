@@ -176,7 +176,7 @@ export default function MobilePeekCarousel({
             onClick={goPrev}
             disabled={atStart}
             aria-label="Previous slide"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#e5e5e5] bg-white text-primary shadow-sm transition-opacity disabled:pointer-events-none disabled:opacity-35"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#e5e5e5] bg-white text-primary shadow-sm transition-opacity disabled:pointer-events-none disabled:opacity-35"
           >
             <ChevronLeft className="h-5 w-5" />
           </button>
@@ -196,7 +196,7 @@ export default function MobilePeekCarousel({
               aria-label={`Go to slide ${i + 1}`}
               onClick={() => goTo(i)}
               className={[
-                "h-2 rounded-full transition-all duration-300",
+                "h-2 rounded-xl transition-all duration-300",
                 i === activeIndex
                   ? "w-6 bg-primary"
                   : "w-4 bg-[#e8e8ed] hover:bg-[#dadada]",
@@ -211,7 +211,7 @@ export default function MobilePeekCarousel({
             onClick={goNext}
             disabled={atEnd}
             aria-label="Next slide"
-            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#e5e5e5] bg-white text-primary shadow-sm transition-opacity disabled:pointer-events-none disabled:opacity-35"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[#e5e5e5] bg-white text-primary shadow-sm transition-opacity disabled:pointer-events-none disabled:opacity-35"
           >
             <ChevronRight className="h-5 w-5" />
           </button>

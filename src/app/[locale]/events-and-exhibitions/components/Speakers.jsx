@@ -155,7 +155,7 @@ function ShareIcon({ className = "" }) {
 }
 
 function Dot() {
-  return <span className="inline-block h-2 w-2 rounded-full bg-[#293B93]" />;
+  return <span className="inline-block h-2 w-2 rounded-xl bg-[#293B93]" />;
 }
 
 function SpeakerCard({ s }) {
@@ -180,13 +180,13 @@ function SpeakerCard({ s }) {
                   : "opacity-0 scale-90 translate-y-3 pointer-events-none"
                 }`}
             >
-              <button className="grid h-[30px] w-[30px] place-items-center rounded-full bg-[#B48755] text-white shadow-[0_10px_20px_rgba(0,0,0,0.18)] hover:scale-105 transition-transform">
+              <button className="grid h-[30px] w-[30px] place-items-center rounded-xl bg-[#B48755] text-white shadow-[0_10px_20px_rgba(0,0,0,0.18)] hover:scale-105 transition-transform">
                 <span className="text-[14px] font-bold">p</span>
               </button>
               {["in", "x", "f"].map((t) => (
                 <button
                   key={t}
-                  className="grid h-[30px] w-[30px] place-items-center rounded-full bg-white text-[#1B2A86] shadow-[0_10px_20px_rgba(0,0,0,0.12)] ring-1 ring-black/10 hover:scale-105 transition-transform"
+                  className="grid h-[30px] w-[30px] place-items-center rounded-xl bg-white text-[#1B2A86] shadow-[0_10px_20px_rgba(0,0,0,0.12)] ring-1 ring-black/10 hover:scale-105 transition-transform"
                 >
                   <span className="text-[12px] font-semibold">{t}</span>
                 </button>

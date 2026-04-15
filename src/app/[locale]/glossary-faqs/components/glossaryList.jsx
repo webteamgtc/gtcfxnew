@@ -33,7 +33,7 @@ export default function GlossaryList({
               aria-controls="glossary-term-panel"
               id={`glossary-tab-${letter}`}
               onClick={() => setActive(letter)}
-              className={`min-h-10 min-w-10 rounded-full px-3 text-sm font-semibold transition-all duration-200 md:min-w-[2.5rem] ${
+              className={`min-h-10 min-w-10 rounded-xl px-3 text-sm font-semibold transition-all duration-200 md:min-w-[2.5rem] ${
                 isActive
                   ? "scale-105 bg-gradient-to-r from-[#263788] to-[#101638] text-white shadow-[0_8px_24px_rgba(38,55,136,0.35)] ring-2 ring-primary/25"
                   : "border border-transparent text-primary hover:border-primary/20 hover:bg-white hover:text-primary"

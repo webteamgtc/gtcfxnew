@@ -6,23 +6,23 @@ import { FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/
 const contactItems = [
   {
     href: "https://wa.me/448000488461",
-    icon: <FaWhatsapp />,
+    icon: <FaWhatsapp  size={28} />,
     bg: "bg-[#25D366]",
   },
   {
     href: "tel:+971800667788",
-    icon: <FaPhoneAlt />,
-    bg: "bg-[#1f2a5a]",
+    icon: <FaPhoneAlt size={28} />,
+    bg: "bg-[#080b21]",
   },
   {
     href: "mailto:support@gtcfx.com",
-    icon: <FaEnvelope />,
+    icon: <FaEnvelope  size={28} />,
     bg: "bg-[#B68756]",
   },
   {
     href: "https://www.google.com/maps/place/GTCFX+%7C+%231+Global+STP+Broker./data=!4m2!3m1!1s0x0:0x86ff19d564223048?sa=X&ved=1t:2428&ictx=111",
-    icon: <FaMapMarkerAlt />,
-    bg: "bg-[#333]",
+    icon: <FaMapMarkerAlt  size={28} />,
+    bg: "bg-[#080b21]",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function StickyContactBar() {
           href={item.href}
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex h-10 w-10 items-center justify-center rounded-full text-white shadow-lg transition hover:scale-105 ${item.bg}`}
+          className={`flex h-12 w-12 items-center justify-center rounded-lg text-white shadow-lg transition hover:scale-105 ${item.bg}`}
         >
           {item.icon }
         </Link>

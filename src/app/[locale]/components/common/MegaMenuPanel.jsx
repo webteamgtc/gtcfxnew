@@ -16,7 +16,7 @@ export default function MegaMenuPanel({ menu, locale = "en" }) {
 
           <span
             aria-hidden="true"
-            className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] text-sm text-white"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] text-sm text-white"
           >
             →
           </span>

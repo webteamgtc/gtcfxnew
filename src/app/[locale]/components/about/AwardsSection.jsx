@@ -13,7 +13,7 @@ function AwardCard({ item, t }) {
   return (
     <div className="group flex h-full flex-col overflow-hidden rounded-[24px] border border-[#E5E7EB] bg-white p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)]">
       <div className="flex items-center justify-between gap-3">
-        <span className="inline-flex rounded-full bg-[#b68756]/10 px-3 py-1 text-xs font-semibold text-[#b68756]">
+        <span className="inline-flex rounded-xl bg-[#b68756]/10 px-3 py-1 text-xs font-semibold text-[#b68756]">
           {item.year}
         </span>
       </div>
@@ -52,7 +52,7 @@ export default function AwardsSection() {
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-[#fff] to-[#fff] py-10 md:py-16">
       <div className="container relative z-10">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+          <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
             {t("badge")}
           </span>
 
@@ -75,8 +75,8 @@ export default function AwardsSection() {
         </div>
       </div>
 
-      <div className="pointer-events-none absolute left-[-90px] top-24 h-[240px] w-[240px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-90px] top-24 h-[240px] w-[240px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }

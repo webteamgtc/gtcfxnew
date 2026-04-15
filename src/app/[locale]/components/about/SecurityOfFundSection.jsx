@@ -111,8 +111,8 @@ export default function SecurityOfFundSection() {
           {/* Side Trust Box */}
           <div className="lg:col-span-4">
             <div className="rounded-[32px] bg-gradient-to-br from-[#263788] via-[#1F2C73] to-[#101638] p-6 text-white shadow-[0_20px_60px_rgba(38,55,136,0.18)] md:p-8">
-              <span className="inline-flex rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-[#E5D0B2]">
-                {t("protectionBadge")}
+              <span className="inline-flex rounded-xl bg-white/10 px-4 py-1.5 text-sm font-semibold text-[#E5D0B2]">
+              {t("protectionBadge")}
               </span>
 
               <h3 className="mt-5 text-[28px] font-bold leading-tight md:text-[36px]">
@@ -140,7 +140,7 @@ export default function SecurityOfFundSection() {
               key={index}
               className="rounded-[28px] border border-[#E5E7EB] bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)] md:p-7"
             >
-              <div className="mb-5 h-1.5 w-16 rounded-full bg-[#b68756]" />
+              <div className="mb-5 h-1.5 w-16 rounded-xl bg-[#b68756]" />
               <h3 className="HeadingH4">
                 {item.title}
               </h3>
@@ -155,8 +155,8 @@ export default function SecurityOfFundSection() {
         <div className="mt-12 rounded-[30px] border border-[#E5E7EB] bg-white p-6 shadow-sm md:p-8 lg:p-10">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
             <div className="lg:col-span-4">
-              <div className="inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-                {t("maximumCoverageBadge")}
+              <div className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
+              {t("maximumCoverageBadge")}
               </div>
 
               <h3 className="HeadingH3 py-3">
@@ -174,8 +174,8 @@ export default function SecurityOfFundSection() {
       </div>
 
       {/* Background effects */}
-      <div className="pointer-events-none absolute left-[-90px] top-24 h-[220px] w-[220px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-90px] top-24 h-[220px] w-[220px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-10 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }

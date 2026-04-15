@@ -127,7 +127,7 @@ export default function ManagedAccountFaqs({ faq }) {
                         {item.question}
                       </span>
                       <span
-                        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all duration-200 ${
+                        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl border transition-all duration-200 ${
                           isOpen
                             ? "rotate-180 border-primary/20 bg-primary/10 text-primary"
                             : "border-slate-200 bg-slate-50 text-slate-500"

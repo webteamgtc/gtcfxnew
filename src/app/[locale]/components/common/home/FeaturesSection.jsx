@@ -18,7 +18,7 @@ function FeatureCard({ item, index, mobile = false }) {
     >
       <div className="mb-5 h-[2px] w-[40px] bg-primary transition-all duration-300 group-hover:w-[60px]" />
 
-      <span className="bg-secondary text-[10px] md:text-xs rounded-full text-white px-3 h-7 py-1">
+      <span className="bg-secondary text-[10px] md:text-xs rounded-xl text-white px-3 h-7 py-1">
         {item.tag}
       </span>
 
@@ -31,7 +31,7 @@ function FeatureCard({ item, index, mobile = false }) {
       </p>
 
       {item.highlight && (
-        <span className="absolute top-4 right-4 text-[11px] px-3 py-1 rounded-full bg-[#3b5cff] text-white transition-transform duration-300 group-hover:scale-105">
+        <span className="absolute top-4 right-4 text-[11px] px-3 py-1 rounded-xl bg-[#3b5cff] text-white transition-transform duration-300 group-hover:scale-105">
           New Offering
         </span>
       )}

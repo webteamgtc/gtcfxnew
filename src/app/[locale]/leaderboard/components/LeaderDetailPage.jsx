@@ -275,7 +275,7 @@ const LeaderBoardDetail = () => {
                             <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                                 <div className="flex items-center gap-4">
                                     <img
-                                        className="h-14 w-14 rounded-full object-cover"
+                                        className="h-14 w-14 rounded-xl object-cover"
                                         src={
                                             data?.public?.avatarPath ||
                                             "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/avatar.webp"
@@ -492,7 +492,7 @@ const LeaderBoardDetail = () => {
                                         key={t.id}
                                         type="button"
                                         className={[
-                                            "TextButton rounded-full px-4 py-2 transition",
+                                            "TextButton rounded-xl px-4 py-2 transition",
                                             activeTab === t.id ? "bg-primary text-white" : "bg-slate-100 text-slate-700 hover:bg-slate-200",
                                         ].join(" ")}
                                         onClick={() => setActiveTab(t.id)}
@@ -670,7 +670,7 @@ const LeaderBoardDetail = () => {
                                 >
                                     {t.label}
                                     {tabs === t.id ? (
-                                        <span className="absolute left-0 top-full mt-2 h-[2px] w-full rounded-full bg-[#FBD400]" />
+                                        <span className="absolute left-0 top-full mt-2 h-[2px] w-full rounded-xl bg-[#FBD400]" />
                                     ) : null}
                                 </button>
                             ))}

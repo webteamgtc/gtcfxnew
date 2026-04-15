@@ -279,7 +279,7 @@ function RiskSectionCard({ section }) {
 
         <div className="min-w-0 flex-1">
           <div className="mb-2 flex items-center gap-3">
-            <span className="inline-flex rounded-full bg-[#0F3B8C] px-3 py-1 text-xs font-semibold tracking-[0.16em] text-white">
+            <span className="inline-flex rounded-xl bg-[#0F3B8C] px-3 py-1 text-xs font-semibold tracking-[0.16em] text-white">
               {section.number}
             </span>
             <span className="h-px flex-1 bg-gradient-to-r from-[#D8E4F8] to-transparent" />
@@ -321,14 +321,14 @@ export default function RiskDisclosureStatementPage() {
     <div className="bg-[linear-gradient(180deg,#F4F8FF_0%,#FFFFFF_35%,#F8FBFF_100%)]">
       <section className="relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#0F3B8C]/8 blur-3xl" />
-          <div className="absolute right-0 top-16 h-72 w-72 rounded-full bg-[#B68756]/10 blur-3xl" />
+          <div className="absolute left-0 top-0 h-72 w-72 rounded-xl bg-[#0F3B8C]/8 blur-3xl" />
+          <div className="absolute right-0 top-16 h-72 w-72 rounded-xl bg-[#B68756]/10 blur-3xl" />
         </div>
 
         <div className="container pt-14 pb-10 md:pt-20 md:pb-14">
           <div className="max-w-4xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#F1D9D9] bg-white/80 px-4 py-2 text-sm font-medium text-[#C26B6B] backdrop-blur">
-              <span className="h-2 w-2 rounded-full bg-[#C26B6B]" />
+            <div className="mb-4 inline-flex items-center gap-2 rounded-xl border border-[#F1D9D9] bg-white/80 px-4 py-2 text-sm font-medium text-[#C26B6B] backdrop-blur">
+              <span className="h-2 w-2 rounded-xl bg-[#C26B6B]" />
               Important Risk Notice
             </div>
 
@@ -363,7 +363,7 @@ export default function RiskDisclosureStatementPage() {
             </div>
 
             <div className="rounded-[28px] border border-[#F3D2D2] bg-[linear-gradient(180deg,#FFF8F8_0%,#FFF2F2_100%)] p-6 shadow-[0_12px_32px_rgba(194,107,107,0.10)]">
-              <div className="mb-3 inline-flex rounded-full bg-[#C26B6B] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
+              <div className="mb-3 inline-flex rounded-xl bg-[#C26B6B] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
                 High Risk Warning
               </div>
 
@@ -400,7 +400,7 @@ export default function RiskDisclosureStatementPage() {
             <section className="rounded-[28px] border border-[#DCE7F8] bg-white p-6 shadow-[0_12px_32px_rgba(15,59,140,0.06)] md:p-8">
               <div className="grid gap-6 md:grid-cols-1 md:items-center">
                 <div>
-                  <div className="mb-3 inline-flex rounded-full bg-[#EFF4FF] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#0F3B8C]">
+                  <div className="mb-3 inline-flex rounded-xl bg-[#EFF4FF] px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#0F3B8C]">
                     Client Responsibility
                   </div>
 

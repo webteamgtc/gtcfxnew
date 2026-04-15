@@ -95,9 +95,9 @@ export default async function SwapFreeTradingPage({ params }) {
               {["noSwapCharges", "regionBased", "transparent"].map((k) => (
                 <div
                   key={k}
-                  className="flex items-center gap-4 rounded-full border border-slate-200 bg-slate-100 px-5 py-4 shadow-sm"
+                  className="flex items-center gap-4 rounded-xl border border-slate-200 bg-slate-100 px-5 py-4 shadow-sm"
                 >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-xl text-slate-700">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl text-slate-700">
                     {t(`whyChoose.features.${k}.icon`)}
                   </div>
                   <div className="min-w-0">
@@ -116,9 +116,9 @@ export default async function SwapFreeTradingPage({ params }) {
               {["fastActivation", "longTerm"].map((k) => (
                 <div
                   key={k}
-                  className="flex items-center gap-4 rounded-full border border-slate-200 bg-slate-100 px-5 py-4 shadow-sm"
+                  className="flex items-center gap-4 rounded-xl border border-slate-200 bg-slate-100 px-5 py-4 shadow-sm"
                 >
-                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-xl text-slate-700">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-xl text-slate-700">
                     {t(`whyChoose.features.${k}.icon`)}
                   </div>
                   <div className="min-w-0">

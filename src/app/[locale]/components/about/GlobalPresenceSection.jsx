@@ -140,7 +140,7 @@ export default function GlobalPresenceSection() {
             {sectionDescription}
           </p>
 
-          <div className="mt-8 inline-flex rounded-full border border-[#b68756]/20 bg-[#b68756]/10 px-5 py-2 text-sm font-semibold text-[#b68756] md:text-base">
+          <div className="mt-8 inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-5 py-2 text-sm font-semibold text-[#b68756] md:text-base">
             {sectionSubtitle}
           </div>
         </div>
@@ -161,8 +161,8 @@ export default function GlobalPresenceSection() {
       </div>
 
       {/* background effects */}
-      <div className="pointer-events-none absolute left-[-100px] top-20 h-[240px] w-[240px] rounded-full bg-[#263788]/5 blur-3xl" />
-      <div className="pointer-events-none absolute right-[-100px] bottom-20 h-[260px] w-[260px] rounded-full bg-[#b68756]/10 blur-3xl" />
+      <div className="pointer-events-none absolute left-[-100px] top-20 h-[240px] w-[240px] rounded-xl bg-[#263788]/5 blur-3xl" />
+      <div className="pointer-events-none absolute right-[-100px] bottom-20 h-[260px] w-[260px] rounded-xl bg-[#b68756]/10 blur-3xl" />
     </section>
   );
 }
