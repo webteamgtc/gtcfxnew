@@ -907,39 +907,6 @@
         }
       }
     },
-    "gtc-regulations": {
-      "title": "GTC Financial Group’s Presence Globally ",
-      "des": "GTC Group LLC-FZ, a limited liability company registered in the UAE, owns the following entities globally, together the GTC Financial Group. Each of these entities provides financial services according to their respective licences in the relevant jurisdiction. Each entity within the GTC Financial Group specialises in different services and is managed separately by experienced teams. The services and products on this website are offered by two group entities, being GTC Global Ltd and GTC Global Trade Capital Co. Limited.",
-      "sub_title": "Information on operating GTC Affiliates:",
-      "regulation1_1": "SCA",
-      "regulation1_2": "Securities and Commodities Authority",
-      "regulation1_3": "United Arab Emirates",
-      "regulation1_4": "GTC MULTI TRADING DMCC is regulated by the Securities and Commodities Authority of the UAE, under license Number 20200000007. The company is licensed to do Broker Direct Clearing Member services under DGCX Derivative Futures.",
-      "regulationnew_4": "GTC FINANCIAL CONSULTANCY is regulated by the Securities and Commodities Authority of the UAE.",
-      "regulation2_1": "ASIC",
-      "regulation2_2": "Australian Securities & Investments Commission",
-      "regulation2_3": "Australia",
-      "regulation2_4": "GTC Global (Australia) Pty Ltd holds an Australian Financial Services Licence number 496371. GTC Global (Australia) focuses on providing education services to Australian clients.",
-      "regulation3_1": "FSCM",
-      "regulation3_2": "Financial Services Commission, Mauritius",
-      "regulation3_3": "Mauritius",
-      "regulation3_4": "GTC Global Ltd, is a limited company incorporated in Mauritius (company number: C188049) and licensed by the Financial Services Commission, Mauritius (No. GB22200292) to trade as an SEC-2.",
-      "regulation4_1": "VFSC",
-      "regulation4_2": "Vanuatu Financial Services Commission",
-      "regulation4_3": "Vanuatu",
-      "regulation4_4": "GTC Global Trade Capital Co. Limited, is a global finance brokerage company registered, supervised, and authorized by the Vanuatu Financial Services Commission of the Republic of Vanuatu Company license number: 40354. Registered address: 1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu.",
-      "regulation5_1": "FCA",
-      "regulation5_2": "Financial Conduct Authority",
-      "regulation5_3": "United Kingdom",
-      "regulation5_4": "Global Markets Group Limited, a company registered in England & Wales under company number 09493910, is authorised and regulated by the Financial Conduct Authority with reference number 744501. GTC GROUP L.L.C-FZ is a minority shareholder in Global Markets Group Limited.",
-      "regulation5_5": "Registered Office: Green Park House, 15 Stratton Street, London W1J 8LQ, UK",
-      "regulation5_6": "Website: ",
-      "regulation6_1": "SFPL",
-      "regulation6_2": "South Africa Proprietary Limited",
-      "regulation6_3": "South Africa",
-      "regulation6_4": "GTC Global South Africa Proprietary Limited (registration number: 2020/810937/07) hold a Financial Services Provider Licence number 51545. Register address is First Floor Kildare Centre, Cnr Kildare Road and Main Street, Newlands, Cape Town, Western Cape, 7550, South Africa.",
-      "notice": "GTC Financial Group provides a wide range of financial services to clients. Different entities within the group have different licences and offerings as they are managed separately. If you are interested to know more about which entity you are dealing with, we encourage you to contact us."
-    },
     "client-fund-insurance": {
       "title": "Security Of Fund",
       "sub_title1_1": "GTC Global Trade Capital Ltd. is a official member of the Financial Commission, an international organization engaged in the resolution of disputes in the financial services industry for the forex market.",
@@ -2983,6 +2950,51 @@
     },
     "footerCopyRight": {
       "copyRightText": "© COPYRIGHT {year} GTCFX - ALL RIGHTS RESERVED"
+    }
+  },
+  "regulationPage": {
+    "titleStart": "GTC Financial Group’s",
+    "titleHighlight": "Presence Globally",
+    "intro": "GTC Group LLC-FZ, a limited liability company registered in the UAE, owns the following entities globally, together the GTC Financial Group. Each of these entities provides financial services according to their respective licences in the relevant jurisdiction. Each entity within the GTC Financial Group specialises in different services and is managed separately by experienced teams. The services and products on this website are offered by two group entities, being GTC Global Ltd and GTC Global Trade Capital Co. Limited.",
+    "badge": "Information on operating GTC Affiliates",
+    "websiteLabel": "Website:",
+    "closing": "GTC Financial Group provides a wide range of financial services to clients. Different entities within the group have different licences and offerings as they are managed separately. If you are interested to know more about which entity you are dealing with, we encourage you to contact us.",
+    "affiliates": {
+      "one": {
+        "country": "United Arab Emirates",
+        "entity": "GTC MULTI TRADING DMCC",
+        "description": "GTC MULTI TRADING DMCC is regulated by the Securities and Commodities Authority of the UAE, under license Number 20200000007. The company is licensed to do Broker Direct Clearing Member services under DGCX Derivative Futures."
+      },
+      "two": {
+        "country": "United Arab Emirates",
+        "entity": "GTC FINANCIAL CONSULTANCY",
+        "description": "GTC FINANCIAL CONSULTANCY is regulated by the Securities and Commodities Authority of the UAE."
+      },
+      "three": {
+        "country": "United Kingdom",
+        "entity": "Global Markets Group Limited",
+        "description": "Global Markets Group Limited, a company registered in England & Wales under company number 09493910, is authorised and regulated by the Financial Conduct Authority with reference number 744501. GTC GROUP L.L.C-FZ is a minority shareholder in Global Markets Group Limited. Registered Office: Green Park House, 15 Stratton Street, London W1J 8LQ, UK."
+      },
+      "four": {
+        "country": "Australia",
+        "entity": "GTC Global (Australia) Pty Ltd",
+        "description": "GTC Global (Australia) Pty Ltd holds an Australian Financial Services Licence number 496371. GTC Global (Australia) focuses on providing education services to Australian clients."
+      },
+      "five": {
+        "country": "Mauritius",
+        "entity": "GTC Global Ltd",
+        "description": "GTC Global Ltd. is a limited company incorporated in Mauritius (company number: C188049) and licensed by the Financial Services Commission, Mauritius (No. GB22200292) to trade as an SEC-2."
+      },
+      "six": {
+        "country": "South Africa",
+        "entity": "GTC Global South Africa Proprietary Limited",
+        "description": "GTC Global South Africa Proprietary Limited (registration number: 2020/810937/07) hold a Financial Services Provider Licence number 51545. Register address is First Floor Kildare Centre, Cnr Kildare Road and Main Street, Newlands, Cape Town, Western Cape, 7550, South Africa."
+      },
+      "seven": {
+        "country": "Vanuatu",
+        "entity": "GTC Global Trade Capital Co. Limited",
+        "description": "GTC Global Trade Capital Co. Limited, is a global finance brokerage company registered, supervised, and authorized by the Vanuatu Financial Services Commission of the Republic of Vanuatu Company license number: 40354. Registered address: 1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu."
+      }
     }
   }
 }
