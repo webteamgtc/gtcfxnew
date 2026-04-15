@@ -101,11 +101,11 @@ export default function HeroSectionHome2() {
           </div>
         </div>
 
-        <div className="absolute inset-x-0 bottom-48 md:bottom-0">
+        <div className="absolute inset-x-0 bottom-64 md:bottom-36 opacity-40">
           <div className="container">
             <div className="home2-chart-reveal">
               <Image
-                src="/home2/charts.webp"
+                src="/home2/chart2.webp"
                 alt=""
                 width={1440}
                 height={708}
