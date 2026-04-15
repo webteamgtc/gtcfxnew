@@ -18,17 +18,17 @@ export async function generateMetadata({ params }) {
 export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const regulation = dict.regulationPage || {};
 
   return (
     <>
       <InnerPageBanner
-        description="GTC Group LLC-FZ, a limited liability company registered in the UAE, owns the following entities globally, together the GTC Financial Group."
+        description={regulation?.bannerDescription}
         backgroundImage="/breadcamp/regulations.webp"
         mobileBackgroundImage="/breadcamp/mobile-regu.webp"
       />
 
-    <GlobalPresenceSection />
+      <GlobalPresenceSection />
 
 
       {/* other sections */}

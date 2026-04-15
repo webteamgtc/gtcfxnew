@@ -356,10 +356,18 @@ const MainIBForm = ({ messages = {} }) => {
                                     defaultCountry="AE"
                                     value={formik.values.phone}
                                     onChange={(phone) => formik.setFieldValue("phone", phone)}
-                                    className={`w-full px-4 py-3 border ${formik.touched.phone && formik.errors.phone ? "border-red-500" : "border-gray-300"} rounded-lg focus:outline-none`}
+                                    dir={isRTL ? "rtl" : "ltr"}
+                                    countrySelectProps={{
+                                        dir: isRTL ? "rtl" : "ltr",
+                                    }}
+                                    numberInputProps={{
+                                        dir: "ltr",
+                                        style: { textAlign: isRTL ? "right" : "left" },
+                                    }}
+                                    className={`w-full py-3 border ${isRTL ? "pr-4 pl-20" : "pl-4 pr-20"} ${formik.touched.phone && formik.errors.phone ? "border-red-500" : "border-gray-300"} rounded-lg focus:outline-none`}
                                 />
                                 {formik.touched.phone && formik.errors.phone && (
-                                    <p className="text-red-500 text-sm">{formik.errors.phone}</p>
+                                    <p className={`text-red-500 text-sm ${isRTL ? "text-right" : "text-left"}`}>{formik.errors.phone}</p>
                                 )}
                                 <button
                                     type="button"
@@ -377,9 +385,9 @@ const MainIBForm = ({ messages = {} }) => {
                             {showOtp && !state.verifed && (
                                 <div className="grid grid-cols-1 gap-2 mb-4">
                                     <div />
-                                    <div className=" flex items-end gap-1">
+                                    <div className={`flex items-end gap-1 ${isRTL ? "flex-row-reverse text-right" : ""}`}>
                                         <div>
-                                            <p className="mb-1">{t("otpSendPhone")}</p>
+                                            <p className={`mb-1 ${isRTL ? "text-right" : "text-left"}`}>{t("otpSendPhone")}</p>
                                             <OtpInput
                                                 value={formik.values.otp}
                                                 onChange={(otp) => {
@@ -393,6 +401,7 @@ const MainIBForm = ({ messages = {} }) => {
                                                     justifyContent: "space-around",
                                                     alignItems: "center",
                                                     gap: "5px",
+                                                    direction: "ltr",
                                                 }}
                                                 renderInput={(props) => (
                                                     <input
