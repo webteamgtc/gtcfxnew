@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { locales, defaultLocale, localeDir } from "@/i18n/config";
-import { useLocale } from "../../LocaleProvider";
+import { useLocale, usePathTranslation } from "../../LocaleProvider";
 
 function formatLabel(slug) {
   if (!slug) return "";
@@ -42,6 +42,7 @@ export default function InnerPageBanner({
 }) {
   const pathname = usePathname();
   const locale = useLocale();
+  const tBreadcrumb = usePathTranslation("breadcrumbs");
   const isRTL = localeDir[locale] === "rtl";
   const pathParts = pathname.split("/").filter(Boolean);
 
@@ -56,7 +57,7 @@ export default function InnerPageBanner({
       : "/";
 
   const breadcrumbItems = [
-    { label: "Home", href: homeHref },
+    { label: tBreadcrumb("home", "Home"), href: homeHref },
     ...breadcrumbSegments.map((segment, index) => {
       const href =
         (currentLocale ? `/${currentLocale}` : "") +
@@ -64,14 +65,19 @@ export default function InnerPageBanner({
         breadcrumbSegments.slice(0, index + 1).join("/");
 
       return {
-        label: formatLabel(segment),
+        label: tBreadcrumb(`url.${segment}`, formatLabel(segment)),
         href,
       };
     }),
   ];
 
   const pageTitle =
-    title || formatLabel(segments[segments.length - 1]) || "Page Title";
+    title ||
+    tBreadcrumb(
+      `url.${segments[segments.length - 1]}`,
+      formatLabel(segments[segments.length - 1])
+    ) ||
+    "Page Title";
 
   const overlayGradient = overlay
     ? isRTL
@@ -89,6 +95,9 @@ export default function InnerPageBanner({
             backgroundImage: overlayGradient
               ? `${overlayGradient}, url('${mobileBackgroundImage}')`
               : `url('${mobileBackgroundImage}')`,
+            transform: isRTL ? "rotateY(180deg)" : undefined,
+            transformOrigin: "center",
+
           }}
         />
 
@@ -99,7 +108,9 @@ export default function InnerPageBanner({
             backgroundImage: overlayGradient
               ? `${overlayGradient}, url('${backgroundImage}')`
               : `url('${backgroundImage}')`,
-          }}
+            transform: isRTL ? "rotateY(180deg)" : undefined,
+            transformOrigin: "center",
+           }}
         />
 
         {/* Decorative bars */}
