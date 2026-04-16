@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CopyTradingHero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#EEF4FF] via-white to-[#F8FAFC] py-16 md:py-20 lg:py-24">
+    <section className="relative overflow-hidden">
       {/* glow */}
       <div className="pointer-events-none absolute left-[-100px] top-10 h-[260px] w-[260px] rounded-xl bg-[#263788]/10 blur-3xl" />
       <div className="pointer-events-none absolute right-[-120px] bottom-0 h-[280px] w-[280px] rounded-xl bg-[#b68756]/10 blur-3xl" />
@@ -57,34 +57,16 @@ export default function CopyTradingHero() {
 
             <div className="relative w-full max-w-[620px]">
               <Image
-                src="/copy-trading/hero-map.webp"
+                src="/copy/copyTrading.webp" 
                 alt="Copy trading global network"
                 width={620}
                 height={480}
                 className="h-auto w-full object-contain"
               />
 
-              {/* floating stat cards */}
-              <div className="absolute left-[2%] top-[12%] hidden rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur md:block">
-                <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#b68756]">
-                  Top Strategy
-                </p>
-                <p className="mt-1 text-lg font-bold text-primary">+62.07%</p>
-              </div>
-
-              <div className="absolute right-[3%] top-[30%] hidden rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur md:block">
-                <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#b68756]">
-                  Copied Trades
-                </p>
-                <p className="mt-1 text-lg font-bold text-primary">Global Network</p>
-              </div>
-
-              <div className="absolute bottom-[8%] left-[12%] hidden rounded-2xl border border-white/60 bg-white/90 px-4 py-3 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur md:block">
-                <p className="text-xs font-semibold uppercase tracking-[0.08em] text-[#b68756]">
-                  Popular Picks
-                </p>
-                <p className="mt-1 text-lg font-bold text-primary">24/7 Access</p>
-              </div>
+         
+            
+          
             </div>
           </div>
         </div>

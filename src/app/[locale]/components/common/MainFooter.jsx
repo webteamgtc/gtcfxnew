@@ -42,15 +42,16 @@ export default function MainFooter({ locale: localeProp = "en" }) {
       ],
     },
     {
-      title: t("columns.resources.label", "Insights & Resources"),
+      title: t("columns.resources.label", "Resources"),
       links: [
-        { label: t("columns.resources.menu1", "Market Insights"), href: "/blogs" },
-        { label: t("columns.resources.menu2", "Company News"), href: "/company-news" },
-        { label: t("columns.resources.menu3", "Economic Calendar"), href: "/economic-calendar" },
-        { label: t("columns.resources.menu4", "Earnings Calendar"), href: "/earnings-calendar" },
-        { label: t("columns.resources.menu5", "Website Disclaimer"), href: "/website-disclaimer" },
-        { label: t("columns.resources.menu6", "Risk Disclosure"), href: "/risk-disclosure" },
-        { label: t("columns.resources.menu7", "Restricted Countries"), href: "/restricted-countries" },
+        { label: t("columns.resources.menu1", "Website Disclaimer"), href: "/website-disclaimer" },
+        { label: t("columns.resources.menu2", "Risk Disclosure"), href: "/risk-disclosure" },
+        { label: t("columns.resources.menu3", "Restricted Countries"), href: "/swap-free-terms-and-conditions" },
+        { label: t("columns.resources.menu4", "Swap Free Terms & Conditions"), href: "/swap-free-terms-and-conditions" },
+        { label: t("columns.resources.menu5", "Deposit & Refund Policy"), href: "/deposit-and-refund-policy" },
+        { label: t("columns.resources.menu6", "KYC & Compliance Policy"), href: "/kyc-compliance-policy" },
+        { label: t("columns.resources.menu7", "Cookie Policy"), href: "/cookie-policy" },
+        { label: t("columns.resources.menu8", "Privacy Policy"), href: "/privacy-policy" },
       ],
     },
     {
@@ -59,10 +60,10 @@ export default function MainFooter({ locale: localeProp = "en" }) {
         { label: t("columns.companyLegal.menu1", "About Us"), href: "/about-us" },
         { label: t("columns.companyLegal.menu2", "Why GTC Group"), href: "/why-gtc-group" },
         { label: t("columns.companyLegal.menu3", "Global Presence"), href: "/global-presence" },
-        { label: t("columns.companyLegal.menu4", "Awards"), href: "/awards" },
-        { label: t("columns.companyLegal.menu5", "Careers"), href: "/careers" },
-        { label: t("columns.companyLegal.menu6", "Contact Us"), href: "/contact-us" },
-        { label: t("columns.companyLegal.menu7", "Regulations"), href: "/regulations" },
+        { label: t("columns.companyLegal.menu4", "Regulations"), href: "/regulations" },
+        { label: t("columns.companyLegal.menu5", "Market Insights"), href: "/blogs" },
+        { label: t("columns.companyLegal.menu6", "Company Update"), href: "/company-news" },
+        { label: t("columns.companyLegal.menu7", "Earnings Calendar"), href: "/earnings-calendar" },
       ],
     },
   ];
@@ -220,7 +221,7 @@ export default function MainFooter({ locale: localeProp = "en" }) {
           </ul>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 md:flex-row md:items-center bg-primary text-center justify-center text-white py-2 text-xs md:text-sm rounded-lg">
+        <div className="TextSmall mt-6 text-xs">
           {copyrightText}
         </div>
       </div>

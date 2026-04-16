@@ -84,70 +84,87 @@
       "title": "Trading Glossary & FAQs | GTCFX",
       "des": "Explore key trading terms and FAQs to better understand financial markets and improve your trading knowledge."
     },
-    "leaderboard": {
-      "title": "Leaderboard - GTCFX",
-      "des": "Explore our leaderboard and see the top traders. See how you compare to other traders and see how you can improve your trading skills."
-    },
-    "marginBonus": {
-      "title": "Margin Bonus - GTCFX",
-      "des": "Enhance your trading power with additional margin support, giving you greater flexibility to seize market opportunities."
-    },
-    "riskDisclosure": {
-      "title": "Risk Disclosure - GTCFX",
-      "des": "Understand the risks associated with trading financial instruments before making investment decisions."
-    },
-    "legalPoliciesClientAgreements": {
-      "title": "Legal Policies and Client Agreements - GTCFX",
-      "des": "Explore our legal documents, policies, and client agreements."
-    },
-    "promotion": {
-      "title": "Deposit & Trade Cashback – Earn Up to $1,000 | GTCFX",
-      "des": "Boost your trading profits with our Deposit & Trade Cashback Program! Earn up to $1,000 cashback when you trade Forex, Metals, and Oil. The more you deposit, the higher your reward. Start trading today! 🚀"
-    },
     "forex": {
-      "title": "Forex Trading with GTCFX and Access Global Markets with Confidence",
-      "des": "Start forex trading with GTCFX and explore global currency markets with tight spreads and lightning-fast execution. Choose a platform designed for traders who demand reliability and precision."
+      "title": "Forex Trading | Trade Global Currency Markets | GTCFX",
+      "des": "Trade global currency markets with GTCFX. Access competitive spreads, fast execution, and reliable trading platforms designed for Forex traders."
     },
     "energy": {
-      "title": "CFD Energy Trading with GTCFX – Trade Oil, Gas, and More",
-      "des": "Explore CFD energy trading with GTCFX. Trade oil, gas, and other energy markets with advanced tools and real-time insights to maximize your trading potential in the energy sector."
+      "title": "Energy Trading | Trade Oil, Gas & More | GTCFX",
+      "des": "Trade energy markets including oil and gas with GTCFX. Access real-time pricing, advanced tools, and fast execution across global energy CFDs."
     },
     "shares": {
-      "title": "Trade Shares And Invest In Global Companies | GTCFX",
-      "des": "Diversify your investment portfolio by adding shares of some of the most prominent global brands, such as apple, tesla, netflix, and others"
+      "title": "Share Trading | Invest in Global Companies | GTCFX",
+      "des": "Trade shares of leading global companies with GTCFX. Diversify your portfolio with access to major brands across international markets."
     },
     "stock": {
-      "title": "Trade Stocks with GTCFX and Access Global Markets for Better Opportunities",
-      "des": "Explore stock trading with GTCFX and gain access to major global markets. Buy and sell stocks effortlessly with user-friendly tools and real-time market updates."
+      "title": "Stock Trading | Access Global Equity Markets | GTCFX",
+      "des": "Explore stock trading with GTCFX and access major global equity markets with real-time pricing, advanced tools, and reliable execution."
     },
     "commodities": {
-      "title": "Trade Commodities with GTCFX and Explore Oil, Gold, and More",
-      "des": "Start trading commodities like oil, gold, and more with GTCFX. Access global markets, diversify your investments, and capitalize on profitable opportunities with ease."
+      "title": "Commodities Trading | Trade Gold, Oil & More | GTCFX",
+      "des": "Trade commodities including gold, oil, and other global markets with GTCFX. Diversify your strategy with flexible access and reliable execution."
     },
     "indices": {
-      "title": "Start Indices Trading with GTCFX and Access Top Global Markets",
-      "des": "Engage in indices trading with GTCFX and explore top global markets. Trade major indices with ease and make informed decisions with real-time data and flexible options."
+      "title": "Indices Trading | Trade Global Market Indices | GTCFX",
+      "des": "Trade major global indices with GTCFX. Access real-time market data, flexible trading conditions, and efficient execution across index CFDs."
     },
     "metals": {
-      "title": "Trade Precious Metals Like Gold and Silver Easily with GTCFX",
-      "des": "Start trading precious metals like gold and silver with GTCFX. Buy and sell with simple steps, flexible options, and real-time market access."
+      "title": "Metals Trading | Trade Gold, Silver & More | GTCFX",
+      "des": "Trade precious metals including gold and silver with GTCFX. Access global markets with fast execution and reliable trading conditions."
     },
     "mt4Platform": {
-      "title": "Trade Easily with the MT4 Trading Platform at GTCFX",
-      "des": "Download the MT4 Trading Platform for Windows, Mac, iOS, and Android with GTCFX. Trade CFDs on Forex, Stocks, Indices, Commodities, and more with a powerful and easy-to-use platform. Open your MT4 account now."
+      "title": "MT4 Trading Platform | MetaTrader 4 | GTCFX",
+      "des": "Download the MT4 trading platform with GTCFX for Windows, Mac, iOS, and Android. Trade Forex, indices, commodities, shares, and more with ease."
     },
     "mt5Platform": {
-      "title": "Trade with the MT5 Trading Platform at GTCFX for Advanced Features",
-      "des": "Get the MT5 Trading Platform for Windows, Mac, iOS, and Android with GTCFX. Trade CFDs on Forex, Stocks, Indices, Commodities, and more with advanced tools and fast execution. Start trading on MT5 today."
+      "title": "MT5 Trading Platform | MetaTrader 5 | GTCFX",
+      "des": "Access the MT5 trading platform with GTCFX on Windows, Mac, iOS, and Android. Trade global markets with advanced tools and fast execution."
     },
     "downloadApp": {
-      "title": "Download Trading Platform for Fast and Secure Trading with GTCFX",
-      "des": "Download trading platform and start trading anytime. Access global markets with a fast, secure, and user-friendly platform on your device. Download now."
+      "title": "Download Trading Platforms | Trade Anytime | GTCFX",
+      "des": "Download GTCFX trading platforms and access global markets anytime. Enjoy fast, secure, and user-friendly trading across all your devices."
     },
     "dynamicLeverage": {
-      "title": "Dynamic Leverage for Flexible and Smart Trading with GTCFX",
-      "des": "Learn how Dynamic Leverage adjusts to your trades for better risk management. Trade smarter with a flexible leverage system at GTCFX. Get started today."
+      "title": "Dynamic Leverage | Flexible Trading Conditions | GTCFX",
+      "des": "Learn how dynamic leverage adjusts based on your trading volume to support better risk management and more flexible trading conditions."
     },
+    "swapFree": {
+      "title": "Swap-Free Trading | Trade Without Overnight Fees | GTCFX",
+      "des": "Trade without swap charges on eligible accounts. GTCFX offers swap-free trading conditions to help you manage positions without overnight fees."
+    },
+    "swapFreeGTCFX": {
+      "title": "Swap-Free Trading | No Overnight Charges | GTCFX",
+      "des": "Enjoy swap-free trading conditions with no overnight charges on selected accounts."
+    },
+    "liquidityTechnology": {
+      "title": "Liquidity & Trading Technology | GTC Prime | GTCFX",
+      "des": "Access institutional-grade liquidity and advanced trading technology with GTC Prime. Benefit from deep liquidity pools and reliable execution."
+    },
+    "copyTrading": {
+      "title": "Copy Trading Platform | Follow Top Traders | GTCFX",
+      "des": "Copy top-performing traders and automate your strategy with GTCFX. Diversify your portfolio with simple and efficient copy trading."
+    },
+    "pammAccount": {
+      "title": "PAMM Account | Invest with Professional Traders | GTCFX",
+      "des": "Invest in professionally managed trading accounts with GTCFX PAMM. Access expert strategies and participate in performance-based returns."
+    },
+    "mamAccount": {
+      "title": "MAM Account | Multi-Account Management | GTCFX",
+      "des": "Manage multiple trading accounts from a single interface with GTCFX MAM. Designed for professional traders and asset managers."
+    },
+    "vpsHosting": {
+      "title": "VPS Hosting for Trading | Low Latency & Stability | GTCFX",
+      "des": "Enhance your trading with VPS hosting from GTCFX. Enjoy low latency, secure connections, and uninterrupted execution."
+    },
+    "restrictedCountries": {
+      "title": "Restricted Countries | GTCFX Service Availability",
+      "des": "Check the list of restricted countries for GTCFX services and ensure compliance before opening a trading account."
+    },
+    "marginBonus": {
+      "title": "Margin Bonus | Boost Your Trading Power | GTCFX",
+      "des": "Increase your trading potential with additional margin support. Gain flexibility and access more opportunities with GTCFX."
+    },
+
     "introductoryBroker": {
       "title": "Become an Introducing Broker and Grow Your Earnings with GTCFX",
       "des": "Join the GTCFX Introducing Broker program and earn commissions by referring traders. Build your network and grow your income with a trusted broker. Sign up today."
@@ -156,69 +173,42 @@
       "title": "Join the GTCFX Affiliate Program and Earn Commissions Easily",
       "des": "Partner with GTCFX through our Affiliate Program and earn commissions for every referral. Start your journey to passive income today. Sign up now."
     },
-    "liquidityTechnology": {
-      "title": "GTC Prime Provides Liquidity & Technology for Global Traders",
-      "des": "GTC Prime offers Liquidity & Technology with advanced infrastructure and pricing from tier 1 banks, ensuring DMA execution for seamless trading."
-    },
-    "copyTrading": {
-      "title": "Copy Trading for Easy and Smart Investments with GTCFX",
-      "des": "Use Copy Trading to follow expert traders and automate your investments. Trade smarter with GTCFX and grow your portfolio effortlessly. Start now."
-    },
-    "pammAccount": {
-      "title": "Invest and Manage Funds Easily with a PAMM Account at GTCFX",
-      "des": "Open a PAMM account at GTCFX to invest in expert-managed funds. Earn profits while professional traders handle your investments. Get started today."
-    },
-    "mamAccount": {
-      "title": "Manage Multiple Trading Accounts with a Multi Account Manager",
-      "des": "Use the Multi Account Manager at GTCFX to control multiple accounts from one platform. Trade efficiently with advanced management tools. Start now."
-    },
-    "signalCenter": {
-      "title": "Make Better Trades with the Signal Centre Tool at GTCFX",
-      "des": "Use the Signal Centre Tool to get real-time market insights and expert trading signals. Stay informed and make confident trading decisions. Try it now."
-    },
-    "vpsHosting": {
-      "title": "Get Secure and Fast VPS Hosting Services for Trading at GTCFX",
-      "des": "Use VPS hosting services at GTCFX for stable and high-speed trading. Ensure low latency, secure connections, and uninterrupted market access. Set up now."
-    },
-    "expertAnalysis": {
-      "title": "Expert Analysis and Technical Tools for Smarter Trading at GTCFX",
-      "des": "Use VPS hosting services at GTCFX for stable and high-speed trading. Ensure low latency, secure connections, and uninterrupted market access. Set up now."
-    },
-    "autoChartist": {
-      "title": "AutoChartist for Smart Market Analysis and Trading at GTCFX",
-      "des": "Use AutoChartist at GTCFX to detect market patterns and trends in real-time. Enhance your trading strategy with automated analysis. Try it now."
+
+    "riskDisclosure": {
+      "title": "Risk Disclosure | Trading Risks Explained | GTCFX",
+      "des": "Understand the risks associated with trading Forex and CFDs before making investment decisions. Ensure informed and responsible trading."
     },
     "privacyPolicy": {
-      "title": "Privacy Policy - How GTCFX Protects Your Data and Security",
-      "des": "Read the GTCFX Privacy Policy to understand how we protect your personal data and ensure secure trading. Your privacy and security matter. Learn more."
+      "title": "Privacy Policy | Data Protection & Security | GTCFX",
+      "des": "Learn how GTCFX collects, uses, and protects your personal data in accordance with global data protection standards."
     },
-    "withDrawal": {
-      "title": "Withdrawal Policy - Fast and Secure Fund Withdrawals at GTCFX",
-      "des": "Read the GTCFX Withdrawal Policy to learn about secure, fast, and hassle-free fund withdrawals. Get smooth access to your trading profits. Learn more."
+    "withdrawal": {
+      "title": "Withdrawal Policy | Fund Withdrawals | GTCFX",
+      "des": "Review the GTCFX withdrawal policy, including processing times, methods, and conditions for secure fund withdrawals."
     },
     "compliancePolicy": {
-      "title": "KYC and Compliance Policy for Secure Trading at GTCFX",
-      "des": "Learn about GTCFX's KYC and compliance policy to ensure secure and transparent trading. Follow simple verification steps for a safe experience. Read more."
+      "title": "KYC & Compliance Policy | Identity Verification | GTCFX",
+      "des": "Understand GTCFX’s KYC and compliance procedures for identity verification, regulatory requirements, and secure trading practices."
     },
     "refundPolicy": {
-      "title": "Deposit and Refund Policy for Secure Transactions at GTCFX",
-      "des": "Read the GTCFX Deposit and Refund Policy to understand secure payment processes, fast deposits, and hassle-free refunds. Learn more today."
-    },
-    "restrictedCountries": {
-      "title": "Check the List of Restricted Countries for GTCFX Services",
-      "des": "Find out which countries are restricted from accessing GTCFX services. Ensure compliance before you start trading. Learn more today."
+      "title": "Deposit & Refund Policy | Payments & Transactions | GTCFX",
+      "des": "Review GTCFX’s deposit and refund policy, including payment methods, processing procedures, and transaction guidelines."
     },
     "swapTermsCondition": {
-      "title": "Learn the Terms and Conditions of GTCFX Swap-Free Trading Accounts",
-      "des": "Read the swap-free trading account terms and conditions at GTCFX to understand eligibility, rules, and benefits of interest-free trading. Learn more now.."
+      "title": "Swap-Free Terms & Conditions | GTCFX",
+      "des": "Review the terms and conditions for swap-free accounts, including eligibility, usage rules, and applicable conditions."
     },
-    "marginRequirments": {
-      "title": "Manage Your Trades with the Right Margin Requirements at GTCFX",
-      "des": "Learn about GTCFX's margin requirements to manage your trades effectively. Get insights on leverage and risk management. Read more now."
+    "marginRequirements": {
+      "title": "Margin Requirements | Leverage & Risk Management | GTCFX",
+      "des": "Learn about margin requirements, leverage, and how they impact your trading positions and risk management."
     },
     "deleteAccount": {
-      "title": "Delete Your GTCFX Trading Account | Secure Account Removal",
-      "des": "Use this secure form to delete your GTCFX trading account. Verify your email via OTP and confirm your login ID to safely process your account removal request."
+      "title": "Account Deletion | Close Your Trading Account | GTCFX",
+      "des": "Submit a request to securely close your GTCFX trading account by verifying your identity and account details."
+    },
+    "websiteDisclaimer": {
+      "title": "Website Disclaimer | GTCFX",
+      "des": "The information provided on this website is for general informational purposes only and does not constitute investment advice, solicitation, or recommendation."
     }
   },
   "navigation": {
@@ -1684,24 +1674,25 @@
         "menu5": "Margin Bonus"
       },
       "resources": {
-        "label": "Insights & Resources",
-        "menu1": "Market Insights",
-        "menu2": "Company News",
-        "menu3": "Economic Calendar",
-        "menu4": "Earnings Calendar",
-        "menu5": "Website Disclaimer",
-        "menu6": "Risk Disclosure",
-        "menu7": "Restricted Countries"
+        "label": "Resources",
+        "menu1": "Website Disclaimer",
+        "menu2": "Risk Disclosure",
+        "menu3": "Restricted Countries",
+        "menu4": "Swap Free Terms & Conditions",
+        "menu5": "Deposit & Refund Policy",
+        "menu6": "KYC & Compliance Policy",
+        "menu7": "Cookie Policy",
+        "menu8": "Privacy Policy"
       },
       "companyLegal": {
         "label": "Company & Legal",
         "menu1": "About Us",
         "menu2": "Why GTC Group",
         "menu3": "Global Presence",
-        "menu4": "Awards",
-        "menu5": "Careers",
-        "menu6": "Contact Us",
-        "menu7": "Regulations"
+        "menu4": "Regulations",
+        "menu5": "Market Insights",
+        "menu6": "Company Update",
+        "menu7": "Earnings Calendar"
       }
     },
     "footerHeading": "Connecting you to global markets, anytime, anywhere.",
@@ -3000,56 +2991,56 @@
   "breadcrumbs": {
     "home": "Home",
     "url": {
-        "about-us": "About Us",
-        "account-types": "Account Types",
-        "awards": "Awards",
-        "blogs": "Blogs",
-        "careers": "Careers",
-        "cfd-energy": "Energy CFDs",
-        "commodities": "Commodities CFDs",
-        "company-news": "Company News",
-        "compensation-fund": "Compensation Fund",
-        "contact-us": "Contact Us",
-        "cookie-policy": "Cookie Policy",
-        "copy-trading": "Copy Trading",
-        "delete": "Delete Account",
-        "deposit": "Deposit Funds",
-        "deposit-and-refund-policy": "Deposit and Refund Policy",
-        "download-app": "Download App",
-        "dynamic-leverage": "Dynamic Leverage",
-        "earnings-calendar": "Earnings & Dividends Calendar",
-        "economic-calendar": "Economic Calendar",
-        "events-and-exhibitions": "Events and Exhibitions",
-        "forex": "Forex CFDs",
-        "free-demo-account": "Free Demo Account",
-        "global-presence": "Global Presence",
-        "glossary-faqs": "Glossary & FAQs",
-        "gtc-go-app": "GTC Go App",
-        "home2": "Home",
-        "indices": "Indices CFDs",
-        "kyc-compliance-policy": "KYC Compliance Policy",
-        "leaderboard": "Leaderboard",
-        "legal-policies-client-agreements": "Legal Policies & Client Agreements",
-        "liquidity-technology": "Liquidity & Technology",
-        "mam-account": "MAM Account",
-        "margin-bonus": "Margin Bonus",
-        "market-overview": "Market Overview",
-        "mt4-platform": "MT4 Platform",
-        "mt5-platform": "MT5 Platform",
-        "pamm-account": "PAMM Account",
-        "precious-metals": "Metals CFDs",
-        "privacy-policy": "Privacy Policy",
-        "regulations": "Regulations",
-        "restricted-countries": "Restricted Countries",
-        "risk-disclosure": "Risk Disclosure",
-        "swap-free-terms-and-conditions": "Swap-Free Terms and Conditions",
-        "swap-free-trading": "Swap-Free Trading",
-        "swap-update": "Swap Update",
-        "thank-you": "Thank You",
-        "tutorial-videos": "Tutorial Videos",
-        "vps-hosting-services": "VPS Hosting Services",
-        "website-disclaimer": "Website Disclaimer",
-        "why-gtc-group": "Why GTC Group"
+      "about-us": "About Us",
+      "account-types": "Account Types",
+      "awards": "Awards",
+      "blogs": "Blogs",
+      "careers": "Careers",
+      "cfd-energy": "Energy CFDs",
+      "commodities": "Commodities CFDs",
+      "company-news": "Company News",
+      "compensation-fund": "Compensation Fund",
+      "contact-us": "Contact Us",
+      "cookie-policy": "Cookie Policy",
+      "copy-trading": "Copy Trading",
+      "delete": "Delete Account",
+      "deposit": "Deposit Funds",
+      "deposit-and-refund-policy": "Deposit and Refund Policy",
+      "download-app": "Download App",
+      "dynamic-leverage": "Dynamic Leverage",
+      "earnings-calendar": "Earnings & Dividends Calendar",
+      "economic-calendar": "Economic Calendar",
+      "events-and-exhibitions": "Events and Exhibitions",
+      "forex": "Forex CFDs",
+      "free-demo-account": "Free Demo Account",
+      "global-presence": "Global Presence",
+      "glossary-faqs": "Glossary & FAQs",
+      "gtc-go-app": "GTC Go App",
+      "home2": "Home",
+      "indices": "Indices CFDs",
+      "kyc-compliance-policy": "KYC Compliance Policy",
+      "leaderboard": "Leaderboard",
+      "legal-policies-client-agreements": "Legal Policies & Client Agreements",
+      "liquidity-technology": "Liquidity & Technology",
+      "mam-account": "MAM Account",
+      "margin-bonus": "Margin Bonus",
+      "market-overview": "Market Overview",
+      "mt4-platform": "MT4 Platform",
+      "mt5-platform": "MT5 Platform",
+      "pamm-account": "PAMM Account",
+      "precious-metals": "Metals CFDs",
+      "privacy-policy": "Privacy Policy",
+      "regulations": "Regulations",
+      "restricted-countries": "Restricted Countries",
+      "risk-disclosure": "Risk Disclosure",
+      "swap-free-terms-and-conditions": "Swap-Free Terms and Conditions",
+      "swap-free-trading": "Swap-Free Trading",
+      "swap-update": "Swap Update",
+      "thank-you": "Thank You",
+      "tutorial-videos": "Tutorial Videos",
+      "vps-hosting-services": "VPS Hosting Services",
+      "website-disclaimer": "Website Disclaimer",
+      "why-gtc-group": "Why GTC Group"
     }
-}
+  }
 }
