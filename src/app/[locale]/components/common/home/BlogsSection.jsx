@@ -26,63 +26,76 @@ function IconClock({ className }) {
 
 const DEFAULT_STRAPI_API_BASE = "https://api.gtcfx.com/api";
 
-const mapLocale = (locale) => (locale === "zh" ? "zh-Hans" : locale || "en");
-
 const getApiBase = () =>
-    (
-        process.env.NEXT_PUBLIC_STRAPI_API_URL ||
-        process.env.STRAPI_API_URL ||
-        DEFAULT_STRAPI_API_BASE
-    ).replace(/\/$/, "");
-
-const getAuthHeaders = () => {
-    const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
-    return token ? { Authorization: `Bearer ${token}` } : {};
-};
+  (
+    process.env.NEXT_PUBLIC_STRAPI_API_URL ||
+    process.env.STRAPI_API_URL ||
+    DEFAULT_STRAPI_API_BASE
+  ).replace(/\/$/, "");
 
 function getImageUrl(post) {
-    const attrs = post?.attributes ?? post ?? {};
-    const media =
-        attrs?.imageUrl?.data?.attributes?.url ||
-        attrs?.image?.data?.attributes?.url ||
-        attrs?.image?.url ||
-        "";
-    if (!media) return "/home/one.webp";
-    if (String(media).startsWith("http")) return String(media);
-    const base = (process.env.NEXT_PUBLIC_STRAPI_MEDIA_URL || getApiBase()).replace(/\/$/, "");
-    return `${base}${media}`;
+  const attrs = post?.attributes ?? post ?? {};
+  const media =
+    attrs?.imageUrl?.data?.attributes?.url ||
+    attrs?.image?.data?.attributes?.url ||
+    attrs?.image?.url ||
+    "";
+
+  if (!media) return "/home/one.webp";
+  if (String(media).startsWith("http")) return String(media);
+
+  const base = (
+    process.env.NEXT_PUBLIC_STRAPI_MEDIA_URL || getApiBase()
+  ).replace(/\/$/, "");
+
+  return `${base}${media}`;
 }
 
-function getCategoryName(post) {
-    const attrs = post?.attributes ?? post ?? {};
-    return (
-        attrs?.category?.data?.attributes?.name ||
-        attrs?.category?.name ||
-        "Blogs"
-    );
+function getCategoryName(post, fallback) {
+  const attrs = post?.attributes ?? post ?? {};
+  return (
+    attrs?.category?.data?.attributes?.name ||
+    attrs?.category?.name ||
+    fallback
+  );
 }
 
-function getExcerpt(post) {
-    const attrs = post?.attributes ?? post ?? {};
-    return (
-        attrs?.descreption || attrs?.short_descreption ||
-        attrs?.shortDescription ||
-
-        "Read the latest updates and announcements from our team."
-    );
+function getExcerpt(post, fallback) {
+  const attrs = post?.attributes ?? post ?? {};
+  return (
+    attrs?.descreption ||
+    attrs?.short_descreption ||
+    attrs?.shortDescription ||
+    fallback
+  );
 }
 
-function formatDate(isoString) {
-    if (!isoString) return "Mar 26, 2026";
-    try {
-        return new Date(isoString).toLocaleDateString("en-US", {
-            month: "short",
-            day: "2-digit",
-            year: "numeric",
-        });
-    } catch {
-        return "Mar 26, 2026";
-    }
+function formatDate(isoString, fallback = "Mar 26, 2026") {
+  if (!isoString) return fallback;
+
+  try {
+    return new Date(isoString).toLocaleDateString("en-US", {
+      month: "short",
+      day: "2-digit",
+      year: "numeric",
+    });
+  } catch {
+    return fallback;
+  }
+}
+
+function getNestedValue(obj, path, fallback = "") {
+  return path.split(".").reduce((acc, key) => acc?.[key], obj) ?? fallback;
+}
+
+async function getTranslations(locale = "en") {
+  try {
+    const messages = (await import(`@/messages/${locale}.json`)).default;
+    return messages;
+  } catch {
+    const messages = (await import(`@/messages/en.json`)).default;
+    return messages;
+  }
 }
 
 async function getBlogs(locale, start = 0, limit = 3) {
@@ -95,21 +108,18 @@ async function getBlogs(locale, start = 0, limit = 3) {
   };
 
   const attemptParams = [
-    // Some Strapi setups expect relation filtering with id path
     {
       ...populateParams,
       "filters[category][id][$eq]": 6,
       "pagination[start]": start,
       "pagination[limit]": limit,
     },
-    // Keep previous style as a secondary attempt
     {
       ...populateParams,
       "filters[category][$eq]": 6,
       "pagination[start]": start,
       "pagination[limit]": limit,
     },
-    // Final fallback: no category filter
     {
       ...populateParams,
       "pagination[start]": start,
@@ -121,23 +131,25 @@ async function getBlogs(locale, start = 0, limit = 3) {
     for (const params of attemptParams) {
       try {
         const res = await fetchStrapiCollection("blogs", {
-          locale: loc,
+          locale: mapStrapiLocale(loc),
           populate: null,
           sort: "createdAt:desc",
           params,
           cache: "no-store",
         });
+
         if (Array.isArray(res?.data)) return res;
       } catch (error) {
         console.error("[blogs] blogs fetch attempt failed:", error?.message || error);
       }
     }
+
     return { data: [] };
   };
 
-  const mappedLocale = mapStrapiLocale(locale);
-  let res = await tryLoad(mappedLocale);
-  let usedLocale = mappedLocale;
+  let res = await tryLoad(locale);
+  let usedLocale = mapStrapiLocale(locale);
+
   if ((!res?.data || res.data.length === 0) && locale !== "en") {
     res = await tryLoad("en");
     usedLocale = "en";
@@ -145,6 +157,7 @@ async function getBlogs(locale, start = 0, limit = 3) {
 
   const rows = Array.isArray(res?.data) ? res.data : [];
   const total = Number(res?.meta?.pagination?.total || rows.length || 0);
+
   return {
     rows,
     total,
@@ -161,6 +174,7 @@ function BlogCard({
   href,
   imageSrc,
   imageAlt,
+  readMoreText,
 }) {
   return (
     <article className="flex h-full flex-col gap-2.5 md:gap-3">
@@ -178,7 +192,6 @@ function BlogCard({
           />
         ) : null}
 
-        {/* Category on image top-left */}
         <span className="absolute left-3 top-3 inline-flex w-fit items-center rounded-xl bg-secondary px-3 py-1 text-[11px] font-medium text-white md:px-3.5 md:py-1.5 md:text-xs">
           {category}
         </span>
@@ -203,7 +216,7 @@ function BlogCard({
               href={href}
               className="TextSmall shrink-0 font-normal text-primary underline decoration-primary underline-offset-[3px] transition hover:opacity-80"
             >
-              Read&nbsp;→
+              {readMoreText}
             </Link>
           </div>
         </div>
@@ -213,20 +226,41 @@ function BlogCard({
 }
 
 export default async function BlogsSection({ locale = "en" }) {
+  const messages = await getTranslations(locale);
+  const blogText = getNestedValue(messages, "home.homeBlogs", {});
+
   const firstBatch = await getBlogs(locale, 0, 3);
   const rows = Array.isArray(firstBatch?.rows) ? firstBatch.rows : [];
   const usedLocale = firstBatch?.usedLocale || locale;
+
+  const headingBefore = blogText?.heading?.before || "Latest Insights ";
+  const headingSeparator = blogText?.heading?.separator || "&";
+  const headingAfter = blogText?.heading?.after || " Company Updates";
+  const description =
+    blogText?.description ||
+    "Stay informed with the latest market insights, trading updates, and company news. Explore expert analysis, educational content, and important announcements from GTCFX.";
+  const readMore = blogText?.readMore || "Read →";
+
+  const fallbackTitle = blogText?.fallback?.title || "Untitled Article";
+  const fallbackExcerpt =
+    blogText?.fallback?.excerpt ||
+    "Read the latest updates and announcements from our team.";
+  const fallbackDate = blogText?.fallback?.date || "Mar 26, 2026";
+  const fallbackReadTime = blogText?.fallback?.readTime || "5 min read";
+  const fallbackCategory = blogText?.fallback?.category || "Blogs";
+  const fallbackImageAlt = blogText?.fallback?.imageAlt || "news image";
 
   return (
     <section className="py-10 md:py-16">
       <div className="container">
         <div className="mx-auto mb-10 flex max-w-4xl flex-col items-center gap-6 text-center md:mb-14">
-          <h2 className="HeadingH2">Latest Insights <span className="text-secondary"> & </span> Company Updates</h2>
-          <p className="Text">
-            Stay informed with the latest market insights, trading updates, and
-            company news. Explore expert analysis, educational content, and
-            important announcements from GTCFX.
-          </p>
+          <h2 className="HeadingH2">
+            {headingBefore}
+            <span className="text-secondary"> {headingSeparator} </span>
+            {headingAfter}
+          </h2>
+
+          <p className="Text">{description}</p>
         </div>
 
         <div className="hidden items-stretch gap-6 md:grid md:grid-cols-3 md:gap-8">
@@ -234,18 +268,20 @@ export default async function BlogsSection({ locale = "en" }) {
             const attrs = post?.attributes ?? post ?? {};
             const id = post?.id || `${attrs?.slug || "post"}-${idx}`;
             const href = `/${usedLocale}/blogs/${attrs?.slug || attrs?.documentId || post?.slug || ""}`;
+
             return (
               <BlogItem
                 key={id}
-                category={getCategoryName(post)}
-                title={attrs?.title || "Untitled Article"}
-                readTime={attrs?.readTime}
-                excerpt={getExcerpt(post)}
-                date={formatDate(attrs?.publishedAt || attrs?.createdAt)}
+                category={getCategoryName(post, fallbackCategory)}
+                title={attrs?.title || fallbackTitle}
+                readTime={attrs?.readTime || fallbackReadTime}
+                excerpt={getExcerpt(post, fallbackExcerpt)}
+                date={formatDate(attrs?.publishedAt || attrs?.createdAt, fallbackDate)}
                 dateIso={attrs?.publishedAt || attrs?.createdAt || "2026-03-26"}
                 href={href}
                 imageSrc={getImageUrl(post)}
-                imageAlt={attrs?.title || "news image"}
+                imageAlt={attrs?.title || fallbackImageAlt}
+                readMoreText={readMore}
               />
             );
           })}
@@ -256,15 +292,17 @@ export default async function BlogsSection({ locale = "en" }) {
             items={rows.map((post, idx) => {
               const attrs = post?.attributes ?? post ?? {};
               const href = `/${usedLocale}/blogs/${attrs?.slug || attrs?.documentId || post?.slug || ""}`;
+
               return {
-                category: getCategoryName(post),
-                title: attrs?.title || "Untitled Article",
-                readTime: attrs?.readTime || "5 min read",
-                date: formatDate(attrs?.publishedAt || attrs?.createdAt),
+                category: getCategoryName(post, fallbackCategory),
+                title: attrs?.title || fallbackTitle,
+                readTime: attrs?.readTime || fallbackReadTime,
+                date: formatDate(attrs?.publishedAt || attrs?.createdAt, fallbackDate),
                 dateIso: attrs?.publishedAt || attrs?.createdAt || "2026-03-26",
                 href,
                 imageSrc: getImageUrl(post),
-                imageAlt: attrs?.title || "news image",
+                imageAlt: attrs?.title || fallbackImageAlt,
+                readMoreText: readMore,
               };
             })}
           />

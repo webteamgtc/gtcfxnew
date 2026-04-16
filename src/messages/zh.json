@@ -1,2596 +1,2795 @@
 {
-    "navigation": {
-        "topbar": {
-            "liclabel": "SCA许可证",
-            "partner": "与NASDAQ 上市公司BHAT合作",
-            "member": "会员登录",
-            "account": "创建账户",
-            "rgister": "注册成为合作伙伴"
-        },
-        "menu": {
-            "about": "关于我们",
-            "account": "账户",
-            "trading": "交易和平台",
-            "prime": "Prime 与科技"
-        },
-        "about": {
-            "lable": "关于我们",
-            "des": "我们的核心宗旨是客户至上。在全球法规的监管下，我们自豪地为全球985,000多名客户提供服务。",
-            "firstcolumn": {
-                "heading": "关于GTCFX",
-                "option1": "关于GTCFX",
-                "option2": "为何选择GTC",
-                "option3": "GTC监管"
-            },
-            "secondcolumn": {
-                "heading": "公司",
-                "option1": "全球业务",
-                "option2": "奖项",
-                "option3": "资金安全"
-            },
-            "thirdcolumn": {
-                "heading": "亮点",
-                "option1": "市场洞察",
-                "option2": "公司新闻",
-                "option3": "财报与股息日历",
-                "option4": "经济日历与新闻",
-                "option5": "交易时间与假期"
-            },
-            "fourthcolumn": {
-                "heading": "联系我们",
-                "option1": "职业机会",
-                "option2": "联系我们"
-            }
-        },
-        "account": {
-            "lable": "账户",
-            "des": "我们提供专为新手和资深交易者定制的超低门槛专业账户",
-            "firstcolumn": {
-                "heading": "开始使用",
-                "option1": "开设实盘账户",
-                "option2": "开设模拟账户",
-                "option3": "为您的账户入金"
-            },
-            "secondcolumn": {
-                "heading": "账户",
-                "option1": "账户类型"
-            },
-            "thirdcolumn": {
-                "heading": "活动与推广",
-                "option1": "GTC Go App",
-                "option2": "活动与展会"
-            },
-            "fourthcolumn": {
-                "heading": "支持",
-                "option1": "术语与常见问题",
-                "option2": "教学视频",
-                "option3": "联系我们"
-            }
-        },
-        "trading": {
-            "lable": "交易和平台",
-            "des": "提供最高1:2000的杠杆，以及从0点开始的最低点差。\n提供多样化的交易产品，涵盖超过27,000种货币对、股票、贵金属、能源和股指，具有竞争力的点差、无拒单、无滑点，且交易执行安全。",
-            "firstcolumn": {
-                "heading": "交易品种",
-                "option1": "外汇 CFDs",
-                "option2": "能源 CFDs",
-                "option3": "大宗商品 CFDs",
-                "option4": "股指 CFDs",
-                "option5": "贵金属 CFDs"
-            },
-            "secondcolumn": {
-                "heading": "平台",
-                "option1": "MT4 交易平台",
-                "option2": "MT5 交易平台",
-                "option3": "下载交易平台"
-            },
-            "thirdcolumn": {
-                "heading": "杠杆与隔夜利息",
-                "option1": "动态杠杆",
-                "option2": "隔夜利息更新",
-                "option3": "GTCFX 无隔夜利息交易"
-            },
-            "fourthcolumn": {
-                "heading": "与我们合作",
-                "option1": "IB 计划",
-                "option2": "联盟计划",
-                "option3": "GTC Prime"
-            }
-        },
-        "prime": {
-            "lable": "Prime 与科技",
-            "firstcolumn": {
-                "heading": "Prime 服务",
-                "option1": "流动性与技术",
-                "option2": "跟单交易"
-            },
-            "secondcolumn": {
-                "heading": "交易工具",
-                "option1": "PAMM 账户",
-                "option2": "MAM 账户",
-                "option3": "VPS"
-            },
-            "thirdcolumn": {
-                "heading": "资源",
-                "option1": "法律文件",
-                "option2": "受限国家",
-                "option3": "保证金赠金",
-                "option4": "GTC AI 工具"
-            },
-            "fourthcolumn": {
-                "heading": "最新优惠",
-                "option1": "金鹰奖 2026",
-                "option2": "GTCVIP 忠诚奖励"
-            }
-        },
-        "partner": {
-            "lable": "我们的合作伙伴",
-            "des": "通过我们的合作伙伴计划，您可以提升业务能力并扩展客户网络。我们的IB计划旨在帮助您释放全部业务潜力，最大化盈利，并加速增长和提升盈利能力。",
-            "firstcolumn": {
-                "option1": "介绍经纪人（IB）"
-            },
-            "secondcolumn": {
-                "option1": "高级合作伙伴计划"
-            },
-            "thirdcolumn": {
-                "option1": "联盟计划"
-            }
-        },
-        "technology": {
-            "lable": "顶尖技术",
-            "des": "我们利用尖端技术和最新成果，确保操作无缝对接。与顶级银行合作，确保提供最佳流动性，使交易既迅速又安全。我们致力于创新，力求提供无与伦比的服务，精准满足客户的动态需求。",
-            "firstcolumn": {
-                "heading": "GTCFX 首选",
-                "option1": "流动性与技术",
-                "option2": "跟单交易",
-                "option3": "专业交易"
-            },
-            "secondcolumn": {
-                "heading": "交易工具",
-                "option1": "PAMM 账户",
-                "option2": "MAM 账户",
-                "option3": "信号中心工具",
-                "option4": "虚拟专用服务器"
-            },
-            "thirdcolumn": {
-                "heading": "分析",
-                "option1": "专家市场分析",
-                "option2": "自动图表分析工具",
-                "option3": "Acuity精准交易工具"
-            }
-        },
-        "login": "会员登录",
-        "new_client_portal": "会员登录",
-        "old_client_portal": "老客户门户"
+  "navigation": {
+    "topbar": {
+      "liclabel": "SCA许可证",
+      "partner": "与NASDAQ 上市公司BHAT合作",
+      "member": "会员登录",
+      "account": "创建账户",
+      "rgister": "注册成为合作伙伴"
     },
-    "metaData": {
-        "earningPage": {
-            "title": "GTC股票与指数财报日历",
-            "des": "GTC财报日历显示通过GTC交易平台提供的股票和指数的即将发布的盈利报告和股息信息。"
-        },
-        "home": {
-            "title": "GTCFX外汇经纪商提供超低点差、极速执行与安全交易环境",
-            "des": "选择GTCFX——值得信赖的外汇经纪商与流动性提供商，享受超低点差、极速出入金与银行级安全保障。立即开始交易"
-        },
-        "aboutUs": {
-            "title": "探索 GTCFX 提供的可靠在线交易和金融服务",
-            "des": "GTCFX 为全球交易者提供安全的在线交易和金融服务。立即开始您的旅程，获得专家支持。"
-        },
-        "whyGtcGroup": {
-            "title": "为什么 GTC 集团是成功的最佳交易平台？ | GTCFX",
-            "des": "GTC 集团是全球交易者的最佳交易平台，提供安全、可靠和创新的服务。自信交易，实现您的财务目标。立即开始交易。"
-        },
-        "regulations": {
-            "title": "GTCFX 是全球信赖和受监管的交易平台",
-            "des": "在 GTC 集团上自信交易，这是一个全球信赖和受监管的交易平台。我们获得许可并合规，提供全球安全的金融衍生品交易。"
-        },
-        "globalPresence": {
-            "title": "与 GTCFX 全球交易，值得信赖的金融解决方案经纪商",
-            "des": "GTCFX 是全球信赖的经纪商，提供安全的金融解决方案。凭借强大的全球影响力，我们连接全球交易者，提供无缝机会。"
-        },
-        "awards": {
-            "title": "GTCFX 是屡获殊荣的经纪商，以卓越表现著称",
-            "des": "在 GTCFX 自信交易，这是一家屡获殊荣的经纪商，树立行业标准。我们以创新和可靠性著称，提供世界级的交易解决方案。立即交易。"
-        },
-        "compensationFund": {
-            "title": "GTCFX 通过专用赔偿基金确保安全交易",
-            "des": "在 GTCFX 安心交易。我们的赔偿基金保障交易者，确保每笔交易的财务保护和安全。"
-        },
-        "blogs": {
-            "title": "最新外汇市场新闻与策略 | GTCFX",
-            "des": "GTCFX 博客提供深入的外汇交易指南、市场洞察和专家建议，帮助您在金融市场中取得成功。立即开始学习！"
-        },
-        "campanyNews": {
-            "title": "了解最新交易新闻和 GTCFX 更新",
-            "des": "从 GTCFX 获取最新交易新闻、市场洞察和公司更新。保持信息灵通，走在全球交易的前沿。"
-        },
-        "career": {
-            "title": "在 GTCFX 建立您的外汇职业生涯并成长",
-            "des": "GTCFX 是一家领先的金融科技公司，专注于外汇交易解决方案。我们的职业机会提供了一个协作和支持的工作环境，让创造力得以发展，人才得以赋能，实现长期成功。"
-        },
-        "contactUs": {
-            "title": "联系我们，获得专家交易支持和帮助",
-            "des": "需要交易帮助吗？联系 GTCFX 获得专家交易支持和个性化帮助。我们的团队随时准备帮助您自信交易。"
-        },
-        "demoAccount": {
-            "title": "开设免费外汇模拟账户，进行无风险交易",
-            "des": "在 GTC 集团开设免费外汇模拟账户，体验真实市场条件，测试策略，并在无风险的情况下建立信心。"
-        },
-        "deposit": {
-            "title": "轻松为您的账户注资，享受 GTCFX 的安全快速交易",
-            "des": "通过 GTCFX 安全地为您的账户注资，轻松开始交易 CFD 和外汇。享受快速交易、多种支付选项和无隐藏费用的无缝存款流程。"
-        },
-        "accountTypes": {
-            "title": "选择 GTCFX 的最佳实盘交易账户",
-            "des": "在 GTCFX 开设实盘交易账户，并从灵活账户类型中选择。享受有竞争力的点差、快速执行和安全的交易体验。"
-        },
-        "promotion": {
-            "title": "存款与交易返现 – 赚取高达 $1,000 | GTCFX",
-            "des": "通过我们的存款与交易返现计划提升您的交易利润！交易外汇、金属和石油时，赚取高达 $1,000 的返现。存款越多，奖励越高。立即开始交易！🚀"
-        },
-        "forex": {
-            "title": "与 GTCFX 进行外汇交易，自信进入全球市场",
-            "des": "与 GTCFX 开始外汇交易，探索全球货币市场，享受紧点差和闪电般快速的执行。选择一个为追求可靠性和精确性的交易者设计的平台。"
-        },
-        "energy": {
-            "title": "与 GTCFX 进行能源 CFD 交易 – 交易石油、天然气等",
-            "des": "与 GTCFX 探索能源 CFD 交易。使用先进工具和实时洞察交易石油、天然气和其他能源市场，最大化您在能源领域的交易潜力。"
-        },
-        "shares": {
-            "title": "交易股票并投资全球公司 | GTCFX",
-            "des": "通过添加一些全球知名品牌的股票（如苹果、特斯拉、Netflix 等）来多元化您的投资组合。"
-        },
-        "stock": {
-            "title": "与 GTCFX 进行股票交易，进入全球市场以获得更好的机会",
-            "des": "与 GTCFX 探索股票交易，进入主要全球市场。使用用户友好的工具和实时市场更新轻松买卖股票。"
-        },
-        "commodities": {
-            "title": "与 GTCFX 进行商品交易，探索石油、黄金等",
-            "des": "与 GTCFX 开始交易石油、黄金等商品。进入全球市场，多元化您的投资，并轻松抓住盈利机会。"
-        },
-        "indices": {
-            "title": "与 GTCFX 开始指数交易，进入顶级全球市场",
-            "des": "与 GTCFX 进行指数交易，探索顶级全球市场。轻松交易主要指数，并使用实时数据和灵活选项做出明智决策。"
-        },
-        "metals": {
-            "title": "与 GTCFX 轻松交易黄金和白银等贵金属",
-            "des": "与 GTCFX 开始交易黄金和白银等贵金属。通过简单步骤、灵活选项和实时市场访问进行买卖。"
-        },
-        "mt4Platform": {
-            "title": "在 GTCFX 使用 MT4 交易平台轻松交易",
-            "des": "下载适用于 Windows、Mac、iOS 和 Android 的 MT4 交易平台。通过 GTCFX 交易外汇、股票、指数、商品等 CFD，使用功能强大且易于使用的平台。立即开设您的 MT4 账户。"
-        },
-        "mt5Platform": {
-            "title": "在 GTCFX 使用 MT5 交易平台进行高级功能交易",
-            "des": "通过 GTCFX 获取适用于 Windows、Mac、iOS 和 Android 的 MT5 交易平台。使用高级工具和快速执行交易外汇、股票、指数、商品等 CFD。立即开始在 MT5 上交易。"
-        },
-        "downloadApp": {
-            "title": "下载交易平台，享受 GTCFX 的快速安全交易",
-            "des": "下载交易平台，随时开始交易。通过快速、安全和用户友好的平台访问全球市场。立即下载。"
-        },
-        "tutorialVideo": {
-            "title": "如何通过教程视频开设实盘交易账户、存款和提款 | GTCFX",
-            "des": "观看 GTCFX 教程视频，学习如何开设实盘交易账户、存款和轻松提款。立即与最佳经纪商之一自信交易。"
-        },
-        "weeklyWebinar": {
-            "title": "免费 10 周技术分析教育网络研讨会系列 – 立即注册！",
-            "des": "加入我们的独家交易网络研讨会，与专家 Harsh Japee 一起掌握技术分析和实时市场策略。获取实时洞察、经过验证的策略以及外汇、黄金、比特币和指数交易设置。立即注册 – 座位有限！"
-        },
-        "economicCalendar": {
-            "title": "通过 GTCFX 经济日历了解最新动态",
-            "des": "使用 GTCFX 经济日历跟踪重要市场事件。获取全球经济数据的实时更新，做出明智的交易决策。立即查看。"
-        },
-        "marketOverview": {
-            "title": "通过 GTCFX 获取最新市场概览和趋势",
-            "des": "获取最新市场概览，包括实时数据、趋势和分析。通过全球金融市场的最新洞察保持领先。立即探索。"
-        },
-        "glossary": {
-            "title": "金融术语和常见问题解答，帮助您了解 GTCFX 交易",
-            "des": "探索金融术语和常见问题解答，学习关键交易概念。获取清晰的解释和常见问题的答案，做出更好的交易决策。立即开始。"
-        },
-        "dynamicLeverage": {
-            "title": "GTCFX 的动态杠杆，实现灵活智能交易",
-            "des": "了解动态杠杆如何根据您的交易调整，实现更好的风险管理。在 GTCFX 使用灵活的杠杆系统更智能地交易。立即开始。"
-        },
-        "introductoryBroker": {
-            "title": "成为介绍经纪人，与 GTCFX 一起增加收入",
-            "des": "加入 GTCFX 介绍经纪人计划，通过推荐交易者赚取佣金。与值得信赖的经纪商建立您的网络并增加收入。立即注册。"
-        },
-        "affiliateProgram": {
-            "title": "加入 GTCFX 联盟计划，轻松赚取佣金",
-            "des": "通过我们的联盟计划与 GTCFX 合作，为每次推荐赚取佣金。立即开始您的被动收入之旅。立即注册。"
-        },
-        "liquidityTechnology": {
-            "title": "GTC Prime 为全球交易者提供流动性和技术",
-            "des": "GTC Prime 提供流动性和技术，拥有先进的基础设施和来自一级银行的定价，确保 DMA 执行以实现无缝交易。"
-        },
-        "copyTrading": {
-            "title": "复制交易，轻松智能投资 | GTCFX",
-            "des": "使用复制交易跟随专家交易者并自动化您的投资。与 GTCFX 更智能地交易，轻松增长您的投资组合。立即开始。"
-        },
-        "pammAccount": {
-            "title": "在 GTCFX 开设 PAMM 账户，轻松投资和管理资金",
-            "des": "在 GTCFX 开设 PAMM 账户，投资于专家管理的资金。在专业交易者处理您的投资时赚取利润。立即开始。"
-        },
-        "mamAccount": {
-            "title": "使用多账户管理器管理多个交易账户",
-            "des": "在 GTCFX 使用多账户管理器从一个平台控制多个账户。使用先进的管理工具高效交易。立即开始。"
-        },
-        "signalCenter": {
-            "title": "使用 GTCFX 的信号中心工具做出更好的交易",
-            "des": "使用信号中心工具获取实时市场洞察和专家交易信号。保持信息灵通，做出自信的交易决策。立即尝试。"
-        },
-        "vpsHosting": {
-            "title": "在 GTCFX 获取安全快速的 VPS 托管服务",
-            "des": "在 GTCFX 使用 VPS 托管服务，实现稳定和高速交易。确保低延迟、安全连接和不受干扰的市场访问。立即设置。"
-        },
-        "expertAnalysis": {
-            "title": "GTCFX 的专家分析和技术工具，助您更智能交易",
-            "des": "在 GTCFX 使用 VPS 托管服务，实现稳定和高速交易。确保低延迟、安全连接和不受干扰的市场访问。立即设置。"
-        },
-        "autoChartist": {
-            "title": "在 GTCFX 使用 AutoChartist 进行智能市场分析和交易",
-            "des": "在 GTCFX 使用 AutoChartist 实时检测市场模式和趋势。通过自动化分析增强您的交易策略。立即尝试。"
-        },
-        "privacyPolicy": {
-            "title": "隐私政策 – GTCFX 如何保护您的数据和安全",
-            "des": "阅读 GTCFX 隐私政策，了解我们如何保护您的个人数据并确保安全交易。您的隐私和安全至关重要。了解更多。"
-        },
-        "withDrawal": {
-            "title": "提款政策 – GTCFX 的快速安全资金提款",
-            "des": "阅读 GTCFX 提款政策，了解安全、快速和无麻烦的资金提款。轻松获取您的交易利润。了解更多。"
-        },
-        "compliancePolicy": {
-            "title": "GTCFX 的 KYC 和合规政策，确保安全交易",
-            "des": "了解 GTCFX 的 KYC 和合规政策，确保安全和透明的交易。遵循简单的验证步骤，获得安全体验。阅读更多。"
-        },
-        "refundPolicy": {
-            "title": "GTCFX 的存款和退款政策，确保安全交易",
-            "des": "阅读 GTCFX 存款和退款政策，了解安全支付流程、快速存款和无麻烦退款。立即了解更多。"
-        },
-        "restrictedCountries": {
-            "title": "查看 GTCFX 服务的受限国家列表",
-            "des": "了解哪些国家无法访问 GTCFX 服务。在开始交易前确保合规。立即了解更多。"
-        },
-        "swapTermsCondition": {
-            "title": "了解 GTCFX 无掉期交易账户的条款和条件",
-            "des": "阅读 GTCFX 无掉期交易账户的条款和条件，了解资格、规则和无利息交易的好处。立即了解更多。"
-        },
-        "marginRequirments": {
-            "title": "在 GTCFX 使用正确的保证金要求管理您的交易",
-            "des": "了解 GTCFX 的保证金要求，有效管理您的交易。获取有关杠杆和风险管理的洞察。立即阅读更多。"
-        }
-    },
-    "common": {
-        "liveAccount": "开设实盘账户",
-        "demoAccount": "免费模拟账户",
-        "counter": {
-            "stats": {
-                "servedClients": {
-                    "value": 985000,
-                    "suffix": " +",
-                    "label": "服务客户数",
-                    "duration": 2500
-                },
-                "tradingInstruments": {
-                    "value": 27000,
-                    "suffix": " +",
-                    "label": "交易品种",
-                    "duration": 2200
-                },
-                "destinationsWorldwide": {
-                    "value": 20,
-                    "suffix": " +",
-                    "label": "全球服务范围",
-                    "duration": 1800
-                },
-                "monthlyTrades": {
-                    "value": 750,
-                    "prefix": "$",
-                    "suffix": " 亿",
-                    "label": "每月交易额",
-                    "duration": 2500
-                }
-            }
-        },
-        "reviews": {
-            "totalReviews": 45,
-            "titleLine1": "阅读我们的评价，了解",
-            "titleLine2Prefix": "更多",
-            "titleHighlight": "关于",
-            "titleLine2Suffix": "我们的信息",
-            "subtitle": "查看来自全球客户的真实反馈",
-            "summary": "当前展示来自 TradingView、App Store、Google Play 和 Trustpilot 的 {total} 条评价。",
-            "swipeTip": "提示：左右滑动可查看更多评价。"
-        }
-    },
-    "home": {
-        "hero": {
-            "slider1": {
-                "heading": "交易、投资与合作",
-                "subheading": "与全球信赖且受监管的",
-                "description": "金融衍生品行业引领者"
-            },
-            "slider2": {
-                "heading": "接入",
-                "heading1": "8",
-                "heading2": "大市场",
-                "subheading": "超过27,000种",
-                "subheading2": "交易品种",
-                "description": "外汇 | 差价合约 | 贵金属 | 股票 | 大宗商品 | 能源"
-            },
-            "slider3": {
-                "heading": "依托顶尖交易平台",
-                "subheading": "与智能工具",
-                "description": "开启高阶交易模式"
-            },
-            "slider4": {
-                "heading": "深度流动性接入",
-                "subheading": "直连顶级流动性池"
-            },
-            "slider5": {
-                "heading": "体验前沿",
-                "subheading": "无缝化交易基础设施"
-            },
-            "title1": "可信赖",
-            "desc1": "深耕金融衍生品领域，以持续增长与客户至上理念赢得全球信赖",
-            "title2": "受监管",
-            "desc2": "恪守国际监管准则，构建跨市场信任体系与责任经营范式",
-            "title3": "全球化",
-            "desc3": "服务100+国家逾985,000客户，通过多元产品矩阵保障全球金融生态稳定",
-            "liveAccount": "注册GTCFX，开通实盘账户",
-            "partnerAccount": "成为合作伙伴",
-            "fact_no1": 985000,
-            "fact_desc1": "服务客户数",
-            "fact_no2": 27000,
-            "fact_desc2": "交易品种",
-            "no3": 300,
-            "fact_no3": "",
-            "fact_syn1": "$",
-            "fact_desc3": "全球服务范围",
-            "no4": "1350亿",
-            "fact_no4": "亿",
-            "fact_desc4": "每月交易额"
-        },
-        "primeHome": {
-            "heading": "为每位投资者打造的智能交易方案",
-            "desc": "选择适合您目标的交易方式。无论您倾向于实时跟随经验丰富的交易者，还是与专业的资金管理人共同投资，我们的方案都旨在让交易变得更简单、更智能、更透明。",
-            "CopyTrading": {
-                "heading": "跟单交易，化繁为简",
-                "desc": "跟随表现优异的交易者，实时自动复制其交易。选择跟随对象、设定投资金额，全程掌控——无需时刻盯盘，轻松交易。",
-                "button": "了解跟单交易",
-                "button1": "查看更多跟单账户"
-            },
-            "PAMMTrading": {
-                "heading": "PAMM管理账户，更智能的投资",
-                "desc": "投资于采用系统化策略交易的专业资金管理人。您的资金始终在您自己的账户中，表现完全透明，过程全自动——是长期投资的理想选择。",
-                "button": "了解PAMM交易",
-                "button1": "查看更多PAMM账户"
-            }
-        },
-        "whyGTC": {
-            "title": "全球顶尖在线交易平台",
-            "desc": "通过行业标杆级MetaTrader平台交易27,000+金融产品，尽享稳定交易环境与优势点差",
-            "first": {
-                "title": "点差",
-                "heading": "超低点差",
-                "description": "外汇0点差起，黄金5美分起"
-            },
-            "second": {
-                "title": "产品",
-                "heading": "交易品种",
-                "description": "八大市场27,000+交易品种"
-            },
-            "third": {
-                "title": "杠杆",
-                "heading": "超高杠杆",
-                "description": "最高1:2000杠杆，最低0.1%保证金要求"
-            },
-            "fourth": {
-                "title": "执行",
-                "heading": "极速执行",
-                "description": "顶级流动性保障，10毫秒极速订单处理，安全执行"
-            },
-            "desc2": "高效提升收益",
-            "open_live_account": "注册GTCFX，开通实盘账户"
-        },
-        "accountType": {
-            "heading": "账户类型",
-            "desc": "注册GTCFX，开通实盘账户，把握最优势点差交易机遇",
-            "standardAccount": {
-                "heading": "标准账户"
-            },
-            "proAccount": {
-                "heading": "专业账户"
-            },
-            "ecnAccount": {
-                "heading": "ECN账户"
-            },
-            "view_more": "点击查看更多",
-            "open_live_account": "注册GTCFX，开通实盘账户",
-            "assetNum": "27,000+",
-            "assetTit": "交易品种",
-            "assetMar": "多元资产市场",
-            "AssetNam": "外汇 | 差价合约 | 贵金属 | 股指| 大宗商品 | 股票| 能源"
-        },
-        "security_of_funds": {
-            "title": "资金安全保障",
-            "desc": "GTCFX已获得金融委员会专项保险保障，单个客户资金最高可获得20,000欧元赔付。请 ",
-            "click": "点击此处"
-        },
-        "products": {
-            "heading": "8大市场板块 27,000+交易品种",
-            "title1": "外汇交易",
-            "desc1": "全球主要货币对",
-            "title2": "黄金交易",
-            "desc2": "发掘避险资产独特优势",
-            "title3": "贵金属",
-            "desc3": "白银、钯金等稀缺金属",
-            "title4": "能源差价合约",
-            "desc4": "原油、天然气等核心能源产品",
-            "title5": "大宗商品",
-            "desc5": "全球主要大宗商品",
-            "title7": "期货",
-            "desc7": "零佣金低保证金买卖上市公司股份",
-            "title6": "股票",
-            "desc6": "覆盖600+国际企业股票",
-            "title8": "股指",
-            "desc8": "全球主要股指"
-        },
-        "liquidity_provider": {
-            "heading": "直通顶级流动性池",
-            "desc": "GTCFX作为可信赖的流动性提供商，为您对接高效易用的外汇流动性平台。我们的解决方案确保低成本交易与极速执行，以透明可靠的服务保障交易隐私。凭借尖端科技与专业团队，为您的流动性交易提供全方位支持。",
-            "tab": {
-                "liquidity": {
-                    "title": "流动性解决方案",
-                    "d1": "作为全球顶尖流动性提供商，我通过深度流动性储备与先进技术，提供最优执行质量与零滑点保障",
-                    "p2": "外汇",
-                    "d2": "200+货币对深度流动性丨超窄点差丨灵活保证金丨 毫秒级执行",
-                    "p3": "贵金属",
-                    "d3": "贵金属深度流动性 |稳定报价 |行业领先点差",
-                    "p4": "大宗商品",
-                    "d4": "能源、贵金属等大宗商品市场深度流动性 |优势定价 |无缝执行",
-                    "p5": "股指",
-                    "d5": "全球股指深度流动性 |超快执行 |竞争力定价",
-                    "p6": "能源",
-                    "d6": "能源市场强劲流动性 |窄幅点差 |可靠执行",
-                    "p7": "股票",
-                    "d7": "全球个股CFDs交易 |一站式市场接入 |无缝化执行"
-                },
-                "technology": {
-                    "title": "交易技术",
-                    "d1": "运用前沿技术实现高速交易与智能分析，助您抢占市场先机",
-                    "p2": "FIX API",
-                    "d2": "毫秒级订单执行 | 超低延迟交易 | 交易算法无缝集成",
-                    "p3": "VPS",
-                    "d3": "军工级安全 | 超低延迟 | 远程接入 | 7×24小时无间断交易 | 个性化配置 | 智能交易支持",
-                    "p4": "算法托管服务",
-                    "d4": "提供全方位的算法托管服务，赋能交易者优化策略表现"
-                },
-                "bridge": {
-                    "title": "流动性桥接",
-                    "p1": "oneZero Hub",
-                    "d1": "深度流动性 | 极速执行 | 实时数据流 | 可定制交易环境——安全高效的终极交易体验",
-                    "p2": "PrimeXM XCORE",
-                    "d2": "深度流动性 | 微秒级延迟 | 实时洞见 | 安全灵活的交易解决方案",
-                    "p3": "Centroid Hub",
-                    "d3": "深度流动性 | 超高频执行 | 实时分析 | 无缝市场对接——性能优化的安全交易生态",
-                    "p4": "GTC Prime流动性桥接系统",
-                    "d4": "多平台无缝对接 | 极速执行 | 性能优化 | 加密数据传输"
-                }
-            },
-            "butttonLp": "申请流动性服务",
-            "point1": "低点差和佣金",
-            "point2": "超快执行",
-            "point3": "提供最多10级市场深度",
-            "point4": "快速系统整合",
-            "point5": "超快价格更新",
-            "point6": "快速开户流程",
-            "lpLabel": "解锁盈利机遇",
-            "lpLabel1": "您的最佳投资之旅，由此启程"
-        },
-        "home_IB": {
-            "title": "与我们共拓客户网络！",
-            "des": "注册GTCFX，开通实盘账户，畅享海量金融产品与最优点差。把握市场波动机遇，对接顶级金融服务，释放最大盈利潜力",
-            "howTo": "如何加入IB网络",
-            "point1": "申请加入IB网络",
-            "point2": "签署IB协议",
-            "point3": "推荐客户",
-            "point4": "开始赚取返佣",
-            "label": "加入专属IB计划",
-            "butttonIB": "成为介绍经纪人（IB）"
-        },
-        "global_presence": {
-            "heading": "GTCFX的全球业务",
-            "desc": "GTCFX作为全球化金融科技企业，业务版图已扩展至全球22个战略枢纽。从国际金融中心到新兴市场前沿，我们通过多元化服务网络为全球投资者提供定制化金融解决方案。GTCFX始终以无界服务承诺践行全球化发展理念。",
-            "uae": "阿联酋",
-            "uk": "英国",
-            "china": "中国",
-            "vanuato": "瓦努阿图",
-            "vietnam": "越南",
-            "pakistan": "巴基斯坦",
-            "malaysia": "马来西亚",
-            "hong_kong": "澳大利亚",
-            "indonesia": "印尼",
-            "india": "印度",
-            "egypt": "埃及",
-            "jordan": "约旦",
-            "palestine": "巴勒斯坦",
-            "ksa": "沙特阿拉伯",
-            "chile": "智利",
-            "usa": "美国",
-            "maxico": "墨西哥",
-            "taiwan": "英国",
-            "cyprus": "塞浦路斯",
-            "turkey": "土耳其",
-            "nigeria": "尼日利亚",
-            "mauritius": "毛里求斯",
-            "south_africa": "泰国"
-        },
-        "markets_ct": {
-            "title": "市场概览",
-            "sub_title": "实时追踪3,000+个市场的关键数据，获取最新行情资讯、交易情绪分析、动态点差数据及价格走势研判，助您把握全球投资线索。"
-        },
-        "tabsMarter": {
-            "title1": "热门交易品类",
-            "title2": "外汇",
-            "title3": "大宗商品",
-            "title4": "股指"
-        },
-        "our-payment": "入金方式及币种：",
-        "our-payment2": "支持Visa/MasterCard信用卡/借记卡在线支付，接受AED（阿联酋迪拉姆）及支付页面显示的其他币种。"
+    "menu": {
+      "about": "关于我们",
+      "account": "账户",
+      "trading": "交易和平台",
+      "prime": "Prime 与科技"
     },
     "about": {
-        "about-gtc-group": {
-            "title": "关于我们",
-            "bannerDes": "GTCFX品牌涵盖多家公司，提供多样化的在线交易产品，服务超过985,000客户，覆盖超过100个国家。",
-            "subTitle": "全球信赖且多重监管的经纪商",
-            "heading1": "专业实力",
-            "desc1_1": "GTCFX作为金融衍生品领域的全球领导者，自2012年成立以来，旗下多家子公司提供多元化的在线交易产品，服务网络覆盖100多个国家，为超过985,000名客户提供专业服务。我们以卓越的金融服务承诺和持续创新精神享誉业界。",
-            "desc1_2": "GTCFX凭借对尖端科技的持续投入与严格的监管合规，已在金融科技领域确立重要地位。多年来，我们以卓越的服务可靠性和行业创新力，赢得全球金融服务市场的广泛认可。",
-            "desc1_3": "",
-            "heading2": "严格监管",
-            "desc2_1": "GTCFX在全球多地区接受严格金融监管，始终遵循最高标准的反洗钱（AML）和客户身份识别（KYC）规范，以合规经营维护金融科技行业的诚信准则。本网站服务由GTC Global Ltd及GTC Global Trade Capital Co. Limited共同提供。两家运营主体分别在毛里求斯与瓦努阿图金融监管框架下持牌经营，严格执行反洗钱（AML）及客户身份识别（KYC）合规标准，始终秉持金融科技行业的诚信准则与运营可靠性。",
-            "desc2_2": "GTC金融集团旗下其他实体机构均根据属地监管要求，制定并实施符合当地法律法规的反洗钱（AML）及反恐融资（CTF）管理制度。",
-            "heading3": "丰富经验",
-            "desc3": "自创立以来，我们持续深耕交易领域，始终引领金融服务行业创新方向。通过不断突破的交易平台研发和优质产品服务，持续树立行业新标杆。",
-            "heading4": "值得信赖",
-            "desc4": "凭借稳健的发展态势和对客户体验的不懈追求，我们已成为寻求优质金融衍生品解决方案客户的可靠合作伙伴。探索我们全方位的服务，亲历我们跻身全球行业领导者的卓越实力。"
-        },
-        "why-gtc-group": {
-            "title": "为何选择GTCFX",
-            "sub_title1_1": "开启财富机遇：您的卓越投资之旅从此启航",
-            "sub_title1_2": "通过GTCFX专业交易平台，您将获得安全高效的投资环境。",
-            "sub_title1_3": "我们以创新技术为支撑，配合专业团队支持，助您获得丰厚的回报。加入我们，开启通向财务自由的专业交易之旅。",
-            "heading1_1": "与最佳经纪商交易",
-            "heading1_2": "与最佳经纪商交易",
-            "point1_1": "行业超低点差 0.0点*起",
-            "point1_2": "顶级稳定性交易平台",
-            "point1_3": "原始点差0.0点起",
-            "point1_4": "业内最具竞争力的IB返佣政策",
-            "point1_5": "安全极速订单执行",
-            "point1_6": "MT4/MT5双平台支持",
-            "point1_7": "专属客户经理",
-            "point1_8": "多样化入金渠道：信用卡/电汇/数字资产",
-            "heading2_1": "定制化",
-            "heading2_2": "交易策略支持",
-            "point2_1": "8大市场板块 27,000+交易品种",
-            "point2_2": "最高1:2000杠杆",
-            "point2_3": "负余额保护",
-            "point2_4": "无交易限制，支持EA智能交易",
-            "point2_5": "零价格滑点",
-            "point2_6": "零佣金",
-            "point2_7": "零重新报价",
-            "point2_8": "零拒单",
-            "heading3_1": "利用",
-            "heading3_2": "尖端科技",
-            "heading3_3": "赋能交易成功",
-            "point3_1": "直连顶级银行的ECN账户",
-            "point3_2": "直连顶级银行",
-            "point3_3": "无交易台干预",
-            "point3_4": "一级流动性报价",
-            "point3_5": "毫秒级订单执行",
-            "heading4_1": "Utilizing ",
-            "heading4_2": "专业工具",
-            "heading4_3": "助力卓越表现",
-            "point4_1": "PAMM/MAM资产管理账户",
-            "point4_2": "信号中心专业工具",
-            "point4_3": "专属交易VPS",
-            "point4_4": "专家市场分析",
-            "point4_5": "Autochartist形态识别",
-            "point4_6": "Acuity智能交易工具",
-            "note_title1": "极致追求，卓越承诺",
-            "note_desc1": "我们绝不妥协于任何可能影响客户表现的因素，始终坚持提供最窄点差和最佳执行质量。",
-            "note_title2": "先进交易平台",
-            "note_desc2": "GTCFX专为全球多元化客户群体量身打造尖端外汇交易平台",
-            "note_title3": "经验铸就专业",
-            "note_desc3": "我们对全球金融市场的深刻认知与丰富经验，构筑起专业服务的坚实基础",
-            "note_title4": "卓越服务体系",
-            "note_desc4": "在外汇、差价合约、股指、贵金属及能源等多元领域，我们始终提供顶级交易服务",
-            "note_title5": "运营理念",
-            "note_desc5": "GTCFX的运营理念简单而坚定：客户满意铸就长久信赖。我们以行业领先的合规标准和超预期的服务品质为荣。通过持续跟踪行业趋势和技术演进，我们不断优化服务体系，始终满足高端客户的动态需求。"
-        },
-        "global-presence-map": {
-            "bannerTitle": "全球布局",
-            "bannerDescription": "在 GTCFX，我们是一支全球化团队，业务版图覆盖全球 22+ 个重要地区。",
-            "badge": "全球布局",
-            "titlePrefix": "覆盖",
-            "titleHighlight": "全球关键市场",
-            "titleSuffix": "的网络",
-            "description": "GTCFX 的国际化布局体现了我们服务全球主要金融中心与新兴市场的承诺。凭借覆盖多地区的团队与运营体系，我们以全球视野提供本地化支持。",
-            "bottomNote": "不断扩展的全球足迹，让我们能够连接全球客户、合作伙伴与市场，同时始终专注于本地需求与个性化服务。",
-            "stats": {
-                "destinations": "地区覆盖",
-                "countriesReached": "覆盖国家",
-                "clientsServed": "服务客户"
-            },
-            "regions": {
-                "middleEast": "中东",
-                "europe": "欧洲",
-                "asia": "亚洲",
-                "africa": "非洲",
-                "oceania": "大洋洲",
-                "americas": "美洲"
-            },
-            "countries": {
-                "unitedArabEmirates": "阿联酋",
-                "cyprus": "塞浦路斯",
-                "jordan": "约旦",
-                "ksa": "沙特阿拉伯",
-                "unitedKingdom": "英国",
-                "turkey": "土耳其",
-                "china": "中国",
-                "hongKong": "中国香港",
-                "india": "印度",
-                "pakistan": "巴基斯坦",
-                "thailand": "泰国",
-                "vietnam": "越南",
-                "malaysia": "马来西亚",
-                "philippines": "菲律宾",
-                "indonesia": "印度尼西亚",
-                "southAfrica": "南非",
-                "nigeria": "尼日利亚",
-                "mauritius": "毛里求斯",
-                "australia": "澳大利亚",
-                "vanuatu": "瓦努阿图",
-                "usa": "美国",
-                "mexico": "墨西哥",
-                "chile": "智利"
-            }
-        },
-        "awards-section": {
-            "bannerTitle": "奖项荣誉",
-            "bannerDescription": "与我们交易，为您提供更明智、更高效的投资方式。",
-            "badge": "奖项与认可",
-            "titlePrefix": "获奖的差价合约经纪商",
-            "titleHighlight": "卓越实力备受认可",
-            "description": "GTCFX 在多项国际金融展会与行业活动中屡获认可，体现了我们在创新、服务质量与全球交易解决方案方面的持续追求。"
-        },
-        "client-fund-insurance": {
-            "title": "资金安全保障",
-            "sub_title1_1": "GTC Global Trade Capital Ltd. 是金融委员会（Financial Commission）正式成员。该国际组织专注于外汇市场金融服务争议解决，为行业提供独立第三方仲裁服务。",
-            "sub_title1_2": "金融委员会作为中立的独立外部争议解决机构（EDR），通过简化流程实现比传统监管体系和司法程序更高效的纠纷处理。",
-            "sub_title1_3": "其核心价值在于确保争议解决的时效性、公正性和权威性，并通过补偿基金机制为交易者提供额外保障。",
-            "sub_title1_4": "金融委员会是中立的独立外部争议解决机构（EDR）",
-            "heading1": "运作机制",
-            "desc1_1": "补偿基金作为会员客户的保险机制，独立存放于专用银行账户。仅当会员机构拒绝执行金融委员会裁决时方可启用。",
-            "heading2": "资金来源",
-            "desc2_1": "补偿基金来源于金融委员会每月会费收入的10%专项拨款。",
-            "heading3": "保障范围",
-            "desc3_1": "经纪商破产时的全体客户赔付",
-            "heading4": "最高保额",
-            "desc4_1": "单个客户最高可获得20,000欧元的补偿金赔付。",
-            "desc4_2": "详细条款请参阅《金融争议调解中心章程》及我司《客户协议》。",
-            "visitButton": "立即访问",
-            "downloadButton": "下载PDF文件",
-            "protectionBadge": "客户保障",
-            "upToLabel": "最高可达",
-            "sideDescription": "补偿基金可覆盖金融委员会裁决下单个客户最高20,000欧元的赔付。",
-            "sideNote": "该保障机制通过公平、独立的争议解决流程进一步增强客户信心。",
-            "maximumCoverageBadge": "最高保额"
-        },
-        "careers": {
-            "title": "人才招聘",
-            "currentJobs": "在招岗位",
-            "applyNow": "立即申请",
-            "bannerText": "我们是一家领先的金融科技公司，专注于外汇交易解决方案。",
-            "desc": "在GTCFX，我们相信培养一个充满活力和包容性的工作环境，创新得以蓬勃发展，人才得以培养。随着我们不断成长和扩展全球影响力，我们一直在寻找充满激情的人们，他们渴望在金融科技领域产生有意义的影响。",
-            "why-working": "为何选择GTCFX？",
-            "heading1_1": "创新",
-            "heading1_2": "环境：",
-            "desc1": "加入具有前瞻视野的精英团队，运用尖端科技重塑外汇交易未来。在这里，您将参与定义行业新标准的技术实践。",
-            "heading2_1": "协作",
-            "heading2_2": "文化：",
-            "desc2": "我们坚信协同创造价值。GTCFX构建了开放包容的协作网络，每个创意都能获得充分重视，跨部门合作贯穿各业务层级。",
-            "heading3_1": "职业",
-            "heading3_2": "发展：",
-            "desc3": "完善的职业发展体系配合定制化培养计划，助您在金融科技领域实现持续成长与专业跃升。",
-            "heading4_1": "全球",
-            "heading4_2": "视野：",
-            "desc4": "参与具有国际影响力的金融科技项目，您的专业贡献将直接触达全球100多个国家的投资者群体。",
-            "form": {
-                "title": "职位筛选",
-                "sub_title": "立即申请，开启成功之路",
-                "first_name": "名字",
-                "last_name": "姓氏",
-                "email": "电子邮箱",
-                "phone": "电话号码",
-                "city": "城市",
-                "url": "LinkedIn主页",
-                "exper": {
-                    "label": "工作经验",
-                    "one": "应届毕业生",
-                    "sec": "1 - 2年",
-                    "third": "3 - 5年",
-                    "fourth": "5 - 10年",
-                    "fivth": "10年以上"
-                },
-                "note": "个人说明",
-                "attach": "上传简历",
-                "btnText": "立即申请",
-                "terms": "提交即表示已阅读并同意《客户协议》，并授权GTCFX与我联系。"
-            },
-            "jobs": "在招岗位",
-            "apply": "申请"
-        },
-        "contactUsForm": {
-            "registrationStatusLabel": "您是已注册客户吗？",
-            "registrationStatusSelect": "请选择注册状态",
-            "registrationStatusRegistered": "已注册",
-            "registrationStatusNotRegistered": "未注册",
-            "queryTypeLabel": "咨询类型",
-            "queryTypeSelect": "请选择咨询类型",
-            "queryTypeGeneral": "一般咨询",
-            "queryTypeCompliance": "合规咨询",
-            "ticketTypeLabel": "工单类型",
-            "ticketTypeSelect": "请选择工单类型",
-            "ticketTypeAccountRegistration": "账户/注册",
-            "ticketTypeDeposits": "入金",
-            "ticketTypeWithdrawals": "出金",
-            "ticketTypeTradingAccountQueries": "交易账户咨询",
-            "ticketTypeAccountOpeningLinks": "添加开户链接",
-            "ticketTypePartnerClientTransfer": "合作伙伴/客户转移申请",
-            "ticketTypePromotionsBonuses": "促销/赠金",
-            "ticketTypeTradingInvestigation": "交易调查",
-            "ticketTypeKycQueries": "KYC咨询",
-            "ticketTypeOther": "其他",
-            "tradeAccountLabel": "交易账户",
-            "tradeAccountPlaceholder": "交易账户",
-            "transactionIdsLabel": "交易编号",
-            "transactionIdsPlaceholder": "交易编号",
-            "tradeOrderIdsLabel": "交易订单编号",
-            "tradeOrderIdsPlaceholder": "交易订单编号",
-            "dateTimeIncidentLabel": "事件发生日期和时间",
-            "dateTimeIncidentPlaceholder": "例如：2024-01-15 14:30",
-            "promotionBonusTypeLabel": "促销/赠金类型",
-            "promotionBonusTypeSelect": "请选择类型",
-            "promotionBonusTypeIssue": "问题反馈",
-            "promotionBonusTypeRequest": "申请请求",
-            "depositAmountLabel": "入金金额",
-            "depositAmountPlaceholder": "入金金额",
-            "subjectLabel": "主题",
-            "subjectPlaceholder": "主题",
-            "firstNameLabel": "名字",
-            "firstNamePlaceholder": "名字",
-            "lastNameLabel": "姓氏",
-            "lastNamePlaceholder": "姓氏",
-            "emailLabel": "电子邮箱",
-            "emailPlaceholder": "电子邮箱",
-            "phoneLabel": "电话号码",
-            "countryLabel": "国家",
-            "countrySelect": "请选择国家",
-            "ticketDescriptionLabel": "工单描述",
-            "ticketDescriptionPlaceholder": "请详细说明您的问题...",
-            "depositDisclaimer": "提交前请确认您的入金信息准确无误。",
-            "withdrawalDisclaimer": "提交前请确认您的出金信息准确无误。",
-            "attachmentLabel": "附件",
-            "attachmentOptional": "（可选）",
-            "attachmentHelp": "截图、收据、日志或其他支持文件。",
-            "submitDisclaimer": "提交表单后，您将收到包含案件编号的电子邮件。",
-            "sending": "发送中...",
-            "submit": "提交",
-            "termsPrefix": "点击提交即表示我确认：(1) 我已阅读并同意",
-            "termsLinkText": "客户协议；",
-            "termsSuffix": "(2) 我同意GTCFX在合理时间联系我；(3) 我的号码未列入拒接来电登记册（DNCR）。",
-            "toastSubmitted": "提交成功。",
-            "toastError": "发生错误。",
-            "errorRegistrationStatus": "注册状态为必填项",
-            "errorQueryType": "咨询类型为必填项",
-            "errorInvalidEmail": "邮箱格式无效",
-            "errorEmail": "电子邮箱为必填项",
-            "errorMinLetters": "至少输入2个字符",
-            "errorFirstName": "名字为必填项",
-            "errorLastName": "姓氏为必填项",
-            "errorPhone": "电话号码为必填项",
-            "errorCountry": "国家为必填项",
-            "errorSubject": "主题为必填项",
-            "errorDescription": "描述为必填项",
-            "errorCaptcha": "请完成验证码验证",
-            "errorTicketType": "工单类型为必填项",
-            "errorPromotionBonusType": "促销/赠金类型为必填项",
-            "errorTradeAccount": "交易账户为必填项",
-            "errorTradeOrderIds": "交易订单编号为必填项",
-            "errorDateTimeIncident": "事件发生日期和时间为必填项"
-        },
-        "contact-us": {
-            "title": "联系我们",
-            "sub_title1_1": "您的满意度是我们最优先考虑的。我们致力于确保您获得无缝且满意的体验与我们的服务。",
-            "sub_title1_2": "我们的团队致力于超越您的需求。无论是解决您的顾虑，协助技术问题，还是提供专家指导，我们都在这里为您服务。您的成功和满意度是我们使命的核心，我们随时准备以任何方式帮助您。",
-            "live_chat": "在线聊天",
-            "globalHeading": "拨打全球免费电话",
-            "localHeading": "拨打全球免费电话",
-            "support_email": "support@gtcfx.com",
-            "phone": "+971 800 667788",
-            "more_info": "我们期待您的来电"
-        }
+      "lable": "关于我们",
+      "des": "我们的核心宗旨是客户至上。在全球法规的监管下，我们自豪地为全球985,000多名客户提供服务。",
+      "firstcolumn": {
+        "heading": "关于GTCFX",
+        "option1": "关于GTCFX",
+        "option2": "为何选择GTC",
+        "option3": "GTC监管"
+      },
+      "secondcolumn": {
+        "heading": "公司",
+        "option1": "全球业务",
+        "option2": "奖项",
+        "option3": "资金安全"
+      },
+      "thirdcolumn": {
+        "heading": "亮点",
+        "option1": "市场洞察",
+        "option2": "公司新闻",
+        "option3": "财报与股息日历",
+        "option4": "经济日历与新闻",
+        "option5": "交易时间与假期"
+      },
+      "fourthcolumn": {
+        "heading": "联系我们",
+        "option1": "职业机会",
+        "option2": "联系我们"
+      }
     },
-    "platform": {
-        "mt4PlatformPage": {
-            "metaData": {
-                "title": "MetaTrader 4 平台 ► 下载适用于 Windows、Mac、iOS 和 Android 的 MT4 | GTCFX",
-                "des": "下载 GTCFX 提供的 MetaTrader 4 (MT4)，适用于 Windows、Mac、iOS 和 Android 设备 📈 通过 GTCFX 的 MetaTrader 4 交易多种差价合约（CFD），包括外汇、指数、大宗商品、债券和数字货币资产。立即开设 MT4 账户！"
-            },
-            "bannerText": {
-                "heading": "MT4 交易平台",
-                "para1": "MetaTrader 4，通常称为 MT4，是全球外汇交易领域中广泛使用且备受欢迎的交易平台。",
-                "para2": "它由 MetaQuotes Software 开发，已成为新手和经验丰富的交易者的标准选择。",
-                "trade": {
-                    "heading1": "使用最",
-                    "heading2": "全面的交易平台进行交易",
-                    "btnText": "注册GTCFX，开通实盘账户"
-                }
-            },
-            "advantages": {
-                "title": "我们的 MT4 交易平台优势",
-                "column1": {
-                    "heading1": "用户友好界面",
-                    "heading2": "适合所有经验水平的交易者",
-                    "heading3": "极速执行",
-                    "heading4": "高效且功能丰富",
-                    "heading5": "MT4 提供全面的技术分析工具",
-                    "heading6": "这些工具使交易者能够分析价格走势并做出明智的交易决策",
-                    "heading7": "通过专家顾问（EAs）实现自动化交易",
-                    "heading8": "自定义工具"
-                },
-                "column2": {
-                    "heading1": "回测交易策略",
-                    "heading2": "一键交易",
-                    "heading3": "手机交易",
-                    "heading4": "实时报价和动态",
-                    "heading5": "社区与支持",
-                    "heading6": "安全保障",
-                    "heading7": "多种订单类型",
-                    "heading8": "多种资产类别"
-                }
-            }
-        },
-        "mt5PlatformPage": {
-            "metaData": {
-                "title": "MetaTrader 5 平台 ► 下载适用于 Windows、Mac、iOS 和 Android 的 MT5 | GTCFX",
-                "des": "下载 GTCFX 提供的 MetaTrader 5 (MT5)，适用于 Windows、Mac、iOS 和 Android 设备 📈 通过 GTCFX 的 MetaTrader 5 交易多种差价合约（CFD），包括外汇、指数、大宗商品、债券和数字货币资产。立即开设 MT5 账户！"
-            },
-            "bannerText": {
-                "heading": "MT5 交易平台",
-                "para1": "MetaTrader 5，通常称为 MT5，是全球外汇交易领域中广泛使用且备受欢迎的交易平台。",
-                "para2": "它由 MetaQuotes Software 开发，已成为新手和经验丰富的交易者的标准选择。",
-                "trade": {
-                    "heading1": "使用最",
-                    "heading2": "全面的交易平台进行交易",
-                    "btnText": "注册GTCFX，开通实盘账户"
-                }
-            },
-            "advantages": {
-                "title": "我们的 MT5 交易平台优势",
-                "column1": {
-                    "heading1": "用户友好界面",
-                    "heading2": "适合所有经验水平的交易者",
-                    "heading3": "极速执行",
-                    "heading4": "高效且功能丰富",
-                    "heading5": "MT5 提供全面的技术分析工具",
-                    "heading6": "这些工具使交易者能够分析价格走势并做出明智的交易决策",
-                    "heading7": "通过专家顾问（EAs）实现自动化交易",
-                    "heading8": "定制分析工具"
-                },
-                "column2": {
-                    "heading1": "回测交易策略",
-                    "heading2": "一键交易",
-                    "heading3": "手机交易",
-                    "heading4": "实时报价和动态",
-                    "heading5": "社区与支持",
-                    "heading6": "安全保障",
-                    "heading7": "多种订单类型",
-                    "heading8": "多种资产类别"
-                }
-            }
-        },
-        "downloadApp": {
-            "heading": "随时随地交易！",
-            "para": "通过您常用的设备轻松访问我们的用户友好型平台，随时随地无缝交易全球市场！",
-            "para1": "我们提供用户友好的界面及多样化功能，精准满足全球交易者需求。",
-            "para2": "无论您身在何处，均可通过手机、平板或电脑轻松访问我们的平台，享受全球市场无缝交易体验！",
-            "GTCAPP": {
-                "title": "GTC APP",
-                "downloadnow": "立即下载",
-                "para1": "兼容 MT4 & MT5",
-                "para2": "支持 MT4 和 MT5，可在以下应用商店下载"
-            },
-            "mac": {
-                "title": "PC / MAC",
-                "mt4pc": "MT4 for PC",
-                "mt5pc": "MT5 for PC",
-                "mt4mac": "MT5 for PC",
-                "mt5mac": "MT5 for Mac",
-                "mt4multi": "cTrader for PC",
-                "live1": "Live link of MT4",
-                "live2": "Live link of MT5"
-            },
-            "smartPhone": {
-                "title": "手机",
-                "mt4andriod": "MT4 for Android",
-                "mt4iphone": "MT4 for iPhone",
-                "mt5andriod": "MT5 for Android",
-                "mt5iphone": "MT5 for iPhone",
-                "ctradeAndriod": "cTrader for Android",
-                "ctradeIpad": "cTrader for iPad"
-            },
-            "tablets": {
-                "title": "APK文件",
-                "mt4andriod": "MT4 for Android",
-                "mt4ipad": "MT5 for Android",
-                "mt5andriod": "cTrader for Android",
-                "mt5ipad": "MT5 for iPad",
-                "ctradeAndriod": "cTrader for Android",
-                "ctradeIpad": "cTrader for iPad"
-            }
-        }
+    "account": {
+      "lable": "账户",
+      "des": "我们提供专为新手和资深交易者定制的超低门槛专业账户",
+      "firstcolumn": {
+        "heading": "开始使用",
+        "option1": "开设实盘账户",
+        "option2": "开设模拟账户",
+        "option3": "为您的账户入金"
+      },
+      "secondcolumn": {
+        "heading": "账户",
+        "option1": "账户类型"
+      },
+      "thirdcolumn": {
+        "heading": "活动与推广",
+        "option1": "GTC Go App",
+        "option2": "活动与展会"
+      },
+      "fourthcolumn": {
+        "heading": "支持",
+        "option1": "术语与常见问题",
+        "option2": "教学视频",
+        "option3": "联系我们"
+      }
     },
-    "tradingTools": {
-        "economicCal": {
-            "bannerText": {
-                "heading": "财经日历",
-                "description": "通过经济日历关注最新市场动态，了解即将发生的经济事件及其对市场走势的影响。"
-            },
-            "content": {
-                "tradingHeading": "交易工具",
-                "subTitle": "GTCFX 提供多种工具，助您提升交易体验。",
-                "economicCal": "财经日历",
-                "detailEco": "通过财经日历关注最新市场动态，了解即将发生的经济事件及其对市场走势的影响。",
-                "whatEco": "什么是财经日历？",
-                "detail2": "财经日历是一个列出影响金融资产涨跌的特定数据发布和事件的时间表。",
-                "comNews": "公司动态",
-                "detailComp": "通过公司新闻版块，实时获取战略调整、业务升级等关键信息，全面掌握 GTCFX 发展动向。",
-                "newsHeading": "动态",
-                "detailNew": "深入我们的新闻版块，获取金融市场的最新动态。我们定期发布市场更新和分析，助您全面了解市场变化。"
-            }
-        },
-        "latestNews": {
-            "bannerText": {
-                "heading": "最新动态 | GTCFX",
-                "description": "Global Trade Capital Limited 是一家致力于在线外汇和大宗商品经纪业务的全球品牌"
-            }
-        },
-        "marketOverView": {
-            "bannerText": {
-                "title": "市场概览",
-                "desc": "实时追踪核心趋势、价格波动及市场指标，为用户提供数据驱动的投资决策支持。"
-            },
-            "contentText": {
-                "forex": {
-                    "title": "外汇",
-                    "title2": "黄金和白银",
-                    "title3": "布伦特原油期货",
-                    "heading1": "报价",
-                    "heading2": "交易"
-                },
-                "label": {
-                    "one": "日",
-                    "two": "开盘",
-                    "three": "收盘",
-                    "four": "重新开盘"
-                },
-                "days": {
-                    "mon": "周一",
-                    "tuse": "周二",
-                    "wed": "周三",
-                    "thurs": "周四",
-                    "fri": "周五"
-                }
-            },
-            "holiday": {
-                "title": "节假日交易时间及通知",
-                "bannerTitle": "市场节假日可能影响交易时间表和市场波动性。不同国家的节假日安排有所不同，因此及时了解最新的节假日交易时间变更对合理安排交易计划至关重要。",
-                "des": "市场节假日可能影响交易时间表和市场波动性。不同国家的节假日安排有所不同，因此及时了解最新的节假日交易时间变更对合理安排交易计划至关重要。",
-                "trading": "外汇及差价合约交易时间",
-                "hours": "查看外汇、贵金属、大宗商品及其他金融产品的最新交易时间。GTCFX提供更新的市场交易时段信息，助您有效规划交易策略。请注意，上述时间可能发生变动。如需获取最准确且实时的交易时段详情，请参考您的交易终端或查阅各交易产品的详细规格说明。",
-                "noData": "暂无数据",
-                "note1": "请注意，以上时间可能会变更，任何更新可在交易终端中的产品规格里查看。",
-                "note2": "请注意，节假日期间可能出现突发波动、流动性降低，部分流动性提供商可能会扩大点差。",
-                "note3": "具体日期以相关市场最新安排为准。",
-                "note4": "请客户根据以上公司交易时段妥善管理账户与持仓。"
-            }
-        }
+    "trading": {
+      "lable": "交易和平台",
+      "des": "提供最高1:2000的杠杆，以及从0点开始的最低点差。\n提供多样化的交易产品，涵盖超过27,000种货币对、股票、贵金属、能源和股指，具有竞争力的点差、无拒单、无滑点，且交易执行安全。",
+      "firstcolumn": {
+        "heading": "交易品种",
+        "option1": "外汇 CFDs",
+        "option2": "能源 CFDs",
+        "option3": "大宗商品 CFDs",
+        "option4": "股指 CFDs",
+        "option5": "贵金属 CFDs"
+      },
+      "secondcolumn": {
+        "heading": "平台",
+        "option1": "MT4 交易平台",
+        "option2": "MT5 交易平台",
+        "option3": "下载交易平台"
+      },
+      "thirdcolumn": {
+        "heading": "杠杆与隔夜利息",
+        "option1": "动态杠杆",
+        "option2": "隔夜利息更新",
+        "option3": "GTCFX 无隔夜利息交易"
+      },
+      "fourthcolumn": {
+        "heading": "与我们合作",
+        "option1": "IB 计划",
+        "option2": "联盟计划",
+        "option3": "GTC Prime"
+      }
     },
-    "thankYouLiveAccount": {
-        "metaData": {
-            "title": "感谢选择GTCFX | 全球资产最佳交易平台",
-            "des": "您的加入标志着一段充满潜力的交易旅程的开始。"
-        },
-        "content": {
-            "heading": "感谢选择GTCFX | 全球资产最佳交易平台",
-            "heading1": "申请已接收！",
-            "des": "感谢选择GTCFX并对我们的服务感兴趣！",
-            "des1": "我们的客户支持团队将尽快联系您，协助您高效使用服务。",
-            "footer": "启程激动人心的交易之旅！",
-            "footer1": "如有疑问，请邮件至 support@gtcfx.com"
-        }
+    "prime": {
+      "lable": "Prime 与科技",
+      "firstcolumn": {
+        "heading": "Prime 服务",
+        "option1": "流动性与技术",
+        "option2": "跟单交易"
+      },
+      "secondcolumn": {
+        "heading": "交易工具",
+        "option1": "PAMM 账户",
+        "option2": "MAM 账户",
+        "option3": "VPS"
+      },
+      "thirdcolumn": {
+        "heading": "资源",
+        "option1": "法律文件",
+        "option2": "受限国家",
+        "option3": "保证金赠金",
+        "option4": "GTC AI 工具"
+      },
+      "fourthcolumn": {
+        "heading": "最新优惠",
+        "option1": "金鹰奖 2026",
+        "option2": "GTCVIP 忠诚奖励"
+      }
     },
-    "swapUpdate": {
-        "metaData": {
-            "title": "GTCFX外汇、贵金属、加密货币、能源及指数掉期更新",
-            "des": "了解GTCFX提供的最新外汇、贵金属、加密货币、能源及指数的掉期利率和更新。借助GTCFX的实时洞察与专业分析，助您抢占市场先机，即刻最大化您的交易潜力！"
-        },
-        "content": {
-            "heading1": "掉期更新",
-            "des1": "掉期更新日期：2026年10月17日。 ",
-            "des2": "请注意，所有利率仅供参考，实际利率请以客户交易平台上的符号规格为准。",
-            "tab1": "外汇",
-            "tab2": "贵金属",
-            "tab3": "能源",
-            "tab4": "加密货币",
-            "tab5": "指数"
-        }
+    "partner": {
+      "lable": "我们的合作伙伴",
+      "des": "通过我们的合作伙伴计划，您可以提升业务能力并扩展客户网络。我们的IB计划旨在帮助您释放全部业务潜力，最大化盈利，并加速增长和提升盈利能力。",
+      "firstcolumn": {
+        "option1": "介绍经纪人（IB）"
+      },
+      "secondcolumn": {
+        "option1": "高级合作伙伴计划"
+      },
+      "thirdcolumn": {
+        "option1": "联盟计划"
+      }
     },
-    "tutorialVideo": {
-        "metaData": {
-            "title": "通过视频教程掌握实盘账户开通与出入金操作 | GTCFX",
-            "des": "观看GTCFX教学视频，快速了解如何开通实盘交易账户、完成入金及轻松出金。立即选择全球领先经纪商，开启您的稳健交易之旅！."
-        },
-        "bannerSection": {
-            "title": "GTCFX教程视频",
-            "des": "观看GTCFX教学视频，快速了解如何开通实盘交易账户、完成入金及轻松出金。立即选择全球领先经纪商，开启您的稳健交易之旅"
-        }
+    "technology": {
+      "lable": "顶尖技术",
+      "des": "我们利用尖端技术和最新成果，确保操作无缝对接。与顶级银行合作，确保提供最佳流动性，使交易既迅速又安全。我们致力于创新，力求提供无与伦比的服务，精准满足客户的动态需求。",
+      "firstcolumn": {
+        "heading": "GTCFX 首选",
+        "option1": "流动性与技术",
+        "option2": "跟单交易",
+        "option3": "专业交易"
+      },
+      "secondcolumn": {
+        "heading": "交易工具",
+        "option1": "PAMM 账户",
+        "option2": "MAM 账户",
+        "option3": "信号中心工具",
+        "option4": "虚拟专用服务器"
+      },
+      "thirdcolumn": {
+        "heading": "分析",
+        "option1": "专家市场分析",
+        "option2": "自动图表分析工具",
+        "option3": "Acuity精准交易工具"
+      }
     },
+    "login": "会员登录",
+    "new_client_portal": "会员登录",
+    "old_client_portal": "老客户门户"
+  },
+  "metaData": {
     "earningPage": {
-        "title": "GTC股票及指数财报日历",
-        "des": "GTC财报日历实时更新，为您提供通过GTC交易平台交易的所有股票及指数的最新财报与股息信息。",
-        "banner": {
-            "title": "财报与股息日历",
-            "para": "下方日历将展示所有可交易品种的最新动态，包括股票及指数差价合约的财报发布时间与股息派发日程。建议交易前务必查阅该日历，并持续关注持仓品种相关的市场新闻和分析更新。",
-            "titled": "除息日"
-        },
-        "howToCalculate": {
-            "heading": "股息计算方法",
-            "title1": "持有多头头寸时获得的股息支付：",
-            "para1": "股息支付 = 成分股息（每指数合约）× 合约规模 × 交易量 × 货币乘数 × 账户货币乘数",
-            "title2": "持有空头头寸时扣除的股息费用：",
-            "para2": "股息费用 = 成分股息（每指数合约）× 合约规模 × 交易量 × 货币乘数 × 账户货币乘数"
-        },
-        "howStockEarning": {
-            "title": "股票与指数财报及股息对保证金的影响",
-            "desc": "我们准备了指南，详细说明该日历功能，包括企业事件发生时间、保证金调整机制及其对账户的影响。",
-            "item1": {
-                "heading": "1. 重要事件标记说明",
-                "para1": "为控制风险敞口，我们会在每个财报或股息周期进行特殊标记。这些标记帮助识别可能影响产品波动性的重要日期。"
-            },
-            "item2": {
-                "heading": "2. 保证金分级解读",
-                "para1": "严格执行风险管理！请根据保证金分级制度规划头寸规模，确保风险控制有效实施。"
-            },
-            "item3": {
-                "heading": "3. 财报案例演示",
-                "para1": "以苹果公司最新财报为例：",
-                "list1": "交易品种：AAPL",
-                "list2": "股价：182.40 美元",
-                "list3": "预期每股收益：2.84 美元",
-                "list4": "实际每股收益：2.90 美元",
-                "para2": "若其他货币计价数据更高，可考虑做空转换。若低于预期则需注意回报风险。"
-            },
-            "item4": {
-                "heading": "4. 指数股息调整案例",
-                "para1": "以 CHN50 指数为例：",
-                "list1": "交易品种：CHN50",
-                "list2": "股息点数：1.50 点",
-                "list3": "持有多头 1 手（相当于 50 个合约单位）",
-                "list4": "1.50 × 50 = 75 美元",
-                "list5": "盈亏账户贷记：75.00 美元"
-            },
-            "item5": {
-                "heading": "5. 股息资金调整机制",
-                "para1": "投资品种除息时，资金调整规则如下：",
-                "list": {
-                    "one": "除息日仍持有多头头寸，股息收益计入账户余额",
-                    "two": "除息日前已平仓，股息将从账户余额中扣除"
-                }
-            },
-            "item6": {
-                "heading": "6. 交易者须知",
-                "para1": "请注意：保证金要求可能因市场波动临时调整。这可能导致可用保证金不足，请确保账户始终保有充足资金。"
-            },
-            "item7": {
-                "heading": "7. 重要时间提示",
-                "para1": "所有点差与日期均为预估值。请注意，单个事件可能同时影响同一指数的多个产品。请务必提前做好资金规划，预留充足的保证金缓冲，以应对市场波动。保持智慧交易，做好风险管理。",
-                "para2": "请务必提前做好资金规划，预留充足的保证金缓冲，以应对市场波动。保持智慧交易，做好风险管理。"
-            }
-        },
-        "btnText": "客户引荐",
-        "faqs": {
-            "heading": "财报日历常见问题",
-            "question1": "GTC 何时更新财报日历？",
-            "answer1": "每日 GMT+2 时间 23:00 定时更新，重大变更将在交易时间内实时发布。",
-            "question2": "为何财报前保证金要求上调？",
-            "answer2": "我们会在预定事件前五个交易日调整保证金要求，以保护账户免受剧烈波动影响。",
-            "question3": "如何处理发布日期变更？",
-            "answer3": "将头寸名义价值按实时汇率换算为美元，随后适用对应的分级保证金比例。",
-            "question4": "股息调整是否影响隔夜利息？",
-            "answer4": "是的。除息日将单独进行资金调整，隔夜利息计算不受影响。",
-            "question5": "市场波动期间是否对新开仓适用更高保证金？",
-            "answer5": "是的。在市场波动恢复平稳前，新开仓和现有头寸均适用更高保证金要求。",
-            "question6": "如何查询历史财报日期？",
-            "answer6": "点击表格上方‘历史’标签，可查询过去 12 个月的所有事件记录。",
-            "question7": "发布日期变更如何通知？",
-            "answer7": "日历将自动更新，我们会向所有持有相关产品的交易者发送邮件通知。"
-        }
+      "title": "GTC股票与指数财报日历",
+      "des": "GTC财报日历显示通过GTC交易平台提供的股票和指数的即将发布的盈利报告和股息信息。"
     },
-    "swapFreePage": {
-        "hero": {
-            "badge": "GTCFX 免掉期交易",
-            "title": "无掉期费用交易",
-            "description1": "在选定交易品种上进行无隔夜掉期费用的交易——专为因宗教或个人原因需要免息交易条件的交易者设计。",
-            "description2": "免掉期交易移除了合格交易品种上的这些基于利息的费用。此结构非常适合遵循伊斯兰金融原则或任何偏好免息条件的交易者。"
-        },
-        "whyChoose": {
-            "title": "为何选择 GTCFX 的免掉期服务？",
-            "subtitle": "我们的目标是在确保符合全球标准的同时，提供灵活公平的交易条件。",
-            "features": {
-                "noSwapCharges": {
-                    "icon": null,
-                    "title": "无隔夜掉期费用",
-                    "description": "交易选定品种，无需支付隔夜掉期或展期费用。"
-                },
-                "regionBased": {
-                    "icon": null,
-                    "title": "基于地区的资格",
-                    "description": "为伊斯兰及认可地区的客户提供免掉期状态。"
-                },
-                "transparent": {
-                    "icon": null,
-                    "title": "透明的交易政策",
-                    "description": "清晰公平的条件，无隐藏规则或不明确的费用结构。"
-                },
-                "fastActivation": {
-                    "icon": null,
-                    "title": "快速账户激活",
-                    "description": "通过支持或在线聊天协助快速启用免掉期状态。"
-                },
-                "longTerm": {
-                    "icon": null,
-                    "title": "适合长期交易",
-                    "description": "更长时间持有交易头寸，而不会累积基于利息的隔夜费用。"
-                }
-            }
-        },
-        "howItWorks": {
-            "title": "免掉期如何运作",
-            "subtitle": "免掉期状态可能根据您所在地区自动应用，或根据请求启用。",
-            "onceActivated": {
-                "title": "一旦激活：",
-                "points": {
-                    "point1": "合格交易品种隔夜持有不产生掉期费用",
-                    "point2": "所有其他交易条件保持不变",
-                    "point3": "交易行为可能会被定期审查",
-                    "point4": "如果发现账户活动不符合规定，免掉期账户可能会被调整"
-                }
-            },
-            "eligibility": {
-                "title": "资格标准",
-                "description": "免掉期状态可能基于以下因素授予：",
-                "criteria": {
-                    "country": {
-                        "title": "1. 国家 / 地区",
-                        "description": "位于选定伊斯兰或认可地区的客户可能自动获得资格。"
-                    },
-                    "trading": {
-                        "title": "2. 交易行为",
-                        "description": "账户应反映正常的交易模式。",
-                        "note": "异常或非标准活动可能会触发审查。"
-                    }
-                }
-            }
-        },
-        "instruments": {
-            "title": "涵盖的交易品种",
-            "description1": "免掉期仅适用于选定交易品种。覆盖范围可能因地区和流动性提供商条件而异。",
-            "description2": "合格类别示例",
-            "categories": {
-                "majorFx": "主要外汇货币对（例如：EURUSD, GBPUSD, USDJPY, AUDUSD）",
-                "preciousMetals": "选定贵金属（例如：XAUUSD, XAGUSD）",
-                "minorsExotics": "选定次要及奇异货币对",
-                "indicesEnergies": "选定指数与能源产品",
-                "cryptocurrencies": "选定加密货币"
-            },
-            "note": "关于实时列表，请参阅您交易平台中的合约规格部分。",
-            "nonSwapFree": {
-                "title": "非免掉期交易品种",
-                "description": "以下交易品种不符合免掉期资格，将始终遵循标准掉期条件。",
-                "forexPairs": {
-                    "title": "外汇货币对",
-                    "pairs": "GBPJPY, EURZAR, GBPZAR, USDCNH"
-                },
-                "commodities": {
-                    "title": "大宗商品与能源",
-                    "items": "CUCUSD, NGCUSD, XPDUSD, XPTUSD"
-                },
-                "crypto": {
-                    "title": "加密货币（USDT 格式）",
-                    "items": "ADAUSDT, ATMUSDT, BATUSDT, BCHUSDT, DOGUSDT, DSHUSDT, LTCUSDT, TRUMPUSDT, TRXUSDT, XLMUSDT, XMRUSDT, XRPUSDT, ZECUSDT"
-                }
-            }
-        },
-        "howToEnable": {
-            "title": "如何启用免掉期",
-            "description": "要激活免掉期，只需联系我们的：",
-            "contact": "👉 在线聊天 或 发送邮件至我们的支持团队：",
-            "email": "support@gtcfx.com",
-            "confirmation": "我们将审核您的资格，并在适用的情况下应用免掉期状态。激活后您将收到确认通知。"
-        },
-        "terms": {
-            "title": "条款与条件",
-            "points": {
-                "point1": "GTCFX 可自行决定批准、拒绝或撤销免掉期状态",
-                "point2": "交易活动可能会被审查以确保合规",
-                "point3": "部分地区可能会收取管理费",
-                "point4": "免掉期仅移除基于利息的掉期费用",
-                "point5": "所有其他正常交易成本（点差、佣金、滑点等）仍然适用"
-            },
-            "note": "如需任何额外详情，请联系我们的团队。"
-        },
-        "faq": {
-            "title": "常见问题",
-            "questions": {
-                "q1": "免掉期是否意味着所有隔夜成本都被移除？",
-                "a1": "不是。免掉期仅移除基于利息的掉期费用。其他正常交易成本，如点差、佣金和滑点，可能仍然适用。",
-                "q2": "我的免掉期状态会被取消吗？",
-                "a2": "是的。如果您的交易活动与正常使用或免掉期条款不符，您的账户状态可能会被审查并调整。",
-                "q3": "免掉期服务在全球都可用吗？",
-                "a3": "不是。免掉期的可用性取决于您所在的国家或地区以及适用的监管和合规要求。",
-                "q4": "所有交易品种都是免掉期的吗？",
-                "a4": "不是。只有选定的交易品种符合免掉期资格。某些交易品种，例如列在“非免掉期交易品种”下的那些，将始终遵循标准掉期条件。"
-            }
-        }
+    "home": {
+      "title": "GTCFX外汇经纪商提供超低点差、极速执行与安全交易环境",
+      "des": "选择GTCFX——值得信赖的外汇经纪商与流动性提供商，享受超低点差、极速出入金与银行级安全保障。立即开始交易"
+    },
+    "aboutUs": {
+      "title": "探索 GTCFX 提供的可靠在线交易和金融服务",
+      "des": "GTCFX 为全球交易者提供安全的在线交易和金融服务。立即开始您的旅程，获得专家支持。"
+    },
+    "whyGtcGroup": {
+      "title": "为什么 GTC 集团是成功的最佳交易平台？ | GTCFX",
+      "des": "GTC 集团是全球交易者的最佳交易平台，提供安全、可靠和创新的服务。自信交易，实现您的财务目标。立即开始交易。"
+    },
+    "regulations": {
+      "title": "GTCFX 是全球信赖和受监管的交易平台",
+      "des": "在 GTC 集团上自信交易，这是一个全球信赖和受监管的交易平台。我们获得许可并合规，提供全球安全的金融衍生品交易。"
+    },
+    "globalPresence": {
+      "title": "与 GTCFX 全球交易，值得信赖的金融解决方案经纪商",
+      "des": "GTCFX 是全球信赖的经纪商，提供安全的金融解决方案。凭借强大的全球影响力，我们连接全球交易者，提供无缝机会。"
+    },
+    "awards": {
+      "title": "GTCFX 是屡获殊荣的经纪商，以卓越表现著称",
+      "des": "在 GTCFX 自信交易，这是一家屡获殊荣的经纪商，树立行业标准。我们以创新和可靠性著称，提供世界级的交易解决方案。立即交易。"
+    },
+    "compensationFund": {
+      "title": "GTCFX 通过专用赔偿基金确保安全交易",
+      "des": "在 GTCFX 安心交易。我们的赔偿基金保障交易者，确保每笔交易的财务保护和安全。"
     },
     "blogs": {
-        "bannerTitle": "博客",
-        "bannerDescription": "GTCFX 博客 - 市场洞察与差价合约交易策略",
-        "titlePrefix": "博客",
-        "intro": "通过 GTCFX 博客保持领先 - 获取差价合约市场资讯、交易技巧与策略，助您更聪明地交易并持续成长。",
-        "readMore": "阅读更多",
-        "emptyState": "当前暂无可用博客。",
-        "endMessage": "没有更多内容",
-        "loading": "加载中...",
-        "defaultCategory": "博客",
-        "defaultExcerpt": "查看我们团队的最新更新与公告。",
-        "untitled": "未命名文章",
-        "imageAlt": "新闻图片",
-        "defaultDate": "2026年3月26日"
+      "title": "最新外汇市场新闻与策略 | GTCFX",
+      "des": "GTCFX 博客提供深入的外汇交易指南、市场洞察和专家建议，帮助您在金融市场中取得成功。立即开始学习！"
     },
-    "gtcGoApp": {
-        "hero": {
-            "eyebrow": "奖励与智能交易的未来从这里开始。",
-            "titlePrefix": "GTC GO 与 GTC VIP — ",
-            "titleHighlight": "双引擎动力",
-            "titleSuffix": "GTCFX",
-            "description": "GTCFX 同时推出两大重磅产品：GTC VIP —— 我们有史以来最大的忠诚度计划，以及 GTC GO —— 为速度、智能和无缝用户体验而重新设计的下一代交易平台。",
-            "qrAlt": "下载 GTC GO App 的二维码",
-            "availability": "适用于 iOS 和 Android"
-        },
-        "mobileDownloadBanner": {
-            "eyebrow": "获取应用",
-            "title": "下载 GTCFX 移动应用",
-            "description": "直接在手机上交易、追踪并管理您的 GTC GO 和 GTC VIP 账户。",
-            "downloadOn": "下载于",
-            "googlePlay": "Google Play",
-            "appStore": "App Store"
-        },
-        "featureSection": {
-            "badge": "追踪交易与奖励",
-            "titlePrefix": "更智能、更快速、",
-            "titleHighlight": "更稳定",
-            "titleSuffix": "的交易系统",
-            "description": "在一个界面查看您的交易活动、账户表现和 GTC VIP 奖励。GTC GO 帮助您实时关注市场，而 GTC VIP 让您随时了解积分、等级和即将到期的福利。",
-            "items": {
-                "item1": {
-                    "title": "重大升级已于 2026 年 11 月 8 日和 11 月 15 日完成。",
-                    "description": "GTC GO 和 GTC VIP 现已全面上线、优化，并准备好支持真实交易和奖励。"
-                },
-                "item2": {
-                    "title": "旨在提升性能、稳定性和用户体验。",
-                    "description": "更快的加载速度、更流畅的导航和更可靠的交易执行。"
-                },
-                "item3": {
-                    "title": "网页端和移动端的新功能。",
-                    "description": "GTC GO 网页版和移动应用均已推出最新工具。"
-                }
-            }
-        },
-        "copyTradingSection": {
-            "badge": "跟单交易升级",
-            "titleLine1": "跟单交易更灵活",
-            "titleLine2": "更强大",
-            "description": "GTC GO 带来更智能的跟单交易体验，让信号提供者和跟单者在每笔交易中都拥有更多的控制权、透明度和灵活性。",
-            "points": {
-                "point1": "私域信号 — 仅通过链接分享",
-                "point2": "社交信号 — 所有用户可见并可发现",
-                "point3": "所有发布内容新增“信号类型”标签",
-                "point4": "自定义结算周期（分钟、小时、天、月、年）",
-                "point5": "可向跟单仓位追加额外资金",
-                "point6": "无持仓时随时提现"
-            },
-            "cta": "立即下载 App"
-        },
-        "howItWorks": {
-            "title": "运作方式",
-            "subtitle": "只需几个简单步骤即可开始使用 GTC GO 平台和 GTC VIP 忠诚度计划。",
-            "steps": {
-                "step1": {
-                    "title": "下载应用",
-                    "description": "从 App Store 或 Google Play 获取 GTC GO & GTC VIP 应用，并使用您的 GTCFX 账户登录。"
-                },
-                "step2": {
-                    "title": "设置个人资料",
-                    "description": "设置您的个人资料并关联您的交易账户。几秒钟内自定义偏好设置。"
-                },
-                "step3": {
-                    "title": "享受各项功能",
-                    "description": "在一个强大的移动应用中追踪交易、监控奖励、跟随信号并管理一切。"
-                }
-            },
-            "cta": "立即下载 App"
-        },
-        "features": {
-            "badge": "GTC GO 功能",
-            "title": "释放 GTCFX 的全部力量",
-            "description": "探索让 GTC GO App 和 GTC VIP 计划成为完整交易生态系统的功能。",
-            "cta": "立即下载 App",
-            "items": {
-                "smarterCopyTrading": {
-                    "title": "更智能的跟单交易",
-                    "description": "灵活、强大，为真实交易者设计。通过自定义周期跟随信号。"
-                },
-                "highQualityDesign": {
-                    "title": "高质量设计",
-                    "description": "简洁、直观，旨在让每次交易交互更顺畅、更快捷。"
-                },
-                "essentialIntegrations": {
-                    "title": "核心集成",
-                    "description": "轻松连接交易流程中的关键工具和服务。"
-                },
-                "essentialComponents": {
-                    "title": "核心组件",
-                    "description": "完整、统一的交易体验所需的所有核心功能。"
-                },
-                "fullyCustomizable": {
-                    "title": "完全可定制",
-                    "description": "根据您的风格、偏好和交易策略调整平台。"
-                },
-                "regularFreeUpdates": {
-                    "title": "定期免费更新",
-                    "description": "持续改进和新功能不断推出，无需额外费用。"
-                }
-            }
-        }
+    "campanyNews": {
+      "title": "了解最新交易新闻和 GTCFX 更新",
+      "des": "从 GTCFX 获取最新交易新闻、市场洞察和公司更新。保持信息灵通，走在全球交易的前沿。"
     },
-    "footerLink": {
-        "columns": {
-            "trading": {
-                "label": "交易",
-                "menu1": "账户类型",
-                "menu2": "存入资金",
-                "menu3": "提取资金",
-                "menu4": "交易条件",
-                "menu5": "动态杠杆"
-            },
-            "platforms": {
-                "label": "平台",
-                "menu1": "MT4 平台",
-                "menu2": "MT5 平台",
-                "menu3": "GTC GO App",
-                "menu4": "下载交易平台",
-                "menu5": "VPS 托管"
-            },
-            "tools": {
-                "label": "工具与功能",
-                "menu1": "跟单交易",
-                "menu2": "PAMM 账户",
-                "menu3": "MAM 账户",
-                "menu4": "免隔夜利息交易",
-                "menu5": "保证金赠金"
-            },
-            "resources": {
-                "label": "见解与资源",
-                "menu1": "市场洞察",
-                "menu2": "公司新闻",
-                "menu3": "经济日历",
-                "menu4": "财报日历",
-                "menu5": "网站免责声明",
-                "menu6": "风险披露",
-                "menu7": "受限国家"
-            },
-            "companyLegal": {
-                "label": "公司与法律",
-                "menu1": "关于我们",
-                "menu2": "为何选择 GTC 集团",
-                "menu3": "全球布局",
-                "menu4": "所获奖项",
-                "menu5": "加入我们",
-                "menu6": "联系我们",
-                "menu7": "监管信息"
-            }
-        },
-        "footerHeading": "随时随地，连接您与全球市场。",
-        "storeButtons": {
-            "appStoreAlt": "在 App Store 上下载",
-            "googlePlayAlt": "在 Google Play 上获取"
-        },
-        "footerNotice": {
-            "firstPara": "本网站由 GTC Global SA (Pty) Ltd 拥有和运营，这是一家在南非注册的私人有限公司（公司注册号：2020/810937/07），并获得南非金融部门行为监管局（FSP 编号：51545）的许可，可作为中介机构开展业务。注册地址：18 Cavendish Road, Clarement, Cape Town, Western Cape, 7708, South Africa。本网站推广的金融服务和产品由 GTC Global Trade Capital Co. Limited 提供，该公司经瓦努阿图共和国瓦努阿图金融服务委员会授权（公司许可证号：40354）。注册地址：1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu。",
-            "secondPara": "GTC Global SA (Pty) Ltd 和 GTC Global Trade Capital Co. Limited 是 GTC Financial Group 的一部分，该集团由遍布全球的多个实体组成。",
-            "thirdPara": "投资衍生品具有重大风险，可能不适用于所有投资者。这些工具中的杠杆使用会增加风险水平和潜在损失。在做出任何参与外汇交易或差价合约交易的决定之前，务必仔细考虑您的投资目标、经验水平和风险承受能力。您只能投入您能承受损失的资金。我们强烈建议您全面了解相关风险，如有任何疑问，请寻求独立财务或税务顾问的建议。",
-            "fourthPara": "GTC Global SA (Pty) Ltd 和 GTC Global Trade Capital Co. Limited 不向居住在特定司法管辖区和/或此类服务的分发违反当地法律或法规的司法管辖区的个人提供服务。",
-            "fifthPara": "GTC Financial Group 内的每个实体独立运营。本网站提供的金融产品和服务仅由 GTC Global Trade Capital Co. Limited 提供。"
-        },
-        "footerCopyRight": {
-            "copyRightText": "© 版权所有 {year} GTCFX - 保留所有权利"
-        }
+    "career": {
+      "title": "在 GTCFX 建立您的外汇职业生涯并成长",
+      "des": "GTCFX 是一家领先的金融科技公司，专注于外汇交易解决方案。我们的职业机会提供了一个协作和支持的工作环境，让创造力得以发展，人才得以赋能，实现长期成功。"
     },
-    "regulationPage": {
-        "titleStart": "GTC 金融集团的",
-        "titleHighlight": "全球布局",
-        "bannerDescription": "GTC Group LLC-FZ，一家在阿联酋注册的有限责任公司，旗下拥有以下全球实体，共同组成 GTC 金融集团。",
-        "intro": "GTC Group LLC-FZ 是一家在阿联酋注册的有限责任公司，旗下拥有以下全球实体，共同组成 GTC 金融集团。这些实体中的每一个都根据其在相关司法管辖区的相应许可证提供金融服务。GTC 金融集团内的每个实体都专注于不同的服务，并由经验丰富的团队独立管理。本网站上的服务和产品由两个集团实体提供，即 GTC Global Ltd 和 GTC Global Trade Capital Co. Limited。",
-        "badge": "运营中 GTC 关联公司信息",
-        "websiteLabel": "网站：",
-        "closing": "GTC 金融集团为客户提供广泛的金融服务。集团内的不同实体拥有不同的许可证和产品，因为它们独立管理。如果您想进一步了解您正在与哪个实体打交道，我们鼓励您联系我们。",
-        "affiliates": {
-            "one": {
-                "country": "阿联酋",
-                "entity": "GTC MULTI TRADING DMCC",
-                "description": "GTC MULTI TRADING DMCC 受阿联酋证券和商品管理局监管，许可证号为 20200000007。该公司获准在 DGCX 衍生品期货下提供直接经纪清算会员服务。"
-            },
-            "two": {
-                "country": "阿联酋",
-                "entity": "GTC FINANCIAL CONSULTANCY",
-                "description": "GTC FINANCIAL CONSULTANCY 受阿联酋证券和商品管理局监管。"
-            },
-            "three": {
-                "country": "英国",
-                "entity": "Global Markets Group Limited",
-                "description": "Global Markets Group Limited 是一家在英格兰和威尔士注册的公司，公司编号为 09493910，由金融行为监管局授权和监管，参考编号为 744501。GTC GROUP L.L.C-FZ 是 Global Markets Group Limited 的少数股东。注册办公室：Green Park House, 15 Stratton Street, London W1J 8LQ, UK。"
-            },
-            "four": {
-                "country": "澳大利亚",
-                "entity": "GTC Global (Australia) Pty Ltd",
-                "description": "GTC Global (Australia) Pty Ltd 持有澳大利亚金融服务许可证编号 496371。GTC Global (Australia) 专注于为澳大利亚客户提供教育服务。"
-            },
-            "five": {
-                "country": "毛里求斯",
-                "entity": "GTC Global Ltd",
-                "description": "GTC Global Ltd 是一家在毛里求斯注册的有限公司（公司编号：C188049），并获得毛里求斯金融服务委员会的许可（编号：GB22200292）作为 SEC-2 实体进行交易。"
-            },
-            "six": {
-                "country": "南非",
-                "entity": "GTC Global South Africa Proprietary Limited",
-                "description": "GTC Global South Africa Proprietary Limited（注册号：2020/810937/07）持有金融服务提供商许可证编号 51545。注册地址：First Floor Kildare Centre, Cnr Kildare Road and Main Street, Newlands, Cape Town, Western Cape, 7550, South Africa。"
-            },
-            "seven": {
-                "country": "瓦努阿图",
-                "entity": "GTC Global Trade Capital Co. Limited",
-                "description": "GTC Global Trade Capital Co. Limited 是一家全球金融经纪公司，在瓦努阿图共和国瓦努阿图金融服务委员会注册、监督和授权，公司许可证号：40354。注册地址：1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu。"
-            }
-        }
+    "contactUs": {
+      "title": "联系我们，获得专家交易支持和帮助",
+      "des": "需要交易帮助吗？联系 GTCFX 获得专家交易支持和个性化帮助。我们的团队随时准备帮助您自信交易。"
     },
     "demoAccount": {
-        "accountForm": {
-            "demoHeading": "申请模拟账户",
-            "firstName": "全名",
-            "lastName": "姓氏",
-            "email": "电子邮件地址",
-            "phone": "电话号码",
-            "dob": "出生日期",
-            "platform": "首选交易平台",
-            "selectPlaceholder": "请选择选项",
-            "country": "居住国家",
-            "termOfService": "服务条款",
-            "termText": "点击“提交”，即确认：(1) 我已阅读并同意",
-            "termText2": "客户协议；",
-            "termText3": "(2) 我同意 GTCFX 在合理时间联系我；(3) 我的号码不在谢绝来电登记簿上。",
-            "submit": "提交",
-            "sending": "发送中...",
-            "error": {
-                "firstName": "全名是必填项",
-                "lastName": "姓氏是必填项",
-                "email": "电子邮件地址是必填项",
-                "account_no": "账号是必填项",
-                "phone": "电话号码是必填项",
-                "dob": "出生日期是必填项",
-                "platform": "平台是必填项",
-                "country": "国家是必填项",
-                "termOfService": "请接受条款和条件",
-                "otpRequired": "验证码是必填项"
-            },
-            "minLimit": "至少3个字母",
-            "accountType": "选择账户",
-            "mt5Account": "MT5 模拟账户",
-            "getCode": "获取验证码",
-            "otpSend": "验证码已发送到给定的电子邮件",
-            "otpSendPhone": "验证码已发送到给定的电话号码",
-            "otpSuccess": "验证码验证成功！",
-            "otpFail": "验证码验证失败！",
-            "sent": "成功！请检查您的电子邮件",
-            "sentPhone": "成功！请检查您的 WhatsApp",
-            "error1": "发送验证码失败，请重试。",
-            "invalidEmail": "电子邮件地址无效，请使用有效的电子邮件。",
-            "verified": "验证码已验证！",
-            "wrong": "验证码错误，请重试。",
-            "enterOtp": "请输入验证码。",
-            "verifyOTP": "验证"
-        },
-        "eyebrow": "免费模拟账户",
-        "titleStart": "更智能的交易，而非更冒险",
-        "titleHighlight": "立即开设免费模拟账户",
-        "titleEnd": "",
-        "bannerDescription": "使用 GTCFX 高级交易平台掌握市场",
-        "description": "在安全、无风险的环境中探索 GTCFX MT5 和 WebTrader 平台。使用实时市场数据练习交易，在零财务风险下磨练您的策略。",
-        "ctaButton": "开设模拟账户",
-        "formHeader": "申请模拟账户",
-        "benefits": {
-            "one": {
-                "title": "真实市场数据",
-                "desc": "在实时市场条件下进行练习"
-            },
-            "two": {
-                "title": "零风险交易",
-                "desc": "没有任何财务风险地进行交易"
-            },
-            "three": {
-                "title": "即时设置",
-                "desc": "几秒钟内开始，无需等待"
-            },
-            "four": {
-                "title": "MT4 和 MT5 访问",
-                "desc": "使用行业领先的交易平台"
-            }
-        }
+      "title": "开设免费外汇模拟账户，进行无风险交易",
+      "des": "在 GTC 集团开设免费外汇模拟账户，体验真实市场条件，测试策略，并在无风险的情况下建立信心。"
     },
-    "depositPage": {
-        "bannerTitle": "存入资金",
-        "bannerDescription": "以您自己的轻松和舒适方式为账户注资",
-        "hero": {
-            "eyebrow": "为账户注资",
-            "titleStart": "存入资金",
-            "titleHighlight": "快速且安全",
-            "description": "使用多种安全支付方式为您的账户注资。享受快速处理、全球可访问性和无缝交易体验。",
-            "cta": "开设真实账户"
-        },
-        "methods": {
-            "titleStart": "多种",
-            "titleHighlight": "支付方式",
-            "titleEnd": "进行注资",
-            "description": "选择您偏好的注资方式，立即开始交易。",
-            "items": {
-                "one": {
-                    "title": "在线支付",
-                    "desc": "基于您所在地区的安全在线支付渠道。"
-                },
-                "two": {
-                    "title": "电子钱包支付",
-                    "desc": "Apple Pay、Google Pay、Skrill、Neteller 等。"
-                },
-                "three": {
-                    "title": "银行转账",
-                    "desc": "向我们的全球银行合作伙伴进行可靠的电汇。"
-                }
-            }
-        },
-        "steps": {
-            "title": "如何为账户注资",
-            "items": {
-                "one": {
-                    "title": "登录",
-                    "desc": "安全访问您的客户门户。"
-                },
-                "two": {
-                    "title": "存入",
-                    "desc": "点击钱包或存款部分。"
-                },
-                "three": {
-                    "title": "选择方式",
-                    "desc": "选择您偏好的支付选项。"
-                }
-            }
-        }
+    "deposit": {
+      "title": "轻松为您的账户注资，享受 GTCFX 的安全快速交易",
+      "des": "通过 GTCFX 安全地为您的账户注资，轻松开始交易 CFD 和外汇。享受快速交易、多种支付选项和无隐藏费用的无缝存款流程。"
     },
-    "eventPage": {
-        "hero": {
-            "titleStart": "为",
-            "titleHighlight": "塑造市场的人们",
-            "titleEnd": "而设的聚会点",
-            "line1": "这不仅仅是一场活动。",
-            "line2": "这是一个领导者们相互联系、思想变得更强大、行业未来共同前进的地方。",
-            "comingSoon": "新的活动和展览即将推出...",
-            "countdown": {
-                "days": "天",
-                "hours": "小时",
-                "min": "分",
-                "sec": "秒"
-            }
-        },
-        "benefits": {
-            "label": "主要优势",
-            "titleStart": "是什么让 GTCFX 活动",
-            "titleEnd": "与众不同？",
-            "description": "每一次 GTCFX 活动都是经过精心设计的。不是为了表面的惊艳，而是为了传递真正的价值、真正的对话和真正的行业洞察。",
-            "item1": {
-                "title": "真正的市场声音，而不仅仅是演讲者",
-                "desc": "我们的会议环节由每天在市场中工作的专业人士——交易员、合作伙伴和行业领袖——带领，他们凭借经验而非幻灯片发言。"
-            },
-            "item2": {
-                "title": "您可以实际使用的实用见解",
-                "desc": "从市场结构到策略思考，讨论聚焦于您可以带回、反思并应用的想法——无论您是在交易、管理团队还是发展业务。"
-            },
-            "callTitle": "立即致电！",
-            "callNumber": "+971 800 667788"
-        },
-        "eventSchedule": {
-            "label": "我们的活动日程",
-            "title": "探索完整日程",
-            "description": "我们的活动",
-            "noSchedule": "{year} 年尚未添加日程。"
-        },
-        "speakers": {
-            "label": "我们的演讲者",
-            "titleStart": "我们的专家之声",
-            "titleHighlight": "塑造",
-            "titleEnd": "全球市场",
-            "description": "每一场 GTCFX 活动都由在市场核心工作的专业人士主导。不是评论员，不是理论家，而是理解价格、流动性、风险和真实交易决策的人。",
-            "bottomNote": "加入我们的演讲者行列，共同在全球编织创新、质量和成功。",
-            "cards": {
-                "one": {
-                    "name": "Jameel Ahmad",
-                    "role": "首席分析师"
-                },
-                "two": {
-                    "name": "Mohamed Daher Ali Ahmed",
-                    "role": "流动性与合作高级副总裁"
-                },
-                "three": {
-                    "name": "Ahmed Fouad",
-                    "role": "机构销售主管"
-                }
-            }
-        }
+    "accountTypes": {
+      "title": "选择 GTCFX 的最佳实盘交易账户",
+      "des": "在 GTCFX 开设实盘交易账户，并从灵活账户类型中选择。享受有竞争力的点差、快速执行和安全的交易体验。"
     },
-    "glossaryPage": {
-        "bannerTitle": "术语表与常见问题",
-        "bannerDescription": "探索关键交易术语，并找到关于 GTCFX 产品、服务和交易条件的常见问题解答。",
-        "browseByLetter": "按字母浏览",
-        "noTerms": "此字母暂无术语表条目。"
+    "promotion": {
+      "title": "存款与交易返现 – 赚取高达 $1,000 | GTCFX",
+      "des": "通过我们的存款与交易返现计划提升您的交易利润！交易外汇、金属和石油时，赚取高达 $1,000 的返现。存款越多，奖励越高。立即开始交易！🚀"
     },
-    "tutorialPage": {
-        "bannerTitle": "教学视频",
-        "bannerDescription": "浏览我们易于跟随的视频指南，获得您需要的帮助，以更自信地进行交易。",
-        "eyebrow": "视频教程",
-        "titleStart": "GTCFX",
-        "titleHighlight": "教学视频",
-        "description": "通过清晰的分步视频指南，学习如何开设账户、验证个人资料、存入资金以及管理您的交易之旅。",
-        "closeVideoPopup": "关闭视频弹窗",
-        "invalidYoutubeUrl": "YouTube 链接无效，请检查视频 URL。",
-        "videos": {
-            "one": {
-                "title": "如何在 GTCFX 门户中开设账户",
-                "description": "按照分步流程快速轻松地创建您的真实交易账户。",
-                "category": "账户设置",
-                "duration": "2 分钟",
-                "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_1"
-            },
-            "two": {
-                "title": "如何验证您的 GTCFX 账户",
-                "description": "学习如何顺利完成账户验证并避免常见错误。",
-                "category": "验证",
-                "duration": "3 分钟",
-                "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_2"
-            },
-            "three": {
-                "title": "如何向您的账户存入资金",
-                "description": "了解存款流程，并查看如何通过可用方式为账户注资。",
-                "category": "注资",
-                "duration": "2 分钟",
-                "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_3"
-            },
-            "four": {
-                "title": "如何在 GTCFX 门户中开设账户",
-                "description": "按照分步流程快速轻松地创建您的真实交易账户。",
-                "category": "账户设置",
-                "duration": "2 分钟",
-                "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_4"
-            },
-            "five": {
-                "title": "如何验证您的 GTCFX 账户",
-                "description": "学习如何顺利完成账户验证并避免常见错误。",
-                "category": "验证",
-                "duration": "3 分钟",
-                "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_5"
-            },
-            "six": {
-                "title": "如何向您的账户存入资金",
-                "description": "了解存款流程，并查看如何通过可用方式为账户注资。",
-                "category": "注资",
-                "duration": "2 分钟",
-                "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_6"
-            },
-            "seven": {
-                "title": "如何向您的账户存入资金",
-                "description": "了解存款流程，并查看如何通过可用方式为账户注资。",
-                "category": "注资",
-                "duration": "2 分钟",
-                "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_7"
-            }
-        }
+    "forex": {
+      "title": "与 GTCFX 进行外汇交易，自信进入全球市场",
+      "des": "与 GTCFX 开始外汇交易，探索全球货币市场，享受紧点差和闪电般快速的执行。选择一个为追求可靠性和精确性的交易者设计的平台。"
     },
-    "accountType": {
-        "bannerTitle": "账户类型",
-        "bannerDescription": "以您自己的轻松和舒适方式为账户注资",
-        "eyebrow": "账户类型",
-        "titleStart": "比较我们的",
-        "titleHighlight": "交易账户",
-        "description": "开设真实账户，以具有竞争力的点差交易我们的金融产品，释放盈利潜力。比较我们的账户类型，选择最符合您交易风格的选项。",
-        "cards": {
-            "standard": {
-                "title": "标准账户",
-                "subtitle": "一种灵活的账户，旨在提供便捷的市场准入、有竞争力的点差和免佣金交易。"
-            },
-            "ecn": {
-                "title": "ECN 账户",
-                "subtitle": "为原始点差、直接市场访问和高级交易支持而构建的高级账户。"
-            }
-        },
-        "comparison": {
-            "minimumDeposit": {
-                "label": "最低入金",
-                "standard": "无最低入金",
-                "ecn": "最低入金 $3,000"
-            },
-            "leverage": {
-                "label": "杠杆",
-                "standard": "最高 1:2000 ***",
-                "ecn": "最高 1:500 ***"
-            },
-            "spreads": {
-                "label": "点差",
-                "standard": "平均点差 1.0 点",
-                "ecn": "原始点差 0.0 点"
-            },
-            "commission": {
-                "label": "佣金",
-                "standard": "0 佣金",
-                "ecn": "佣金 $5 / 标准手"
-            },
-            "execution": {
-                "label": "执行",
-                "standard": "安全、即时且快速的执行",
-                "ecn": "安全、即时且快速的执行"
-            },
-            "bankAccess": {
-                "label": "银行通道",
-                "standard": "直接接入顶级银行",
-                "ecn": "直接接入顶级银行"
-            },
-            "markets": {
-                "label": "市场",
-                "standard": "可访问 7 个市场，超过 27,000 种交易工具",
-                "ecn": "可访问 7 个市场，超过 27,000 种交易工具"
-            },
-            "tradingRestrictions": {
-                "label": "交易限制",
-                "standard": "无交易限制",
-                "ecn": "无交易限制"
-            },
-            "priceSlippage": {
-                "label": "价格滑点",
-                "standard": "无价格滑点*",
-                "ecn": "无价格滑点*"
-            },
-            "requotes": {
-                "label": "重新报价",
-                "standard": "无重新报价",
-                "ecn": "无重新报价"
-            },
-            "rejections": {
-                "label": "拒绝",
-                "standard": "无拒绝",
-                "ecn": "无拒绝"
-            },
-            "tradingPlatform": {
-                "label": "交易平台",
-                "standard": "Meta Trader (MT) 交易平台",
-                "ecn": "Meta Trader (MT) 交易平台"
-            },
-            "advancedAccess": {
-                "label": "高级访问",
-                "standard": "支持 MAM、PAMM、API",
-                "ecn": "支持 MAM、PAMM、API"
-            },
-            "protection": {
-                "label": "保护",
-                "standard": "负余额保护",
-                "ecn": "负余额保护"
-            }
-        },
-        "benefits": {
-            "standard": {
-                "title": "标准账户优势",
-                "one": "为灵活入金设计，无最低入金要求",
-                "two": "结构简单，零佣金",
-                "three": "适合寻求便捷市场准入的交易者"
-            },
-            "ecn": {
-                "title": "ECN 专属优势",
-                "one": "提供一级流动性及 ECN 技术",
-                "two": "市场分析",
-                "three": "免费高级交易工具和信号",
-                "four": "专属客户经理"
-            }
-        },
-        "cta": {
-            "openStandard": "开设标准账户",
-            "openEcn": "开设 ECN 账户"
-        },
-        "notes": {
-            "one": "* 在低波动性和高流动性的市场以及正常市场波动流动性条件下交易。",
-            "two": "** 账户余额超过 $50,000",
-            "three": "*** 以上仅适用于 GTC Global Ltd.（FSCM）和 GTC Global Trade Capital Co.（VFSC）的客户。"
-        }
+    "energy": {
+      "title": "与 GTCFX 进行能源 CFD 交易 – 交易石油、天然气等",
+      "des": "与 GTCFX 探索能源 CFD 交易。使用先进工具和实时洞察交易石油、天然气和其他能源市场，最大化您在能源领域的交易潜力。"
     },
-    "earningsPage": {
-        "bannerTitle": "财报与股息日历",
-        "bannerPara": "我们的财报与股息日历展示了您可在 GTC 交易的所有股票和指数差价合约的最新财报发布时间及股息日期。我们也建议您在交易股票和指数前先查看该日历。",
-        "bannerDatePrefix": "除息日：",
-        "howToCalculateHeading": "如何计算股息",
-        "howToCalculateTitle1": "持有多头仓位时获得的股息：",
-        "howToCalculatePara1": "股息收益 = 成分股股息（每份指数合约）× 合约规模 × 手数 × 货币转换系数 × 账户货币转换系数",
-        "howToCalculateTitle2": "持有空头仓位时扣除的股息：",
-        "howToCalculatePara2": "股息费用 = 成分股股息（每份指数合约）× 合约规模 × 手数 × 货币转换系数 × 账户货币转换系数",
-        "noData": "当前暂无财报数据。"
+    "shares": {
+      "title": "交易股票并投资全球公司 | GTCFX",
+      "des": "通过添加一些全球知名品牌的股票（如苹果、特斯拉、Netflix 等）来多元化您的投资组合。"
     },
-    "earningsMarginPanel": {
-        "howStockEarning": {
-            "title": "股票与指数财报及股息如何影响您的保证金",
-            "desc": "我们准备了一份简要指南来解释该日历。它将帮助您了解企业事件何时发生、我们如何调整保证金，以及这些变化为何对您的账户至关重要。",
-            "item1": {
-                "heading": "1）为何标注财报与股息",
-                "para1": "流动性提供商通常会在财报或股息周期内对指数及保证金进行标注，以降低风险敞口。因此我们会在日历中列出这些日期。被标注的产品表示这些事件可能影响其波动性。"
-            },
-            "item2": {
-                "heading": "2）理解保证金分层",
-                "para1": "控制风险！通过不同层级查看保证金要求，以便更合理地匹配您的持仓规模。"
-            },
-            "item3": {
-                "heading": "3）股票财报示例",
-                "para1": "让我们来看一个基于苹果公司最新财报的简单示例：",
-                "list1": "产品：AAPL",
-                "list2": "股价：182.40 美元",
-                "list3": "预期每股收益：2.84 美元",
-                "list4": "实际每股收益：2.90 美元",
-                "para2": "如果实际数据高于预期，市场可能上涨；若低于预期，则可能带来下行风险。"
-            },
-            "item4": {
-                "heading": "4）指数股息调整示例",
-                "para1": "以下是基于 CHN50 的股息调整示例：",
-                "list1": "产品：CHN50",
-                "list2": "股息：1.50",
-                "list3": "持有 1 手多头仓位",
-                "list4": "1.50 × 50 = 75 美元",
-                "list5": "盈亏入账：75.00 美元"
-            },
-            "item5": {
-                "heading": "5）股息现金调整",
-                "para1": "当产品进入除息时，将根据持仓情况进行调整：",
-                "list": {
-                    "one": "若持有多头仓位（并在除息日持仓）——股息将计入账户。",
-                    "two": "若为空头或在除息日前平仓——股息将从账户中扣除。"
-                }
-            },
-            "item6": {
-                "heading": "6）您的责任",
-                "para1": "在高波动期间，新的保证金要求可能导致可用保证金不足。请确保您的账户有足够资金来维持仓位，或提前调整交易策略。"
-            },
-            "item7": {
-                "heading": "7）注意日期与时间",
-                "para1": "点差和时间为参考值。有时一个事件可能影响多个产品。请提前做好风险管理，确保保证金充足。",
-                "para2": "合理交易，确保资金安全。"
-            }
-        },
-        "btnText": "推荐您的交易者"
+    "stock": {
+      "title": "与 GTCFX 进行股票交易，进入全球市场以获得更好的机会",
+      "des": "与 GTCFX 探索股票交易，进入主要全球市场。使用用户友好的工具和实时市场更新轻松买卖股票。"
     },
-    "earningsFaq": {
-        "heading": "常见问题解答",
-        "question1": "什么会影响财报日期前后的股票和指数差价合约？",
-        "answer1": "收益发布可能会增加相关差价合约的波动性、点差变化和保证金要求。",
-        "question2": "差价合约交易中的除息日是哪一天？",
-        "answer2": "这是根据您的未平仓头寸方向进行股息调整的日期。",
-        "question3": "多头头寸和空头头寸的待遇是否不同？",
-        "answer3": "是的。多头头寸通常记入贷方，而空头头寸通常因股息调整而收取费用。",
-        "question4": "为什么我应该在交易前查看收益日历？",
-        "answer4": "它可以帮助您规划风险敞口、避免意外情况并为潜在的保证金和波动性变化做好准备。",
-        "question5": "一个事件会影响多个仪器吗？",
-        "answer5": "是的。单个公司事件可能会影响多个相关指数或股票差价合约。",
-        "question6": "如何在高利润时期降低风险？",
-        "answer6": "使用较小的头寸规模，监控可用保证金，并在重大事件发生之前保持风险缓冲。",
-        "question7": "如果我不确定，我可以在哪里获得帮助？",
-        "answer7": "在收盘前联系支持人员，获取有关工具详细信息和保证金影响的指导。"
+    "commodities": {
+      "title": "与 GTCFX 进行商品交易，探索石油、黄金等",
+      "des": "与 GTCFX 开始交易石油、黄金等商品。进入全球市场，多元化您的投资，并轻松抓住盈利机会。"
+    },
+    "indices": {
+      "title": "与 GTCFX 开始指数交易，进入顶级全球市场",
+      "des": "与 GTCFX 进行指数交易，探索顶级全球市场。轻松交易主要指数，并使用实时数据和灵活选项做出明智决策。"
+    },
+    "metals": {
+      "title": "与 GTCFX 轻松交易黄金和白银等贵金属",
+      "des": "与 GTCFX 开始交易黄金和白银等贵金属。通过简单步骤、灵活选项和实时市场访问进行买卖。"
+    },
+    "mt4Platform": {
+      "title": "在 GTCFX 使用 MT4 交易平台轻松交易",
+      "des": "下载适用于 Windows、Mac、iOS 和 Android 的 MT4 交易平台。通过 GTCFX 交易外汇、股票、指数、商品等 CFD，使用功能强大且易于使用的平台。立即开设您的 MT4 账户。"
+    },
+    "mt5Platform": {
+      "title": "在 GTCFX 使用 MT5 交易平台进行高级功能交易",
+      "des": "通过 GTCFX 获取适用于 Windows、Mac、iOS 和 Android 的 MT5 交易平台。使用高级工具和快速执行交易外汇、股票、指数、商品等 CFD。立即开始在 MT5 上交易。"
+    },
+    "downloadApp": {
+      "title": "下载交易平台，享受 GTCFX 的快速安全交易",
+      "des": "下载交易平台，随时开始交易。通过快速、安全和用户友好的平台访问全球市场。立即下载。"
+    },
+    "tutorialVideo": {
+      "title": "如何通过教程视频开设实盘交易账户、存款和提款 | GTCFX",
+      "des": "观看 GTCFX 教程视频，学习如何开设实盘交易账户、存款和轻松提款。立即与最佳经纪商之一自信交易。"
+    },
+    "weeklyWebinar": {
+      "title": "免费 10 周技术分析教育网络研讨会系列 – 立即注册！",
+      "des": "加入我们的独家交易网络研讨会，与专家 Harsh Japee 一起掌握技术分析和实时市场策略。获取实时洞察、经过验证的策略以及外汇、黄金、比特币和指数交易设置。立即注册 – 座位有限！"
+    },
+    "economicCalendar": {
+      "title": "通过 GTCFX 经济日历了解最新动态",
+      "des": "使用 GTCFX 经济日历跟踪重要市场事件。获取全球经济数据的实时更新，做出明智的交易决策。立即查看。"
+    },
+    "marketOverview": {
+      "title": "通过 GTCFX 获取最新市场概览和趋势",
+      "des": "获取最新市场概览，包括实时数据、趋势和分析。通过全球金融市场的最新洞察保持领先。立即探索。"
+    },
+    "glossary": {
+      "title": "金融术语和常见问题解答，帮助您了解 GTCFX 交易",
+      "des": "探索金融术语和常见问题解答，学习关键交易概念。获取清晰的解释和常见问题的答案，做出更好的交易决策。立即开始。"
     },
     "dynamicLeverage": {
-        "lervageHero": {
-            "title": "动态杠杆",
-            "description": "GTCFX 利用跨各种金融工具的动态杠杆模型，包括主要外汇、次要外汇、金属、指数、商品、股票/股票、能源和数字货币资产，帮助您最大限度地发挥交易潜力。"
-        },
-        "whatLervage": {
-            "title": "什么是动态杠杆？",
-            "description": "GTCFX 的动态杠杆会根据您的交易头寸自动调整。该模型适用于每种工具，这意味着您的杠杆率会随着交易量的增加而减少。这种方法使您能够优化您的交易潜力。",
-            "boostTrades": "促进您的交易",
-            "leverage": "高达 1:2000 的杠杆",
-            "leverageDescription": "无论您的交易资本有多大，我们都会通过提供高达 1:2000 的动态杠杆来提高您的投资能力。",
-            "leverageDetails": {
-                "one": "外汇货币高达 1:2000",
-                "two": "金属高达 1:2000",
-                "three": "大宗商品和能源高达 1:400",
-                "four": "数字货币资产货币差价合约高达 1:250",
-                "five": "指数高达 1:125",
-                "six": "高达 1:20 股票/股"
-            },
-            "scaleTrades": "扩大您的交易规模",
-            "dynamicLeverageTiers": "动态杠杆等级",
-            "tiersDescription": "这些动态杠杆级别确保您能够灵活地扩大交易规模，同时控制风险敞口。",
-            "example": "例子",
-            "exampleDetails": {
-                "one": "如果您交易 EURUSD 最多 5 手，GBPUSD 交易最多 5 手，则两个头寸的杠杆率都将保持 1:2000。",
-                "two": "但是，如果您在 EURUSD 上交易 4 手以上，前 5 手的杠杆将为 1:2000，而接下来的 4 手将以 1:1000 的杠杆计算。"
-            },
-            "disclaimer": "这适用于根据上述动态杠杆级别的所有其他交易工具"
-        },
-        "popUp": {
-            "leveragePopTitle": "引入动态杠杆",
-            "description": "自 2024 年 9 月 9 日起，GTCFX 将在多种金融工具中实施动态杠杆模型，包括主要外汇、次要外汇、金属、指数、大宗商品、股票/股票、能源和数字货币资产货币。请注意，从 2024 年 9 月 9 日起执行的所有交易都将受此更新的杠杆结构的约束。",
-            "agreedButton": "同意"
-        },
-        "tieredLeverage": {
-            "heading": "有关分级保证金/杠杆的常见问题解答",
-            "one": {
-                "ques": "分级杠杆如何运作？",
-                "ans": "分级杠杆会随着交易规模的增加而降低杠杆比率。例如，小仓位的杠杆可能为 1:500，但随着仓位规模的增长，杠杆可能会降至 1:200、1:100，甚至更低，需要更多保证金来维持交易。"
-            },
-            "two": {
-                "ques": "分级杠杆会影响我的交易策略吗？",
-                "ans": "如果您交易大额头寸，由于分级杠杆而增加的保证金要求可能会限制您开立额外头寸的能力或迫使您平仓现有头寸。"
-            },
-            "three": {
-                "ques": "所有资产的分级杠杆都相同吗？",
-                "ans": "不可以，不同资产类别的分级杠杆可能有所不同。例如，外汇货币对的杠杆率可能高于商品或指数的杠杆率。"
-            },
-            "four": {
-                "ques": "如果我因分级杠杆而无法满足保证金要求，会发生什么情况？",
-                "ans": "如果您无法满足保证金要求，您将需要向您的账户添加更多资金，以便您能够进行更大的交易量。"
-            },
-            "five": {
-                "ques": "分级杠杆会自动应用吗？",
-                "ans": "是的，分级杠杆通常由交易平台根据您的头寸规模自动应用。"
-            },
-            "six": {
-                "ques": "如何计算分级杠杆所需的保证金？",
-                "ans": "您可以通过查看您的交易平台提供的保证金计算器来计算所需的保证金。"
-            }
-        },
-        "highMarginRequirement": {
-            "heading": "常见问题解答 – 高保证金要求 (HMR)",
-            "one": {
-                "ques": "什么是高保证金要求 (HMR)？",
-                "paragraphs": {
-                    "one": "HMR 是在每日展期和重大经济公告等市场风险较高期间临时增加开立新交易所需的保证金。",
-                    "two": "这是一种保护性风险管理机制。"
-                }
-            },
-            "two": {
-                "ques": "即使价格没有变动，为什么我的保证金水平也会下降？",
-                "paragraphs": {
-                    "one": "在 HMR 期间，每个头寸所需的保证金会增加。",
-                    "two": "由于保证金增加而净值保持不变，因此即使市场价格没有变化，您的保证金水平 (%) 也会下降。"
-                }
-            },
-            "three": {
-                "ques": "我的交易会因为 HMR 而被关闭吗？",
-                "paragraphs": {
-                    "one": "HMR 本身并不关闭交易。",
-                    "two": "但如果由于临时增加保证金导致保证金水平下降至平台爆仓水平，交易平台将按照正常交易规则自动平仓。"
-                }
-            },
-            "four": {
-                "ques": "现有交易是否受到影响？",
-                "paragraphs": {
-                    "one": "您的交易价格、止损和止盈保持不变。",
-                    "two": "然而，维持仓位所需的保证金可能会暂时增加，这会减少可用保证金。"
-                }
-            },
-            "five": {
-                "ques": "HMR 会扩大利差吗？",
-                "paragraphs": {
-                    "one": "不。",
-                    "two": "点差变化是由市场流动性和流动性提供者的定价引起的，而不是由 HMR 引起的。",
-                    "three": "HMR 仅更改保证金要求。"
-                }
-            },
-            "six": {
-                "ques": "HMR 是否适用于所有工具？",
-                "paragraphs": {
-                    "one": "HMR主要影响以下工具："
-                },
-                "list": {
-                    "one": "外汇对",
-                    "two": "黄金和白银",
-                    "three": "指数",
-                    "four": "能源产品",
-                    "five": "差价合约"
-                },
-                "note": "根据波动性，某些工具在新闻发布期间可能会受到更强的影响。"
-            },
-            "seven": {
-                "ques": "为什么黄金受到的影响最大？",
-                "paragraphs": {
-                    "one": "黄金对以下因素反应强烈："
-                },
-                "list": {
-                    "one": "通胀数据（CPI）",
-                    "two": "就业数据（非农就业数据）",
-                    "three": "利率预期"
-                },
-                "note": "由于价格变动可能非常快，因此采用了额外的保证金保护。"
-            },
-            "eight": {
-                "ques": "HMR 能持续多久？",
-                "paragraphs": {
-                    "one": "HMR 通常持续以下时期："
-                },
-                "list": {
-                    "one": "每日滚动：约 45 分钟",
-                    "two": "重大经济新闻：围绕发布窗口"
-                },
-                "note": "持续时间可能会根据市场流动性而有所不同。"
-            },
-            "nine": {
-                "ques": "我可以避免 HMR 吗？",
-                "paragraphs": {
-                    "one": "是的。您可以通过以下方式避免 HMR 效应："
-                },
-                "list": {
-                    "one": "在展期窗口期间不开设新仓位",
-                    "two": "保持足够的可用保证金",
-                    "three": "在重大新闻事件发生前降低杠杆"
-                }
-            },
-            "ten": {
-                "ques": "这种情况在行业内常见吗？",
-                "paragraphs": {
-                    "one": "是的。",
-                    "two": "在高波动时期临时增加保证金是专业交易环境和流动性提供商使用的标准风险控制做法。"
-                }
-            },
-            "eleven": {
-                "ques": "为什么没有单独通知我？",
-                "paragraphs": {
-                    "one": "HMR 是一种由系统控制、基于市场状况的机制，同时应用于所有账户。",
-                    "two": "由于激活取决于实时市场风险状况，因此并不总是能够发出单独通知。"
-                }
-            }
-        },
-        "dynamicLeverageDetailsTitle": "动态杠杆详情",
-        "dynamicLeverageDetailsDescription": "GTCFX 的动态杠杆会根据您的交易头寸自动调整。该模型适用于每种工具，这意味着您的杠杆率会随着交易量的增加而减少。这种方法使您能够优化您的交易潜力。",
-        "update": {
-            "title": "固定杠杆表",
-            "intro": "以下固定杠杆规则适用于特定市场条件下的所有交易：",
-            "weekend": {
-                "title": "周末过渡期",
-                "beforeFridayClose": "周五收盘前（3 小时）",
-                "afterMondayOpen": "周一开市后（1小时）",
-                "china": "中国（格林威治标准时间+8）",
-                "server": "服务器（GMT+3）",
-                "uae": "阿联酋（格林威治标准时间+4）",
-                "cutoff": "XAUUSD 截止"
-            },
-            "economic": {
-                "title": "经济新闻事件",
-                "list": [
-                    "15 minutes before high-impact news releases",
-                    "5 minutes after news releases",
-                    "During periods of expected extreme volatility"
-                ]
-            },
-            "legend": {
-                "china": "中国（格林威治标准时间+8）",
-                "server": "服务器（GMT+3）",
-                "uae": "阿联酋（格林威治标准时间+4）"
-            },
-            "important": {
-                "title": "重要提示",
-                "list": [
-                    "Margin calculations remain fixed after the period ends",
-                    "Existing positions are not affected",
-                    "Applies to all instruments and account types"
-                ]
-            },
-            "times": {
-                "friday": {
-                    "china": "02:00",
-                    "server": "21:00",
-                    "uae": "22:00"
-                },
-                "monday": {
-                    "china": [
-                        "06:00",
-                        "07:00"
-                    ],
-                    "server": [
-                        "01:00",
-                        "02:00"
-                    ],
-                    "uae": [
-                        "02:00",
-                        "03:00"
-                    ]
-                }
-            },
-            "hmrBox": {
-                "title": "人力资源管理：",
-                "list": {
-                    "one": "不修改交易入场价格",
-                    "two": "本身不会扩大点差",
-                    "three": "不手动平仓交易",
-                    "four": "不影响 HMR 期之前开仓的头寸"
-                },
-                "paragraphs": {
-                    "one": "然而，由于保证金要求暂时增加，您的保证金水平 (%) 可能会下降。",
-                    "two": "如果您的保证金水平达到强制平仓水平，平台将根据正常平台风险规则自动平仓。"
-                },
-                "highlight": "HMR 期结束后，保证金要求自动恢复正常。"
-            },
-            "rollover": {
-                "title": "每日夜间展期",
-                "schedule": {
-                    "label": "每个交易日：",
-                    "time": "23:30 – 00:15",
-                    "timezone": "服务器时间",
-                    "days": "从周一晚上到周五晚上"
-                },
-                "points": {
-                    "one": "在这段较短的时间窗口内，杠杆会自动降低。",
-                    "two": "较低的杠杆意味着需要更多的保证金才能持有相同的交易规模。"
-                }
-            },
-            "hmrNotice": {
-                "title": "高保证金要求 (HMR) 通知",
-                "paragraphs": {
-                    "one": "在特定的市场风险时期（每日展期和重大经济公告），平台会暂时提高开立新交易所需的保证金。"
-                }
-            }
-        }
+      "title": "GTCFX 的动态杠杆，实现灵活智能交易",
+      "des": "了解动态杠杆如何根据您的交易调整，实现更好的风险管理。在 GTCFX 使用灵活的杠杆系统更智能地交易。立即开始。"
     },
-    "primeTech": {
-        "liquidityTechnologyPage": {
-            "metaData": {
-                "title": "GTC 总理 |一流的流动性 |交易|全球贸易社区的风险解决方案",
-                "des": "GTC Prime 拥有先进的基础设施和全面的专业知识，提供来自具有 DMA 执行功能的一级银行的定制定价。"
-            },
-            "banner": {
-                "title": "流动性|连接性|风险解决方案",
-                "subTitle": "进入 8 个资产市场，拥有超过 27,000 种交易工具",
-                "liveAccount": "开设真实账户"
-            },
-            "whoServe": {
-                "heading": "我们为谁服务",
-                "desc": "GTC Prime 拥有先进的基础设施和全面的专业知识，提供来自具有 DMA 执行功能的一级银行的定制定价。我们的服务完全有能力管理客户的交易需求和期望。",
-                "broker": {
-                    "title": "经纪人",
-                    "desc": "GTC Prime 提供灵活、定制的端到端经纪商解决方案，符合您的风险策略。我们的解决方案经过设计并与流动性/优质以及先进的风险管理和分析相集成，以满足客户的高质量标准。我们使用 STP/ECN 模式的客户可享受显着改善的点差和更低的费用。"
-                },
-                "hedge": {
-                    "title": "Hegde 基金与资产",
-                    "desc": "我们的工具为我们的客户全面创造了一流的性能体验。凭借多种资产类别的多元化投资组合、一级银行流动性和无与伦比的支持服务，我们的客户与 GTC prime 建立了可靠且值得信赖的关系，使他们能够提供安全、可靠和优化的定价。"
-                },
-                "professional": {
-                    "title": "专业客户",
-                    "desc": "借助 GTC Prime，您可以通过单一平台体验高效交易、由具有竞争力的利润率和有吸引力的佣金支持的机构定价以及独立的资金账户。我们的解决方案和服务通过完美满足您需求的定制解决方案帮助推动您的产品组合向前发展。"
-                },
-                "view_more": "点击查看更多"
-            },
-            "offerTitle": {
-                "heading": "我们提供什么",
-                "liquidity": {
-                    "title": "流动性",
-                    "desc": "在 GTC Prime，我们提供可定制的流动性解决方案，以满足您的特定需求和目标。我们的技术驱动方法使我们能够为世界各地的客户提供服务，包括对冲基金、经纪商、交易所和其他专业客户。"
-                },
-                "connectivity": {
-                    "title": "连接性",
-                    "desc": "连接性是成功交易的基本要素。在 GTC Prime，我们提供可靠、快速的连接解决方​​案，将我们的客户与世界金融市场连接起来。我们了解交易中速度和低延迟的重要性，这就是我们与领先技术提供商合作提供尖端连接解决方​​案的原因。"
-                },
-                "risk": {
-                    "title": "风险管理",
-                    "desc": "欢迎来到 GTC Prime 的风险管理页面，GTC Prime 是一家领先的流动性提供商公司，提供全面的解决方案，帮助经纪商、对冲基金、资产管理公司、专业交易员和私人交易柜台管理风险并保护投资。"
-                }
-            },
-            "Chooseliquidity": {
-                "title": "为什么选择 GTCFX 流动性和技术",
-                "option1": {
-                    "title": "值得信赖的合作伙伴",
-                    "desc": "我们是一家受监管的流动性提供商，拥有一支经验丰富的专业团队。"
-                },
-                "option2": {
-                    "title": "有竞争力的定价",
-                    "desc": "得益于我们的专有解决方案，我们可以提供较低的佣金和低至 1000 美元的最低月费。"
-                },
-                "option3": {
-                    "title": "低延迟执行",
-                    "desc": "我们将服务器托管在靠近流动性来源的地方，以最大限度地减少执行延迟。"
-                },
-                "option4": {
-                    "title": "深度流动性",
-                    "desc": "利用我们所有多资产工具的深度流动性。高达 10 个级别的市场深度。"
-                },
-                "option5": {
-                    "title": "内部技术",
-                    "desc": "基于高素质专家团队开发的先进技术，提供强大且可扩展的解决方案。"
-                },
-                "option6": {
-                    "title": "全面的解决方案",
-                    "desc": "我们就像一站式商店，为客户提供根据他们的需求量身定制的产品包。"
-                }
-            },
-            "counter": {
-                "option1": "服务过的客户",
-                "option2": "介绍经纪人",
-                "option3": "实收资本",
-                "option4": "每日交易",
-                "billion": "十亿",
-                "million": "百万"
-            }
-        },
-        "directAccess": {
-            "heading": "直接接触顶级流动性提供商",
-            "desc": "GTCFX 是值得信赖的流动性提供商，让您能够访问易于使用的外汇流动性平台。借助我们的流动性解决方案，您可以以低成本、快速执行的方式进行高效交易。您可以信赖我们透明且可靠的服务，确保您的交易保持私密性。凭借我们最先进的技术和敬业的团队，我们为您的流动性交易业务提供支持。",
-            "point1": "低点差和佣金",
-            "point2": "超快速执行",
-            "point3": "高达 10 个级别的市场深度",
-            "point4": "快速集成",
-            "point5": "超快速价格反馈",
-            "point6": "快速入职流程",
-            "lpLabel": "释放盈利机会",
-            "lpLabel1": "您最好的投资之旅从我们开始",
-            "butttonLp": "申请流动性服务"
-        },
-        "pamm": {
-            "banner": {
-                "title": "PAMM",
-                "des1": "PAMM（百分比分配管理模块）账户是外汇交易领域流行的投资工具。它是管理账户的一种特殊形式，允许个人投资者将资金分配给专业交易员或资金经理，然后由专业交易员或资金经理代表他们进行交易。 PAMM 账户结构旨在为投资者和资金管理者提供多种好处，使其成为外汇市场上的常见选择。",
-                "des2": "在PAMM账户中，多个投资者的资金汇集在一起​​，由熟练的资金经理或交易员负责代表所有参与者执行交易。这些交易的利润和损失按照投资者的个人投资比例分配。这意味着，如果资金经理产生利润，每个投资者都会根据他们对整个账户的贡献获得一定比例的利润。同样，损失也按比例分担。"
-            },
-            "CallAction": {
-                "first": "我们提供高水平的透明度",
-                "sec": "MT4/MT5 MAM 账户",
-                "liveAccount": "开设真实账户"
-            },
-            "faq": {
-                "faqHeading": "常见问题解答",
-                "accordionData": {
-                    "title": "PAMM账户",
-                    "para": {
-                        "one": "PAMM 账户结构为投资者提供了多项优势。它使他们能够获得专业交易者的专业知识，而无需丰富的外汇交易知识或经验。此外，PAMM 账户具有高度的透明度，因为投资者可以实时监控资金经理的表现和账户的交易活动。这种透明度可以帮助投资者就将资金分配到何处做出明智的决定。",
-                        "onea": "对于资金管理者来说，PAMM 账户提供了吸引投资者资金并根据其交易成功赚取业绩费的机会。这会激励管理者表现出色并为客户创造利润。",
-                        "oneb": "总而言之，PAMM账户是一种将投资者和资金管理者聚集在一起的外汇交易工具，使投资者能够从经验丰富的交易者的专业知识中受益，同时为资金管理者提供增加资本的机会。这种共享投资和共享回报的概念使 PAMM 账户成为那些希望参与外汇市场但不主动进行交易的人的热门选择。",
-                        "two": "在外汇交易中使用 PAMM 账户为投资者和资金管理者提供了多种优势。以下是使用 PAMM 账户的一些主要好处：",
-                        "three": "专业管理：投资者可以获取专业资金经理或交易员的专业知识和交易技巧，而无需积极参与交易决策。这对于那些缺乏时间或知识来有效交易外汇的人尤其有利。",
-                        "four": "多元化：PAMM 账户允许投资者在单个账户内的多个交易者或策略中实现投资多元化。这种多元化有助于分散风险并减少单个交易者表现不佳的影响。",
-                        "five": "透明度：PAMM 账户提供高度的透明度。投资者可以实时监控资金经理的表现和交易活动。这种透明度有助于投资者就将资金分配到何处做出明智的决定。",
-                        "six": "被动收入：PAMM 投资者可以从他们的投资中赚取被动收入，因为基金经理产生的利润根据参与者的个人贡献分配给参与者。这可以成为持续收入的来源，而无需进行活跃交易。",
-                        "seven": "有限风险：PAMM 账户的结构允许投资者定义他们愿意分配给特定资金经理的资本金额。这意味着投资者可以限制风险敞口并控制潜在损失。",
-                        "eight": "可访问性：PAMM 账户可供广泛的投资者使用，从资本有限的投资者到高净值个人。最低投资要求可能相对较低，使其可供更广泛的受众使用。",
-                        "nine": "可扩展性：资金经理可以有效地管理多个 PAMM 账户，使他们能够扩大交易活动，并可能随着他们的业绩记录和业绩改善而增加收入。",
-                        "ten": "绩效费：基金经理通常有动力表现良好，因为他们根据为客户产生的利润赚取基于百分比的绩效费。这使他们的利益与投资者的利益保持一致。",
-                        "one1": "风险管理：资金经理通常在有效管理风险方面拥有既得利益，以保护自己的声誉并吸引更多投资者。他们经常采用风险管理技术来保护资本。",
-                        "one2": "选择和灵活性：投资者可以灵活地选择各种资金管理机构和交易策略，从而选择符合其财务目标和风险承受能力的 PAMM 账户。",
-                        "one3": "值得注意的是，虽然 PAMM 账户具有这些优势，但它们并非没有风险。",
-                        "one4": "外汇交易具有固有风险，过去的表现并不代表未来的结果。因此，投资者进行彻底的尽职调查、仔细选择基金经理并只投资他们能够承受损失的资金至关重要。此外，在参与此类投资工具之前，了解特定 PAMM 账户的条款和条件以及相关费用至关重要。"
-                    }
-                }
-            }
-        },
-        "mam": {
-            "banner": {
-                "title": "MAM",
-                "des1": "MAM（多账户管理器）账户是外汇交易领域的专业投资工具，旨在让专业交易者、资产管理者和个人投资者同时管理多个交易账户。它为经验丰富的交易者提供了一种代表多个客户高效执行交易的结构，使其成为外汇交易者的热门选择。"
-            },
-            "CallAction": {
-                "first": "与最稳定的贸易",
-                "sec": "MT5 MAM 账户",
-                "liveAccount": "注册真实账户"
-            },
-            "faq": {
-                "faqHeading": "常见问题解答",
-                "accordionData": {
-                    "title": "MAM账户",
-                    "para": {
-                        "one": "在 MAM 账户中，主要交易者（通常称为资金经理或账户经理）管理一个持有多个投资者集体资金的交易账户。每个投资者在MAM结构内都有自己的子账户，资金经理做出的交易决策会根据每个客户的投资比例自动复制到这些子账户中。这意味着当资金经理执行交易时，它会同时在所有关联的子账户中执行。",
-                        "onea": "MAM 账户结构为资金经理和投资者提供了多项优势：",
-                        "oneb": "效率：资金经理可以执行在多个子账户之间自动复制的单笔交易，从而简化交易流程并减少管理每个客户投资所需的时间和精力。",
-                        "two": "可扩展性：资金经理可以有效地处理大量客户账户，使其适合想要吸引广泛客户群的专业交易者。",
-                        "three": "资产多元化：MAM 账户的投资者可以通过专业人士管理的多种交易和策略实现资本多元化，从而受益匪浅。这种多元化有助于分散风险。",
-                        "four": "透明度：MAM 账户通常提供高透明度，允许投资者监控其各个子账户内的实时表现和交易活动。",
-                        "five": "个人控制：投资者保留对其资金的个人控制，包括随时存入或提取资金、更改交易参数以及关闭子账户的能力。",
-                        "six": "绩效费：基金经理通常根据为其客户产生的利润赚取基于百分比的绩效费，从而激励他们取得积极的成果。",
-                        "seven": "风险管理：资金经理有动力有效地管理风险，因为绩效不佳可能导致客户撤回并对他们的声誉产生负面影响。",
-                        "eight": "需要注意的是，MAM 账户并非没有风险，而外汇交易由于市场波动而存在固有风险。资金经理和投资者都应进行彻底的尽职调查，了解 MAM 账户的条款和条件，并了解相关费用和潜在风险。此外，虽然 MAM 账户适合专业交易者，但个人投资者在参与此类管理账户结构之前应仔细考虑其风险承受能力和投资目标。"
-                    }
-                }
-            }
-        },
-        "vpsHosting": {
-            "hero": {
-                "heading": "根据您的需求量身定制的强大虚拟专用服务器",
-                "button": "开设真实账户",
-                "buttonHeading": "还没有帐户？",
-                "para": {
-                    "yellow1": "在哪里",
-                    "white": "性能、灵活性和可靠性",
-                    "yellow2": "汇聚力量，助力您的交易！"
-                },
-                "vpsForm": {
-                    "formTitle": "订阅",
-                    "firstName": "名",
-                    "lastName": "姓",
-                    "email": "电子邮件",
-                    "platform": "首选交易平台",
-                    "account_no": "输入您的帐号",
-                    "account": "帐号",
-                    "package": "选择套餐",
-                    "selectPlaceholder": "请选择一项",
-                    "country": "居住国家",
-                    "phone": "电话号码",
-                    "termOfService": "服务条款",
-                    "termText": "我了解向 GTCFX 提交信息可能会用于营销目的，以分享相关更新、邀请以及我们认为可能感兴趣的任何其他出版物",
-                    "error": {
-                        "minLimit": "至少2个字母",
-                        "firstName": "名字为必填项",
-                        "lastName": "姓氏为必填项",
-                        "account_no": "帐号为必填项",
-                        "email": "电子邮件地址为必填项",
-                        "invalidEmail": "电子邮件地址无效",
-                        "type": "请选择公司类型",
-                        "phone": "电话号码为必填项",
-                        "dob": "出生日期为必填项",
-                        "platform": "需要平台",
-                        "country": "国家/地区为必填项",
-                        "termOfService": "请接受条款和条件"
-                    }
-                }
-            },
-            "howToSubscribe": {
-                "titleWhite": "如何",
-                "titleColor": "订阅？",
-                "option1": "开设真实账户",
-                "option2": "填写注册请求",
-                "option3": "接收申请链接",
-                "option4": "开始吧！"
-            },
-            "understandingVps": {
-                "title": "了解 VPS 托管",
-                "para": "VPS 是一种远程托管服务，为 MT4、MT5 平台提供环境，以确保低延迟交易体验和可靠的正常运行时间，使其成为寻求快速执行的交易者的首选。对于需要 24/7 全天候访问、自动化和低延迟连接金融市场的交易者来说，这尤其有利。"
-            },
-            "GTCFXVpsSection": {
-                "titleColor": "GTCFX VPS",
-                "column1": {
-                    "title": "定制",
-                    "para": "为您独特的交易需求量身定制。"
-                },
-                "column2": {
-                    "title": "速度极快",
-                    "para": "快如闪电且可靠 |高达 75GB SSD - 6656MB RAM。"
-                },
-                "column3": {
-                    "title": "多平台",
-                    "para": "完全访问必需的 MT4 | MT5 功能。"
-                },
-                "column4": {
-                    "title": "增强的功能",
-                    "para": "包括外汇对、图表、指标和有价值的附加组件。"
-                }
-            },
-            "whyVpsHosting": {
-                "title": "为什么选择我们的 VPS 主机？",
-                "cards": {
-                    "cardOneTitle": "无与伦比的性能",
-                    "cardOnePara": "使用我们的高性能 VPS 服务器释放您的网站或应用程序的全部潜力。在尖端技术和优质硬件的支持下，我们确保闪电般的快速响应时间和无缝的用户体验。",
-                    "cardTwoTitle": "快速外汇交易",
-                    "cardTwoPara": "外汇市场需要快速执行。 Our VPS ensures rapid trading, covering essential pairs like GBP/USD, EUR/USD, USD/JPY, and AUD/USD.",
-                    "cardThreeTitle": "完全控制",
-                    "cardThreePara": "以完全 root 访问权限掌控您的服务器。自定义和配置您的 VPS 以满足您的特定需求，并可以自由安装对您最重要的软件和应用程序。",
-                    "cardFourTitle": "可扩展性",
-                    "cardFourPara": "随着您的业务增长，您的服务器也可以随之增长。我们的可扩展 VPS 解决方案允许您按需升级资源，确保您的托管永远不会阻碍您。",
-                    "cardFiveTitle": "强大的安全性",
-                    "cardFivePara": "知道您的数据是安全的，请放心。我们的 VPS 托管采用最先进的安全措施（包括防火墙和定期备份）进行强化，以保护您的宝贵信息。",
-                    "cardSixTitle": "专家支持",
-                    "cardSixPara": "我们的专业支持团队随时为您提供 24/7 的帮助。从设置到故障排除，我们随时准备确保您的 VPS 托管体验顺畅无忧。"
-                }
-            },
-            "vpsPricing": {
-                "title": "VPS 定价",
-                "para": "想了解我们的 VPS 服务的费用吗？我们已经为您提供了保障。",
-                "bronze": {
-                    "title": "青铜",
-                    "option1": "1 个虚拟CPU",
-                    "option2": "2,560MB 内存",
-                    "option3": "30GB SSD 存储",
-                    "option4": "最低余额 5,000 美元免费",
-                    "amount": "40.00 美元",
-                    "month": "月",
-                    "buttonText": "立即订阅",
-                    "caption": "所有价格均需缴纳增值税"
-                },
-                "silver": {
-                    "title": "银",
-                    "option1": "1 个虚拟CPU",
-                    "option2": "4,096MB 内存",
-                    "option3": "50GB SSD 存储",
-                    "option4": "最低余额达到 7,500 美元即可免费",
-                    "amount": "$70.00",
-                    "month": "月",
-                    "buttonText": "立即订阅",
-                    "caption": "所有价格均需缴纳增值税"
-                },
-                "gold": {
-                    "title": "金子",
-                    "option1": "4 个虚拟CPU",
-                    "option2": "6,656MB 内存",
-                    "option3": "75GB SSD 存储",
-                    "option4": "最低余额 10,000 美元免费",
-                    "amount": "$120.00",
-                    "month": "月",
-                    "buttonText": "立即订阅",
-                    "caption": "所有价格均需缴纳增值税"
-                }
-            },
-            "elevateHosting": {
-                "title": "准备好提升您的托管了吗？",
-                "para": "借助我们的 VPS 托管服务，您可以将您的在线形象提升到一个新的水平。体验根据您的独特需求量身定制的虚拟专用服务器的强大功能。请立即联系我们以开始使用。",
-                "buttonText": "立即订阅"
-            },
-            "faqs": {
-                "title": "常见问题解答",
-                "question1": "我可以设置 MT4 |我的 Mac 上有 MT5 VPS？",
-                "answer1": "绝对地！您可以轻松获得您的MT4 | MT5 VPS 在您的 Mac 上启动并运行。注册和下载过程就像在 Windows PC 上一样简单。好消息是您现在可以下载标准 MT4 | Mac OS 上的 MT5 平台也是如此。了解有关使用 MT4 的更多信息 | Mac 上的 MT5，请查看我们的资源。",
-                "question2": "外汇 VPS 实际如何运作？",
-                "answer2": "外汇 VPS 为交易者提供专用且稳定的环境来托管其交易平台和算法。它具有 24/7 运行、与外汇服务器的低延迟连接、安全功能和可扩展性等优点，使其成为需要可靠且不间断地进入市场的严肃外汇交易者的宝贵工具。"
-            }
-        }
+    "introductoryBroker": {
+      "title": "成为介绍经纪人，与 GTCFX 一起增加收入",
+      "des": "加入 GTCFX 介绍经纪人计划，通过推荐交易者赚取佣金。与值得信赖的经纪商建立您的网络并增加收入。立即注册。"
     },
-    "companyNews": {
-        "bannerTitle": "公司新闻",
-        "bannerDescription": "GTCFX 新闻和市场动态 - 保持信息灵通，交易更明智",
-        "titlePrefix": "公司",
-        "titleHighlight": "消息",
-        "intro": "阅读 GTCFX 的最新公司新闻、市场动态和见解。每天保持消息灵通并做出自信的交易决策。",
-        "readMore": "阅读更多",
-        "emptyState": "目前没有公司新闻。",
-        "endMessage": "没有更多物品",
-        "loading": "加载中...",
-        "defaultCategory": "公司新闻",
-        "defaultExcerpt": "阅读我们团队的最新更新和公告。",
-        "untitled": "无标题文章",
-        "imageAlt": "新闻图片",
-        "defaultDate": "2026 年 3 月 26 日"
+    "affiliateProgram": {
+      "title": "加入 GTCFX 联盟计划，轻松赚取佣金",
+      "des": "通过我们的联盟计划与 GTCFX 合作，为每次推荐赚取佣金。立即开始您的被动收入之旅。立即注册。"
+    },
+    "liquidityTechnology": {
+      "title": "GTC Prime 为全球交易者提供流动性和技术",
+      "des": "GTC Prime 提供流动性和技术，拥有先进的基础设施和来自一级银行的定价，确保 DMA 执行以实现无缝交易。"
+    },
+    "copyTrading": {
+      "title": "复制交易，轻松智能投资 | GTCFX",
+      "des": "使用复制交易跟随专家交易者并自动化您的投资。与 GTCFX 更智能地交易，轻松增长您的投资组合。立即开始。"
+    },
+    "pammAccount": {
+      "title": "在 GTCFX 开设 PAMM 账户，轻松投资和管理资金",
+      "des": "在 GTCFX 开设 PAMM 账户，投资于专家管理的资金。在专业交易者处理您的投资时赚取利润。立即开始。"
+    },
+    "mamAccount": {
+      "title": "使用多账户管理器管理多个交易账户",
+      "des": "在 GTCFX 使用多账户管理器从一个平台控制多个账户。使用先进的管理工具高效交易。立即开始。"
+    },
+    "signalCenter": {
+      "title": "使用 GTCFX 的信号中心工具做出更好的交易",
+      "des": "使用信号中心工具获取实时市场洞察和专家交易信号。保持信息灵通，做出自信的交易决策。立即尝试。"
+    },
+    "vpsHosting": {
+      "title": "在 GTCFX 获取安全快速的 VPS 托管服务",
+      "des": "在 GTCFX 使用 VPS 托管服务，实现稳定和高速交易。确保低延迟、安全连接和不受干扰的市场访问。立即设置。"
+    },
+    "expertAnalysis": {
+      "title": "GTCFX 的专家分析和技术工具，助您更智能交易",
+      "des": "在 GTCFX 使用 VPS 托管服务，实现稳定和高速交易。确保低延迟、安全连接和不受干扰的市场访问。立即设置。"
+    },
+    "autoChartist": {
+      "title": "在 GTCFX 使用 AutoChartist 进行智能市场分析和交易",
+      "des": "在 GTCFX 使用 AutoChartist 实时检测市场模式和趋势。通过自动化分析增强您的交易策略。立即尝试。"
+    },
+    "privacyPolicy": {
+      "title": "隐私政策 – GTCFX 如何保护您的数据和安全",
+      "des": "阅读 GTCFX 隐私政策，了解我们如何保护您的个人数据并确保安全交易。您的隐私和安全至关重要。了解更多。"
+    },
+    "withDrawal": {
+      "title": "提款政策 – GTCFX 的快速安全资金提款",
+      "des": "阅读 GTCFX 提款政策，了解安全、快速和无麻烦的资金提款。轻松获取您的交易利润。了解更多。"
+    },
+    "compliancePolicy": {
+      "title": "GTCFX 的 KYC 和合规政策，确保安全交易",
+      "des": "了解 GTCFX 的 KYC 和合规政策，确保安全和透明的交易。遵循简单的验证步骤，获得安全体验。阅读更多。"
+    },
+    "refundPolicy": {
+      "title": "GTCFX 的存款和退款政策，确保安全交易",
+      "des": "阅读 GTCFX 存款和退款政策，了解安全支付流程、快速存款和无麻烦退款。立即了解更多。"
+    },
+    "restrictedCountries": {
+      "title": "查看 GTCFX 服务的受限国家列表",
+      "des": "了解哪些国家无法访问 GTCFX 服务。在开始交易前确保合规。立即了解更多。"
+    },
+    "swapTermsCondition": {
+      "title": "了解 GTCFX 无掉期交易账户的条款和条件",
+      "des": "阅读 GTCFX 无掉期交易账户的条款和条件，了解资格、规则和无利息交易的好处。立即了解更多。"
+    },
+    "marginRequirments": {
+      "title": "在 GTCFX 使用正确的保证金要求管理您的交易",
+      "des": "了解 GTCFX 的保证金要求，有效管理您的交易。获取有关杠杆和风险管理的洞察。立即阅读更多。"
     }
+  },
+  "common": {
+    "liveAccount": "开设实盘账户",
+    "demoAccount": "免费模拟账户",
+    "counter": {
+      "stats": {
+        "servedClients": {
+          "value": 985000,
+          "suffix": " +",
+          "label": "服务客户数",
+          "duration": 2500
+        },
+        "tradingInstruments": {
+          "value": 27000,
+          "suffix": " +",
+          "label": "交易品种",
+          "duration": 2200
+        },
+        "destinationsWorldwide": {
+          "value": 20,
+          "suffix": " +",
+          "label": "全球服务范围",
+          "duration": 1800
+        },
+        "monthlyTrades": {
+          "value": 750,
+          "prefix": "$",
+          "suffix": " 亿",
+          "label": "每月交易额",
+          "duration": 2500
+        }
+      }
+    },
+    "reviews": {
+      "totalReviews": 45,
+      "titleLine1": "阅读我们的评价，了解",
+      "titleLine2Prefix": "更多",
+      "titleHighlight": "关于",
+      "titleLine2Suffix": "我们的信息",
+      "subtitle": "查看来自全球客户的真实反馈",
+      "summary": "当前展示来自 TradingView、App Store、Google Play 和 Trustpilot 的 {total} 条评价。",
+      "swipeTip": "提示：左右滑动可查看更多评价。"
+    }
+  },
+  "home": {
+    "homeHero": {
+      "badge": {
+        "tag": "新",
+        "title": "GTC GO 交易应用"
+      },
+      "title": {
+        "beforeHighlight": "交易",
+        "highlight": "全球市场",
+        "afterHighlight": "，信心十足"
+      },
+      "description": "通过专为速度、安全和精准打造的强大交易环境，访问外汇、指数、大宗商品和差价合约。",
+      "buttons": {
+        "liveAccount": "开设真实账户",
+        "demoAccount": "免费模拟账户"
+      },
+      "networkText": {
+        "label": "全球网络覆盖",
+        "highlight": "22+ 个地区"
+      },
+      "reviews": {
+        "order": {
+          "one": "google",
+          "two": "wikifx",
+          "three": "investing",
+          "four": "myfxbook",
+          "five": "tradingview"
+        },
+        "items": {
+          "google": {
+            "name": "Google",
+            "logo": "/common/google.webp",
+            "rating": "4.5",
+            "stars": "5"
+          },
+          "wikifx": {
+            "name": "WikiFX",
+            "logo": "/common/wiki.webp",
+            "rating": "9.2",
+            "stars": "5"
+          },
+          "investing": {
+            "name": "Investing.com",
+            "logo": "/common/invest.webp",
+            "rating": "4.1",
+            "stars": "4"
+          },
+          "myfxbook": {
+            "name": "myfxbook",
+            "logo": "/common/fx.png",
+            "rating": "4.8",
+            "stars": "5"
+          },
+          "tradingview": {
+            "name": "TradingView",
+            "logo": "/common/trading.webp",
+            "rating": "4.8",
+            "stars": "5"
+          }
+        }
+      }
+    },
+    "homeMarkets": {
+    "heading": {
+      "beforeHighlight": "交易全球",
+      "highlightOne": "差价合约市场",
+      "middle": "，享受",
+      "highlightTwo": "机构级",
+      "afterHighlight": "流动性"
+    },
+    "description": "GTCFX 提供机构级流动性，助力交易者实现快速执行、有竞争力的定价和无缝接入全球差价合约市场。我们先进的基础设施确保高效、透明和可靠的交易表现。",
+    "tabs": {
+      "forex": {
+        "label": "外汇",
+        "icon": "/home/forex.svg",
+        "contentTitle": "交易外汇",
+        "contentDescription": "获取深度外汇流动性，涵盖 200 多种交易对、低点差、有竞争力的保证金和闪电般快速的执行。",
+        "buttonText": "探索外汇",
+        "buttonLink": "/forex",
+        "image": "/home/products/currencies-image.webp"
+      },
+      "energy": {
+        "label": "能源",
+        "icon": "/home/energy.svg",
+        "contentTitle": "投资能源",
+        "contentDescription": "凭借强劲的流动性、低点差和可靠的执行，进入能源市场。",
+        "buttonText": "交易能源",
+        "buttonLink": "/cfd-energy",
+        "image": "/home/products/energy-image.webp"
+      },
+      "commodities": {
+        "label": "大宗商品",
+        "icon": "/home/commed.svg",
+        "contentTitle": "交易大宗商品",
+        "contentDescription": "在金属、能源和其他关键大宗商品市场获得深度流动性、有竞争力的定价和无缝执行。",
+        "buttonText": "探索大宗商品",
+        "buttonLink": "/commodities",
+        "image": "/home/products/commodities-image.webp"
+      },
+      "indices": {
+        "label": "指数",
+        "icon": "/home/indices.svg",
+        "contentTitle": "交易指数",
+        "contentDescription": "利用全球指数流动性，享受低点差、快速执行和有竞争力的定价。",
+        "buttonText": "探索指数",
+        "buttonLink": "/indices",
+        "image": "/home/products/indices-image.webp"
+      },
+      "metals": {
+        "label": "金属",
+        "icon": "/home/first.svg",
+        "contentTitle": "交易金属",
+        "contentDescription": "通过深度金属流动性、低点差和可靠的定价提升您的业务。",
+        "buttonText": "探索金属",
+        "buttonLink": "/precious-metals",
+        "image": "/home/products/metals-image.webp"
+      }
+    }
+  },
+  "copyTradingSection": {
+    "title": {
+      "beforeHighlight": "跟单交易，",
+      "highlight": "简单易行"
+    },
+    "description": "跟随表现优异的交易者，实时自动复制他们的交易。选择您想跟随的对象，设定投资金额，轻松掌控交易，无需持续盯盘。",
+    "buttons": {
+      "primary": {
+        "label": "探索跟单交易",
+        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+      },
+      "secondary": {
+        "label": "查看更多跟单交易",
+        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+      }
+    }
+  },
+  "invest": {
+    "titleLine1": "与世界顶级",
+    "titleHighlight": "在线交易平台",
+    "titleLine2": "一同投资",
+    "description": "使用最稳定的 MetaTrader 平台交易 27,000 种金融产品，享受优越的点差。",
+    "cta": "开设真实账户",
+    "items": {
+      "one": {
+        "tag": "点差",
+        "title": "最低点差",
+        "description": "提供业内最低点差，外汇低至 0 点，黄金低至 5 美分"
+      },
+      "two": {
+        "tag": "杠杆",
+        "title": "最优杠杆",
+        "description": "提供最高达 1:2000 的杠杆，最低保证金要求从 0.1% 起"
+      },
+      "three": {
+        "tag": "交易品种",
+        "title": "交易品种",
+        "description": "覆盖七大交易市场，超过 27,000 种交易工具"
+      },
+      "four": {
+        "tag": "执行",
+        "title": "超快执行",
+        "description": "顶级流动性支持，10 毫秒内快速、安全执行交易。"
+      },
+      "five": {
+        "tag": "灵活交易",
+        "title": "动态杠杆",
+        "description": "GTCFX 的动态杠杆会根据您的交易头寸自动调整。"
+      },
+      "six": {
+        "tag": "客户支持",
+        "title": "7x24 小时全球支持",
+        "description": "为全球交易者提供 7x24 小时多语言支持，随时为您服务。"
+      }
+    }
+  },
+   "homeSecurityBanner": {
+    "title": "资金安全",
+    "description": "GTCFX 已从金融委员会获得保险保障，为客户资金提供高达 20,000 欧元的保护。更多详情，",
+    "linkText": "请点击此处",
+    "linkHref": "/compensation-fund"
+  },
+  "homePammSection": {
+    "items": {
+      "one": {
+        "title": "通过 PAMM 更智能地投资",
+        "description": "与专业资金经理一起投资，他们使用结构化的策略进行交易。您的资金保留在您自己的账户中，业绩透明，过程真正无需动手——非常适合长期投资。",
+        "primaryBtn": "探索 PAMM 交易",
+        "primaryHref": "https://gtcpamm.com/app/",
+        "secondaryBtn": "查看更多 PAMM",
+        "secondaryHref": "https://gtcpamm.com/app/",
+        "image": "/home/pamm-home.webp",
+        "imageAlt": "PAMM 交易应用界面",
+        "reverse": "true",
+        "imageCard": "true"
+      }
+    }
+  },
+   "homePlatforms": {
+    "heading": {
+      "beforeHighlight": "探索我们的",
+      "highlight": "先进交易平台"
+    },
+    "description": "我们深知每位交易者各不相同。因此，我们提供一系列备受信赖、屡获殊荣的平台和灵活的账户类型，以匹配您的交易风格。",
+    "image": {
+      "src": "/home/mobile-rep.webp",
+      "alt": "交易平台"
+    },
+    "items": {
+      "one": {
+        "title": "客户门户",
+        "description": "无缝的账户管理体验",
+        "icon": "/home/gtcfx.svg",
+        "link": "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+      },
+      "two": {
+        "title": "GTC Go 应用",
+        "description": "随时随地交易市场",
+        "icon": "/home/gtcfx.svg",
+        "link": "https://qrcodes.pro/YW9ULf"
+      },
+      "three": {
+        "title": "GTC VIP 忠诚奖励",
+        "description": "边交易边解锁专属奖励",
+        "icon": "/home/gtcfx.svg",
+        "link": "/copy-trading"
+      },
+      "four": {
+        "title": "MT4 交易平台",
+        "description": "备受信赖的经典交易平台",
+        "icon": "/home/mt4.svg",
+        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobalsa4setup.exe"
+      },
+      "five": {
+        "title": "MT5 交易平台",
+        "description": "为现代交易打造的高级工具",
+        "icon": "/home/mt5.svg",
+        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe"
+      }
+    }
+  },
+  "homeBlogs": {
+    "heading": {
+      "before": "最新洞察",
+      "separator": "与",
+      "after": "公司动态"
+    },
+    "description": "通过最新的市场洞察、交易动态和公司新闻保持信息领先。探索来自 GTCFX 的专家分析、教育内容及重要公告。",
+    "readMore": "阅读 →",
+    "fallback": {
+      "title": "无标题文章",
+      "excerpt": "阅读我们团队的最新动态与公告。",
+      "date": "2026年3月26日",
+      "readTime": "阅读需 5 分钟",
+      "category": "博客"
+    }
+  },
+    "primeHome": {
+      "heading": "为每位投资者打造的智能交易方案",
+      "desc": "选择适合您目标的交易方式。无论您倾向于实时跟随经验丰富的交易者，还是与专业的资金管理人共同投资，我们的方案都旨在让交易变得更简单、更智能、更透明。",
+      "CopyTrading": {
+        "heading": "跟单交易，化繁为简",
+        "desc": "跟随表现优异的交易者，实时自动复制其交易。选择跟随对象、设定投资金额，全程掌控——无需时刻盯盘，轻松交易。",
+        "button": "了解跟单交易",
+        "button1": "查看更多跟单账户"
+      },
+      "PAMMTrading": {
+        "heading": "PAMM管理账户，更智能的投资",
+        "desc": "投资于采用系统化策略交易的专业资金管理人。您的资金始终在您自己的账户中，表现完全透明，过程全自动——是长期投资的理想选择。",
+        "button": "了解PAMM交易",
+        "button1": "查看更多PAMM账户"
+      }
+    },
+    "whyGTC": {
+      "title": "全球顶尖在线交易平台",
+      "desc": "通过行业标杆级MetaTrader平台交易27,000+金融产品，尽享稳定交易环境与优势点差",
+      "first": {
+        "title": "点差",
+        "heading": "超低点差",
+        "description": "外汇0点差起，黄金5美分起"
+      },
+      "second": {
+        "title": "产品",
+        "heading": "交易品种",
+        "description": "八大市场27,000+交易品种"
+      },
+      "third": {
+        "title": "杠杆",
+        "heading": "超高杠杆",
+        "description": "最高1:2000杠杆，最低0.1%保证金要求"
+      },
+      "fourth": {
+        "title": "执行",
+        "heading": "极速执行",
+        "description": "顶级流动性保障，10毫秒极速订单处理，安全执行"
+      },
+      "desc2": "高效提升收益",
+      "open_live_account": "注册GTCFX，开通实盘账户"
+    },
+    "accountType": {
+      "heading": "账户类型",
+      "desc": "注册GTCFX，开通实盘账户，把握最优势点差交易机遇",
+      "standardAccount": {
+        "heading": "标准账户"
+      },
+      "proAccount": {
+        "heading": "专业账户"
+      },
+      "ecnAccount": {
+        "heading": "ECN账户"
+      },
+      "view_more": "点击查看更多",
+      "open_live_account": "注册GTCFX，开通实盘账户",
+      "assetNum": "27,000+",
+      "assetTit": "交易品种",
+      "assetMar": "多元资产市场",
+      "AssetNam": "外汇 | 差价合约 | 贵金属 | 股指| 大宗商品 | 股票| 能源"
+    },
+    "security_of_funds": {
+      "title": "资金安全保障",
+      "desc": "GTCFX已获得金融委员会专项保险保障，单个客户资金最高可获得20,000欧元赔付。请 ",
+      "click": "点击此处"
+    },
+    "products": {
+      "heading": "8大市场板块 27,000+交易品种",
+      "title1": "外汇交易",
+      "desc1": "全球主要货币对",
+      "title2": "黄金交易",
+      "desc2": "发掘避险资产独特优势",
+      "title3": "贵金属",
+      "desc3": "白银、钯金等稀缺金属",
+      "title4": "能源差价合约",
+      "desc4": "原油、天然气等核心能源产品",
+      "title5": "大宗商品",
+      "desc5": "全球主要大宗商品",
+      "title7": "期货",
+      "desc7": "零佣金低保证金买卖上市公司股份",
+      "title6": "股票",
+      "desc6": "覆盖600+国际企业股票",
+      "title8": "股指",
+      "desc8": "全球主要股指"
+    },
+    "liquidity_provider": {
+      "heading": "直通顶级流动性池",
+      "desc": "GTCFX作为可信赖的流动性提供商，为您对接高效易用的外汇流动性平台。我们的解决方案确保低成本交易与极速执行，以透明可靠的服务保障交易隐私。凭借尖端科技与专业团队，为您的流动性交易提供全方位支持。",
+      "tab": {
+        "liquidity": {
+          "title": "流动性解决方案",
+          "d1": "作为全球顶尖流动性提供商，我通过深度流动性储备与先进技术，提供最优执行质量与零滑点保障",
+          "p2": "外汇",
+          "d2": "200+货币对深度流动性丨超窄点差丨灵活保证金丨 毫秒级执行",
+          "p3": "贵金属",
+          "d3": "贵金属深度流动性 |稳定报价 |行业领先点差",
+          "p4": "大宗商品",
+          "d4": "能源、贵金属等大宗商品市场深度流动性 |优势定价 |无缝执行",
+          "p5": "股指",
+          "d5": "全球股指深度流动性 |超快执行 |竞争力定价",
+          "p6": "能源",
+          "d6": "能源市场强劲流动性 |窄幅点差 |可靠执行",
+          "p7": "股票",
+          "d7": "全球个股CFDs交易 |一站式市场接入 |无缝化执行"
+        },
+        "technology": {
+          "title": "交易技术",
+          "d1": "运用前沿技术实现高速交易与智能分析，助您抢占市场先机",
+          "p2": "FIX API",
+          "d2": "毫秒级订单执行 | 超低延迟交易 | 交易算法无缝集成",
+          "p3": "VPS",
+          "d3": "军工级安全 | 超低延迟 | 远程接入 | 7×24小时无间断交易 | 个性化配置 | 智能交易支持",
+          "p4": "算法托管服务",
+          "d4": "提供全方位的算法托管服务，赋能交易者优化策略表现"
+        },
+        "bridge": {
+          "title": "流动性桥接",
+          "p1": "oneZero Hub",
+          "d1": "深度流动性 | 极速执行 | 实时数据流 | 可定制交易环境——安全高效的终极交易体验",
+          "p2": "PrimeXM XCORE",
+          "d2": "深度流动性 | 微秒级延迟 | 实时洞见 | 安全灵活的交易解决方案",
+          "p3": "Centroid Hub",
+          "d3": "深度流动性 | 超高频执行 | 实时分析 | 无缝市场对接——性能优化的安全交易生态",
+          "p4": "GTC Prime流动性桥接系统",
+          "d4": "多平台无缝对接 | 极速执行 | 性能优化 | 加密数据传输"
+        }
+      },
+      "butttonLp": "申请流动性服务",
+      "point1": "低点差和佣金",
+      "point2": "超快执行",
+      "point3": "提供最多10级市场深度",
+      "point4": "快速系统整合",
+      "point5": "超快价格更新",
+      "point6": "快速开户流程",
+      "lpLabel": "解锁盈利机遇",
+      "lpLabel1": "您的最佳投资之旅，由此启程"
+    },
+    "home_IB": {
+      "title": "与我们共拓客户网络！",
+      "des": "注册GTCFX，开通实盘账户，畅享海量金融产品与最优点差。把握市场波动机遇，对接顶级金融服务，释放最大盈利潜力",
+      "howTo": "如何加入IB网络",
+      "point1": "申请加入IB网络",
+      "point2": "签署IB协议",
+      "point3": "推荐客户",
+      "point4": "开始赚取返佣",
+      "label": "加入专属IB计划",
+      "butttonIB": "成为介绍经纪人（IB）"
+    },
+    "global_presence": {
+      "heading": "GTCFX的全球业务",
+      "desc": "GTCFX作为全球化金融科技企业，业务版图已扩展至全球22个战略枢纽。从国际金融中心到新兴市场前沿，我们通过多元化服务网络为全球投资者提供定制化金融解决方案。GTCFX始终以无界服务承诺践行全球化发展理念。",
+      "uae": "阿联酋",
+      "uk": "英国",
+      "china": "中国",
+      "vanuato": "瓦努阿图",
+      "vietnam": "越南",
+      "pakistan": "巴基斯坦",
+      "malaysia": "马来西亚",
+      "hong_kong": "澳大利亚",
+      "indonesia": "印尼",
+      "india": "印度",
+      "egypt": "埃及",
+      "jordan": "约旦",
+      "palestine": "巴勒斯坦",
+      "ksa": "沙特阿拉伯",
+      "chile": "智利",
+      "usa": "美国",
+      "maxico": "墨西哥",
+      "taiwan": "英国",
+      "cyprus": "塞浦路斯",
+      "turkey": "土耳其",
+      "nigeria": "尼日利亚",
+      "mauritius": "毛里求斯",
+      "south_africa": "泰国"
+    },
+    "markets_ct": {
+      "title": "市场概览",
+      "sub_title": "实时追踪3,000+个市场的关键数据，获取最新行情资讯、交易情绪分析、动态点差数据及价格走势研判，助您把握全球投资线索。"
+    },
+    "tabsMarter": {
+      "title1": "热门交易品类",
+      "title2": "外汇",
+      "title3": "大宗商品",
+      "title4": "股指"
+    },
+    "our-payment": "入金方式及币种：",
+    "our-payment2": "支持Visa/MasterCard信用卡/借记卡在线支付，接受AED（阿联酋迪拉姆）及支付页面显示的其他币种。"
+  },
+  "about": {
+    "about-gtc-group": {
+      "title": "关于我们",
+      "bannerDes": "GTCFX品牌涵盖多家公司，提供多样化的在线交易产品，服务超过985,000客户，覆盖超过100个国家。",
+      "subTitle": "全球信赖且多重监管的经纪商",
+      "heading1": "专业实力",
+      "desc1_1": "GTCFX作为金融衍生品领域的全球领导者，自2012年成立以来，旗下多家子公司提供多元化的在线交易产品，服务网络覆盖100多个国家，为超过985,000名客户提供专业服务。我们以卓越的金融服务承诺和持续创新精神享誉业界。",
+      "desc1_2": "GTCFX凭借对尖端科技的持续投入与严格的监管合规，已在金融科技领域确立重要地位。多年来，我们以卓越的服务可靠性和行业创新力，赢得全球金融服务市场的广泛认可。",
+      "desc1_3": "",
+      "heading2": "严格监管",
+      "desc2_1": "GTCFX在全球多地区接受严格金融监管，始终遵循最高标准的反洗钱（AML）和客户身份识别（KYC）规范，以合规经营维护金融科技行业的诚信准则。本网站服务由GTC Global Ltd及GTC Global Trade Capital Co. Limited共同提供。两家运营主体分别在毛里求斯与瓦努阿图金融监管框架下持牌经营，严格执行反洗钱（AML）及客户身份识别（KYC）合规标准，始终秉持金融科技行业的诚信准则与运营可靠性。",
+      "desc2_2": "GTC金融集团旗下其他实体机构均根据属地监管要求，制定并实施符合当地法律法规的反洗钱（AML）及反恐融资（CTF）管理制度。",
+      "heading3": "丰富经验",
+      "desc3": "自创立以来，我们持续深耕交易领域，始终引领金融服务行业创新方向。通过不断突破的交易平台研发和优质产品服务，持续树立行业新标杆。",
+      "heading4": "值得信赖",
+      "desc4": "凭借稳健的发展态势和对客户体验的不懈追求，我们已成为寻求优质金融衍生品解决方案客户的可靠合作伙伴。探索我们全方位的服务，亲历我们跻身全球行业领导者的卓越实力。"
+    },
+    "why-gtc-group": {
+      "title": "为何选择GTCFX",
+      "sub_title1_1": "开启财富机遇：您的卓越投资之旅从此启航",
+      "sub_title1_2": "通过GTCFX专业交易平台，您将获得安全高效的投资环境。",
+      "sub_title1_3": "我们以创新技术为支撑，配合专业团队支持，助您获得丰厚的回报。加入我们，开启通向财务自由的专业交易之旅。",
+      "heading1_1": "与最佳经纪商交易",
+      "heading1_2": "与最佳经纪商交易",
+      "point1_1": "行业超低点差 0.0点*起",
+      "point1_2": "顶级稳定性交易平台",
+      "point1_3": "原始点差0.0点起",
+      "point1_4": "业内最具竞争力的IB返佣政策",
+      "point1_5": "安全极速订单执行",
+      "point1_6": "MT4/MT5双平台支持",
+      "point1_7": "专属客户经理",
+      "point1_8": "多样化入金渠道：信用卡/电汇/数字资产",
+      "heading2_1": "定制化",
+      "heading2_2": "交易策略支持",
+      "point2_1": "8大市场板块 27,000+交易品种",
+      "point2_2": "最高1:2000杠杆",
+      "point2_3": "负余额保护",
+      "point2_4": "无交易限制，支持EA智能交易",
+      "point2_5": "零价格滑点",
+      "point2_6": "零佣金",
+      "point2_7": "零重新报价",
+      "point2_8": "零拒单",
+      "heading3_1": "利用",
+      "heading3_2": "尖端科技",
+      "heading3_3": "赋能交易成功",
+      "point3_1": "直连顶级银行的ECN账户",
+      "point3_2": "直连顶级银行",
+      "point3_3": "无交易台干预",
+      "point3_4": "一级流动性报价",
+      "point3_5": "毫秒级订单执行",
+      "heading4_1": "Utilizing ",
+      "heading4_2": "专业工具",
+      "heading4_3": "助力卓越表现",
+      "point4_1": "PAMM/MAM资产管理账户",
+      "point4_2": "信号中心专业工具",
+      "point4_3": "专属交易VPS",
+      "point4_4": "专家市场分析",
+      "point4_5": "Autochartist形态识别",
+      "point4_6": "Acuity智能交易工具",
+      "note_title1": "极致追求，卓越承诺",
+      "note_desc1": "我们绝不妥协于任何可能影响客户表现的因素，始终坚持提供最窄点差和最佳执行质量。",
+      "note_title2": "先进交易平台",
+      "note_desc2": "GTCFX专为全球多元化客户群体量身打造尖端外汇交易平台",
+      "note_title3": "经验铸就专业",
+      "note_desc3": "我们对全球金融市场的深刻认知与丰富经验，构筑起专业服务的坚实基础",
+      "note_title4": "卓越服务体系",
+      "note_desc4": "在外汇、差价合约、股指、贵金属及能源等多元领域，我们始终提供顶级交易服务",
+      "note_title5": "运营理念",
+      "note_desc5": "GTCFX的运营理念简单而坚定：客户满意铸就长久信赖。我们以行业领先的合规标准和超预期的服务品质为荣。通过持续跟踪行业趋势和技术演进，我们不断优化服务体系，始终满足高端客户的动态需求。"
+    },
+    "global-presence-map": {
+      "bannerTitle": "全球布局",
+      "bannerDescription": "在 GTCFX，我们是一支全球化团队，业务版图覆盖全球 22+ 个重要地区。",
+      "badge": "全球布局",
+      "titlePrefix": "覆盖",
+      "titleHighlight": "全球关键市场",
+      "titleSuffix": "的网络",
+      "description": "GTCFX 的国际化布局体现了我们服务全球主要金融中心与新兴市场的承诺。凭借覆盖多地区的团队与运营体系，我们以全球视野提供本地化支持。",
+      "bottomNote": "不断扩展的全球足迹，让我们能够连接全球客户、合作伙伴与市场，同时始终专注于本地需求与个性化服务。",
+      "stats": {
+        "destinations": "地区覆盖",
+        "countriesReached": "覆盖国家",
+        "clientsServed": "服务客户"
+      },
+      "regions": {
+        "middleEast": "中东",
+        "europe": "欧洲",
+        "asia": "亚洲",
+        "africa": "非洲",
+        "oceania": "大洋洲",
+        "americas": "美洲"
+      },
+      "countries": {
+        "unitedArabEmirates": "阿联酋",
+        "cyprus": "塞浦路斯",
+        "jordan": "约旦",
+        "ksa": "沙特阿拉伯",
+        "unitedKingdom": "英国",
+        "turkey": "土耳其",
+        "china": "中国",
+        "hongKong": "中国香港",
+        "india": "印度",
+        "pakistan": "巴基斯坦",
+        "thailand": "泰国",
+        "vietnam": "越南",
+        "malaysia": "马来西亚",
+        "philippines": "菲律宾",
+        "indonesia": "印度尼西亚",
+        "southAfrica": "南非",
+        "nigeria": "尼日利亚",
+        "mauritius": "毛里求斯",
+        "australia": "澳大利亚",
+        "vanuatu": "瓦努阿图",
+        "usa": "美国",
+        "mexico": "墨西哥",
+        "chile": "智利"
+      }
+    },
+    "awards-section": {
+      "bannerTitle": "奖项荣誉",
+      "bannerDescription": "与我们交易，为您提供更明智、更高效的投资方式。",
+      "badge": "奖项与认可",
+      "titlePrefix": "获奖的差价合约经纪商",
+      "titleHighlight": "卓越实力备受认可",
+      "description": "GTCFX 在多项国际金融展会与行业活动中屡获认可，体现了我们在创新、服务质量与全球交易解决方案方面的持续追求。"
+    },
+    "client-fund-insurance": {
+      "title": "资金安全保障",
+      "sub_title1_1": "GTC Global Trade Capital Ltd. 是金融委员会（Financial Commission）正式成员。该国际组织专注于外汇市场金融服务争议解决，为行业提供独立第三方仲裁服务。",
+      "sub_title1_2": "金融委员会作为中立的独立外部争议解决机构（EDR），通过简化流程实现比传统监管体系和司法程序更高效的纠纷处理。",
+      "sub_title1_3": "其核心价值在于确保争议解决的时效性、公正性和权威性，并通过补偿基金机制为交易者提供额外保障。",
+      "sub_title1_4": "金融委员会是中立的独立外部争议解决机构（EDR）",
+      "heading1": "运作机制",
+      "desc1_1": "补偿基金作为会员客户的保险机制，独立存放于专用银行账户。仅当会员机构拒绝执行金融委员会裁决时方可启用。",
+      "heading2": "资金来源",
+      "desc2_1": "补偿基金来源于金融委员会每月会费收入的10%专项拨款。",
+      "heading3": "保障范围",
+      "desc3_1": "经纪商破产时的全体客户赔付",
+      "heading4": "最高保额",
+      "desc4_1": "单个客户最高可获得20,000欧元的补偿金赔付。",
+      "desc4_2": "详细条款请参阅《金融争议调解中心章程》及我司《客户协议》。",
+      "visitButton": "立即访问",
+      "downloadButton": "下载PDF文件",
+      "protectionBadge": "客户保障",
+      "upToLabel": "最高可达",
+      "sideDescription": "补偿基金可覆盖金融委员会裁决下单个客户最高20,000欧元的赔付。",
+      "sideNote": "该保障机制通过公平、独立的争议解决流程进一步增强客户信心。",
+      "maximumCoverageBadge": "最高保额"
+    },
+    "careers": {
+      "title": "人才招聘",
+      "currentJobs": "在招岗位",
+      "applyNow": "立即申请",
+      "bannerText": "我们是一家领先的金融科技公司，专注于外汇交易解决方案。",
+      "desc": "在GTCFX，我们相信培养一个充满活力和包容性的工作环境，创新得以蓬勃发展，人才得以培养。随着我们不断成长和扩展全球影响力，我们一直在寻找充满激情的人们，他们渴望在金融科技领域产生有意义的影响。",
+      "why-working": "为何选择GTCFX？",
+      "heading1_1": "创新",
+      "heading1_2": "环境：",
+      "desc1": "加入具有前瞻视野的精英团队，运用尖端科技重塑外汇交易未来。在这里，您将参与定义行业新标准的技术实践。",
+      "heading2_1": "协作",
+      "heading2_2": "文化：",
+      "desc2": "我们坚信协同创造价值。GTCFX构建了开放包容的协作网络，每个创意都能获得充分重视，跨部门合作贯穿各业务层级。",
+      "heading3_1": "职业",
+      "heading3_2": "发展：",
+      "desc3": "完善的职业发展体系配合定制化培养计划，助您在金融科技领域实现持续成长与专业跃升。",
+      "heading4_1": "全球",
+      "heading4_2": "视野：",
+      "desc4": "参与具有国际影响力的金融科技项目，您的专业贡献将直接触达全球100多个国家的投资者群体。",
+      "form": {
+        "title": "职位筛选",
+        "sub_title": "立即申请，开启成功之路",
+        "first_name": "名字",
+        "last_name": "姓氏",
+        "email": "电子邮箱",
+        "phone": "电话号码",
+        "city": "城市",
+        "url": "LinkedIn主页",
+        "exper": {
+          "label": "工作经验",
+          "one": "应届毕业生",
+          "sec": "1 - 2年",
+          "third": "3 - 5年",
+          "fourth": "5 - 10年",
+          "fivth": "10年以上"
+        },
+        "note": "个人说明",
+        "attach": "上传简历",
+        "btnText": "立即申请",
+        "terms": "提交即表示已阅读并同意《客户协议》，并授权GTCFX与我联系。"
+      },
+      "jobs": "在招岗位",
+      "apply": "申请"
+    },
+    "contactUsForm": {
+      "registrationStatusLabel": "您是已注册客户吗？",
+      "registrationStatusSelect": "请选择注册状态",
+      "registrationStatusRegistered": "已注册",
+      "registrationStatusNotRegistered": "未注册",
+      "queryTypeLabel": "咨询类型",
+      "queryTypeSelect": "请选择咨询类型",
+      "queryTypeGeneral": "一般咨询",
+      "queryTypeCompliance": "合规咨询",
+      "ticketTypeLabel": "工单类型",
+      "ticketTypeSelect": "请选择工单类型",
+      "ticketTypeAccountRegistration": "账户/注册",
+      "ticketTypeDeposits": "入金",
+      "ticketTypeWithdrawals": "出金",
+      "ticketTypeTradingAccountQueries": "交易账户咨询",
+      "ticketTypeAccountOpeningLinks": "添加开户链接",
+      "ticketTypePartnerClientTransfer": "合作伙伴/客户转移申请",
+      "ticketTypePromotionsBonuses": "促销/赠金",
+      "ticketTypeTradingInvestigation": "交易调查",
+      "ticketTypeKycQueries": "KYC咨询",
+      "ticketTypeOther": "其他",
+      "tradeAccountLabel": "交易账户",
+      "tradeAccountPlaceholder": "交易账户",
+      "transactionIdsLabel": "交易编号",
+      "transactionIdsPlaceholder": "交易编号",
+      "tradeOrderIdsLabel": "交易订单编号",
+      "tradeOrderIdsPlaceholder": "交易订单编号",
+      "dateTimeIncidentLabel": "事件发生日期和时间",
+      "dateTimeIncidentPlaceholder": "例如：2024-01-15 14:30",
+      "promotionBonusTypeLabel": "促销/赠金类型",
+      "promotionBonusTypeSelect": "请选择类型",
+      "promotionBonusTypeIssue": "问题反馈",
+      "promotionBonusTypeRequest": "申请请求",
+      "depositAmountLabel": "入金金额",
+      "depositAmountPlaceholder": "入金金额",
+      "subjectLabel": "主题",
+      "subjectPlaceholder": "主题",
+      "firstNameLabel": "名字",
+      "firstNamePlaceholder": "名字",
+      "lastNameLabel": "姓氏",
+      "lastNamePlaceholder": "姓氏",
+      "emailLabel": "电子邮箱",
+      "emailPlaceholder": "电子邮箱",
+      "phoneLabel": "电话号码",
+      "countryLabel": "国家",
+      "countrySelect": "请选择国家",
+      "ticketDescriptionLabel": "工单描述",
+      "ticketDescriptionPlaceholder": "请详细说明您的问题...",
+      "depositDisclaimer": "提交前请确认您的入金信息准确无误。",
+      "withdrawalDisclaimer": "提交前请确认您的出金信息准确无误。",
+      "attachmentLabel": "附件",
+      "attachmentOptional": "（可选）",
+      "attachmentHelp": "截图、收据、日志或其他支持文件。",
+      "submitDisclaimer": "提交表单后，您将收到包含案件编号的电子邮件。",
+      "sending": "发送中...",
+      "submit": "提交",
+      "termsPrefix": "点击提交即表示我确认：(1) 我已阅读并同意",
+      "termsLinkText": "客户协议；",
+      "termsSuffix": "(2) 我同意GTCFX在合理时间联系我；(3) 我的号码未列入拒接来电登记册（DNCR）。",
+      "toastSubmitted": "提交成功。",
+      "toastError": "发生错误。",
+      "errorRegistrationStatus": "注册状态为必填项",
+      "errorQueryType": "咨询类型为必填项",
+      "errorInvalidEmail": "邮箱格式无效",
+      "errorEmail": "电子邮箱为必填项",
+      "errorMinLetters": "至少输入2个字符",
+      "errorFirstName": "名字为必填项",
+      "errorLastName": "姓氏为必填项",
+      "errorPhone": "电话号码为必填项",
+      "errorCountry": "国家为必填项",
+      "errorSubject": "主题为必填项",
+      "errorDescription": "描述为必填项",
+      "errorCaptcha": "请完成验证码验证",
+      "errorTicketType": "工单类型为必填项",
+      "errorPromotionBonusType": "促销/赠金类型为必填项",
+      "errorTradeAccount": "交易账户为必填项",
+      "errorTradeOrderIds": "交易订单编号为必填项",
+      "errorDateTimeIncident": "事件发生日期和时间为必填项"
+    },
+    "contact-us": {
+      "title": "联系我们",
+      "sub_title1_1": "您的满意度是我们最优先考虑的。我们致力于确保您获得无缝且满意的体验与我们的服务。",
+      "sub_title1_2": "我们的团队致力于超越您的需求。无论是解决您的顾虑，协助技术问题，还是提供专家指导，我们都在这里为您服务。您的成功和满意度是我们使命的核心，我们随时准备以任何方式帮助您。",
+      "live_chat": "在线聊天",
+      "globalHeading": "拨打全球免费电话",
+      "localHeading": "拨打全球免费电话",
+      "support_email": "support@gtcfx.com",
+      "phone": "+971 800 667788",
+      "more_info": "我们期待您的来电"
+    }
+  },
+  "platform": {
+    "mt4PlatformPage": {
+      "metaData": {
+        "title": "MetaTrader 4 平台 ► 下载适用于 Windows、Mac、iOS 和 Android 的 MT4 | GTCFX",
+        "des": "下载 GTCFX 提供的 MetaTrader 4 (MT4)，适用于 Windows、Mac、iOS 和 Android 设备 📈 通过 GTCFX 的 MetaTrader 4 交易多种差价合约（CFD），包括外汇、指数、大宗商品、债券和数字货币资产。立即开设 MT4 账户！"
+      },
+      "bannerText": {
+        "heading": "MT4 交易平台",
+        "para1": "MetaTrader 4，通常称为 MT4，是全球外汇交易领域中广泛使用且备受欢迎的交易平台。",
+        "para2": "它由 MetaQuotes Software 开发，已成为新手和经验丰富的交易者的标准选择。",
+        "trade": {
+          "heading1": "使用最",
+          "heading2": "全面的交易平台进行交易",
+          "btnText": "注册GTCFX，开通实盘账户"
+        }
+      },
+      "advantages": {
+        "title": "我们的 MT4 交易平台优势",
+        "column1": {
+          "heading1": "用户友好界面",
+          "heading2": "适合所有经验水平的交易者",
+          "heading3": "极速执行",
+          "heading4": "高效且功能丰富",
+          "heading5": "MT4 提供全面的技术分析工具",
+          "heading6": "这些工具使交易者能够分析价格走势并做出明智的交易决策",
+          "heading7": "通过专家顾问（EAs）实现自动化交易",
+          "heading8": "自定义工具"
+        },
+        "column2": {
+          "heading1": "回测交易策略",
+          "heading2": "一键交易",
+          "heading3": "手机交易",
+          "heading4": "实时报价和动态",
+          "heading5": "社区与支持",
+          "heading6": "安全保障",
+          "heading7": "多种订单类型",
+          "heading8": "多种资产类别"
+        }
+      }
+    },
+    "mt5PlatformPage": {
+      "metaData": {
+        "title": "MetaTrader 5 平台 ► 下载适用于 Windows、Mac、iOS 和 Android 的 MT5 | GTCFX",
+        "des": "下载 GTCFX 提供的 MetaTrader 5 (MT5)，适用于 Windows、Mac、iOS 和 Android 设备 📈 通过 GTCFX 的 MetaTrader 5 交易多种差价合约（CFD），包括外汇、指数、大宗商品、债券和数字货币资产。立即开设 MT5 账户！"
+      },
+      "bannerText": {
+        "heading": "MT5 交易平台",
+        "para1": "MetaTrader 5，通常称为 MT5，是全球外汇交易领域中广泛使用且备受欢迎的交易平台。",
+        "para2": "它由 MetaQuotes Software 开发，已成为新手和经验丰富的交易者的标准选择。",
+        "trade": {
+          "heading1": "使用最",
+          "heading2": "全面的交易平台进行交易",
+          "btnText": "注册GTCFX，开通实盘账户"
+        }
+      },
+      "advantages": {
+        "title": "我们的 MT5 交易平台优势",
+        "column1": {
+          "heading1": "用户友好界面",
+          "heading2": "适合所有经验水平的交易者",
+          "heading3": "极速执行",
+          "heading4": "高效且功能丰富",
+          "heading5": "MT5 提供全面的技术分析工具",
+          "heading6": "这些工具使交易者能够分析价格走势并做出明智的交易决策",
+          "heading7": "通过专家顾问（EAs）实现自动化交易",
+          "heading8": "定制分析工具"
+        },
+        "column2": {
+          "heading1": "回测交易策略",
+          "heading2": "一键交易",
+          "heading3": "手机交易",
+          "heading4": "实时报价和动态",
+          "heading5": "社区与支持",
+          "heading6": "安全保障",
+          "heading7": "多种订单类型",
+          "heading8": "多种资产类别"
+        }
+      }
+    },
+    "downloadApp": {
+      "heading": "随时随地交易！",
+      "para": "通过您常用的设备轻松访问我们的用户友好型平台，随时随地无缝交易全球市场！",
+      "para1": "我们提供用户友好的界面及多样化功能，精准满足全球交易者需求。",
+      "para2": "无论您身在何处，均可通过手机、平板或电脑轻松访问我们的平台，享受全球市场无缝交易体验！",
+      "GTCAPP": {
+        "title": "GTC APP",
+        "downloadnow": "立即下载",
+        "para1": "兼容 MT4 & MT5",
+        "para2": "支持 MT4 和 MT5，可在以下应用商店下载"
+      },
+      "mac": {
+        "title": "PC / MAC",
+        "mt4pc": "MT4 for PC",
+        "mt5pc": "MT5 for PC",
+        "mt4mac": "MT5 for PC",
+        "mt5mac": "MT5 for Mac",
+        "mt4multi": "cTrader for PC",
+        "live1": "Live link of MT4",
+        "live2": "Live link of MT5"
+      },
+      "smartPhone": {
+        "title": "手机",
+        "mt4andriod": "MT4 for Android",
+        "mt4iphone": "MT4 for iPhone",
+        "mt5andriod": "MT5 for Android",
+        "mt5iphone": "MT5 for iPhone",
+        "ctradeAndriod": "cTrader for Android",
+        "ctradeIpad": "cTrader for iPad"
+      },
+      "tablets": {
+        "title": "APK文件",
+        "mt4andriod": "MT4 for Android",
+        "mt4ipad": "MT5 for Android",
+        "mt5andriod": "cTrader for Android",
+        "mt5ipad": "MT5 for iPad",
+        "ctradeAndriod": "cTrader for Android",
+        "ctradeIpad": "cTrader for iPad"
+      }
+    }
+  },
+  "tradingTools": {
+    "economicCal": {
+      "bannerText": {
+        "heading": "财经日历",
+        "description": "通过经济日历关注最新市场动态，了解即将发生的经济事件及其对市场走势的影响。"
+      },
+      "content": {
+        "tradingHeading": "交易工具",
+        "subTitle": "GTCFX 提供多种工具，助您提升交易体验。",
+        "economicCal": "财经日历",
+        "detailEco": "通过财经日历关注最新市场动态，了解即将发生的经济事件及其对市场走势的影响。",
+        "whatEco": "什么是财经日历？",
+        "detail2": "财经日历是一个列出影响金融资产涨跌的特定数据发布和事件的时间表。",
+        "comNews": "公司动态",
+        "detailComp": "通过公司新闻版块，实时获取战略调整、业务升级等关键信息，全面掌握 GTCFX 发展动向。",
+        "newsHeading": "动态",
+        "detailNew": "深入我们的新闻版块，获取金融市场的最新动态。我们定期发布市场更新和分析，助您全面了解市场变化。"
+      }
+    },
+    "latestNews": {
+      "bannerText": {
+        "heading": "最新动态 | GTCFX",
+        "description": "Global Trade Capital Limited 是一家致力于在线外汇和大宗商品经纪业务的全球品牌"
+      }
+    },
+    "marketOverView": {
+      "bannerText": {
+        "title": "市场概览",
+        "desc": "实时追踪核心趋势、价格波动及市场指标，为用户提供数据驱动的投资决策支持。"
+      },
+      "contentText": {
+        "forex": {
+          "title": "外汇",
+          "title2": "黄金和白银",
+          "title3": "布伦特原油期货",
+          "heading1": "报价",
+          "heading2": "交易"
+        },
+        "label": {
+          "one": "日",
+          "two": "开盘",
+          "three": "收盘",
+          "four": "重新开盘"
+        },
+        "days": {
+          "mon": "周一",
+          "tuse": "周二",
+          "wed": "周三",
+          "thurs": "周四",
+          "fri": "周五"
+        }
+      },
+      "holiday": {
+        "title": "节假日交易时间及通知",
+        "bannerTitle": "市场节假日可能影响交易时间表和市场波动性。不同国家的节假日安排有所不同，因此及时了解最新的节假日交易时间变更对合理安排交易计划至关重要。",
+        "des": "市场节假日可能影响交易时间表和市场波动性。不同国家的节假日安排有所不同，因此及时了解最新的节假日交易时间变更对合理安排交易计划至关重要。",
+        "trading": "外汇及差价合约交易时间",
+        "hours": "查看外汇、贵金属、大宗商品及其他金融产品的最新交易时间。GTCFX提供更新的市场交易时段信息，助您有效规划交易策略。请注意，上述时间可能发生变动。如需获取最准确且实时的交易时段详情，请参考您的交易终端或查阅各交易产品的详细规格说明。",
+        "noData": "暂无数据",
+        "note1": "请注意，以上时间可能会变更，任何更新可在交易终端中的产品规格里查看。",
+        "note2": "请注意，节假日期间可能出现突发波动、流动性降低，部分流动性提供商可能会扩大点差。",
+        "note3": "具体日期以相关市场最新安排为准。",
+        "note4": "请客户根据以上公司交易时段妥善管理账户与持仓。"
+      }
+    }
+  },
+  "thankYouLiveAccount": {
+    "metaData": {
+      "title": "感谢选择GTCFX | 全球资产最佳交易平台",
+      "des": "您的加入标志着一段充满潜力的交易旅程的开始。"
+    },
+    "content": {
+      "heading": "感谢选择GTCFX | 全球资产最佳交易平台",
+      "heading1": "申请已接收！",
+      "des": "感谢选择GTCFX并对我们的服务感兴趣！",
+      "des1": "我们的客户支持团队将尽快联系您，协助您高效使用服务。",
+      "footer": "启程激动人心的交易之旅！",
+      "footer1": "如有疑问，请邮件至 support@gtcfx.com"
+    }
+  },
+  "swapUpdate": {
+    "metaData": {
+      "title": "GTCFX外汇、贵金属、加密货币、能源及指数掉期更新",
+      "des": "了解GTCFX提供的最新外汇、贵金属、加密货币、能源及指数的掉期利率和更新。借助GTCFX的实时洞察与专业分析，助您抢占市场先机，即刻最大化您的交易潜力！"
+    },
+    "content": {
+      "heading1": "掉期更新",
+      "des1": "掉期更新日期：2026年10月17日。 ",
+      "des2": "请注意，所有利率仅供参考，实际利率请以客户交易平台上的符号规格为准。",
+      "tab1": "外汇",
+      "tab2": "贵金属",
+      "tab3": "能源",
+      "tab4": "加密货币",
+      "tab5": "指数"
+    }
+  },
+  "tutorialVideo": {
+    "metaData": {
+      "title": "通过视频教程掌握实盘账户开通与出入金操作 | GTCFX",
+      "des": "观看GTCFX教学视频，快速了解如何开通实盘交易账户、完成入金及轻松出金。立即选择全球领先经纪商，开启您的稳健交易之旅！."
+    },
+    "bannerSection": {
+      "title": "GTCFX教程视频",
+      "des": "观看GTCFX教学视频，快速了解如何开通实盘交易账户、完成入金及轻松出金。立即选择全球领先经纪商，开启您的稳健交易之旅"
+    }
+  },
+  "earningPage": {
+    "title": "GTC股票及指数财报日历",
+    "des": "GTC财报日历实时更新，为您提供通过GTC交易平台交易的所有股票及指数的最新财报与股息信息。",
+    "banner": {
+      "title": "财报与股息日历",
+      "para": "下方日历将展示所有可交易品种的最新动态，包括股票及指数差价合约的财报发布时间与股息派发日程。建议交易前务必查阅该日历，并持续关注持仓品种相关的市场新闻和分析更新。",
+      "titled": "除息日"
+    },
+    "howToCalculate": {
+      "heading": "股息计算方法",
+      "title1": "持有多头头寸时获得的股息支付：",
+      "para1": "股息支付 = 成分股息（每指数合约）× 合约规模 × 交易量 × 货币乘数 × 账户货币乘数",
+      "title2": "持有空头头寸时扣除的股息费用：",
+      "para2": "股息费用 = 成分股息（每指数合约）× 合约规模 × 交易量 × 货币乘数 × 账户货币乘数"
+    },
+    "howStockEarning": {
+      "title": "股票与指数财报及股息对保证金的影响",
+      "desc": "我们准备了指南，详细说明该日历功能，包括企业事件发生时间、保证金调整机制及其对账户的影响。",
+      "item1": {
+        "heading": "1. 重要事件标记说明",
+        "para1": "为控制风险敞口，我们会在每个财报或股息周期进行特殊标记。这些标记帮助识别可能影响产品波动性的重要日期。"
+      },
+      "item2": {
+        "heading": "2. 保证金分级解读",
+        "para1": "严格执行风险管理！请根据保证金分级制度规划头寸规模，确保风险控制有效实施。"
+      },
+      "item3": {
+        "heading": "3. 财报案例演示",
+        "para1": "以苹果公司最新财报为例：",
+        "list1": "交易品种：AAPL",
+        "list2": "股价：182.40 美元",
+        "list3": "预期每股收益：2.84 美元",
+        "list4": "实际每股收益：2.90 美元",
+        "para2": "若其他货币计价数据更高，可考虑做空转换。若低于预期则需注意回报风险。"
+      },
+      "item4": {
+        "heading": "4. 指数股息调整案例",
+        "para1": "以 CHN50 指数为例：",
+        "list1": "交易品种：CHN50",
+        "list2": "股息点数：1.50 点",
+        "list3": "持有多头 1 手（相当于 50 个合约单位）",
+        "list4": "1.50 × 50 = 75 美元",
+        "list5": "盈亏账户贷记：75.00 美元"
+      },
+      "item5": {
+        "heading": "5. 股息资金调整机制",
+        "para1": "投资品种除息时，资金调整规则如下：",
+        "list": {
+          "one": "除息日仍持有多头头寸，股息收益计入账户余额",
+          "two": "除息日前已平仓，股息将从账户余额中扣除"
+        }
+      },
+      "item6": {
+        "heading": "6. 交易者须知",
+        "para1": "请注意：保证金要求可能因市场波动临时调整。这可能导致可用保证金不足，请确保账户始终保有充足资金。"
+      },
+      "item7": {
+        "heading": "7. 重要时间提示",
+        "para1": "所有点差与日期均为预估值。请注意，单个事件可能同时影响同一指数的多个产品。请务必提前做好资金规划，预留充足的保证金缓冲，以应对市场波动。保持智慧交易，做好风险管理。",
+        "para2": "请务必提前做好资金规划，预留充足的保证金缓冲，以应对市场波动。保持智慧交易，做好风险管理。"
+      }
+    },
+    "btnText": "客户引荐",
+    "faqs": {
+      "heading": "财报日历常见问题",
+      "question1": "GTC 何时更新财报日历？",
+      "answer1": "每日 GMT+2 时间 23:00 定时更新，重大变更将在交易时间内实时发布。",
+      "question2": "为何财报前保证金要求上调？",
+      "answer2": "我们会在预定事件前五个交易日调整保证金要求，以保护账户免受剧烈波动影响。",
+      "question3": "如何处理发布日期变更？",
+      "answer3": "将头寸名义价值按实时汇率换算为美元，随后适用对应的分级保证金比例。",
+      "question4": "股息调整是否影响隔夜利息？",
+      "answer4": "是的。除息日将单独进行资金调整，隔夜利息计算不受影响。",
+      "question5": "市场波动期间是否对新开仓适用更高保证金？",
+      "answer5": "是的。在市场波动恢复平稳前，新开仓和现有头寸均适用更高保证金要求。",
+      "question6": "如何查询历史财报日期？",
+      "answer6": "点击表格上方‘历史’标签，可查询过去 12 个月的所有事件记录。",
+      "question7": "发布日期变更如何通知？",
+      "answer7": "日历将自动更新，我们会向所有持有相关产品的交易者发送邮件通知。"
+    }
+  },
+  "swapFreePage": {
+    "hero": {
+      "badge": "GTCFX 免掉期交易",
+      "title": "无掉期费用交易",
+      "description1": "在选定交易品种上进行无隔夜掉期费用的交易——专为因宗教或个人原因需要免息交易条件的交易者设计。",
+      "description2": "免掉期交易移除了合格交易品种上的这些基于利息的费用。此结构非常适合遵循伊斯兰金融原则或任何偏好免息条件的交易者。"
+    },
+    "whyChoose": {
+      "title": "为何选择 GTCFX 的免掉期服务？",
+      "subtitle": "我们的目标是在确保符合全球标准的同时，提供灵活公平的交易条件。",
+      "features": {
+        "noSwapCharges": {
+          "icon": null,
+          "title": "无隔夜掉期费用",
+          "description": "交易选定品种，无需支付隔夜掉期或展期费用。"
+        },
+        "regionBased": {
+          "icon": null,
+          "title": "基于地区的资格",
+          "description": "为伊斯兰及认可地区的客户提供免掉期状态。"
+        },
+        "transparent": {
+          "icon": null,
+          "title": "透明的交易政策",
+          "description": "清晰公平的条件，无隐藏规则或不明确的费用结构。"
+        },
+        "fastActivation": {
+          "icon": null,
+          "title": "快速账户激活",
+          "description": "通过支持或在线聊天协助快速启用免掉期状态。"
+        },
+        "longTerm": {
+          "icon": null,
+          "title": "适合长期交易",
+          "description": "更长时间持有交易头寸，而不会累积基于利息的隔夜费用。"
+        }
+      }
+    },
+    "howItWorks": {
+      "title": "免掉期如何运作",
+      "subtitle": "免掉期状态可能根据您所在地区自动应用，或根据请求启用。",
+      "onceActivated": {
+        "title": "一旦激活：",
+        "points": {
+          "point1": "合格交易品种隔夜持有不产生掉期费用",
+          "point2": "所有其他交易条件保持不变",
+          "point3": "交易行为可能会被定期审查",
+          "point4": "如果发现账户活动不符合规定，免掉期账户可能会被调整"
+        }
+      },
+      "eligibility": {
+        "title": "资格标准",
+        "description": "免掉期状态可能基于以下因素授予：",
+        "criteria": {
+          "country": {
+            "title": "1. 国家 / 地区",
+            "description": "位于选定伊斯兰或认可地区的客户可能自动获得资格。"
+          },
+          "trading": {
+            "title": "2. 交易行为",
+            "description": "账户应反映正常的交易模式。",
+            "note": "异常或非标准活动可能会触发审查。"
+          }
+        }
+      }
+    },
+    "instruments": {
+      "title": "涵盖的交易品种",
+      "description1": "免掉期仅适用于选定交易品种。覆盖范围可能因地区和流动性提供商条件而异。",
+      "description2": "合格类别示例",
+      "categories": {
+        "majorFx": "主要外汇货币对（例如：EURUSD, GBPUSD, USDJPY, AUDUSD）",
+        "preciousMetals": "选定贵金属（例如：XAUUSD, XAGUSD）",
+        "minorsExotics": "选定次要及奇异货币对",
+        "indicesEnergies": "选定指数与能源产品",
+        "cryptocurrencies": "选定加密货币"
+      },
+      "note": "关于实时列表，请参阅您交易平台中的合约规格部分。",
+      "nonSwapFree": {
+        "title": "非免掉期交易品种",
+        "description": "以下交易品种不符合免掉期资格，将始终遵循标准掉期条件。",
+        "forexPairs": {
+          "title": "外汇货币对",
+          "pairs": "GBPJPY, EURZAR, GBPZAR, USDCNH"
+        },
+        "commodities": {
+          "title": "大宗商品与能源",
+          "items": "CUCUSD, NGCUSD, XPDUSD, XPTUSD"
+        },
+        "crypto": {
+          "title": "加密货币（USDT 格式）",
+          "items": "ADAUSDT, ATMUSDT, BATUSDT, BCHUSDT, DOGUSDT, DSHUSDT, LTCUSDT, TRUMPUSDT, TRXUSDT, XLMUSDT, XMRUSDT, XRPUSDT, ZECUSDT"
+        }
+      }
+    },
+    "howToEnable": {
+      "title": "如何启用免掉期",
+      "description": "要激活免掉期，只需联系我们的：",
+      "contact": "👉 在线聊天 或 发送邮件至我们的支持团队：",
+      "email": "support@gtcfx.com",
+      "confirmation": "我们将审核您的资格，并在适用的情况下应用免掉期状态。激活后您将收到确认通知。"
+    },
+    "terms": {
+      "title": "条款与条件",
+      "points": {
+        "point1": "GTCFX 可自行决定批准、拒绝或撤销免掉期状态",
+        "point2": "交易活动可能会被审查以确保合规",
+        "point3": "部分地区可能会收取管理费",
+        "point4": "免掉期仅移除基于利息的掉期费用",
+        "point5": "所有其他正常交易成本（点差、佣金、滑点等）仍然适用"
+      },
+      "note": "如需任何额外详情，请联系我们的团队。"
+    },
+    "faq": {
+      "title": "常见问题",
+      "questions": {
+        "q1": "免掉期是否意味着所有隔夜成本都被移除？",
+        "a1": "不是。免掉期仅移除基于利息的掉期费用。其他正常交易成本，如点差、佣金和滑点，可能仍然适用。",
+        "q2": "我的免掉期状态会被取消吗？",
+        "a2": "是的。如果您的交易活动与正常使用或免掉期条款不符，您的账户状态可能会被审查并调整。",
+        "q3": "免掉期服务在全球都可用吗？",
+        "a3": "不是。免掉期的可用性取决于您所在的国家或地区以及适用的监管和合规要求。",
+        "q4": "所有交易品种都是免掉期的吗？",
+        "a4": "不是。只有选定的交易品种符合免掉期资格。某些交易品种，例如列在“非免掉期交易品种”下的那些，将始终遵循标准掉期条件。"
+      }
+    }
+  },
+  "blogs": {
+    "bannerTitle": "博客",
+    "bannerDescription": "GTCFX 博客 - 市场洞察与差价合约交易策略",
+    "titlePrefix": "博客",
+    "intro": "通过 GTCFX 博客保持领先 - 获取差价合约市场资讯、交易技巧与策略，助您更聪明地交易并持续成长。",
+    "readMore": "阅读更多",
+    "emptyState": "当前暂无可用博客。",
+    "endMessage": "没有更多内容",
+    "loading": "加载中...",
+    "defaultCategory": "博客",
+    "defaultExcerpt": "查看我们团队的最新更新与公告。",
+    "untitled": "未命名文章",
+    "imageAlt": "新闻图片",
+    "defaultDate": "2026年3月26日"
+  },
+  "gtcGoApp": {
+    "hero": {
+      "eyebrow": "奖励与智能交易的未来从这里开始。",
+      "titlePrefix": "GTC GO 与 GTC VIP — ",
+      "titleHighlight": "双引擎动力",
+      "titleSuffix": "GTCFX",
+      "description": "GTCFX 同时推出两大重磅产品：GTC VIP —— 我们有史以来最大的忠诚度计划，以及 GTC GO —— 为速度、智能和无缝用户体验而重新设计的下一代交易平台。",
+      "qrAlt": "下载 GTC GO App 的二维码",
+      "availability": "适用于 iOS 和 Android"
+    },
+    "mobileDownloadBanner": {
+      "eyebrow": "获取应用",
+      "title": "下载 GTCFX 移动应用",
+      "description": "直接在手机上交易、追踪并管理您的 GTC GO 和 GTC VIP 账户。",
+      "downloadOn": "下载于",
+      "googlePlay": "Google Play",
+      "appStore": "App Store"
+    },
+    "featureSection": {
+      "badge": "追踪交易与奖励",
+      "titlePrefix": "更智能、更快速、",
+      "titleHighlight": "更稳定",
+      "titleSuffix": "的交易系统",
+      "description": "在一个界面查看您的交易活动、账户表现和 GTC VIP 奖励。GTC GO 帮助您实时关注市场，而 GTC VIP 让您随时了解积分、等级和即将到期的福利。",
+      "items": {
+        "item1": {
+          "title": "重大升级已于 2026 年 11 月 8 日和 11 月 15 日完成。",
+          "description": "GTC GO 和 GTC VIP 现已全面上线、优化，并准备好支持真实交易和奖励。"
+        },
+        "item2": {
+          "title": "旨在提升性能、稳定性和用户体验。",
+          "description": "更快的加载速度、更流畅的导航和更可靠的交易执行。"
+        },
+        "item3": {
+          "title": "网页端和移动端的新功能。",
+          "description": "GTC GO 网页版和移动应用均已推出最新工具。"
+        }
+      }
+    },
+    "copyTradingSection": {
+      "badge": "跟单交易升级",
+      "titleLine1": "跟单交易更灵活",
+      "titleLine2": "更强大",
+      "description": "GTC GO 带来更智能的跟单交易体验，让信号提供者和跟单者在每笔交易中都拥有更多的控制权、透明度和灵活性。",
+      "points": {
+        "point1": "私域信号 — 仅通过链接分享",
+        "point2": "社交信号 — 所有用户可见并可发现",
+        "point3": "所有发布内容新增“信号类型”标签",
+        "point4": "自定义结算周期（分钟、小时、天、月、年）",
+        "point5": "可向跟单仓位追加额外资金",
+        "point6": "无持仓时随时提现"
+      },
+      "cta": "立即下载 App"
+    },
+    "howItWorks": {
+      "title": "运作方式",
+      "subtitle": "只需几个简单步骤即可开始使用 GTC GO 平台和 GTC VIP 忠诚度计划。",
+      "steps": {
+        "step1": {
+          "title": "下载应用",
+          "description": "从 App Store 或 Google Play 获取 GTC GO & GTC VIP 应用，并使用您的 GTCFX 账户登录。"
+        },
+        "step2": {
+          "title": "设置个人资料",
+          "description": "设置您的个人资料并关联您的交易账户。几秒钟内自定义偏好设置。"
+        },
+        "step3": {
+          "title": "享受各项功能",
+          "description": "在一个强大的移动应用中追踪交易、监控奖励、跟随信号并管理一切。"
+        }
+      },
+      "cta": "立即下载 App"
+    },
+    "features": {
+      "badge": "GTC GO 功能",
+      "title": "释放 GTCFX 的全部力量",
+      "description": "探索让 GTC GO App 和 GTC VIP 计划成为完整交易生态系统的功能。",
+      "cta": "立即下载 App",
+      "items": {
+        "smarterCopyTrading": {
+          "title": "更智能的跟单交易",
+          "description": "灵活、强大，为真实交易者设计。通过自定义周期跟随信号。"
+        },
+        "highQualityDesign": {
+          "title": "高质量设计",
+          "description": "简洁、直观，旨在让每次交易交互更顺畅、更快捷。"
+        },
+        "essentialIntegrations": {
+          "title": "核心集成",
+          "description": "轻松连接交易流程中的关键工具和服务。"
+        },
+        "essentialComponents": {
+          "title": "核心组件",
+          "description": "完整、统一的交易体验所需的所有核心功能。"
+        },
+        "fullyCustomizable": {
+          "title": "完全可定制",
+          "description": "根据您的风格、偏好和交易策略调整平台。"
+        },
+        "regularFreeUpdates": {
+          "title": "定期免费更新",
+          "description": "持续改进和新功能不断推出，无需额外费用。"
+        }
+      }
+    }
+  },
+  "footerLink": {
+    "columns": {
+      "trading": {
+        "label": "交易",
+        "menu1": "账户类型",
+        "menu2": "存入资金",
+        "menu3": "提取资金",
+        "menu4": "交易条件",
+        "menu5": "动态杠杆"
+      },
+      "platforms": {
+        "label": "平台",
+        "menu1": "MT4 平台",
+        "menu2": "MT5 平台",
+        "menu3": "GTC GO App",
+        "menu4": "下载交易平台",
+        "menu5": "VPS 托管"
+      },
+      "tools": {
+        "label": "工具与功能",
+        "menu1": "跟单交易",
+        "menu2": "PAMM 账户",
+        "menu3": "MAM 账户",
+        "menu4": "免隔夜利息交易",
+        "menu5": "保证金赠金"
+      },
+      "resources": {
+        "label": "见解与资源",
+        "menu1": "市场洞察",
+        "menu2": "公司新闻",
+        "menu3": "经济日历",
+        "menu4": "财报日历",
+        "menu5": "网站免责声明",
+        "menu6": "风险披露",
+        "menu7": "受限国家"
+      },
+      "companyLegal": {
+        "label": "公司与法律",
+        "menu1": "关于我们",
+        "menu2": "为何选择 GTC 集团",
+        "menu3": "全球布局",
+        "menu4": "所获奖项",
+        "menu5": "加入我们",
+        "menu6": "联系我们",
+        "menu7": "监管信息"
+      }
+    },
+    "footerHeading": "随时随地，连接您与全球市场。",
+    "storeButtons": {
+      "appStoreAlt": "在 App Store 上下载",
+      "googlePlayAlt": "在 Google Play 上获取"
+    },
+    "footerNotice": {
+      "firstPara": "本网站由 GTC Global SA (Pty) Ltd 拥有和运营，这是一家在南非注册的私人有限公司（公司注册号：2020/810937/07），并获得南非金融部门行为监管局（FSP 编号：51545）的许可，可作为中介机构开展业务。注册地址：18 Cavendish Road, Clarement, Cape Town, Western Cape, 7708, South Africa。本网站推广的金融服务和产品由 GTC Global Trade Capital Co. Limited 提供，该公司经瓦努阿图共和国瓦努阿图金融服务委员会授权（公司许可证号：40354）。注册地址：1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu。",
+      "secondPara": "GTC Global SA (Pty) Ltd 和 GTC Global Trade Capital Co. Limited 是 GTC Financial Group 的一部分，该集团由遍布全球的多个实体组成。",
+      "thirdPara": "投资衍生品具有重大风险，可能不适用于所有投资者。这些工具中的杠杆使用会增加风险水平和潜在损失。在做出任何参与外汇交易或差价合约交易的决定之前，务必仔细考虑您的投资目标、经验水平和风险承受能力。您只能投入您能承受损失的资金。我们强烈建议您全面了解相关风险，如有任何疑问，请寻求独立财务或税务顾问的建议。",
+      "fourthPara": "GTC Global SA (Pty) Ltd 和 GTC Global Trade Capital Co. Limited 不向居住在特定司法管辖区和/或此类服务的分发违反当地法律或法规的司法管辖区的个人提供服务。",
+      "fifthPara": "GTC Financial Group 内的每个实体独立运营。本网站提供的金融产品和服务仅由 GTC Global Trade Capital Co. Limited 提供。"
+    },
+    "footerCopyRight": {
+      "copyRightText": "© 版权所有 {year} GTCFX - 保留所有权利"
+    }
+  },
+  "regulationPage": {
+    "titleStart": "GTC 金融集团的",
+    "titleHighlight": "全球布局",
+    "bannerDescription": "GTC Group LLC-FZ，一家在阿联酋注册的有限责任公司，旗下拥有以下全球实体，共同组成 GTC 金融集团。",
+    "intro": "GTC Group LLC-FZ 是一家在阿联酋注册的有限责任公司，旗下拥有以下全球实体，共同组成 GTC 金融集团。这些实体中的每一个都根据其在相关司法管辖区的相应许可证提供金融服务。GTC 金融集团内的每个实体都专注于不同的服务，并由经验丰富的团队独立管理。本网站上的服务和产品由两个集团实体提供，即 GTC Global Ltd 和 GTC Global Trade Capital Co. Limited。",
+    "badge": "运营中 GTC 关联公司信息",
+    "websiteLabel": "网站：",
+    "closing": "GTC 金融集团为客户提供广泛的金融服务。集团内的不同实体拥有不同的许可证和产品，因为它们独立管理。如果您想进一步了解您正在与哪个实体打交道，我们鼓励您联系我们。",
+    "affiliates": {
+      "one": {
+        "country": "阿联酋",
+        "entity": "GTC MULTI TRADING DMCC",
+        "description": "GTC MULTI TRADING DMCC 受阿联酋证券和商品管理局监管，许可证号为 20200000007。该公司获准在 DGCX 衍生品期货下提供直接经纪清算会员服务。"
+      },
+      "two": {
+        "country": "阿联酋",
+        "entity": "GTC FINANCIAL CONSULTANCY",
+        "description": "GTC FINANCIAL CONSULTANCY 受阿联酋证券和商品管理局监管。"
+      },
+      "three": {
+        "country": "英国",
+        "entity": "Global Markets Group Limited",
+        "description": "Global Markets Group Limited 是一家在英格兰和威尔士注册的公司，公司编号为 09493910，由金融行为监管局授权和监管，参考编号为 744501。GTC GROUP L.L.C-FZ 是 Global Markets Group Limited 的少数股东。注册办公室：Green Park House, 15 Stratton Street, London W1J 8LQ, UK。"
+      },
+      "four": {
+        "country": "澳大利亚",
+        "entity": "GTC Global (Australia) Pty Ltd",
+        "description": "GTC Global (Australia) Pty Ltd 持有澳大利亚金融服务许可证编号 496371。GTC Global (Australia) 专注于为澳大利亚客户提供教育服务。"
+      },
+      "five": {
+        "country": "毛里求斯",
+        "entity": "GTC Global Ltd",
+        "description": "GTC Global Ltd 是一家在毛里求斯注册的有限公司（公司编号：C188049），并获得毛里求斯金融服务委员会的许可（编号：GB22200292）作为 SEC-2 实体进行交易。"
+      },
+      "six": {
+        "country": "南非",
+        "entity": "GTC Global South Africa Proprietary Limited",
+        "description": "GTC Global South Africa Proprietary Limited（注册号：2020/810937/07）持有金融服务提供商许可证编号 51545。注册地址：First Floor Kildare Centre, Cnr Kildare Road and Main Street, Newlands, Cape Town, Western Cape, 7550, South Africa。"
+      },
+      "seven": {
+        "country": "瓦努阿图",
+        "entity": "GTC Global Trade Capital Co. Limited",
+        "description": "GTC Global Trade Capital Co. Limited 是一家全球金融经纪公司，在瓦努阿图共和国瓦努阿图金融服务委员会注册、监督和授权，公司许可证号：40354。注册地址：1/Floor, B&P House, Kumul Highway, Port Vila, Vanuatu。"
+      }
+    }
+  },
+  "demoAccount": {
+    "accountForm": {
+      "demoHeading": "申请模拟账户",
+      "firstName": "全名",
+      "lastName": "姓氏",
+      "email": "电子邮件地址",
+      "phone": "电话号码",
+      "dob": "出生日期",
+      "platform": "首选交易平台",
+      "selectPlaceholder": "请选择选项",
+      "country": "居住国家",
+      "termOfService": "服务条款",
+      "termText": "点击“提交”，即确认：(1) 我已阅读并同意",
+      "termText2": "客户协议；",
+      "termText3": "(2) 我同意 GTCFX 在合理时间联系我；(3) 我的号码不在谢绝来电登记簿上。",
+      "submit": "提交",
+      "sending": "发送中...",
+      "error": {
+        "firstName": "全名是必填项",
+        "lastName": "姓氏是必填项",
+        "email": "电子邮件地址是必填项",
+        "account_no": "账号是必填项",
+        "phone": "电话号码是必填项",
+        "dob": "出生日期是必填项",
+        "platform": "平台是必填项",
+        "country": "国家是必填项",
+        "termOfService": "请接受条款和条件",
+        "otpRequired": "验证码是必填项"
+      },
+      "minLimit": "至少3个字母",
+      "accountType": "选择账户",
+      "mt5Account": "MT5 模拟账户",
+      "getCode": "获取验证码",
+      "otpSend": "验证码已发送到给定的电子邮件",
+      "otpSendPhone": "验证码已发送到给定的电话号码",
+      "otpSuccess": "验证码验证成功！",
+      "otpFail": "验证码验证失败！",
+      "sent": "成功！请检查您的电子邮件",
+      "sentPhone": "成功！请检查您的 WhatsApp",
+      "error1": "发送验证码失败，请重试。",
+      "invalidEmail": "电子邮件地址无效，请使用有效的电子邮件。",
+      "verified": "验证码已验证！",
+      "wrong": "验证码错误，请重试。",
+      "enterOtp": "请输入验证码。",
+      "verifyOTP": "验证"
+    },
+    "eyebrow": "免费模拟账户",
+    "titleStart": "更智能的交易，而非更冒险",
+    "titleHighlight": "立即开设免费模拟账户",
+    "titleEnd": "",
+    "bannerDescription": "使用 GTCFX 高级交易平台掌握市场",
+    "description": "在安全、无风险的环境中探索 GTCFX MT5 和 WebTrader 平台。使用实时市场数据练习交易，在零财务风险下磨练您的策略。",
+    "ctaButton": "开设模拟账户",
+    "formHeader": "申请模拟账户",
+    "benefits": {
+      "one": {
+        "title": "真实市场数据",
+        "desc": "在实时市场条件下进行练习"
+      },
+      "two": {
+        "title": "零风险交易",
+        "desc": "没有任何财务风险地进行交易"
+      },
+      "three": {
+        "title": "即时设置",
+        "desc": "几秒钟内开始，无需等待"
+      },
+      "four": {
+        "title": "MT4 和 MT5 访问",
+        "desc": "使用行业领先的交易平台"
+      }
+    }
+  },
+  "depositPage": {
+    "bannerTitle": "存入资金",
+    "bannerDescription": "以您自己的轻松和舒适方式为账户注资",
+    "hero": {
+      "eyebrow": "为账户注资",
+      "titleStart": "存入资金",
+      "titleHighlight": "快速且安全",
+      "description": "使用多种安全支付方式为您的账户注资。享受快速处理、全球可访问性和无缝交易体验。",
+      "cta": "开设真实账户"
+    },
+    "methods": {
+      "titleStart": "多种",
+      "titleHighlight": "支付方式",
+      "titleEnd": "进行注资",
+      "description": "选择您偏好的注资方式，立即开始交易。",
+      "items": {
+        "one": {
+          "title": "在线支付",
+          "desc": "基于您所在地区的安全在线支付渠道。"
+        },
+        "two": {
+          "title": "电子钱包支付",
+          "desc": "Apple Pay、Google Pay、Skrill、Neteller 等。"
+        },
+        "three": {
+          "title": "银行转账",
+          "desc": "向我们的全球银行合作伙伴进行可靠的电汇。"
+        }
+      }
+    },
+    "steps": {
+      "title": "如何为账户注资",
+      "items": {
+        "one": {
+          "title": "登录",
+          "desc": "安全访问您的客户门户。"
+        },
+        "two": {
+          "title": "存入",
+          "desc": "点击钱包或存款部分。"
+        },
+        "three": {
+          "title": "选择方式",
+          "desc": "选择您偏好的支付选项。"
+        }
+      }
+    }
+  },
+  "eventPage": {
+    "hero": {
+      "titleStart": "为",
+      "titleHighlight": "塑造市场的人们",
+      "titleEnd": "而设的聚会点",
+      "line1": "这不仅仅是一场活动。",
+      "line2": "这是一个领导者们相互联系、思想变得更强大、行业未来共同前进的地方。",
+      "comingSoon": "新的活动和展览即将推出...",
+      "countdown": {
+        "days": "天",
+        "hours": "小时",
+        "min": "分",
+        "sec": "秒"
+      }
+    },
+    "benefits": {
+      "label": "主要优势",
+      "titleStart": "是什么让 GTCFX 活动",
+      "titleEnd": "与众不同？",
+      "description": "每一次 GTCFX 活动都是经过精心设计的。不是为了表面的惊艳，而是为了传递真正的价值、真正的对话和真正的行业洞察。",
+      "item1": {
+        "title": "真正的市场声音，而不仅仅是演讲者",
+        "desc": "我们的会议环节由每天在市场中工作的专业人士——交易员、合作伙伴和行业领袖——带领，他们凭借经验而非幻灯片发言。"
+      },
+      "item2": {
+        "title": "您可以实际使用的实用见解",
+        "desc": "从市场结构到策略思考，讨论聚焦于您可以带回、反思并应用的想法——无论您是在交易、管理团队还是发展业务。"
+      },
+      "callTitle": "立即致电！",
+      "callNumber": "+971 800 667788"
+    },
+    "eventSchedule": {
+      "label": "我们的活动日程",
+      "title": "探索完整日程",
+      "description": "我们的活动",
+      "noSchedule": "{year} 年尚未添加日程。"
+    },
+    "speakers": {
+      "label": "我们的演讲者",
+      "titleStart": "我们的专家之声",
+      "titleHighlight": "塑造",
+      "titleEnd": "全球市场",
+      "description": "每一场 GTCFX 活动都由在市场核心工作的专业人士主导。不是评论员，不是理论家，而是理解价格、流动性、风险和真实交易决策的人。",
+      "bottomNote": "加入我们的演讲者行列，共同在全球编织创新、质量和成功。",
+      "cards": {
+        "one": {
+          "name": "Jameel Ahmad",
+          "role": "首席分析师"
+        },
+        "two": {
+          "name": "Mohamed Daher Ali Ahmed",
+          "role": "流动性与合作高级副总裁"
+        },
+        "three": {
+          "name": "Ahmed Fouad",
+          "role": "机构销售主管"
+        }
+      }
+    }
+  },
+  "glossaryPage": {
+    "bannerTitle": "术语表与常见问题",
+    "bannerDescription": "探索关键交易术语，并找到关于 GTCFX 产品、服务和交易条件的常见问题解答。",
+    "browseByLetter": "按字母浏览",
+    "noTerms": "此字母暂无术语表条目。"
+  },
+  "tutorialPage": {
+    "bannerTitle": "教学视频",
+    "bannerDescription": "浏览我们易于跟随的视频指南，获得您需要的帮助，以更自信地进行交易。",
+    "eyebrow": "视频教程",
+    "titleStart": "GTCFX",
+    "titleHighlight": "教学视频",
+    "description": "通过清晰的分步视频指南，学习如何开设账户、验证个人资料、存入资金以及管理您的交易之旅。",
+    "closeVideoPopup": "关闭视频弹窗",
+    "invalidYoutubeUrl": "YouTube 链接无效，请检查视频 URL。",
+    "videos": {
+      "one": {
+        "title": "如何在 GTCFX 门户中开设账户",
+        "description": "按照分步流程快速轻松地创建您的真实交易账户。",
+        "category": "账户设置",
+        "duration": "2 分钟",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_1"
+      },
+      "two": {
+        "title": "如何验证您的 GTCFX 账户",
+        "description": "学习如何顺利完成账户验证并避免常见错误。",
+        "category": "验证",
+        "duration": "3 分钟",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_2"
+      },
+      "three": {
+        "title": "如何向您的账户存入资金",
+        "description": "了解存款流程，并查看如何通过可用方式为账户注资。",
+        "category": "注资",
+        "duration": "2 分钟",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_3"
+      },
+      "four": {
+        "title": "如何在 GTCFX 门户中开设账户",
+        "description": "按照分步流程快速轻松地创建您的真实交易账户。",
+        "category": "账户设置",
+        "duration": "2 分钟",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_4"
+      },
+      "five": {
+        "title": "如何验证您的 GTCFX 账户",
+        "description": "学习如何顺利完成账户验证并避免常见错误。",
+        "category": "验证",
+        "duration": "3 分钟",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_5"
+      },
+      "six": {
+        "title": "如何向您的账户存入资金",
+        "description": "了解存款流程，并查看如何通过可用方式为账户注资。",
+        "category": "注资",
+        "duration": "2 分钟",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_6"
+      },
+      "seven": {
+        "title": "如何向您的账户存入资金",
+        "description": "了解存款流程，并查看如何通过可用方式为账户注资。",
+        "category": "注资",
+        "duration": "2 分钟",
+        "youtubeUrl": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID_7"
+      }
+    }
+  },
+  "accountType": {
+    "bannerTitle": "账户类型",
+    "bannerDescription": "以您自己的轻松和舒适方式为账户注资",
+    "eyebrow": "账户类型",
+    "titleStart": "比较我们的",
+    "titleHighlight": "交易账户",
+    "description": "开设真实账户，以具有竞争力的点差交易我们的金融产品，释放盈利潜力。比较我们的账户类型，选择最符合您交易风格的选项。",
+    "cards": {
+      "standard": {
+        "title": "标准账户",
+        "subtitle": "一种灵活的账户，旨在提供便捷的市场准入、有竞争力的点差和免佣金交易。"
+      },
+      "ecn": {
+        "title": "ECN 账户",
+        "subtitle": "为原始点差、直接市场访问和高级交易支持而构建的高级账户。"
+      }
+    },
+    "comparison": {
+      "minimumDeposit": {
+        "label": "最低入金",
+        "standard": "无最低入金",
+        "ecn": "最低入金 $3,000"
+      },
+      "leverage": {
+        "label": "杠杆",
+        "standard": "最高 1:2000 ***",
+        "ecn": "最高 1:500 ***"
+      },
+      "spreads": {
+        "label": "点差",
+        "standard": "平均点差 1.0 点",
+        "ecn": "原始点差 0.0 点"
+      },
+      "commission": {
+        "label": "佣金",
+        "standard": "0 佣金",
+        "ecn": "佣金 $5 / 标准手"
+      },
+      "execution": {
+        "label": "执行",
+        "standard": "安全、即时且快速的执行",
+        "ecn": "安全、即时且快速的执行"
+      },
+      "bankAccess": {
+        "label": "银行通道",
+        "standard": "直接接入顶级银行",
+        "ecn": "直接接入顶级银行"
+      },
+      "markets": {
+        "label": "市场",
+        "standard": "可访问 7 个市场，超过 27,000 种交易工具",
+        "ecn": "可访问 7 个市场，超过 27,000 种交易工具"
+      },
+      "tradingRestrictions": {
+        "label": "交易限制",
+        "standard": "无交易限制",
+        "ecn": "无交易限制"
+      },
+      "priceSlippage": {
+        "label": "价格滑点",
+        "standard": "无价格滑点*",
+        "ecn": "无价格滑点*"
+      },
+      "requotes": {
+        "label": "重新报价",
+        "standard": "无重新报价",
+        "ecn": "无重新报价"
+      },
+      "rejections": {
+        "label": "拒绝",
+        "standard": "无拒绝",
+        "ecn": "无拒绝"
+      },
+      "tradingPlatform": {
+        "label": "交易平台",
+        "standard": "Meta Trader (MT) 交易平台",
+        "ecn": "Meta Trader (MT) 交易平台"
+      },
+      "advancedAccess": {
+        "label": "高级访问",
+        "standard": "支持 MAM、PAMM、API",
+        "ecn": "支持 MAM、PAMM、API"
+      },
+      "protection": {
+        "label": "保护",
+        "standard": "负余额保护",
+        "ecn": "负余额保护"
+      }
+    },
+    "benefits": {
+      "standard": {
+        "title": "标准账户优势",
+        "one": "为灵活入金设计，无最低入金要求",
+        "two": "结构简单，零佣金",
+        "three": "适合寻求便捷市场准入的交易者"
+      },
+      "ecn": {
+        "title": "ECN 专属优势",
+        "one": "提供一级流动性及 ECN 技术",
+        "two": "市场分析",
+        "three": "免费高级交易工具和信号",
+        "four": "专属客户经理"
+      }
+    },
+    "cta": {
+      "openStandard": "开设标准账户",
+      "openEcn": "开设 ECN 账户"
+    },
+    "notes": {
+      "one": "* 在低波动性和高流动性的市场以及正常市场波动流动性条件下交易。",
+      "two": "** 账户余额超过 $50,000",
+      "three": "*** 以上仅适用于 GTC Global Ltd.（FSCM）和 GTC Global Trade Capital Co.（VFSC）的客户。"
+    }
+  },
+  "earningsPage": {
+    "bannerTitle": "财报与股息日历",
+    "bannerPara": "我们的财报与股息日历展示了您可在 GTC 交易的所有股票和指数差价合约的最新财报发布时间及股息日期。我们也建议您在交易股票和指数前先查看该日历。",
+    "bannerDatePrefix": "除息日：",
+    "howToCalculateHeading": "如何计算股息",
+    "howToCalculateTitle1": "持有多头仓位时获得的股息：",
+    "howToCalculatePara1": "股息收益 = 成分股股息（每份指数合约）× 合约规模 × 手数 × 货币转换系数 × 账户货币转换系数",
+    "howToCalculateTitle2": "持有空头仓位时扣除的股息：",
+    "howToCalculatePara2": "股息费用 = 成分股股息（每份指数合约）× 合约规模 × 手数 × 货币转换系数 × 账户货币转换系数",
+    "noData": "当前暂无财报数据。"
+  },
+  "earningsMarginPanel": {
+    "howStockEarning": {
+      "title": "股票与指数财报及股息如何影响您的保证金",
+      "desc": "我们准备了一份简要指南来解释该日历。它将帮助您了解企业事件何时发生、我们如何调整保证金，以及这些变化为何对您的账户至关重要。",
+      "item1": {
+        "heading": "1）为何标注财报与股息",
+        "para1": "流动性提供商通常会在财报或股息周期内对指数及保证金进行标注，以降低风险敞口。因此我们会在日历中列出这些日期。被标注的产品表示这些事件可能影响其波动性。"
+      },
+      "item2": {
+        "heading": "2）理解保证金分层",
+        "para1": "控制风险！通过不同层级查看保证金要求，以便更合理地匹配您的持仓规模。"
+      },
+      "item3": {
+        "heading": "3）股票财报示例",
+        "para1": "让我们来看一个基于苹果公司最新财报的简单示例：",
+        "list1": "产品：AAPL",
+        "list2": "股价：182.40 美元",
+        "list3": "预期每股收益：2.84 美元",
+        "list4": "实际每股收益：2.90 美元",
+        "para2": "如果实际数据高于预期，市场可能上涨；若低于预期，则可能带来下行风险。"
+      },
+      "item4": {
+        "heading": "4）指数股息调整示例",
+        "para1": "以下是基于 CHN50 的股息调整示例：",
+        "list1": "产品：CHN50",
+        "list2": "股息：1.50",
+        "list3": "持有 1 手多头仓位",
+        "list4": "1.50 × 50 = 75 美元",
+        "list5": "盈亏入账：75.00 美元"
+      },
+      "item5": {
+        "heading": "5）股息现金调整",
+        "para1": "当产品进入除息时，将根据持仓情况进行调整：",
+        "list": {
+          "one": "若持有多头仓位（并在除息日持仓）——股息将计入账户。",
+          "two": "若为空头或在除息日前平仓——股息将从账户中扣除。"
+        }
+      },
+      "item6": {
+        "heading": "6）您的责任",
+        "para1": "在高波动期间，新的保证金要求可能导致可用保证金不足。请确保您的账户有足够资金来维持仓位，或提前调整交易策略。"
+      },
+      "item7": {
+        "heading": "7）注意日期与时间",
+        "para1": "点差和时间为参考值。有时一个事件可能影响多个产品。请提前做好风险管理，确保保证金充足。",
+        "para2": "合理交易，确保资金安全。"
+      }
+    },
+    "btnText": "推荐您的交易者"
+  },
+  "earningsFaq": {
+    "heading": "常见问题解答",
+    "question1": "什么会影响财报日期前后的股票和指数差价合约？",
+    "answer1": "收益发布可能会增加相关差价合约的波动性、点差变化和保证金要求。",
+    "question2": "差价合约交易中的除息日是哪一天？",
+    "answer2": "这是根据您的未平仓头寸方向进行股息调整的日期。",
+    "question3": "多头头寸和空头头寸的待遇是否不同？",
+    "answer3": "是的。多头头寸通常记入贷方，而空头头寸通常因股息调整而收取费用。",
+    "question4": "为什么我应该在交易前查看收益日历？",
+    "answer4": "它可以帮助您规划风险敞口、避免意外情况并为潜在的保证金和波动性变化做好准备。",
+    "question5": "一个事件会影响多个仪器吗？",
+    "answer5": "是的。单个公司事件可能会影响多个相关指数或股票差价合约。",
+    "question6": "如何在高利润时期降低风险？",
+    "answer6": "使用较小的头寸规模，监控可用保证金，并在重大事件发生之前保持风险缓冲。",
+    "question7": "如果我不确定，我可以在哪里获得帮助？",
+    "answer7": "在收盘前联系支持人员，获取有关工具详细信息和保证金影响的指导。"
+  },
+  "dynamicLeverage": {
+    "lervageHero": {
+      "title": "动态杠杆",
+      "description": "GTCFX 利用跨各种金融工具的动态杠杆模型，包括主要外汇、次要外汇、金属、指数、商品、股票/股票、能源和数字货币资产，帮助您最大限度地发挥交易潜力。"
+    },
+    "whatLervage": {
+      "title": "什么是动态杠杆？",
+      "description": "GTCFX 的动态杠杆会根据您的交易头寸自动调整。该模型适用于每种工具，这意味着您的杠杆率会随着交易量的增加而减少。这种方法使您能够优化您的交易潜力。",
+      "boostTrades": "促进您的交易",
+      "leverage": "高达 1:2000 的杠杆",
+      "leverageDescription": "无论您的交易资本有多大，我们都会通过提供高达 1:2000 的动态杠杆来提高您的投资能力。",
+      "leverageDetails": {
+        "one": "外汇货币高达 1:2000",
+        "two": "金属高达 1:2000",
+        "three": "大宗商品和能源高达 1:400",
+        "four": "数字货币资产货币差价合约高达 1:250",
+        "five": "指数高达 1:125",
+        "six": "高达 1:20 股票/股"
+      },
+      "scaleTrades": "扩大您的交易规模",
+      "dynamicLeverageTiers": "动态杠杆等级",
+      "tiersDescription": "这些动态杠杆级别确保您能够灵活地扩大交易规模，同时控制风险敞口。",
+      "example": "例子",
+      "exampleDetails": {
+        "one": "如果您交易 EURUSD 最多 5 手，GBPUSD 交易最多 5 手，则两个头寸的杠杆率都将保持 1:2000。",
+        "two": "但是，如果您在 EURUSD 上交易 4 手以上，前 5 手的杠杆将为 1:2000，而接下来的 4 手将以 1:1000 的杠杆计算。"
+      },
+      "disclaimer": "这适用于根据上述动态杠杆级别的所有其他交易工具"
+    },
+    "popUp": {
+      "leveragePopTitle": "引入动态杠杆",
+      "description": "自 2024 年 9 月 9 日起，GTCFX 将在多种金融工具中实施动态杠杆模型，包括主要外汇、次要外汇、金属、指数、大宗商品、股票/股票、能源和数字货币资产货币。请注意，从 2024 年 9 月 9 日起执行的所有交易都将受此更新的杠杆结构的约束。",
+      "agreedButton": "同意"
+    },
+    "tieredLeverage": {
+      "heading": "有关分级保证金/杠杆的常见问题解答",
+      "one": {
+        "ques": "分级杠杆如何运作？",
+        "ans": "分级杠杆会随着交易规模的增加而降低杠杆比率。例如，小仓位的杠杆可能为 1:500，但随着仓位规模的增长，杠杆可能会降至 1:200、1:100，甚至更低，需要更多保证金来维持交易。"
+      },
+      "two": {
+        "ques": "分级杠杆会影响我的交易策略吗？",
+        "ans": "如果您交易大额头寸，由于分级杠杆而增加的保证金要求可能会限制您开立额外头寸的能力或迫使您平仓现有头寸。"
+      },
+      "three": {
+        "ques": "所有资产的分级杠杆都相同吗？",
+        "ans": "不可以，不同资产类别的分级杠杆可能有所不同。例如，外汇货币对的杠杆率可能高于商品或指数的杠杆率。"
+      },
+      "four": {
+        "ques": "如果我因分级杠杆而无法满足保证金要求，会发生什么情况？",
+        "ans": "如果您无法满足保证金要求，您将需要向您的账户添加更多资金，以便您能够进行更大的交易量。"
+      },
+      "five": {
+        "ques": "分级杠杆会自动应用吗？",
+        "ans": "是的，分级杠杆通常由交易平台根据您的头寸规模自动应用。"
+      },
+      "six": {
+        "ques": "如何计算分级杠杆所需的保证金？",
+        "ans": "您可以通过查看您的交易平台提供的保证金计算器来计算所需的保证金。"
+      }
+    },
+    "highMarginRequirement": {
+      "heading": "常见问题解答 – 高保证金要求 (HMR)",
+      "one": {
+        "ques": "什么是高保证金要求 (HMR)？",
+        "paragraphs": {
+          "one": "HMR 是在每日展期和重大经济公告等市场风险较高期间临时增加开立新交易所需的保证金。",
+          "two": "这是一种保护性风险管理机制。"
+        }
+      },
+      "two": {
+        "ques": "即使价格没有变动，为什么我的保证金水平也会下降？",
+        "paragraphs": {
+          "one": "在 HMR 期间，每个头寸所需的保证金会增加。",
+          "two": "由于保证金增加而净值保持不变，因此即使市场价格没有变化，您的保证金水平 (%) 也会下降。"
+        }
+      },
+      "three": {
+        "ques": "我的交易会因为 HMR 而被关闭吗？",
+        "paragraphs": {
+          "one": "HMR 本身并不关闭交易。",
+          "two": "但如果由于临时增加保证金导致保证金水平下降至平台爆仓水平，交易平台将按照正常交易规则自动平仓。"
+        }
+      },
+      "four": {
+        "ques": "现有交易是否受到影响？",
+        "paragraphs": {
+          "one": "您的交易价格、止损和止盈保持不变。",
+          "two": "然而，维持仓位所需的保证金可能会暂时增加，这会减少可用保证金。"
+        }
+      },
+      "five": {
+        "ques": "HMR 会扩大利差吗？",
+        "paragraphs": {
+          "one": "不。",
+          "two": "点差变化是由市场流动性和流动性提供者的定价引起的，而不是由 HMR 引起的。",
+          "three": "HMR 仅更改保证金要求。"
+        }
+      },
+      "six": {
+        "ques": "HMR 是否适用于所有工具？",
+        "paragraphs": {
+          "one": "HMR主要影响以下工具："
+        },
+        "list": {
+          "one": "外汇对",
+          "two": "黄金和白银",
+          "three": "指数",
+          "four": "能源产品",
+          "five": "差价合约"
+        },
+        "note": "根据波动性，某些工具在新闻发布期间可能会受到更强的影响。"
+      },
+      "seven": {
+        "ques": "为什么黄金受到的影响最大？",
+        "paragraphs": {
+          "one": "黄金对以下因素反应强烈："
+        },
+        "list": {
+          "one": "通胀数据（CPI）",
+          "two": "就业数据（非农就业数据）",
+          "three": "利率预期"
+        },
+        "note": "由于价格变动可能非常快，因此采用了额外的保证金保护。"
+      },
+      "eight": {
+        "ques": "HMR 能持续多久？",
+        "paragraphs": {
+          "one": "HMR 通常持续以下时期："
+        },
+        "list": {
+          "one": "每日滚动：约 45 分钟",
+          "two": "重大经济新闻：围绕发布窗口"
+        },
+        "note": "持续时间可能会根据市场流动性而有所不同。"
+      },
+      "nine": {
+        "ques": "我可以避免 HMR 吗？",
+        "paragraphs": {
+          "one": "是的。您可以通过以下方式避免 HMR 效应："
+        },
+        "list": {
+          "one": "在展期窗口期间不开设新仓位",
+          "two": "保持足够的可用保证金",
+          "three": "在重大新闻事件发生前降低杠杆"
+        }
+      },
+      "ten": {
+        "ques": "这种情况在行业内常见吗？",
+        "paragraphs": {
+          "one": "是的。",
+          "two": "在高波动时期临时增加保证金是专业交易环境和流动性提供商使用的标准风险控制做法。"
+        }
+      },
+      "eleven": {
+        "ques": "为什么没有单独通知我？",
+        "paragraphs": {
+          "one": "HMR 是一种由系统控制、基于市场状况的机制，同时应用于所有账户。",
+          "two": "由于激活取决于实时市场风险状况，因此并不总是能够发出单独通知。"
+        }
+      }
+    },
+    "dynamicLeverageDetailsTitle": "动态杠杆详情",
+    "dynamicLeverageDetailsDescription": "GTCFX 的动态杠杆会根据您的交易头寸自动调整。该模型适用于每种工具，这意味着您的杠杆率会随着交易量的增加而减少。这种方法使您能够优化您的交易潜力。",
+    "update": {
+      "title": "固定杠杆表",
+      "intro": "以下固定杠杆规则适用于特定市场条件下的所有交易：",
+      "weekend": {
+        "title": "周末过渡期",
+        "beforeFridayClose": "周五收盘前（3 小时）",
+        "afterMondayOpen": "周一开市后（1小时）",
+        "china": "中国（格林威治标准时间+8）",
+        "server": "服务器（GMT+3）",
+        "uae": "阿联酋（格林威治标准时间+4）",
+        "cutoff": "XAUUSD 截止"
+      },
+      "economic": {
+        "title": "经济新闻事件",
+        "list": [
+          "15 minutes before high-impact news releases",
+          "5 minutes after news releases",
+          "During periods of expected extreme volatility"
+        ]
+      },
+      "legend": {
+        "china": "中国（格林威治标准时间+8）",
+        "server": "服务器（GMT+3）",
+        "uae": "阿联酋（格林威治标准时间+4）"
+      },
+      "important": {
+        "title": "重要提示",
+        "list": [
+          "Margin calculations remain fixed after the period ends",
+          "Existing positions are not affected",
+          "Applies to all instruments and account types"
+        ]
+      },
+      "times": {
+        "friday": {
+          "china": "02:00",
+          "server": "21:00",
+          "uae": "22:00"
+        },
+        "monday": {
+          "china": ["06:00", "07:00"],
+          "server": ["01:00", "02:00"],
+          "uae": ["02:00", "03:00"]
+        }
+      },
+      "hmrBox": {
+        "title": "人力资源管理：",
+        "list": {
+          "one": "不修改交易入场价格",
+          "two": "本身不会扩大点差",
+          "three": "不手动平仓交易",
+          "four": "不影响 HMR 期之前开仓的头寸"
+        },
+        "paragraphs": {
+          "one": "然而，由于保证金要求暂时增加，您的保证金水平 (%) 可能会下降。",
+          "two": "如果您的保证金水平达到强制平仓水平，平台将根据正常平台风险规则自动平仓。"
+        },
+        "highlight": "HMR 期结束后，保证金要求自动恢复正常。"
+      },
+      "rollover": {
+        "title": "每日夜间展期",
+        "schedule": {
+          "label": "每个交易日：",
+          "time": "23:30 – 00:15",
+          "timezone": "服务器时间",
+          "days": "从周一晚上到周五晚上"
+        },
+        "points": {
+          "one": "在这段较短的时间窗口内，杠杆会自动降低。",
+          "two": "较低的杠杆意味着需要更多的保证金才能持有相同的交易规模。"
+        }
+      },
+      "hmrNotice": {
+        "title": "高保证金要求 (HMR) 通知",
+        "paragraphs": {
+          "one": "在特定的市场风险时期（每日展期和重大经济公告），平台会暂时提高开立新交易所需的保证金。"
+        }
+      }
+    }
+  },
+  "primeTech": {
+    "liquidityTechnologyPage": {
+      "metaData": {
+        "title": "GTC 总理 |一流的流动性 |交易|全球贸易社区的风险解决方案",
+        "des": "GTC Prime 拥有先进的基础设施和全面的专业知识，提供来自具有 DMA 执行功能的一级银行的定制定价。"
+      },
+      "banner": {
+        "title": "流动性|连接性|风险解决方案",
+        "subTitle": "进入 8 个资产市场，拥有超过 27,000 种交易工具",
+        "liveAccount": "开设真实账户"
+      },
+      "whoServe": {
+        "heading": "我们为谁服务",
+        "desc": "GTC Prime 拥有先进的基础设施和全面的专业知识，提供来自具有 DMA 执行功能的一级银行的定制定价。我们的服务完全有能力管理客户的交易需求和期望。",
+        "broker": {
+          "title": "经纪人",
+          "desc": "GTC Prime 提供灵活、定制的端到端经纪商解决方案，符合您的风险策略。我们的解决方案经过设计并与流动性/优质以及先进的风险管理和分析相集成，以满足客户的高质量标准。我们使用 STP/ECN 模式的客户可享受显着改善的点差和更低的费用。"
+        },
+        "hedge": {
+          "title": "Hegde 基金与资产",
+          "desc": "我们的工具为我们的客户全面创造了一流的性能体验。凭借多种资产类别的多元化投资组合、一级银行流动性和无与伦比的支持服务，我们的客户与 GTC prime 建立了可靠且值得信赖的关系，使他们能够提供安全、可靠和优化的定价。"
+        },
+        "professional": {
+          "title": "专业客户",
+          "desc": "借助 GTC Prime，您可以通过单一平台体验高效交易、由具有竞争力的利润率和有吸引力的佣金支持的机构定价以及独立的资金账户。我们的解决方案和服务通过完美满足您需求的定制解决方案帮助推动您的产品组合向前发展。"
+        },
+        "view_more": "点击查看更多"
+      },
+      "offerTitle": {
+        "heading": "我们提供什么",
+        "liquidity": {
+          "title": "流动性",
+          "desc": "在 GTC Prime，我们提供可定制的流动性解决方案，以满足您的特定需求和目标。我们的技术驱动方法使我们能够为世界各地的客户提供服务，包括对冲基金、经纪商、交易所和其他专业客户。"
+        },
+        "connectivity": {
+          "title": "连接性",
+          "desc": "连接性是成功交易的基本要素。在 GTC Prime，我们提供可靠、快速的连接解决方​​案，将我们的客户与世界金融市场连接起来。我们了解交易中速度和低延迟的重要性，这就是我们与领先技术提供商合作提供尖端连接解决方​​案的原因。"
+        },
+        "risk": {
+          "title": "风险管理",
+          "desc": "欢迎来到 GTC Prime 的风险管理页面，GTC Prime 是一家领先的流动性提供商公司，提供全面的解决方案，帮助经纪商、对冲基金、资产管理公司、专业交易员和私人交易柜台管理风险并保护投资。"
+        }
+      },
+      "Chooseliquidity": {
+        "title": "为什么选择 GTCFX 流动性和技术",
+        "option1": {
+          "title": "值得信赖的合作伙伴",
+          "desc": "我们是一家受监管的流动性提供商，拥有一支经验丰富的专业团队。"
+        },
+        "option2": {
+          "title": "有竞争力的定价",
+          "desc": "得益于我们的专有解决方案，我们可以提供较低的佣金和低至 1000 美元的最低月费。"
+        },
+        "option3": {
+          "title": "低延迟执行",
+          "desc": "我们将服务器托管在靠近流动性来源的地方，以最大限度地减少执行延迟。"
+        },
+        "option4": {
+          "title": "深度流动性",
+          "desc": "利用我们所有多资产工具的深度流动性。高达 10 个级别的市场深度。"
+        },
+        "option5": {
+          "title": "内部技术",
+          "desc": "基于高素质专家团队开发的先进技术，提供强大且可扩展的解决方案。"
+        },
+        "option6": {
+          "title": "全面的解决方案",
+          "desc": "我们就像一站式商店，为客户提供根据他们的需求量身定制的产品包。"
+        }
+      },
+      "counter": {
+        "option1": "服务过的客户",
+        "option2": "介绍经纪人",
+        "option3": "实收资本",
+        "option4": "每日交易",
+        "billion": "十亿",
+        "million": "百万"
+      }
+    },
+    "directAccess": {
+      "heading": "直接接触顶级流动性提供商",
+      "desc": "GTCFX 是值得信赖的流动性提供商，让您能够访问易于使用的外汇流动性平台。借助我们的流动性解决方案，您可以以低成本、快速执行的方式进行高效交易。您可以信赖我们透明且可靠的服务，确保您的交易保持私密性。凭借我们最先进的技术和敬业的团队，我们为您的流动性交易业务提供支持。",
+      "point1": "低点差和佣金",
+      "point2": "超快速执行",
+      "point3": "高达 10 个级别的市场深度",
+      "point4": "快速集成",
+      "point5": "超快速价格反馈",
+      "point6": "快速入职流程",
+      "lpLabel": "释放盈利机会",
+      "lpLabel1": "您最好的投资之旅从我们开始",
+      "butttonLp": "申请流动性服务"
+    },
+    "pamm": {
+      "banner": {
+        "title": "PAMM",
+        "des1": "PAMM（百分比分配管理模块）账户是外汇交易领域流行的投资工具。它是管理账户的一种特殊形式，允许个人投资者将资金分配给专业交易员或资金经理，然后由专业交易员或资金经理代表他们进行交易。 PAMM 账户结构旨在为投资者和资金管理者提供多种好处，使其成为外汇市场上的常见选择。",
+        "des2": "在PAMM账户中，多个投资者的资金汇集在一起​​，由熟练的资金经理或交易员负责代表所有参与者执行交易。这些交易的利润和损失按照投资者的个人投资比例分配。这意味着，如果资金经理产生利润，每个投资者都会根据他们对整个账户的贡献获得一定比例的利润。同样，损失也按比例分担。"
+      },
+      "CallAction": {
+        "first": "我们提供高水平的透明度",
+        "sec": "MT4/MT5 MAM 账户",
+        "liveAccount": "开设真实账户"
+      },
+      "faq": {
+        "faqHeading": "常见问题解答",
+        "accordionData": {
+          "title": "PAMM账户",
+          "para": {
+            "one": "PAMM 账户结构为投资者提供了多项优势。它使他们能够获得专业交易者的专业知识，而无需丰富的外汇交易知识或经验。此外，PAMM 账户具有高度的透明度，因为投资者可以实时监控资金经理的表现和账户的交易活动。这种透明度可以帮助投资者就将资金分配到何处做出明智的决定。",
+            "onea": "对于资金管理者来说，PAMM 账户提供了吸引投资者资金并根据其交易成功赚取业绩费的机会。这会激励管理者表现出色并为客户创造利润。",
+            "oneb": "总而言之，PAMM账户是一种将投资者和资金管理者聚集在一起的外汇交易工具，使投资者能够从经验丰富的交易者的专业知识中受益，同时为资金管理者提供增加资本的机会。这种共享投资和共享回报的概念使 PAMM 账户成为那些希望参与外汇市场但不主动进行交易的人的热门选择。",
+            "two": "在外汇交易中使用 PAMM 账户为投资者和资金管理者提供了多种优势。以下是使用 PAMM 账户的一些主要好处：",
+            "three": "专业管理：投资者可以获取专业资金经理或交易员的专业知识和交易技巧，而无需积极参与交易决策。这对于那些缺乏时间或知识来有效交易外汇的人尤其有利。",
+            "four": "多元化：PAMM 账户允许投资者在单个账户内的多个交易者或策略中实现投资多元化。这种多元化有助于分散风险并减少单个交易者表现不佳的影响。",
+            "five": "透明度：PAMM 账户提供高度的透明度。投资者可以实时监控资金经理的表现和交易活动。这种透明度有助于投资者就将资金分配到何处做出明智的决定。",
+            "six": "被动收入：PAMM 投资者可以从他们的投资中赚取被动收入，因为基金经理产生的利润根据参与者的个人贡献分配给参与者。这可以成为持续收入的来源，而无需进行活跃交易。",
+            "seven": "有限风险：PAMM 账户的结构允许投资者定义他们愿意分配给特定资金经理的资本金额。这意味着投资者可以限制风险敞口并控制潜在损失。",
+            "eight": "可访问性：PAMM 账户可供广泛的投资者使用，从资本有限的投资者到高净值个人。最低投资要求可能相对较低，使其可供更广泛的受众使用。",
+            "nine": "可扩展性：资金经理可以有效地管理多个 PAMM 账户，使他们能够扩大交易活动，并可能随着他们的业绩记录和业绩改善而增加收入。",
+            "ten": "绩效费：基金经理通常有动力表现良好，因为他们根据为客户产生的利润赚取基于百分比的绩效费。这使他们的利益与投资者的利益保持一致。",
+            "one1": "风险管理：资金经理通常在有效管理风险方面拥有既得利益，以保护自己的声誉并吸引更多投资者。他们经常采用风险管理技术来保护资本。",
+            "one2": "选择和灵活性：投资者可以灵活地选择各种资金管理机构和交易策略，从而选择符合其财务目标和风险承受能力的 PAMM 账户。",
+            "one3": "值得注意的是，虽然 PAMM 账户具有这些优势，但它们并非没有风险。",
+            "one4": "外汇交易具有固有风险，过去的表现并不代表未来的结果。因此，投资者进行彻底的尽职调查、仔细选择基金经理并只投资他们能够承受损失的资金至关重要。此外，在参与此类投资工具之前，了解特定 PAMM 账户的条款和条件以及相关费用至关重要。"
+          }
+        }
+      }
+    },
+    "mam": {
+      "banner": {
+        "title": "MAM",
+        "des1": "MAM（多账户管理器）账户是外汇交易领域的专业投资工具，旨在让专业交易者、资产管理者和个人投资者同时管理多个交易账户。它为经验丰富的交易者提供了一种代表多个客户高效执行交易的结构，使其成为外汇交易者的热门选择。"
+      },
+      "CallAction": {
+        "first": "与最稳定的贸易",
+        "sec": "MT5 MAM 账户",
+        "liveAccount": "注册真实账户"
+      },
+      "faq": {
+        "faqHeading": "常见问题解答",
+        "accordionData": {
+          "title": "MAM账户",
+          "para": {
+            "one": "在 MAM 账户中，主要交易者（通常称为资金经理或账户经理）管理一个持有多个投资者集体资金的交易账户。每个投资者在MAM结构内都有自己的子账户，资金经理做出的交易决策会根据每个客户的投资比例自动复制到这些子账户中。这意味着当资金经理执行交易时，它会同时在所有关联的子账户中执行。",
+            "onea": "MAM 账户结构为资金经理和投资者提供了多项优势：",
+            "oneb": "效率：资金经理可以执行在多个子账户之间自动复制的单笔交易，从而简化交易流程并减少管理每个客户投资所需的时间和精力。",
+            "two": "可扩展性：资金经理可以有效地处理大量客户账户，使其适合想要吸引广泛客户群的专业交易者。",
+            "three": "资产多元化：MAM 账户的投资者可以通过专业人士管理的多种交易和策略实现资本多元化，从而受益匪浅。这种多元化有助于分散风险。",
+            "four": "透明度：MAM 账户通常提供高透明度，允许投资者监控其各个子账户内的实时表现和交易活动。",
+            "five": "个人控制：投资者保留对其资金的个人控制，包括随时存入或提取资金、更改交易参数以及关闭子账户的能力。",
+            "six": "绩效费：基金经理通常根据为其客户产生的利润赚取基于百分比的绩效费，从而激励他们取得积极的成果。",
+            "seven": "风险管理：资金经理有动力有效地管理风险，因为绩效不佳可能导致客户撤回并对他们的声誉产生负面影响。",
+            "eight": "需要注意的是，MAM 账户并非没有风险，而外汇交易由于市场波动而存在固有风险。资金经理和投资者都应进行彻底的尽职调查，了解 MAM 账户的条款和条件，并了解相关费用和潜在风险。此外，虽然 MAM 账户适合专业交易者，但个人投资者在参与此类管理账户结构之前应仔细考虑其风险承受能力和投资目标。"
+          }
+        }
+      }
+    },
+    "vpsHosting": {
+      "hero": {
+        "heading": "根据您的需求量身定制的强大虚拟专用服务器",
+        "button": "开设真实账户",
+        "buttonHeading": "还没有帐户？",
+        "para": {
+          "yellow1": "在哪里",
+          "white": "性能、灵活性和可靠性",
+          "yellow2": "汇聚力量，助力您的交易！"
+        },
+        "vpsForm": {
+          "formTitle": "订阅",
+          "firstName": "名",
+          "lastName": "姓",
+          "email": "电子邮件",
+          "platform": "首选交易平台",
+          "account_no": "输入您的帐号",
+          "account": "帐号",
+          "package": "选择套餐",
+          "selectPlaceholder": "请选择一项",
+          "country": "居住国家",
+          "phone": "电话号码",
+          "termOfService": "服务条款",
+          "termText": "我了解向 GTCFX 提交信息可能会用于营销目的，以分享相关更新、邀请以及我们认为可能感兴趣的任何其他出版物",
+          "error": {
+            "minLimit": "至少2个字母",
+            "firstName": "名字为必填项",
+            "lastName": "姓氏为必填项",
+            "account_no": "帐号为必填项",
+            "email": "电子邮件地址为必填项",
+            "invalidEmail": "电子邮件地址无效",
+            "type": "请选择公司类型",
+            "phone": "电话号码为必填项",
+            "dob": "出生日期为必填项",
+            "platform": "需要平台",
+            "country": "国家/地区为必填项",
+            "termOfService": "请接受条款和条件"
+          }
+        }
+      },
+      "howToSubscribe": {
+        "titleWhite": "如何",
+        "titleColor": "订阅？",
+        "option1": "开设真实账户",
+        "option2": "填写注册请求",
+        "option3": "接收申请链接",
+        "option4": "开始吧！"
+      },
+      "understandingVps": {
+        "title": "了解 VPS 托管",
+        "para": "VPS 是一种远程托管服务，为 MT4、MT5 平台提供环境，以确保低延迟交易体验和可靠的正常运行时间，使其成为寻求快速执行的交易者的首选。对于需要 24/7 全天候访问、自动化和低延迟连接金融市场的交易者来说，这尤其有利。"
+      },
+      "GTCFXVpsSection": {
+        "titleColor": "GTCFX VPS",
+        "column1": {
+          "title": "定制",
+          "para": "为您独特的交易需求量身定制。"
+        },
+        "column2": {
+          "title": "速度极快",
+          "para": "快如闪电且可靠 |高达 75GB SSD - 6656MB RAM。"
+        },
+        "column3": {
+          "title": "多平台",
+          "para": "完全访问必需的 MT4 | MT5 功能。"
+        },
+        "column4": {
+          "title": "增强的功能",
+          "para": "包括外汇对、图表、指标和有价值的附加组件。"
+        }
+      },
+      "whyVpsHosting": {
+        "title": "为什么选择我们的 VPS 主机？",
+        "cards": {
+          "cardOneTitle": "无与伦比的性能",
+          "cardOnePara": "使用我们的高性能 VPS 服务器释放您的网站或应用程序的全部潜力。在尖端技术和优质硬件的支持下，我们确保闪电般的快速响应时间和无缝的用户体验。",
+          "cardTwoTitle": "快速外汇交易",
+          "cardTwoPara": "外汇市场需要快速执行。 Our VPS ensures rapid trading, covering essential pairs like GBP/USD, EUR/USD, USD/JPY, and AUD/USD.",
+          "cardThreeTitle": "完全控制",
+          "cardThreePara": "以完全 root 访问权限掌控您的服务器。自定义和配置您的 VPS 以满足您的特定需求，并可以自由安装对您最重要的软件和应用程序。",
+          "cardFourTitle": "可扩展性",
+          "cardFourPara": "随着您的业务增长，您的服务器也可以随之增长。我们的可扩展 VPS 解决方案允许您按需升级资源，确保您的托管永远不会阻碍您。",
+          "cardFiveTitle": "强大的安全性",
+          "cardFivePara": "知道您的数据是安全的，请放心。我们的 VPS 托管采用最先进的安全措施（包括防火墙和定期备份）进行强化，以保护您的宝贵信息。",
+          "cardSixTitle": "专家支持",
+          "cardSixPara": "我们的专业支持团队随时为您提供 24/7 的帮助。从设置到故障排除，我们随时准备确保您的 VPS 托管体验顺畅无忧。"
+        }
+      },
+      "vpsPricing": {
+        "title": "VPS 定价",
+        "para": "想了解我们的 VPS 服务的费用吗？我们已经为您提供了保障。",
+        "bronze": {
+          "title": "青铜",
+          "option1": "1 个虚拟CPU",
+          "option2": "2,560MB 内存",
+          "option3": "30GB SSD 存储",
+          "option4": "最低余额 5,000 美元免费",
+          "amount": "40.00 美元",
+          "month": "月",
+          "buttonText": "立即订阅",
+          "caption": "所有价格均需缴纳增值税"
+        },
+        "silver": {
+          "title": "银",
+          "option1": "1 个虚拟CPU",
+          "option2": "4,096MB 内存",
+          "option3": "50GB SSD 存储",
+          "option4": "最低余额达到 7,500 美元即可免费",
+          "amount": "$70.00",
+          "month": "月",
+          "buttonText": "立即订阅",
+          "caption": "所有价格均需缴纳增值税"
+        },
+        "gold": {
+          "title": "金子",
+          "option1": "4 个虚拟CPU",
+          "option2": "6,656MB 内存",
+          "option3": "75GB SSD 存储",
+          "option4": "最低余额 10,000 美元免费",
+          "amount": "$120.00",
+          "month": "月",
+          "buttonText": "立即订阅",
+          "caption": "所有价格均需缴纳增值税"
+        }
+      },
+      "elevateHosting": {
+        "title": "准备好提升您的托管了吗？",
+        "para": "借助我们的 VPS 托管服务，您可以将您的在线形象提升到一个新的水平。体验根据您的独特需求量身定制的虚拟专用服务器的强大功能。请立即联系我们以开始使用。",
+        "buttonText": "立即订阅"
+      },
+      "faqs": {
+        "title": "常见问题解答",
+        "question1": "我可以设置 MT4 |我的 Mac 上有 MT5 VPS？",
+        "answer1": "绝对地！您可以轻松获得您的MT4 | MT5 VPS 在您的 Mac 上启动并运行。注册和下载过程就像在 Windows PC 上一样简单。好消息是您现在可以下载标准 MT4 | Mac OS 上的 MT5 平台也是如此。了解有关使用 MT4 的更多信息 | Mac 上的 MT5，请查看我们的资源。",
+        "question2": "外汇 VPS 实际如何运作？",
+        "answer2": "外汇 VPS 为交易者提供专用且稳定的环境来托管其交易平台和算法。它具有 24/7 运行、与外汇服务器的低延迟连接、安全功能和可扩展性等优点，使其成为需要可靠且不间断地进入市场的严肃外汇交易者的宝贵工具。"
+      }
+    }
+  },
+  "companyNews": {
+    "bannerTitle": "公司新闻",
+    "bannerDescription": "GTCFX 新闻和市场动态 - 保持信息灵通，交易更明智",
+    "titlePrefix": "公司",
+    "titleHighlight": "消息",
+    "intro": "阅读 GTCFX 的最新公司新闻、市场动态和见解。每天保持消息灵通并做出自信的交易决策。",
+    "readMore": "阅读更多",
+    "emptyState": "目前没有公司新闻。",
+    "endMessage": "没有更多物品",
+    "loading": "加载中...",
+    "defaultCategory": "公司新闻",
+    "defaultExcerpt": "阅读我们团队的最新更新和公告。",
+    "untitled": "无标题文章",
+    "imageAlt": "新闻图片",
+    "defaultDate": "2026 年 3 月 26 日"
+  }
 }

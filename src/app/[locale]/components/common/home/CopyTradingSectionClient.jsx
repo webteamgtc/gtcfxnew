@@ -2,40 +2,54 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
 import Link from "next/link";
 import LeaderCardGridItem from "../leaderboard/LeaderCardGridItem";
+import { usePathTranslation } from "../../../LocaleProvider";
 
 export default function CopyTradingSectionClient({ initialData }) {
+  const t = usePathTranslation("home.copyTradingSection");
+
   const items = initialData?.items || [];
   const visibleItems = items.filter((s) => Number(s?.maxProfit) >= 50);
 
   if (!visibleItems.length) return null;
 
   return (
-    <section className="py-10 md:py-16 bg-[#F1F2F4]">
+    <section className="bg-[#F1F2F4] py-10 md:py-16">
       <div className="container">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="flex flex-col gap-4 items-start">
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          <div className="flex flex-col items-start gap-4">
             <h2 className="HeadingH2">
-              Copy Trading <span className="text-secondary">Made Simple</span>
+              {t("title.beforeHighlight")}
+              <span className="text-secondary">{t("title.highlight")}</span>
             </h2>
+
             <p className="Text max-w-3xl">
-              Follow top-performing traders and automatically copy their trades in real time. Choose who to follow, set your investment amount, and stay in control an easy way to trade without constant monitoring.
+              {t("description")}
             </p>
           </div>
 
           <div className="flex flex-row gap-3">
-            <Link href="https://gtccopy.com/portal/login?redirectUrl=%2F" target="_blank" className="rounded-xl hover:no-underline bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] hover:from-[#263788] hover:via-[#101638] hover:to-[#263788] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:opacity-90">
-              Explore Copy Trading
+            <Link
+              href={t("buttons.primary.href")}
+              target="_blank"
+              className="rounded-xl bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] px-3 py-2.5 text-[12px] font-medium text-white transition hover:from-[#263788] hover:via-[#101638] hover:to-[#263788] hover:no-underline hover:opacity-90 md:px-5 md:text-base"
+            >
+              {t("buttons.primary.label")}
             </Link>
-            <Link href="https://gtccopy.com/portal/login?redirectUrl=%2F" target="_blank" className="rounded-xl  hover:no-underline border border-[#8f8f8f] px-3 md:px-5 py-2.5 text-[12px] md:text-base font-medium text-white transition hover:bg-white bg-primary-gradient">
-              Review More Copy Trading
+
+            <Link
+              href={t("buttons.secondary.href")}
+              target="_blank"
+              className="rounded-xl border border-[#8f8f8f] bg-primary-gradient px-3 py-2.5 text-[12px] font-medium text-white transition hover:bg-white hover:no-underline md:px-5 md:text-base"
+            >
+              {t("buttons.secondary.label")}
             </Link>
           </div>
         </div>
+
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -92,4 +106,3 @@ export default function CopyTradingSectionClient({ initialData }) {
     </section>
   );
 }
-
