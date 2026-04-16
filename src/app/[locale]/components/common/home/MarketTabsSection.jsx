@@ -4,74 +4,63 @@ import { useCallback, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MobilePeekCarousel from "../MobilePeekCarousel";
-import PaymentMethodsSection from "./PaymentMethodsSection";
+import { usePathTranslation } from "../../../LocaleProvider";
 
 export default function MarketTabsSection() {
+  const t = usePathTranslation("home.homeMarkets");
   const [activeTab, setActiveTab] = useState("forex");
 
-    const tabs = [
+  const tabs = [
     {
       key: "forex",
-      label: "Forex",
-      icon: "/home/forex.svg",
-      contentTitle: "Trade Forex",
-      contentDescription:
-        "Gain access to deep FX liquidity with 200+ trading pairs, tight spreads, competitive margins, and lightning-fast execution.",
-      buttonText: "Explore Forex",
-      buttonLink: "/forex",
-      image:
-        "/home/products/currencies-image.webp",
+      label: t("tabs.forex.label"),
+      icon: t("tabs.forex.icon"),
+      contentTitle: t("tabs.forex.contentTitle"),
+      contentDescription: t("tabs.forex.contentDescription"),
+      buttonText: t("tabs.forex.buttonText"),
+      buttonLink: t("tabs.forex.buttonLink"),
+      image: t("tabs.forex.image"),
     },
-      {
+    {
       key: "energy",
-      label: "Energy",
-      icon: "/home/energy.svg",
-      contentTitle: "Invest in Energy",
-      contentDescription:
-        "Access the energy markets with strong liquidity, tight spreads, and reliable execution.",
-      buttonText: "Trade Energy",
-      buttonLink: "/cfd-energy",
-      image:
-        "/home/products/energy-image.webp",
+      label: t("tabs.energy.label"),
+      icon: t("tabs.energy.icon"),
+      contentTitle: t("tabs.energy.contentTitle"),
+      contentDescription: t("tabs.energy.contentDescription"),
+      buttonText: t("tabs.energy.buttonText"),
+      buttonLink: t("tabs.energy.buttonLink"),
+      image: t("tabs.energy.image"),
     },
     {
       key: "commodities",
-      label: "Commodities",
-      icon: "/home/commed.svg",
-      contentTitle: "Trade Commodities",
-      contentDescription:
-        "Gain deep liquidity, competitive pricing, and seamless execution across metals, energy, and other key commodity markets.",
-      buttonText: "Explore Commodities",
-      buttonLink: "/commodities",
-      image:
-        "/home/products/commodities-image.webp",
+      label: t("tabs.commodities.label"),
+      icon: t("tabs.commodities.icon"),
+      contentTitle: t("tabs.commodities.contentTitle"),
+      contentDescription: t("tabs.commodities.contentDescription"),
+      buttonText: t("tabs.commodities.buttonText"),
+      buttonLink: t("tabs.commodities.buttonLink"),
+      image: t("tabs.commodities.image"),
     },
     {
       key: "indices",
-      label: "Indices",
-      icon: "/home/indices.svg",
-      contentTitle: "Trade Indices",
-      contentDescription:
-        "Tap into global indices liquidity with tight spreads, rapid execution, and competitive pricing.",
-      buttonText: "Explore Indices",
-      buttonLink: "/indices",
-      image:
-        "/home/products/indices-image.webp",
+      label: t("tabs.indices.label"),
+      icon: t("tabs.indices.icon"),
+      contentTitle: t("tabs.indices.contentTitle"),
+      contentDescription: t("tabs.indices.contentDescription"),
+      buttonText: t("tabs.indices.buttonText"),
+      buttonLink: t("tabs.indices.buttonLink"),
+      image: t("tabs.indices.image"),
     },
     {
-      key: "liquidity",
-      label: "Metals",
-      icon: "/home/first.svg",
-      contentTitle: "Trade Metal",
-      contentDescription:
-        "Enhance your business with deep metals liquidity, featuring tight spreads and dependable pricing.",
-      buttonText: "Explore Metals",
-      buttonLink: "/precious-metals",
-      image:
-        "/home/products/metals-image.webp",
+      key: "metals",
+      label: t("tabs.metals.label"),
+      icon: t("tabs.metals.icon"),
+      contentTitle: t("tabs.metals.contentTitle"),
+      contentDescription: t("tabs.metals.contentDescription"),
+      buttonText: t("tabs.metals.buttonText"),
+      buttonLink: t("tabs.metals.buttonLink"),
+      image: t("tabs.metals.image"),
     },
-    
-  
   ];
 
   const currentTab = tabs.find((tab) => tab.key === activeTab) || tabs[0];
@@ -91,17 +80,19 @@ export default function MarketTabsSection() {
   return (
     <section className="pt-10 md:py-16">
       <div className="container">
-        {/* Fixed Heading */}
-        <div className="mx-auto max-w-[900px] text-center flex flex-col items-center gap-8">
-          <h2 className="HeadingH2 max-w-[700px] mx-auto">Trade Global <span className="text-secondary">CFD Markets</span> with <span className="text-secondary">Institutional-Grade</span> Liquidity </h2>
+        <div className="mx-auto flex max-w-[950px] flex-col items-center gap-8 text-center">
+          <h2 className="HeadingH2 mx-auto max-w-[700px]">
+            {t("heading.beforeHighlight")}
+            <span className="text-secondary">{t("heading.highlightOne")}</span>
+            {t("heading.middle")}
+            <span className="text-secondary">{t("heading.highlightTwo")}</span>
+            {t("heading.afterHighlight")}
+          </h2>
 
-          <p className="Text">
-            GTCFX delivers institutional-grade liquidity, empowering traders with fast execution, competitive pricing, and seamless access to global CFD markets. Our advanced infrastructure ensures efficient, transparent, and reliable trading performance.
-          </p>
+          <p className="Text">{t("description")}</p>
         </div>
 
-        {/* Tabs — desktop */}
-        <div className="mt-12 hidden md:flex flex-wrap items-center justify-center gap-3 md:gap-6">
+        <div className="mt-12 hidden flex-wrap items-center justify-center gap-4 md:flex xl:gap-6">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.key;
 
@@ -110,46 +101,43 @@ export default function MarketTabsSection() {
                 key={tab.key}
                 type="button"
                 onClick={() => setActiveTab(tab.key)}
-                className={`flex flex-row min-w-[160px] items-center shadow-lg justify-center gap-2 md:gap-4 rounded-[14px] border px-5 py-5 transition-all duration-300 md:min-w-[200px] ${
+                className={`flex min-w-[180px] items-center justify-center gap-3 rounded-[14px] border px-5 py-5 shadow-lg transition-all duration-300 xl:min-w-[200px] ${
                   isActive
-                    ? "bg-primary-gradient  text-white shadow-lg"
-                    : "bg-[#F1F2F4] border-[#ececec] text-[#4b4b4b] hover:border-[#d9dffb] hover:bg-white"
+                    ? "bg-primary-gradient text-white shadow-lg"
+                    : "border-[#ececec] bg-[#F1F2F4] text-[#4b4b4b] hover:border-[#d9dffb] hover:bg-white"
                 }`}
               >
-                <img
-                  src={tab.icon}
-                  alt={tab.label}
-                  className={`h-7 w-7 object-contain ${
-                    isActive ? "brightness-0 invert" : ""
-                  }`}
-                />
-                <span className="HeadingH5">{tab.label}</span>
+                <div className="relative h-7 w-7 shrink-0">
+                  <Image
+                    src={tab.icon}
+                    alt={tab.label}
+                    fill
+                    className={`object-contain ${isActive ? "brightness-0 invert" : ""}`}
+                  />
+                </div>
+
+                <span className="HeadingH5 whitespace-nowrap">{tab.label}</span>
               </button>
             );
           })}
         </div>
 
-        {/* Changing Content — desktop */}
-        <div className="max-w-[1060px] mx-auto py-10 hidden md:grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          {/* Left */}
+        <div className="mx-auto hidden max-w-[1060px] items-center gap-10 py-10 md:grid lg:grid-cols-2 lg:gap-16">
           <div className="max-w-[520px]">
             <h3 className="HeadingH3 text-primary">
               {currentTab.contentTitle}
             </h3>
 
-            <p className="Text mt-4">
-              {currentTab.contentDescription}
-            </p>
+            <p className="Text mt-4">{currentTab.contentDescription}</p>
 
             <Link
               href={currentTab.buttonLink}
-              className="TextButton mt-10 hover:no-underline hover:bg-secondary inline-flex items-center justify-center rounded-xl bg-primary-gradient bg-[length:200%_200%] transition-all duration-500 hover:bg-right px-6 py-3 text-white hover:opacity-90"
+              className="TextButton mt-10 inline-flex items-center justify-center rounded-xl bg-primary-gradient bg-[length:200%_200%] px-6 py-3 text-white transition-all duration-500 hover:bg-right hover:bg-secondary hover:no-underline hover:opacity-90"
             >
               {currentTab.buttonText}
             </Link>
           </div>
 
-          {/* Right */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[300px]">
               <Image
@@ -163,7 +151,6 @@ export default function MarketTabsSection() {
           </div>
         </div>
 
-        {/* Mobile carousel */}
         <div className="mt-10 pb-12 md:hidden">
           <MobilePeekCarousel
             items={tabs}
@@ -172,7 +159,7 @@ export default function MarketTabsSection() {
             trackClassName="-mx-4 px-4"
             renderItem={(tab) => (
               <div className="rounded-[14px] border border-[#ececec] bg-white p-6 text-center">
-                 <div className="mt-8 flex justify-center">
+                <div className="mt-8 flex justify-center">
                   <div className="relative w-full max-w-[260px]">
                     <Image
                       src={tab.image}
@@ -184,7 +171,6 @@ export default function MarketTabsSection() {
                   </div>
                 </div>
 
-
                 <h3 className="HeadingH3 text-primary">{tab.contentTitle}</h3>
 
                 <p className="Text mt-4">{tab.contentDescription}</p>
@@ -195,13 +181,10 @@ export default function MarketTabsSection() {
                 >
                   {tab.buttonText}
                 </Link>
-
-               
               </div>
             )}
           />
         </div>
-
       </div>
     </section>
   );

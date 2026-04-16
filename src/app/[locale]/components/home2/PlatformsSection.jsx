@@ -1,69 +1,71 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-
-const platforms = [
-  {
-    icon: "/home/gtcfx.svg",
-    title: "Client Portal",
-    description: "Seamless account management experience",
-    link: "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww",
-  },
-  {
-    icon: "/home/gtcfx.svg",
-    title: "GTC Go App",
-    description: "Trade markets anytime, anywhere",
-    link: "https://qrcodes.pro/YW9ULf",
-  },
-  {
-    icon: "/home/gtcfx.svg",
-    title: "GTC VIP Loyalty Rewarded",
-    description: "Unlock exclusive rewards as you trade",
-    link: "/copy-trading",
-  },
-  {
-    icon: "/home/mt4.svg",
-    title: "MT4 Trading Platform",
-    description: "A trusted and classic trading platform",
-    link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobalsa4setup.exe",
-  },
-  {
-    icon: "/home/mt5.svg",
-    title: "MT5 Trading Platform",
-    description: "Advanced tools for modern trading",
-    link: "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe",
-  },
-];
+import { usePathTranslation } from "../../LocaleProvider";
 
 export default function PlatformsSection() {
+  const t = usePathTranslation("home.homePlatforms");
+
+  const platforms = [
+    {
+      title: t("items.one.title"),
+      description: t("items.one.description"),
+      icon: t("items.one.icon"),
+      link: t("items.one.link"),
+    },
+    {
+      title: t("items.two.title"),
+      description: t("items.two.description"),
+      icon: t("items.two.icon"),
+      link: t("items.two.link"),
+    },
+    {
+      title: t("items.three.title"),
+      description: t("items.three.description"),
+      icon: t("items.three.icon"),
+      link: t("items.three.link"),
+    },
+    {
+      title: t("items.four.title"),
+      description: t("items.four.description"),
+      icon: t("items.four.icon"),
+      link: t("items.four.link"),
+    },
+    {
+      title: t("items.five.title"),
+      description: t("items.five.description"),
+      icon: t("items.five.icon"),
+      link: t("items.five.link"),
+    },
+  ];
+
   return (
     <section className="border border-gray-300 bg-gray-100 py-10 md:py-16">
       <div className="container">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
           <h2 className="HeadingH2">
-            Discover Our <br className="hidden md:block" />
-            <span className="text-secondary">Advanced Trading Platforms</span>
+            {t("heading.beforeHighlight")}
+            <br className="hidden md:block" />
+            <span className="text-secondary">{t("heading.highlight")}</span>
           </h2>
 
-          <p className="Text">
-            We understand that every trader is different. That’s why we offer a
-            selection of trusted, award-winning platforms and flexible account
-            types to match your trading style.
-          </p>
+          <p className="Text">{t("description")}</p>
         </div>
 
         {/* Center Image */}
         <div className="my-5 flex justify-center">
           <div className="relative aspect-[2/1] w-full max-w-[1000px]">
             <Image
-              src="/home/mobile-rep.webp"
-              alt="Trading Platforms"
+              src={t("image.src")}
+              alt={t("image.alt")}
               fill
               className="object-contain"
             />
           </div>
         </div>
 
-        {/* Bottom Platforms */}
+        {/* Platforms */}
         <div className="mt-10 overflow-hidden rounded-[8px] bg-[#fff] md:bg-transparent">
           <div className="grid grid-cols-1 md:grid-cols-5 md:gap-6 md:bg-transparent md:px-0 md:py-0">
             {platforms.map((item, index) => (
@@ -78,7 +80,6 @@ export default function PlatformsSection() {
                     : ""
                 }`}
               >
-                {/* Icon */}
                 <div className="relative h-[48px] w-[48px] shrink-0 md:mb-3 md:h-[50px] md:w-[50px]">
                   <Image
                     src={item.icon}
@@ -88,8 +89,7 @@ export default function PlatformsSection() {
                   />
                 </div>
 
-                {/* Text */}
-                <div className="flex-1 ga">
+                <div className="flex-1">
                   <h4 className="text-[16px] font-semibold leading-tight text-primary">
                     {item.title}
                   </h4>

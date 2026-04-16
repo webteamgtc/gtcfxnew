@@ -306,6 +306,222 @@
     }
   },
     "home": {
+        "homeHero": {
+    "badge": {
+      "tag": "جديد",
+      "title": "تطبيق GTC GO للتداول"
+    },
+    "title": {
+      "beforeHighlight": "تداول في ",
+      "highlight": "الأسواق العالمية ",
+      "afterHighlight": "بثقة"
+    },
+    "description": "يمكنك الوصول إلى الفوركس والمؤشرات والسلع وعقود الفروقات (CFDs) من خلال بيئة تداول قوية مصممة للسرعة والأمان والدقة.",
+    "buttons": {
+      "liveAccount": "افتح حساباً حقيقياً",
+      "demoAccount": "حساب تجريبي مجاني"
+    },
+    "networkText": {
+      "label": "شبكة عالمية تغطي",
+      "highlight": "أكثر من 22 وجهة"
+    },
+    "reviews": {
+      "order": {
+        "one": "google",
+        "two": "wikifx",
+        "three": "investing",
+        "four": "myfxbook",
+        "five": "tradingview"
+      },
+      "items": {
+        "google": {
+          "name": "Google",
+          "logo": "/common/google.webp",
+          "rating": "4.5",
+          "stars": "5"
+        },
+        "wikifx": {
+          "name": "WikiFX",
+          "logo": "/common/wiki.webp",
+          "rating": "9.2",
+          "stars": "5"
+        },
+        "investing": {
+          "name": "Investing.com",
+          "logo": "/common/invest.webp",
+          "rating": "4.1",
+          "stars": "4"
+        },
+        "myfxbook": {
+          "name": "myfxbook",
+          "logo": "/common/fx.png",
+          "rating": "4.8",
+          "stars": "5"
+        },
+        "tradingview": {
+          "name": "TradingView",
+          "logo": "/common/trading.webp",
+          "rating": "4.8",
+          "stars": "5"
+        }
+      }
+    }
+  },
+  "homeMarkets": {
+    "heading": {
+      "beforeHighlight": "تداول في أسواق ",
+      "highlightOne": "العقود مقابل الفروقات (CFDs) العالمية",
+      "middle": " بسيولة ",
+      "highlightTwo": "مؤسسية المستوى",
+      "afterHighlight": ""
+    },
+    "description": "تقدم GTCFX سيولة مؤسسية المستوى، مما يمكّن المتداولين من التنفيذ السريع والتسعير التنافسي والوصول السلس إلى أسواق العقود مقابل الفروقات العالمية. تضمن بنيتنا التحتية المتقدمة أداء تداول فعالاً وشفافاً وموثوقاً.",
+    "tabs": {
+      "forex": {
+        "label": "الفوركس",
+        "icon": "/home/forex.svg",
+        "contentTitle": "تداول الفوركس",
+        "contentDescription": "احصل على سيولة عميقة في الفوركس مع أكثر من 200 زوج تداول، وفروق أسعار ضيقة، وهوامش تنافسية، وتنفيذ فائق السرعة.",
+        "buttonText": "استكشف الفوركس",
+        "buttonLink": "/forex",
+        "image": "/home/products/currencies-image.webp"
+      },
+      "energy": {
+        "label": "الطاقة",
+        "icon": "/home/energy.svg",
+        "contentTitle": "استثمر في الطاقة",
+        "contentDescription": "الوصول إلى أسواق الطاقة بسيولة قوية وفروق أسعار ضيقة وتنفيذ موثوق.",
+        "buttonText": "تداول الطاقة",
+        "buttonLink": "/cfd-energy",
+        "image": "/home/products/energy-image.webp"
+      },
+      "commodities": {
+        "label": "السلع",
+        "icon": "/home/commed.svg",
+        "contentTitle": "تداول السلع",
+        "contentDescription": "احصل على سيولة عميقة وتسعير تنافسي وتنفيذ سلس عبر أسواق المعادن والطاقة وغيرها من أسواق السلع الرئيسية.",
+        "buttonText": "استكشف السلع",
+        "buttonLink": "/commodities",
+        "image": "/home/products/commodities-image.webp"
+      },
+      "indices": {
+        "label": "المؤشرات",
+        "icon": "/home/indices.svg",
+        "contentTitle": "تداول المؤشرات",
+        "contentDescription": "استفد من سيولة المؤشرات العالمية بفروق أسعار ضيقة وتنفيذ سريع وتسعير تنافسي.",
+        "buttonText": "استكشف المؤشرات",
+        "buttonLink": "/indices",
+        "image": "/home/products/indices-image.webp"
+      },
+      "metals": {
+        "label": "المعادن",
+        "icon": "/home/first.svg",
+        "contentTitle": "تداول المعادن",
+        "contentDescription": "عزز أعمالك بسيولة عميقة في المعادن، مع فروق أسعار ضيقة وتسعير موثوق.",
+        "buttonText": "استكشف المعادن",
+        "buttonLink": "/precious-metals",
+        "image": "/home/products/metals-image.webp"
+      }
+    }
+  },
+   "copyTradingSection": {
+    "title": {
+      "beforeHighlight": "نسخ التداول، ",
+      "highlight": "بكل بساطة"
+    },
+    "description": "تابع المتداولين الأفضل أداءً وانسخ صفقاتهم تلقائياً في الوقت الفعلي. اختر من تريد متابعته، وحدد مبلغ استثمارك، وابقَ مسيطراً بطريقة سهلة للتداول دون مراقبة مستمرة.",
+    "buttons": {
+      "primary": {
+        "label": "استكشف نسخ التداول",
+        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+      },
+      "secondary": {
+        "label": "اطلع على المزيد من نسخ التداول",
+        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+      }
+    }
+  },
+   "homeSecurityBanner": {
+    "title": "أمان الأموال",
+    "description": "حصلت GTCFX على وثيقة تأمين من لجنة الخدمات المالية، مما يوفر حماية لأموال العملاء تصل إلى 20,000 يورو. لمزيد من التفاصيل،",
+    "linkText": "انقر هنا",
+    "linkHref": "/compensation-fund"
+  },
+   "homePammSection": {
+    "items": {
+      "one": {
+        "title": "استثمر بذكاء مع PAMM",
+        "description": "استثمر مع مديري أموال محترفين يتداولون باستخدام استراتيجيات منظمة. تبقى أموالك في حسابك، والأداء شفاف، والعملية خالية تماماً من الجهد، وهي مثالية للاستثمار طويل الأجل.",
+        "primaryBtn": "استكشف تداول PAMM",
+        "primaryHref": "https://gtcpamm.com/app/",
+        "secondaryBtn": "اطلع على المزيد من PAMM",
+        "secondaryHref": "https://gtcpamm.com/app/",
+        "image": "/home/pamm-home.webp",
+        "imageAlt": "شاشة تطبيق تداول PAMM",
+        "reverse": "true",
+        "imageCard": "true"
+      }
+    }
+  },
+   "homePlatforms": {
+    "heading": {
+      "beforeHighlight": "اكتشف ",
+      "highlight": "منصات التداول المتقدمة"
+    },
+    "description": "نحن ندرك أن كل متداول مختلف. لهذا السبب نقدم مجموعة مختارة من المنصات الموثوقة والحاصلة على جوائز وأنواع حسابات مرنة تناسب أسلوب تداولك.",
+    "image": {
+      "src": "/home/mobile-rep.webp",
+      "alt": "منصات التداول"
+    },
+    "items": {
+      "one": {
+        "title": "بوابة العميل",
+        "description": "تجربة سلسة لإدارة الحساب",
+        "icon": "/home/gtcfx.svg",
+        "link": "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+      },
+      "two": {
+        "title": "تطبيق GTC Go",
+        "description": "تداول الأسواق في أي وقت وفي أي مكان",
+        "icon": "/home/gtcfx.svg",
+        "link": "https://qrcodes.pro/YW9ULf"
+      },
+      "three": {
+        "title": "GTC VIP للمكافآت الولاء",
+        "description": "احصل على مكافآت حصرية أثناء التداول",
+        "icon": "/home/gtcfx.svg",
+        "link": "/copy-trading"
+      },
+      "four": {
+        "title": "منصة MT4 للتداول",
+        "description": "منصة تداول موثوقة وكـلاسيكية",
+        "icon": "/home/mt4.svg",
+        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobalsa4setup.exe"
+      },
+      "five": {
+        "title": "منصة MT5 للتداول",
+        "description": "أدوات متقدمة للتداول العصري",
+        "icon": "/home/mt5.svg",
+        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe"
+      }
+    }
+  },
+   "homeBlogs": {
+    "heading": {
+      "before": "أحدث الرؤى ",
+      "separator": "و",
+      "after": "تحديثات الشركة"
+    },
+    "description": "ابق على اطلاع بأحدث رؤى السوق وتحديثات التداول وأخبار الشركة. استكشف التحليلات الخبيرة والمحتوى التعليمي والإعلانات الهامة من GTCFX.",
+    "readMore": "اقرأ ←",
+    "fallback": {
+      "title": "مقال بدون عنوان",
+      "excerpt": "اقرأ أحدث التحديثات والإعلانات من فريقنا.",
+      "date": "26 مارس 2026",
+      "readTime": "5 دقائق قراءة",
+      "category": "المدونات"
+    }
+  },
         "title": "مرحبًا بك في GTC FX",
         "subtitle": "تداول بذكاء عبر منصتنا",
         "intro": "نقدم بيئة آمنة وسهلة الاستخدام لتداول الفوركس. ابدأ اليوم وتحكم في مستقبلك المالي.",
