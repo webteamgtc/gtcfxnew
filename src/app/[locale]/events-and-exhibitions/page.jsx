@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   const dict = await getDictionary(locale);
   return getPageMetadata({
     locale,
-    key: "eventsAndExhibitions",
+    key: "events",
     dict,
     path: "events-and-exhibitions",
     fallbackTitle: "Events and Exhibitions - GTC FX",
