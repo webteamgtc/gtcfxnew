@@ -95,6 +95,9 @@ export default function InnerPageBanner({
             backgroundImage: overlayGradient
               ? `${overlayGradient}, url('${mobileBackgroundImage}')`
               : `url('${mobileBackgroundImage}')`,
+            transform: isRTL ? "rotateY(180deg)" : undefined,
+            transformOrigin: "center",
+
           }}
         />
 
@@ -105,7 +108,9 @@ export default function InnerPageBanner({
             backgroundImage: overlayGradient
               ? `${overlayGradient}, url('${backgroundImage}')`
               : `url('${backgroundImage}')`,
-          }}
+            transform: isRTL ? "rotateY(180deg)" : undefined,
+            transformOrigin: "center",
+           }}
         />
 
         {/* Decorative bars */}
