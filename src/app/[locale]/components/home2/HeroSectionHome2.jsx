@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import MobilePeekCarousel from "../common/MobilePeekCarousel";
 import { usePathTranslation } from "../../LocaleProvider";
 import TrackedLinkButton from "../common/home/TrackedLinkButton";
@@ -183,4 +182,4 @@ export default function HeroSectionHome2() {
       </div>
     </section>
   );
-}
+} 
