@@ -6,21 +6,16 @@ async function getLeaderboardData() {
 
   const normalizedBase = String(base).endsWith("/") ? String(base) : `${base}/`;
   const url = `${normalizedBase}rating/1?%24top=100&widget_key=social_platform_ratings`;
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 2500);
 
   try {
     const res = await fetch(url, {
       cache: "force-cache",
       next: { revalidate: 120 },
-      signal: controller.signal,
     });
     if (!res.ok) return null;
     return await res.json();
   } catch {
     return null;
-  } finally {
-    clearTimeout(timeout);
   }
 }
 
