@@ -13,8 +13,9 @@ export default function CopyTradingSectionClient({ initialData }) {
 
   const items = initialData?.items || [];
   const visibleItems = items.filter((s) => Number(s?.maxProfit) >= 50);
+  const renderedItems = visibleItems.length ? visibleItems : items.slice(0, 8);
 
-  if (!visibleItems.length) return null;
+  if (!renderedItems.length) return null;
 
   return (
     <section className="bg-[#F1F2F4] py-10 md:py-16">
@@ -88,7 +89,7 @@ export default function CopyTradingSectionClient({ initialData }) {
           modules={[Pagination, Autoplay]}
           className="leaderboard mt-8"
         >
-          {visibleItems.map((single, index) => {
+          {renderedItems.map((single, index) => {
             const slideKey =
               single?.profileId ?? single?.accountId ?? `leader-${index}`;
 
