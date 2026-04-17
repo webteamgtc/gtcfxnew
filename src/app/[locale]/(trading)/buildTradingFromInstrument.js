@@ -2,6 +2,8 @@
  * Turns one `messages.*.json` `trading.<product>` object (copy + layout) into props for TradingProductView.
  */
 
+import { getBottomItems } from "./productConfig";
+
 const HTML_TAG = /<\/?[a-z][\s\S]*?>/i;
 
 function sectionParagraphs(page, sectionNum) {
@@ -32,7 +34,7 @@ export function sectionsFromPage(page, imageSrcs) {
     if (!paragraphs.length) continue;
     sections.push({
       title,
-      imageOnRight: sections.length % 2 === 0,
+      imageOnRight: sections?.slice?.(1)?.length % 2 === 0,
       imageSrc: imgs[imgIdx % imgs.length] ?? imgs[0],
       paragraphs,
     });
@@ -99,11 +101,13 @@ export function buildTradingProduct(page) {
 
   const faqsBuilt = faqsFromPage(page);
   const faqs = faqsBuilt.length ? faqsBuilt : page.faqs ?? [];
+  const bottomItems = getBottomItems(page?.slug ?? "");
 
   return {
     slug: page.slug,
     metaTitle: page.metaTitle,
     metaDescription: page.metaDescription,
+    bottomItems,
     backgroundImage: page.backgroundImage,
     mobileBackgroundImage: page.mobileBackgroundImage,
     rightImage: page.rightImage,

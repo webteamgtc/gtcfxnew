@@ -1228,8 +1228,8 @@
       "backgroundImage": "/breadcamp/deposit.webp",
       "mobileBackgroundImage": "/breadcamp/fund-mobile.webp",
       "sectionImages": [
-        "/account/forex/forex-banner.webp",
-        "/account/forex/mobiles.webp"
+        "/trading/energy/img1.webp",
+        "/trading/energy/img2.webp"
       ],
       "rightImage": "/home/products/energy-image.webp",
       "disclaimer": "*** The above applicable only for GTC Global Ltd, (FSCM) & GTC Global Trade Capital Co, (VFSC) Clients.",
@@ -1311,8 +1311,8 @@
       "backgroundImage": "/breadcamp/deposit.webp",
       "mobileBackgroundImage": "/breadcamp/fund-mobile.webp",
       "sectionImages": [
-        "/home/products/commodities-image.webp",
-        "/account/forex/mobiles.webp"
+        "/trading/commodities/img1.webp",
+        "/trading/commodities/img2.webp"
       ],
       "rightImage": "/home/products/commodities-image.webp",
       "disclaimer": "*** The above applicable only for GTC Global Ltd, (FSCM) & GTC Global Trade Capital Co, (VFSC) Clients.",
@@ -1396,8 +1396,8 @@
       "backgroundImage": "/breadcamp/deposit.webp",
       "mobileBackgroundImage": "/breadcamp/fund-mobile.webp",
       "sectionImages": [
-        "/account/forex/forex-banner.webp",
-        "/account/forex/mobiles.webp"
+        "/trading/indicies/img1.webp",
+        "/trading/indicies/img2.webp"
       ],
       "rightImage": "/home/products/indices-image.webp",
       "disclaimer": "*** The above applicable only for GTC Global Ltd, (FSCM) & GTC Global Trade Capital Co, (VFSC) Clients.",
@@ -1476,9 +1476,9 @@
       "backgroundImage": "/breadcamp/deposit.webp",
       "mobileBackgroundImage": "/breadcamp/fund-mobile.webp",
       "sectionImages": [
-        "/account/forex/forex-banner.webp",
-        "/account/forex/mobiles.webp",
-        "/account/forex/laptop.webp"
+        "/trading/metals/metal-img1.webp",
+        "/trading/metals/metal-img2.webp",
+        "/trading/metals/metal-img3.webp"
       ],
       "advantageImages": [
         {

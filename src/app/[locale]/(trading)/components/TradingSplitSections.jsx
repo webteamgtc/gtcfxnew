@@ -91,19 +91,14 @@ export default function TradingSplitSections({ sections }) {
           <section
             key={`${idx}-${section.title}`}
             aria-labelledby={headingId}
-            className={`relative overflow-hidden py-12 md:py-16 ${
-              idx % 2 === 0
+            className={`relative overflow-hidden pb-12 md:pb-16 ${
+              hasImage ? "bg-white" : idx % 2 === 0
                 ? "bg-gradient-to-b from-slate-50 via-white to-indigo-50/40"
                 : "bg-gradient-to-b from-white via-slate-50/90 to-blue-50/30"
             }`}
           >
-            <div
-              className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/25 to-transparent"
-              aria-hidden
-            />
-
             {!hasImage ? (
-              <div className="container relative">
+              <div className="max-w-5xl mx-auto relative">
                 <div
                   className="pointer-events-none absolute inset-x-0 top-6 text-center text-[clamp(5rem,18vw,10rem)] font-black leading-none text-primary/[0.07]"
                   aria-hidden
@@ -120,49 +115,36 @@ export default function TradingSplitSections({ sections }) {
                 </ContentCard>
               </div>
             ) : (
-              <div className="container relative">
-                <div className="flex flex-col gap-10 lg:grid lg:grid-cols-2 lg:items-center lg:gap-6 xl:gap-10">
-                  {/* Image — full width mobile; overlaps with card on lg */}
+              <div className="max-w-5xl mx-auto relative">
+                <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
+                  {/* Text */}
                   <div
-                    className={`relative z-0 order-1 w-full ${
-                      imageRight ? "lg:order-2" : "lg:order-1"
-                    }`}
+                    className={`order-2 ${imageRight ? "lg:order-1" : "lg:order-2"}`}
                   >
-                    <figure
-                      className={`mx-auto w-full max-w-xl lg:max-w-none ${
-                        imageRight
-                          ? "lg:translate-x-4 xl:translate-x-6"
-                          : "lg:-translate-x-4 xl:-translate-x-6"
-                      }`}
+                    <h2
+                      id={headingId}
+                      className="text-balance text-[22px] font-extrabold leading-tight text-primary md:text-[28px]"
                     >
+                      {section.title}
+                    </h2>
+                    <div className="mt-5 max-w-prose space-y-4 text-[13px] leading-6 text-slate-600 md:text-[14px] md:leading-7 ltr:text-left rtl:text-right">
+                      {paragraphs}
+                    </div>
+                  </div>
+
+                  {/* Image */}
+                  <div className={`order-1 ${imageRight ? "lg:order-2" : "lg:order-1"}`}>
+                    <figure className="mx-auto w-full max-w-[420px]">
                       <Image
                         src={section.imageSrc}
                         alt={section.imageAlt ?? ""}
-                        width={1920}
-                        height={1080}
+                        width={1200}
+                        height={900}
                         className="h-auto w-full object-contain"
-                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        sizes="(max-width: 1024px) 100vw, 420px"
                         priority={idx === 0}
                       />
                     </figure>
-                  </div>
-
-                  {/* Floating card */}
-                  <div
-                    className={`relative z-10 order-2 w-full ${
-                      imageRight
-                        ? "lg:order-1 lg:-me-8 lg:max-w-xl xl:-me-14 2xl:-me-20"
-                        : "lg:order-2 lg:-ms-8 lg:max-w-xl lg:justify-self-end xl:-ms-14 2xl:-ms-20"
-                    }`}
-                  >
-                    <ContentCard
-                      headingId={headingId}
-                      title={section.title}
-                      index={idx}
-                      centeredIntro={false}
-                    >
-                      {paragraphs}
-                    </ContentCard>
                   </div>
                 </div>
               </div>
