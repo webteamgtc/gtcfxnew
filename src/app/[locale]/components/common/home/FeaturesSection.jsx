@@ -135,14 +135,9 @@ export default function FeaturesSection() {
           />
         </div>
         <div className="flex justify-center mt-5 md:mt-8">
-          <PrimaryButton 
-            href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
-                trackingData={{ location: "FeaturesSection" }}
-          >
+          <PrimaryButton href="/register">
             {t("cta")}
           </PrimaryButton>
-
-          
         </div>
         
       </div>
