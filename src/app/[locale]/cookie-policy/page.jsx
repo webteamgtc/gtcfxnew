@@ -2,35 +2,39 @@ import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import CookiePolicy from "../components/documents/CookiePolicy";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+
 export async function generateMetadata({ params }) {
-  const { locale } = await params;
+  const { locale } = params;
   const dict = await getDictionary(locale);
+
   return getPageMetadata({
     locale,
-    key: "legalPoliciesClientAgreements",
+    key: "cookiePolicy",
     dict,
-    path: "legal-policies-client-agreements",
-    fallbackTitle: "Cookie Policy - GTCFX",
-    fallbackDescription: "Learn how GTCFX uses cookies and similar technologies to enhance your browsing experience and improve our services.",
+    path: "cookie-policy",
+    fallbackTitle: "Cookie Policy | How We Use Cookies | GTCFX",
+    fallbackDescription:
+      "Learn how GTCFX uses cookies and similar technologies to enhance your browsing experience and improve website functionality.",
   });
 }
 
-export default async function pages({ params }) {
-  const { locale } = await params;
+export default async function Page({ params }) {
+  const { locale } = params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const cookiePolicyPage = dict?.cookiePolicyPage || {};
 
   return (
     <>
       <InnerPageBanner
-        description="We use cookies to enhance functionality, analyze usage, and deliver a better user experience across our website."
+        title={cookiePolicyPage?.bannerTitle || "Cookie Policy"}
+        description={
+          cookiePolicyPage?.bannerDescription ||
+          "We use cookies to enhance functionality, analyze usage, and deliver a better user experience across our website."
+        }
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
       <CookiePolicy />
-      
-
-      {/* other sections */}
     </>
   );
 }

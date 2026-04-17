@@ -8,7 +8,7 @@ export async function generateMetadata({ params }) {
   const { locale } = await params;
   return getPageMetadata({
     locale,
-    key: "swapTermsCondition",
+    key: "swapFreeGTCFX",
     path: "swap-free-trading",
     fallbackTitle: "Swap Free Trading - GTC FX",
     fallbackDescription: "Learn swap-free trading terms and eligibility.",

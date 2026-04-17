@@ -1,33 +1,40 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import SwapFreeTermsPage from "../components/documents/SwapFreeTermsPage";
 import WebsiteDisclaimerPage from "../components/documents/WebsiteDisclaimerPage";
+import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
 
 export async function generateMetadata({ params }) {
-  const { locale } = await params;
+  const { locale } = params;
   const dict = await getDictionary(locale);
-  const meta = dict.metadata || {};
-  return {
-    title: meta.aboutTitle ?? "About - GTC FX",
-    description: meta.aboutDescription,
-  };
+
+  return getPageMetadata({
+    locale,
+    dict,
+    key: "websiteDisclaimer",
+    path: "website-disclaimer",
+    fallbackTitle: "Website Disclaimer | GTCFX",
+    fallbackDescription:
+      "The information provided on this website is for general informational purposes only and does not constitute investment advice, solicitation, or recommendation.",
+  });
 }
 
-export default async function AboutPage({ params }) {
-  const { locale } = await params;
+export default async function WebsiteDisclaimer({ params }) {
+  const { locale } = params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const websiteDisclaimerPage = dict?.websiteDisclaimerPage || {};
 
   return (
     <>
       <InnerPageBanner
-        description="GTCFX makes no representation or warranty as to the accuracy or completeness of the information provided and accepts no liability for any loss arising from reliance on such content."
+        title={websiteDisclaimerPage?.bannerTitle || "Website Disclaimer"}
+        description={
+          websiteDisclaimerPage?.bannerDescription ||
+          "The information provided on this website is for general informational purposes only and does not constitute investment advice, solicitation, or recommendation."
+        }
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
       <WebsiteDisclaimerPage />
-
-      {/* other sections */}
     </>
   );
 }

@@ -7,7 +7,7 @@ export async function generateMetadata({ params }) {
   const dict = await getDictionary(locale);
   return getPageMetadata({
     locale,
-    key: "legalPoliciesClientAgreements",
+    key: "privacyPolicy",
     dict,
     path: "legal-policies-client-agreements",
     fallbackTitle: "Privacy Policy - GTCFX",
