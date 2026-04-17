@@ -52,11 +52,12 @@ export function buildStrapiCollectionUrl(collection, options = {}) {
 }
 
 export async function fetchStrapiCollection(collection, options = {}) {
-  const { cache = "no-store" } = options;
+  const { cache = "no-store", revalidate } = options;
   const url = buildStrapiCollectionUrl(collection, options);
   const res = await fetch(url, {
     headers: getStrapiAuthHeaders(),
     cache,
+    ...(typeof revalidate === "number" ? { next: { revalidate } } : {}),
   });
 
   if (!res.ok) {
