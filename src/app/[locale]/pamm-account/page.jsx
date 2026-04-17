@@ -19,11 +19,10 @@ export default async function PammAccountPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const copy = dict?.primeTech?.pamm || {};
-  const bannerDescription = copy?.banner?.title || "";
   return (
     <div>
       <InnerPageBanner
-        description="Access professionally managed trading strategies and benefit from expert trading performance without actively trading."
+        description={copy?.bannerDesc || ""}
         backgroundImage="/breadcamp/pamm-mobile.webp"
         mobileBackgroundImage="/breadcamp/pamm.webp"
       />

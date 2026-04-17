@@ -1,45 +1,7 @@
 "use client";
 
 import PrimaryButton from "../../components/common/PrimaryButton";
-
-const restrictedCountries = [
-  "China",
-  "Vietnam",
-  "Taiwan",
-  "Hong Kong",
-  "Indonesia",
-  "Pakistan",
-];
-
-const summaryCards = [
-  { label: "Minimum Deposit", value: "$500+" },
-  { label: "Bonus Rate", value: "50% / 20%" },
-  { label: "Max Bonus", value: "$20,000" },
-  { label: "Cashback", value: "$3 / lot" },
-];
-
-const cashbackExamples = [
-  {
-    text: "If a client receives a $2,500 bonus, they must trade at least ~167 lots to earn $500 in cashback.",
-    status: "Eligible",
-    good: true,
-  },
-  {
-    text: "If a client receives a $3,000 bonus and trades only ~133 lots to earn $400 cashback.",
-    status: "Ineligible",
-    good: false,
-  },
-  {
-    text: "If a client receives a $1,000 bonus, they must trade at least ~167 lots to earn $500 cashback, which is over 50% of the bonus.",
-    status: "Eligible",
-    good: true,
-  },
-  {
-    text: "If a client receives a $5,000 bonus and trades 100 lots to earn $300 cashback.",
-    status: "Ineligible",
-    good: false,
-  },
-];
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 function SummaryCard({ item }) {
   return (
@@ -71,7 +33,60 @@ function SectionCard({ number, title, children }) {
   );
 }
 
-export default function MarginBonusPageSection() {
+export default function MarginBonusPageSection({ messages = {} }) {
+  const t = usePathTranslation("marginBonusPage");
+
+  const summaryCards = [
+    {
+      label: t("summary.minimumDeposit.label"),
+      value: t("summary.minimumDeposit.value"),
+    },
+    {
+      label: t("summary.bonusRate.label"),
+      value: t("summary.bonusRate.value"),
+    },
+    {
+      label: t("summary.maxBonus.label"),
+      value: t("summary.maxBonus.value"),
+    },
+    {
+      label: t("summary.cashback.label"),
+      value: t("summary.cashback.value"),
+    },
+  ];
+
+  const restrictedCountries = [
+    t("eligibility.notAvailableCountries.one"),
+    t("eligibility.notAvailableCountries.two"),
+    t("eligibility.notAvailableCountries.three"),
+    t("eligibility.notAvailableCountries.four"),
+    t("eligibility.notAvailableCountries.five"),
+    t("eligibility.notAvailableCountries.six"),
+  ];
+
+  const cashbackExamples = [
+    {
+      text: t(
+        "cashback.examples.one.text"      ),
+      good: true,
+    },
+    {
+      text: t(
+        "cashback.examples.two.text"),
+      good: false,
+    },
+    {
+      text: t(
+        "cashback.examples.three.text"),
+      good: true,
+    },
+    {
+      text: t(
+        "cashback.examples.four.text"),
+      good: false,
+    },
+  ];
+
   return (
     <section className="relative overflow-hidden bg-[#F8FAFC] py-14 md:py-20">
       <div className="pointer-events-none absolute left-[-100px] top-10 h-[260px] w-[260px] rounded-xl bg-[#263788]/5 blur-3xl" />
@@ -81,25 +96,23 @@ export default function MarginBonusPageSection() {
         {/* Hero */}
         <div className="mx-auto max-w-4xl text-center">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            Margin Bonus Promotion
+            {t("hero.badge")}
           </span>
 
           <h2 className="HeadingH3 mt-5">
-            What Is The <span className="text-[#b68756]">GTC Margin Bonus</span>?
+            {t("hero.titleStart")}{" "}
+            <span className="text-[#b68756]">{t("hero.titleHighlight")}</span>?
           </h2>
 
           <p className="mt-5 text-[15px] leading-7 text-[#4B5563] md:text-lg md:leading-8">
-            A Margin Bonus is a non-withdrawable and non-transferable credit issued
-            based on your deposit amount. It increases your account’s usable margin,
-            giving you more room to trade during periods of high market volatility.
+            {t("hero.description")}
           </p>
         </div>
 
         {/* Warning */}
         <div className="mx-auto mt-8 max-w-5xl rounded-[24px] border border-[#FECACA] bg-[#FEF2F2] px-5 py-4 md:px-6">
           <p className="text-sm font-semibold leading-7 text-[#DC2626] md:text-base">
-            ⚠️ Important: The bonus can be lost and will not be restored if removed.
-            It cannot be withdrawn or transferred at any point.
+            {t("warning.text")}
           </p>
         </div>
 
@@ -112,34 +125,24 @@ export default function MarginBonusPageSection() {
 
         {/* Terms */}
         <div className="mt-10 space-y-6">
-          <SectionCard number="1" title="Eligibility">
+          <SectionCard number="1" title={t("eligibility.title")}>
             <ol className="list-decimal space-y-3 pl-5">
+              <li>{t("eligibility.points.one")}</li>
               <li>
-                The Promotion is available exclusively to clients with
-                <strong> fully verified live trading accounts</strong>.
-              </li>
-              <li>
-                It applies to:
+                {t("eligibility.points.two")}:
                 <ul className="mt-2 list-disc pl-5">
-                  <li>
-                    <strong>First-time deposits of at least $500</strong> made by new clients.
-                  </li>
-                  <li>
-                    <strong>Top-up deposits by existing clients</strong>, applied only to the newly deposited amount.
-                  </li>
+                  <li>{t("eligibility.subPoints.one")}</li>
+                  <li>{t("eligibility.subPoints.two")}</li>
                 </ul>
               </li>
-              <li>The Promotion is available on all account types, except for Cent accounts.</li>
-              <li>Each client may participate once, unless otherwise authorized in writing.</li>
-              <li>Clients trading via MAM, PAMM, or Social Trading are not eligible.</li>
-              <li>
-                The bonus is a non-losing bonus used exclusively to support margin.
-                It does not constitute real balance and cannot be withdrawn or transferred.
-              </li>
+              <li>{t("eligibility.points.three")}</li>
+              <li>{t("eligibility.points.four")}</li>
+              <li>{t("eligibility.points.five")}</li>
+              <li>{t("eligibility.points.six")}</li>
             </ol>
 
             <div className="mt-6 rounded-2xl bg-[#F8FAFC] p-4">
-              <p className="text-sm font-semibold text-primary">Not available in:</p>
+              <p className="text-sm font-semibold text-primary">{t("eligibility.notAvailableLabel")}:</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {restrictedCountries.map((country) => (
                   <span
@@ -153,44 +156,35 @@ export default function MarginBonusPageSection() {
             </div>
           </SectionCard>
 
-          <SectionCard number="2" title="Bonus Size and Structure">
+          <SectionCard number="2" title={t("bonusSize.title")}>
             <ol className="list-decimal space-y-3 pl-5">
               <li>
-                The bonus amount is calculated as:
+                {t("bonusSize.points.one")}:
                 <ul className="mt-2 list-disc pl-5">
-                  <li><strong>50%</strong> of the deposit amount for deposits up to <strong>$10,000</strong></li>
-                  <li><strong>20%</strong> of the portion that exceeds <strong>$10,000</strong></li>
+                  <li>{t("bonusSize.subPoints.one")}</li>
+                  <li>{t("bonusSize.subPoints.two")}</li>
                 </ul>
               </li>
-              <li>The maximum total bonus per client is capped at <strong>$20,000</strong>.</li>
-              <li>
-                To receive the bonus, the client must first register for the promotion
-                and then make a qualifying deposit.
-              </li>
-              <li>
-                Once registered and funded, the bonus request will be automatically generated and processed.
-              </li>
+              <li>{t("bonusSize.points.two")}</li>
+              <li>{t("bonusSize.points.three")}</li>
+              <li>{t("bonusSize.points.four")}</li>
             </ol>
           </SectionCard>
 
-          <SectionCard number="3" title="Cashback Conditions">
+          <SectionCard number="3" title={t("cashback.title")}>
             <ol className="list-decimal space-y-3 pl-5">
+              <li>{t("cashback.points.one")}</li>
               <li>
-                Clients who receive the Margin Bonus are eligible to claim
-                <strong> $3 per full lot traded</strong> on FX pairs, gold, metals,
-                and oil within a <strong>3-month period</strong>.
-              </li>
-              <li>
-                Cashback can be requested only once and to qualify:
+                {t("cashback.points.two")}:
                 <ul className="mt-2 list-disc pl-5">
-                  <li>The cashback amount must be at least <strong>$500</strong></li>
-                  <li>It must represent at least <strong>20%</strong> of the bonus received</li>
+                  <li>{t("cashback.subPoints.one")}</li>
+                  <li>{t("cashback.subPoints.two")}</li>
                 </ul>
               </li>
             </ol>
 
             <div className="mt-6 rounded-[24px] bg-[#F8FAFC] p-4 md:p-5">
-              <p className="mb-4 text-sm font-semibold text-primary md:text-base">Examples</p>
+              <p className="mb-4 text-sm font-semibold text-primary md:text-base">{t("cashback.examplesLabel")}</p>
               <div className="space-y-3">
                 {cashbackExamples.map((item, index) => (
                   <div
@@ -203,7 +197,9 @@ export default function MarginBonusPageSection() {
                   >
                     {item.text}{" "}
                     <strong>
-                      {item.good ? "→ Eligible" : "→ Ineligible"}
+                      {item.good
+                        ? `\u2192 ${t("cashback.status.eligible")}`
+                        : `\u2192 ${t("cashback.status.ineligible")}`}
                     </strong>
                   </div>
                 ))}
@@ -211,75 +207,72 @@ export default function MarginBonusPageSection() {
             </div>
 
             <ol start={3} className="mt-6 list-decimal space-y-3 pl-5">
-              <li>The total cashback is capped at the value of the bonus received.</li>
-              <li>Cashback must be requested through the client’s personal account manager.</li>
-              <li>Cashback will be credited within 7 business days once approved.</li>
+              <li>{t("cashback.points.three")}</li>
+              <li>{t("cashback.points.four")}</li>
+              <li>{t("cashback.points.five")}</li>
             </ol>
           </SectionCard>
 
-          <SectionCard number="4" title="Bonus Use and Nature">
+          <SectionCard number="4" title={t("bonusUse.title")}>
             <ol className="list-decimal space-y-3 pl-5">
               <li>
-                The Margin Bonus is strictly for trading margin support and cannot be:
+                {t("bonusUse.points.one")}:
                 <ul className="mt-2 list-disc pl-5">
-                  <li>Withdrawn</li>
-                  <li>Transferred</li>
-                  <li>Used as tradable or real account balance</li>
+                  <li>{t("bonusUse.subPoints.one")}</li>
+                  <li>{t("bonusUse.subPoints.two")}</li>
+                  <li>{t("bonusUse.subPoints.three")}</li>
                 </ul>
               </li>
-              <li>Any withdrawal from the client’s account will result in automatic removal of the bonus.</li>
+              <li>{t("bonusUse.points.two")}</li>
             </ol>
           </SectionCard>
 
-          <SectionCard number="5" title="Withdrawal Conditions">
+          <SectionCard number="5" title={t("withdrawalConditions.title")}>
             <ol className="list-decimal space-y-3 pl-5">
-              <li>GTCFX reserves the right to remove the bonus if the account equity falls below the bonus amount.</li>
-              <li>Once removed, the bonus will not be reinstated under any circumstances.</li>
+              <li>{t("withdrawalConditions.points.one")}</li>
+              <li>{t("withdrawalConditions.points.two")}</li>
             </ol>
           </SectionCard>
 
-          <SectionCard number="6" title="Bonus Expiry">
+          <SectionCard number="6" title={t("bonusExpiry.title")}>
             <ol className="list-decimal space-y-3 pl-5">
-              <li>The Margin Bonus is valid for up to 3 months from the date of the first qualifying deposit.</li>
-              <li>GTCFX may remove the bonus automatically after the 3-month period, regardless of trading activity.</li>
-              <li>If cashback conditions are not met within the 3-month period, eligibility for cashback is forfeited.</li>
+              <li>{t("bonusExpiry.points.one")}</li>
+              <li>{t("bonusExpiry.points.two")}</li>
+              <li>{t("bonusExpiry.points.three")}</li>
             </ol>
           </SectionCard>
 
-          <SectionCard number="7" title="Abuse Policy">
+          <SectionCard number="7" title={t("abusePolicy.title")}>
             <ol className="list-decimal space-y-3 pl-5">
               <li>
-                Abuse of the promotion is strictly prohibited. Examples include:
+                {t("abusePolicy.points.one")}:
                 <ul className="mt-2 list-disc pl-5">
-                  <li>Hedging between multiple accounts or brokers</li>
-                  <li>Latency arbitrage or other technical exploits</li>
-                  <li>Coordinated manipulation of bonus terms</li>
+                  <li>{t("abusePolicy.subPoints.one")}</li>
+                  <li>{t("abusePolicy.subPoints.two")}</li>
+                  <li>{t("abusePolicy.subPoints.three")}</li>
                 </ul>
               </li>
               <li>
-                GTCFX reserves the right to:
+                {t("abusePolicy.points.two")}:
                 <ul className="mt-2 list-disc pl-5">
-                  <li><strong>Remove the bonus without prior notice</strong></li>
-                  <li><strong>Cancel cashback or profits obtained through abusive behavior</strong></li>
-                  <li><strong>Suspend or terminate client accounts involved in fraud or abuse</strong></li>
+                  <li>{t("abusePolicy.actions.one")}</li>
+                  <li>{t("abusePolicy.actions.two")}</li>
+                  <li>{t("abusePolicy.actions.three")}</li>
                 </ul>
               </li>
             </ol>
           </SectionCard>
 
-          <SectionCard number="8" title="Stop Out Policy">
+          <SectionCard number="8" title={t("stopOutPolicy.title")}>
             <ol className="list-decimal space-y-3 pl-5">
-              <li>
-                If the account equity reaches the stop-out level, or if the floating loss equals the actual account balance,
-                the Margin Bonus will be automatically removed.
-              </li>
+              <li>{t("stopOutPolicy.points.one")}</li>
             </ol>
           </SectionCard>
 
-          <SectionCard number="9" title="Client Acknowledgment">
+          <SectionCard number="9" title={t("clientAcknowledgment.title")}>
             <ol className="list-decimal space-y-3 pl-5">
-              <li>By accepting the Margin Bonus, the client acknowledges and agrees to these Terms & Conditions.</li>
-              <li>Misuse of the Promotion may result in the removal of the bonus, forfeiture of profits, and/or suspension of the trading account.</li>
+              <li>{t("clientAcknowledgment.points.one")}</li>
+              <li>{t("clientAcknowledgment.points.two")}</li>
             </ol>
           </SectionCard>
         </div>
@@ -287,28 +280,27 @@ export default function MarginBonusPageSection() {
         {/* Apply box */}
         <div className="mt-10 rounded-[28px] border border-[#DBEAFE] bg-[#EFF6FF] p-6 md:p-8">
           <h3 className="HeadingH4 font-semibold text-secondary">
-            How to Apply
+            {t("howToApply.title")}
           </h3>
 
           <ol className="mt-5 list-decimal space-y-3 pl-5 text-[15px] leading-8 text-[#374151] md:text-base">
-            <li>Register for the promotion by submitting the form on the campaign page.</li>
-            <li>Make a qualifying deposit of at least <strong>$500</strong> into your verified live trading account.</li>
-            <li>Once both steps are completed, your bonus request will be automatically processed.</li>
-            <li><strong>Only registered clients</strong> will be eligible to receive the bonus.</li>
+            <li>{t("howToApply.points.one")}</li>
+            <li>{t("howToApply.points.two")}</li>
+            <li>{t("howToApply.points.three")}</li>
+            <li>{t("howToApply.points.four")}</li>
           </ol>
 
           <p className="mt-6 text-[15px] leading-7 text-[#4B5563] md:text-base">
-            To claim cashback, reach out directly to your <strong>Personal Account Manager</strong>
-            once the trading and eligibility requirements are fulfilled.
+            {t("howToApply.cashbackNote")}
           </p>
 
           <p className="mt-3 text-[15px] leading-7 text-[#4B5563] md:text-base">
-            For assistance, contact your Account Manager or the GTCFX Support Team.
+            {t("howToApply.assistanceNote")}
           </p>
 
           <div className="mt-8">
             <PrimaryButton>
-              Open Live Account
+              {t("howToApply.buttonLabel")}
             </PrimaryButton>
           </div>
         </div>

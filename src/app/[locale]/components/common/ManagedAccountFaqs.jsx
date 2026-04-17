@@ -111,7 +111,7 @@ export default function ManagedAccountFaqs({ faq }) {
                       aria-expanded={isOpen}
                       aria-controls={panelId}
                       onClick={() => setOpenIndex((prev) => (prev === i ? null : i))}
-                      className="flex w-full min-h-[3.25rem] items-center gap-3 rounded-t-2xl px-4 py-3.5 text-left outline-none transition-colors focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 md:min-h-0 md:px-5 md:py-4"
+                      className="flex w-full min-h-[3.25rem] items-center gap-3 rounded-t-2xl px-4 py-3.5 text-start outline-none transition-colors focus-visible:ring-2 focus-visible:ring-primary/35 focus-visible:ring-offset-2 md:min-h-0 md:px-5 md:py-4"
                     >
                       <span
                         className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-sm font-bold transition-colors md:h-10 md:w-10 ${
@@ -123,7 +123,7 @@ export default function ManagedAccountFaqs({ faq }) {
                       >
                         {i + 1}
                       </span>
-                      <span className="min-w-0 flex-1 text-[15px] font-semibold leading-snug text-dark md:text-base">
+                      <span className="min-w-0 flex-1 text-[15px] font-semibold leading-snug text-dark text-start md:text-base">
                         {item.question}
                       </span>
                       <span

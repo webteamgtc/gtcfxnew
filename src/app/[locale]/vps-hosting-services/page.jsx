@@ -23,11 +23,10 @@ export default async function VpsHostingServicesPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
     const copy = dict?.primeTech?.vpsHosting || {};
-  const bannerDescription = copy?.banner?.title || "";
   return (
     <div>
       <InnerPageBanner
-        description="Ensure uninterrupted trading with high-performance VPS hosting, designed for low latency, fast execution, and 24/7 reliability."
+        description={copy?.bannerDesc || ""}
         backgroundImage="/breadcamp/vps.webp"
         mobileBackgroundImage="/breadcamp/vps-mobile.webp"
       />

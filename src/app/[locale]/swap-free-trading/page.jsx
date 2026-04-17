@@ -40,7 +40,8 @@ export default async function SwapFreeTradingPage({ params }) {
 
   const splitList = (s) =>
     String(s || "")
-      .split(",")
+      // Support English/Arabic commas and line breaks in translation values.
+      .split(/[,\u060C\n]+/)
       .map((x) => x.trim())
       .filter(Boolean);
 
@@ -247,7 +248,7 @@ export default async function SwapFreeTradingPage({ params }) {
                 <h3 className="mb-2 font-semibold text-secondary">
                   {t("instruments.nonSwapFree.crypto.title")}
                 </h3>
-                <ul className="space-y-1">
+                <ul className="TextSmall space-y-1">
                   {nonSwapFreeInstruments.cryptoUsdt.map((item, index) => (
                     <li key={index}>• {item}</li>
                   ))}

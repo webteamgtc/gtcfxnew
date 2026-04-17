@@ -3,9 +3,9 @@ import axios from "axios";
 import { useParams } from "next/navigation";
 import { defaultLocale, locales } from "@/i18n/config";
 
+
 const GLOSSARY_JSON_BASE =
   "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/glossary";
-
 /**
  * Locale for remote glossary JSON. Matches app locales; falls back when a file may not exist on S3.
  */

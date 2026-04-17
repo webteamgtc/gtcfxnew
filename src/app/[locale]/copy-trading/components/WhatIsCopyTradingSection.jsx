@@ -1,40 +1,43 @@
 "use client";
 
-const items = [
-  {
-    number: "01",
-    title: "Choose a trader",
-    desc: "Browse trader profiles, review performance, and select the strategy that matches your goals.",
-  },
-  {
-    number: "02",
-    title: "Copy automatically",
-    desc: "Once connected, trades can be replicated automatically without needing to manage each move manually.",
-  },
-  {
-    number: "03",
-    title: "Monitor and control",
-    desc: "Track results, manage your allocations, and stay flexible with full visibility over your account.",
-  },
-];
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
-export default function WhatIsCopyTradingSection() {
+export default function WhatIsCopyTradingSection({ messages = {} }) {
+  const t = usePathTranslation("copyTradingPage"); 
+
+  const items = [
+    {
+      number: "01",
+      title: t("whatIs.cards.one.title"),
+      desc: t("whatIs.cards.one.description"),
+    },
+    {
+      number: "02",
+      title: t("whatIs.cards.two.title"),
+      desc: t("whatIs.cards.two.description"),
+    },
+    {
+      number: "03",
+      title: t("whatIs.cards.three.title"),
+      desc: t("whatIs.cards.three.description"),
+    },
+  ];
+
   return (
     <section className="bg-white py-16 md:py-20">
       <div className="container">
         <div className="mx-auto max-w-4xl text-center">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            What Is Copy Trading
+            {t("whatIs.badge")}
           </span>
 
           <h2 className="HeadingH3 mt-4 text-primary">
-            Follow Strategies. <span className="text-[#b68756]">Stay in Control.</span>
+            {t("whatIs.titleStart")}{" "}
+            <span className="text-[#b68756]">{t("whatIs.titleHighlight")}</span>
           </h2>
 
           <p className="mt-5 text-[15px] leading-7 text-[#4B5563] md:text-lg md:leading-8">
-            Copy trading allows you to follow experienced traders and automatically
-            mirror their trades. It offers a simpler way to participate in the markets
-            while maintaining visibility and control over your capital.
+            {t("whatIs.description")}
           </p>
         </div>
 
