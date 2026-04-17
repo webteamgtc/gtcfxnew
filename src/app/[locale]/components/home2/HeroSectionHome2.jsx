@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MobilePeekCarousel from "../common/MobilePeekCarousel";
 import { usePathTranslation } from "../../LocaleProvider";
+import TrackedLinkButton from "../common/home/TrackedLinkButton";
 
 function Stars({ count = 5 }) {
   return (
@@ -130,21 +131,25 @@ export default function HeroSectionHome2() {
             {t("description")}
           </p>
 
-          <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
-            <Link
-              href="/register"
-              className="inline-flex min-h-[54px] items-center justify-center rounded-xl border border-white/20 bg-[#172154] px-7 text-[16px] font-semibold text-white transition hover:bg-secondary hover:no-underline md:px-8 md:text-[18px]"
-            >
-              {t("buttons.liveAccount")}
-            </Link>
+         <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
+  <TrackedLinkButton
+    href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+    buttonType="live_account"
+    location="hero_section"
+    className="inline-flex min-h-[54px] items-center justify-center rounded-xl border border-white/20 bg-[#172154] px-7 text-[16px] font-semibold text-white transition hover:bg-secondary hover:no-underline md:px-8 md:text-[18px]"
+  >
+    {t("buttons.liveAccount")}
+  </TrackedLinkButton>
 
-            <Link
-              href="/demo"
-              className="inline-flex min-h-[54px] items-center justify-center rounded-xl border border-white/30 px-6 text-[16px] font-semibold text-white transition hover:bg-white/10 hover:no-underline md:px-8 md:text-[18px]"
-            >
-              {t("buttons.demoAccount")}
-            </Link>
-          </div>
+  <TrackedLinkButton
+    href="/demo"
+    buttonType="demo_account"
+    location="hero_section"
+    className="inline-flex min-h-[54px] items-center justify-center rounded-xl border border-white/30 px-6 text-[16px] font-semibold text-white transition hover:bg-white/10 hover:no-underline md:px-8 md:text-[18px]"
+  >
+    {t("buttons.demoAccount")}
+  </TrackedLinkButton>
+</div>
 
           <p className="mt-5 text-xs font-medium uppercase text-white md:text-sm lg:text-base">
             {t("networkText.label")}{" "}
