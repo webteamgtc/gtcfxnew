@@ -1,4 +1,3 @@
-import { getDictionary } from '@/i18n/request';
 import HeroSection from './components/home2/HeroSection';
 import FeaturesSection from './components/common/home/FeaturesSection';
 import Counter from './components/common/home/Counter';
@@ -30,8 +29,6 @@ export async function generateMetadata({ params }) {
 
 export default async function HomePage({ params }) {
   const { locale } = await params;
-  const dict = await getDictionary(locale);
-  const home = dict.home || {};
 
   return (
    <>
