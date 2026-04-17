@@ -3,6 +3,7 @@ import axios from "axios";
 import { useParams } from "next/navigation";
 import { defaultLocale, locales } from "@/i18n/config";
 
+
 const GLOSSARY_JSON_BASE =
   "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/glossary";
 /**
