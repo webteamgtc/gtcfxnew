@@ -135,7 +135,8 @@ async function getBlogs(locale, start = 0, limit = 3) {
           populate: null,
           sort: "createdAt:desc",
           params,
-          cache: "no-store",
+          cache: "force-cache",
+          revalidate: 300,
         });
 
         if (Array.isArray(res?.data)) return res;
