@@ -44,7 +44,7 @@ export default async function HomePage({ params }) {
   <FeaturesSection />
 </RevealOnScroll>
 
-<RevealOnScroll>
+<RevealOnScroll> 
   <Counter />
 </RevealOnScroll>
 
