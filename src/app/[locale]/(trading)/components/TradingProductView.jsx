@@ -6,11 +6,11 @@ export default function TradingProductView({ locale, product }) {
   return (
     <>
       <TradingHeroSection
+        bottomItems={product?.bottomItems}
         title={product.bannerTitle}
         description={product.bannerDescription}
         backgroundImage={""}
         mobileBackgroundImage={""}
-        rightImage={product.rightImage}
       />
       <TradingProductSections locale={locale} product={product} />
     </>

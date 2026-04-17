@@ -45,7 +45,11 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
   }, []);
 
   const toggleMobileSection = (key) => {
-    setMobileExpanded((prev) => (prev === key ? null : key));
+    setMobileExpanded((prev) => {
+      // Accordion behavior: only one section can stay open at a time.
+      if (prev === key) return null;
+      return key;
+    });
   };
 
   return (
@@ -197,7 +201,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
           )}
 
           {mobileOpen && (
-            <div className="border-t border-[#ececec] md:px-5 px-2 md:py-5 py-2 lg:hidden">
+            <div className="border-t border-[#ececec] md:px-5 px-2 md:py-5 py-2 lg:hidden max-h-[calc(100vh-130px)] overflow-y-auto overscroll-contain">
               {mobilePanel === "menu" ? (
                 <>
                   <nav className="flex flex-col">

@@ -14,14 +14,14 @@ export default function TradingAdvantages({
 
   const sectionClass =
       className ??
-      "bg-white py-14 md:py-16";
+      "bg-gray-100 py-14 md:py-16";
 
   const cardClass =
-    "group flex flex-row items-center gap-4 rounded-xl border rounded-3xl border border-[#E5E7EB] bg-[#F1F2F4] p-[2px] ps-3 pe-4 py-2.5 shadow-sm transition-all hover:shadow-md md:gap-5 md:ps-4 md:pe-5 md:py-3 lg:justify-center";
+    "group flex flex-row items-center gap-4 rounded-xl border rounded-3xl border border-[#E5E7EB] bg-white p-[2px] ps-3 pe-4 py-2.5 shadow-sm transition-all hover:shadow-md md:gap-5 md:ps-4 md:pe-5 md:py-3 lg:justify-center";
 
   return (
     <section className={sectionClass}>
-      <div className="container">
+      <div className="max-w-5xl mx-auto px-4">
         <h2 className="HeadingH2 mb-5 text-center md:mb-6">{heading}</h2>
         <div className={gridClass}>
           {items.map((item, index) => (

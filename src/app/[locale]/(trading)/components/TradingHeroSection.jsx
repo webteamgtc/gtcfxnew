@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { locales } from "@/i18n/config";
+import { LIVE_ACCOUNT_URL } from "../productConfig";
 
 function formatLabel(slug) {
   if (!slug) return "";
@@ -32,14 +33,14 @@ function formatLabel(slug) {
 
 export default function TradingHeroSection({
   title,
-  rightImage,
   description = "",
+  bottomItems,
   backgroundImage = "/images/banner/default-banner.webp",
   mobileBackgroundImage = "/images/banner/default-banner-mobile.webp",
   height = "min-h-[0px] md:min-h-[500px] lg:min-h-[540px]",
   overlay = true,
   align = "left",
-  className = "",
+  className = " ",
 }) {
   const pathname = usePathname();
 
@@ -49,99 +50,60 @@ export default function TradingHeroSection({
 
   const pageTitle =
     title || formatLabel(segments[segments.length - 1]) || "Page Title";
-
-  const overlayGradient = overlay
-    ? "linear-gradient(90deg, rgba(22,38,132,0.92) 0%, rgba(35,58,170,0.78) 35%, rgba(28,42,110,0.35) 62%, rgba(255,255,255,0.08) 100%)"
-    : "";
-
   return (
-    <section className={`relative overflow-hidden ${className}`}>
-      <div className={`relative w-full ${height}`}>
-        {/* Mobile Background */}
-        <div
-          className="absolute inset-0 block bg-cover bg-center bg-no-repeat md:hidden"
+    <section className={` relative overflow-hidden bg-white ${className}`}>
+      <div className="">
+      <div
+          className="pointer-events-none absolute inset-0 bg-center bg-no-repeat"
           style={{
-            backgroundImage: overlayGradient
-              ? `${overlayGradient}, url('${mobileBackgroundImage}')`
-              : `url('${mobileBackgroundImage}')`,
+            backgroundImage: "url('/map.svg')",
+            backgroundSize: "1100px auto",
           }}
         />
 
-        {/* Desktop Background */}
-        <div
-          className="absolute inset-0 hidden bg-cover bg-center bg-no-repeat md:block"
-          style={{
-            backgroundImage: overlayGradient
-              ? `${overlayGradient}, url('${backgroundImage}')`
-              : `url('${backgroundImage}')`,
-          }}
-        />
+        <div className="container relative z-10 py-14 md:py-16 min-h-[350px] mt-28 md:min-h-[400px] md:mt-32 lg:min-h-[450px] lg:mt-40">
+            {/* World map background */}
+  
+          <div className="mx-auto max-w-3xl text-center">
+            <h1 className="text-[28px] font-extrabold leading-tight text-[#0B132B] md:text-[44px]">
+              {pageTitle}
+            </h1>
 
-        {/* Decorative bars */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-full opacity-[0.12]">
-          <div className="absolute left-[2%] top-[20%] hidden h-[220px] w-[180px] md:block">
-            <div className="flex h-full items-end gap-4">
-              <span className="h-20 w-3 bg-white/70" />
-              <span className="h-36 w-3 bg-white/50" />
-              <span className="h-28 w-3 bg-white/35" />
-              <span className="h-16 w-3 bg-white/40" />
-              <span className="h-12 w-3 bg-white/25" />
-              <span className="h-40 w-3 bg-white/35" />
+            {description && (
+              <p className="mx-auto mt-3 max-w-[560px] text-[14px] leading-6 text-[#7F8498] md:text-[16px] md:leading-7">
+                {description}
+              </p>
+            )}
+
+            <div className="mt-6 flex justify-center">
+              <Link
+                href={LIVE_ACCOUNT_URL}
+                className="inline-flex h-11 items-center justify-center rounded-xl bg-gradient-to-b from-[#263788] to-[#101638] px-9 text-[13px] font-semibold text-white shadow-[0_10px_24px_rgba(38,55,136,0.22)] transition hover:brightness-110"
+              >
+                Open Live Account
+              </Link>
             </div>
           </div>
 
-          <div className="absolute left-[14%] top-[42%] hidden h-[200px] w-[420px] lg:block">
-            <div className="flex h-full items-end gap-5">
-              <span className="h-24 w-4 bg-white/30" />
-              <span className="h-40 w-4 bg-white/18" />
-              <span className="h-28 w-4 bg-white/24" />
-              <span className="h-12 w-4 bg-white/20" />
-              <span className="h-36 w-4 bg-white/15" />
-              <span className="h-16 w-4 bg-white/22" />
-              <span className="h-44 w-4 bg-white/18" />
-              <span className="h-32 w-4 bg-white/20" />
+          {/* Bottom visuals: metals row or product image */}
+            <div className="mt-10  flex flex-wrap justify-center gap-3 md:mt-12 md:gap-3">
+              {bottomItems && bottomItems.map((m) => (
+                <div key={m.label} className="flex flex-col items-center">
+                  <div className="mb-3 text-[10px] font-semibold tracking-[0.18em] text-[#6B7280]">
+                    {m.label}
+                  </div>
+                  <div className="relative h-[70px] w-[110px] md:h-[100px] md:w-[170px]">
+                    <Image
+                      src={m.src}
+                      alt={m.label}
+                      fill
+                      sizes="130px"
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
-        </div>
-
-        {/* Bottom fade */}
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[78%] bg-gradient-to-b from-transparent via-white/20 to-white/95" />
-
-        {/* Content */}
-        <div
-          className={`relative z-10 container grid ${
-            rightImage ? "grid-cols-1 md:grid-cols-2" : "grid-cols-1"
-          }`}
-        >
-          <div className="flex min-h-[350px] items-center pt-24 md:min-h-[400px] md:pt-28 lg:min-h-[450px] lg:pt-32">
-            <div
-              className={`w-full max-w-[720px] ${
-                align === "center" ? "mx-auto text-center" : "text-left"
-              }`}
-            >
-
-              {/* Title */}
-              <h2 className="HeadingH2 text-secondary">{pageTitle}</h2>
-
-              {/* Description */}
-              {description && (
-                <p className="mt-5 max-w-[560px] text-base leading-7 text-white/95 md:text-lg md:leading-8">
-                  {description}
-                </p>
-              )}
-            </div>
-          </div>
-          {rightImage ? (
-            <div className="flex items-center justify-center pb-10 pt-6 md:pb-0 md:pt-24 lg:pt-32">
-              <Image
-                src={rightImage}
-                alt=""
-                width={560}
-                height={560}
-                className="h-auto object-contain w-full max-w-[300px]"
-              />
-            </div>
-          ) : null}
         </div>
       </div>
     </section>
