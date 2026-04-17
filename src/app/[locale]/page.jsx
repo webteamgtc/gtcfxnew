@@ -15,7 +15,6 @@ import PlatformsSection from './components/home2/PlatformsSection';
 import CopyTradingSection from './components/common/home/CopyTradingSection';
 import { getPageMetadata } from '@/lib/metadata/getPageMetadata';
 import HeroSectionHome2 from './components/home2/HeroSectionHome2';
-import HeroSectionHomeVideo from './components/home2/HeroSectionHomeVideo';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -36,7 +35,7 @@ export default async function HomePage({ params }) {
 
   return (
    <>
-   <HeroSectionHomeVideo />
+   <HeroSectionHome2 />
   <RevealOnScroll>
   <TradingTicker />
 </RevealOnScroll>
