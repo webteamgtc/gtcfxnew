@@ -156,8 +156,8 @@ export default function MainFooter({ locale: localeProp = "en" }) {
               </h3>
 
               <ul className="space-y-2.5">
-                {column.links.map((link) => (
-                  <li key={`${column.title}-${link.href}`}>
+                {column.links.map((link,idx) => (
+                  <li key={`${column.title}-${link.href}-${idx}`}>
                     <Link
                       href={
                         link.href.startsWith("/")
