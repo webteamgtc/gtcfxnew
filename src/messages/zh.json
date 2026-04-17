@@ -467,199 +467,199 @@
       }
     },
     "homeMarkets": {
-    "heading": {
-      "beforeHighlight": "交易全球",
-      "highlightOne": "差价合约市场",
-      "middle": "，享受",
-      "highlightTwo": "机构级",
-      "afterHighlight": "流动性"
-    },
-    "description": "GTCFX 提供机构级流动性，助力交易者实现快速执行、有竞争力的定价和无缝接入全球差价合约市场。我们先进的基础设施确保高效、透明和可靠的交易表现。",
-    "tabs": {
-      "forex": {
-        "label": "外汇",
-        "icon": "/home/forex.svg",
-        "contentTitle": "交易外汇",
-        "contentDescription": "获取深度外汇流动性，涵盖 200 多种交易对、低点差、有竞争力的保证金和闪电般快速的执行。",
-        "buttonText": "探索外汇",
-        "buttonLink": "/forex",
-        "image": "/home/products/currencies-image.webp"
+      "heading": {
+        "beforeHighlight": "交易全球",
+        "highlightOne": "差价合约市场",
+        "middle": "，享受",
+        "highlightTwo": "机构级",
+        "afterHighlight": "流动性"
       },
-      "energy": {
-        "label": "能源",
-        "icon": "/home/energy.svg",
-        "contentTitle": "投资能源",
-        "contentDescription": "凭借强劲的流动性、低点差和可靠的执行，进入能源市场。",
-        "buttonText": "交易能源",
-        "buttonLink": "/cfd-energy",
-        "image": "/home/products/energy-image.webp"
-      },
-      "commodities": {
-        "label": "大宗商品",
-        "icon": "/home/commed.svg",
-        "contentTitle": "交易大宗商品",
-        "contentDescription": "在金属、能源和其他关键大宗商品市场获得深度流动性、有竞争力的定价和无缝执行。",
-        "buttonText": "探索大宗商品",
-        "buttonLink": "/commodities",
-        "image": "/home/products/commodities-image.webp"
-      },
-      "indices": {
-        "label": "指数",
-        "icon": "/home/indices.svg",
-        "contentTitle": "交易指数",
-        "contentDescription": "利用全球指数流动性，享受低点差、快速执行和有竞争力的定价。",
-        "buttonText": "探索指数",
-        "buttonLink": "/indices",
-        "image": "/home/products/indices-image.webp"
-      },
-      "metals": {
-        "label": "金属",
-        "icon": "/home/first.svg",
-        "contentTitle": "交易金属",
-        "contentDescription": "通过深度金属流动性、低点差和可靠的定价提升您的业务。",
-        "buttonText": "探索金属",
-        "buttonLink": "/precious-metals",
-        "image": "/home/products/metals-image.webp"
+      "description": "GTCFX 提供机构级流动性，助力交易者实现快速执行、有竞争力的定价和无缝接入全球差价合约市场。我们先进的基础设施确保高效、透明和可靠的交易表现。",
+      "tabs": {
+        "forex": {
+          "label": "外汇",
+          "icon": "/home/forex.svg",
+          "contentTitle": "交易外汇",
+          "contentDescription": "获取深度外汇流动性，涵盖 200 多种交易对、低点差、有竞争力的保证金和闪电般快速的执行。",
+          "buttonText": "探索外汇",
+          "buttonLink": "/forex",
+          "image": "/home/products/currencies-image.webp"
+        },
+        "energy": {
+          "label": "能源",
+          "icon": "/home/energy.svg",
+          "contentTitle": "投资能源",
+          "contentDescription": "凭借强劲的流动性、低点差和可靠的执行，进入能源市场。",
+          "buttonText": "交易能源",
+          "buttonLink": "/cfd-energy",
+          "image": "/home/products/energy-image.webp"
+        },
+        "commodities": {
+          "label": "大宗商品",
+          "icon": "/home/commed.svg",
+          "contentTitle": "交易大宗商品",
+          "contentDescription": "在金属、能源和其他关键大宗商品市场获得深度流动性、有竞争力的定价和无缝执行。",
+          "buttonText": "探索大宗商品",
+          "buttonLink": "/commodities",
+          "image": "/home/products/commodities-image.webp"
+        },
+        "indices": {
+          "label": "指数",
+          "icon": "/home/indices.svg",
+          "contentTitle": "交易指数",
+          "contentDescription": "利用全球指数流动性，享受低点差、快速执行和有竞争力的定价。",
+          "buttonText": "探索指数",
+          "buttonLink": "/indices",
+          "image": "/home/products/indices-image.webp"
+        },
+        "metals": {
+          "label": "金属",
+          "icon": "/home/first.svg",
+          "contentTitle": "交易金属",
+          "contentDescription": "通过深度金属流动性、低点差和可靠的定价提升您的业务。",
+          "buttonText": "探索金属",
+          "buttonLink": "/precious-metals",
+          "image": "/home/products/metals-image.webp"
+        }
       }
-    }
-  },
-  "copyTradingSection": {
-    "title": {
-      "beforeHighlight": "跟单交易，",
-      "highlight": "简单易行"
     },
-    "description": "跟随表现优异的交易者，实时自动复制他们的交易。选择您想跟随的对象，设定投资金额，轻松掌控交易，无需持续盯盘。",
-    "buttons": {
-      "primary": {
-        "label": "探索跟单交易",
-        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+    "copyTradingSection": {
+      "title": {
+        "beforeHighlight": "跟单交易，",
+        "highlight": "简单易行"
       },
-      "secondary": {
-        "label": "查看更多跟单交易",
-        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+      "description": "跟随表现优异的交易者，实时自动复制他们的交易。选择您想跟随的对象，设定投资金额，轻松掌控交易，无需持续盯盘。",
+      "buttons": {
+        "primary": {
+          "label": "探索跟单交易",
+          "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+        },
+        "secondary": {
+          "label": "查看更多跟单交易",
+          "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+        }
       }
-    }
-  },
-  "invest": {
-    "titleLine1": "与世界顶级",
-    "titleHighlight": "在线交易平台",
-    "titleLine2": "一同投资",
-    "description": "使用最稳定的 MetaTrader 平台交易 27,000 种金融产品，享受优越的点差。",
-    "cta": "开设真实账户",
-    "items": {
-      "one": {
-        "tag": "点差",
-        "title": "最低点差",
-        "description": "提供业内最低点差，外汇低至 0 点，黄金低至 5 美分"
-      },
-      "two": {
-        "tag": "杠杆",
-        "title": "最优杠杆",
-        "description": "提供最高达 1:2000 的杠杆，最低保证金要求从 0.1% 起"
-      },
-      "three": {
-        "tag": "交易品种",
-        "title": "交易品种",
-        "description": "覆盖七大交易市场，超过 27,000 种交易工具"
-      },
-      "four": {
-        "tag": "执行",
-        "title": "超快执行",
-        "description": "顶级流动性支持，10 毫秒内快速、安全执行交易。"
-      },
-      "five": {
-        "tag": "灵活交易",
-        "title": "动态杠杆",
-        "description": "GTCFX 的动态杠杆会根据您的交易头寸自动调整。"
-      },
-      "six": {
-        "tag": "客户支持",
-        "title": "7x24 小时全球支持",
-        "description": "为全球交易者提供 7x24 小时多语言支持，随时为您服务。"
-      }
-    }
-  },
-   "homeSecurityBanner": {
-    "title": "资金安全",
-    "description": "GTCFX 已从金融委员会获得保险保障，为客户资金提供高达 20,000 欧元的保护。更多详情，",
-    "linkText": "请点击此处",
-    "linkHref": "/compensation-fund"
-  },
-  "homePammSection": {
-    "items": {
-      "one": {
-        "title": "通过 PAMM 更智能地投资",
-        "description": "与专业资金经理一起投资，他们使用结构化的策略进行交易。您的资金保留在您自己的账户中，业绩透明，过程真正无需动手——非常适合长期投资。",
-        "primaryBtn": "探索 PAMM 交易",
-        "primaryHref": "https://gtcpamm.com/app/",
-        "secondaryBtn": "查看更多 PAMM",
-        "secondaryHref": "https://gtcpamm.com/app/",
-        "image": "/home/pamm-home.webp",
-        "imageAlt": "PAMM 交易应用界面",
-        "reverse": "true",
-        "imageCard": "true"
-      }
-    }
-  },
-   "homePlatforms": {
-    "heading": {
-      "beforeHighlight": "探索我们的",
-      "highlight": "先进交易平台"
     },
-    "description": "我们深知每位交易者各不相同。因此，我们提供一系列备受信赖、屡获殊荣的平台和灵活的账户类型，以匹配您的交易风格。",
-    "image": {
-      "src": "/home/mobile-rep.webp",
-      "alt": "交易平台"
-    },
-    "items": {
-      "one": {
-        "title": "客户门户",
-        "description": "无缝的账户管理体验",
-        "icon": "/home/gtcfx.svg",
-        "link": "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
-      },
-      "two": {
-        "title": "GTC Go 应用",
-        "description": "随时随地交易市场",
-        "icon": "/home/gtcfx.svg",
-        "link": "https://qrcodes.pro/YW9ULf"
-      },
-      "three": {
-        "title": "GTC VIP 忠诚奖励",
-        "description": "边交易边解锁专属奖励",
-        "icon": "/home/gtcfx.svg",
-        "link": "/copy-trading"
-      },
-      "four": {
-        "title": "MT4 交易平台",
-        "description": "备受信赖的经典交易平台",
-        "icon": "/home/mt4.svg",
-        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobalsa4setup.exe"
-      },
-      "five": {
-        "title": "MT5 交易平台",
-        "description": "为现代交易打造的高级工具",
-        "icon": "/home/mt5.svg",
-        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe"
+    "invest": {
+      "titleLine1": "与世界顶级",
+      "titleHighlight": "在线交易平台",
+      "titleLine2": "一同投资",
+      "description": "使用最稳定的 MetaTrader 平台交易 27,000 种金融产品，享受优越的点差。",
+      "cta": "开设真实账户",
+      "items": {
+        "one": {
+          "tag": "点差",
+          "title": "最低点差",
+          "description": "提供业内最低点差，外汇低至 0 点，黄金低至 5 美分"
+        },
+        "two": {
+          "tag": "杠杆",
+          "title": "最优杠杆",
+          "description": "提供最高达 1:2000 的杠杆，最低保证金要求从 0.1% 起"
+        },
+        "three": {
+          "tag": "交易品种",
+          "title": "交易品种",
+          "description": "覆盖七大交易市场，超过 27,000 种交易工具"
+        },
+        "four": {
+          "tag": "执行",
+          "title": "超快执行",
+          "description": "顶级流动性支持，10 毫秒内快速、安全执行交易。"
+        },
+        "five": {
+          "tag": "灵活交易",
+          "title": "动态杠杆",
+          "description": "GTCFX 的动态杠杆会根据您的交易头寸自动调整。"
+        },
+        "six": {
+          "tag": "客户支持",
+          "title": "7x24 小时全球支持",
+          "description": "为全球交易者提供 7x24 小时多语言支持，随时为您服务。"
+        }
       }
-    }
-  },
-  "homeBlogs": {
-    "heading": {
-      "before": "最新洞察",
-      "separator": "与",
-      "after": "公司动态"
     },
-    "description": "通过最新的市场洞察、交易动态和公司新闻保持信息领先。探索来自 GTCFX 的专家分析、教育内容及重要公告。",
-    "readMore": "阅读 →",
-    "fallback": {
-      "title": "无标题文章",
-      "excerpt": "阅读我们团队的最新动态与公告。",
-      "date": "2026年3月26日",
-      "readTime": "阅读需 5 分钟",
-      "category": "博客"
-    }
-  },
+    "homeSecurityBanner": {
+      "title": "资金安全",
+      "description": "GTCFX 已从金融委员会获得保险保障，为客户资金提供高达 20,000 欧元的保护。更多详情，",
+      "linkText": "请点击此处",
+      "linkHref": "/compensation-fund"
+    },
+    "homePammSection": {
+      "items": {
+        "one": {
+          "title": "通过 PAMM 更智能地投资",
+          "description": "与专业资金经理一起投资，他们使用结构化的策略进行交易。您的资金保留在您自己的账户中，业绩透明，过程真正无需动手——非常适合长期投资。",
+          "primaryBtn": "探索 PAMM 交易",
+          "primaryHref": "https://gtcpamm.com/app/",
+          "secondaryBtn": "查看更多 PAMM",
+          "secondaryHref": "https://gtcpamm.com/app/",
+          "image": "/home/pamm-home.webp",
+          "imageAlt": "PAMM 交易应用界面",
+          "reverse": "true",
+          "imageCard": "true"
+        }
+      }
+    },
+    "homePlatforms": {
+      "heading": {
+        "beforeHighlight": "探索我们的",
+        "highlight": "先进交易平台"
+      },
+      "description": "我们深知每位交易者各不相同。因此，我们提供一系列备受信赖、屡获殊荣的平台和灵活的账户类型，以匹配您的交易风格。",
+      "image": {
+        "src": "/home/mobile-rep.webp",
+        "alt": "交易平台"
+      },
+      "items": {
+        "one": {
+          "title": "客户门户",
+          "description": "无缝的账户管理体验",
+          "icon": "/home/gtcfx.svg",
+          "link": "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+        },
+        "two": {
+          "title": "GTC Go 应用",
+          "description": "随时随地交易市场",
+          "icon": "/home/gtcfx.svg",
+          "link": "https://qrcodes.pro/YW9ULf"
+        },
+        "three": {
+          "title": "GTC VIP 忠诚奖励",
+          "description": "边交易边解锁专属奖励",
+          "icon": "/home/gtcfx.svg",
+          "link": "/copy-trading"
+        },
+        "four": {
+          "title": "MT4 交易平台",
+          "description": "备受信赖的经典交易平台",
+          "icon": "/home/mt4.svg",
+          "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobalsa4setup.exe"
+        },
+        "five": {
+          "title": "MT5 交易平台",
+          "description": "为现代交易打造的高级工具",
+          "icon": "/home/mt5.svg",
+          "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe"
+        }
+      }
+    },
+    "homeBlogs": {
+      "heading": {
+        "before": "最新洞察",
+        "separator": "与",
+        "after": "公司动态"
+      },
+      "description": "通过最新的市场洞察、交易动态和公司新闻保持信息领先。探索来自 GTCFX 的专家分析、教育内容及重要公告。",
+      "readMore": "阅读 →",
+      "fallback": {
+        "title": "无标题文章",
+        "excerpt": "阅读我们团队的最新动态与公告。",
+        "date": "2026年3月26日",
+        "readTime": "阅读需 5 分钟",
+        "category": "博客"
+      }
+    },
     "primeHome": {
       "heading": "为每位投资者打造的智能交易方案",
       "desc": "选择适合您目标的交易方式。无论您倾向于实时跟随经验丰富的交易者，还是与专业的资金管理人共同投资，我们的方案都旨在让交易变得更简单、更智能、更透明。",
@@ -2440,9 +2440,18 @@
           "uae": "22:00"
         },
         "monday": {
-          "china": ["06:00", "07:00"],
-          "server": ["01:00", "02:00"],
-          "uae": ["02:00", "03:00"]
+          "china": [
+            "06:00",
+            "07:00"
+          ],
+          "server": [
+            "01:00",
+            "02:00"
+          ],
+          "uae": [
+            "02:00",
+            "03:00"
+          ]
         }
       },
       "hmrBox": {
@@ -2573,6 +2582,7 @@
       "butttonLp": "申请流动性服务"
     },
     "pamm": {
+      "bannerDesc": "利用专业交易者的知识和经验，无需亲自交易。",
       "banner": {
         "title": "PAMM",
         "des1": "PAMM（百分比分配管理模块）账户是外汇交易领域流行的投资工具。它是管理账户的一种特殊形式，允许个人投资者将资金分配给专业交易员或资金经理，然后由专业交易员或资金经理代表他们进行交易。 PAMM 账户结构旨在为投资者和资金管理者提供多种好处，使其成为外汇市场上的常见选择。",
@@ -2609,6 +2619,7 @@
       }
     },
     "mam": {
+      "bannerDesc": "通过强大的 MAM 解决方案，简化多账户交易，实现高性能、灵活性和精确交易分配。",
       "banner": {
         "title": "MAM",
         "des1": "MAM（多账户管理器）账户是外汇交易领域的专业投资工具，旨在让专业交易者、资产管理者和个人投资者同时管理多个交易账户。它为经验丰富的交易者提供了一种代表多个客户高效执行交易的结构，使其成为外汇交易者的热门选择。"
@@ -2638,6 +2649,7 @@
       }
     },
     "vpsHosting": {
+      "bannerDesc": "确保不间断交易，使用高性能 VPS 主机，专为低延迟、快速执行和 24/7 可靠性设计。",
       "hero": {
         "heading": "根据您的需求量身定制的强大虚拟专用服务器",
         "button": "开设真实账户",
@@ -2845,6 +2857,306 @@
       "vps-hosting-services": "VPS 主机服务",
       "website-disclaimer": "网站免责声明",
       "why-gtc-group": "为什么选择 GTC 集团"
+    }
+  },
+  "downApp": {
+    "bannerTitle": "下载交易应用",
+    "bannerDescription": "与我们一起交易，为您提供更优质的投资途径，让资金实现更高效、稳健的增长。",
+    "section": {
+      "badge": "交易平台",
+      "titleStart": "随时随地，",
+      "titleHighlight": "自由交易",
+      "description": "通过手机、平板或桌面设备，轻松访问我们直观易用的平台，无论身在何处，都能畅享全球市场的流畅交易体验。",
+      "groups": {
+        "pcMac": {
+          "title": "电脑 / Mac",
+          "items": {
+            "one": "MT4 电脑版",
+            "two": "MT5 电脑版"
+          }
+        },
+        "smartphones": {
+          "title": "智能手机",
+          "items": {
+            "one": "MT4 安卓版",
+            "two": "MT4 iPhone版",
+            "three": "MT5 安卓版",
+            "four": "MT5 iPhone版"
+          }
+        },
+        "apkFile": {
+          "title": "APK 文件",
+          "items": {
+            "one": "MT4 安卓版",
+            "two": "MT5 安卓版"
+          }
+        }
+      },
+      "appCard": {
+        "eyebrow": "GTC Go 应用",
+        "title": "一款强大的应用，随时随地交易",
+        "description": "立即下载，在一个平台上访问 MT4 和 MT5 兼容交易。GTC 一体化应用专为追求速度、灵活性与流畅交易体验的用户打造。",
+        "storeButtons": {
+          "appStoreAlt": "在 App Store 下载",
+          "googlePlayAlt": "在 Google Play 获取"
+        },
+        "featureOne": {
+          "title": "兼容 MT4 & MT5",
+          "description": "在移动端轻松访问可靠的交易环境。"
+        },
+        "featureTwo": {
+          "title": "灵活便捷",
+          "description": "随时随地连接市场，轻松管理您的交易。"
+        }
+      }
+    }
+  },
+  "copyTradingPage": {
+    "bannerTitle": "跟单交易",
+    "bannerDescription": "与我们一起交易，为您提供更优质的投资途径，让资金实现更高效、稳健的增长。",
+    "hero": {
+      "badge": "跟单交易",
+      "titleStart": "让跟单交易更简单、",
+      "titleHighlight": "更智能",
+      "description": "跟随表现优秀的交易员，自动复制其交易策略，同时保持对资金的掌控，享受更灵活透明的跟单交易体验。",
+      "primaryCta": "开始跟单交易",
+      "secondaryCta": "浏览交易员",
+      "features": {
+        "one": "自动复制交易",
+        "two": "透明的绩效表现",
+        "three": "支持手机与网页访问"
+      },
+      "imageAlt": "全球跟单交易网络"
+    },
+    "whatIs": {
+      "badge": "什么是跟单交易",
+      "titleStart": "跟随策略，",
+      "titleHighlight": "掌控资金",
+      "description": "跟单交易允许您跟随经验丰富的交易员，并自动复制其交易操作。这是一种更简单参与市场的方式，同时保持对资金的可视化与控制权。",
+      "cards": {
+        "one": {
+          "title": "选择交易员",
+          "description": "浏览交易员资料，查看其表现，并选择符合您目标的交易策略。"
+        },
+        "two": {
+          "title": "自动复制",
+          "description": "连接后，系统将自动复制交易，无需手动逐笔操作。"
+        },
+        "three": {
+          "title": "监控与管理",
+          "description": "随时跟踪表现，灵活管理资金分配，全面掌控账户情况。"
+        }
+      }
+    },
+    "howItWorks": {
+      "badge": "操作流程",
+      "titleStart": "仅需",
+      "titleHighlight": "三步开始",
+      "description": "轻松开启跟单交易。创建账户、选择交易员，即可体验更顺畅透明的交易方式。",
+      "steps": {
+        "one": {
+          "title": "开设真实账户",
+          "description": "创建您的 GTCFX 真实账户并完成设置，即可使用跟单交易功能。"
+        },
+        "two": {
+          "title": "选择交易员",
+          "description": "查看交易员资料、历史表现及风格，选择您想跟随的对象。"
+        },
+        "three": {
+          "title": "开始跟单",
+          "description": "分配资金，启动跟单，并在控制面板中实时监控表现。"
+        }
+      }
+    },
+    "rating": {
+      "topPerformer": {
+        "title": "顶级表现交易员"
+      },
+      "filters": {
+        "orderByLabel": "排序方式",
+        "ofLabel": "共",
+        "options": {
+          "balance": "余额",
+          "averageProfit": "平均收益",
+          "deposits": "入金",
+          "rating": "评级"
+        }
+      },
+      "list": {
+        "pnlLabel": "30天盈亏",
+        "roiLabel": "回报率",
+        "copyButton": "跟单"
+      }
+    }
+  },
+  "marginBonusPage": {
+    "bannerTitle": "保证金赠金",
+    "bannerDescription": "通过额外的保证金支持提升您的交易能力，让您更灵活地把握市场机会。",
+    "hero": {
+      "badge": "保证金赠金活动",
+      "titleStart": "什么是",
+      "titleHighlight": "GTC 保证金赠金",
+      "description": "保证金赠金是一种基于您的入金额度发放的不可提取、不可转让的信用额度。它可提升账户可用保证金，使您在市场波动较大时拥有更多交易空间。"
+    },
+    "warning": {
+      "text": "重要提示：赠金一旦被移除将无法恢复，且在任何情况下均不可提取或转让。"
+    },
+    "summary": {
+      "minimumDeposit": {
+        "label": "最低入金",
+        "value": "$500+"
+      },
+      "bonusRate": {
+        "label": "赠金比例",
+        "value": "50% / 20%"
+      },
+      "maxBonus": {
+        "label": "最高赠金",
+        "value": "$20,000"
+      },
+      "cashback": {
+        "label": "返现",
+        "value": "$3 / 手"
+      }
+    },
+    "eligibility": {
+      "title": "参与条件",
+      "points": {
+        "one": "本活动仅适用于已完成完整身份验证的真实交易账户客户。",
+        "two": "适用于",
+        "three": "除美分账户外，所有账户类型均可参与本活动。",
+        "four": "每位客户仅可参与一次，除非另有书面授权。",
+        "five": "通过 MAM、PAMM 或社交交易的客户不具备参与资格。",
+        "six": "赠金为非亏损型，仅用于保证金支持，不构成真实资金，且不可提取或转让。"
+      },
+      "subPoints": {
+        "one": "新客户首次入金且金额不低于 $500。",
+        "two": "老客户追加入金，仅针对新增入金额度计算。"
+      },
+      "notAvailableLabel": "以下地区不可参与",
+      "notAvailableCountries": {
+        "one": "中国",
+        "two": "越南",
+        "three": "台湾",
+        "four": "香港",
+        "five": "印度尼西亚",
+        "six": "巴基斯坦"
+      }
+    },
+    "bonusSize": {
+      "title": "赠金结构与计算",
+      "points": {
+        "one": "赠金金额计算方式如下",
+        "two": "每位客户最高赠金总额为 $20,000。",
+        "three": "客户需先注册活动并完成符合条件的入金，方可获得赠金。",
+        "four": "注册并入金后，赠金申请将自动生成并处理。"
+      },
+      "subPoints": {
+        "one": "$10,000 以内入金享 50% 赠金",
+        "two": "超过 $10,000 的部分按 20% 计算"
+      }
+    },
+    "cashback": {
+      "title": "返现规则",
+      "points": {
+        "one": "获得保证金赠金的客户，在3个月内交易外汇、黄金、金属及原油产品，每手可获得 $3 返现。",
+        "two": "返现仅可申请一次，且需满足以下条件",
+        "three": "返现总额不得超过已获得的赠金金额。",
+        "four": "返现需通过客户的专属客户经理申请。",
+        "five": "审核通过后，返现将在7个工作日内到账。"
+      },
+      "subPoints": {
+        "one": "返现金额至少为 $500",
+        "two": "且需达到赠金金额的至少 20%"
+      },
+      "examplesLabel": "示例",
+      "examples": {
+        "one": {
+          "text": "若客户获得 $2,500 赠金，则需交易约 167 手，方可获得 $500 返现。"
+        },
+        "two": {
+          "text": "若客户获得 $3,000 赠金，但仅交易约 133 手获得 $400 返现。"
+        },
+        "three": {
+          "text": "若客户获得 $1,000 赠金，则需交易约 167 手，获得 $500 返现（超过赠金的50%）。"
+        },
+        "four": {
+          "text": "若客户获得 $5,000 赠金，并交易 100 手获得 $300 返现。"
+        }
+      },
+      "status": {
+        "eligible": "符合条件",
+        "ineligible": "不符合条件"
+      }
+    },
+    "bonusUse": {
+      "title": "赠金用途与性质",
+      "points": {
+        "one": "保证金赠金仅用于支持交易保证金，不可用于",
+        "two": "账户发生任何提现操作，将自动取消赠金。"
+      },
+      "subPoints": {
+        "one": "提现",
+        "two": "转账",
+        "three": "作为可交易或真实账户余额使用"
+      }
+    },
+    "withdrawalConditions": {
+      "title": "提现规则",
+      "points": {
+        "one": "若账户净值低于赠金金额，GTCFX 有权取消赠金。",
+        "two": "赠金一旦被取消，将不予恢复。"
+      }
+    },
+    "bonusExpiry": {
+      "title": "赠金有效期",
+      "points": {
+        "one": "保证金赠金自首次符合条件的入金日起，有效期为3个月。",
+        "two": "3个月后，无论是否有交易，GTCFX 均可自动取消赠金。",
+        "three": "若在3个月内未满足返现条件，则返现资格失效。"
+      }
+    },
+    "abusePolicy": {
+      "title": "滥用规则",
+      "points": {
+        "one": "严禁滥用本活动，例如",
+        "two": "GTCFX 有权"
+      },
+      "subPoints": {
+        "one": "在多个账户或不同经纪商之间进行对冲交易",
+        "two": "利用延迟套利或技术漏洞",
+        "three": "协同操纵赠金规则"
+      },
+      "actions": {
+        "one": "无需提前通知即可取消赠金",
+        "two": "取消因滥用行为获得的返现或利润",
+        "three": "暂停或终止涉及违规行为的账户"
+      }
+    },
+    "stopOutPolicy": {
+      "title": "强平规则",
+      "points": {
+        "one": "当账户净值达到强平水平，或浮动亏损等于账户余额时，保证金赠金将被自动移除。"
+      }
+    },
+    "clientAcknowledgment": {
+      "title": "客户确认",
+      "points": {
+        "one": "客户一旦接受保证金赠金，即表示同意本条款与条件。",
+        "two": "如发现滥用行为，可能导致赠金取消、利润没收或账户暂停。"
+      }
+    },
+    "howToApply": {
+      "title": "申请方式",
+      "points": {
+        "one": "在活动页面提交表单完成注册。",
+        "two": "向已验证的真实账户入金至少 $500。",
+        "three": "完成以上步骤后，赠金将自动处理。",
+        "four": "仅限已注册客户可获得赠金。"
+      },
+      "cashbackNote": "如需申请返现，请在满足交易条件后联系您的专属客户经理。",
+      "assistanceNote": "如需帮助，请联系您的客户经理或 GTCFX 客服团队。",
+      "buttonLabel": "开立真实账户"
     }
   }
 }

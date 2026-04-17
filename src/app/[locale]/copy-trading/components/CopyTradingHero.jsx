@@ -1,8 +1,11 @@
 "use client";
 
 import Image from "next/image";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
-export default function CopyTradingHero() {
+export default function CopyTradingHero({ messages = {} }) {
+  const t = usePathTranslation("copyTradingPage"); 
+
   return (
     <section className="relative overflow-hidden">
       {/* glow */}
@@ -14,18 +17,16 @@ export default function CopyTradingHero() {
           {/* Left content */}
           <div className="text-center lg:text-left">
             <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-              Copy Trading
+              {t("hero.badge")}
             </span>
 
             <h2 className="HeadingH2 mt-4 text-primary">
-              Copy Trading Made
-              <span className="block text-[#b68756]">Simple & Smarter</span>
+              {t("hero.titleStart")}
+              <span className="block text-[#b68756]">{t("hero.titleHighlight")}</span>
             </h2>
 
             <p className="Text pt-5">
-              Follow top-performing traders, copy their strategies automatically,
-              and stay in control of your funds with a more flexible and transparent
-              copy trading experience.
+              {t("hero.description")}
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
@@ -33,21 +34,21 @@ export default function CopyTradingHero() {
                 href="/account/live"
                 className="inline-flex min-h-[52px] items-center justify-center rounded-xl bg-[#263788] px-7 text-sm font-semibold text-white transition hover:opacity-90 md:text-base"
               >
-                Start Copy Trading
+                {t("hero.primaryCta")}
               </a>
 
               <a
                 href="#copy-traders"
                 className="inline-flex min-h-[52px] items-center justify-center rounded-xl border border-[#D1D5DB] bg-white px-7 text-sm font-semibold text-primary transition hover:bg-[#F8FAFC] md:text-base"
               >
-                Explore Traders
+                {t("hero.secondaryCta")}
               </a>
             </div>
 
             <div className="mt-8 flex flex-wrap justify-center gap-6 text-sm text-[#6B7280] lg:justify-start">
-              <span>Automatic trade replication</span>
-              <span>Transparent performance</span>
-              <span>Mobile + web access</span>
+              <span>{t("hero.features.one")}</span>
+              <span>{t("hero.features.two")}</span>
+              <span>{t("hero.features.three")}</span>
             </div>
           </div>
 
@@ -58,7 +59,7 @@ export default function CopyTradingHero() {
             <div className="relative w-full max-w-[620px]">
               <Image
                 src="/copy/copyTrading.webp" 
-                alt="Copy trading global network"
+                alt={t("hero.imageAlt")}
                 width={620}
                 height={480}
                 className="h-auto w-full object-contain"

@@ -251,277 +251,277 @@
         }
     },
     "breadcrumbs": {
-    "home": "الرئيسية",
-    "url": {
-      "about-us": "من نحن",
-      "account-types": "أنواع الحسابات",
-      "awards": "الجوائز",
-      "blogs": "المدونات",
-      "careers": "الوظائف",
-      "cfd-energy": "عقود الفروقات للطاقة",
-      "commodities": "عقود الفروقات للسلع",
-      "company-news": "أخبار الشركة",
-      "compensation-fund": "صندوق التعويض",
-      "contact-us": "اتصل بنا",
-      "cookie-policy": "سياسة ملفات تعريف الارتباط",
-      "copy-trading": "نسخ التداول",
-      "delete": "حذف الحساب",
-      "deposit": "إيداع الأموال",
-      "deposit-and-refund-policy": "سياسة الإيداع والاسترداد",
-      "download-app": "تحميل التطبيق",
-      "dynamic-leverage": "الرافعة المالية الديناميكية",
-      "earnings-calendar": "تقويم الأرباح وتوزيعات الأرباح",
-      "economic-calendar": "التقويم الاقتصادي",
-      "events-and-exhibitions": "الفعاليات والمعارض",
-      "forex": "عقود الفروقات للفوركس",
-      "free-demo-account": "حساب تجريبي مجاني",
-      "global-presence": "الانتشار العالمي",
-      "glossary-faqs": "المصطلحات والأسئلة الشائعة",
-      "gtc-go-app": "تطبيق GTC Go",
-      "home2": "الرئيسية",
-      "indices": "عقود الفروقات للمؤشرات",
-      "kyc-compliance-policy": "سياسة الامتثال KYC",
-      "leaderboard": "لوحة المتصدرين",
-      "legal-policies-client-agreements": "السياسات القانونية واتفاقيات العملاء",
-      "liquidity-technology": "السيولة والتكنولوجيا",
-      "mam-account": "حساب MAM",
-      "margin-bonus": "مكافأة الهامش",
-      "market-overview": "نظرة عامة على السوق",
-      "mt4-platform": "منصة MT4",
-      "mt5-platform": "منصة MT5",
-      "pamm-account": "حساب PAMM",
-      "precious-metals": "عقود الفروقات للمعادن",
-      "privacy-policy": "سياسة الخصوصية",
-      "regulations": "التنظيمات",
-      "restricted-countries": "الدول المحظورة",
-      "risk-disclosure": "الإفصاح عن المخاطر",
-      "swap-free-terms-and-conditions": "شروط وأحكام التداول بدون سواب",
-      "swap-free-trading": "التداول بدون سواب",
-      "swap-update": "تحديث السواب",
-      "thank-you": "شكراً لك",
-      "tutorial-videos": "فيديوهات تعليمية",
-      "vps-hosting-services": "خدمات استضافة VPS",
-      "website-disclaimer": "إخلاء مسؤولية الموقع",
-      "why-gtc-group": "لماذا GTC Group"
-    }
-  },
+        "home": "الرئيسية",
+        "url": {
+            "about-us": "من نحن",
+            "account-types": "أنواع الحسابات",
+            "awards": "الجوائز",
+            "blogs": "المدونات",
+            "careers": "الوظائف",
+            "cfd-energy": "عقود الفروقات للطاقة",
+            "commodities": "عقود الفروقات للسلع",
+            "company-news": "أخبار الشركة",
+            "compensation-fund": "صندوق التعويض",
+            "contact-us": "اتصل بنا",
+            "cookie-policy": "سياسة ملفات تعريف الارتباط",
+            "copy-trading": "نسخ التداول",
+            "delete": "حذف الحساب",
+            "deposit": "إيداع الأموال",
+            "deposit-and-refund-policy": "سياسة الإيداع والاسترداد",
+            "download-app": "تحميل التطبيق",
+            "dynamic-leverage": "الرافعة المالية الديناميكية",
+            "earnings-calendar": "تقويم الأرباح وتوزيعات الأرباح",
+            "economic-calendar": "التقويم الاقتصادي",
+            "events-and-exhibitions": "الفعاليات والمعارض",
+            "forex": "عقود الفروقات للفوركس",
+            "free-demo-account": "حساب تجريبي مجاني",
+            "global-presence": "الانتشار العالمي",
+            "glossary-faqs": "المصطلحات والأسئلة الشائعة",
+            "gtc-go-app": "تطبيق GTC Go",
+            "home2": "الرئيسية",
+            "indices": "عقود الفروقات للمؤشرات",
+            "kyc-compliance-policy": "سياسة الامتثال KYC",
+            "leaderboard": "لوحة المتصدرين",
+            "legal-policies-client-agreements": "السياسات القانونية واتفاقيات العملاء",
+            "liquidity-technology": "السيولة والتكنولوجيا",
+            "mam-account": "حساب MAM",
+            "margin-bonus": "مكافأة الهامش",
+            "market-overview": "نظرة عامة على السوق",
+            "mt4-platform": "منصة MT4",
+            "mt5-platform": "منصة MT5",
+            "pamm-account": "حساب PAMM",
+            "precious-metals": "عقود الفروقات للمعادن",
+            "privacy-policy": "سياسة الخصوصية",
+            "regulations": "التنظيمات",
+            "restricted-countries": "الدول المحظورة",
+            "risk-disclosure": "الإفصاح عن المخاطر",
+            "swap-free-terms-and-conditions": "شروط وأحكام التداول بدون سواب",
+            "swap-free-trading": "التداول بدون سواب",
+            "swap-update": "تحديث السواب",
+            "thank-you": "شكراً لك",
+            "tutorial-videos": "فيديوهات تعليمية",
+            "vps-hosting-services": "خدمات استضافة VPS",
+            "website-disclaimer": "إخلاء مسؤولية الموقع",
+            "why-gtc-group": "لماذا GTC Group"
+        }
+    },
     "home": {
         "homeHero": {
-    "badge": {
-      "tag": "جديد",
-      "title": "تطبيق GTC GO للتداول"
-    },
-    "title": {
-      "beforeHighlight": "تداول في ",
-      "highlight": "الأسواق العالمية ",
-      "afterHighlight": "بثقة"
-    },
-    "description": "يمكنك الوصول إلى الفوركس والمؤشرات والسلع وعقود الفروقات (CFDs) من خلال بيئة تداول قوية مصممة للسرعة والأمان والدقة.",
-    "buttons": {
-      "liveAccount": "افتح حساباً حقيقياً",
-      "demoAccount": "حساب تجريبي مجاني"
-    },
-    "networkText": {
-      "label": "شبكة عالمية تغطي",
-      "highlight": "أكثر من 22 وجهة"
-    },
-    "reviews": {
-      "order": {
-        "one": "google",
-        "two": "wikifx",
-        "three": "investing",
-        "four": "myfxbook",
-        "five": "tradingview"
-      },
-      "items": {
-        "google": {
-          "name": "Google",
-          "logo": "/common/google.webp",
-          "rating": "4.5",
-          "stars": "5"
+            "badge": {
+                "tag": "جديد",
+                "title": "تطبيق GTC GO للتداول"
+            },
+            "title": {
+                "beforeHighlight": "تداول في ",
+                "highlight": "الأسواق العالمية ",
+                "afterHighlight": "بثقة"
+            },
+            "description": "يمكنك الوصول إلى الفوركس والمؤشرات والسلع وعقود الفروقات (CFDs) من خلال بيئة تداول قوية مصممة للسرعة والأمان والدقة.",
+            "buttons": {
+                "liveAccount": "افتح حساباً حقيقياً",
+                "demoAccount": "حساب تجريبي مجاني"
+            },
+            "networkText": {
+                "label": "شبكة عالمية تغطي",
+                "highlight": "أكثر من 22 وجهة"
+            },
+            "reviews": {
+                "order": {
+                    "one": "google",
+                    "two": "wikifx",
+                    "three": "investing",
+                    "four": "myfxbook",
+                    "five": "tradingview"
+                },
+                "items": {
+                    "google": {
+                        "name": "Google",
+                        "logo": "/common/google.webp",
+                        "rating": "4.5",
+                        "stars": "5"
+                    },
+                    "wikifx": {
+                        "name": "WikiFX",
+                        "logo": "/common/wiki.webp",
+                        "rating": "9.2",
+                        "stars": "5"
+                    },
+                    "investing": {
+                        "name": "Investing.com",
+                        "logo": "/common/invest.webp",
+                        "rating": "4.1",
+                        "stars": "4"
+                    },
+                    "myfxbook": {
+                        "name": "myfxbook",
+                        "logo": "/common/fx.png",
+                        "rating": "4.8",
+                        "stars": "5"
+                    },
+                    "tradingview": {
+                        "name": "TradingView",
+                        "logo": "/common/trading.webp",
+                        "rating": "4.8",
+                        "stars": "5"
+                    }
+                }
+            }
         },
-        "wikifx": {
-          "name": "WikiFX",
-          "logo": "/common/wiki.webp",
-          "rating": "9.2",
-          "stars": "5"
+        "homeMarkets": {
+            "heading": {
+                "beforeHighlight": "تداول في أسواق ",
+                "highlightOne": "العقود مقابل الفروقات (CFDs) العالمية",
+                "middle": " بسيولة ",
+                "highlightTwo": "مؤسسية المستوى",
+                "afterHighlight": ""
+            },
+            "description": "تقدم GTCFX سيولة مؤسسية المستوى، مما يمكّن المتداولين من التنفيذ السريع والتسعير التنافسي والوصول السلس إلى أسواق العقود مقابل الفروقات العالمية. تضمن بنيتنا التحتية المتقدمة أداء تداول فعالاً وشفافاً وموثوقاً.",
+            "tabs": {
+                "forex": {
+                    "label": "الفوركس",
+                    "icon": "/home/forex.svg",
+                    "contentTitle": "تداول الفوركس",
+                    "contentDescription": "احصل على سيولة عميقة في الفوركس مع أكثر من 200 زوج تداول، وفروق أسعار ضيقة، وهوامش تنافسية، وتنفيذ فائق السرعة.",
+                    "buttonText": "استكشف الفوركس",
+                    "buttonLink": "/forex",
+                    "image": "/home/products/currencies-image.webp"
+                },
+                "energy": {
+                    "label": "الطاقة",
+                    "icon": "/home/energy.svg",
+                    "contentTitle": "استثمر في الطاقة",
+                    "contentDescription": "الوصول إلى أسواق الطاقة بسيولة قوية وفروق أسعار ضيقة وتنفيذ موثوق.",
+                    "buttonText": "تداول الطاقة",
+                    "buttonLink": "/cfd-energy",
+                    "image": "/home/products/energy-image.webp"
+                },
+                "commodities": {
+                    "label": "السلع",
+                    "icon": "/home/commed.svg",
+                    "contentTitle": "تداول السلع",
+                    "contentDescription": "احصل على سيولة عميقة وتسعير تنافسي وتنفيذ سلس عبر أسواق المعادن والطاقة وغيرها من أسواق السلع الرئيسية.",
+                    "buttonText": "استكشف السلع",
+                    "buttonLink": "/commodities",
+                    "image": "/home/products/commodities-image.webp"
+                },
+                "indices": {
+                    "label": "المؤشرات",
+                    "icon": "/home/indices.svg",
+                    "contentTitle": "تداول المؤشرات",
+                    "contentDescription": "استفد من سيولة المؤشرات العالمية بفروق أسعار ضيقة وتنفيذ سريع وتسعير تنافسي.",
+                    "buttonText": "استكشف المؤشرات",
+                    "buttonLink": "/indices",
+                    "image": "/home/products/indices-image.webp"
+                },
+                "metals": {
+                    "label": "المعادن",
+                    "icon": "/home/first.svg",
+                    "contentTitle": "تداول المعادن",
+                    "contentDescription": "عزز أعمالك بسيولة عميقة في المعادن، مع فروق أسعار ضيقة وتسعير موثوق.",
+                    "buttonText": "استكشف المعادن",
+                    "buttonLink": "/precious-metals",
+                    "image": "/home/products/metals-image.webp"
+                }
+            }
         },
-        "investing": {
-          "name": "Investing.com",
-          "logo": "/common/invest.webp",
-          "rating": "4.1",
-          "stars": "4"
+        "copyTradingSection": {
+            "title": {
+                "beforeHighlight": "نسخ التداول، ",
+                "highlight": "بكل بساطة"
+            },
+            "description": "تابع المتداولين الأفضل أداءً وانسخ صفقاتهم تلقائياً في الوقت الفعلي. اختر من تريد متابعته، وحدد مبلغ استثمارك، وابقَ مسيطراً بطريقة سهلة للتداول دون مراقبة مستمرة.",
+            "buttons": {
+                "primary": {
+                    "label": "استكشف نسخ التداول",
+                    "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+                },
+                "secondary": {
+                    "label": "اطلع على المزيد من نسخ التداول",
+                    "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
+                }
+            }
         },
-        "myfxbook": {
-          "name": "myfxbook",
-          "logo": "/common/fx.png",
-          "rating": "4.8",
-          "stars": "5"
+        "homeSecurityBanner": {
+            "title": "أمان الأموال",
+            "description": "حصلت GTCFX على وثيقة تأمين من لجنة الخدمات المالية، مما يوفر حماية لأموال العملاء تصل إلى 20,000 يورو. لمزيد من التفاصيل،",
+            "linkText": "انقر هنا",
+            "linkHref": "/compensation-fund"
         },
-        "tradingview": {
-          "name": "TradingView",
-          "logo": "/common/trading.webp",
-          "rating": "4.8",
-          "stars": "5"
-        }
-      }
-    }
-  },
-  "homeMarkets": {
-    "heading": {
-      "beforeHighlight": "تداول في أسواق ",
-      "highlightOne": "العقود مقابل الفروقات (CFDs) العالمية",
-      "middle": " بسيولة ",
-      "highlightTwo": "مؤسسية المستوى",
-      "afterHighlight": ""
-    },
-    "description": "تقدم GTCFX سيولة مؤسسية المستوى، مما يمكّن المتداولين من التنفيذ السريع والتسعير التنافسي والوصول السلس إلى أسواق العقود مقابل الفروقات العالمية. تضمن بنيتنا التحتية المتقدمة أداء تداول فعالاً وشفافاً وموثوقاً.",
-    "tabs": {
-      "forex": {
-        "label": "الفوركس",
-        "icon": "/home/forex.svg",
-        "contentTitle": "تداول الفوركس",
-        "contentDescription": "احصل على سيولة عميقة في الفوركس مع أكثر من 200 زوج تداول، وفروق أسعار ضيقة، وهوامش تنافسية، وتنفيذ فائق السرعة.",
-        "buttonText": "استكشف الفوركس",
-        "buttonLink": "/forex",
-        "image": "/home/products/currencies-image.webp"
-      },
-      "energy": {
-        "label": "الطاقة",
-        "icon": "/home/energy.svg",
-        "contentTitle": "استثمر في الطاقة",
-        "contentDescription": "الوصول إلى أسواق الطاقة بسيولة قوية وفروق أسعار ضيقة وتنفيذ موثوق.",
-        "buttonText": "تداول الطاقة",
-        "buttonLink": "/cfd-energy",
-        "image": "/home/products/energy-image.webp"
-      },
-      "commodities": {
-        "label": "السلع",
-        "icon": "/home/commed.svg",
-        "contentTitle": "تداول السلع",
-        "contentDescription": "احصل على سيولة عميقة وتسعير تنافسي وتنفيذ سلس عبر أسواق المعادن والطاقة وغيرها من أسواق السلع الرئيسية.",
-        "buttonText": "استكشف السلع",
-        "buttonLink": "/commodities",
-        "image": "/home/products/commodities-image.webp"
-      },
-      "indices": {
-        "label": "المؤشرات",
-        "icon": "/home/indices.svg",
-        "contentTitle": "تداول المؤشرات",
-        "contentDescription": "استفد من سيولة المؤشرات العالمية بفروق أسعار ضيقة وتنفيذ سريع وتسعير تنافسي.",
-        "buttonText": "استكشف المؤشرات",
-        "buttonLink": "/indices",
-        "image": "/home/products/indices-image.webp"
-      },
-      "metals": {
-        "label": "المعادن",
-        "icon": "/home/first.svg",
-        "contentTitle": "تداول المعادن",
-        "contentDescription": "عزز أعمالك بسيولة عميقة في المعادن، مع فروق أسعار ضيقة وتسعير موثوق.",
-        "buttonText": "استكشف المعادن",
-        "buttonLink": "/precious-metals",
-        "image": "/home/products/metals-image.webp"
-      }
-    }
-  },
-   "copyTradingSection": {
-    "title": {
-      "beforeHighlight": "نسخ التداول، ",
-      "highlight": "بكل بساطة"
-    },
-    "description": "تابع المتداولين الأفضل أداءً وانسخ صفقاتهم تلقائياً في الوقت الفعلي. اختر من تريد متابعته، وحدد مبلغ استثمارك، وابقَ مسيطراً بطريقة سهلة للتداول دون مراقبة مستمرة.",
-    "buttons": {
-      "primary": {
-        "label": "استكشف نسخ التداول",
-        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
-      },
-      "secondary": {
-        "label": "اطلع على المزيد من نسخ التداول",
-        "href": "https://gtccopy.com/portal/login?redirectUrl=%2F"
-      }
-    }
-  },
-   "homeSecurityBanner": {
-    "title": "أمان الأموال",
-    "description": "حصلت GTCFX على وثيقة تأمين من لجنة الخدمات المالية، مما يوفر حماية لأموال العملاء تصل إلى 20,000 يورو. لمزيد من التفاصيل،",
-    "linkText": "انقر هنا",
-    "linkHref": "/compensation-fund"
-  },
-   "homePammSection": {
-    "items": {
-      "one": {
-        "title": "استثمر بذكاء مع PAMM",
-        "description": "استثمر مع مديري أموال محترفين يتداولون باستخدام استراتيجيات منظمة. تبقى أموالك في حسابك، والأداء شفاف، والعملية خالية تماماً من الجهد، وهي مثالية للاستثمار طويل الأجل.",
-        "primaryBtn": "استكشف تداول PAMM",
-        "primaryHref": "https://gtcpamm.com/app/",
-        "secondaryBtn": "اطلع على المزيد من PAMM",
-        "secondaryHref": "https://gtcpamm.com/app/",
-        "image": "/home/pamm-home.webp",
-        "imageAlt": "شاشة تطبيق تداول PAMM",
-        "reverse": "true",
-        "imageCard": "true"
-      }
-    }
-  },
-   "homePlatforms": {
-    "heading": {
-      "beforeHighlight": "اكتشف ",
-      "highlight": "منصات التداول المتقدمة"
-    },
-    "description": "نحن ندرك أن كل متداول مختلف. لهذا السبب نقدم مجموعة مختارة من المنصات الموثوقة والحاصلة على جوائز وأنواع حسابات مرنة تناسب أسلوب تداولك.",
-    "image": {
-      "src": "/home/mobile-rep.webp",
-      "alt": "منصات التداول"
-    },
-    "items": {
-      "one": {
-        "title": "بوابة العميل",
-        "description": "تجربة سلسة لإدارة الحساب",
-        "icon": "/home/gtcfx.svg",
-        "link": "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
-      },
-      "two": {
-        "title": "تطبيق GTC Go",
-        "description": "تداول الأسواق في أي وقت وفي أي مكان",
-        "icon": "/home/gtcfx.svg",
-        "link": "https://qrcodes.pro/YW9ULf"
-      },
-      "three": {
-        "title": "GTC VIP للمكافآت الولاء",
-        "description": "احصل على مكافآت حصرية أثناء التداول",
-        "icon": "/home/gtcfx.svg",
-        "link": "/copy-trading"
-      },
-      "four": {
-        "title": "منصة MT4 للتداول",
-        "description": "منصة تداول موثوقة وكـلاسيكية",
-        "icon": "/home/mt4.svg",
-        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobalsa4setup.exe"
-      },
-      "five": {
-        "title": "منصة MT5 للتداول",
-        "description": "أدوات متقدمة للتداول العصري",
-        "icon": "/home/mt5.svg",
-        "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe"
-      }
-    }
-  },
-   "homeBlogs": {
-    "heading": {
-      "before": "أحدث الرؤى ",
-      "separator": "و",
-      "after": "تحديثات الشركة"
-    },
-    "description": "ابق على اطلاع بأحدث رؤى السوق وتحديثات التداول وأخبار الشركة. استكشف التحليلات الخبيرة والمحتوى التعليمي والإعلانات الهامة من GTCFX.",
-    "readMore": "اقرأ ←",
-    "fallback": {
-      "title": "مقال بدون عنوان",
-      "excerpt": "اقرأ أحدث التحديثات والإعلانات من فريقنا.",
-      "date": "26 مارس 2026",
-      "readTime": "5 دقائق قراءة",
-      "category": "المدونات"
-    }
-  },
+        "homePammSection": {
+            "items": {
+                "one": {
+                    "title": "استثمر بذكاء مع PAMM",
+                    "description": "استثمر مع مديري أموال محترفين يتداولون باستخدام استراتيجيات منظمة. تبقى أموالك في حسابك، والأداء شفاف، والعملية خالية تماماً من الجهد، وهي مثالية للاستثمار طويل الأجل.",
+                    "primaryBtn": "استكشف تداول PAMM",
+                    "primaryHref": "https://gtcpamm.com/app/",
+                    "secondaryBtn": "اطلع على المزيد من PAMM",
+                    "secondaryHref": "https://gtcpamm.com/app/",
+                    "image": "/home/pamm-home.webp",
+                    "imageAlt": "شاشة تطبيق تداول PAMM",
+                    "reverse": "true",
+                    "imageCard": "true"
+                }
+            }
+        },
+        "homePlatforms": {
+            "heading": {
+                "beforeHighlight": "اكتشف ",
+                "highlight": "منصات التداول المتقدمة"
+            },
+            "description": "نحن ندرك أن كل متداول مختلف. لهذا السبب نقدم مجموعة مختارة من المنصات الموثوقة والحاصلة على جوائز وأنواع حسابات مرنة تناسب أسلوب تداولك.",
+            "image": {
+                "src": "/home/mobile-rep.webp",
+                "alt": "منصات التداول"
+            },
+            "items": {
+                "one": {
+                    "title": "بوابة العميل",
+                    "description": "تجربة سلسة لإدارة الحساب",
+                    "icon": "/home/gtcfx.svg",
+                    "link": "https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
+                },
+                "two": {
+                    "title": "تطبيق GTC Go",
+                    "description": "تداول الأسواق في أي وقت وفي أي مكان",
+                    "icon": "/home/gtcfx.svg",
+                    "link": "https://qrcodes.pro/YW9ULf"
+                },
+                "three": {
+                    "title": "GTC VIP للمكافآت الولاء",
+                    "description": "احصل على مكافآت حصرية أثناء التداول",
+                    "icon": "/home/gtcfx.svg",
+                    "link": "/copy-trading"
+                },
+                "four": {
+                    "title": "منصة MT4 للتداول",
+                    "description": "منصة تداول موثوقة وكـلاسيكية",
+                    "icon": "/home/mt4.svg",
+                    "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobalsa4setup.exe"
+                },
+                "five": {
+                    "title": "منصة MT5 للتداول",
+                    "description": "أدوات متقدمة للتداول العصري",
+                    "icon": "/home/mt5.svg",
+                    "link": "https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/app-files/gtcglobaltrade5setup.exe"
+                }
+            }
+        },
+        "homeBlogs": {
+            "heading": {
+                "before": "أحدث الرؤى ",
+                "separator": "و",
+                "after": "تحديثات الشركة"
+            },
+            "description": "ابق على اطلاع بأحدث رؤى السوق وتحديثات التداول وأخبار الشركة. استكشف التحليلات الخبيرة والمحتوى التعليمي والإعلانات الهامة من GTCFX.",
+            "readMore": "اقرأ ←",
+            "fallback": {
+                "title": "مقال بدون عنوان",
+                "excerpt": "اقرأ أحدث التحديثات والإعلانات من فريقنا.",
+                "date": "26 مارس 2026",
+                "readTime": "5 دقائق قراءة",
+                "category": "المدونات"
+            }
+        },
         "title": "مرحبًا بك في GTC FX",
         "subtitle": "تداول بذكاء عبر منصتنا",
         "intro": "نقدم بيئة آمنة وسهلة الاستخدام لتداول الفوركس. ابدأ اليوم وتحكم في مستقبلك المالي.",
@@ -2709,6 +2709,7 @@
             "butttonLp": "التقديم لخدمة السيولة"
         },
         "pamm": {
+            "bannerDesc": "استفادة من خبرة المتداولين المحترفين دون الحاجة إلى التداول نفسها.",
             "banner": {
                 "title": "PAMM",
                 "des1": "حساب PAMM هو أداة استثمارية تتيح للمستثمرين تخصيص أموالهم لمدير محترف يتداول نيابة عنهم.",
@@ -2739,6 +2740,7 @@
             }
         },
         "mam": {
+            "bannerDesc": "بسّط إدارة التداول عبر حسابات متعددة من خلال حل MAM قوي مصمم للأداء العالي والمرونة وتوزيع الصفقات بدقة.",
             "banner": {
                 "title": "MAM",
                 "des1": "حساب MAM يسمح بإدارة عدة حسابات تداول من خلال مدير واحد بكفاءة عالية."
@@ -2765,6 +2767,7 @@
             }
         },
         "vpsHosting": {
+            "bannerDesc": "تأمين تداول مستمر باستخدام خوادم VPS ذات أداء عالي، مصممة لتقليل التأخير والتنفيذ السريع والموثوقية 24/7.",
             "hero": {
                 "heading": "خوادم VPS قوية مخصصة لاحتياجاتك",
                 "button": "فتح حساب حقيقي",
@@ -2823,11 +2826,17 @@
                 "title": "لماذا تختار VPS لدينا؟",
                 "cards": {
                     "cardOneTitle": "أداء قوي",
+                    "cardOnePara": "افتح الكامل الجهد المطلوب لموقعك أو تطبيقك مع خوادم VPS العالية الأداء. مدعومة بتقنيات حديثة وأجهزة عالية الجودة، نضمن زمن تنفيذ سريع وتجربة تداول سلسة.",
                     "cardTwoTitle": "تداول سريع",
+                    "cardTwoPara": "يتطلب السوق الفوركس تنفيذ سريع. تأمين تنفيذ سريع، مغطي جميع الأزواج الأساسية مثل GBP/USD، EUR/USD، USD/JPY، و AUD/USD.",
                     "cardThreeTitle": "تحكم كامل",
+                    "cardThreePara": "اخذ السيطرة على خادمك بكامل صلاحيات ال root. تخصيص وتكوين خادم VPS الخاص بك لتناسب احتياجاتك المحددة، مع الحرية لتثبيت البرمجيات والتطبيقات التي تهمك أكثر.",
                     "cardFourTitle": "قابلية التوسع",
+                    "cardFourPara": "كلما ازداد عملك، يمكن لخادمك أن يزداد معه. خوادم VPS القابلة للتوسع تتيح لك ترقية الموارد حسب الحاجة، مضمنة بأن الاستضافة سوف لا تحجبك.",
                     "cardFiveTitle": "أمان عالي",
-                    "cardSixTitle": "دعم فني"
+                    "cardFivePara": "اكتشف أن معلوماتك آمنة. تم تطوير خوادم VPS الخاص بنا باستخدام أحدث الإجراءات الأمنية لتضمين الحمايات والنسخ الاحتياطية الدورية لحماية معلوماتك الثمينة.",
+                    "cardSixTitle": "دعم فني",
+                    "cardSixPara": "يتم تقديم خدمة الدعم الفني الخاص بنا لدعمك 24/7. من التنصيب إلى التشخيص، نحن دائما مستعدون لضمان تجربة استضافة VPS السلسة والمرونة."
                 }
             },
             "vpsPricing": {
@@ -2890,5 +2899,305 @@
         "untitled": "مقالة بلا عنوان",
         "imageAlt": "صورة الأخبار",
         "defaultDate": "26 مارس 2026"
+    },
+    "downApp": {
+        "bannerTitle": "تحميل تطبيق التداول",
+        "bannerDescription": "يمنحك التداول معنا أفضل فرصة لاستثمار أموالك بطريقة ذكية ومربحة.",
+        "section": {
+            "badge": "منصات التداول",
+            "titleStart": "تداول في أي مكان،",
+            "titleHighlight": "وفي أي وقت",
+            "description": "يمكنك الوصول بسهولة إلى منصاتنا سهلة الاستخدام من خلال الهاتف المحمول أو الجهاز اللوحي أو الكمبيوتر والاستمتاع بتجربة تداول سلسة عبر الأسواق العالمية أينما كنت.",
+            "groups": {
+                "pcMac": {
+                    "title": "كمبيوتر / ماك",
+                    "items": {
+                        "one": "MT4 للكمبيوتر",
+                        "two": "MT5 للكمبيوتر"
+                    }
+                },
+                "smartphones": {
+                    "title": "الهواتف الذكية",
+                    "items": {
+                        "one": "MT4 للأندرويد",
+                        "two": "MT4 للآيفون",
+                        "three": "MT5 للأندرويد",
+                        "four": "MT5 للآيفون"
+                    }
+                },
+                "apkFile": {
+                    "title": "ملف APK",
+                    "items": {
+                        "one": "MT4 للأندرويد",
+                        "two": "MT5 للأندرويد"
+                    }
+                }
+            },
+            "appCard": {
+                "eyebrow": "تطبيق GTC Go",
+                "title": "تداول أثناء التنقل باستخدام تطبيق واحد قوي",
+                "description": "قم بالتنزيل الآن للوصول إلى تداول متوافق مع MT4 وMT5 في مكان واحد. تم تصميم تطبيق GTC الشامل للمتداولين الذين يبحثون عن السرعة والمرونة وتجربة تداول أكثر سلاسة عبر الهاتف.",
+                "storeButtons": {
+                    "appStoreAlt": "حمّل من App Store",
+                    "googlePlayAlt": "احصل عليه على Google Play"
+                },
+                "featureOne": {
+                    "title": "متوافق مع MT4 وMT5",
+                    "description": "الوصول إلى بيئات تداول موثوقة مع سهولة الاستخدام عبر الهاتف المحمول."
+                },
+                "featureTwo": {
+                    "title": "مصمم للمرونة",
+                    "description": "ابقَ على اتصال بالأسواق وقم بإدارة صفقاتك في أي وقت ومن أي مكان."
+                }
+            }
+        }
+    },
+    "copyTradingPage": {
+        "bannerTitle": "نسخ التداول",
+        "bannerDescription": "يمنحك التداول معنا أفضل فرصة لاستثمار أموالك بطريقة ذكية ومربحة.",
+        "hero": {
+            "badge": "نسخ التداول",
+            "titleStart": "نسخ التداول أصبح",
+            "titleHighlight": "أسهل وأكثر ذكاءً",
+            "description": "تابع أفضل المتداولين أداءً، ونسخ استراتيجياتهم تلقائيًا، مع الحفاظ على التحكم الكامل في أموالك ضمن تجربة مرنة وشفافة.",
+            "primaryCta": "ابدأ نسخ التداول",
+            "secondaryCta": "استكشف المتداولين",
+            "features": {
+                "one": "نسخ الصفقات تلقائيًا",
+                "two": "أداء شفاف",
+                "three": "الوصول عبر الهاتف والويب"
+            },
+            "imageAlt": "شبكة نسخ التداول العالمية"
+        },
+        "whatIs": {
+            "badge": "ما هو نسخ التداول",
+            "titleStart": "اتبع الاستراتيجيات.",
+            "titleHighlight": "ابقَ مسيطرًا.",
+            "description": "يتيح لك نسخ التداول متابعة المتداولين ذوي الخبرة ونسخ صفقاتهم تلقائيًا. ويوفر طريقة أسهل للمشاركة في الأسواق مع الحفاظ على الشفافية والتحكم في رأس المال.",
+            "cards": {
+                "one": {
+                    "title": "اختر متداولًا",
+                    "description": "تصفح ملفات المتداولين، وراجع الأداء، واختر الاستراتيجية التي تناسب أهدافك."
+                },
+                "two": {
+                    "title": "انسخ تلقائيًا",
+                    "description": "بمجرد الاتصال، يمكن نسخ الصفقات تلقائيًا دون الحاجة لإدارة كل صفقة يدويًا."
+                },
+                "three": {
+                    "title": "راقب وتحكم",
+                    "description": "تابع النتائج، وأدر تخصيصاتك، واحتفظ بالمرونة مع رؤية كاملة لحسابك."
+                }
+            }
+        },
+        "howItWorks": {
+            "badge": "كيف يعمل",
+            "titleStart": "ابدأ نسخ التداول في",
+            "titleHighlight": "3 خطوات بسيطة",
+            "description": "البدء سهل. قم بإعداد حسابك، واختر متداولًا، وابدأ النسخ ضمن تجربة أكثر سلاسة وشفافية.",
+            "steps": {
+                "one": {
+                    "title": "افتح حسابًا حقيقيًا",
+                    "description": "أنشئ حساب GTCFX حقيقيًا وأكمل عملية الإعداد للوصول إلى خدمة نسخ التداول."
+                },
+                "two": {
+                    "title": "اختر المتداول المناسب",
+                    "description": "راجع ملفات المتداولين، والأداء، وأسلوب التداول قبل اختيار من ترغب بمتابعته."
+                },
+                "three": {
+                    "title": "ابدأ استراتيجية النسخ",
+                    "description": "خصص رأس المال، وفعّل النسخ، وتابع الأداء مباشرة من لوحة التحكم."
+                }
+            }
+        },
+        "rating": {
+            "topPerformer": {
+                "title": "أفضل المتداولين أداءً"
+            },
+            "filters": {
+                "orderByLabel": "ترتيب حسب",
+                "ofLabel": "من",
+                "options": {
+                    "balance": "الرصيد",
+                    "averageProfit": "متوسط الربح",
+                    "deposits": "الإيداعات",
+                    "rating": "التقييم"
+                }
+            },
+            "list": {
+                "pnlLabel": "أرباح 30 يوم",
+                "roiLabel": "العائد",
+                "copyButton": "نسخ"
+            }
+        }
+    },
+    "marginBonusPage": {
+        "bannerTitle": "مكافأة الهامش",
+        "bannerDescription": "عزّز قوة تداولك من خلال دعم إضافي للهامش، مما يمنحك مرونة أكبر لاغتنام فرص السوق.",
+        "hero": {
+            "badge": "عرض مكافأة الهامش",
+            "titleStart": "ما هي",
+            "titleHighlight": "مكافأة الهامش من GTC",
+            "description": "مكافأة الهامش هي رصيد إضافي غير قابل للسحب أو التحويل يتم منحه بناءً على قيمة الإيداع. يساهم في زيادة الهامش المتاح في حسابك، مما يمنحك مساحة أكبر للتداول خلال فترات تقلب السوق."
+        },
+        "warning": {
+            "text": "هام: يمكن فقدان المكافأة ولن يتم استعادتها في حال إزالتها. كما لا يمكن سحبها أو تحويلها في أي وقت."
+        },
+        "summary": {
+            "minimumDeposit": {
+                "label": "الحد الأدنى للإيداع",
+                "value": "$500+"
+            },
+            "bonusRate": {
+                "label": "نسبة المكافأة",
+                "value": "50% / 20%"
+            },
+            "maxBonus": {
+                "label": "الحد الأقصى للمكافأة",
+                "value": "$20,000"
+            },
+            "cashback": {
+                "label": "استرداد نقدي",
+                "value": "$3 / لوت"
+            }
+        },
+        "eligibility": {
+            "title": "الأهلية",
+            "points": {
+                "one": "العرض متاح حصريًا للعملاء الذين لديهم حسابات تداول حقيقية موثقة بالكامل.",
+                "two": "ينطبق على",
+                "three": "العرض متاح لجميع أنواع الحسابات باستثناء حسابات السنت.",
+                "four": "يمكن لكل عميل المشاركة مرة واحدة فقط، ما لم يتم التصريح بخلاف ذلك كتابيًا.",
+                "five": "العملاء الذين يستخدمون MAM أو PAMM أو التداول الاجتماعي غير مؤهلين.",
+                "six": "المكافأة هي مكافأة غير خاسرة تُستخدم فقط لدعم الهامش، ولا تُعتبر رصيدًا حقيقيًا ولا يمكن سحبها أو تحويلها."
+            },
+            "subPoints": {
+                "one": "الإيداعات الأولى بقيمة لا تقل عن $500 من العملاء الجدد.",
+                "two": "الإيداعات الإضافية للعملاء الحاليين، ويتم تطبيقها فقط على المبلغ الجديد المودع."
+            },
+            "notAvailableLabel": "غير متاح في",
+            "notAvailableCountries": {
+                "one": "الصين",
+                "two": "فيتنام",
+                "three": "تايوان",
+                "four": "هونغ كونغ",
+                "five": "إندونيسيا",
+                "six": "باكستان"
+            }
+        },
+        "bonusSize": {
+            "title": "حجم وهيكل المكافأة",
+            "points": {
+                "one": "يتم احتساب قيمة المكافأة على النحو التالي",
+                "two": "الحد الأقصى لإجمالي المكافأة لكل عميل هو $20,000.",
+                "three": "للحصول على المكافأة، يجب على العميل التسجيل أولاً في العرض ثم إجراء إيداع مؤهل.",
+                "four": "بعد التسجيل والإيداع، سيتم إنشاء طلب المكافأة ومعالجته تلقائيًا."
+            },
+            "subPoints": {
+                "one": "50% من مبلغ الإيداع حتى $10,000",
+                "two": "20% من الجزء الذي يتجاوز $10,000"
+            }
+        },
+        "cashback": {
+            "title": "شروط الاسترداد النقدي",
+            "points": {
+                "one": "العملاء الذين يحصلون على مكافأة الهامش مؤهلون للحصول على $3 لكل لوت كامل يتم تداوله على أزواج العملات والذهب والمعادن والنفط خلال فترة 3 أشهر.",
+                "two": "يمكن طلب الاسترداد النقدي مرة واحدة فقط، وللتأهل",
+                "three": "إجمالي الاسترداد النقدي محدود بقيمة المكافأة المستلمة.",
+                "four": "يجب طلب الاسترداد النقدي من خلال مدير الحساب الشخصي للعميل.",
+                "five": "سيتم إضافة الاسترداد النقدي خلال 7 أيام عمل بعد الموافقة."
+            },
+            "subPoints": {
+                "one": "يجب أن يكون مبلغ الاسترداد النقدي لا يقل عن $500",
+                "two": "ويجب أن يمثل ما لا يقل عن 20% من قيمة المكافأة"
+            },
+            "examplesLabel": "أمثلة",
+            "examples": {
+                "one": {
+                    "text": "إذا حصل العميل على مكافأة بقيمة $2,500، يجب عليه تداول حوالي 167 لوت للحصول على $500 كاسترداد نقدي."
+                },
+                "two": {
+                    "text": "إذا حصل العميل على مكافأة بقيمة $3,000 وتداول حوالي 133 لوت فقط ليحصل على $400 استرداد نقدي."
+                },
+                "three": {
+                    "text": "إذا حصل العميل على مكافأة بقيمة $1,000، يجب عليه تداول حوالي 167 لوت للحصول على $500 استرداد نقدي، وهو أكثر من 50% من المكافأة."
+                },
+                "four": {
+                    "text": "إذا حصل العميل على مكافأة بقيمة $5,000 وتداول 100 لوت للحصول على $300 استرداد نقدي."
+                }
+            },
+            "status": {
+                "eligible": "مؤهل",
+                "ineligible": "غير مؤهل"
+            }
+        },
+        "bonusUse": {
+            "title": "استخدام وطبيعة المكافأة",
+            "points": {
+                "one": "مكافأة الهامش مخصصة فقط لدعم الهامش ولا يمكن",
+                "two": "أي عملية سحب من حساب العميل ستؤدي إلى إزالة المكافأة تلقائيًا."
+            },
+            "subPoints": {
+                "one": "سحبها",
+                "two": "تحويلها",
+                "three": "استخدامها كرصيد قابل للتداول أو كرصيد حقيقي"
+            }
+        },
+        "withdrawalConditions": {
+            "title": "شروط السحب",
+            "points": {
+                "one": "تحتفظ GTCFX بالحق في إزالة المكافأة إذا انخفضت حقوق الملكية في الحساب إلى أقل من قيمة المكافأة.",
+                "two": "بمجرد إزالة المكافأة، لن يتم إعادة تفعيلها تحت أي ظرف."
+            }
+        },
+        "bonusExpiry": {
+            "title": "انتهاء صلاحية المكافأة",
+            "points": {
+                "one": "تكون مكافأة الهامش صالحة لمدة تصل إلى 3 أشهر من تاريخ أول إيداع مؤهل.",
+                "two": "قد تقوم GTCFX بإزالة المكافأة تلقائيًا بعد انتهاء فترة 3 أشهر بغض النظر عن نشاط التداول.",
+                "three": "في حال عدم استيفاء شروط الاسترداد النقدي خلال 3 أشهر، سيتم فقدان الأهلية."
+            }
+        },
+        "abusePolicy": {
+            "title": "سياسة إساءة الاستخدام",
+            "points": {
+                "one": "يُمنع إساءة استخدام العرض بشكل صارم. تشمل الأمثلة",
+                "two": "تحتفظ GTCFX بالحق في"
+            },
+            "subPoints": {
+                "one": "التحوط بين عدة حسابات أو وسطاء",
+                "two": "استغلال فروقات التنفيذ أو أي ثغرات تقنية",
+                "three": "التلاعب المنسق بشروط المكافأة"
+            },
+            "actions": {
+                "one": "إزالة المكافأة دون إشعار مسبق",
+                "two": "إلغاء الاسترداد النقدي أو الأرباح الناتجة عن إساءة الاستخدام",
+                "three": "تعليق أو إنهاء حسابات العملاء المتورطين في الاحتيال أو إساءة الاستخدام"
+            }
+        },
+        "stopOutPolicy": {
+            "title": "سياسة الإيقاف الإجباري (Stop Out)",
+            "points": {
+                "one": "إذا وصلت حقوق الحساب إلى مستوى الإيقاف الإجباري أو إذا تجاوزت الخسائر العائمة الرصيد الفعلي، سيتم إزالة مكافأة الهامش تلقائيًا."
+            }
+        },
+        "clientAcknowledgment": {
+            "title": "إقرار العميل",
+            "points": {
+                "one": "من خلال قبول مكافأة الهامش، يقر العميل ويوافق على هذه الشروط والأحكام.",
+                "two": "قد يؤدي إساءة استخدام العرض إلى إزالة المكافأة أو مصادرة الأرباح أو تعليق الحساب."
+            }
+        },
+        "howToApply": {
+            "title": "كيفية التقديم",
+            "points": {
+                "one": "قم بالتسجيل في العرض عبر إرسال النموذج في صفحة الحملة.",
+                "two": "قم بإيداع مبلغ مؤهل لا يقل عن $500 في حساب التداول الحقيقي الموثق.",
+                "three": "بعد إتمام الخطوتين، سيتم معالجة طلب المكافأة تلقائيًا.",
+                "four": "فقط العملاء المسجلون مؤهلون للحصول على المكافأة."
+            },
+            "cashbackNote": "للمطالبة بالاسترداد النقدي، يرجى التواصل مع مدير حسابك الشخصي بعد استيفاء شروط التداول.",
+            "assistanceNote": "للمساعدة، تواصل مع مدير حسابك أو فريق دعم GTCFX.",
+            "buttonLabel": "فتح حساب حقيقي"
+        }
     }
 }

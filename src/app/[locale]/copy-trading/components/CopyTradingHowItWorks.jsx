@@ -1,24 +1,28 @@
 "use client";
 
-const steps = [
-  {
-    step: "01",
-    title: "Open a live account",
-    desc: "Create your GTCFX live account and complete the setup process to access copy trading.",
-  },
-  {
-    step: "02",
-    title: "Choose your favorite trader",
-    desc: "Review trader profiles, performance, and style before selecting the one you want to follow.",
-  },
-  {
-    step: "03",
-    title: "Start your copy strategy",
-    desc: "Allocate funds, activate copying, and monitor performance directly from your dashboard.",
-  },
-];
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
-export default function CopyTradingHowItWorks() {
+export default function CopyTradingHowItWorks({ messages = {} }) {
+  const t = usePathTranslation("copyTradingPage");
+
+  const steps = [
+    {
+      step: "01",
+      title: t("howItWorks.steps.one.title"),
+      desc: t("howItWorks.steps.one.description"),
+    },
+    {
+      step: "02",
+      title: t("howItWorks.steps.two.title"),
+      desc: t("howItWorks.steps.two.description"),
+    },
+    {
+      step: "03",
+      title: t("howItWorks.steps.three.title"),
+      desc: t("howItWorks.steps.three.description"),
+    },
+  ];
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] to-white py-16 md:py-20">
       <div className="pointer-events-none absolute left-[-120px] top-10 h-[240px] w-[240px] rounded-xl bg-[#263788]/6 blur-3xl" />
@@ -27,16 +31,16 @@ export default function CopyTradingHowItWorks() {
       <div className="container relative z-10">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            How It Works
+            {t("howItWorks.badge")}
           </span>
 
           <h2 className="HeadingH3 mt-4 text-primary">
-            Start Copy Trading in <span className="text-[#b68756]">3 Simple Steps</span>
+            {t("howItWorks.titleStart")}{" "}
+            <span className="text-[#b68756]">{t("howItWorks.titleHighlight")}</span>
           </h2>
 
           <p className="mt-4 text-[15px] leading-7 text-[#4B5563] md:text-lg md:leading-8">
-            Getting started is simple. Set up your account, choose a trader, and begin
-            copying with a smoother and more transparent experience.
+            {t("howItWorks.description")}
           </p>
         </div>
 

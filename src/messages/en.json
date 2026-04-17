@@ -2754,6 +2754,7 @@
       "butttonLp": "Apply For Liquidity Service"
     },
     "pamm": {
+      "bannerDesc":"Access professionally managed trading strategies and benefit from expert trading performance without actively trading.",
       "banner": {
         "title": "PAMM",
         "des1": "A PAMM (Percentage Allocation Management Module) account is a popular investment tool in the world of forex trading. It is a specialized form of a managed account that allows individual investors to allocate their funds to a professional trader or money manager, who then trades on their behalf. The PAMM account structure is designed to offer several benefits to both investors and money managers, making it a common choice in the forex market.",
@@ -2790,6 +2791,7 @@
       }
     },
     "mam": {
+      "bannerDesc":"Streamline multi-account trading with a powerful MAM solution built for performance, flexibility, and precise trade allocation.",
       "banner": {
         "title": "MAM",
         "des1": "A MAM (Multi-Account Manager) account is a specialized investment tool in the world of forex trading, designed to allow professional traders, asset managers, and individual investors to manage multiple trading accounts simultaneously. It provides a structure for experienced traders to execute trades on behalf of multiple clients efficiently, making it a popular choice for those involved in forex trading."
@@ -2819,6 +2821,7 @@
       }
     },
     "vpsHosting": {
+      "bannerDesc":"Ensure uninterrupted trading with high-performance VPS hosting, designed for low latency, fast execution, and 24/7 reliability.",
       "hero": {
         "heading": "Powerful Virtual Private Servers Tailored to Your Needs",
         "button": "Open Live Account                                              ",
@@ -3041,6 +3044,307 @@
       "vps-hosting-services": "VPS Hosting Services",
       "website-disclaimer": "Website Disclaimer",
       "why-gtc-group": "Why GTC Group"
+    }
+  },
+
+  "downApp": {
+    "bannerTitle": "Download Trading App",
+    "bannerDescription": "Trading with us offers the optimal avenue for investing your money wisely and profitably.",
+    "section": {
+      "badge": "Trading Platforms",
+      "titleStart": "Trade Anywhere,",
+      "titleHighlight": "Anytime",
+      "description": "Easily access our intuitive platforms from mobile, tablet, or desktop and enjoy seamless trading across global markets wherever you are.",
+      "groups": {
+        "pcMac": {
+          "title": "PC / MAC",
+          "items": {
+            "one": "MT4 for PC",
+            "two": "MT5 for PC"
+          }
+        },
+        "smartphones": {
+          "title": "Smartphones",
+          "items": {
+            "one": "MT4 for Android",
+            "two": "MT4 for iPhone",
+            "three": "MT5 for Android",
+            "four": "MT5 for iPhone"
+          }
+        },
+        "apkFile": {
+          "title": "APK File",
+          "items": {
+            "one": "MT4 for Android",
+            "two": "MT5 for Android"
+          }
+        }
+      },
+      "appCard": {
+        "eyebrow": "GTC Go App",
+        "title": "Trade on the go with one powerful app",
+        "description": "Download now and access MT4 & MT5 compatible trading in one place. The all-in-one GTC app is built for traders who want speed, flexibility, and a smoother mobile trading experience.",
+        "storeButtons": {
+          "appStoreAlt": "Download on the App Store",
+          "googlePlayAlt": "Get it on Google Play"
+        },
+        "featureOne": {
+          "title": "MT4 & MT5 Compatible",
+          "description": "Access trusted trading environments with mobile convenience."
+        },
+        "featureTwo": {
+          "title": "Built for flexibility",
+          "description": "Stay connected to markets and manage trades anytime, anywhere."
+        }
+      }
+    }
+  },
+  "copyTradingPage": {
+    "bannerTitle": "Copy Trading",
+    "bannerDescription": "Trading with us offers the optimal avenue for investing your money wisely and profitably.",
+    "hero": {
+      "badge": "Copy Trading",
+      "titleStart": "Copy Trading Made",
+      "titleHighlight": "Simple & Smarter",
+      "description": "Follow top-performing traders, copy their strategies automatically, and stay in control of your funds with a more flexible and transparent copy trading experience.",
+      "primaryCta": "Start Copy Trading",
+      "secondaryCta": "Explore Traders",
+      "features": {
+        "one": "Automatic trade replication",
+        "two": "Transparent performance",
+        "three": "Mobile + web access"
+      },
+      "imageAlt": "Copy trading global network"
+    },
+    "whatIs": {
+      "badge": "What Is Copy Trading",
+      "titleStart": "Follow Strategies.",
+      "titleHighlight": "Stay in Control.",
+      "description": "Copy trading allows you to follow experienced traders and automatically mirror their trades. It offers a simpler way to participate in the markets while maintaining visibility and control over your capital.",
+      "cards": {
+        "one": {
+          "title": "Choose a trader",
+          "description": "Browse trader profiles, review performance, and select the strategy that matches your goals."
+        },
+        "two": {
+          "title": "Copy automatically",
+          "description": "Once connected, trades can be replicated automatically without needing to manage each move manually."
+        },
+        "three": {
+          "title": "Monitor and control",
+          "description": "Track results, manage your allocations, and stay flexible with full visibility over your account."
+        }
+      }
+    },
+    "howItWorks": {
+      "badge": "How It Works",
+      "titleStart": "Start Copy Trading in",
+      "titleHighlight": "3 Simple Steps",
+      "description": "Getting started is simple. Set up your account, choose a trader, and begin copying with a smoother and more transparent experience.",
+      "steps": {
+        "one": {
+          "title": "Open a live account",
+          "description": "Create your GTCFX live account and complete the setup process to access copy trading."
+        },
+        "two": {
+          "title": "Choose your favorite trader",
+          "description": "Review trader profiles, performance, and style before selecting the one you want to follow."
+        },
+        "three": {
+          "title": "Start your copy strategy",
+          "description": "Allocate funds, activate copying, and monitor performance directly from your dashboard."
+        }
+      }
+    },
+    "rating": {
+      "topPerformer": {
+        "title": "Top Performers"
+      },
+      "filters": {
+        "orderByLabel": "Order by",
+        "ofLabel": "OF",
+        "options": {
+          "balance": "Balance",
+          "averageProfit": "Average profit",
+          "deposits": "Deposits",
+          "rating": "Rating"
+        }
+      },
+      "list": {
+        "pnlLabel": "30D PNL",
+        "roiLabel": "ROI",
+        "copyButton": "Copy"
+      }
+    }
+  },
+  "marginBonusPage": {
+    "bannerTitle": "Margin Bonus",
+    "bannerDescription": "Enhance your trading power with additional margin support, giving you greater flexibility to seize market opportunities.",
+    "hero": {
+      "badge": "Margin Bonus Promotion",
+      "titleStart": "What Is The",
+      "titleHighlight": "GTC Margin Bonus",
+      "description": "A Margin Bonus is a non-withdrawable and non-transferable credit issued based on your deposit amount. It increases your account's usable margin, giving you more room to trade during periods of high market volatility."
+    },
+    "warning": {
+      "text": "Important: The bonus can be lost and will not be restored if removed. It cannot be withdrawn or transferred at any point."
+    },
+    "summary": {
+      "minimumDeposit": {
+        "label": "Minimum Deposit",
+        "value": "$500+"
+      },
+      "bonusRate": {
+        "label": "Bonus Rate",
+        "value": "50% / 20%"
+      },
+      "maxBonus": {
+        "label": "Max Bonus",
+        "value": "$20,000"
+      },
+      "cashback": {
+        "label": "Cashback",
+        "value": "$3 / lot"
+      }
+    },
+    "eligibility": {
+      "title": "Eligibility",
+      "points": {
+        "one": "The Promotion is available exclusively to clients with fully verified live trading accounts.",
+        "two": "It applies to",
+        "three": "The Promotion is available on all account types, except for Cent accounts.",
+        "four": "Each client may participate once, unless otherwise authorized in writing.",
+        "five": "Clients trading via MAM, PAMM, or Social Trading are not eligible.",
+        "six": "The bonus is a non-losing bonus used exclusively to support margin. It does not constitute real balance and cannot be withdrawn or transferred."
+      },
+      "subPoints": {
+        "one": "First-time deposits of at least $500 made by new clients.",
+        "two": "Top-up deposits by existing clients, applied only to the newly deposited amount."
+      },
+      "notAvailableLabel": "Not available in",
+      "notAvailableCountries": {
+        "one": "China",
+        "two": "Vietnam",
+        "three": "Taiwan",
+        "four": "Hong Kong",
+        "five": "Indonesia",
+        "six": "Pakistan"
+      }
+    },
+    "bonusSize": {
+      "title": "Bonus Size and Structure",
+      "points": {
+        "one": "The bonus amount is calculated as",
+        "two": "The maximum total bonus per client is capped at $20,000.",
+        "three": "To receive the bonus, the client must first register for the promotion and then make a qualifying deposit.",
+        "four": "Once registered and funded, the bonus request will be automatically generated and processed."
+      },
+      "subPoints": {
+        "one": "50% of the deposit amount for deposits up to $10,000",
+        "two": "20% of the portion that exceeds $10,000"
+      }
+    },
+    "cashback": {
+      "title": "Cashback Conditions",
+      "points": {
+        "one": "Clients who receive the Margin Bonus are eligible to claim $3 per full lot traded on FX pairs, gold, metals, and oil within a 3-month period.",
+        "two": "Cashback can be requested only once and to qualify",
+        "three": "The total cashback is capped at the value of the bonus received.",
+        "four": "Cashback must be requested through the client's personal account manager.",
+        "five": "Cashback will be credited within 7 business days once approved."
+      },
+      "subPoints": {
+        "one": "The cashback amount must be at least $500",
+        "two": "It must represent at least 20% of the bonus received"
+      },
+      "examplesLabel": "Examples",
+      "examples": {
+        "one": {
+          "text": "If a client receives a $2,500 bonus, they must trade at least ~167 lots to earn $500 in cashback."
+        },
+        "two": {
+          "text": "If a client receives a $3,000 bonus and trades only ~133 lots to earn $400 cashback."
+        },
+        "three": {
+          "text": "If a client receives a $1,000 bonus, they must trade at least ~167 lots to earn $500 cashback, which is over 50% of the bonus."
+        },
+        "four": {
+          "text": "If a client receives a $5,000 bonus and trades 100 lots to earn $300 cashback."
+        }
+      },
+      "status": {
+        "eligible": "Eligible",
+        "ineligible": "Ineligible"
+      }
+    },
+    "bonusUse": {
+      "title": "Bonus Use and Nature",
+      "points": {
+        "one": "The Margin Bonus is strictly for trading margin support and cannot be",
+        "two": "Any withdrawal from the client's account will result in automatic removal of the bonus."
+      },
+      "subPoints": {
+        "one": "Withdrawn",
+        "two": "Transferred",
+        "three": "Used as tradable or real account balance"
+      }
+    },
+    "withdrawalConditions": {
+      "title": "Withdrawal Conditions",
+      "points": {
+        "one": "GTCFX reserves the right to remove the bonus if the account equity falls below the bonus amount.",
+        "two": "Once removed, the bonus will not be reinstated under any circumstances."
+      }
+    },
+    "bonusExpiry": {
+      "title": "Bonus Expiry",
+      "points": {
+        "one": "The Margin Bonus is valid for up to 3 months from the date of the first qualifying deposit.",
+        "two": "GTCFX may remove the bonus automatically after the 3-month period, regardless of trading activity.",
+        "three": "If cashback conditions are not met within the 3-month period, eligibility for cashback is forfeited."
+      }
+    },
+    "abusePolicy": {
+      "title": "Abuse Policy",
+      "points": {
+        "one": "Abuse of the promotion is strictly prohibited. Examples include",
+        "two": "GTCFX reserves the right to"
+      },
+      "subPoints": {
+        "one": "Hedging between multiple accounts or brokers",
+        "two": "Latency arbitrage or other technical exploits",
+        "three": "Coordinated manipulation of bonus terms"
+      },
+      "actions": {
+        "one": "Remove the bonus without prior notice",
+        "two": "Cancel cashback or profits obtained through abusive behavior",
+        "three": "Suspend or terminate client accounts involved in fraud or abuse"
+      }
+    },
+    "stopOutPolicy": {
+      "title": "Stop Out Policy",
+      "points": {
+        "one": "If the account equity reaches the stop-out level, or if the floating loss equals the actual account balance, the Margin Bonus will be automatically removed."
+      }
+    },
+    "clientAcknowledgment": {
+      "title": "Client Acknowledgment",
+      "points": {
+        "one": "By accepting the Margin Bonus, the client acknowledges and agrees to these Terms & Conditions.",
+        "two": "Misuse of the Promotion may result in the removal of the bonus, forfeiture of profits, and/or suspension of the trading account."
+      }
+    },
+    "howToApply": {
+      "title": "How to Apply",
+      "points": {
+        "one": "Register for the promotion by submitting the form on the campaign page.",
+        "two": "Make a qualifying deposit of at least $500 into your verified live trading account.",
+        "three": "Once both steps are completed, your bonus request will be automatically processed.",
+        "four": "Only registered clients will be eligible to receive the bonus."
+      },
+      "cashbackNote": "To claim cashback, reach out directly to your Personal Account Manager once the trading and eligibility requirements are fulfilled.",
+      "assistanceNote": "For assistance, contact your Account Manager or the GTCFX Support Team.",
+      "buttonLabel": "Open Live Account"
     }
   }
 }

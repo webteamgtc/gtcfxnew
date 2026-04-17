@@ -2,6 +2,7 @@ import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import MarginBonusPageSection from "./components/MarginBonusPageSection";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { translationTextByPath } from "@/i18n/tranlsationText";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
@@ -18,16 +19,18 @@ export async function generateMetadata({ params }) {
 export default async function pages({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const marginBonusPage = dict?.marginBonusPage || {};
+  
 
   return (
     <>
       <InnerPageBanner
-        description="Enhance your trading power with additional margin support, giving you greater flexibility to seize market opportunities. "
+        title={marginBonusPage?.bannerTitle}
+        description={marginBonusPage?.bannerDescription}
         backgroundImage="/breadcamp/bonue.webp"
         mobileBackgroundImage="/breadcamp/bonue-mobile.webp"
       />
-      <MarginBonusPageSection />
+      <MarginBonusPageSection messages={marginBonusPage} />
 
       {/* other sections */}
     </>
