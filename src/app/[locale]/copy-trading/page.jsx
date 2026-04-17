@@ -5,6 +5,7 @@ import WhatIsCopyTradingSection from "./components/WhatIsCopyTradingSection";
 import CopyTradingHowItWorks from "./components/CopyTradingHowItWorks";
 import CopyRatingData from "./components/CopyRatingData";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { translationTextByPath } from "@/i18n/tranlsationText";
 
 
 export async function generateMetadata({ params }) {
@@ -23,20 +24,20 @@ export async function generateMetadata({ params }) {
 export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
-  const copy = dict.copy || {};
+  const copyTradingPage = dict?.copyTradingPage || {};
+ 
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. "
+        title={copyTradingPage?.bannerTitle}
+        description={copyTradingPage?.bannerDescription}
         backgroundImage="/breadcamp/awardpc.webp"
         mobileBackgroundImage="/breadcamp/award-mob.webp"
       />
-      <CopyTradingHero />
-      <WhatIsCopyTradingSection />
-      <CopyRatingData copy={copy} />
-      <CopyTradingHowItWorks />
+      <CopyTradingHero messages={copyTradingPage} />
+      <WhatIsCopyTradingSection messages={copyTradingPage} />
+      <CopyRatingData messages={copyTradingPage} />
+      <CopyTradingHowItWorks messages={copyTradingPage} />
   
 
       {/* other sections */}

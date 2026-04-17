@@ -1,46 +1,48 @@
+"use client";
 import { BsAward, BsFillPersonLinesFill } from "react-icons/bs";
 import { TbSettingsPin } from "react-icons/tb";
 import { MdOutlineVideoSettings } from "react-icons/md";
 import { FaUsersCog, FaUserLock } from "react-icons/fa";
 
-import { translationText } from "@/i18n/tranlsationText";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 export default function WhyChooseVPS({ copy }) {
+  const translationText=usePathTranslation("primeTech.vpsHosting.whyVpsHosting");
   const productData = [
     {
       icon: <BsAward />,
-      title: translationText("whyVpsHosting.cards.cardOneTitle", "Unmatched Performance", copy),
-      paragraph: translationText("whyVpsHosting.cards.cardOnePara", "Unleash the full potential of your website or application with our high-performance VPS servers. Powered by cutting-edge technology and premium hardware, we ensure lightning-fast response times and seamless user experiences.", copy),
+      title: translationText("cards.cardOneTitle"),
+      paragraph: translationText("cards.cardOnePara"),
       link: "",
     },
     {
       icon: <TbSettingsPin />,
-      title: translationText("whyVpsHosting.cards.cardTwoTitle", "Speedy Forex Trading", copy),
-      paragraph: translationText("whyVpsHosting.cards.cardTwoPara", "Forex market demands quick execution. Our VPS ensures rapid trading, covering essential pairs like GBP/USD, EUR/USD, USD/JPY, and AUD/USD.", copy),
+      title: translationText("cards.cardTwoTitle"),
+      paragraph: translationText("cards.cardTwoPara"),
       link: "",
     },
     {
       icon: <MdOutlineVideoSettings />,
-      title: translationText("whyVpsHosting.cards.cardThreeTitle", "Complete Control", copy),
-      paragraph: translationText("whyVpsHosting.cards.cardThreePara", "Take the reins of your server with full root access. Customize and configure your VPS to suit your specific needs, with the freedom to install the software and applications that matter most to you.", copy),
+      title: translationText("cards.cardThreeTitle"),
+      paragraph: translationText("cards.cardThreePara"),
       link: "",
     },
     {
       icon: <FaUsersCog />,
-      title: translationText("whyVpsHosting.cards.cardFourTitle", "Scalability", copy),
-      paragraph: translationText("whyVpsHosting.cards.cardFourPara", "As your business grows, your server can grow with it. Our scalable VPS solutions allow you to upgrade resources on-demand, ensuring your hosting never holds you back.", copy),
+      title: translationText("cards.cardFourTitle"),
+      paragraph: translationText("cards.cardFourPara"),
       link: "",
     },
     {
       icon: <FaUserLock />,
-      title: translationText("whyVpsHosting.cards.cardFiveTitle", "Robust Security", copy),
-      paragraph: translationText("whyVpsHosting.cards.cardFivePara", "Rest easy knowing your data is secure. Our VPS hosting is fortified with state-of-the-art security measures, including firewalls and regular backups, to protect your valuable information.", copy),
+      title: translationText("cards.cardFiveTitle"),
+      paragraph: translationText("cards.cardFivePara"),
       link: "",
     },
     {
       icon: <BsFillPersonLinesFill />,
-      title: translationText("whyVpsHosting.cards.cardSixTitle", "Expert Support", copy),
-      paragraph: translationText("whyVpsHosting.cards.cardSixPara", "Our dedicated support team is here to assist you 24/7. From setup to troubleshooting, we're always ready to ensure your VPS hosting experience is smooth and hassle-free.", copy), 
+          title: translationText("cards.cardSixTitle"),
+      paragraph: translationText("cards.cardSixPara"),
       link: "",
     },
   ];
@@ -49,7 +51,7 @@ export default function WhyChooseVPS({ copy }) {
       <div className="container">
         <div className="mx-auto max-w-[980px] text-center">
           <h2 className="HeadingH2">
-            {translationText("whyVpsHosting.title", "Why Choose Our VPS Hosting?", copy)}
+            {translationText("title")}
           </h2>
         </div>
 

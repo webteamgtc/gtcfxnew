@@ -1,8 +1,8 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import AwardsSection from "../components/about/AwardsSection";
 import TradingPlatformsSection from "./components/TradingPlatformsSection";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { translationTextByPath } from "@/i18n/tranlsationText";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
@@ -19,13 +19,14 @@ export async function generateMetadata({ params }) {
 export default async function AboutPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const downApp = dict?.downApp || {};
+ 
 
   return (
     <>
       <InnerPageBanner
-        description="Trading with us offers the optimal avenue for investing your money
-            wisely and profitably. "
+        title={downApp?.bannerTitle}
+        description={downApp?.bannerDescription}
         backgroundImage="/breadcamp/awardpc.webp"
         mobileBackgroundImage="/breadcamp/award-mob.webp"
       />

@@ -1,3 +1,4 @@
+"use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -5,10 +6,12 @@ import "swiper/css/pagination";
  import { Autoplay, Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { translationText } from "@/i18n/tranlsationText";
 import LeaderCardGridItem from "../../components/common/leaderboard/LeaderCardGridItem";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
-const TopPerformer = ({ copy }) => {
+const TopPerformer = ({ messages = {} }) => {
+    const t = usePathTranslation("copyTradingPage.rating.topPerformer");
+
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
@@ -28,7 +31,7 @@ const TopPerformer = ({ copy }) => {
 
     return (
         <div className="container">
-            <h2 className="text-2xl mb-2 font-medium">{translationText("copyTrading.topPerformer.title", "Top Performers", copy)}</h2>
+            <h2 className="text-2xl mb-2 font-medium">{t("title")}</h2>
             {loading ? (
                 <div className=" flex justify-center text-center min-h-44">
                     <span className="loading loading-spinner loading-lg"></span>

@@ -1,24 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
-const platformGroups = [
-  {
-    title: "PC / MAC",
-    items: ["MT4 for PC", "MT5 for PC"],
-    icon: "desktop",
-  },
-  {
-    title: "Smartphones",
-    items: ["MT4 for Android", "MT4 for iPhone", "MT5 for Android", "MT5 for iPhone"],
-    icon: "phone",
-  },
-  {
-    title: "APK File",
-    items: ["MT4 for Android", "MT5 for Android"],
-    icon: "download",
-  },
-];
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 function DesktopIcon() {
   return (
@@ -105,6 +88,36 @@ function PlatformCard({ title, items, icon }) {
 }
 
 export default function TradingPlatformsSection() {
+  const t = usePathTranslation("downApp.section");
+  const platformGroups = [
+    {
+      title: t("groups.pcMac.title"),
+      items: [
+        t("groups.pcMac.items.one"),
+        t("groups.pcMac.items.two"),
+      ],
+      icon: "desktop",
+    },
+    {
+      title: t("groups.smartphones.title"),
+      items: [
+        t("groups.smartphones.items.one"),
+        t("groups.smartphones.items.two"),
+        t("groups.smartphones.items.three"),
+        t("groups.smartphones.items.four"),
+      ],
+      icon: "phone",
+    },
+    {
+      title: t("groups.apkFile.title"),
+      items: [
+        t("groups.apkFile.items.one"),
+        t("groups.apkFile.items.two"),
+      ],
+      icon: "download",
+    },
+  ];
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F8FAFC] py-16 md:py-20">
       <div className="pointer-events-none absolute left-[-80px] top-16 h-[220px] w-[220px] rounded-xl bg-[#263788]/8 blur-3xl" />
@@ -114,15 +127,16 @@ export default function TradingPlatformsSection() {
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex rounded-xl border border-[#b68756]/20 bg-[#b68756]/10 px-4 py-1.5 text-sm font-semibold text-[#b68756]">
-            Trading Platforms
+            {t("badge")}
           </span>
 
           <h2 className="HeadingH2 my-4">
-            Trade Anywhere, <span className="text-[#b68756]">Anytime</span>
+            {t("titleStart")}{" "}
+            <span className="text-[#b68756]">{t("titleHighlight")}</span>
           </h2>
 
           <p className="Text">
-            Easily access our intuitive platforms from mobile, tablet, or desktop and enjoy seamless trading across global markets wherever you are.
+            {t("description")}
           </p>
         </div>
 
@@ -149,31 +163,29 @@ export default function TradingPlatformsSection() {
                 </div>
                 <div>
                   <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#E5D0B2]">
-                    GTC Go App
+                    {t("appCard.eyebrow")}
                   </p>
                   <h3 className="text-[28px] font-semibold md:text-[30px]">
-                    Trade on the go with one powerful app
+                    {t("appCard.title")}
                   </h3>
                 </div>
               </div>
 
               <p className="mt-6 max-w-2xl text-[15px] leading-7 text-white/85 md:text-base md:leading-8">
-                Download now and access MT4 & MT5 compatible trading in one place.
-                The all-in-one GTC app is built for traders who want speed, flexibility,
-                and a smoother mobile trading experience.
+                {t("appCard.description")}
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <Image
                   src="/whiteicon/appstore.svg"
-                  alt="Download on the App Store"
+                  alt={t("appCard.storeButtons.appStoreAlt")}
                   width={150}
                   height={46}
                   className="h-auto w-auto"
                 />
                 <Image
                   src="/whiteicon/googleplay.svg"
-                  alt="Get it on Google Play"
+                  alt={t("appCard.storeButtons.googlePlayAlt")}
                   width={150}
                   height={46}
                   className="h-auto w-auto"
@@ -182,16 +194,20 @@ export default function TradingPlatformsSection() {
 
               <div className="mt-6 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-2xl border border-white/10 bg-white px-5 py-4">
-                  <p className="text-sm font-semibold text-secondary">MT4 & MT5 Compatible</p>
+                  <p className="text-sm font-semibold text-secondary">
+                    {t("appCard.featureOne.title")}
+                  </p>
                   <p className="mt-1 text-sm leading-6 text-primary">
-                    Access trusted trading environments with mobile convenience.
+                    {t("appCard.featureOne.description")}
                   </p>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-white px-5 py-4">
-                  <p className="text-sm font-semibold text-secondary">Built for flexibility</p>
+                  <p className="text-sm font-semibold text-secondary">
+                    {t("appCard.featureTwo.title")}
+                  </p>
                   <p className="mt-1 text-sm leading-6 text-primary">
-                    Stay connected to markets and manage trades anytime, anywhere.
+                    {t("appCard.featureTwo.description")}
                   </p>
                 </div>
               </div>

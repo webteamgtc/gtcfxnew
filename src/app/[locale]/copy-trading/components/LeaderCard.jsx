@@ -12,8 +12,14 @@ import {
 } from "../../components/common/leaderboard/leaderboardCardUtils";
 
 const LeaderCard = (props) => {
-  const { data, view } = props;
+  const { data, view, messages = {} } = props;
   const router = useRouter();
+  const t = (key, fallback = "") => {
+    const parts = key.split(".");
+    let cur = messages;
+    for (const p of parts) cur = cur?.[p];
+    return typeof cur === "string" && cur.length ? cur : fallback;
+  };
 
   const items = useMemo(() => data?.items || [], [data]);
   return (
@@ -80,9 +86,9 @@ const LeaderCard = (props) => {
                         · {single?.account?.currency || "-"}
                       </p>
                       <p className="TextSmall mt-1 text-slate-500">
-                        30D PNL:{" "}
+                        {t("rating.list.pnlLabel", "30D PNL")}:{" "}
                         <span className="text-emerald-600">{pnlText}</span> ·
-                        ROI:{" "}
+                        {t("rating.list.roiLabel", "ROI")}:{" "}
                         <span className="text-emerald-600">{roiText}</span>
                       </p>
                     </div>
@@ -108,7 +114,7 @@ const LeaderCard = (props) => {
                         );
                       }}
                     >
-                      Copy
+                      {t("rating.list.copyButton", "Copy")}
                     </button>
                   </div>
                 </div>

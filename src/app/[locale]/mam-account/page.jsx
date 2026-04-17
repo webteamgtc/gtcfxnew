@@ -23,7 +23,7 @@ export default async function MamAccountPage({ params }) {
   return (
     <div>
       <InnerPageBanner
-        description="Streamline multi-account trading with a powerful MAM solution built for performance, flexibility, and precise trade allocation."
+        description={copy?.bannerDesc || ""}
         backgroundImage="/breadcamp/mam.webp"
         mobileBackgroundImage="/breadcamp/mam-mobile.webp"
       />
