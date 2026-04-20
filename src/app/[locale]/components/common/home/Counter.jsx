@@ -43,9 +43,9 @@ function CounterItem({
 
       <div className="h-px w-full max-w-[120px] bg-white/10" />
 
-      <p className=" text-white font-medium Text">
+      <h4 className=" text-white font-medium Text">
         {label}
-      </p>
+      </h4>
     </div>
   );
 }

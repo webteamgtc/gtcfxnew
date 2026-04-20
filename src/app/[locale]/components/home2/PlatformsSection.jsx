@@ -8,35 +8,25 @@ export default function PlatformsSection() {
   const t = usePathTranslation("home.homePlatforms");
 
   const platforms = [
-    {
-      title: t("items.one.title"),
-      description: t("items.one.description"),
-      icon: t("items.one.icon"),
-      link: t("items.one.link"),
-    },
+
     {
       title: t("items.two.title"),
       description: t("items.two.description"),
-      icon: t("items.two.icon"),
+     "icon": "/home/gtcfx.svg",
       link: t("items.two.link"),
     },
-    {
-      title: t("items.three.title"),
-      description: t("items.three.description"),
-      icon: t("items.three.icon"),
-      link: t("items.three.link"),
-    },
+   
     {
       title: t("items.four.title"),
       description: t("items.four.description"),
-      icon: t("items.four.icon"),
-      link: t("items.four.link"),
+      icon: "/home/mt4-platform.webp",
+      link: "https://download.terminal.free/cdn/web/gtc.global.sa/mt4/gtcglobalsa4setup.exe",
     },
     {
       title: t("items.five.title"),
       description: t("items.five.description"),
-      icon: t("items.five.icon"),
-      link: t("items.five.link"),
+      icon: "/home/mt5-platform.webp",
+      link: "https://download.terminal.free/cdn/web/gtc.global.trade/mt5/gtcglobaltrade5setup.exe",
     },
   ];
 
@@ -67,20 +57,20 @@ export default function PlatformsSection() {
 
         {/* Platforms */}
         <div className="mt-10 overflow-hidden rounded-[8px] bg-[#fff] md:bg-transparent">
-          <div className="grid grid-cols-1 md:grid-cols-5 md:gap-6 md:bg-transparent md:px-0 md:py-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6 md:bg-transparent md:px-0 md:py-0">
             {platforms.map((item, index) => (
               <Link
                 key={index}
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group flex items-center gap-4 px-5 py-6 text-left transition hover:no-underline md:flex-col md:items-start md:justify-start md:px-0 md:py-0 ${
+                className={`group flex items-center gap-4 px-5 py-6 text-center transition hover:no-underline md:flex-col md:items-center md:justify-center md:px-0 md:py-0 ${
                   index !== platforms.length - 1
                     ? "border-b border-[#dddddd] md:border-b-0"
                     : ""
                 }`}
               >
-                <div className="relative h-[48px] w-[48px] shrink-0 md:mb-3 md:h-[50px] md:w-[50px]">
+                <div className="relative w-full h-12 shrink-0">
                   <Image
                     src={item.icon}
                     alt={item.title}
@@ -90,10 +80,10 @@ export default function PlatformsSection() {
                 </div>
 
                 <div className="flex-1">
-                  <h4 className="text-[16px] font-semibold leading-tight text-primary">
+                  <h6 className="text-[16px] font-semibold leading-tight text-primary">
                     {item.title}
-                  </h4>
-                  <p className="mt-2 text-[14px] leading-[1.4] text-[#4B5563]">
+                  </h6>
+                  <p className="mt-2 text-[14px] leading-[1.4] text-[#4B5563] text-center">
                     {item.description}
                   </p>
                 </div>

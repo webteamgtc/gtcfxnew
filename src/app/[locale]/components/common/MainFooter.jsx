@@ -151,9 +151,9 @@ export default function MainFooter({ locale: localeProp = "en" }) {
         <div className="grid gap-5 border-b border-[#d9d9d9] py-10 md:grid-cols-2 xl:grid-cols-5">
           {footerColumns.map((column) => (
             <div key={column.title}>
-              <h3 className="mb-4 text-[12px] md:text-base font-semibold uppercase tracking-[0.02em] text-secondary">
+              <h5 className="mb-4 text-[12px] md:text-base font-semibold uppercase tracking-[0.02em] text-secondary">
                 {column.title}
-              </h3>
+              </h5>
 
               <ul className="space-y-2.5">
                 {column.links.map((link,idx) => (
