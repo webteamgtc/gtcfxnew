@@ -8,7 +8,10 @@ async function getLeaderboardData() {
   const url = `${normalizedBase}rating/1?%24top=100&widget_key=social_platform_ratings`;
 
   try {
-    const res = await fetch(url, { cache: "no-store" });
+    const res = await fetch(url, {
+      cache: "force-cache",
+      next: { revalidate: 120 },
+    });
     if (!res.ok) return null;
     return await res.json();
   } catch {

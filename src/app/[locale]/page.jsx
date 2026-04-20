@@ -1,4 +1,4 @@
-import { getDictionary } from '@/i18n/request';
+import { Suspense } from "react";
 import HeroSection from './components/home2/HeroSection';
 import FeaturesSection from './components/common/home/FeaturesSection';
 import Counter from './components/common/home/Counter';
@@ -30,8 +30,6 @@ export async function generateMetadata({ params }) {
 
 export default async function HomePage({ params }) {
   const { locale } = await params;
-  const dict = await getDictionary(locale);
-  const home = dict.home || {};
 
   return (
    <>
@@ -52,7 +50,9 @@ export default async function HomePage({ params }) {
   <MarketTabsSection />
 </RevealOnScroll>
 <RevealOnScroll>
-  <CopyTradingSection />
+  <Suspense fallback={<div className="container py-8 md:py-12" />}>
+    <CopyTradingSection />
+  </Suspense>
 </RevealOnScroll>
 <RevealOnScroll>
   <SecurityBanner />
@@ -68,7 +68,9 @@ export default async function HomePage({ params }) {
 </RevealOnScroll>
 
 <RevealOnScroll>
-  <BlogsSection locale={locale} />
+  <Suspense fallback={<div className="container py-10 md:py-16" />}>
+    <BlogsSection locale={locale} />
+  </Suspense>
 </RevealOnScroll>
 
    </>

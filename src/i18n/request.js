@@ -1,3 +1,5 @@
+import { cache } from "react";
+
 /** Shipped with the app (same as client hook: en / zh / ar use local JSON). */
 const BUNDLED_LOCALE_LOADERS = {
   en: () => import('@/messages/en.json').then((m) => m.default),
@@ -20,7 +22,8 @@ function isPlainObject(value) {
  * Use English dictionary as the base and overlay locale values.
  * This avoids sprinkling English fallbacks across components.
  */
-function deepMerge(base, override) {
+function deepMerge(baseInput, override) {
+  const base = baseInput;
   if (!isPlainObject(base) || !isPlainObject(override)) {
     return override ?? base;
   }
@@ -41,7 +44,7 @@ function deepMerge(base, override) {
  * Server-only: load messages for a locale (used by `[locale]/layout.jsx` and pages).
  * Bundled locales import from `@/messages`; others fetch from S3, fallback to English.
  */
-export async function getDictionary(locale) {
+export const getDictionary = cache(async function getDictionary(locale) {
   const english = await loadEnglish();
   if (!locale || locale === "en") {
     return english;
@@ -66,4 +69,4 @@ export async function getDictionary(locale) {
   } catch {
     return english;
   }
-}
+});
