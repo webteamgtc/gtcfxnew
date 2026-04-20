@@ -123,7 +123,7 @@ export default function MarketTabsSection() {
         </div>
 
         <div className="mx-auto hidden max-w-[1060px] items-center gap-10 py-10 md:grid lg:grid-cols-2 lg:gap-16">
-          <div className="max-w-[520px]">
+          <div className="max-w-[620px]">
             <h3 className="HeadingH3 text-primary">
               {currentTab.contentTitle}
             </h3>
@@ -139,13 +139,12 @@ export default function MarketTabsSection() {
           </div>
 
           <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[300px]">
+            <div className="relative w-full h-60">
               <Image
                 src={currentTab.image}
                 alt={currentTab.contentTitle}
-                width={250}
-                height={250}
-                className="h-auto w-full object-contain"
+                fill
+                className="object-contain"
               />
             </div>
           </div>

@@ -16,8 +16,7 @@ export default function MainFooter({ locale: localeProp = "en" }) {
       links: [
         { label: t("columns.trading.menu1", "Account Types"), href: "/account-types" },
         { label: t("columns.trading.menu2", "Deposit Funds"), href: "/deposit" },
-        { label: t("columns.trading.menu3", "Withdraw Funds"), href: "/withdraw" },
-        { label: t("columns.trading.menu4", "Trading Conditions"), href: "/trading-conditions" },
+     { label: t("columns.platforms.menu3", "GTC GO App"), href: "/gtc-go-app" },
         { label: t("columns.trading.menu5", "Dynamic Leverage"), href: "/dynamic-leverage" },
       ],
     },
@@ -26,7 +25,7 @@ export default function MainFooter({ locale: localeProp = "en" }) {
       links: [
         { label: t("columns.platforms.menu1", "MT4 Platform"), href: "/mt4-platform" },
         { label: t("columns.platforms.menu2", "MT5 Platform"), href: "/mt5-platform" },
-        { label: t("columns.platforms.menu3", "GTC GO App"), href: "/gtc-go-app" },
+       
         { label: t("columns.platforms.menu4", "Download Trading Platform"), href: "/download-app" },
         { label: t("columns.platforms.menu5", "VPS Hosting"), href: "/vps-hosting-services" },
       ],
@@ -46,7 +45,7 @@ export default function MainFooter({ locale: localeProp = "en" }) {
       links: [
         { label: t("columns.resources.menu1", "Website Disclaimer"), href: "/website-disclaimer" },
         { label: t("columns.resources.menu2", "Risk Disclosure"), href: "/risk-disclosure" },
-        { label: t("columns.resources.menu3", "Restricted Countries"), href: "/swap-free-terms-and-conditions" },
+        { label: t("columns.resources.menu3", "Restricted Countries"), href: "/restricted-countries" },
         { label: t("columns.resources.menu4", "Swap Free Terms & Conditions"), href: "/swap-free-terms-and-conditions" },
         { label: t("columns.resources.menu5", "Deposit & Refund Policy"), href: "/deposit-and-refund-policy" },
         { label: t("columns.resources.menu6", "KYC & Compliance Policy"), href: "/kyc-compliance-policy" },
@@ -105,25 +104,7 @@ export default function MainFooter({ locale: localeProp = "en" }) {
             />
           </div>
 
-          <div className="flex flex-row items-center gap-4">
-            <Link href="/" className="relative w-[160px] h-[45px]">
-              <Image
-                src="/icons/app.svg"
-                fill
-                alt={t("storeButtons.appStoreAlt", "Download on the App Store")}
-                className="object-contain"
-              />
-            </Link>
-
-            <Link href="/" className="relative  w-[160px] h-[45px]">
-              <Image
-                src="/icons/play.svg"
-                fill
-                alt={t("storeButtons.googlePlayAlt", "Get it on Google Play")}
-                className="object-contain"
-              />
-            </Link>
-          </div>
+        
         </div>
 
         <div className="flex flex-col gap-6 border-b border-[#d9d9d9] pb-8 lg:flex-row lg:items-center lg:justify-between">
@@ -151,9 +132,9 @@ export default function MainFooter({ locale: localeProp = "en" }) {
         <div className="grid gap-5 border-b border-[#d9d9d9] py-10 md:grid-cols-2 xl:grid-cols-5">
           {footerColumns.map((column) => (
             <div key={column.title}>
-              <h3 className="mb-4 text-[12px] md:text-base font-semibold uppercase tracking-[0.02em] text-secondary">
+              <h5 className="mb-4 text-[12px] md:text-base font-semibold uppercase tracking-[0.02em] text-secondary">
                 {column.title}
-              </h3>
+              </h5>
 
               <ul className="space-y-2.5">
                 {column.links.map((link,idx) => (

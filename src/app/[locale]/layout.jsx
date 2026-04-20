@@ -9,6 +9,7 @@ import { ToastContainer } from "react-toastify";
 import StickyContactBar from "./components/common/StickyContactBar";
 import ThirdPartyScripts from "./components/common/seo/ThirdPartyScripts";
 import { getLocaleSeoMetadata } from "./components/common/seo/localeSeoMetadata";
+import AppQRWidget from "./components/common/AppQRWidget";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -53,6 +54,7 @@ export default async function LocaleLayout({ children, params }) {
         <MainHeader locale={locale} navigation={dict?.navigation} />
         <main>{children}</main>
         <MainFooter locale={locale} />
+        <AppQRWidget />
         <ToastContainer autoClose={3000} />
       </div>
     </LocaleProvider>

@@ -3,8 +3,9 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { locales, defaultLocale } from "@/i18n/config";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 /** Match middleware: default locale has no /en prefix in the browser URL. */
 function getLocalizedPath(pathname, targetLocale) {
@@ -43,6 +44,7 @@ const FLAGCDN_COUNTRY = {
   tr: "tr",
   id: "id",
   ml: "in",
+  ms: "my",
   ps: "af",
   ru: "ru",
   ja: "jp",
@@ -54,64 +56,60 @@ const FLAGCDN_COUNTRY = {
   ur: "pk",
 };
 
-/** Width-based PNG (sharper than 128×96 when scaled down); FlagCDN serves up to w2560 */
 export function flagCdnSrc(localeCode) {
   const key = String(localeCode || "en").toLowerCase();
   const iso = FLAGCDN_COUNTRY[key] || (key.length === 2 ? key : "gb");
   return `https://flagcdn.com/w320/${iso}.png`;
 }
 
-// Single source of truth for language order + labels (flags come from FlagCDN)
-const LANGUAGES =[
-  { code: "en", label: "English",sub: "Global", flagSrc: "/gb.svg" },
-  { code: "ar", label: "العربية",sub: "Arabic", flagSrc: "/ar.svg" },
-  { code: "zh", label: "中文",sub: "Chinese", flagSrc: "/zh-hans.svg" },
-  { code: "zh-tw", label: "台灣",sub: "Chinese", flagSrc: "/zh-TW.webp" },
-  { code: "es", label: "Español",sub: "Spanish", flagSrc: "/es-ES.webp" },
-  { code: "it", label: "Italian",sub: "Italian", flagSrc: "/it-IT.webp" },
-  { code: "fa", label: "فارسی",sub: "Persian", flagSrc: "/fa-IR.webp" },
-  { code: "tl", label: "Filipino",sub: "Filipino", flagSrc: "/tl-PH.webp" },
-  { code: "fr", label: "Français",sub: "French", flagSrc: "/fr-FR.webp" },
-  { code: "vi", label: "Tiếng Việt",sub: "Vietnamese", flagSrc: "/vi-VN.webp" },
-  { code: "hi", label: "हिंदी",sub: "Hindi", flagSrc: "/hi-IN.webp" },
-  { code: "ms", label: "Melayu",sub: "Malaysian", flagSrc: "/ms-MY.webp" },
-  { code: "tr", label: "Türk",sub: "Turkish", flagSrc: "/tr-TR.webp" },
-  { code: "id", label: "Bahasa",sub: "Indonesian", flagSrc: "/id-ID.webp" },
-  { code: "ps", label: "پښتو",sub: "Pashto", flagSrc: "/ps-AF.webp" },
-  { code: "ru", label: "Русский",sub: "Russian", flagSrc: "/ru_RU.webp" },
-  { code: "ja", label: "日本国",sub: "Japanese", flagSrc: "/ja-JP.webp" },
-  { code: "ko", label: "한국어",sub: "Korean", flagSrc: "/ko-KR.webp" },
-  { code: "pt", label: "Português",sub: "Portuguese", flagSrc: "/pt-PT.webp" },
-  { code: "th", label: "แบบไทย",sub: "Thai", flagSrc: "/th-TH.webp" },
-  { code: "ur", label: "اردو",sub: "Urdu", flagSrc: "/ur-PK.webp" },
-
-  // Add more languages as needed
+const LANGUAGE_CODES = [
+  "en",
+  "ar",
+  "zh",
+  "zh-tw",
+  "es",
+  "it",
+  "fa",
+  "tl",
+  "fr",
+  "vi",
+  "hi",
+  "ms",
+  "tr",
+  "id",
+  "ps",
+  "ru",
+  "ja",
+  "ko",
+  "pt",
+  "th",
+  "ur",
 ];
 
-/** Same order as LANGUAGES — single source for drawer + lookups */
-const DRAWER_LANGUAGES = LANGUAGES.map((l) => ({
-  code: l.code,
-  label: l.label,
-  name: l.label,
-  sub: l.sub,
-  flagAlt: l.label,
-}));
-
-// Short list used in the header dropdown trigger
 const SHORT_LANGUAGE_CODES = ["en", "ar", "zh"];
-const SHORT_LANGUAGES = SHORT_LANGUAGE_CODES.map((code) =>
-  DRAWER_LANGUAGES.find((l) => l.code === code),
-).filter(Boolean);
+
+function buildLanguages(t) {
+  return LANGUAGE_CODES.map((code) => ({
+    code,
+    label: t(`languages.${code}.label`),
+    name: t(`languages.${code}.label`),
+    sub: t(`languages.${code}.sub`),
+    flagAlt: t(`languages.${code}.label`),
+  }));
+}
 
 export function LanguageDrawerPanel({
   locale = "en",
-  variant = "desktop", // desktop | mobile | mobile-inline | mobile-dropdown
+  variant = "desktop",
   onClose,
   hideHeader = false,
   showMobileClose = false,
   compactMobile = true,
 }) {
   const pathname = usePathname();
+  const t = usePathTranslation("common.languageSwitcher");
+
+  const DRAWER_LANGUAGES = useMemo(() => buildLanguages(t), [t]);
 
   const isMobile = variant === "mobile";
   const isInline = variant === "mobile-inline";
@@ -123,31 +121,45 @@ export function LanguageDrawerPanel({
       className={`${
         isInline
           ? ""
-          : "rounded-b-[16px] bg-[#f4f5f7] px-6 pb-8 pt-6 lg:px-10 lg:pb-10 lg:pt-8 shadow-[0_20px_40px_rgba(0,0,0,0.08)]"
+          : "rounded-b-[16px] bg-[#f4f5f7] px-6 pb-8 pt-6 shadow-[0_20px_40px_rgba(0,0,0,0.08)] lg:px-10 lg:pb-10 lg:pt-8"
       }`}
     >
       {!hideHeader && (
         <div className="mb-6 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-[18px] font-semibold text-dark">Select language</span>
+            <span className="text-[18px] font-semibold text-dark">
+              {t("title")} 
+            </span>
             <span className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] text-sm text-white">
               →
             </span>
           </div>
+
           {isMobile && showMobileClose ? (
             <button
               type="button"
               onClick={onClose}
               className="inline-flex h-9 w-9 items-center justify-center rounded-[10px] border border-[#d9d9d9] bg-white text-[#111827] hover:bg-[#f7f7f7]"
-              aria-label="Close language drawer"
+              aria-label={t("closeLabel")}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6L6 18" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 6l12 12M18 6L6 18"
+                />
               </svg>
             </button>
           ) : (
             <div className="text-[13px] text-[#6b7280]">
-              Current:{" "}
+              {t("currentLabel")}{" "}
               <span className="font-medium text-dark">
                 {locale?.toUpperCase?.() || "EN"}
               </span>
@@ -167,12 +179,17 @@ export function LanguageDrawerPanel({
       >
         <div
           className={`grid ${
-            isMobileLike && compactMobile ? "grid-cols-3 sm:grid-cols-6" : isMobile || isInline ? "grid-cols-2" : "grid-cols-4"
+            isMobileLike && compactMobile
+              ? "grid-cols-3 sm:grid-cols-6"
+              : isMobile || isInline
+                ? "grid-cols-2"
+                : "grid-cols-4"
           } gap-x-4 gap-y-2`}
         >
           {DRAWER_LANGUAGES.map((lang) => {
             const isActive = lang.code === locale;
             const codeLabel = (lang.code || "").toUpperCase();
+
             return (
               <Link
                 key={lang.code}
@@ -180,28 +197,31 @@ export function LanguageDrawerPanel({
                 onClick={() => onClose?.()}
                 className={
                   isMobileLike && compactMobile
-                    ? `flex items-center justify-start gap-2 md:rounded-[14px] rounded-[10px] border px-2 py-3 transition-colors duration-200 ${
+                    ? `flex items-center justify-start gap-2 rounded-[10px] border px-2 py-3 transition-colors duration-200 md:rounded-[14px] ${
                         isActive
                           ? "border-primary/30 bg-primary/5"
                           : "border-[#ececec] bg-white hover:bg-[#f7f7f7]"
                       }`
-                    : `flex items-center gap-3 md:rounded-[12px] rounded-[10px] px-3 py-2 transition-colors duration-200 ${
-                        isActive ? "bg-white ring-1 ring-primary/20" : "hover:bg-white/70"
+                    : `flex items-center gap-3 rounded-[10px] px-3 py-2 transition-colors duration-200 md:rounded-[12px] ${
+                        isActive
+                          ? "bg-white ring-1 ring-primary/20"
+                          : "hover:bg-white/70"
                       }`
                 }
               >
-                <span className="relative inline-block md:h-7 h-6 md:w-7 w-6 shrink-0 overflow-hidden rounded-xl">
+                <span className="relative inline-block h-6 w-6 shrink-0 overflow-hidden rounded-xl md:h-7 md:w-7">
                   <Image
                     src={flagCdnSrc(lang.code)}
                     alt={lang.flagAlt}
                     fill
                     sizes="(max-width: 768px) 24px, 32px"
                     quality={92}
-                    className=" object-center"
+                    className="object-center"
                   />
                 </span>
+
                 {isMobileLike && compactMobile ? (
-                  <span className="text-[12px] font-semibold text-[#111827] leading-none">
+                  <span className="text-[12px] font-semibold leading-none text-[#111827]">
                     {codeLabel}
                   </span>
                 ) : (
@@ -256,19 +276,29 @@ export default function LanguageSwitcher({
   locale = "en",
   mobile = false,
   disableMenu = false,
-  mobileIcon = "chevron", // chevron | hamburger
-  mobilePanel = "overlay", // overlay | dropdown | none
+  mobileIcon = "chevron",
+  mobilePanel = "overlay",
   onMobileClick,
 }) {
   const pathname = usePathname();
+  const t = usePathTranslation("common.languageSwitcher");
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
+  const DRAWER_LANGUAGES = useMemo(() => buildLanguages(t), [t]);
+  const SHORT_LANGUAGES = useMemo(
+    () =>
+      SHORT_LANGUAGE_CODES.map((code) =>
+        DRAWER_LANGUAGES.find((lang) => lang.code === code)
+      ).filter(Boolean),
+    [DRAWER_LANGUAGES]
+  );
 
   const currentLanguage =
     DRAWER_LANGUAGES.find((lang) => lang.code === locale) ||
     SHORT_LANGUAGES[0];
 
   return (
-    <div className="relative group">
+    <div className="group relative">
       <button
         type="button"
         onClick={() => {
@@ -279,10 +309,10 @@ export default function LanguageSwitcher({
         }}
         className={`inline-flex items-center justify-center gap-2 rounded-[10px] transition-colors duration-200 ${
           mobile
-            ? "h-10 px-3 bg-white text-[#111827] border border-[#d9d9d9] hover:bg-[#f7f7f7]"
-            : "xl:h-10 h-8 px-3 bg-primary text-white hover:opacity-90"
+            ? "h-10 border border-[#d9d9d9] bg-white px-3 text-[#111827] hover:bg-[#f7f7f7]"
+            : "h-8 bg-primary px-3 text-white hover:opacity-90 xl:h-10"
         }`}
-        aria-label="Select language"
+        aria-label={t("title")}
       >
         <span className="relative h-4 w-4 shrink-0 overflow-hidden rounded-xl">
           <Image
@@ -294,6 +324,7 @@ export default function LanguageSwitcher({
             className="object-contain object-center"
           />
         </span>
+
         <span className="text-[14px] font-medium leading-none">
           {currentLanguage.label}
         </span>
@@ -383,7 +414,7 @@ export default function LanguageSwitcher({
       {mobile && mobileDrawerOpen && (
         <LanguageDrawerPanel
           locale={locale}
-          variant={mobilePanel === "dropdown" ? "mobile-dropdown" : "mobile"}
+          variant={mobilePanel === "dropdown" ? "mobile-dropdown" : "mobile"} 
           onClose={() => setMobileDrawerOpen(false)}
         />
       )}
