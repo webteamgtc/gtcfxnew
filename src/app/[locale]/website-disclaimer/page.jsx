@@ -1,8 +1,15 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import WebsiteDisclaimerPage from "../components/documents/WebsiteDisclaimerPage";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { locales } from "@/i18n/config";
+import PrivacyPolicyPage from "../components/documents/PrivacyPolicy";
+import { getLocalizedDocument } from "@/lib/documents/getLocalizedDocument";
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
+const WEBSITE_DISCLAIMER_DOCUMENT_BASE_URL =
+  process.env.NEXT_PUBLIC_DOCUMENTS_URL + "/website-disclaimer";
 export async function generateMetadata({ params }) {
   const { locale } = params;
   const dict = await getDictionary(locale);
@@ -19,22 +26,22 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function WebsiteDisclaimer({ params }) {
-  const { locale } = params;
-  const dict = await getDictionary(locale);
-  const websiteDisclaimerPage = dict?.websiteDisclaimerPage || {};
+    const { locale } = await params;
+  const websiteDisclaimerData = await getLocalizedDocument(
+    WEBSITE_DISCLAIMER_DOCUMENT_BASE_URL,
+    locale
+  );
 
   return (
     <>
       <InnerPageBanner
-        title={websiteDisclaimerPage?.bannerTitle || "Website Disclaimer"}
-        description={
-          websiteDisclaimerPage?.bannerDescription ||
-          "The information provided on this website is for general informational purposes only and does not constitute investment advice, solicitation, or recommendation."
-        }
+        description={websiteDisclaimerData?.bannerDesc}
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
-      <WebsiteDisclaimerPage />
+      <PrivacyPolicyPage data={websiteDisclaimerData} />
+
+      {/* other sections */}
     </>
   );
 }

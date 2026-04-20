@@ -2,6 +2,15 @@ import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import PrivacyPolicyPage from "../components/documents/PrivacyPolicy";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { getLocalizedDocument } from "@/lib/documents/getLocalizedDocument";
+import { locales } from "@/i18n/config";
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+const PRIVACY_DOCUMENT_BASE_URL =
+  process.env.NEXT_PUBLIC_DOCUMENTS_URL + "/privacy-policy";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
@@ -17,17 +26,19 @@ export async function generateMetadata({ params }) {
 
 export default async function pages({ params }) {
   const { locale } = await params;
-  const dict = await getDictionary(locale);
-  const about = dict.about || {};
-
+  const privacyData = await getLocalizedDocument(
+    PRIVACY_DOCUMENT_BASE_URL,
+    locale
+  );
+  
   return (
     <>
       <InnerPageBanner
-        description="Learn how GTCFX collects, uses, and protects your personal information to ensure a secure and transparent experience. "
+        description={privacyData?.bannerDesc}
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
-      <PrivacyPolicyPage/>
+      <PrivacyPolicyPage data={privacyData} />
       
 
       {/* other sections */}
