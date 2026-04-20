@@ -1,10 +1,18 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import SwapFreeTermsPage from "../components/documents/SwapFreeTermsPage";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { locales } from "@/i18n/config";
+import PrivacyPolicyPage from "../components/documents/PrivacyPolicy";
+import { getLocalizedDocument } from "@/lib/documents/getLocalizedDocument";
 
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+const SWAP_FREE_TERMS_AND_CONDITIONS_DOCUMENT_BASE_URL =
+  process.env.NEXT_PUBLIC_DOCUMENTS_URL + "/swap-free-terms-and-conditions";
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const dict = await getDictionary(locale);
 
   return getPageMetadata({
@@ -19,22 +27,25 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function SwapFreeTerms({ params }) {
-  const { locale } = params;
-  const dict = await getDictionary(locale);
-  const swapTermsPage = dict?.swapTermsPage || {};
+  const { locale } = await params;
+  const swapTermsPageData = await getLocalizedDocument(
+    SWAP_FREE_TERMS_AND_CONDITIONS_DOCUMENT_BASE_URL,
+    locale
+  );
 
   return (
     <>
       <InnerPageBanner
-        title={swapTermsPage?.bannerTitle || "Swap-Free Terms & Conditions"}
         description={
-          swapTermsPage?.bannerDescription ||
+          swapTermsPageData?.bannerDesc ||
           "Explore the terms and conditions for swap-free accounts, including how they work and the requirements to maintain them."
         }
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
-      <SwapFreeTermsPage />
+      <PrivacyPolicyPage data={swapTermsPageData} />
+
+      {/* other sections */}
     </>
   );
 }

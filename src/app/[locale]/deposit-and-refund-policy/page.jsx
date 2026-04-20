@@ -1,8 +1,17 @@
 import { getDictionary } from "@/i18n/request";
-import DepositRefundPage from "../components/documents/DepositRefundPage";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
-export async function generateMetadata({ params }) {
+import { locales } from "@/i18n/config";
+import PrivacyPolicyPage from "../components/documents/PrivacyPolicy";
+import { getLocalizedDocument } from "@/lib/documents/getLocalizedDocument";
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+const DEPOSIT_AND_REFUND_POLICY_DOCUMENT_BASE_URL =
+  process.env.NEXT_PUBLIC_DOCUMENTS_URL + "/deposit-and-refund-policy";
+  export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   return getPageMetadata({
@@ -17,17 +26,19 @@ export async function generateMetadata({ params }) {
 
 export default async function pages({ params }) {
   const { locale } = await params;
-  const dict = await getDictionary(locale);
-  const about = dict.about || {};
+  const depositRefundPolicyData = await getLocalizedDocument(
+    DEPOSIT_AND_REFUND_POLICY_DOCUMENT_BASE_URL,
+        locale
+      );
 
   return (
     <>
       <InnerPageBanner
-        description="Review our policies regarding deposits, withdrawals, and refunds to ensure secure and transparent financial transactions."
+        description={depositRefundPolicyData?.bannerDesc}
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
-      <DepositRefundPage />
+      <PrivacyPolicyPage data={depositRefundPolicyData} />
       
 
       {/* other sections */}
