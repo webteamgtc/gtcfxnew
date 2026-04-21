@@ -37,7 +37,7 @@ export default function MainFooter({ locale: localeProp = "en" }) {
         { label: t("columns.tools.menu2", "PAMM Account"), href: "/pamm-account" },
         { label: t("columns.tools.menu3", "MAM Account"), href: "/mam-account" },
         { label: t("columns.tools.menu4", "Swap-Free Trading"), href: "/swap-free-trading" },
-        { label: t("columns.tools.menu5", "Margin Bonus"), href: "/margin-bonus" },
+      
       ],
     },
     {

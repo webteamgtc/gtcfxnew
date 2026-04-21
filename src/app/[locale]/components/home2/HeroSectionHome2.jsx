@@ -132,14 +132,14 @@ export default function HeroSectionHome2() {
 
           <div className="mt-5 flex flex-col items-center gap-3 sm:flex-row sm:gap-4">
             <Link
-              href="/register"
+              href="https://mygtcfx.com/getview?view=register&token=exhowww.z8owwwww"
               className="inline-flex min-h-[54px] items-center justify-center rounded-xl border border-white/20 bg-[#172154] px-7 text-[16px] font-semibold text-white transition hover:bg-secondary hover:no-underline md:px-8 md:text-[18px]"
             >
               {t("buttons.liveAccount")}
             </Link>
 
             <Link
-              href="/demo"
+              href="/free-demo-account"
               className="inline-flex min-h-[54px] items-center justify-center rounded-xl border border-white/30 px-6 text-[16px] font-semibold text-white transition hover:bg-white/10 hover:no-underline md:px-8 md:text-[18px]"
             >
               {t("buttons.demoAccount")}
