@@ -18,7 +18,7 @@ const DEPOSIT_AND_REFUND_POLICY_DOCUMENT_BASE_URL =
     locale,
     key: "refundPolicy",
     dict,
-    path: "legal-policies-client-agreements",
+    path: "deposit-and-refund-policy",
     fallbackTitle: "Deposit & Refund Policy- GTCFX",
     fallbackDescription: "This Deposit & Refund Policy outlines the procedures and conditions related to deposits, withdrawals, and refund requests with GTCFX.",
   });
