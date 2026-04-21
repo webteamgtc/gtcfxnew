@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import HeroSection from './components/home2/HeroSection';
+import HeroSectionHomeVideo from "./components/home2/HeroSectionHomeVideo";
 import FeaturesSection from './components/common/home/FeaturesSection';
 import Counter from './components/common/home/Counter';
 import MarketTabsSection from './components/common/home/MarketTabsSection';
@@ -33,7 +33,7 @@ export default async function HomePage({ params }) {
 
   return (
    <>
-   <HeroSectionHome2 />
+   <HeroSectionHomeVideo />
   <RevealOnScroll>
   <TradingTicker />
 </RevealOnScroll>
