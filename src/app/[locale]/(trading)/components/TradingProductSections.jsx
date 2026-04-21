@@ -1,30 +1,16 @@
 "use client";
 
-import { useState } from "react";
 import TradingAdvantages from "./TradingAdvantages";
 import TradingSplitSections from "./TradingSplitSections";
-import TradingCtaBand from "./TradingCtaBand";
 import TradingFaq from "./TradingFaq";
-import TradingMarketsDock from "./TradingMarketsDock";
-import { TRADING_MARKET_TABS } from "./tradingMarketTabs";
 import MetalsIntroVisual from "./MetalsIntroVisual";
 
-export default function TradingProductSections({ locale, product }) {
-  const [activeMarketTab, setActiveMarketTab] = useState("forex");
-  const tabs = product.marketTabs ?? TRADING_MARKET_TABS;
-  const isMetals = product?.slug === "metals";
+export default function TradingProductSections({ product }) {
   const introSection = product?.sections?.[0];
   const remainingSections = product?.sections?.slice?.(1);
 
   return (
     <>
-      {/* <TradingMarketsDock
-        tabs={tabs}
-        activeTab={activeMarketTab}
-        onTabChange={setActiveMarketTab}
-      /> */}
-
-
       <TradingAdvantages
         items={product.advantages}
         heading={product.advantagesHeading}
@@ -48,7 +34,6 @@ export default function TradingProductSections({ locale, product }) {
         title={product.faqTitle}
         subtitle={product.faqSubtitle}
       />
-      <TradingCtaBand locale={locale} />
     </>
   );
 }

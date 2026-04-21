@@ -19,6 +19,7 @@ export default async function PammAccountPage({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const copy = dict?.primeTech?.pamm || {};
+  
   return (
     <div>
       <InnerPageBanner
