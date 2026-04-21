@@ -1,10 +1,20 @@
 import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
-import CookiePolicy from "../components/documents/CookiePolicy";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
+import { getLocalizedDocument } from "@/lib/documents/getLocalizedDocument";
+import { locales } from "@/i18n/config";
+import PrivacyPolicyPage from "../components/documents/PrivacyPolicy";
+
+
+export async function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+const PRIVACY_DOCUMENT_BASE_URL =
+  process.env.NEXT_PUBLIC_DOCUMENTS_URL + "/cookie-policy";
 
 export async function generateMetadata({ params }) {
-  const { locale } = params;
+  const { locale } = await params;
   const dict = await getDictionary(locale);
 
   return getPageMetadata({
@@ -19,22 +29,20 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
-  const { locale } = params;
-  const dict = await getDictionary(locale);
-  const cookiePolicyPage = dict?.cookiePolicyPage || {};
+  const { locale } = await params;
+  const privacyData = await getLocalizedDocument(
+    PRIVACY_DOCUMENT_BASE_URL,
+    locale
+  );
 
   return (
     <>
       <InnerPageBanner
-        title={cookiePolicyPage?.bannerTitle || "Cookie Policy"}
-        description={
-          cookiePolicyPage?.bannerDescription ||
-          "We use cookies to enhance functionality, analyze usage, and deliver a better user experience across our website."
-        }
+        description={privacyData?.bannerDesc}
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
-      <CookiePolicy />
+      <PrivacyPolicyPage data={privacyData} />
     </>
   );
 }
