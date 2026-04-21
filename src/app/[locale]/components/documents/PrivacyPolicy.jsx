@@ -246,7 +246,7 @@ export default function PrivacyPolicyPage({ data }) {
               <h2 className="text-xl font-semibold text-slate-900">
                 {data?.topSection?.aboutThisPolicy?.title}
               </h2>
-              {data?.topSection?.aboutThisPolicy?.items.map((item, index) => (
+              {data?.topSection?.aboutThisPolicy?.items?.map((item, index) => (
                 <p key={index} className="mt-4 text-[15px] leading-8 text-slate-700">
                   {item}
                 </p>
@@ -259,7 +259,7 @@ export default function PrivacyPolicyPage({ data }) {
               </div>
 
               <div className="space-y-3">
-                {data?.topSection?.keyNotice?.items.map((item, index) => (
+                {data?.topSection?.keyNotice?.items?.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="mt-1 text-[#B68756]">
                       <CheckIcon />
@@ -300,17 +300,17 @@ export default function PrivacyPolicyPage({ data }) {
 
                 <div className="flex flex-wrap gap-3">
                   <a
-                    href={data?.footer?.buttons[0]?.href}
+                    href={data?.footer?.buttons?.[0]?.href}
                     className="inline-flex items-center justify-center rounded-2xl bg-[#0F3B8C] px-5 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#0B2F70]"
                   >
-                    {data?.footer?.buttons[0]?.label}
+                    {data?.footer?.buttons?.[0]?.label}
                   </a>
 
                   <a
-                    href={data?.footer?.buttons[1]?.href}
+                    href={data?.footer?.buttons?.[1]?.href}
                     className="inline-flex items-center justify-center rounded-2xl border border-[#D6E2F4] bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#0F3B8C]/30 hover:text-[#0F3B8C]"
                   >
-                    {data?.footer?.buttons[1]?.label}
+                    {data?.footer?.buttons?.[1]?.label}
                   </a>
                 </div>
               </div>

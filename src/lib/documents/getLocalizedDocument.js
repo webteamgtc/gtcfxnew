@@ -18,16 +18,17 @@ export async function getLocalizedDocument(baseUrl, locale, revalidate = 3600) {
   const orderedLocales =
     normalizedLocale === "en" ? ["en"] : [normalizedLocale, "en"];
 
-    const url = `${baseUrl}/${encodeURIComponent(locale)}.json`;
+  for (const lc of orderedLocales) {
+    const url = `${baseUrl}/${encodeURIComponent(lc)}.json`;
     try {
       const res = await fetch(url, { next: { revalidate } });
-      if (!res.ok) return null;
+      if (!res.ok) continue;
       const data = await res.json();
-       return data;
+      return data;
     } catch {
-      // Try fallback locale.
-      return null;
+      continue;
     }
- 
+  }
+
   return null;
 }
