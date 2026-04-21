@@ -34,7 +34,7 @@ export default async function pages({ params }) {
   return (
     <>
       <InnerPageBanner
-        description={depositRefundPolicyData?.bannerDesc}
+        description={depositRefundPolicyData?.bannerDesc||""}
         backgroundImage="/breadcamp/legal.webp"
         mobileBackgroundImage="/breadcamp/legal-mobile.webp"
       />
