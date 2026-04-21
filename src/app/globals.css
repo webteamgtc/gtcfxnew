@@ -147,10 +147,6 @@ a:hover {
     animation: awards-marquee 50s linear infinite;
   }
 
-  .marquee-track-rtl {
-    animation-name: awards-marquee-rtl;
-  }
-
   .marquee-track:hover {
     animation-play-state: paused;
   }
@@ -162,15 +158,6 @@ a:hover {
   }
   to {
     transform: translateX(-50%);
-  }
-}
-
-@keyframes awards-marquee-rtl {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(50%);
   }
 }
 
@@ -278,32 +265,23 @@ html {
     filter: blur(0);
   }
 }
-
+ 
 .mobile-review-swiper {
-  width: 100%;
-  padding-bottom: 34px;
+  padding-left: 4px;
+  padding-right: 30px;
 }
 
 .mobile-review-swiper .swiper-slide {
-  width: 100% !important;
+  height: auto;
 }
 
-.mobile-review-swiper .swiper-pagination {
-  bottom: 0 !important;
-}
-
-.mobile-review-swiper .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.35);
-  opacity: 1;
-  border-radius: 9999px;
-  transition: all 0.3s ease;
-}
-
-.mobile-review-swiper .swiper-pagination-bullet-active {
-  width: 26px;
-  height: 10px;
-  background: #b68756;
-  border-radius: 9999px;
+@keyframes softPulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 0.9; 
+  }
 }

@@ -164,7 +164,6 @@
       "title": "Margin Bonus | Boost Your Trading Power | GTCFX",
       "des": "Increase your trading potential with additional margin support. Gain flexibility and access more opportunities with GTCFX."
     },
-
     "introductoryBroker": {
       "title": "Become an Introducing Broker and Grow Your Earnings with GTCFX",
       "des": "Join the GTCFX Introducing Broker program and earn commissions by referring traders. Build your network and grow your income with a trusted broker. Sign up today."
@@ -3134,5 +3133,14 @@
       "website-disclaimer": "Website Disclaimer",
       "why-gtc-group": "Why GTC Group"
     }
+  },
+   "appQRWidget": {
+    "link": "https://qrcodes.pro/YW9ULf",
+    "ariaLabel": "Download GTC Go App",
+    "badge": "Scan Me",
+    "closeAriaLabel": "Close",
+    "image": "/home/qr-app.webp",
+    "title": "Download GTC Go App",
+    "subtitle": "Scan to install the app"
   }
 }

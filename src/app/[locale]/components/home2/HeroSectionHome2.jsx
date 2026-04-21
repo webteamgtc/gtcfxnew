@@ -118,7 +118,7 @@ export default function HeroSectionHome2() {
             </span>
           </div>
 
-          <h1 className="text-[35px] font-semibold leading-[1.07] rtl:leading-normal tracking-[-0.03em] text-white md:max-w-xl md:text-[40px] lg:text-[50px] 2xl:max-w-[500px] 2xl:text-[50px] 3xl:max-w-[800px] 3xl:text-[60px]">
+          <h1 className="text-[35px] font-semibold leading-[1.07] rtl:leading-normal tracking-[-0.03em] text-white md:max-w-xl md:text-[40px] lg:text-[50px] 2xl:max-w-[500px] 2xl:text-[50px] 3xl:max-w-[800px] 3xl:text-[60px] rtl:max-w-[600px]">
             {t("title.beforeHighlight")}
             <span className="font-bold text-secondary">
               {t("title.highlight")}

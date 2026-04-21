@@ -3208,5 +3208,14 @@
       "assistanceNote": "如需帮助，请联系您的客户经理或 GTCFX 客服团队。",
       "buttonLabel": "开立真实账户"
     }
+  },
+  "appQRWidget": {
+    "link": "https://qrcodes.pro/YW9ULf",
+    "ariaLabel": "下载 GTC Go 应用",
+    "badge": "扫码",
+    "closeAriaLabel": "关闭",
+    "image": "/home/qr-app.webp",
+    "title": "下载 GTC Go 应用",
+    "subtitle": "扫描二维码开始使用"
   }
 }
