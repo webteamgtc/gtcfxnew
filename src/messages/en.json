@@ -41,77 +41,77 @@
       "des": "Track upcoming earnings reports and dividend dates for stocks and indices CFDs. Stay prepared for market movements with the GTCFX earnings calendar."
     },
     "career": {
-    "title": "Careers at GTCFX | Jobs in a Global Trading Company",
-    "des": "Explore career opportunities at GTCFX. Join a global trading company and grow your career in fintech, trading, and financial markets."
-  },
-  "contactUs": {
-    "title": "Contact GTCFX | Trading Support & Customer Service",
-    "des": "Contact GTCFX for fast and professional support. Get help with your trading account, platforms, and services from our global team."
-  },
-  "economicCalendar": {
-    "title": "Forex Economic Calendar | Global Market Events | GTCFX",
-    "des": "Track real-time Forex economic events, news releases, and global market data. Stay informed and plan your trading with the GTCFX economic calendar."
-  },
-  "marketOverview": {
-    "title": "Market Overview | Forex & CFD Market Analysis | GTCFX",
-    "des": "Get the latest Forex and CFD market analysis, trends, and insights. Stay updated with real-time data and expert commentary from GTCFX."
-  },
-  "freeDemoAccount": {
-    "title": "Free Forex Demo Account | Practice Trading Risk-Free | GTCFX",
-    "des": "Open a free Forex demo account with GTCFX. Trade with real market conditions, test strategies, and practice risk-free before going live."
-  },
-  "deposit": {
-    "title": "Deposit Funds | Fast & Secure Trading Account Payments | GTCFX",
-    "des": "Deposit funds into your GTCFX trading account with fast and secure payment methods. Enjoy seamless transactions and multiple funding options."
-  },
-  "accountTypes": {
-    "title": "Forex Trading Account Types | Compare & Choose | GTCFX",
-    "des": "Compare Forex and CFD trading account types at GTCFX. Choose the right account with competitive spreads, fast execution, and flexible conditions."
-  },
-  "gtcGoApp": {
-    "title": "GTC Go Trading App | Forex & CFD Trading on Mobile",
-    "des": "Download the GTC Go app to trade Forex, CFDs, and global markets anytime. Enjoy real-time data, fast execution, and a seamless mobile trading experience."
-  },
-  "events": {
-    "title": "Forex Events & Trading Exhibitions | GTCFX Global Events",
-    "des": "Discover upcoming Forex events and trading exhibitions. Meet GTCFX worldwide and explore our latest products and services."
-  },
-  "tutorialVideo": {
-    "title": "Forex Trading Tutorials | Learn How to Trade | GTCFX",
-    "des": "Watch Forex trading tutorials from GTCFX. Learn how to open an account, deposit funds, and trade with confidence using our platforms."
-  },
-  "glossary": {
-    "title": "Forex Trading Glossary | Key Terms & Definitions | GTCFX",
-    "des": "Learn essential Forex and trading terms with the GTCFX glossary. Understand financial markets and improve your trading knowledge."
-  },
-   "forex": {
-    "title": "Forex CFD Trading | Trade Currency Markets | GTCFX",
-    "des": "Trade Forex CFDs with GTCFX. Access tight spreads, fast execution, and advanced MT4 & MT5 platforms for global currency trading."
-  },
-  "energy": {
-    "title": "Energy CFD Trading | Trade Oil & Gas Markets | GTCFX",
-    "des": "Trade energy CFDs including crude oil and natural gas. Access real-time pricing, tight spreads, and fast execution with GTCFX."
-  },
-  "shares": {
-    "title": "Share CFD Trading | Trade Global Stocks | GTCFX",
-    "des": "Trade share CFDs on leading global companies. Access stock market opportunities with flexible trading conditions and real-time pricing."
-  },
-  "stock": {
-    "title": "Stock CFD Trading | Access Global Equity Markets | GTCFX",
-    "des": "Trade stock CFDs across major global markets. Benefit from real-time data, flexible leverage, and fast execution with GTCFX."
-  },
-  "commodities": {
-    "title": "Commodity CFD Trading | Gold, Oil & More | GTCFX",
-    "des": "Trade commodity CFDs including gold, oil, and more. Diversify your trading strategy with competitive spreads and fast execution."
-  },
-  "indices": {
-    "title": "Index CFD Trading | Trade Global Indices | GTCFX",
-    "des": "Trade index CFDs including S&P 500, NASDAQ, and DAX. Access global markets with real-time pricing and efficient execution."
-  },
-  "metals": {
-    "title": "Metal CFD Trading | Trade Gold & Silver | GTCFX",
-    "des": "Trade metal CFDs including gold and silver. Access global markets with tight spreads, fast execution, and reliable trading conditions."
-  },
+      "title": "Careers at GTCFX | Jobs in a Global Trading Company",
+      "des": "Explore career opportunities at GTCFX. Join a global trading company and grow your career in fintech, trading, and financial markets."
+    },
+    "contactUs": {
+      "title": "Contact GTCFX | Trading Support & Customer Service",
+      "des": "Contact GTCFX for fast and professional support. Get help with your trading account, platforms, and services from our global team."
+    },
+    "economicCalendar": {
+      "title": "Forex Economic Calendar | Global Market Events | GTCFX",
+      "des": "Track real-time Forex economic events, news releases, and global market data. Stay informed and plan your trading with the GTCFX economic calendar."
+    },
+    "marketOverview": {
+      "title": "Market Overview | Forex & CFD Market Analysis | GTCFX",
+      "des": "Get the latest Forex and CFD market analysis, trends, and insights. Stay updated with real-time data and expert commentary from GTCFX."
+    },
+    "freeDemoAccount": {
+      "title": "Free Forex Demo Account | Practice Trading Risk-Free | GTCFX",
+      "des": "Open a free Forex demo account with GTCFX. Trade with real market conditions, test strategies, and practice risk-free before going live."
+    },
+    "deposit": {
+      "title": "Deposit Funds | Fast & Secure Trading Account Payments | GTCFX",
+      "des": "Deposit funds into your GTCFX trading account with fast and secure payment methods. Enjoy seamless transactions and multiple funding options."
+    },
+    "accountTypes": {
+      "title": "Forex Trading Account Types | Compare & Choose | GTCFX",
+      "des": "Compare Forex and CFD trading account types at GTCFX. Choose the right account with competitive spreads, fast execution, and flexible conditions."
+    },
+    "gtcGoApp": {
+      "title": "GTC Go Trading App | Forex & CFD Trading on Mobile",
+      "des": "Download the GTC Go app to trade Forex, CFDs, and global markets anytime. Enjoy real-time data, fast execution, and a seamless mobile trading experience."
+    },
+    "events": {
+      "title": "Forex Events & Trading Exhibitions | GTCFX Global Events",
+      "des": "Discover upcoming Forex events and trading exhibitions. Meet GTCFX worldwide and explore our latest products and services."
+    },
+    "tutorialVideo": {
+      "title": "Forex Trading Tutorials | Learn How to Trade | GTCFX",
+      "des": "Watch Forex trading tutorials from GTCFX. Learn how to open an account, deposit funds, and trade with confidence using our platforms."
+    },
+    "glossary": {
+      "title": "Forex Trading Glossary | Key Terms & Definitions | GTCFX",
+      "des": "Learn essential Forex and trading terms with the GTCFX glossary. Understand financial markets and improve your trading knowledge."
+    },
+    "forex": {
+      "title": "Forex CFD Trading | Trade Currency Markets | GTCFX",
+      "des": "Trade Forex CFDs with GTCFX. Access tight spreads, fast execution, and advanced MT4 & MT5 platforms for global currency trading."
+    },
+    "energy": {
+      "title": "Energy CFD Trading | Trade Oil & Gas Markets | GTCFX",
+      "des": "Trade energy CFDs including crude oil and natural gas. Access real-time pricing, tight spreads, and fast execution with GTCFX."
+    },
+    "shares": {
+      "title": "Share CFD Trading | Trade Global Stocks | GTCFX",
+      "des": "Trade share CFDs on leading global companies. Access stock market opportunities with flexible trading conditions and real-time pricing."
+    },
+    "stock": {
+      "title": "Stock CFD Trading | Access Global Equity Markets | GTCFX",
+      "des": "Trade stock CFDs across major global markets. Benefit from real-time data, flexible leverage, and fast execution with GTCFX."
+    },
+    "commodities": {
+      "title": "Commodity CFD Trading | Gold, Oil & More | GTCFX",
+      "des": "Trade commodity CFDs including gold, oil, and more. Diversify your trading strategy with competitive spreads and fast execution."
+    },
+    "indices": {
+      "title": "Index CFD Trading | Trade Global Indices | GTCFX",
+      "des": "Trade index CFDs including S&P 500, NASDAQ, and DAX. Access global markets with real-time pricing and efficient execution."
+    },
+    "metals": {
+      "title": "Metal CFD Trading | Trade Gold & Silver | GTCFX",
+      "des": "Trade metal CFDs including gold and silver. Access global markets with tight spreads, fast execution, and reliable trading conditions."
+    },
     "mt4Platform": {
       "title": "MT4 Trading Platform | MetaTrader 4 | GTCFX",
       "des": "Download the MT4 trading platform with GTCFX for Windows, Mac, iOS, and Android. Trade Forex, indices, commodities, shares, and more with ease."
@@ -164,7 +164,6 @@
       "title": "Margin Bonus | Boost Your Trading Power | GTCFX",
       "des": "Increase your trading potential with additional margin support. Gain flexibility and access more opportunities with GTCFX."
     },
-
     "introductoryBroker": {
       "title": "Become an Introducing Broker and Grow Your Earnings with GTCFX",
       "des": "Join the GTCFX Introducing Broker program and earn commissions by referring traders. Build your network and grow your income with a trusted broker. Sign up today."
@@ -173,7 +172,6 @@
       "title": "Join the GTCFX Affiliate Program and Earn Commissions Easily",
       "des": "Partner with GTCFX through our Affiliate Program and earn commissions for every referral. Start your journey to passive income today. Sign up now."
     },
-
     "riskDisclosure": {
       "title": "Risk Disclosure | Trading Risks Explained | GTCFX",
       "des": "Understand the risks associated with trading Forex and CFDs before making investment decisions. Ensure informed and responsible trading."
@@ -202,7 +200,7 @@
       "title": "Margin Requirements | Leverage & Risk Management | GTCFX",
       "des": "Learn about margin requirements, leverage, and how they impact your trading positions and risk management."
     },
-     "CookiePolicy": {
+    "CookiePolicy": {
       "title": "Cookie Policy | Your Privacy & Data Usage | GTCFX",
       "des": "Understand how GTCFX uses cookies to enhance your experience, analyze usage, and maintain a secure and efficient website."
     },
@@ -308,7 +306,7 @@
       }
     }
   },
-  "navigation": { 
+  "navigation": {
     "topbar": {
       "partner": "Partner With Us",
       "member": "Log in",
@@ -622,7 +620,7 @@
           "image": "/home/pamm-home.webp",
           "imageAlt": "PAMM Trading App Screen",
           "reverse": "true",
-          "imageCard": "true" 
+          "imageCard": "true"
         }
       }
     },
@@ -644,7 +642,7 @@
         },
         "two": {
           "title": "GTC Go App",
-          "description": "Trade markets anytime, anywhere", 
+          "description": "Trade markets anytime, anywhere",
           "link": "https://qrcodes.pro/YW9ULf"
         },
         "three": {
@@ -2641,9 +2639,18 @@
           "uae": "22:00"
         },
         "monday": {
-          "china": ["06:00", "07:00"],
-          "server": ["01:00", "02:00"],
-          "uae": ["02:00", "03:00"]
+          "china": [
+            "06:00",
+            "07:00"
+          ],
+          "server": [
+            "01:00",
+            "02:00"
+          ],
+          "uae": [
+            "02:00",
+            "03:00"
+          ]
         }
       },
       "hmrBox": {
@@ -2932,6 +2939,8 @@
           "selectPlaceholder": "Please Select One",
           "country": "Country Of Residence",
           "phone": "Phone Number",
+          "sending": "Sending...",
+          "submit": "Submit",
           "termOfService": "Terms of service",
           "termText": "I understood by submitting information to GTCFX, it may be used for marketing purpose to share relevant updates, invitations, and any other publication we feel may be of interest",
           "error": {
@@ -3133,6 +3142,176 @@
       "vps-hosting-services": "VPS Hosting Services",
       "website-disclaimer": "Website Disclaimer",
       "why-gtc-group": "Why GTC Group"
+    }
+  },
+  "marginBonusPage": {
+    "bannerTitle": "Margin Bonus",
+    "bannerDescription": "Enhance your trading power with additional margin support, giving you greater flexibility to seize market opportunities.",
+    "hero": {
+      "badge": "Margin Bonus Promotion",
+      "titleStart": "What Is The",
+      "titleHighlight": "GTC Margin Bonus",
+      "description": "A Margin Bonus is a non-withdrawable and non-transferable credit issued based on your deposit amount. It increases your account's usable margin, giving you more room to trade during periods of high market volatility."
+    },
+    "warning": {
+      "text": "Important: The bonus can be lost and will not be restored if removed. It cannot be withdrawn or transferred at any point."
+    },
+    "summary": {
+      "minimumDeposit": {
+        "label": "Minimum Deposit",
+        "value": "$500+"
+      },
+      "bonusRate": {
+        "label": "Bonus Rate",
+        "value": "50% / 20%"
+      },
+      "maxBonus": {
+        "label": "Max Bonus",
+        "value": "$20,000"
+      },
+      "cashback": {
+        "label": "Cashback",
+        "value": "$3 / lot"
+      }
+    },
+    "eligibility": {
+      "title": "Eligibility",
+      "points": {
+        "one": "The Promotion is available exclusively to clients with fully verified live trading accounts.",
+        "two": "It applies to",
+        "three": "The Promotion is available on all account types, except for Cent accounts.",
+        "four": "Each client may participate once, unless otherwise authorized in writing.",
+        "five": "Clients trading via MAM, PAMM, or Social Trading are not eligible.",
+        "six": "The bonus is a non-losing bonus used exclusively to support margin. It does not constitute real balance and cannot be withdrawn or transferred."
+      },
+      "subPoints": {
+        "one": "First-time deposits of at least $500 made by new clients.",
+        "two": "Top-up deposits by existing clients, applied only to the newly deposited amount."
+      },
+      "notAvailableLabel": "Not available in",
+      "notAvailableCountries": {
+        "one": "China",
+        "two": "Vietnam",
+        "three": "Taiwan",
+        "four": "Hong Kong",
+        "five": "Indonesia",
+        "six": "Pakistan"
+      }
+    },
+    "bonusSize": {
+      "title": "Bonus Size and Structure",
+      "points": {
+        "one": "The bonus amount is calculated as",
+        "two": "The maximum total bonus per client is capped at $20,000.",
+        "three": "To receive the bonus, the client must first register for the promotion and then make a qualifying deposit.",
+        "four": "Once registered and funded, the bonus request will be automatically generated and processed."
+      },
+      "subPoints": {
+        "one": "50% of the deposit amount for deposits up to $10,000",
+        "two": "20% of the portion that exceeds $10,000"
+      }
+    },
+    "cashback": {
+      "title": "Cashback Conditions",
+      "points": {
+        "one": "Clients who receive the Margin Bonus are eligible to claim $3 per full lot traded on FX pairs, gold, metals, and oil within a 3-month period.",
+        "two": "Cashback can be requested only once and to qualify",
+        "three": "The total cashback is capped at the value of the bonus received.",
+        "four": "Cashback must be requested through the client's personal account manager.",
+        "five": "Cashback will be credited within 7 business days once approved."
+      },
+      "subPoints": {
+        "one": "The cashback amount must be at least $500",
+        "two": "It must represent at least 20% of the bonus received"
+      },
+      "examplesLabel": "Examples",
+      "examples": {
+        "one": {
+          "text": "If a client receives a $2,500 bonus, they must trade at least ~167 lots to earn $500 in cashback."
+        },
+        "two": {
+          "text": "If a client receives a $3,000 bonus and trades only ~133 lots to earn $400 cashback."
+        },
+        "three": {
+          "text": "If a client receives a $1,000 bonus, they must trade at least ~167 lots to earn $500 cashback, which is over 50% of the bonus."
+        },
+        "four": {
+          "text": "If a client receives a $5,000 bonus and trades 100 lots to earn $300 cashback."
+        }
+      },
+      "status": {
+        "eligible": "Eligible",
+        "ineligible": "Ineligible"
+      }
+    },
+    "bonusUse": {
+      "title": "Bonus Use and Nature",
+      "points": {
+        "one": "The Margin Bonus is strictly for trading margin support and cannot be",
+        "two": "Any withdrawal from the client's account will result in automatic removal of the bonus."
+      },
+      "subPoints": {
+        "one": "Withdrawn",
+        "two": "Transferred",
+        "three": "Used as tradable or real account balance"
+      }
+    },
+    "withdrawalConditions": {
+      "title": "Withdrawal Conditions",
+      "points": {
+        "one": "GTCFX reserves the right to remove the bonus if the account equity falls below the bonus amount.",
+        "two": "Once removed, the bonus will not be reinstated under any circumstances."
+      }
+    },
+    "bonusExpiry": {
+      "title": "Bonus Expiry",
+      "points": {
+        "one": "The Margin Bonus is valid for up to 3 months from the date of the first qualifying deposit.",
+        "two": "GTCFX may remove the bonus automatically after the 3-month period, regardless of trading activity.",
+        "three": "If cashback conditions are not met within the 3-month period, eligibility for cashback is forfeited."
+      }
+    },
+    "abusePolicy": {
+      "title": "Abuse Policy",
+      "points": {
+        "one": "Abuse of the promotion is strictly prohibited. Examples include",
+        "two": "GTCFX reserves the right to"
+      },
+      "subPoints": {
+        "one": "Hedging between multiple accounts or brokers",
+        "two": "Latency arbitrage or other technical exploits",
+        "three": "Coordinated manipulation of bonus terms"
+      },
+      "actions": {
+        "one": "Remove the bonus without prior notice",
+        "two": "Cancel cashback or profits obtained through abusive behavior",
+        "three": "Suspend or terminate client accounts involved in fraud or abuse"
+      }
+    },
+    "stopOutPolicy": {
+      "title": "Stop Out Policy",
+      "points": {
+        "one": "If the account equity reaches the stop-out level, or if the floating loss equals the actual account balance, the Margin Bonus will be automatically removed."
+      }
+    },
+    "clientAcknowledgment": {
+      "title": "Client Acknowledgment",
+      "points": {
+        "one": "By accepting the Margin Bonus, the client acknowledges and agrees to these Terms & Conditions.",
+        "two": "Misuse of the Promotion may result in the removal of the bonus, forfeiture of profits, and/or suspension of the trading account."
+      }
+    },
+    "howToApply": {
+      "title": "How to Apply",
+      "points": {
+        "one": "Register for the promotion by submitting the form on the campaign page.",
+        "two": "Make a qualifying deposit of at least $500 into your verified live trading account.",
+        "three": "Once both steps are completed, your bonus request will be automatically processed.",
+        "four": "Only registered clients will be eligible to receive the bonus."
+      },
+      "cashbackNote": "To claim cashback, reach out directly to your Personal Account Manager once the trading and eligibility requirements are fulfilled.",
+      "assistanceNote": "For assistance, contact your Account Manager or the GTCFX Support Team.",
+      "buttonLabel": "Open Live Account"
     }
   }
 }

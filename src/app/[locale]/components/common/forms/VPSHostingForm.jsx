@@ -7,10 +7,10 @@ import PhoneInput from "react-phone-number-input";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 // import nationality from '../../../../../public/data/nationality.json';
-import { translationText } from "@/i18n/tranlsationText";
 import axios from "axios";
 import { toast } from "react-toastify";
 import { useLocationDetail } from "@/context/useLocationDetail";
+import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 
 
 
@@ -24,6 +24,7 @@ const packages = [
   { id: 3, name: "Gold", value: "gold" },
 ];
 const VpsHostingForm = ({ copy }) => {
+  const translationText = usePathTranslation("primeTech.vpsHosting.hero.vpsForm");
   const [loading, setLoading] = useState(false);
   const campaign = useSearchParams().get('utm_source');
   const path = usePathname();
@@ -46,18 +47,18 @@ const VpsHostingForm = ({ copy }) => {
       terms: false,
     },
     validationSchema: Yup.object({
-      first_name: Yup.string().min(2, translationText("error.minLimit", "At least 2 letters", copy)).required(translationText("error.firstName", "First Name is required", copy)),
-      last_name: Yup.string().min(2, translationText("error.minLimit", "At least 2 letters", copy)).required(translationText("error.lastName", "Last Name is required", copy)),
-      platform: Yup.string().required(translationText("error.platform", "Platform is required", copy )),
-      account_no:Yup.string().min(6,'minimum 6 numbers').max(7,"maximum 7 numbers").required(translationText("error.account_no", "Account Number is required", copy )),
-      package:Yup.string().required(translationText("error.package", "Please Choose a package", copy )),
-      email: Yup.string().email(translationText("error.invalidEmail", "Invalid email address", copy )).required(translationText("error.email", "Email Address is required", copy )),
-      country: Yup.string().required(translationText("error.country", "Country is required", copy )),
+      first_name: Yup.string().min(2, translationText("error.minLimit")).required(translationText("error.firstName")),
+      last_name: Yup.string().min(2, translationText("error.minLimit")).required(translationText("error.lastName")),
+      platform: Yup.string().required(translationText("error.platform")),
+      account_no:Yup.string().min(6,'minimum 6 numbers').max(7,"maximum 7 numbers").required(translationText("error.account_no")),
+      package:Yup.string().required(translationText("error.package")).required(translationText("error.package")),
+      email: Yup.string().email(translationText("error.invalidEmail")).required(translationText("error.email")),
+      country: Yup.string().required(translationText("error.country")).required(translationText("error.country")),
     }),
     validate: values => {
       const errors = {};
       if (!values.phone) {
-        errors.phone = translationText("vpsHosting.hero.vpsForm.error.phone", "Phone number is required", copy );
+        errors.phone = translationText("error.phone");
       }
       return errors;
     },
@@ -74,7 +75,7 @@ const VpsHostingForm = ({ copy }) => {
         console.log(error);
       } finally {
         setLoading(false);
-            toast(translationText("vpsHosting.hero.vpsForm.toastSubmitted", "Form Submitted Successfully!", copy ))
+            toast(translationText("toastSubmitted"))
         formik.resetForm();
       }
     },
@@ -85,7 +86,7 @@ const VpsHostingForm = ({ copy }) => {
       <div className="overflow-hidden rounded-2xl border border-[#D9DEE8] bg-white shadow-sm">
         <div className="bg-[linear-gradient(180deg,#293B93_0%,#0D153A_100%)] px-6 py-4 text-center">
           <h3 className="HeadingH5 text-[#B48755]">
-            {translationText("vpsHosting.hero.vpsForm.formTitle", "SUBSCRIBE", copy)}
+            {translationText("formTitle")}
           </h3>
         </div>
 
@@ -119,7 +120,7 @@ const VpsHostingForm = ({ copy }) => {
               type="text"
               name="first_name"
               id="first_name"
-              placeholder={translationText("vpsHosting.hero.vpsForm.firstName", "First Name", copy )}
+              placeholder={translationText("firstName")}
               className={`w-full rounded-lg border bg-white px-4 py-3 text-gray-700 outline-none transition focus:ring-2 focus:ring-primary/25 ${
                 formik.touched.first_name && formik.errors.first_name ? "border-red-500" : "border-gray-300"
               }`}
@@ -139,7 +140,7 @@ const VpsHostingForm = ({ copy }) => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.last_name}
-              placeholder={translationText("vpsHosting.hero.vpsForm.lastName", "Last Name", copy )}
+              placeholder={translationText("lastName")}
               className={`w-full rounded-lg border bg-white px-4 py-3 text-gray-700 outline-none transition focus:ring-2 focus:ring-primary/25 ${
                 formik.touched.last_name && formik.errors.last_name ? "border-red-500" : "border-gray-300"
               }`}
@@ -159,7 +160,7 @@ const VpsHostingForm = ({ copy }) => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                 >
-                  <option value="">{translationText("vpsHosting.hero.vpsForm.selectPlaceholder", "Please Select One", copy )}</option>
+                  <option value="">{translationText("selectPlaceholder")}</option>
                   {platforms.map((platform, el) => {
                     return (
                       <option key={platform.id} value={platform.value}>
@@ -177,7 +178,7 @@ const VpsHostingForm = ({ copy }) => {
               type="number"
               name="account_no"
               id="account_no"
-              placeholder={translationText("vpsHosting.hero.vpsForm.account_no", "Enter Your Account Number", copy )}
+              placeholder={translationText("account_no")}
               className={`w-full rounded-lg border bg-white px-4 py-3 text-gray-700 outline-none transition focus:ring-2 focus:ring-primary/25 ${
                 formik.touched.account_no && formik.errors.account_no ? "border-red-500" : "border-gray-300"
               }`}
@@ -199,7 +200,7 @@ const VpsHostingForm = ({ copy }) => {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                 >
-                  <option value="">{translationText("vpsHosting.hero.vpsForm.selectPlaceholder", "Please Select One", copy )}</option>
+                  <option value="">{translationText("selectPlaceholder")}</option>
                   {packages.map((el) => {
                     return (
                       <option key={el.id} value={el.value}>
@@ -222,7 +223,7 @@ const VpsHostingForm = ({ copy }) => {
             onBlur={formik.handleBlur}
             value={formik.values.email}
             autoComplete="email"
-            placeholder={translationText("vpsHosting.hero.vpsForm.email", "Email Address", copy )}
+            placeholder={translationText("email")}
             className={`w-full rounded-lg border bg-white px-4 py-3 text-gray-700 outline-none transition focus:ring-2 focus:ring-primary/25 mb-4 ${
               formik.touched.email && formik.errors.email ? "border-red-500" : "border-gray-300"
             }`}
@@ -254,7 +255,7 @@ const VpsHostingForm = ({ copy }) => {
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
           >
-            <option value='' >{translationText("vpsHosting.hero.vpsForm.selectPlaceholder", "Please Select One", copy   )}</option>
+            <option value='' >{translationText("selectPlaceholder")}</option>
             {/* {
               nationality.map((country, index) => {
                 return (
@@ -275,8 +276,8 @@ const VpsHostingForm = ({ copy }) => {
           type="submit"
         >
           {loading
-            ? translationText("vpsHosting.hero.vpsForm.sending", "Sending...", copy)
-            : translationText("vpsHosting.hero.vpsForm.submit", "Submit", copy)}
+            ? translationText("sending")
+            : translationText("submit")}
         </button>
       </form>
       </div>
