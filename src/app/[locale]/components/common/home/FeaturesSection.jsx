@@ -14,11 +14,11 @@ import { usePathTranslation } from "../../../LocaleProvider";
 
 function FeatureCard({ item, index, mobile = false }) {
   const surface = mobile
-    ? "bg-white border-[#ececec] shadow-[0_8px_24px_rgba(15,23,42,0.08)]"
+    ? "bg-white border-[#ececec] shadow-[0_8px_24px_rgba(15,23,42,0.04)]"
     : [
         item.highlight
           ? "bg-[#eef2ff] border-[#c7d2fe]"
-          : "bg-[#F1F2F4] border-[#ececec]",
+          : "bg-[#fff] border-[#ececec] shadow-[0_6px_20px_rgba(0,0,0,0.08)]",
         "hover:bg-[#eef2ff] hover:border-[#c7d2fe] hover:shadow-[0_12px_30px_rgba(59,92,255,0.15)] hover:-translate-y-1",
       ].join(" ");
 
@@ -29,12 +29,12 @@ function FeatureCard({ item, index, mobile = false }) {
       className={`group relative rounded-[14px] md:rounded-[10px] p-8  border transition-all duration-300 ${surface}`}
     >
       <div className="flex items-center justify-between gap-4">
-        <span className="inline-flex items-center rounded-xl bg-secondary px-3 py-1 text-[10px] text-white transition-all duration-300 md:text-xs group-hover:bg-primary">
-          {item.tag}
+        <span className="inline-flex gap-4 items-center rounded-xl bg-secondary px-3 py-1 text-[10px] text-white transition-all duration-300 md:text-xs group-hover:bg-primary">
+           <Icon className="h-3 w-3 md:h-4 md:w-4" /> {item.tag}
         </span>
 
         <div className="text-[#A3A3A3] transition-all duration-300 group-hover:text-secondary group-hover:scale-110">
-          <Icon className="h-5 w-5 md:h-6 md:w-6" />
+         
         </div>
       </div>
 

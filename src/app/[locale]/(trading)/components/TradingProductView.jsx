@@ -2,7 +2,7 @@
 import TradingProductSections from "./TradingProductSections";
 import TradingHeroSection from "./TradingHeroSection";
 
-export default function TradingProductView({ locale, product }) {
+export default function TradingProductView({ product }) {
   return (
     <>
       <TradingHeroSection
@@ -12,7 +12,7 @@ export default function TradingProductView({ locale, product }) {
         backgroundImage={""}
         mobileBackgroundImage={""}
       />
-      <TradingProductSections locale={locale} product={product} />
+      <TradingProductSections product={product} />
     </>
   );
 }
