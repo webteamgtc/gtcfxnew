@@ -26,7 +26,7 @@ function FeatureCard({ item, index, mobile = false }) {
 
   return (
     <div
-      className={`group relative rounded-[14px] md:rounded-[10px] p-8  border transition-all duration-300 ${surface}`}
+      className={`group relative rounded-[14px] md:rounded-[10px] p-4 md:p-5 2xl:p-8  border transition-all duration-300 ${surface}`}
     >
       <div className="flex items-center justify-between gap-4">
         <span className="inline-flex gap-4 items-center rounded-xl bg-secondary px-3 py-1 text-[10px] text-white transition-all duration-300 md:text-xs group-hover:bg-primary">
@@ -38,11 +38,11 @@ function FeatureCard({ item, index, mobile = false }) {
         </div>
       </div>
 
-      <h3 className="mt-5 text-[20px] font-semibold text-primary transition-colors duration-300 group-hover:text-[#1e2f99] md:text-[22px]">
+      <h3 className="mt-5 text-[16px] font-semibold text-primary transition-colors duration-300 group-hover:text-[#1e2f99] md:text-[18px]  4xl:text-[20px]">
         {item.title}
       </h3>
 
-      <p className="mt-3 text-[14px] leading-relaxed text-[#4B5563] md:text-base">
+      <p className="mt-3 text-[14px] leading-relaxed text-[#4B5563] md:text-sm xl:text-base">
         {item.description}
       </p>
 
@@ -119,7 +119,7 @@ export default function FeaturesSection() {
           </p>
         </div>
 
-        <div className="mt-6 hidden gap-6 md:grid md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-6 hidden gap-6 md:grid md:grid-cols-3 xl:grid-cols-3">
           {features.map((item, index) => (
             <FeatureCard key={index} item={item} index={index} />
           ))}

@@ -59,7 +59,7 @@ a:hover {
   .HeadingH3 {
     @apply text-[18px] leading-[1.3] font-semibold
            md:text-[22px]
-           xl:text-[30px];
+           4xl:text-[30px];
   }
 
   .HeadingH4 {

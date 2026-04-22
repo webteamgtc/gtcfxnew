@@ -59,13 +59,13 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
     >
       <div className="container">
         <div
-          className={`relative bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all duration-300 ${activeMegaMenu ? "rounded-t-[16px]" : "rounded-[16px]"
+          className={`relative bg-white shadow-[0_10px_30px_rgba(0,0,0,0.06)] transition-all duration-300 ${activeMegaMenu ? "rounded-t-[16px]" : "rounded-[8px]"
             }`}
           onMouseLeave={() => setActiveMegaMenu(null)}
         >
           <div
             className={`flex items-center justify-between px-3 xl:px-6 transition-all duration-300 ${activeMegaMenu ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"
-              } ${scrolled ? "min-h-[58px] md:min-h-[74px]" : "min-h-[60px] md:min-h-[85px]"}`}
+              } ${scrolled ? "min-h-[58px] md:min-h-[74px]" : "min-h-[60px] md:min-h-[60px] xl:min-h-[75px] 4xl:min-h-[85px]"}`}
           >
             {/* Logo */}
             <Link href={localizedHref(locale, "/")} className="flex shrink-0 items-center">
@@ -77,7 +77,7 @@ export default function MainHeader({ locale = "en", navigation = {} }) {
                 priority
                 className={`cursor-pointer object-contain transition-all duration-300 ${scrolled
                     ? "w-[120px] h-[42px] sm:w-[130px] sm:h-[47px] md:w-[150px] md:h-[54px]"
-                    : "w-[130px] h-[47px] sm:w-[130px] sm:h-[47px] md:w-[120px] md:h-[53px] xl:w-[200px] xl:h-[72px]"
+                    : "w-[130px] h-[47px] sm:w-[130px] sm:h-[47px] md:w-[120px] md:h-[53px] 2xl:w-[170px] 2xl:h-[61px] 4xl:w-[200px] 4xl:h-[72px]"
                   }`}
               />
             </Link>

@@ -100,7 +100,7 @@ export default function HeroSectionHomeVideo() {
       </div>
 
       <div className="container relative z-10">
-        <div className="flex min-h-[87vh] flex-col items-center justify-center pt-28 pb-10 text-center md:pt-28 md:pb-0 lg:pt-32 lg:pb-0 2xl:min-h-[100vh] 3xl:min-h-[90vh] 4xl:min-h-[95vh] 5xl:min-h-[90vh]">
+        <div className="flex min-h-[87vh] flex-col items-center justify-center pt-28 pb-10 text-center md:pt-28 md:pb-0 lg:pt-32 lg:pb-0 sm:min-h-[125vh] 2xl:min-h-[100vh] 3xl:min-h-[90vh] 4xl:min-h-[95vh] 5xl:min-h-[90vh]">
           <div className="mb-7 inline-flex items-center gap-3 rounded-full border border-gray-500 bg-[#ffffff5b] px-4 py-2 shadow-[0_6px_20px_rgba(0,0,0,0.08)]">
             <span className="rounded-xl bg-gradient-to-r from-[#B68756] via-[#995F22] to-[#995F22] px-3 py-2 text-[11px] font-semibold uppercase leading-none text-white">
               {t("badge.tag")}
@@ -110,7 +110,7 @@ export default function HeroSectionHomeVideo() {
             </span>
           </div>
 
-          <h1 className="text-[35px] font-semibold leading-[1.05] rtl:leading-normal tracking-[-0.03em] text-white md:max-w-xl md:text-[40px] lg:text-[45px] 2xl:max-w-[600px] 2xl:text-[45px] 3xl:max-w-[800px] 3xl:text-[60px]">
+          <h1 className="text-[35px] font-semibold leading-[1.05] rtl:leading-normal tracking-[-0.03em] text-white md:max-w-xl md:text-[35px] lg:text-[40px] 2xl:max-w-[600px] 2xl:text-[45px] 3xl:max-w-[800px] 3xl:text-[60px]">
             {t("title.beforeHighlight")}
             <span className="font-bold text-secondary">
               {t("title.highlight")}
@@ -118,7 +118,7 @@ export default function HeroSectionHomeVideo() {
             {t("title.afterHighlight")}
           </h1>
 
-          <p className="mt-4 max-w-[680px] text-sm leading-7 text-white md:text-[17px] md:leading-8 lg:text-[20px]">
+          <p className="mt-4 lg:max-w-[550px] 2xl:max-w-[680px] text-sm leading-7 text-white md:text-[17px] md:leading-8 lg:text-[18px] 2xl:text-[22px]">
             {t("description")}
           </p>
 

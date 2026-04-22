@@ -81,7 +81,7 @@ export default function MarketTabsSection() {
     <section className="pt-10 md:py-16">
       <div className="container">
         <div className="mx-auto flex max-w-[950px] flex-col items-center gap-8 text-center">
-          <h2 className="HeadingH2 mx-auto max-w-[700px]">
+          <h2 className="HeadingH2 mx-auto md:max-w-[500px] 2xl:max-w-[600px]">
             {t("heading.beforeHighlight")}
             <span className="text-secondary">{t("heading.highlightOne")}</span>
             {t("heading.middle")}

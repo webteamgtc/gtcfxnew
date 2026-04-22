@@ -115,7 +115,7 @@ export default function Counter() {
       className="bg-primary-gradient  py-5 md:py-8"
     >
       <div className="container">
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 xl:grid-cols-4 xl:gap-8">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 xl:grid-cols-4 xl:gap-8">
           {stats.map((item, index) => (
             <CounterItem
               key={index}
