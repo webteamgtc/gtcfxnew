@@ -3320,7 +3320,7 @@
     "firstName": "First Name",
     "fullName": "Full Name",
     "deposit_amount": "Deposit Amount",
-    "head1": "Open Live Account                                              ",
+    "head1": "Open Live Account",
     "head2": "Fund your Account",
     "head3": "Apply for 20% Bonus",
     "lastName": "Last Name",
@@ -3390,6 +3390,7 @@
     "contactTerms": "By submitting your application, you confirm that you have read, understood, and agreed to all the terms and conditions contained herein.",
     "enterEmail": "Please Enter Your Email To Continue",
     "formAlready": "Your Email already registered. Please check with your Account Manager."
+  },
    "appQRWidget": {
     "link": "https://qrcodes.pro/YW9ULf",
     "ariaLabel": "Download GTC Go App",
