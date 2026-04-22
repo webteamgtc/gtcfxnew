@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import PrimaryButton from "../../components/common/PrimaryButton";
 import { usePathTranslation } from "@/app/[locale]/LocaleProvider";
 import MarginBonusDrawer from "./MarginBonusDrawer";
@@ -70,7 +70,7 @@ export default function MarginBonusPageSection({ messages = {} }) {
   const cashbackExamples = [
     {
       text: t(
-        "cashback.examples.one.text"      ),
+        "cashback.examples.one.text"),
       good: true,
     },
     {
@@ -127,11 +127,11 @@ export default function MarginBonusPageSection({ messages = {} }) {
           >
             <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" aria-hidden="true">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" fill="currentColor" fillOpacity="0.15"/>
+                stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" fill="currentColor" fillOpacity="0.15" />
             </svg>
             Apply Now
             <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true">
-              <path d="M5 12h14m0 0-5-5m5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M5 12h14m0 0-5-5m5 5-5 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </button>
         </div>
@@ -209,11 +209,10 @@ export default function MarginBonusPageSection({ messages = {} }) {
                 {cashbackExamples.map((item, index) => (
                   <div
                     key={index}
-                    className={`rounded-2xl border px-4 py-3 text-sm leading-7 ${
-                      item.good
+                    className={`rounded-2xl border px-4 py-3 text-sm leading-7 ${item.good
                         ? "border-[#BBF7D0] bg-[#F0FDF4] text-[#166534]"
                         : "border-[#FECACA] bg-[#FEF2F2] text-[#B91C1C]"
-                    }`}
+                      }`}
                   >
                     {item.text}{" "}
                     <strong>
@@ -325,8 +324,9 @@ export default function MarginBonusPageSection({ messages = {} }) {
           </div>
         </div>
       </div>
-
-      <MarginBonusDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
+      <Suspense fallback={null}>
+        <MarginBonusDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} />
+      </Suspense>
     </section>
   );
 }
