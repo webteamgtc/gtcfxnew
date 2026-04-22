@@ -3390,5 +3390,13 @@
     "contactTerms": "By submitting your application, you confirm that you have read, understood, and agreed to all the terms and conditions contained herein.",
     "enterEmail": "Please Enter Your Email To Continue",
     "formAlready": "Your Email already registered. Please check with your Account Manager."
+   "appQRWidget": {
+    "link": "https://qrcodes.pro/YW9ULf",
+    "ariaLabel": "Download GTC Go App",
+    "badge": "Scan Me",
+    "closeAriaLabel": "Close",
+    "image": "/home/qr-app.webp",
+    "title": "Download GTC Go App",
+    "subtitle": " Scan to install the app"
   }
 }

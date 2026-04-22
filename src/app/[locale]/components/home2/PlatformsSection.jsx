@@ -64,7 +64,7 @@ export default function PlatformsSection() {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group flex items-center gap-4 px-5 py-6 text-center transition hover:no-underline md:flex-col md:items-center md:justify-center md:px-0 md:py-0 ${
+                className={`group flex items-center gap-4 px-5 py-6 text-center transition hover:no-underline flex-col md:items-center md:justify-center md:px-0 md:py-0 ${
                   index !== platforms.length - 1
                     ? "border-b border-[#dddddd] md:border-b-0"
                     : ""
@@ -79,7 +79,7 @@ export default function PlatformsSection() {
                   />
                 </div>
 
-                <div className="flex-1">
+                <div className="md:flex-1">
                   <h6 className="text-[16px] font-semibold leading-tight text-primary">
                     {item.title}
                   </h6>

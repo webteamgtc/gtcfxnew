@@ -9,16 +9,9 @@ export default function TrackedLinkButton({
   className = "",
   buttonType = "default",
   location = "unknown",
-  trackingData = {},
+ 
 }) {
-  const handleClick = () => {
-    trackRegisterClick({
-      button_type: buttonType,
-      location,
-      destination: href,
-      ...trackingData,
-    });
-  };
+
 
   return (
     <Link href={href} onClick={handleClick} className={className}>

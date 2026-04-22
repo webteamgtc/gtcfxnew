@@ -10,6 +10,7 @@ import StickyContactBar from "./components/common/StickyContactBar";
 import ThirdPartyScripts from "./components/common/seo/ThirdPartyScripts";
 import { getLocaleSeoMetadata } from "./components/common/seo/localeSeoMetadata";
 import AppQRWidget from "./components/common/AppQRWidget";
+import AppDownloadStickyBar from "./components/common/AppDownloadStickyBar";
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -55,6 +56,7 @@ export default async function LocaleLayout({ children, params }) {
         <main>{children}</main>
         <MainFooter locale={locale} />
         <AppQRWidget />
+        <AppDownloadStickyBar />
         <ToastContainer autoClose={3000} />
       </div>
     </LocaleProvider>

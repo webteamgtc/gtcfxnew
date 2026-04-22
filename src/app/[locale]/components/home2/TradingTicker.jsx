@@ -39,7 +39,7 @@ export default function TradingTicker() {
       <div className="relative flex">
         <div className="ticker-track flex min-w-max items-center whitespace-nowrap">
          {loopItems.map((item, index) => (
-  <div key={index} className="flex items-center text-praimary">
+  <div key={index} className="flex items-center text-primary">
     
     {/* Show separator only after first */}
     {index !== 0 && (

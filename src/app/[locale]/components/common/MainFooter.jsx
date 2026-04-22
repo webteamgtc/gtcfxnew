@@ -37,7 +37,7 @@ export default function MainFooter({ locale: localeProp = "en" }) {
         { label: t("columns.tools.menu2", "PAMM Account"), href: "/pamm-account" },
         { label: t("columns.tools.menu3", "MAM Account"), href: "/mam-account" },
         { label: t("columns.tools.menu4", "Swap-Free Trading"), href: "/swap-free-trading" },
-        { label: t("columns.tools.menu5", "Margin Bonus"), href: "/margin-bonus" },
+      
       ],
     },
     {
@@ -156,14 +156,14 @@ export default function MainFooter({ locale: localeProp = "en" }) {
           ))}
         </div>
 
-        <div className="hidden md:flex flex-col gap-6 border-b border-[#d9d9d9] py-2 md:flex-row md:items-center md:justify-between">
+        <div className="hidden md:flex flex-col gap-6 border-b border-[#d9d9d9] py-2 md:flex-row md:items-center md:justify-between bg-white px-4 md:py-3">
           <div className="flex items-center">
             <Image
               src="https://gtcfx-bucket.s3.ap-southeast-1.amazonaws.com/img/logo-2024-new.webp"
               alt="GTCFX Logo"
-              width={130}
-              height={36}
-              className="w-[130px] h-auto object-contain"
+              width={220}
+              height={79}
+              className="w-[220px] h-auto object-contain"
             />
           </div>
 

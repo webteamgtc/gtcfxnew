@@ -3205,5 +3205,14 @@
             "assistanceNote": "للمساعدة، تواصل مع مدير حسابك أو فريق دعم GTCFX.",
             "buttonLabel": "فتح حساب حقيقي"
         }
-    }
+    },
+    "appQRWidget": {
+    "link": "https://qrcodes.pro/YW9ULf",
+    "ariaLabel": "تحميل تطبيق GTC Go",
+    "badge": "امسح الرمز",
+    "closeAriaLabel": "إغلاق",
+    "image": "/home/qr-app.webp",
+    "title": "تحميل تطبيق GTC Go",
+    "subtitle": "امسح رمز QR للبدء"
+  }
 }
