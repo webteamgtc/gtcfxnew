@@ -2,7 +2,6 @@ import { getDictionary } from "@/i18n/request";
 import InnerPageBanner from "../components/common/InnerPageBanner";
 import MarginBonusPageSection from "./components/MarginBonusPageSection";
 import { getPageMetadata } from "@/lib/metadata/getPageMetadata";
-import { translationTextByPath } from "@/i18n/tranlsationText";
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
