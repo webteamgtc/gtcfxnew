@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import {
   locales,
   defaultLocale,
-  resolveLocaleFromAcceptLanguage,
 } from '@/i18n/config';
 
 const PUBLIC_FILE = /\.(.*)$/;
@@ -44,21 +43,10 @@ export function middleware(request) {
     return NextResponse.next();
   }
 
-  const locale = resolveLocaleFromAcceptLanguage(
-    request.headers.get('accept-language')
-  );
-
-  // Default locale → rewrite (clean URL)
-  if (locale === defaultLocale) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/en${pathname === '/' ? '' : pathname}`;
-    return NextResponse.rewrite(url);
-  }
-
-  // Other locales → redirect
+  // Always serve default locale (en) for non-localized routes.
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname === '/' ? '' : pathname}`;
-  return NextResponse.redirect(url);
+  url.pathname = `/${defaultLocale}${pathname === '/' ? '' : pathname}`;
+  return NextResponse.rewrite(url);
 }
 
 export const config = {
