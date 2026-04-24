@@ -7,6 +7,9 @@ const locales = [
     "zh",
 ];
 
+// Countries excluded from registration form options.
+const EXCLUDED_COUNTRY_CODES = new Set(["JP", "KR", "IR", "GB", "AU", "US"]);
+
 const useCountriesDetails = (locale) => {
     const [countryList, setCountryList] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -38,11 +41,13 @@ const useCountriesDetails = (locale) => {
         const namesInEnglish = countries.getNames(fallbackLocale);
 
         // Create an array of objects with names in both languages
-        const countryListArray = Object.keys(namesInLocale).map((countryCode) => ({
-            code: countryCode, // Country code (e.g., "US", "FR")
-            name: namesInLocale[countryCode], // Name in the selected language
-            nameInEnglish: namesInEnglish[countryCode], // Name in English
-        }));
+        const countryListArray = Object.keys(namesInLocale)
+            .filter((countryCode) => !EXCLUDED_COUNTRY_CODES.has(countryCode))
+            .map((countryCode) => ({
+                code: countryCode, // Country code (e.g., "US", "FR")
+                name: namesInLocale[countryCode], // Name in the selected language
+                nameInEnglish: namesInEnglish[countryCode], // Name in English
+            }));
 
         setCountryList(countryListArray);
     };

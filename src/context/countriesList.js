@@ -723,13 +723,6 @@ export const countryList = [
         "nationality": "Indonesian"
     },
     {
-        "num_code": "364",
-        "alpha_2_code": "IR",
-        "alpha_3_code": "IRN",
-        "en_short_name": "Islamic Republic of Iran",
-        "nationality": "Islamic Republic of Iran"
-    },
-    {
         "num_code": "368",
         "alpha_2_code": "IQ",
         "alpha_3_code": "IRQ",
@@ -772,13 +765,6 @@ export const countryList = [
         "nationality": "Jamaican"
     },
     {
-        "num_code": "392",
-        "alpha_2_code": "JP",
-        "alpha_3_code": "JPN",
-        "en_short_name": "Japan",
-        "nationality": "Japanese"
-    },
-    {
         "num_code": "832",
         "alpha_2_code": "JE",
         "alpha_3_code": "JEY",
@@ -812,20 +798,6 @@ export const countryList = [
         "alpha_3_code": "KIR",
         "en_short_name": "Kiribati",
         "nationality": "I-Kiribati"
-    },
-    {
-        "num_code": "408",
-        "alpha_2_code": "KP",
-        "alpha_3_code": "PRK",
-        "en_short_name": "North Korea",
-        "nationality": "North Korean"
-    },
-    {
-        "num_code": "410",
-        "alpha_2_code": "KR",
-        "alpha_3_code": "KOR",
-        "en_short_name": "South Korea",
-        "nationality": "South Korean"
     },
     {
         "num_code": "911",

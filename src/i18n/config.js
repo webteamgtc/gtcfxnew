@@ -13,11 +13,9 @@ export const locales = [
   "es",
   "pt",
   "vi",
-  "fa",
   "tl",
   "th",
   "ru",
-  "ko",
   "ps",
   "it",
 ];
@@ -28,23 +26,8 @@ export const defaultLocale = "en";
  * Match Accept-Language to a configured locale (longer codes like zh-tw before zh).
  */
 export function resolveLocaleFromAcceptLanguage(acceptHeader) {
-  if (!acceptHeader || typeof acceptHeader !== "string") return defaultLocale;
-
-  const tags = acceptHeader
-    .split(",")
-    .map((s) => s.split(";")[0].trim().toLowerCase().replace(/_/g, "-"));
-
-  const byLength = [...locales].sort((a, b) => b.length - a.length);
-
-  for (const tag of tags) {
-    const exact = byLength.find((lc) => lc.toLowerCase() === tag);
-    if (exact) return exact;
-    for (const lc of byLength) {
-      const l = lc.toLowerCase();
-      if (tag === l || tag.startsWith(`${l}-`)) return lc;
-    }
-  }
-
+  // Keep English as the default regardless of browser language.
+  void acceptHeader;
   return defaultLocale;
 }
 
@@ -63,11 +46,9 @@ export const localeHreflang = {
   es: "es",
   pt: "pt",
   vi: "vi",
-  fa: "fa",
   tl: "tl",
   th: "th",
   ru: "ru",
-  ko: "ko",
   ps: "ps",
   it: "it",
 };
@@ -87,11 +68,9 @@ export const localeOpenGraph = {
   es: "es_ES",
   pt: "pt_PT",
   vi: "vi_VN",
-  fa: "fa_IR",
   tl: "fil_PH",
   th: "th_TH",
   ru: "ru_RU",
-  ko: "ko_KR",
   ps: "ps_AF",
   it: "it_IT",
 };
@@ -110,11 +89,9 @@ export const localeNames = {
   es: "Español",
   pt: "Português",
   vi: "Tiếng Việt",
-  fa: "فارسی",
   tl: "Filipino",
   th: "ไทย",
   ru: "Русский",
-  ko: "한국어",
   ps: "پښتو",
   it: "Italiano",
 };
@@ -133,11 +110,9 @@ export const localeDir = {
   es: "ltr",
   pt: "ltr",
   vi: "ltr",
-  fa: "rtl",
   tl: "ltr",
   th: "ltr",
   ru: "ltr",
-  ko: "ltr",
   ps: "rtl",
   it: "ltr",
 };

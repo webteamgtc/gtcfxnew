@@ -47,9 +47,6 @@ const FLAGCDN_COUNTRY = {
   ms: "my",
   ps: "af",
   ru: "ru",
-  ja: "jp",
-  ko: "kr",
-  fa: "ir",
   tl: "ph",
   pt: "pt",
   th: "th",
@@ -62,6 +59,45 @@ export function flagCdnSrc(localeCode) {
   return `https://flagcdn.com/w320/${iso}.png`;
 }
 
+function LocaleIcon({
+  code,
+  alt,
+  sizes = "16px",
+  className = "object-contain object-center",
+  quality = 92,
+}) {
+  if (String(code || "").toLowerCase() === "en") {
+    return (
+      <span className="inline-flex h-full w-full items-center justify-center rounded-full bg-[#e6edf8] text-[#2f4666]">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.8"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="9" />
+          <path d="M3 12h18" />
+          <path d="M12 3a13 13 0 0 1 0 18" />
+          <path d="M12 3a13 13 0 0 0 0 18" />
+        </svg>
+      </span>
+    );
+  }
+
+  return (
+    <Image
+      src={flagCdnSrc(code)}
+      alt={alt}
+      fill
+      sizes={sizes}
+      quality={quality}
+      className={className}
+    />
+  );
+}
+
 const LANGUAGE_CODES = [
   "en",
   "ar",
@@ -69,7 +105,6 @@ const LANGUAGE_CODES = [
   "zh-tw",
   "es",
   "it",
-  "fa",
   "tl",
   "fr",
   "vi",
@@ -79,8 +114,6 @@ const LANGUAGE_CODES = [
   "id",
   "ps",
   "ru",
-  "ja",
-  "ko",
   "pt",
   "th",
   "ur",
@@ -210,12 +243,10 @@ export function LanguageDrawerPanel({
                 }
               >
                 <span className="relative inline-block h-6 w-6 shrink-0 overflow-hidden rounded-xl md:h-7 md:w-7">
-                  <Image
-                    src={flagCdnSrc(lang.code)}
+                  <LocaleIcon
+                    code={lang.code}
                     alt={lang.flagAlt}
-                    fill
                     sizes="(max-width: 768px) 24px, 32px"
-                    quality={92}
                     className="object-center"
                   />
                 </span>
@@ -314,14 +345,11 @@ export default function LanguageSwitcher({
         }`}
         aria-label={t("title")}
       >
-        <span className="relative h-4 w-4 shrink-0 overflow-hidden rounded-xl">
-          <Image
-            src={flagCdnSrc(currentLanguage.code)}
+        <span className="relative h-5 w-5 shrink-0 overflow-hidden rounded-xl">
+          <LocaleIcon
+            code={currentLanguage.code}
             alt={currentLanguage.flagAlt}
-            fill
             sizes="16px"
-            quality={92}
-            className="object-contain object-center"
           />
         </span>
 
@@ -395,14 +423,7 @@ export default function LanguageSwitcher({
                 }`}
               >
                 <span className="relative h-[18px] w-[18px] shrink-0 overflow-hidden rounded-xl">
-                  <Image
-                    src={flagCdnSrc(lang.code)}
-                    alt={lang.flagAlt}
-                    fill
-                    sizes="18px"
-                    quality={92}
-                    className="object-contain object-center"
-                  />
+                  <LocaleIcon code={lang.code} alt={lang.flagAlt} sizes="18px" />
                 </span>
                 <span>{lang.label}</span>
               </Link>
