@@ -1,5 +1,5 @@
 import { getCanonicalUrl } from "@/lib/canonicalUrl";
-import enMessages from "@/messages/en.json";
+import enMessages from "@/translation/en.json";
 import { locales, localeHreflang, localeOpenGraph } from "@/i18n/config";
 import { getDictionary } from "@/i18n/request";
 

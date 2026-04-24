@@ -13,7 +13,7 @@ import { useLocationDetail } from "@/context/useLocationDetail";
 import { toast } from "react-toastify";
 import Select from "react-select";
 import { usePathname, useRouter, useSearchParams, useParams } from "next/navigation";
-import enDefault from "@/messages/en.json";
+import enDefault from "@/translation/en.json";
 import { usePathTranslation } from "../../LocaleProvider";
 import { localeDir } from "@/i18n/config";
 
