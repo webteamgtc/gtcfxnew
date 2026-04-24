@@ -304,6 +304,142 @@
           "sub": "Urdu"
         }
       }
+    },
+    "counter": {
+      "stats": {
+        "servedClients": {
+          "value": 985000,
+          "suffix": " +",
+          "label": "Clients Served",
+          "duration": 2500
+        },
+        "tradingInstruments": {
+          "value": 27000,
+          "suffix": " +",
+          "label": "Trading Instruments",
+          "duration": 2200
+        },
+        "destinationsWorldwide": {
+          "value": 20,
+          "suffix": " +",
+          "label": "Global Destinations",
+          "duration": 1800
+        },
+        "monthlyTrades": {
+          "value": 750,
+          "prefix": "$",
+          "suffix": " Billion",
+          "label": "Monthly Trading Volume",
+          "duration": 2500
+        }
+      }
+    },
+    "reviews": {
+      "titleLine1": "Read our reviews to learn",
+      "titleLine2Prefix": "",
+      "titleHighlight": "more",
+      "titleLine2Suffix": "about us",
+      "subtitle": "See what our clients around the world are saying",
+      "summary": "Showing {total} reviews across TradingView, App Store, Google Play, and Trustpilot.",
+      "swipeTip": "Tip: Swipe left or right to view more.",
+      "items": [
+        {
+          "id": "1",
+          "source": "Google",
+          "date": "2025-11-27",
+          "name": "William Jones",
+          "rating": 5,
+          "text": "Just wanted to share how impressed I am with GTCFX. The platform is incredibly slick—super quick, totally dependable, and a breeze to use, which makes trading really smooth. Their support team is top-notch; always responsive and really helpful. And when it comes to money, deposits and withdrawals are always processed quickly and without a hitch. Big thumbs up from me!"
+        },
+        {
+          "id": "2",
+          "source": "Trustpilot",
+          "date": "2026-01-27",
+          "name": "Aidan Baynes",
+          "rating": 5,
+          "text": "GTCFX has been very reliable for me. The platform runs smoothly, execution is fast, and overall performance feels stable."
+        },
+        {
+          "id": "3",
+          "source": "Google",
+          "date": "2026-01-19",
+          "name": "jijeesh gopakumar",
+          "rating": 5,
+          "text": "GTC FX is a reliable and smooth trading platform. Fast execution, tight spreads, and quick withdrawals. Support team is helpful and professional. Truly a trusted broker — highly recommended!"
+        },
+        {
+          "id": "4",
+          "source": "Trustpilot",
+          "date": "2025-12-16",
+          "name": "Lonnie Allen",
+          "rating": 5,
+          "text": "I’ve been on GTCFX for a while and honestly enjoy the experience. The interface is clean, things load quickly, and executing trades is stress-free. Support answers fast whenever I reach out. Everything feels solid and consistent"
+        },
+        {
+          "id": "5",
+          "source": "Google",
+          "date": "2025-08-03",
+          "name": "Kulbir Singh",
+          "rating": 5,
+          "text": "GTC FX offers a user-friendly platform with quick trade execution and responsive support. Overall a solid and trustworthy trading experience"
+        },
+        {
+          "id": "8",
+          "source": "Trustpilot",
+          "date": "2026-01-26",
+          "name": "Michael Gallager",
+          "rating": 4.5,
+          "text": "The platform is clean and easy to navigate. I’ve had smooth execution and steady performance since I started. Spreads are low, and everything works the way I expect. Still using it happily."
+        },
+        {
+          "id": "6",
+          "source": "Google",
+          "date": "2025-08-12",
+          "name": "Layla",
+          "rating": 4,
+          "text": "I usually check the spreads early in the morning before work, and GTCFX has been consistent so far — no sudden surprises like I had with my old broker."
+        },
+        {
+          "id": "7",
+          "source": "Trustpilot",
+          "date": "2023-05-22",
+          "name": "Naveed Mushtaq",
+          "rating": 5,
+          "text": "Good Execution and Deposit/Withdrawal Have been trading with GTC for one month Experience has been pleasant The online portal is easy to use, the trade execution has minimum slippage Swap free account was requested and approved immediately"
+        },
+        {
+          "id": "9",
+          "source": "Google",
+          "date": "2025-02-18",
+          "name": "Mizam Yahya",
+          "rating": 5,
+          "text": "The support team at GTCFX is incredibly responsive. I had a small issue with my deposit, and their team was quick to help me resolve it. The agents are always friendly and knowledgeable, making the experience smooth and stress-free. Highly recommend GTCFX!"
+        },
+        {
+          "id": "10",
+          "source": "Trustpilot",
+          "date": "2025-10-22",
+          "name": "Martina Ferrari",
+          "rating": 5,
+          "text": "It really lived up to my expectations… It really lived up to my expectations when it comes to banking features. The first deposit took a little longer than expected, but after that, every transaction has been seamless and prompt."
+        },
+        {
+          "id": "11",
+          "source": "Google",
+          "date": "2025-06-22",
+          "name": "Muhammad Wasif Baig",
+          "rating": 5,
+          "text": "GTCFX continues to impress me with their quick responses and reliable service. Anytime I’ve had a question, the support team has been there to help. Whether it’s account issues or technical support, they always resolve it quickly and professionally. I’m very satisfied with my experience."
+        },
+        {
+          "id": "12",
+          "source": "Trustpilot",
+          "date": "2026-01-06",
+          "name": "David Velasco",
+          "rating": 5,
+          "text": "What I like most about GTCFX is how fast everything is. Execution is quick, and the platform stays stable. Spreads are also low, which helps a lot. It’s been a positive experience."
+        }
+      ]
     }
   },
   "navigation": {
@@ -676,6 +812,40 @@
         "date": "Mar 26, 2026",
         "readTime": "5 min read",
         "category": "Blogs"
+      }
+    },
+    "form": {
+      "ibTitle": "Become",
+      "ibTitleHighlight": "Our Partner",
+      "ibSubtitle": "Complete Your Registration",
+      "firstNameLabel": "First Name*",
+      "firstNamePlaceholder": "First Name",
+      "lastNameLabel": "Last Name*",
+      "lastNamePlaceholder": "Last Name",
+      "emailLabel": "Email*",
+      "emailPlaceholder": "Email",
+      "countryLabel": "Country of Residence*",
+      "countryPlaceholder": "Select or type country name",
+      "phoneLabel": "Phone Number*",
+      "sendOtp": "Send",
+      "sendingOtp": "Sending",
+      "submit": "Register",
+      "submitting": "Submitting",
+      "errors": {
+        "firstName": "First name is required",
+        "lastName": "Last name is required",
+        "emailInvalid": "Invalid email address",
+        "emailRequired": "Email is required",
+        "phoneRequired": "Phone number is required",
+        "phoneInvalid": "Invalid phone number",
+        "countryRequired": "Country is required",
+        "termsRequired": "You must agree to the terms"
+      },
+      "toast": {
+        "success": "Thank you! We will contact you soon",
+        "genericError": "Something went wrong",
+        "otpSent": "Verification code sent",
+        "otpVerified": "Verified successfully"
       }
     }
   },
@@ -3058,6 +3228,136 @@
       }
     }
   },
+  "downApp": {
+    "bannerTitle": "Download Trading App",
+    "bannerDescription": "Trading with us gives you the best opportunity to invest your money in a smart and profitable way.",
+    "section": {
+      "badge": "Trading Platforms",
+      "titleStart": "Trade Anywhere,",
+      "titleHighlight": "Anytime",
+      "description": "Easily access our user-friendly platforms via mobile, tablet, or desktop and enjoy a seamless trading experience across global markets wherever you are.",
+      "groups": {
+        "pcMac": {
+          "title": "PC / Mac",
+          "items": {
+            "one": "MT4 for Desktop",
+            "two": "MT5 for Desktop"
+          }
+        },
+        "smartphones": {
+          "title": "Smartphones",
+          "items": {
+            "one": "MT4 for Android",
+            "two": "MT4 for iPhone",
+            "three": "MT5 for Android",
+            "four": "MT5 for iPhone"
+          }
+        },
+        "apkFile": {
+          "title": "APK File",
+          "items": {
+            "one": "MT4 for Android",
+            "two": "MT5 for Android"
+          }
+        }
+      },
+      "appCard": {
+        "eyebrow": "GTC Go App",
+        "title": "Trade on the go with one powerful app",
+        "description": "Download now to access MT4 and MT5 trading in one place. The all-in-one GTC app is designed for traders seeking speed, flexibility, and a smoother mobile trading experience.",
+        "storeButtons": {
+          "appStoreAlt": "Download on the App Store",
+          "googlePlayAlt": "Get it on Google Play"
+        },
+        "featureOne": {
+          "title": "Compatible with MT4 & MT5",
+          "description": "Access trusted trading environments with a seamless mobile experience."
+        },
+        "featureTwo": {
+          "title": "Built for flexibility",
+          "description": "Stay connected to the markets and manage your trades anytime, anywhere."
+        }
+      }
+    }
+  },
+  "copyTradingPage": {
+    "bannerTitle": "Copy Trading",
+    "bannerDescription": "Trading with us gives you the best opportunity to invest your money in a smart and profitable way.",
+    "hero": {
+      "badge": "Copy Trading",
+      "titleStart": "Copy Trading is now",
+      "titleHighlight": "easier and smarter",
+      "description": "Follow top-performing traders and automatically copy their strategies, while maintaining full control of your funds in a flexible and transparent experience.",
+      "primaryCta": "Start Copy Trading",
+      "secondaryCta": "Explore Traders",
+      "features": {
+        "one": "Automatically copy trades",
+        "two": "Transparent performance",
+        "three": "Access via mobile and web"
+      },
+      "imageAlt": "Global Copy Trading Network"
+    },
+    "whatIs": {
+      "badge": "What is Copy Trading",
+      "titleStart": "Follow strategies.",
+      "titleHighlight": "Stay in control.",
+      "description": "Copy trading allows you to follow experienced traders and automatically replicate their trades. It offers an easier way to participate in the markets while maintaining transparency and control over your capital.",
+      "cards": {
+        "one": {
+          "title": "Choose a trader",
+          "description": "Browse trader profiles, review performance, and select a strategy that fits your goals."
+        },
+        "two": {
+          "title": "Copy automatically",
+          "description": "Once connected, trades are copied automatically without the need to manage each position manually."
+        },
+        "three": {
+          "title": "Monitor & control",
+          "description": "Track results, manage allocations, and maintain flexibility with full visibility of your account."
+        }
+      }
+    },
+    "howItWorks": {
+      "badge": "How it works",
+      "titleStart": "Start copy trading in",
+      "titleHighlight": "3 simple steps",
+      "description": "Getting started is easy. Set up your account, choose a trader, and begin copying in a smooth and transparent experience.",
+      "steps": {
+        "one": {
+          "title": "Open a live account",
+          "description": "Create a GTCFX live account and complete the setup to access copy trading services."
+        },
+        "two": {
+          "title": "Choose the right trader",
+          "description": "Review trader profiles, performance, and trading style before selecting who to follow."
+        },
+        "three": {
+          "title": "Start copying strategy",
+          "description": "Allocate capital, activate copying, and track performance directly from your dashboard."
+        }
+      }
+    },
+    "rating": {
+      "topPerformer": {
+        "title": "Top Performing Traders"
+      },
+      "filters": {
+        "orderByLabel": "Order by",
+        "ofLabel": "of",
+        "options": {
+          "balance": "Balance",
+          "averageProfit": "Average Profit",
+          "deposits": "Deposits",
+          "rating": "Rating"
+        }
+      },
+      "list": {
+        "pnlLabel": "30-Day Profit",
+        "roiLabel": "ROI",
+        "copyButton": "Copy"
+      }
+    }
+  },
   "companyNews": {
     "bannerTitle": "Company News",
     "bannerDescription": "GTCFX News & Market Updates - Stay Informed, Trade Smarter",
@@ -3391,7 +3691,7 @@
     "enterEmail": "Please Enter Your Email To Continue",
     "formAlready": "Your Email already registered. Please check with your Account Manager."
   },
-   "appQRWidget": {
+  "appQRWidget": {
     "link": "https://qrcodes.pro/YW9ULf",
     "ariaLabel": "Download GTC Go App",
     "badge": "Scan Me",
