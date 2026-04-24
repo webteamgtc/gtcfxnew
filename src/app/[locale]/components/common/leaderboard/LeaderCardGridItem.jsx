@@ -13,6 +13,25 @@ import {
   pickAumFromHistory,
 } from "./leaderboardCardUtils";
 
+const EXCLUDED_COUNTRY_CODES = new Set(["JP", "KR", "IR", "GB", "AU", "US"]);
+const EXCLUDED_COUNTRY_NAMES = [
+  "japan",
+  "korea",
+  "iran",
+  "united kingdom",
+  "australia",
+  "united states",
+  "usa",
+];
+
+function isExcludedCountry(item) {
+  const code = String(item?.account?.countryCode || "").toUpperCase();
+  if (EXCLUDED_COUNTRY_CODES.has(code)) return true;
+
+  const countryName = String(item?.account?.country || "").toLowerCase();
+  return EXCLUDED_COUNTRY_NAMES.some((name) => countryName.includes(name));
+}
+
 /**
  * Grid-style copy-trading / leaderboard card (avatar, PNL, chart, AUM/MDD/Sharpe, actions).
  */
@@ -31,6 +50,10 @@ export default function LeaderCardGridItem({
   const router = useRouter();
   const countryCode = getLeaderCardCountryCode(item);
   const avatar = getLeaderCardAvatar(item);
+
+  if (isExcludedCountry(item)) {
+    return null;
+  }
 
   const statAum =
     pickAumFromHistory(item) ??
