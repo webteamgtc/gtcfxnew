@@ -90,10 +90,10 @@ function getNestedValue(obj, path, fallback = "") {
 
 async function getTranslations(locale = "en") {
   try {
-    const messages = (await import(`@/messages/${locale}.json`)).default;
+    const messages = (await import(`@/translation/${locale}.json`)).default;
     return messages;
   } catch {
-    const messages = (await import(`@/messages/en.json`)).default;
+    const messages = (await import(`@/translation/en.json`)).default;
     return messages;
   }
 }
