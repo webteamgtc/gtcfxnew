@@ -151,10 +151,10 @@ async function getBlogs(locale, start = 0, limit = 3) {
   let res = await tryLoad(locale);
   let usedLocale = mapStrapiLocale(locale);
 
-  if ((!res?.data || res.data.length === 0) && locale !== "en") {
-    res = await tryLoad("en");
-    usedLocale = "en";
-  }
+  // if ((!res?.data || res.data.length === 0) && locale !== "en") {
+  //   res = await tryLoad("en");
+  //   usedLocale = "en";
+  // }
 
   const rows = Array.isArray(res?.data) ? res.data : [];
   const total = Number(res?.meta?.pagination?.total || rows.length || 0);
@@ -164,66 +164,6 @@ async function getBlogs(locale, start = 0, limit = 3) {
     total,
     usedLocale,
   };
-}
-
-function BlogCard({
-  category,
-  title,
-  readTime,
-  date,
-  dateIso,
-  href,
-  imageSrc,
-  imageAlt,
-  readMoreText,
-}) {
-  return (
-    <article className="flex h-full flex-col gap-2.5 md:gap-3">
-      <div
-        className="relative w-full shrink-0 overflow-hidden rounded-[10px] bg-[#d1d1d1] md:rounded-xl"
-        style={{ aspectRatio: "16 / 9" }}
-      >
-        {imageSrc ? (
-          <Image
-            src={imageSrc}
-            alt={imageAlt}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 33vw"
-          />
-        ) : null}
-
-        <span className="absolute left-3 top-3 inline-flex w-fit items-center rounded-xl bg-secondary px-3 py-1 text-[11px] font-medium text-white md:px-3.5 md:py-1.5 md:text-xs">
-          {category}
-        </span>
-      </div>
-
-      <div className="mt-0.5 flex flex-1 flex-col gap-2 md:gap-2.5">
-        <h3 className="HeadingH5">{title}</h3>
-
-        <div className="mt-auto border-t border-primary/25 pt-3">
-          <div className="flex items-center justify-between gap-3">
-            <div className="flex min-w-0 flex-1 items-center gap-2 text-primary">
-              <IconClock className="h-4 w-4 shrink-0 text-primary" />
-              <time
-                dateTime={dateIso}
-                className="TextSmall font-normal leading-snug"
-              >
-                {readTime} · {date}
-              </time>
-            </div>
-
-            <Link
-              href={href}
-              className="TextSmall shrink-0 font-normal text-primary underline decoration-primary underline-offset-[3px] transition hover:opacity-80"
-            >
-              {readMoreText}
-            </Link>
-          </div>
-        </div>
-      </div>
-    </article>
-  );
 }
 
 export default async function BlogsSection({ locale = "en" }) {
@@ -252,63 +192,68 @@ export default async function BlogsSection({ locale = "en" }) {
   const fallbackImageAlt = blogText?.fallback?.imageAlt || "news image";
 
   return (
-    <section className="py-10 md:py-16">
-      <div className="container">
-        <div className="mx-auto mb-10 flex max-w-4xl flex-col items-center gap-6 text-center md:mb-14">
-          <h2 className="HeadingH2">
-            {headingBefore}
-            <span className="text-secondary"> {headingSeparator} </span>
-            {headingAfter}
-          </h2>
+    <>
+      {rows?.length > 0 && (
+        <section className="py-10 md:py-16">
+          <div className="container">
+            <div className="mx-auto mb-10 flex max-w-4xl flex-col items-center gap-6 text-center md:mb-14">
+              <h2 className="HeadingH2">
+                {headingBefore}
+                <span className="text-secondary"> {headingSeparator} </span>
+                {headingAfter}
+              </h2>
 
-          <p className="Text">{description}</p>
-        </div>
+              <p className="Text">{description}</p>
+            </div>
 
-        <div className="hidden items-stretch gap-6 md:grid md:grid-cols-3 md:gap-8">
-          {rows.map((post, idx) => {
-            const attrs = post?.attributes ?? post ?? {};
-            const id = post?.id || `${attrs?.slug || "post"}-${idx}`;
-            const href = `/${usedLocale}/blogs/${attrs?.slug || attrs?.documentId || post?.slug || ""}`;
+            <div className="hidden items-stretch gap-6 md:grid md:grid-cols-3 md:gap-8">
+              {rows.map((post, idx) => {
+                const attrs = post?.attributes ?? post ?? {};
+                const id = post?.id || `${attrs?.slug || "post"}-${idx}`;
+                const href = `/${usedLocale}/blogs/${attrs?.slug || attrs?.documentId || post?.slug || ""}`;
 
-            return (
-              <BlogItem
-                key={id}
-                category={getCategoryName(post, fallbackCategory)}
-                title={attrs?.title || fallbackTitle}
-                readTime={attrs?.readTime || fallbackReadTime}
-                excerpt={getExcerpt(post, fallbackExcerpt)}
-                date={formatDate(attrs?.publishedAt || attrs?.createdAt, fallbackDate)}
-                dateIso={attrs?.publishedAt || attrs?.createdAt || "2026-03-26"}
-                href={href}
-                imageSrc={getImageUrl(post)}
-                imageAlt={attrs?.title || fallbackImageAlt}
-                readMoreText={readMore}
+                return (
+                  <BlogItem
+                    key={id}
+                    category={getCategoryName(post, fallbackCategory)}
+                    title={attrs?.title || fallbackTitle}
+                    readTime={attrs?.readTime || fallbackReadTime}
+                    excerpt={getExcerpt(post, fallbackExcerpt)}
+                    date={formatDate(attrs?.publishedAt || attrs?.createdAt, fallbackDate)}
+                    dateIso={attrs?.publishedAt || attrs?.createdAt || "2026-03-26"}
+                    href={href}
+                    imageSrc={getImageUrl(post)}
+                    imageAlt={attrs?.title || fallbackImageAlt}
+                    readMoreText={readMore}
+                  />
+                );
+              })}
+            </div>
+
+            <div className="md:hidden">
+              <BlogsSectionMobile
+                items={rows.map((post, idx) => {
+                  const attrs = post?.attributes ?? post ?? {};
+                  const href = `/${usedLocale}/blogs/${attrs?.slug || attrs?.documentId || post?.slug || ""}`;
+
+                  return {
+                    category: getCategoryName(post, fallbackCategory),
+                    title: attrs?.title || fallbackTitle,
+                    readTime: attrs?.readTime || fallbackReadTime,
+                    date: formatDate(attrs?.publishedAt || attrs?.createdAt, fallbackDate),
+                    dateIso: attrs?.publishedAt || attrs?.createdAt || "2026-03-26",
+                    href,
+                    imageSrc: getImageUrl(post),
+                    imageAlt: attrs?.title || fallbackImageAlt,
+                    readMoreText: readMore,
+                  };
+                })}
               />
-            );
-          })}
-        </div>
+            </div>
+          </div>
+        </section>
+      )}
+    </>
 
-        <div className="md:hidden">
-          <BlogsSectionMobile
-            items={rows.map((post, idx) => {
-              const attrs = post?.attributes ?? post ?? {};
-              const href = `/${usedLocale}/blogs/${attrs?.slug || attrs?.documentId || post?.slug || ""}`;
-
-              return {
-                category: getCategoryName(post, fallbackCategory),
-                title: attrs?.title || fallbackTitle,
-                readTime: attrs?.readTime || fallbackReadTime,
-                date: formatDate(attrs?.publishedAt || attrs?.createdAt, fallbackDate),
-                dateIso: attrs?.publishedAt || attrs?.createdAt || "2026-03-26",
-                href,
-                imageSrc: getImageUrl(post),
-                imageAlt: attrs?.title || fallbackImageAlt,
-                readMoreText: readMore,
-              };
-            })}
-          />
-        </div>
-      </div>
-    </section>
   );
 }

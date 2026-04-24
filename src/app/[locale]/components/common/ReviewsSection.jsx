@@ -7,6 +7,111 @@ import Image from "next/image";
 import { useLocale, useLocaleMessages, usePathTranslation } from "../../LocaleProvider";
 import { localeDir } from "@/i18n/config";
 
+
+const ALL_REVIEWS = [
+  {
+    id: "1",
+    source: "Google",
+    date: "2025-11-27",
+    name: "William Jones",
+    rating: 5,
+    text: "Just wanted to share how impressed I am with GTCFX. The platform is incredibly slick—super quick, totally dependable, and a breeze to use, which makes trading really smooth. Their support team is top-notch; always responsive and really helpful. And when it comes to money, deposits and withdrawals are always processed quickly and without a hitch. Big thumbs up from me!",
+  },
+  {
+    id: "2",
+    source: "Trustpilot",
+    date: "2026-01-27",
+    name: "Aidan Baynes",
+    rating: 5,
+    text: "GTCFX has been very reliable for me. The platform runs smoothly, execution is fast, and overall performance feels stable.",
+  },
+  {
+    id: "3",
+    source: "Google",
+    date: "2026-01-19",
+    name: "jijeesh gopakumar",
+    rating: 5,
+    text: "GTC FX is a reliable and smooth trading platform. Fast execution, tight spreads, and quick withdrawals. Support team is helpful and professional. Truly a trusted broker — highly recommended!",
+  },
+  {
+    id: "4",
+    source: "Trustpilot",
+    date: "2025-12-16",
+    name: "Lonnie Allen",
+    rating: 5,
+    text: "I’ve been on GTCFX for a while and honestly enjoy the experience. The interface is clean, things load quickly, and executing trades is stress-free. Support answers fast whenever I reach out. Everything feels solid and consistent",
+  },
+  {
+    id: "5",
+    source: "Google",
+    date: "2025-08-03",
+    name: "Kulbir Singh",
+    rating: 5,
+    text: "GTC FX offers a user-friendly platform with quick trade execution and responsive support. Overall a solid and trustworthy trading experience",
+  },
+  {
+    id: "8",
+    source: "Trustpilot",
+    date: "2026-01-26",
+    name: "Michael Gallager",
+    rating: 4.5,
+    text: "The platform is clean and easy to navigate. I’ve had smooth execution and steady performance since I started. Spreads are low, and everything works the way I expect. Still using it happily.",
+  },
+  {
+    id: "6",
+    source: "Google",
+    date: "2025-08-12",
+    name: "Layla",
+    rating: 4,
+    text: "I usually check the spreads early in the morning before work, and GTCFX has been consistent so far — no sudden surprises like I had with my old broker.",
+  },
+  {
+    id: "7",
+    source: "Trustpilot",
+    date: "2023-05-22",
+    name: "Naveed Mushtaq",
+    rating: 5,
+    text: "Good Execution and Deposit/Withdrawal Have been trading with GTC for one month Experience has been pleasant The online portal is easy to use, the trade execution has minimum slippage Swap free account was requested and approved immediately",
+  },
+  {
+    id: "9",
+    source: "Google",
+    date: "2025-02-18",
+    name: "Mizam Yahya",
+    rating: 5,
+    text: "The support team at GTCFX is incredibly responsive. I had a small issue with my deposit, and their team was quick to help me resolve it. The agents are always friendly and knowledgeable, making the experience smooth and stress-free. Highly recommend GTCFX!",
+  },
+  {
+    id: "10",
+    source: "Trustpilot",
+    date: "2025-10-22",
+    name: "Martina Ferrari",
+    rating: 5,
+    text: "It really lived up to my expectations… It really lived up to my expectations when it comes to banking features. The first deposit took a little longer than expected, but after that, every transaction has been seamless and prompt.",
+  },
+  {
+    id: "11",
+    source: "Google",
+    date: "2025-06-22",
+    name: "Muhammad Wasif Baig",
+    rating: 5,
+    text: "GTCFX continues to impress me with their quick responses and reliable service. Anytime I’ve had a question, the support team has been there to help. Whether it’s account issues or technical support, they always resolve it quickly and professionally. I’m very satisfied with my experience.",
+  },
+  {
+    id: "12",
+    source: "Trustpilot",
+    date: "2026-01-06",
+    name: "David Velasco",
+    rating: 5,
+    text: "What I like most about GTCFX is how fast everything is. Execution is quick, and the platform stays stable. Spreads are also low, which helps a lot. It’s been a positive experience.",
+  },
+
+  // ✅ Examples for future (you can add later)
+  // { id: "13", source: "TradingView", date: "2026-01-10", name: "John", rating: 5, text: "..." },
+  // { id: "14", source: "WikiFX", date: "2026-01-11", name: "Sara", rating: 5, text: "..." },
+  // { id: "15", source: "Investing.com", date: "2026-01-12", name: "Ahmed", rating: 5, text: "..." },
+]
+
 // ✅ Bottom ratings row (logos as images)
 const PLATFORM_RATINGS = [
   {
@@ -145,21 +250,22 @@ export default function ReviewsSection() {
   const [reviews, setReviews] = useState([]);
   const locale = useLocale();
   const messages = useLocaleMessages();
+  console.log(messages);
   const t = usePathTranslation("common.reviews");
   const isRtl = localeDir[locale] === "rtl";
   const configuredReviews = useMemo(
     () =>
       Array.isArray(messages?.common?.reviews?.items)
         ? messages.common.reviews.items.filter(
-            (item) =>
-              item &&
-              typeof item.id === "string" &&
-              typeof item.source === "string" &&
-              typeof item.date === "string" &&
-              typeof item.name === "string" &&
-              typeof item.text === "string" &&
-              typeof item.rating === "number"
-          )
+          (item) =>
+            item &&
+            typeof item.id === "string" &&
+            typeof item.source === "string" &&
+            typeof item.date === "string" &&
+            typeof item.name === "string" &&
+            typeof item.text === "string" &&
+            typeof item.rating === "number"
+        )
         : [],
     [messages?.common?.reviews?.items]
   );
@@ -210,7 +316,7 @@ export default function ReviewsSection() {
     };
   }, [emblaApi, isRtl]);
 
-  const totalReviews = Number(messages?.common?.reviews?.totalReviews) || 45;
+  const totalReviews = Number(messages?.common?.reviews?.totalReviews) || 0;
   const summaryTemplate = t(
     "summary",
     "Showing out of {total} reviews across TradingView, App Store, Google Play and Trustpilot."

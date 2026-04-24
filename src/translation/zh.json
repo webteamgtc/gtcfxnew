@@ -452,6 +452,142 @@
           "sub": "Urdu"
         }
       }
+    },
+    "counter": {
+      "stats": {
+        "servedClients": {
+          "value": 985000,
+          "suffix": " +",
+          "label": "服务客户数",
+          "duration": 2500
+        },
+        "tradingInstruments": {
+          "value": 27000,
+          "suffix": " +",
+          "label": "交易工具",
+          "duration": 2200
+        },
+        "destinationsWorldwide": {
+          "value": 20,
+          "suffix": " +",
+          "label": "全球覆盖地区",
+          "duration": 1800
+        },
+        "monthlyTrades": {
+          "value": 750,
+          "prefix": "$",
+          "suffix": " 亿",
+          "label": "月交易量",
+          "duration": 2500
+        }
+      }
+    },
+    "reviews": {
+      "titleLine1": "阅读我们的评价，了解",
+      "titleLine2Prefix": "",
+      "titleHighlight": "更多",
+      "titleLine2Suffix": "关于我们",
+      "subtitle": "查看来自全球客户的真实反馈",
+      "summary": "共展示来自 TradingView、App Store、Google Play 和 Trustpilot 的 {total} 条评价。",
+      "swipeTip": "提示：向左或向右滑动查看更多。",
+      "items": [
+        {
+          "id": "1",
+          "source": "Google",
+          "date": "2025-11-27",
+          "name": "William Jones",
+          "rating": 5,
+          "text": "我想分享一下我对 GTCFX 的深刻印象。这个平台非常流畅——速度极快、非常可靠，而且使用起来非常简单，让交易变得十分顺畅。他们的客服团队也非常出色，总是反应迅速且非常有帮助。在资金方面，无论是入金还是出金都处理得很快且没有任何问题。给它一个大大的好评！"
+        },
+        {
+          "id": "2",
+          "source": "Trustpilot",
+          "date": "2026-01-27",
+          "name": "Aidan Baynes",
+          "rating": 5,
+          "text": "GTCFX 对我来说一直非常可靠。平台运行顺畅，执行速度快，整体表现稳定。"
+        },
+        {
+          "id": "3",
+          "source": "Google",
+          "date": "2026-01-19",
+          "name": "jijeesh gopakumar",
+          "rating": 5,
+          "text": "GTC FX 是一个可靠且流畅的交易平台。执行速度快，点差低，出金迅速。客服团队专业且乐于助人。真正值得信赖的经纪商——强烈推荐！"
+        },
+        {
+          "id": "4",
+          "source": "Trustpilot",
+          "date": "2025-12-16",
+          "name": "Lonnie Allen",
+          "rating": 5,
+          "text": "我使用 GTCFX 已经有一段时间了，说实话非常享受这个体验。界面简洁，加载速度快，交易执行毫无压力。每次联系支持团队都能得到快速回复。一切都感觉稳定且可靠。"
+        },
+        {
+          "id": "5",
+          "source": "Google",
+          "date": "2025-08-03",
+          "name": "Kulbir Singh",
+          "rating": 5,
+          "text": "GTC FX 提供一个用户友好的平台，交易执行快速，客服响应及时。整体来说是一个稳定且值得信赖的交易体验。"
+        },
+        {
+          "id": "8",
+          "source": "Trustpilot",
+          "date": "2026-01-26",
+          "name": "Michael Gallager",
+          "rating": 4.5,
+          "text": "平台界面干净且易于导航。自从开始使用以来，执行顺畅，表现稳定。点差低，一切都按预期运行。我仍然很满意地使用它。"
+        },
+        {
+          "id": "6",
+          "source": "Google",
+          "date": "2025-08-12",
+          "name": "Layla",
+          "rating": 4,
+          "text": "我通常在上班前清晨查看点差，到目前为止 GTCFX 一直表现稳定——没有像我以前的经纪商那样出现突然的意外情况。"
+        },
+        {
+          "id": "7",
+          "source": "Trustpilot",
+          "date": "2023-05-22",
+          "name": "Naveed Mushtaq",
+          "rating": 5,
+          "text": "执行良好，入金/出金体验优秀。我在 GTC 交易一个月了，整体体验非常愉快。在线平台易于使用，交易执行滑点很小。申请免掉期账户后也立即获得批准。"
+        },
+        {
+          "id": "9",
+          "source": "Google",
+          "date": "2025-02-18",
+          "name": "Mizam Yahya",
+          "rating": 5,
+          "text": "GTCFX 的客服团队反应非常迅速。我在入金时遇到一个小问题，他们很快就帮我解决了。客服人员始终友好且专业，让整个体验顺畅无压力。强烈推荐 GTCFX！"
+        },
+        {
+          "id": "10",
+          "source": "Trustpilot",
+          "date": "2025-10-22",
+          "name": "Martina Ferrari",
+          "rating": 5,
+          "text": "它确实达到了我的预期……特别是在资金处理方面。第一次入金花的时间稍长一些，但之后的每一笔交易都非常顺畅且迅速。"
+        },
+        {
+          "id": "11",
+          "source": "Google",
+          "date": "2025-06-22",
+          "name": "Muhammad Wasif Baig",
+          "rating": 5,
+          "text": "GTCFX 以其快速响应和可靠服务持续让我印象深刻。每当我有问题时，客服团队总是及时提供帮助。无论是账户问题还是技术支持，他们总能快速且专业地解决。我对这次体验非常满意。"
+        },
+        {
+          "id": "12",
+          "source": "Trustpilot",
+          "date": "2026-01-06",
+          "name": "David Velasco",
+          "rating": 5,
+          "text": "我最喜欢 GTCFX 的地方是它的速度。执行很快，平台也非常稳定。点差也很低，这非常有帮助。整体来说是一次非常积极的体验。"
+        }
+      ]
     }
   },
   "home": {
@@ -708,6 +844,40 @@
         "date": "2026年3月26日",
         "readTime": "阅读需 5 分钟",
         "category": "博客"
+      }
+    },
+    "form": {
+      "ibTitle": "成为",
+      "ibTitleHighlight": "我们的合作伙伴",
+      "ibSubtitle": "完成您的注册",
+      "firstNameLabel": "名字*",
+      "firstNamePlaceholder": "名字",
+      "lastNameLabel": "姓氏*",
+      "lastNamePlaceholder": "姓氏",
+      "emailLabel": "电子邮件*",
+      "emailPlaceholder": "电子邮件",
+      "countryLabel": "居住国家*",
+      "countryPlaceholder": "选择或输入国家名称",
+      "phoneLabel": "电话号码*",
+      "sendOtp": "发送",
+      "sendingOtp": "发送中",
+      "submit": "注册",
+      "submitting": "提交中",
+      "errors": {
+        "firstName": "名字为必填项",
+        "lastName": "姓氏为必填项",
+        "emailInvalid": "电子邮件格式不正确",
+        "emailRequired": "电子邮件为必填项",
+        "phoneRequired": "电话号码为必填项",
+        "phoneInvalid": "电话号码格式不正确",
+        "countryRequired": "国家为必填项",
+        "termsRequired": "您必须同意相关条款"
+      },
+      "toast": {
+        "success": "感谢您！我们将很快与您联系",
+        "genericError": "发生错误",
+        "otpSent": "验证码已发送",
+        "otpVerified": "验证成功"
       }
     },
     "primeHome": {
